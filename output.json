@@ -1,0 +1,17 @@
+[
+   {
+      "version": "v1.2",
+      "date": "2026-07-10",
+      "ticket": "CXI-1946",
+      "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1946",
+      "groups": {
+         "title": "Body Scale",
+         "items": {
+            "type": "new",
+            "title": "Body/XXL hinzugefügt",
+            "desc": "Neue oberste Body-Stufe für große Leseformate. 20px / lh 28px"
+         }
+      },
+      "actions": "Designer: Bestehende Body/XL-Verwendungen prüfen und ggf. auf Body/XXL umstellen."
+   }
+]
