@@ -406,7 +406,7 @@
   .tag-new        { background: #3DB876; }
   .tag-changed    { background: #F5A623; }
   .tag-fixed      { background: #4A90D9; }
-  .tag-deprecated { background: #AAAAAA; }
+  .tag-deprecated { background: #E03E3E; }
   .tag-breaking   { background: #CC2222; }
 
   /* Legend */
@@ -431,6 +431,7 @@
   .legend-dot-new      { background: #3DB876; }
   .legend-dot-fixed    { background: #4A90D9; }
   .legend-dot-changed  { background: #F5A623; }
+  .legend-dot-deleted  { background: #E03E3E; }
 
   /* Action box */
   .action-box {
@@ -552,10 +553,10 @@
       <div class="legend-item"><div class="legend-dot legend-dot-new"></div>New</div>
       <div class="legend-item"><div class="legend-dot legend-dot-fixed"></div>Fixed</div>
       <div class="legend-item"><div class="legend-dot legend-dot-changed"></div>Changed</div>
+      <div class="legend-item"><div class="legend-dot legend-dot-deleted"></div>Deleted</div>
     </div>
     <div style="width:1px;height:16px;background:var(--border-strong)"></div>
-    <a href="https://interwetten.atlassian.net" target="_blank" class="header-link">Confluence</a>
-    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank" class="header-link">Figma</a>
+    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank" class="header-link">Design Library</a>
     <a href="https://interwetten.atlassian.net/jira" target="_blank" class="header-btn">Jira →</a>
   </div>
 </header>
@@ -591,8 +592,8 @@
 <footer class="site-footer">
   <span>IW Design Library · Interwetten CXI Team</span>
   <div style="display:flex;gap:20px">
-    <a href="https://interwetten.atlassian.net" target="_blank">Confluence</a>
-    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank">Figma</a>
+    <!-- <a href="https://interwetten.atlassian.net" target="_blank">Confluence</a> -->
+    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank">Figma Design Library</a>
     <a href="https://interwetten.atlassian.net/jira" target="_blank">Jira</a>
   </div>
 </footer>
@@ -604,7 +605,7 @@
     new:        '#3DB876',
     changed:    '#F5A623',
     fixed:      '#4A90D9',
-    deprecated: '#AAAAAA',
+    deprecated: '#E03E3E',
     breaking:   '#CC2222',
   };
 
