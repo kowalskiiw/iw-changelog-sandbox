@@ -1,5 +1,41 @@
 [
   {
+    "version": "v0.04",
+    "date": "2026-07-11",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "copytext-xs",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "test text stlye for changelog",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "light-blue-100",
+            "desc": "Removed from library."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v0.03",
     "date": "2026-07-11",
     "ticket": "CXI-1946",
