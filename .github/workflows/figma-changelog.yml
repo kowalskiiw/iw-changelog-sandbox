@@ -16,7 +16,8 @@ on:
         description: 'Jira ticket (e.g. CXI-2010)'
         required: false
         default: ''
-
+permissions:
+  contents: write
 jobs:
   generate-changelog:
     runs-on: ubuntu-latest
@@ -50,4 +51,4 @@ jobs:
           git config --global user.email "changelog-bot@interwetten.com"
           git add changelog-data.json styles-snapshot.json
           git diff --staged --quiet || git commit -m "chore: auto-update changelog via Figma publish"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
