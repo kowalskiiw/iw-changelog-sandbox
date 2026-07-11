@@ -8,18 +8,16 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
 
-const FIGMA_TOKEN      = process.env.FIGMA_TOKEN;
-const FIGMA_FILE_ID    = process.env.FIGMA_FILE_ID;
-const ANTHROPIC_KEY    = process.env.ANTHROPIC_API_KEY;
-const JIRA_BASE_URL    = 'https://interwetten.atlassian.net/browse';
-const CHANGELOG_PATH   = 'changelog-data.json';
-const SNAPSHOT_PATH    = 'styles-snapshot.json';
+const FIGMA_TOKEN    = process.env.FIGMA_TOKEN;
+const FIGMA_FILE_ID  = process.env.FIGMA_FILE_ID;
+const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
+const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
+const CHANGELOG_PATH = 'changelog-data.json';
+const SNAPSHOT_PATH  = 'styles-snapshot.json';
 
-// ── HELPERS ──────────────────────────────────────────────────────────────────
+// ── HELPERS ───────────────────────────────────────────────────────────────────
 
-function today() {
-  return new Date().toISOString().split('T')[0];
-}
+function today() { return new Date().toISOString().split('T')[0]; }
 
 function extractTicket(str = '') {
   const match = str.match(/([A-Z]+-\d+)/);
@@ -32,8 +30,16 @@ function nextVersion(changelog) {
   return `v${major}.${minor + 1}`;
 }
 
-function round2(n) {
-  return Math.round(n * 100) / 100;
+function round2(n) { return Math.round(n * 100) / 100; }
+
+function formatTextStyleValues(v) {
+  const parts = [];
+  if (v.fontSize)                              parts.push(`${v.fontSize}px`);
+  if (v.lineHeight)                            parts.push(`lh ${v.lineHeight}px`);
+  if (v.fontWeight)                            parts.push(`w${v.fontWeight}`);
+  if (v.fontFamily && v.fontFamily !== 'Roboto') parts.push(v.fontFamily);
+  if (v.letterSpacing)                         parts.push(`ls ${v.letterSpacing}`);
+  return parts.join(' · ');
 }
 
 // ── FIGMA API ─────────────────────────────────────────────────────────────────
@@ -80,10 +86,7 @@ function normalizeEffectStyle(effects = []) {
       const { r, g, b, a } = e.color;
       return `${e.type.toLowerCase().replace('_', ' ')}: offset ${e.offset.x}/${e.offset.y} blur ${e.radius} color ${normalizeColor(r, g, b, a)}`;
     }
-    if (e.type === 'LAYER_BLUR' || e.type === 'BACKGROUND_BLUR') {
-      return `${e.type.toLowerCase().replace('_', ' ')}: radius ${e.radius}`;
-    }
-    return e.type;
+    return `${e.type.toLowerCase().replace('_', ' ')}: radius ${e.radius}`;
   }).join(' | ');
 }
 
@@ -113,9 +116,7 @@ async function fetchAllStyles() {
       const batch = styleList.slice(i, i + 50);
       const ids = batch.map(s => s.node_id).join(',');
       const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${ids}`);
-      for (const s of batch) {
-        result[s.name] = nodes?.[s.node_id]?.document ?? null;
-      }
+      for (const s of batch) result[s.name] = nodes?.[s.node_id]?.document ?? null;
     }
     return result;
   }
@@ -148,9 +149,8 @@ async function fetchAllStyles() {
     const variables   = varData.meta?.variables ?? {};
     for (const [, variable] of Object.entries(variables)) {
       const collection = collections[variable.variableCollectionId];
-      const collName   = collection?.name ?? 'Unknown';
-      const key        = `${collName} / ${variable.name}`;
-      const modeId     = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
+      const key = `${collection?.name ?? 'Unknown'} / ${variable.name}`;
+      const modeId = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
       snapshot.variables[key] = JSON.stringify(variable.valuesByMode?.[modeId] ?? null);
     }
     console.log(`   Found ${Object.keys(snapshot.variables).length} variables`);
@@ -160,9 +160,7 @@ async function fetchAllStyles() {
 
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-    for (const c of compData.meta?.components ?? []) {
-      snapshot.components[c.name] = c.key;
-    }
+    for (const c of compData.meta?.components ?? []) snapshot.components[c.name] = c.key;
     console.log(`   Found ${Object.keys(snapshot.components).length} components`);
   } catch (e) {
     console.warn('   Components fetch failed:', e.message);
@@ -235,10 +233,28 @@ function buildGroups(diff) {
   for (const { key, label } of CATEGORIES) {
     const d = diff[key];
     if (!d.added.length && !d.changed.length && !d.removed.length) continue;
+
     const items = [];
-    for (const s of d.added)   items.push({ type: 'new',        title: s.name, desc: typeof s.value === 'string' ? s.value : JSON.stringify(s.value) });
-    for (const s of d.changed) items.push({ type: 'changed',    title: s.name, desc: s.desc });
-    for (const s of d.removed) items.push({ type: 'deprecated', title: s.name, desc: 'Removed from library.' });
+
+    for (const s of d.added) {
+      // Format new text styles as readable property list instead of raw JSON
+      let desc = '';
+      if (key === 'text' && typeof s.value === 'object' && s.value !== null) {
+        desc = formatTextStyleValues(s.value);
+      } else {
+        desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
+      }
+      items.push({ type: 'new', title: s.name, desc });
+    }
+
+    for (const s of d.changed) {
+      items.push({ type: 'changed', title: s.name, desc: s.desc });
+    }
+
+    for (const s of d.removed) {
+      items.push({ type: 'deprecated', title: s.name, desc: 'Removed from library.' });
+    }
+
     groups.push({ title: label, items });
   }
   return groups;
@@ -246,39 +262,53 @@ function buildGroups(diff) {
 
 // ── CLAUDE AI REFINEMENT ──────────────────────────────────────────────────────
 
-async function refineWithClaude(groups, version, ticket) {
+async function refineWithClaude(groups, diff, version, ticket) {
   if (!ANTHROPIC_KEY) {
     console.log('⚠ No ANTHROPIC_API_KEY — skipping AI refinement');
-    return groups;
+    return { groups, actions: buildFallbackActions(diff) };
   }
 
-  console.log('🤖 Refining descriptions with Claude...');
+  console.log('🤖 Refining descriptions and actions with Claude...');
 
   const rawSummary = groups.map(g =>
     `${g.title}:\n${g.items.map(i => `  [${i.type}] ${i.title}: ${i.desc}`).join('\n')}`
   ).join('\n\n');
 
-  const prompt = `You are a design system documentation writer for Interwetten, an online betting platform.
+  const prompt = `You are a design system documentation writer for Interwetten, an online sports betting and casino platform. The IW Design Library is a Figma-based design system used across multiple markets (Germany, Austria, Spain, Sweden, Cyprus). It is maintained by the CXI team and consumed by frontend developers, QA testers, and UX designers.
 
-A Figma Design Library update (${version}${ticket ? `, Jira: ${ticket}` : ''}) has been published with the following raw technical changes:
+A new library update has been published (${version}${ticket ? `, Jira ticket: ${ticket}` : ''}). Here are the raw technical changes detected by comparing the Figma file before and after:
 
 ${rawSummary}
 
-Rewrite each item's description into a short, clear, human-readable sentence (max 15 words) that explains WHAT changed and WHY it matters — written for developers, designers and testers.
+Your task is to return a JSON object with two keys:
 
-Rules:
-- Keep it factual and concise
-- For "changed" items: mention old and new value if relevant
-- For "new" items: explain what it's used for
-- For "deprecated" items: mention it was removed
-- Do not invent reasons — only describe what the data shows
-- Write in English
+1. "items" — an array of refined descriptions for each changed style. For each item:
+   - "new" styles: write 1 short sentence explaining what the style is and when to use it. Include the key values (size, weight) naturally in the sentence.
+   - "changed" styles: write 1 short sentence explaining what changed and the impact. Always include old → new values.
+   - "deprecated" styles: write 1 short sentence explaining it was removed and what to use instead if obvious from the name.
+   - Max 20 words per description. Be specific, not generic.
 
-Return ONLY a valid JSON array, no markdown, no explanation. Format:
-[
-  { "title": "exact style name", "desc": "your refined description" },
-  ...
-]`;
+2. "actions" — an array of 2-4 specific, actionable strings for the "Action required" section. Each action must:
+   - Start with the role: "Developer:", "Designer:", or "Tester:"
+   - Be specific to the actual changes (mention style names, token names, or affected screens)
+   - Not be generic like "run regression tests" unless there are visual changes that require it
+   - Mention specific CSS properties, token names, or component names where relevant
+
+Context about the codebase:
+- CSS token naming convention: --body-xl-size, --body-xl-line-height, --label-m-size etc.
+- Text styles are used in React components across betting UI: odds displays, match cards, navigation, account screens
+- Markets: DE, AT, ES, SE, CY — some styles are market-specific
+
+Return ONLY valid JSON, no markdown, no explanation:
+{
+  "items": [
+    { "title": "exact style name from input", "desc": "refined description" }
+  ],
+  "actions": [
+    "Developer: specific action here",
+    "Tester: specific action here"
+  ]
+}`;
 
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -290,7 +320,7 @@ Return ONLY a valid JSON array, no markdown, no explanation. Format:
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
-        max_tokens: 1024,
+        max_tokens: 2048,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
@@ -298,13 +328,11 @@ Return ONLY a valid JSON array, no markdown, no explanation. Format:
     if (!res.ok) throw new Error(`Anthropic API error: ${res.status}`);
     const data = await res.json();
     const text = data.content?.[0]?.text ?? '';
+    const parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
 
-    // Parse JSON response
-    const refined = JSON.parse(text.replace(/```json|```/g, '').trim());
-    const refinedMap = Object.fromEntries(refined.map(r => [r.title, r.desc]));
-
-    // Apply refined descriptions back to groups
-    const updatedGroups = groups.map(group => ({
+    // Apply refined descriptions
+    const refinedMap = Object.fromEntries((parsed.items ?? []).map(r => [r.title, r.desc]));
+    const refinedGroups = groups.map(group => ({
       ...group,
       items: group.items.map(item => ({
         ...item,
@@ -312,27 +340,31 @@ Return ONLY a valid JSON array, no markdown, no explanation. Format:
       })),
     }));
 
-    console.log(`   ✅ Refined ${refined.length} descriptions`);
-    return updatedGroups;
+    const actions = parsed.actions?.length ? parsed.actions : buildFallbackActions(diff);
+
+    console.log(`   ✅ Refined ${(parsed.items ?? []).length} descriptions, ${actions.length} actions`);
+    return { groups: refinedGroups, actions };
 
   } catch (e) {
     console.warn('   ⚠ AI refinement failed, using raw descriptions:', e.message);
-    return groups;
+    return { groups, actions: buildFallbackActions(diff) };
   }
 }
 
-// ── BUILD ACTIONS ─────────────────────────────────────────────────────────────
+// ── FALLBACK ACTIONS (no AI) ──────────────────────────────────────────────────
 
-function buildActions(diff) {
+function buildFallbackActions(diff) {
   const actions = [];
-  if (diff.text.changed.length || diff.text.added.length)
-    actions.push('Developer: Check all text style implementations — sizes or weights may have changed.');
+  if (diff.text.added.length)
+    actions.push(`Developer: Add ${diff.text.added.length} new text style token(s) to global stylesheet.`);
+  if (diff.text.changed.length)
+    actions.push(`Developer: Update ${diff.text.changed.length} text style token(s) — check font sizes and line heights.`);
   if (diff.fill.changed.length || diff.fill.added.length)
     actions.push('Developer: Review color token updates in global stylesheet.');
   if (diff.components.added.length)
-    actions.push('Developer: New components available in Figma — check Dev Mode for specs.');
+    actions.push(`Developer: ${diff.components.added.length} new component(s) in Figma — check Dev Mode for specs.`);
   if (diff.components.removed.length)
-    actions.push('Developer: Some components were removed — check for usages in codebase.');
+    actions.push(`Developer: ${diff.components.removed.length} component(s) removed — check codebase for usages.`);
   if (diff.variables.changed.length || diff.variables.added.length)
     actions.push('Developer: Variable values updated — sync token export.');
   actions.push('Tester: Run regression tests on affected screens.');
@@ -368,10 +400,8 @@ async function main() {
   const version    = process.env.MANUAL_VERSION || nextVersion(changelog);
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
-  // Build raw groups then refine with Claude
-  const rawGroups     = buildGroups(diff);
-  const refinedGroups = await refineWithClaude(rawGroups, version, ticket);
-  const actions       = buildActions(diff);
+  const rawGroups = buildGroups(diff);
+  const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket);
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
   changelog.unshift(newEntry);
