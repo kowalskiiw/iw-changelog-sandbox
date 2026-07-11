@@ -50,5 +50,9 @@ jobs:
           git config --global user.name "IW Changelog Bot"
           git config --global user.email "changelog-bot@interwetten.com"
           git add changelog-data.json styles-snapshot.json
-          git diff --staged --quiet || git commit -m "chore: auto-update changelog via Figma publish"
+          if git diff --staged --quiet; then
+            echo "No changes detected — skipping commit and deploy"
+            exit 0
+          fi
+          git commit -m "chore: auto-update changelog via Figma publish"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
