@@ -1,5 +1,37 @@
 [
   {
+    "version": "v0.02",
+    "date": "2026-07-11",
+    "ticket": "no ticket",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/no ticket",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "test text stlye for changelog",
+            "desc": "{\"fontSize\":12,\"lineHeight\":15,\"fontWeight\":400,\"fontFamily\":\"Inter\",\"letterSpacing\":0}"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Test/Red-test",
+            "desc": "Removed from library."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Check all text style implementations — sizes or weights may have changed.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v0.01",
     "date": "2026-07-11",
     "ticket": "no ticket",
