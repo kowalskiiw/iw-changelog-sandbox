@@ -1,28 +1,20 @@
 /**
- * IW Design Library — Figma Changelog Generator
- * ------------------------------------------------
- * Fetches current text styles from Figma API,
- * compares against the saved snapshot,
- * generates a new entry in changelog-data.json,
- * and updates the snapshot for the next run.
- *
- * Environment variables required:
- *   FIGMA_TOKEN     — Figma Personal Access Token
- *   FIGMA_FILE_ID   — Figma file ID (from URL)
- *
- * Optional:
- *   MANUAL_VERSION  — e.g. "v1.3" (overrides auto-increment)
- *   MANUAL_TICKET   — e.g. "CXI-2010" (overrides branch name extraction)
- *   BRANCH_NAME     — passed from webhook payload
- *   TICKET_FROM_WEBHOOK — passed from webhook payload
+ * IW Design Library — Figma Changelog Generator (Full)
+ * ------------------------------------------------------
+ * Tracks ALL design changes:
+ *   - Text Styles (font size, weight, line height, family, letter spacing)
+ *   - Color Styles (fills, opacity)
+ *   - Effect Styles (shadows, blur)
+ *   - Grid Styles
+ *   - Variables (collections + values)
+ *   - Components (added, removed)
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
+
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
 
-// ── CONFIG ──────────────────────────────────────────────────────────────────
+// ── CONFIG ───────────────────────────────────────────────────────────────────
 
 const FIGMA_TOKEN   = process.env.FIGMA_TOKEN;
 const FIGMA_FILE_ID = process.env.FIGMA_FILE_ID;
@@ -31,246 +23,332 @@ const JIRA_BASE_URL = 'https://interwetten.atlassian.net/browse';
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
 
-// ── HELPERS ─────────────────────────────────────────────────────────────────
+// ── HELPERS ──────────────────────────────────────────────────────────────────
 
 function today() {
-  return new Date().toISOString().split('T')[0]; // "2026-07-10"
+  return new Date().toISOString().split('T')[0];
 }
 
-/**
- * Extract ticket number from branch name.
- * Expects format: "CXI-1946-some-description" or "CXI-1946"
- */
-function extractTicket(branchName = '') {
-  const match = branchName.match(/([A-Z]+-\d+)/);
+function extractTicket(str = '') {
+  const match = str.match(/([A-Z]+-\d+)/);
   return match ? match[1] : null;
 }
 
-/**
- * Auto-increment version from existing changelog.
- * e.g. "v1.2" → "v1.3"
- */
 function nextVersion(changelog) {
   if (!changelog.length) return 'v1.0';
-  const latest = changelog[0].version; // newest first
-  const [major, minor] = latest.replace('v', '').split('.').map(Number);
+  const [major, minor] = changelog[0].version.replace('v', '').split('.').map(Number);
   return `v${major}.${minor + 1}`;
 }
 
-/**
- * Normalize Figma style into a clean object for comparison.
- */
-function normalizeStyle(style) {
-  const t = style.style || {};
+function round2(n) {
+  return Math.round(n * 100) / 100;
+}
+
+// ── FIGMA API FETCH ───────────────────────────────────────────────────────────
+
+async function figmaGet(path) {
+  const res = await fetch(`https://api.figma.com/v1${path}`, {
+    headers: { 'X-Figma-Token': FIGMA_TOKEN }
+  });
+  if (!res.ok) throw new Error(`Figma API error ${res.status}: ${path}`);
+  return res.json();
+}
+
+// ── NORMALIZERS ───────────────────────────────────────────────────────────────
+
+function normalizeColor(r, g, b, a = 1) {
+  const hex = [r, g, b].map(v => Math.round(v * 255).toString(16).padStart(2, '0')).join('');
+  return `#${hex.toUpperCase()}${a < 1 ? ` (${Math.round(a * 100)}%)` : ''}`;
+}
+
+function normalizePaint(paint) {
+  if (!paint) return 'unknown';
+  if (paint.type === 'SOLID') {
+    const { r, g, b } = paint.color;
+    return normalizeColor(r, g, b, paint.opacity ?? 1);
+  }
+  if (paint.type.includes('GRADIENT')) return paint.type.toLowerCase().replace('_', ' ');
+  if (paint.type === 'IMAGE') return 'image fill';
+  return paint.type;
+}
+
+function normalizeTextStyle(style = {}) {
   return {
-    name:       style.name,
-    fontSize:   t.fontSize   ?? null,
-    lineHeight: typeof t.lineHeightPx !== 'undefined' ? Math.round(t.lineHeightPx) : null,
-    fontWeight: t.fontWeight ?? null,
-    fontFamily: t.fontFamily ?? null,
-    letterSpacing: t.letterSpacing ?? 0,
+    fontSize:      style.fontSize ?? null,
+    lineHeight:    style.lineHeightPx ? Math.round(style.lineHeightPx) : null,
+    fontWeight:    style.fontWeight ?? null,
+    fontFamily:    style.fontFamily ?? null,
+    letterSpacing: style.letterSpacing ? round2(style.letterSpacing) : 0,
   };
 }
 
-/**
- * Map change type to a human-readable description.
- */
-function describeChange(oldStyle, newStyle) {
-  const parts = [];
-  if (oldStyle.fontSize !== newStyle.fontSize)
-    parts.push(`fontSize: ${oldStyle.fontSize}px → ${newStyle.fontSize}px`);
-  if (oldStyle.lineHeight !== newStyle.lineHeight)
-    parts.push(`lineHeight: ${oldStyle.lineHeight}px → ${newStyle.lineHeight}px`);
-  if (oldStyle.fontWeight !== newStyle.fontWeight)
-    parts.push(`fontWeight: ${oldStyle.fontWeight} → ${newStyle.fontWeight}`);
-  if (oldStyle.fontFamily !== newStyle.fontFamily)
-    parts.push(`fontFamily: ${oldStyle.fontFamily} → ${newStyle.fontFamily}`);
-  if (oldStyle.letterSpacing !== newStyle.letterSpacing)
-    parts.push(`letterSpacing: ${oldStyle.letterSpacing} → ${newStyle.letterSpacing}`);
-  return parts.join(' · ');
+function normalizeEffectStyle(effects = []) {
+  return effects.map(e => {
+    if (e.type === 'DROP_SHADOW' || e.type === 'INNER_SHADOW') {
+      const { r, g, b, a } = e.color;
+      return `${e.type.toLowerCase().replace('_', ' ')}: offset ${e.offset.x}/${e.offset.y} blur ${e.radius} color ${normalizeColor(r, g, b, a)}`;
+    }
+    if (e.type === 'LAYER_BLUR' || e.type === 'BACKGROUND_BLUR') {
+      return `${e.type.toLowerCase().replace('_', ' ')}: radius ${e.radius}`;
+    }
+    return e.type;
+  }).join(' | ');
 }
 
-/**
- * Format a new style as description string.
- */
-function describeNew(style) {
-  const parts = [];
-  if (style.fontSize)   parts.push(`${style.fontSize}px`);
-  if (style.lineHeight) parts.push(`lh ${style.lineHeight}px`);
-  if (style.fontWeight) parts.push(`w${style.fontWeight}`);
-  if (style.fontFamily && style.fontFamily !== 'Roboto') parts.push(style.fontFamily);
-  return parts.join(' · ');
+function normalizeGridStyle(grids = []) {
+  return grids.map(g =>
+    `${g.pattern} count:${g.count ?? 'auto'} size:${g.sectionSize ?? g.gutterSize ?? '?'} gutter:${g.gutterSize ?? '?'}`
+  ).join(' | ');
 }
 
-// ── FETCH FIGMA STYLES ───────────────────────────────────────────────────────
+// ── FETCH ALL STYLES ──────────────────────────────────────────────────────────
 
-async function fetchFigmaStyles() {
-  console.log(`📡 Fetching styles from Figma file: ${FIGMA_FILE_ID}`);
+async function fetchAllStyles() {
+  console.log('📡 Fetching all styles from Figma...');
+  const { meta } = await figmaGet(`/files/${FIGMA_FILE_ID}/styles`);
+  const styles = meta?.styles ?? [];
+  console.log(`   Found ${styles.length} styles total`);
 
-  // Step 1: get style metadata (names + nodeIds)
-  const metaRes = await fetch(
-    `https://api.figma.com/v1/files/${FIGMA_FILE_ID}/styles`,
-    { headers: { 'X-Figma-Token': FIGMA_TOKEN } }
-  );
-  if (!metaRes.ok) throw new Error(`Figma API error: ${metaRes.status} ${metaRes.statusText}`);
-  const meta = await metaRes.json();
-
-  // Filter to text styles only
-  const textStyles = (meta.meta?.styles ?? []).filter(s => s.style_type === 'TEXT');
-  console.log(`   Found ${textStyles.length} text styles`);
-
-  if (!textStyles.length) {
-    throw new Error('No text styles found. Check FIGMA_FILE_ID and token permissions.');
+  // Group by type
+  const byType = { TEXT: [], FILL: [], EFFECT: [], GRID: [] };
+  for (const s of styles) {
+    if (byType[s.style_type]) byType[s.style_type].push(s);
   }
 
-  // Step 2: fetch actual style properties via nodes endpoint
-  const nodeIds = textStyles.map(s => s.node_id).join(',');
-  const nodesRes = await fetch(
-    `https://api.figma.com/v1/files/${FIGMA_FILE_ID}/nodes?ids=${nodeIds}`,
-    { headers: { 'X-Figma-Token': FIGMA_TOKEN } }
-  );
-  if (!nodesRes.ok) throw new Error(`Figma nodes API error: ${nodesRes.status}`);
-  const nodes = await nodesRes.json();
-
-  // Build normalized style map: { "Body/XL/Regular": { fontSize, lineHeight, ... } }
-  const styleMap = {};
-  for (const ts of textStyles) {
-    const node = nodes.nodes?.[ts.node_id]?.document;
-    if (!node) continue;
-    const normalized = normalizeStyle({ name: ts.name, style: node.style ?? {} });
-    styleMap[ts.name] = normalized;
+  // Fetch node details in batches of 50 (Figma API limit)
+  async function fetchNodes(styleList) {
+    if (!styleList.length) return {};
+    const result = {};
+    for (let i = 0; i < styleList.length; i += 50) {
+      const batch = styleList.slice(i, i + 50);
+      const ids = batch.map(s => s.node_id).join(',');
+      const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${ids}`);
+      for (const s of batch) {
+        result[s.name] = nodes?.[s.node_id]?.document ?? null;
+      }
+    }
+    return result;
   }
 
-  return styleMap;
+  const [textNodes, fillNodes, effectNodes, gridNodes] = await Promise.all([
+    fetchNodes(byType.TEXT),
+    fetchNodes(byType.FILL),
+    fetchNodes(byType.EFFECT),
+    fetchNodes(byType.GRID),
+  ]);
+
+  // Normalize into snapshot maps
+  const snapshot = {
+    text:    {},
+    fill:    {},
+    effect:  {},
+    grid:    {},
+    variables: {},
+    components: {},
+  };
+
+  for (const [name, node] of Object.entries(textNodes)) {
+    if (node) snapshot.text[name] = normalizeTextStyle(node.style ?? {});
+  }
+
+  for (const [name, node] of Object.entries(fillNodes)) {
+    if (node?.fills?.length) {
+      snapshot.fill[name] = normalizePaint(node.fills[0]);
+    }
+  }
+
+  for (const [name, node] of Object.entries(effectNodes)) {
+    if (node?.effects?.length) {
+      snapshot.effect[name] = normalizeEffectStyle(node.effects);
+    }
+  }
+
+  for (const [name, node] of Object.entries(gridNodes)) {
+    if (node?.layoutGrids?.length) {
+      snapshot.grid[name] = normalizeGridStyle(node.layoutGrids);
+    }
+  }
+
+  // Fetch variables
+  try {
+    console.log('   Fetching variables...');
+    const varData = await figmaGet(`/files/${FIGMA_FILE_ID}/variables/local`);
+    const collections = varData.meta?.variableCollections ?? {};
+    const variables   = varData.meta?.variables ?? {};
+
+    for (const [varId, variable] of Object.entries(variables)) {
+      const collection = collections[variable.variableCollectionId];
+      const collName   = collection?.name ?? 'Unknown';
+      const key        = `${collName} / ${variable.name}`;
+      // Take first mode value for comparison
+      const modeId     = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
+      const value      = variable.valuesByMode?.[modeId];
+      snapshot.variables[key] = JSON.stringify(value ?? null);
+    }
+    console.log(`   Found ${Object.keys(snapshot.variables).length} variables`);
+  } catch (e) {
+    console.warn('   Variables not accessible (requires Enterprise or specific scopes):', e.message);
+  }
+
+  // Fetch components
+  try {
+    console.log('   Fetching components...');
+    const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
+    const comps = compData.meta?.components ?? [];
+    for (const c of comps) {
+      snapshot.components[c.name] = c.key;
+    }
+    console.log(`   Found ${Object.keys(snapshot.components).length} components`);
+  } catch (e) {
+    console.warn('   Components fetch failed:', e.message);
+  }
+
+  return snapshot;
 }
 
-// ── DIFF ─────────────────────────────────────────────────────────────────────
+// ── DIFF ENGINE ───────────────────────────────────────────────────────────────
 
-function diffStyles(oldMap, newMap) {
+function diffMap(oldMap, newMap, describeChangeFn) {
   const added   = [];
   const changed = [];
   const removed = [];
 
-  // Check for new and changed
-  for (const [name, newStyle] of Object.entries(newMap)) {
-    if (!oldMap[name]) {
-      added.push({ name, style: newStyle });
+  for (const [name, newVal] of Object.entries(newMap)) {
+    if (oldMap[name] === undefined) {
+      added.push({ name, value: newVal });
     } else {
-      const desc = describeChange(oldMap[name], newStyle);
-      if (desc) changed.push({ name, style: newStyle, desc });
+      const desc = describeChangeFn(oldMap[name], newVal, name);
+      if (desc) changed.push({ name, desc });
     }
   }
 
-  // Check for removed
   for (const name of Object.keys(oldMap)) {
-    if (!newMap[name]) removed.push({ name });
+    if (newMap[name] === undefined) removed.push({ name });
   }
 
   return { added, changed, removed };
 }
 
-// ── GROUP CHANGES ─────────────────────────────────────────────────────────────
+function describeTextChange(old, nw) {
+  const parts = [];
+  if (old.fontSize   !== nw.fontSize)   parts.push(`fontSize: ${old.fontSize}px → ${nw.fontSize}px`);
+  if (old.lineHeight !== nw.lineHeight) parts.push(`lineHeight: ${old.lineHeight}px → ${nw.lineHeight}px`);
+  if (old.fontWeight !== nw.fontWeight) parts.push(`fontWeight: ${old.fontWeight} → ${nw.fontWeight}`);
+  if (old.fontFamily !== nw.fontFamily) parts.push(`fontFamily: ${old.fontFamily} → ${nw.fontFamily}`);
+  if (old.letterSpacing !== nw.letterSpacing) parts.push(`letterSpacing: ${old.letterSpacing} → ${nw.letterSpacing}`);
+  return parts.join(' · ');
+}
 
-/**
- * Groups changes by their style category prefix.
- * "Body/XL/Regular" → "Body"
- * "Headlines/H1/Desktop" → "Headlines"
- */
-function groupChanges(diff) {
-  const groups = {};
+function describeSimpleChange(oldVal, newVal) {
+  return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
+}
 
-  const add = (category, item) => {
-    if (!groups[category]) groups[category] = [];
-    groups[category].push(item);
+function buildDiff(oldSnap, newSnap) {
+  return {
+    text:       diffMap(oldSnap.text       ?? {}, newSnap.text,       describeTextChange),
+    fill:       diffMap(oldSnap.fill       ?? {}, newSnap.fill,       describeSimpleChange),
+    effect:     diffMap(oldSnap.effect     ?? {}, newSnap.effect,     describeSimpleChange),
+    grid:       diffMap(oldSnap.grid       ?? {}, newSnap.grid,       describeSimpleChange),
+    variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
+    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeSimpleChange),
   };
+}
 
-  for (const s of diff.added) {
-    const cat = s.name.split('/')[0];
-    add(cat, { type: 'new', title: s.name, desc: describeNew(s.style) });
-  }
-  for (const s of diff.changed) {
-    const cat = s.name.split('/')[0];
-    add(cat, { type: 'changed', title: s.name, desc: s.desc });
-  }
-  for (const s of diff.removed) {
-    const cat = s.name.split('/')[0];
-    add(cat, { type: 'deprecated', title: s.name, desc: 'Style removed from library.' });
+function totalChanges(diff) {
+  return Object.values(diff).reduce((sum, d) =>
+    sum + d.added.length + d.changed.length + d.removed.length, 0);
+}
+
+// ── BUILD CHANGELOG GROUPS ────────────────────────────────────────────────────
+
+function buildGroups(diff) {
+  const groups = [];
+
+  const CATEGORIES = [
+    { key: 'text',       label: 'Typography / Text Styles' },
+    { key: 'fill',       label: 'Color Styles' },
+    { key: 'effect',     label: 'Effect Styles' },
+    { key: 'grid',       label: 'Grid Styles' },
+    { key: 'variables',  label: 'Variables' },
+    { key: 'components', label: 'Components' },
+  ];
+
+  for (const { key, label } of CATEGORIES) {
+    const d = diff[key];
+    if (!d.added.length && !d.changed.length && !d.removed.length) continue;
+
+    const items = [];
+
+    for (const s of d.added) {
+      const desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
+      items.push({ type: 'new', title: s.name, desc });
+    }
+    for (const s of d.changed) {
+      items.push({ type: 'changed', title: s.name, desc: s.desc });
+    }
+    for (const s of d.removed) {
+      items.push({ type: 'deprecated', title: s.name, desc: 'Removed from library.' });
+    }
+
+    groups.push({ title: label, items });
   }
 
-  return Object.entries(groups).map(([title, items]) => ({ title, items }));
+  return groups;
 }
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-  if (!FIGMA_TOKEN)   throw new Error('Missing FIGMA_TOKEN environment variable');
-  if (!FIGMA_FILE_ID) throw new Error('Missing FIGMA_FILE_ID environment variable');
+  if (!FIGMA_TOKEN)   throw new Error('Missing FIGMA_TOKEN');
+  if (!FIGMA_FILE_ID) throw new Error('Missing FIGMA_FILE_ID');
 
-  // 1. Load existing data
   const changelog = existsSync(CHANGELOG_PATH)
     ? JSON.parse(readFileSync(CHANGELOG_PATH, 'utf8'))
     : [];
-  const snapshot = existsSync(SNAPSHOT_PATH)
+
+  const oldSnap = existsSync(SNAPSHOT_PATH)
     ? JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8'))
-    : {};
+    : { text: {}, fill: {}, effect: {}, grid: {}, variables: {}, components: {} };
 
-  // 2. Fetch current styles from Figma
-  const currentStyles = await fetchFigmaStyles();
+  const newSnap = await fetchAllStyles();
+  const diff    = buildDiff(oldSnap, newSnap);
+  const total   = totalChanges(diff);
 
-  // 3. Diff against snapshot
-  const diff = diffStyles(snapshot, currentStyles);
-  const totalChanges = diff.added.length + diff.changed.length + diff.removed.length;
+  // Always update snapshot
+  writeFileSync(SNAPSHOT_PATH, JSON.stringify(newSnap, null, 2));
 
-  if (totalChanges === 0) {
-    console.log('✅ No style changes detected. Changelog not updated.');
-    // Still update snapshot in case node IDs shifted
-    writeFileSync(SNAPSHOT_PATH, JSON.stringify(currentStyles, null, 2));
+  if (total === 0) {
+    console.log('✅ No changes detected — changelog not updated.');
     return;
   }
 
-  console.log(`📝 Changes detected: +${diff.added.length} new, ~${diff.changed.length} changed, -${diff.removed.length} removed`);
+  // Determine version + ticket
+  const branchName = process.env.BRANCH_NAME || '';
+  const ticket     = process.env.MANUAL_TICKET || extractTicket(branchName) || extractTicket(process.env.TICKET_FROM_WEBHOOK || '') || '';
+  const version    = process.env.MANUAL_VERSION || nextVersion(changelog);
+  const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
-  // 4. Determine version and ticket
-  const branchName  = process.env.BRANCH_NAME || '';
-  const ticketAuto  = extractTicket(branchName) || extractTicket(process.env.TICKET_FROM_WEBHOOK || '');
-  const version     = process.env.MANUAL_VERSION  || nextVersion(changelog);
-  const ticket      = process.env.MANUAL_TICKET   || ticketAuto || '';
-  const ticketUrl   = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
-
-  // 5. Build groups
-  const groups = groupChanges(diff);
-
-  // 6. Build actions (generic — can be manually refined after commit)
+  const groups  = buildGroups(diff);
   const actions = [];
-  if (diff.changed.length)
-    actions.push('Developer: Check all implementations of changed styles — values may have shifted.');
-  if (diff.added.length)
-    actions.push('Developer: Add new tokens to global stylesheet.');
-  if (diff.added.length)
-    actions.push('Designer: Review new styles in Figma before using in designs.');
-  if (diff.removed.length)
-    actions.push('Developer: Remove deprecated tokens from codebase.');
-    actions.push('Tester: Run regression tests on affected screens.');
 
-  // 7. Build new changelog entry
-  const newEntry = {
-    version,
-    date: today(),
-    ticket,
-    ticketUrl,
-    groups,
-    actions,
-  };
+  if (diff.text.changed.length || diff.text.added.length)
+    actions.push('Developer: Check all text style implementations — sizes or weights may have changed.');
+  if (diff.fill.changed.length || diff.fill.added.length)
+    actions.push('Developer: Review color token updates in global stylesheet.');
+  if (diff.components.added.length)
+    actions.push('Developer: New components available in Figma — check Dev Mode for specs.');
+  if (diff.components.removed.length)
+    actions.push('Developer: Some components were removed — check for usages in codebase.');
+  if (diff.variables.changed.length || diff.variables.added.length)
+    actions.push('Developer: Variable values updated — sync token export.');
+  actions.push('Tester: Run regression tests on affected screens.');
 
-  // 8. Prepend to changelog (newest first)
+  const newEntry = { version, date: today(), ticket, ticketUrl, groups, actions };
   changelog.unshift(newEntry);
-
-  // 9. Write files
   writeFileSync(CHANGELOG_PATH, JSON.stringify(changelog, null, 2));
-  writeFileSync(SNAPSHOT_PATH,  JSON.stringify(currentStyles, null, 2));
 
-  console.log(`✅ Changelog updated: ${version} (${today()}) — ${totalChanges} changes across ${groups.length} groups`);
-  console.log(`   Ticket: ${ticket || '(none — add manually)'}`);
+  console.log(`✅ Changelog updated: ${version} — ${total} changes across ${groups.length} categories`);
+  if (!ticket) console.log('   ⚠ No ticket detected — add manually to changelog-data.json if needed');
 }
 
 main().catch(err => {
