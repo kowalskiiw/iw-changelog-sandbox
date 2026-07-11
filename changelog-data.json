@@ -1,0 +1,121 @@
+[
+  {
+    "version": "v1.2",
+    "date": "2026-07-10",
+    "ticket": "CXI-1946",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1946",
+    "groups": [
+      {
+        "title": "Body Scale",
+        "items": [
+          {
+            "type": "new",
+            "title": "Body/XXL hinzugefügt",
+            "desc": "Neue oberste Body-Stufe für große Leseformate. 20px / lh 28px / w400+500+Underline"
+          },
+          {
+            "type": "changed",
+            "title": "Body/XL — Werte angepasst",
+            "desc": "fontSize: 20px → 18px · lineHeight: 28px → 24px. Bisherige XL-Werte werden jetzt von Body/XXL geführt."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS hinzugefügt",
+            "desc": "Kleinste Body-Stufe für Timestamps, Badges, Legal-Micro-Labels. 10px / lh 14px — nur für nicht-essentielle Textelemente."
+          }
+        ]
+      },
+      {
+        "title": "Figma Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Typography Variable Collection eingeführt",
+            "desc": "Alle Text Styles mit Figma Variables verknüpft. Typography / Primitives (interne Rohwerte) + Typography / Semantic (verwendbare Token). Dev Mode liefert ab sofort Token-Namen statt rohe px-Werte."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Alle body-xl Implementierungen prüfen — Font Size ändert sich von 20px auf 18px.",
+      "Developer: Neue Token --body-xxl-size: 20px und --body-xs-size: 10px in globales Stylesheet aufnehmen.",
+      "Designer: Bestehende Body/XL-Verwendungen prüfen — ggf. auf Body/XXL umstellen wo 20px gewünscht war.",
+      "Tester: Regression-Test für alle Screens mit Body/XL — visuelle Größe reduziert sich leicht."
+    ]
+  },
+  {
+    "version": "v1.1",
+    "date": "2025-10-23",
+    "ticket": "CXI-1938",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1938",
+    "groups": [
+      {
+        "title": "Club Headlines",
+        "items": [
+          {
+            "type": "new",
+            "title": "Club Headline Styles eingeführt",
+            "desc": "Neue Schriftfamilie Roboto Condensed für Club-Promotion-Teasers. Uppercase via CSS text-transform. Desktop: 48px / lh 48px · Mobile: 28px / lh 36px"
+          }
+        ]
+      },
+      {
+        "title": "Bugfixes",
+        "items": [
+          {
+            "type": "fixed",
+            "title": "Body XL Frame-Label korrigiert",
+            "desc": "Spec-Label zeigte falschen rem-Wert für Line Height: 1.5rem | 28px → 1.75rem | 28px"
+          },
+          {
+            "type": "fixed",
+            "title": "Overline S — führendes Leerzeichen entfernt",
+            "desc": "Frame-Label hatte ein führendes Leerzeichen vor dem rem-Wert. Nur Figma-Dokumentation betroffen, keine funktionale Änderung."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Roboto Condensed in Projekt-Assets sicherstellen. Club-Styles via text-transform: uppercase implementieren — kein Uppercase im HTML-Markup.",
+      "Tester: Club-Bereich auf korrektes Uppercase-Rendering prüfen."
+    ]
+  },
+  {
+    "version": "v1.0",
+    "date": "2024-10-15",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography Scale — Initial",
+        "items": [
+          {
+            "type": "new",
+            "title": "Display Styles",
+            "desc": "3 Größen: L (72px), M (60px), S (48px) · Roboto Regular + Medium · Desktop-only · lh ratio 1.0 intentional, single-line"
+          },
+          {
+            "type": "new",
+            "title": "Headline Styles H1–H5",
+            "desc": "Desktop und Mobile. H1 responsiv (40px Desktop / 36px Mobile). H2–H5 breakpoint-unabhängig."
+          },
+          {
+            "type": "new",
+            "title": "Body XL / L / M / S",
+            "desc": "Je Regular, Medium, Underline. Roboto. lh ratio 1.33–1.50."
+          },
+          {
+            "type": "new",
+            "title": "Title L / M / S · Label L / M / S · Overline L / M",
+            "desc": "Vollständige UI-Text-Scale für Komponenten, Captions und Kategorisierungselemente."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: IW Design Library als Figma-Library aktivieren. Text Styles über Dev Mode konsumieren.",
+      "Designer: Alle neuen Designs ausschließlich mit definierten Text Styles erstellen — keine manuellen Font-Size-Eingaben.",
+      "Tester: Baseline-Screenshots für Regressions-Vergleiche in Folge-Releases erstellen."
+    ]
+  }
+]

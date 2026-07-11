@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IW Design Library — Changelog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:             #ffffff;
+    --bg-subtle:      #fafafa;
+    --bg-card:        #fafafa;
+    --bg-card-hover:  #f5f5f5;
+    --border:         rgba(0,0,0,0.08);
+    --border-strong:  rgba(0,0,0,0.14);
+    --text-primary:   #111111;
+    --text-secondary: #666666;
+    --text-muted:     #AAAAAA;
+    --accent:         #111111;
+
+    --tag-new-bg:         rgba(0,0,0,0.04);
+    --tag-new-text:       #111111;
+    --tag-new-border:     rgba(0,0,0,0.10);
+    --tag-changed-bg:     rgba(0,0,0,0.04);
+    --tag-changed-text:   #111111;
+    --tag-changed-border: rgba(0,0,0,0.10);
+    --tag-fixed-bg:       rgba(0,0,0,0.04);
+    --tag-fixed-text:     #111111;
+    --tag-fixed-border:   rgba(0,0,0,0.10);
+    --tag-deprecated-bg:  rgba(0,0,0,0.03);
+    --tag-deprecated-text:#999999;
+    --tag-deprecated-border:rgba(0,0,0,0.07);
+    --tag-breaking-bg:    rgba(220,40,40,0.06);
+    --tag-breaking-text:  #CC2222;
+    --tag-breaking-border:rgba(220,40,40,0.18);
+
+    --chip-dev-bg:      rgba(0,0,0,0.04);
+    --chip-dev-text:    #888888;
+    --chip-design-bg:   rgba(0,0,0,0.04);
+    --chip-design-text: #888888;
+    --chip-test-bg:     rgba(0,0,0,0.04);
+    --chip-test-text:   #888888;
+
+    --dot-active:   #111111;
+    --dot-inactive: #DDDDDD;
+    --timeline-line:#EEEEEE;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-triangle {
+    width: 18px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .logo-divider {
+    width: 1px;
+    height: 16px;
+    background: var(--border-strong);
+    margin: 0 14px;
+  }
+  .header-product {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    letter-spacing: -.01em;
+  }
+  .header-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-left: 6px;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header-link {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color .15s;
+  }
+  .header-link:hover { color: var(--text-primary); }
+  .header-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #111111;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .15s;
+    line-height: 1;
+  }
+  .header-btn:hover { background: #333333; }
+
+  /* ── HERO ── */
+  .hero {
+    border-bottom: 1px solid var(--border);
+    padding: 80px 32px 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .hero-eyebrow-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-muted);
+  }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    color: var(--text-primary);
+    line-height: 1.1;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 480px;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .main {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    padding: 48px 0;
+    position: sticky;
+    top: 64px;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  .sidebar::-webkit-scrollbar { display: none; }
+  .sidebar-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+  .timeline-list {
+    list-style: none;
+    position: relative;
+  }
+  .timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--timeline-line);
+  }
+  .timeline-item {
+    position: relative;
+    padding: 0 0 20px 20px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--dot-inactive);
+    border: 1px solid var(--border-strong);
+    transition: all .2s;
+  }
+  .timeline-item.active::before {
+    background: var(--dot-active);
+    border-color: var(--dot-active);
+  }
+  .timeline-link {
+    text-decoration: none;
+    display: block;
+  }
+  .timeline-version {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color .15s;
+    letter-spacing: -.01em;
+    margin-bottom: 2px;
+  }
+  .timeline-item.active .timeline-version { color: var(--text-primary); }
+  .timeline-link:hover .timeline-version { color: var(--text-primary); }
+  .timeline-date-nav {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  /* ── ENTRIES ── */
+  .entries {
+    flex: 1;
+    padding: 48px 0 100px 64px;
+    border-left: 1px solid var(--border);
+    min-width: 0;
+  }
+
+  .entry {
+    margin-bottom: 80px;
+  }
+  .entry.hidden { display: none; }
+
+  /* Entry header */
+  .entry-header {
+    margin-bottom: 28px;
+  }
+  .entry-top-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .entry-version {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -.03em;
+  }
+  .entry-ticket {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+    letter-spacing: .01em;
+  }
+  .entry-ticket:hover { border-color: var(--border-strong); color: var(--text-primary); }
+  .entry-date-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: -.01em;
+  }
+  .entry-scope {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .chip {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    letter-spacing: .01em;
+  }
+
+  /* Change groups */
+  .change-group {
+    margin-bottom: 8px;
+  }
+  .change-group-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    padding-left: 2px;
+  }
+
+  /* Change items */
+  .change-item {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    margin-bottom: 4px;
+    transition: border-color .15s, background .15s;
+  }
+  .change-item:hover {
+    border-color: var(--border-strong);
+    background: var(--bg-card-hover);
+  }
+  .change-item-content { flex: 1; min-width: 0; }
+  .change-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    line-height: 1.4;
+    letter-spacing: -.01em;
+  }
+  .change-desc {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .change-token {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--text-secondary);
+  }
+  .val-old {
+    color: var(--text-muted);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+  }
+  .val-arrow { color: var(--text-muted); margin: 0 4px; }
+  .val-new {
+    color: var(--text-primary);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  /* Tags — now dots */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .tag-new        { background: #3DB876; }
+  .tag-changed    { background: #F5A623; }
+  .tag-fixed      { background: #4A90D9; }
+  .tag-deprecated { background: #AAAAAA; }
+  .tag-breaking   { background: #CC2222; }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-dot-new      { background: #3DB876; }
+  .legend-dot-fixed    { background: #4A90D9; }
+  .legend-dot-changed  { background: #F5A623; }
+
+  /* Action box */
+  .action-box {
+    margin-top: 12px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #FFF5DB;
+    border: 1px solid #f5a6234d;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .action-icon {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    opacity: .6;
+  }
+  .action-content { flex: 1; }
+  .action-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .action-list { list-style: none; }
+  .action-list li {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+  }
+  .action-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+  .action-list code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    background: rgba(0,0,0,0.06);
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: var(--text-primary);
+  }
+
+  /* Divider between entries */
+  .entry-divider {
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 80px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    display: none;
+    padding: 80px 0;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .empty-state.visible { display: block; }
+
+  /* Footer */
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    max-width: 100%;
+  }
+  .site-footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color .15s;
+  }
+  .site-footer a:hover { color: var(--text-primary); }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 2px; }
+
+  @media (max-width: 768px) {
+    .sidebar { display: none; }
+    .main { padding: 0 20px; }
+    .entries { padding-left: 0; border-left: none; }
+    .site-header { padding: 0 20px; }
+    .hero { padding: 48px 20px 40px; }
+    .hero h1 { font-size: 28px; }
+    .header-right { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-left">
+    <a href="#" class="logo-mark">
+      <!-- Vercel-style triangle logo -->
+      <svg class="logo-triangle" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#111111"/>
+      </svg>
+    </a>
+    <div class="logo-divider"></div>
+    <span class="header-product">IW Design Library</span>
+    <span class="header-sub">/ Changelog</span>
+  </div>
+  <div class="header-right">
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot legend-dot-new"></div>New</div>
+      <div class="legend-item"><div class="legend-dot legend-dot-fixed"></div>Fixed</div>
+      <div class="legend-item"><div class="legend-dot legend-dot-changed"></div>Changed</div>
+    </div>
+    <div style="width:1px;height:16px;background:var(--border-strong)"></div>
+    <a href="https://interwetten.atlassian.net" target="_blank" class="header-link">Confluence</a>
+    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank" class="header-link">Figma</a>
+    <a href="https://interwetten.atlassian.net/jira" target="_blank" class="header-btn">Jira →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div style="border-bottom: 1px solid var(--border);">
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-dot"></div>
+      IW Design System
+    </div>
+    <h1>Design Library Changelog</h1>
+    <p class="hero-sub">Track every change to the IW Design Library — type styles, components, tokens, and documentation updates across all releases.</p>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- SIDEBAR — rendered dynamically -->
+  <nav class="sidebar" aria-label="Versionen">
+    <div class="sidebar-label">Releases</div>
+    <ul class="timeline-list" id="timelineList"></ul>
+  </nav>
+
+  <!-- ENTRIES — rendered dynamically -->
+  <main class="entries" id="entries">
+    <div class="empty-state" id="emptyState">No changelog entries found.</div>
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <span>IW Design Library · Interwetten CXI Team</span>
+  <div style="display:flex;gap:20px">
+    <a href="https://interwetten.atlassian.net" target="_blank">Confluence</a>
+    <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank">Figma</a>
+    <a href="https://interwetten.atlassian.net/jira" target="_blank">Jira</a>
+  </div>
+</footer>
+
+<script>
+  // ── RENDER ENGINE ──────────────────────────────────────────────────────────
+
+  const DOT_COLORS = {
+    new:        '#3DB876',
+    changed:    '#F5A623',
+    fixed:      '#4A90D9',
+    deprecated: '#AAAAAA',
+    breaking:   '#CC2222',
+  };
+
+  function dot(type) {
+    const color = DOT_COLORS[type] || '#AAAAAA';
+    return `<span class="tag tag-${type}" style="background:${color}"></span>`;
+  }
+
+  function renderItem(item) {
+    return `
+      <div class="change-item">
+        ${dot(item.type)}
+        <div class="change-item-content">
+          <div class="change-title">${escHtml(item.title)}</div>
+          ${item.desc ? `<div class="change-desc">${escHtml(item.desc)}</div>` : ''}
+        </div>
+      </div>`;
+  }
+
+  function renderGroup(group) {
+    return `
+      <div class="change-group">
+        <div class="change-group-title">${escHtml(group.title)}</div>
+        ${group.items.map(renderItem).join('')}
+      </div>`;
+  }
+
+  function renderActions(actions) {
+    if (!actions || !actions.length) return '';
+    return `
+      <div class="action-box">
+        <div class="action-icon">↗</div>
+        <div class="action-content">
+          <div class="action-title">Action required</div>
+          <ul class="action-list">
+            ${actions.map(a => `<li>${escHtml(a)}</li>`).join('')}
+          </ul>
+        </div>
+      </div>`;
+  }
+
+  function renderEntry(entry, isLast) {
+    const ticketEl = entry.ticket
+      ? `<a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
+      : `<span class="entry-ticket" style="cursor:default">Initial Release</span>`;
+
+    return `
+      <article class="entry" id="${escHtml(entry.version)}">
+        <div class="entry-header">
+          <div class="entry-top-row">
+            <span class="entry-version">${escHtml(entry.version)}</span>
+            ${ticketEl}
+          </div>
+          <div class="entry-date-label">${escHtml(entry.date)}</div>
+        </div>
+        ${(entry.groups || []).map(renderGroup).join('')}
+        ${renderActions(entry.actions)}
+      </article>
+      ${!isLast ? '<div class="entry-divider"></div>' : ''}`;
+  }
+
+  function renderTimeline(entries) {
+    return entries.map((entry, i) => `
+      <li class="timeline-item${i === 0 ? ' active' : ''}" data-version="${escHtml(entry.version)}">
+        <a href="#${escHtml(entry.version)}" class="timeline-link">
+          <div class="timeline-version">${escHtml(entry.version)}</div>
+          <div class="timeline-date-nav">${escHtml(entry.date)}</div>
+        </a>
+      </li>`).join('');
+  }
+
+  function escHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── LOAD & RENDER ──────────────────────────────────────────────────────────
+
+  async function init() {
+    let data = [];
+
+    try {
+      const res = await fetch('changelog-data.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    } catch (err) {
+      console.warn('Could not load changelog-data.json:', err.message);
+    }
+
+    const entriesEl  = document.getElementById('entries');
+    const timelineEl = document.getElementById('timelineList');
+    const emptyEl    = document.getElementById('emptyState');
+
+    if (!data.length) {
+      emptyEl.classList.add('visible');
+      return;
+    }
+
+    timelineEl.innerHTML = renderTimeline(data);
+    entriesEl.innerHTML  = data.map((e, i) => renderEntry(e, i === data.length - 1)).join('') +
+                           '<div class="empty-state" id="emptyState"></div>';
+
+    // Intersection observer for timeline active state
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          document.querySelectorAll('.timeline-item').forEach(item => {
+            item.classList.toggle('active', item.dataset.version === id);
+          });
+        }
+      });
+    }, { rootMargin: '-10% 0px -80% 0px' });
+
+    document.querySelectorAll('.entry[id]').forEach(el => observer.observe(el));
+  }
+
+  init();
+</script>
+</body>
+</html>

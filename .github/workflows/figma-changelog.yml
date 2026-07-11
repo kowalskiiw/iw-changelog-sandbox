@@ -1,0 +1,53 @@
+name: Figma Changelog Generator
+
+on:
+  # Triggered by Figma webhook via GitHub repository_dispatch
+  repository_dispatch:
+    types: [figma-library-publish]
+
+  # Also allows manual trigger from GitHub UI for testing
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g. v1.3)'
+        required: false
+        default: ''
+      ticket:
+        description: 'Jira ticket (e.g. CXI-2010)'
+        required: false
+        default: ''
+
+jobs:
+  generate-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install node-fetch
+
+      - name: Run Figma diff script
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+          MANUAL_VERSION: ${{ github.event.inputs.version }}
+          MANUAL_TICKET: ${{ github.event.inputs.ticket }}
+          # From webhook payload (set automatically when Figma triggers)
+          BRANCH_NAME: ${{ github.event.client_payload.branch_name }}
+          TICKET_FROM_WEBHOOK: ${{ github.event.client_payload.ticket }}
+        run: node .github/scripts/generate-changelog.js
+
+      - name: Commit updated changelog
+        run: |
+          git config --global user.name "IW Changelog Bot"
+          git config --global user.email "changelog-bot@interwetten.com"
+          git add changelog-data.json styles-snapshot.json
+          git diff --staged --quiet || git commit -m "chore: auto-update changelog via Figma publish"
+          git push
