@@ -1,5 +1,44 @@
 [
   {
+    "version": "v0.03",
+    "date": "2026-07-11",
+    "ticket": "CXI-1946",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1946",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "copytext-xs",
+            "desc": "10px · lh 16px · w400 · Inter · ls 1"
+          },
+          {
+            "type": "changed",
+            "title": "test text stlye for changelog",
+            "desc": "lineHeight: 15px → 20px"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "light-blue-100",
+            "desc": "#41C5AD"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 1 new text style token(s) to global stylesheet.",
+      "Developer: Update 1 text style token(s) — check font sizes and line heights.",
+      "Developer: Review color token updates in global stylesheet.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v0.02",
     "date": "2026-07-11",
     "ticket": "no ticket",

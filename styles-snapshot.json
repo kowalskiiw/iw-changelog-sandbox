@@ -441,9 +441,16 @@
       "fontFamily": "Roboto",
       "letterSpacing": 0
     },
+    "copytext-xs": {
+      "fontSize": 10,
+      "lineHeight": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "letterSpacing": 1
+    },
     "test text stlye for changelog": {
       "fontSize": 12,
-      "lineHeight": 15,
+      "lineHeight": 20,
       "fontWeight": 400,
       "fontFamily": "Inter",
       "letterSpacing": 0
@@ -606,7 +613,8 @@
     "Yellow/600": "#CCA800",
     "Yellow/300": "#FFE570",
     "Yellow/200": "#FFED9B",
-    "Yellow/150": "#FFF3BF"
+    "Yellow/150": "#FFF3BF",
+    "light-blue-100": "#41C5AD"
   },
   "effect": {
     "Background Blur/Small": "background blur: radius 10",
