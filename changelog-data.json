@@ -1,5 +1,363 @@
 [
   {
+    "version": "test-2",
+    "date": "2026-07-11",
+    "ticket": "test-2",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/test-2",
+    "groups": [
+      {
+        "title": "Display",
+        "items": [
+          {
+            "type": "new",
+            "title": "Display/Medium/L",
+            "desc": "72px · lh 72px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/M",
+            "desc": "60px · lh 60px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/M",
+            "desc": "60px · lh 60px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/S",
+            "desc": "48px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/S",
+            "desc": "48px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/L",
+            "desc": "72px · lh 72px · w400"
+          }
+        ]
+      },
+      {
+        "title": "Title",
+        "items": [
+          {
+            "type": "new",
+            "title": "Title/L/Underline",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Regular",
+            "desc": "18px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Medium",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Medium",
+            "desc": "14px · lh 20px · w500"
+          }
+        ]
+      },
+      {
+        "title": "Label",
+        "items": [
+          {
+            "type": "new",
+            "title": "Label/L/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Regular",
+            "desc": "10px · lh 14px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Underline",
+            "desc": "10px · lh 14px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Medium",
+            "desc": "10px · lh 14px · w500"
+          }
+        ]
+      },
+      {
+        "title": "Body",
+        "items": [
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Medium",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Underline",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Regular",
+            "desc": "20px · lh 28px · w400"
+          }
+        ]
+      },
+      {
+        "title": "Helpers",
+        "items": [
+          {
+            "type": "new",
+            "title": "Helpers/H1",
+            "desc": "140px · lh 164px · w400"
+          }
+        ]
+      },
+      {
+        "title": "Headlines",
+        "items": [
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Desktop",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Mobile",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Mobile",
+            "desc": "36px · lh 44px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Mobile",
+            "desc": "36px · lh 44px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Mobile",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Mobile",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Desktop",
+            "desc": "40px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Mobile",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Mobile",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Mobile",
+            "desc": "28px · lh 36px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Desktop",
+            "desc": "40px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Desktop",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Mobile",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Desktop",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Desktop",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Desktop",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Desktop",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Desktop",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Mobile",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Desktop",
+            "desc": "48px · lh 48px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Mobile",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Desktop",
+            "desc": "28px · lh 36px · w500"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add new tokens to global stylesheet.",
+      "Designer: Review new styles in Figma before using in designs.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v1.2",
     "date": "2026-07-10",
     "ticket": "CXI-1946",

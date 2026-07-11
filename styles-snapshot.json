@@ -1,1 +1,506 @@
-{}
+{
+  "Display/Medium/L": {
+    "name": "Display/Medium/L",
+    "fontSize": 72,
+    "lineHeight": 72,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Display/Medium/M": {
+    "name": "Display/Medium/M",
+    "fontSize": 60,
+    "lineHeight": 60,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/L/Underline": {
+    "name": "Title/L/Underline",
+    "fontSize": 18,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/L/Underline": {
+    "name": "Label/L/Underline",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/L/Regular": {
+    "name": "Title/L/Regular",
+    "fontSize": 18,
+    "lineHeight": 24,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/L/Medium": {
+    "name": "Title/L/Medium",
+    "fontSize": 18,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/S/Regular": {
+    "name": "Label/S/Regular",
+    "fontSize": 10,
+    "lineHeight": 14,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/L/Regular": {
+    "name": "Label/L/Regular",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/S/Underline": {
+    "name": "Title/S/Underline",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/M/Underline": {
+    "name": "Label/M/Underline",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/Overline/L/Regular": {
+    "name": "Body/Overline/L/Regular",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0.7000000000000001
+  },
+  "Body/S/Medium": {
+    "name": "Body/S/Medium",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/XL/Medium": {
+    "name": "Body/XL/Medium",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/L/Medium": {
+    "name": "Body/L/Medium",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/L/Underline": {
+    "name": "Body/L/Underline",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/XL/Underline": {
+    "name": "Body/XL/Underline",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/M/Underline": {
+    "name": "Body/M/Underline",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/S/Underline": {
+    "name": "Body/S/Underline",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/M/Regular": {
+    "name": "Body/M/Regular",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/Overline/M/Regular": {
+    "name": "Body/Overline/M/Regular",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0.6000000000000001
+  },
+  "Title/M/Regular": {
+    "name": "Title/M/Regular",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/M/Medium": {
+    "name": "Label/M/Medium",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/S/Regular": {
+    "name": "Title/S/Regular",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/M/Medium": {
+    "name": "Title/M/Medium",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/S/Underline": {
+    "name": "Label/S/Underline",
+    "fontSize": 10,
+    "lineHeight": 14,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/L/Regular": {
+    "name": "Body/L/Regular",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Display/Regular/M": {
+    "name": "Display/Regular/M",
+    "fontSize": 60,
+    "lineHeight": 60,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/M/Regular": {
+    "name": "Label/M/Regular",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/M/Medium": {
+    "name": "Body/M/Medium",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Display/Medium/S": {
+    "name": "Display/Medium/S",
+    "fontSize": 48,
+    "lineHeight": 48,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Display/Regular/S": {
+    "name": "Display/Regular/S",
+    "fontSize": 48,
+    "lineHeight": 48,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/M/Underline": {
+    "name": "Title/M/Underline",
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Title/S/Medium": {
+    "name": "Title/S/Medium",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/Overline/M/Medium": {
+    "name": "Body/Overline/M/Medium",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0.6000000000000001
+  },
+  "Label/L/Medium": {
+    "name": "Label/L/Medium",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Display/Regular/L": {
+    "name": "Display/Regular/L",
+    "fontSize": 72,
+    "lineHeight": 72,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/S/Regular": {
+    "name": "Body/S/Regular",
+    "fontSize": 12,
+    "lineHeight": 16,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Helpers/H1": {
+    "name": "Helpers/H1",
+    "fontSize": 140,
+    "lineHeight": 164,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Body/Overline/L/Medium": {
+    "name": "Body/Overline/L/Medium",
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0.7000000000000001
+  },
+  "Body/XL/Regular": {
+    "name": "Body/XL/Regular",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Label/S/Medium": {
+    "name": "Label/S/Medium",
+    "fontSize": 10,
+    "lineHeight": 14,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H4/Medium/Desktop": {
+    "name": "Headlines/H4/Medium/Desktop",
+    "fontSize": 24,
+    "lineHeight": 32,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H4/Medium/Mobile": {
+    "name": "Headlines/H4/Medium/Mobile",
+    "fontSize": 24,
+    "lineHeight": 32,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H1/Medium/Mobile": {
+    "name": "Headlines/H1/Medium/Mobile",
+    "fontSize": 36,
+    "lineHeight": 44,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H1/Regular/Mobile": {
+    "name": "Headlines/H1/Regular/Mobile",
+    "fontSize": 36,
+    "lineHeight": 44,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H2/Medium/Mobile": {
+    "name": "Headlines/H2/Medium/Mobile",
+    "fontSize": 32,
+    "lineHeight": 40,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H4/Regular/Mobile": {
+    "name": "Headlines/H4/Regular/Mobile",
+    "fontSize": 24,
+    "lineHeight": 32,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H1/Medium/Desktop": {
+    "name": "Headlines/H1/Medium/Desktop",
+    "fontSize": 40,
+    "lineHeight": 48,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H3/Regular/Mobile": {
+    "name": "Headlines/H3/Regular/Mobile",
+    "fontSize": 28,
+    "lineHeight": 36,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H3/Medium/Mobile": {
+    "name": "Headlines/H3/Medium/Mobile",
+    "fontSize": 28,
+    "lineHeight": 36,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/Club/Mobile": {
+    "name": "Headlines/Club/Mobile",
+    "fontSize": 28,
+    "lineHeight": 36,
+    "fontWeight": 500,
+    "fontFamily": "Roboto Condensed",
+    "letterSpacing": 0
+  },
+  "Headlines/H1/Regular/Desktop": {
+    "name": "Headlines/H1/Regular/Desktop",
+    "fontSize": 40,
+    "lineHeight": 48,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H3/Regular/Desktop": {
+    "name": "Headlines/H3/Regular/Desktop",
+    "fontSize": 28,
+    "lineHeight": 36,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H2/Regular/Mobile": {
+    "name": "Headlines/H2/Regular/Mobile",
+    "fontSize": 32,
+    "lineHeight": 40,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H2/Medium/Desktop": {
+    "name": "Headlines/H2/Medium/Desktop",
+    "fontSize": 32,
+    "lineHeight": 40,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H4/Regular/Desktop": {
+    "name": "Headlines/H4/Regular/Desktop",
+    "fontSize": 24,
+    "lineHeight": 32,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H5/Medium/Desktop": {
+    "name": "Headlines/H5/Medium/Desktop",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H2/Regular/Desktop": {
+    "name": "Headlines/H2/Regular/Desktop",
+    "fontSize": 32,
+    "lineHeight": 40,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H5/Regular/Desktop": {
+    "name": "Headlines/H5/Regular/Desktop",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H5/Regular/Mobile": {
+    "name": "Headlines/H5/Regular/Mobile",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 400,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/Club/Desktop": {
+    "name": "Headlines/Club/Desktop",
+    "fontSize": 48,
+    "lineHeight": 48,
+    "fontWeight": 500,
+    "fontFamily": "Roboto Condensed",
+    "letterSpacing": 0
+  },
+  "Headlines/H5/Medium/Mobile": {
+    "name": "Headlines/H5/Medium/Mobile",
+    "fontSize": 20,
+    "lineHeight": 28,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  },
+  "Headlines/H3/Medium/Desktop": {
+    "name": "Headlines/H3/Medium/Desktop",
+    "fontSize": 28,
+    "lineHeight": 36,
+    "fontWeight": 500,
+    "fontFamily": "Roboto",
+    "letterSpacing": 0
+  }
+}
