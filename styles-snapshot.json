@@ -599,7 +599,8 @@
     "Yellow/600": "#CCA800",
     "Yellow/300": "#FFE570",
     "Yellow/200": "#FFED9B",
-    "Yellow/150": "#FFF3BF"
+    "Yellow/150": "#FFF3BF",
+    "Test/Red-test": "#971313"
   },
   "effect": {
     "Background Blur/Small": "background blur: radius 10",

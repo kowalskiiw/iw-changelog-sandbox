@@ -1,5 +1,27 @@
 [
   {
+    "version": "v0.01",
+    "date": "2026-07-11",
+    "ticket": "no ticket",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/no ticket",
+    "groups": [
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Test/Red-test",
+            "desc": "#971313"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Review color token updates in global stylesheet.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "neu",
     "date": "2026-07-11",
     "ticket": "neu",
