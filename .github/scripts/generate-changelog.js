@@ -105,9 +105,12 @@ async function fetchAllStyles() {
   console.log(`   Found ${styles.length} styles total`);
 
   const byType = { TEXT: [], FILL: [], EFFECT: [], GRID: [] };
+  const figmaDescriptions = {};
   for (const s of styles) {
     if (byType[s.style_type]) byType[s.style_type].push(s);
+    if (s.description) figmaDescriptions[s.name] = s.description;
   }
+  console.log(`   Found ${Object.keys(figmaDescriptions).length} style descriptions`);
 
   async function fetchNodes(styleList) {
     if (!styleList.length) return {};
@@ -166,7 +169,7 @@ async function fetchAllStyles() {
     console.warn('   Components fetch failed:', e.message);
   }
 
-  return snapshot;
+  return { snapshot, figmaDescriptions };
 }
 
 // ── DIFF ENGINE ───────────────────────────────────────────────────────────────
@@ -262,7 +265,7 @@ function buildGroups(diff) {
 
 // ── CLAUDE AI REFINEMENT ──────────────────────────────────────────────────────
 
-async function refineWithClaude(groups, diff, version, ticket) {
+async function refineWithClaude(groups, diff, version, ticket, figmaDescriptions = {}) {
   if (!ANTHROPIC_KEY) {
     console.log('⚠ No ANTHROPIC_API_KEY — skipping AI refinement');
     return { groups, actions: buildFallbackActions(diff) };
@@ -271,7 +274,10 @@ async function refineWithClaude(groups, diff, version, ticket) {
   console.log('🤖 Refining descriptions and actions with Claude...');
 
   const rawSummary = groups.map(g =>
-    `${g.title}:\n${g.items.map(i => `  [${i.type}] ${i.title}: ${i.desc}`).join('\n')}`
+    `${g.title}:\n${g.items.map(i => {
+      const figmaDesc = figmaDescriptions[i.title] ? ` (Figma description: "${figmaDescriptions[i.title]}")` : '';
+      return `  [${i.type}] ${i.title}: ${i.desc}${figmaDesc}`;
+    }).join('\n')}`
   ).join('\n\n');
 
   const prompt = `You are a design system documentation writer for Interwetten, an online sports betting and casino platform. The IW Design Library is a Figma-based design system used across multiple markets (Germany, Austria, Spain, Sweden, Cyprus). It is maintained by the CXI team and consumed by frontend developers, QA testers, and UX designers.
@@ -384,7 +390,7 @@ async function main() {
     ? JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8'))
     : { text: {}, fill: {}, effect: {}, grid: {}, variables: {}, components: {} };
 
-  const newSnap = await fetchAllStyles();
+  const { snapshot: newSnap, figmaDescriptions } = await fetchAllStyles();
   const diff    = buildDiff(oldSnap, newSnap);
   const total   = totalChanges(diff);
 
@@ -401,7 +407,7 @@ async function main() {
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
   const rawGroups = buildGroups(diff);
-  const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket);
+  const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
   changelog.unshift(newEntry);
