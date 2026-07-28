@@ -1,5 +1,1144 @@
 [
   {
+    "version": "v0.5",
+    "date": "2026-07-28",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "🌮 Body/S/Medium",
+            "desc": "12px · lh 16px · w500 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/XXL",
+            "desc": "32px · lh 36px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/L/Regular",
+            "desc": "16px · lh 24px · w400 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/XL",
+            "desc": "28px · lh 32px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/L",
+            "desc": "24px · lh 28px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/M",
+            "desc": "20px · lh 24px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/S",
+            "desc": "16px · lh 20px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/XS",
+            "desc": "14px · lh 20px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/L/Medium",
+            "desc": "16px · lh 24px · w500 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/L/Bold",
+            "desc": "16px · lh 24px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/M (Default)/Regular",
+            "desc": "14px · lh 20px · w400 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/M (Default)/Medium",
+            "desc": "14px · lh 20px · w500 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/M (Default)/Bold",
+            "desc": "14px · lh 20px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/S/Bold",
+            "desc": "12px · lh 16px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Metric/S",
+            "desc": "16px · lh 20px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Metric/M",
+            "desc": "24px · lh 28px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Metric/L",
+            "desc": "28px · lh 32px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Heading/XXS",
+            "desc": "12px · lh 16px · w653 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Body/S/Regular",
+            "desc": "12px · lh 16px · w400 · Atlassian Sans"
+          },
+          {
+            "type": "new",
+            "title": "🌮 Code/Code",
+            "desc": "12px · lh 20px · w400 · Atlassian Mono"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Humans/Silhouette",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Effie",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Robi Lopez",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Eliot",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Notes",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Fran Perez",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Refresh",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Rocket",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Simon Maclaughlin-Tai",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Fabian",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Raul Gonzalez",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Gael",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Silhouette Dark",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Priya Hansra",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Plane",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Power",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Settings",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Annika Rangarajan",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Spanner",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Andres Ramos",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Yeti",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Science",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Michael Henderson",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Other / Clickable",
+            "desc": "#FFFFFF (0%)"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Red flag",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Lightning",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Money",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Mountains",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Mouse hand",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Claudia",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Jen Holloway",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Boat",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Narul",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Maribel",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/CD",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Myra",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Ed",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Blair",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Lara",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Collin",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Renato",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Dunya Syed",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Norah",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Dev Rana",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Milo",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Loom Record",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Amar Sundaram",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Rahul",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Ivan",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Brooke Hadwor",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Oliver",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/David Hsieh",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Helena",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Christine Sanchez",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Unicorn",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Joshua Williams",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Molly Clark",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans / Samuel Hall",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans / Stefanie Auer",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Omar Darboe",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Phan Kim",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Abdullah Ibrahim",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Arjun",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Andrea Wilson",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Magnifying Glass",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Annie Clare",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Video",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Life Ring",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Canvas",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Design",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Dirk Pink",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Eli Young",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Coffee",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Florence Applebee",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Rocket",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Thomas Beckerie",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Paper airplane",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Fidelis Ejima",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Austin Lambert",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Alexander",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Aoife Burke",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Aliza",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Cat",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Gabrielle Bossio",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Alvin",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Celebration",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Florence Garcia",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Angie",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Beeboop",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Code",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Leo",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Steve",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Tanya",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Tori",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Vania",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Bird",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Cloud",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Code",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/ID",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Hina Aurora",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Default",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Drill",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Jane Rotanson",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Jie Yan Song",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Lightning",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Andrew Park",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Megaphone",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Apple",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Food",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Electric Vehicle",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Lifesaver",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Bradley Phillips",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Liam Estrada",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Koala",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Graph",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Brian Lin",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Maia Ma",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Melanie Lee",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Michael Chu",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Olivia Yang",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Compass",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Anthony Chen",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Laila Ali",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans / Taha Kandemir",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Shopping Cart",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Gears",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Tracking",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Light Bulb",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Vrej Shahanian",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Sun",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Jenna Nangong",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Service bell",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Hasan",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/IT",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Battery",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Star",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Government",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Grace Harris",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Katina",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Luna Delacour",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Pencil",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans / Eva Lien",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Soulintha Douang",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Storefront",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Omar Salah",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Connie Blog",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Louis Au",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Support Wrench",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Gerard",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Roshini Malik",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Science",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Crystal Wu",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Jolin Xu",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Priyanka Mehta",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects/Phone",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Graduation",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans / Donald Stephens",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Mia McDougall",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Phone",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Plant",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Zack Bishop",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Rohan Kaur",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Shield",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Charles Rex",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Mail",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Veronica Rodriguez",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Group",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Belle Adams",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/HR Badge",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Issac Varghese",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Launch Ship",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Palm Tree",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Store Bag",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Kayla Parajuli",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Map",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Hassana Ajayi",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Meeples / Lydia",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Bank",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Loom Video",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Claire Harrington",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Victoria Styles",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Stopwatch",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Zlatica Chalupka",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Cloud",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Matthew Bertrand",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Humans/Darius Pavri",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Book",
+            "desc": "image fill"
+          },
+          {
+            "type": "new",
+            "title": "Projects (new)/Pin",
+            "desc": "image fill"
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Dark/elevation.shadow.overflow",
+            "desc": "drop shadow: offset 0/0 blur 12 color #010404 (56%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Dark/elevation.shadow.raised",
+            "desc": "inner shadow: offset 0/0 blur 0 color #000000 (0%) | drop shadow: offset 0/1 blur 1 color #010404 (50%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Dark/elevation.shadow.overlay",
+            "desc": "inner shadow: offset 0/0 blur 0 color #BDBDBD (12%) | drop shadow: offset 0/8 blur 12 color #010404 (36%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Light/elevation.shadow.overlay",
+            "desc": "drop shadow: offset 0/8 blur 12 color #1E1F21 (15%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (31%)"
+          },
+          {
+            "type": "new",
+            "title": "Light/elevation.shadow.overflow",
+            "desc": "drop shadow: offset 0/0 blur 8 color #1E1F21 (16%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (12%)"
+          },
+          {
+            "type": "new",
+            "title": "Light/elevation.shadow.raised",
+            "desc": "drop shadow: offset 0/1 blur 1 color #1E1F21 (25%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (31%)"
+          }
+        ]
+      },
+      {
+        "title": "Grid Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Grid types/Fixed Narrow",
+            "desc": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2"
+          },
+          {
+            "type": "new",
+            "title": "Grid types/Fixed Wide",
+            "desc": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2"
+          },
+          {
+            "type": "new",
+            "title": "Grid types/Fluid",
+            "desc": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Grid type=Fixed Narrow",
+            "desc": "beaad7d2a7e8bea90df91e766c6f77cb7a5ff299"
+          },
+          {
+            "type": "new",
+            "title": "Grid type=Fixed Wide",
+            "desc": "d349df18809fd27f5ff27a15d6fc19d8740e3a63"
+          },
+          {
+            "type": "new",
+            "title": "Grid type=Fluid",
+            "desc": "fbd5b17d705ca81ff3e8ca8aab311ee06ecd7bd1"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 20 new text style token(s) to global stylesheet.",
+      "Developer: Review color token updates in global stylesheet.",
+      "Developer: 3 new component(s) in Figma — check Dev Mode for specs.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v0.04",
     "date": "2026-07-11",
     "ticket": "",
