@@ -1,5 +1,322 @@
 [
   {
+    "version": "v2026.08.03.27",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Label/S/Medium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/M/Regular",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/L/Medium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/S/Regular",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/L/Underline",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/M/Underline",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/S/Underline",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/M/Medium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Label/L/Regular",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "divider-old/bottom/light",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "divider-old/right/dark",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "divider-old/bottom/medium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "divider-old/left/dark",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "focus state-old",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "divider-old/top+bottom/dark",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "divider-old/bottom/dark",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Grid Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Small Grid",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Large Grid",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Medium - Sportsbook",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Medium Grid",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Android",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "iOS",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Casino/Desktop 1920",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Casino/Mobile 360",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Extra Large Grid",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Type=Initials, Notification=Off, State=Hover",
+            "desc": "5065f676fe35f46a2820d9df4623b830817a7b81 → 88ad90504d29e230dca7909669a038a5a13bff69"
+          },
+          {
+            "type": "changed",
+            "title": "Type=Image, Notification=On, State=Hover",
+            "desc": "652f4b0702940407e461ccb2e0878f05e0cc802a → 7ca01a2421c409c3d48976cedbde4fdf69b92d0a"
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Mouseover, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Focus, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Pressed, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Loading, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Disabled, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Focus, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Loading, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Default, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Default, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Mouseover, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Disabled, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Pressed, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 30 component(s) removed — check codebase for usages.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.03.26",
     "date": "2026-08-03",
     "ticket": "",

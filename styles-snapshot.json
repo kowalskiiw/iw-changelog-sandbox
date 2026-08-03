@@ -70,16 +70,6 @@
       },
       "description": null
     },
-    "Label/S/Medium": {
-      "value": {
-        "fontSize": 10,
-        "lineHeight": 14,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Headlines/H3/Regular/Mobile": {
       "value": {
         "fontSize": 28,
@@ -105,16 +95,6 @@
         "fontSize": 20,
         "lineHeight": 28,
         "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/M/Regular": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 16,
-        "fontWeight": 400,
         "fontFamily": "Roboto",
         "letterSpacing": 0
       },
@@ -180,16 +160,6 @@
       },
       "description": null
     },
-    "Label/L/Medium": {
-      "value": {
-        "fontSize": 14,
-        "lineHeight": 20,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Body/XL/Underline": {
       "value": {
         "fontSize": 20,
@@ -204,46 +174,6 @@
       "value": {
         "fontSize": 16,
         "lineHeight": 24,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/S/Regular": {
-      "value": {
-        "fontSize": 10,
-        "lineHeight": 14,
-        "fontWeight": 400,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/L/Underline": {
-      "value": {
-        "fontSize": 14,
-        "lineHeight": 20,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/M/Underline": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 16,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/S/Underline": {
-      "value": {
-        "fontSize": 10,
-        "lineHeight": 14,
         "fontWeight": 500,
         "fontFamily": "Roboto",
         "letterSpacing": 0
@@ -400,16 +330,6 @@
       },
       "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is mobile only"
     },
-    "Label/M/Medium": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 16,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Title/L/Underline": {
       "value": {
         "fontSize": 18,
@@ -525,16 +445,6 @@
         "fontSize": 12,
         "lineHeight": 16,
         "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Label/L/Regular": {
-      "value": {
-        "fontSize": 14,
-        "lineHeight": 20,
-        "fontWeight": 400,
         "fontFamily": "Roboto",
         "letterSpacing": 0
       },
@@ -1262,34 +1172,6 @@
     }
   },
   "effect": {
-    "divider-old/bottom/light": {
-      "value": "drop shadow: offset 0/1 blur 0 color #ECECEC",
-      "description": null
-    },
-    "divider-old/right/dark": {
-      "value": "drop shadow: offset 1/0 blur 0 color #000000 (10%)",
-      "description": null
-    },
-    "divider-old/bottom/medium": {
-      "value": "drop shadow: offset 0/1 blur 0 color #E3E3E3",
-      "description": null
-    },
-    "divider-old/left/dark": {
-      "value": "drop shadow: offset -1/0 blur 0 color #000000 (10%)",
-      "description": null
-    },
-    "focus state-old": {
-      "value": "inner shadow: offset 2.75/0 blur 0 color #2194FF | inner shadow: offset 0/2.75 blur 0 color #2194FF | inner shadow: offset -2.75/0 blur 0 color #2194FF | inner shadow: offset 0/-2.75 blur 0 color #2194FF",
-      "description": null
-    },
-    "divider-old/top+bottom/dark": {
-      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3 | drop shadow: offset 0/-1 blur 0 color #D3D3D3",
-      "description": null
-    },
-    "divider-old/bottom/dark": {
-      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3",
-      "description": null
-    },
     "Shadows/Extra Small": {
       "value": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)",
       "description": "The lowest elevation — a tight, barely-there shadow. For elements that need to lift off the background just slightly: input fields, tags, or subtle dividers between surfaces."
@@ -1327,116 +1209,18 @@
       "description": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as on top of the content below."
     }
   },
-  "grid": {
-    "Small Grid": {
-      "value": "COLUMNS count:4 size:1 gutter:16 | ROWS count:-1 size:4 gutter:0",
-      "description": "Best for mobile\nBreakpoint: 320px - 600px"
-    },
-    "Large Grid": {
-      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "Medium - Sportsbook": {
-      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "Medium Grid": {
-      "value": "COLUMNS count:8 size:-7.5 gutter:16 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "Android": {
-      "value": "COLUMNS count:6 size:4.666666507720947 gutter:8 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "iOS": {
-      "value": "COLUMNS count:6 size:6 gutter:8 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "Casino/Desktop 1920": {
-      "value": "ROWS count:-1 size:4 gutter:0 | COLUMNS count:6 size:-103.33333587646484 gutter:16",
-      "description": null
-    },
-    "Casino/Mobile 360": {
-      "value": "COLUMNS count:2 size:36 gutter:8 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    },
-    "Extra Large Grid": {
-      "value": "COLUMNS count:12 size:100 gutter:16 | ROWS count:-1 size:4 gutter:0",
-      "description": null
-    }
-  },
+  "grid": {},
   "variables": {},
   "components": {
     "Status=Critical/Error": "b88a8920ee5963c6ce3995a807c911eda1352a0d",
     "Status=Warning": "5a7c4be561b3468b93e54062e22f0ee02d995de5",
     "Status=Pending": "7d304f9594b9f1c9c6deef596d81a98093c79436",
     "Status=Success": "94e6ab701bd8279b9c1a3337efe47483dcb903ab",
-    "Platform=Mobile, Categories=New": "ad94b5d75e0c0e95bfbd0c5391cd09425a42abc4",
-    "Platform=Desktop, Categories=Exclusive": "434dc88fd14019d1b0508d941fbc45e1efcc3fb9",
-    "Platform = Mobile, Categories = Popular": "ec2b159adc470d6539164d2044307f5488e28421",
-    "Platform=Desktop, Categories=New": "3f024152539239af31d98428bd326778f76f2d00",
-    "Platform = Mobile, Categories = Exclusive": "5c04270f676cc50c681df63c1bc56bcac2ca6889",
-    "Platform=Desktop, Categories=Intern": "c6e511b0b17efa80be29f3f65b6072da960d7f9b",
-    "Platform=Desktop, Categories=Daily Jackpot": "323411c0da88664765a455cc40a9962fdebe2b06",
-    "Platform=Mobile, Categories=Daily Jackpot": "62cb07e0695a5c3c13b849b0b105339e3a00e06c",
-    "Platform=Desktop, Categories=Promotion": "05be9d56cd4412671a547012ccbc0132656116b3",
-    "Platform=Desktop, Categories=Jackpot": "c3cb1600bb67cd7cd9896774e48d1b785509a008",
-    "Platform = Mobile, Categories = Promotion": "8e599256204a9c8454f70d58caf64e1b42e9130e",
-    "Platform = Mobile, Categories = Jackpot": "a5fc650f99b95f1ac5c76bdc9a9a38cf9f3c3e53",
-    "Platform=Desktop, Categories=Popular": "c614867d68bffd7910e5d25cdfda03e163bb08ef",
-    "Platform=Desktop, Categories=Freebet": "a301b54128caf5f8fcce2191a74e3d103019081e",
-    "Platform = Mobile, Categories = Intern": "ad9d5c250215cbd0bd2839bc048fbd39232f83ad",
-    "Platform = Mobile, Categories = Freebet": "4cbfc0e6763ceb2f68663cf1a097fe81b24c6282",
     "Type=Initials, Notification=Off, State=Default": "783469f0c704626703cbd3e84a1963ae99e9eec2",
     "Type=User, Notification=Off, State=Default": "8a36c99609158de40bc30fe85f0898e91d3c04b1",
     "Type=User, Notification=On, State=Hover": "3f99261523d136b19ac73c24b5602c33c0dcfd44",
     "Type=Image, Notification=Off, State=Default": "f675c7d7141b5cf7d363866ccfed1b063bcd1c46",
-    "Type=Text + Icon (Default), State=Loading, Size=L (Default)": "8b362204748f78c7091c8695e79e580544b59506",
-    "Type=Text + Icon (Default), State=Mouseover, Size=L (Default)": "77a28da201b72f23bdb15aa45f40ced6da408da0",
-    "Type=Icon, State=Mouseover, Size=S": "fc1f5385128d64758095491ddc745e5505fc441b",
-    "Type=Icon, State=Focus, Size=S": "eefdbc6105de3f5a35468a779b81fae5239d357c",
-    "Type=Icon, State=Pressed, Size=L (Default)": "554d176402cf1ee3e67bd73bb046f3ee951212f0",
-    "Type=Text + Icon (Default), State=Pressed, Size=L (Default)": "3f58abb7c7816ca07eb2c8145d250796212ad215",
-    "Type=Icon, State=Pressed, Size=S": "d1f86f9e816302faa2fd6fd91f8284376b1135f3",
-    "Type=Text + Icon (Default), State=Disabled, Size=L (Default)": "fe4d29339a40014262d49c440b979a1701a400fb",
-    "Type=Icon, State=Disabled, Size=L (Default)": "0e4fde7011187f862f0a68dd0f835b4f93658087",
-    "Type=Icon, State=Loading, Size=S": "6f974c728682c94e88968a11cfd0ff7908edff37",
-    "Type=Icon, State=Disabled, Size=S": "297789cda44ae0eebac835c516a2fadd9ddc775b",
-    "Type=Icon, State=Loading, Size=L (Default)": "a3848ac340168edd646dc578bf23be539da04501",
-    "State=Default, Size=L (Default)": "64d32a78f821b7f7403d2c6e2c9f587fcede2a58",
-    "State=Focus, Size=S": "5ddc1810a10fc528eeedbc16592c9516d23980d9",
-    "State=Loading, Size=S": "cabffe95886d4e0ad5cf62188fa4d9429bd90561",
-    "State=Default, Size=S": "ce7f47437e2b5c83b76fb8353b780f80902c6f3e",
-    "State=Mouseover, Size=L (Default)": "35f0b83d681c6bba43863c90af9603b9782e9f3b",
-    "Type=Error, Size=Medium, Focus=High": "c6e658da036a4bd769fe3ab37834da2b77a44289",
     "Type=Information, Size=Medium, Focus=High": "991826ccd22a76bb71997fc4593c0f098150e580",
-    "Type=Information, Size=Small, Focus=High": "3ec7464aeb9a96d5b71970b674ab9415fb2a93f1",
-    "Type=Error, Size=Small, Focus=High": "642da049cfeef26913d20f03cb4e0e14ae50e967",
-    "Type=Information, Size=Small, Focus=Low": "8cb8913fbc27212403617c169b6bbfd15fa1aeaa",
-    "Type=Information, Size=Medium, Focus=Low": "b84b95dd06f170ead4b41febf87ae54f65ee1bd6",
-    "Type=Success, Size=Medium, Focus=Low": "0bcb138b39e387a869da5fa66af7f3950509c49d",
-    "State=Focus, Size=L (Default)": "ac05294e98d6cf722f9e6ea0ad8fa5c3075f3201",
-    "Type=Error, Size=Medium, Focus=Low": "3984cf90e7a43595f6cb1b01c3abb85b5d8ca73a",
-    "Type=Error, Size=Small, Focus=Low": "f649a1b32e9f8e37616d27233ae69f2471ae0048",
-    "Type=Success, Size=Medium, Focus=High": "05be977660b9d811559349a264ebcb5702a8778c",
-    "Type=Warning, Size=Medium, Focus=Low": "8965719a17c4de8e62ba989ace0fb079bf070883",
-    "Type=Success, Size=Small, Focus=Low": "e66127eaf322bf1d042719a21b1c8c573517f405",
-    "Type=Warning, Size=Medium, Focus=High": "b8fc64e750611ae94fed1690aba8ffefcf82de99",
-    "Type=Warning, Size=Small, Focus=Low": "591546a8249710d535aa6f184843b11971bd962d",
-    "Type=Success, Size=Small, Focus=High": "00f436d992955e459ecd865d31c8dfd57acbb3a0",
-    "Type=Warning, Size=Small, Focus=High": "307a6d2c7df0a6dd0545ae16d1a014369b2e490b",
-    "Type=Icon, State=Focus, Size=L (Default)": "90ba5fb66832e6d02514ba479598eee97cfe00f6",
-    "Type=Icon, State=Default, Size=L (Default)": "20d5baad67a969eb6797dd965be9ae46499dcd40",
-    "Type=Text + Icon (Default), State=Default, Size=L (Default)": "455c52fcc5480fde1ccbbf608a517425b3d045d3",
-    "Type=Icon, State=Mouseover, Size=L (Default)": "8361d5c077df8ca35599cff34d6104b23f1d466b",
-    "Type=Icon, State=Default, Size=S": "814377e92790c18b6385e3ae2d5a0e8a157405c8",
-    "Type=Text + Icon (Default), State=Focus, Size=L (Default)": "f3e0a02767943a2ad26141204970336d869c9fba",
-    "State=Mouseover, Size=S": "43e9a40a22a2ac84b27213a634a0848535bc3695",
-    "State=Disabled, Size=S": "b3e901e5b76951cba431c0bb8fdab63d4286797c",
-    "State=Pressed, Size=S": "a7bcd5a7bfa95ddd9124ccfaf8e93a63a300a409",
-    "State=Pressed, Size=L (Default)": "0eecb0c7ba499868434a3a0a84904d927179c7aa",
-    "State=Disabled, Size=L (Default)": "8605c14f6c8ade140567bf8ede59d9ead185b774",
-    "State=Loading, Size=L (Default)": "40b17c2d89248791d9b865315a3aaea907f2d99b",
     "Type=Divider, Orientation=Horizontal, Size=4px": "3edf10300f86356d3abb1fa11cee6af89ade4e74",
     "Type=Filled, Orientation=Vertical, Size=160px": "23adb6eb5d94f3851b5d8791878bc3f189e3fce2",
     "Type=Divider, Orientation=Vertical, Size=4px": "b8eb1e1cbb4b67c8d9dea7e3af6b6aae392674e7",
@@ -1897,13 +1681,44 @@
     "Avatar/Casino/XS": "7b7c5da7fda7b7976e9df2114142d77e7d0c7f20",
     "Badges/Marketing": "ded5744681fa7e23c4c2f62de6f98b14e0fd31f3",
     "Badge/Default": "e0a8094074c7d0a251c043cef6a618ed560b8b11",
-    "Type=Image, Notification=On, State=Hover": "652f4b0702940407e461ccb2e0878f05e0cc802a",
-    "Type=Initials, Notification=Off, State=Hover": "5065f676fe35f46a2820d9df4623b830817a7b81",
     "Type=Initials, Notification=On, State=Default": "1f8a873a199e25540cc3e2488ccfd8442d639627",
     "Type=User, Notification=Off, State=Hover": "611cab6a3c2cff6920c50747dfd0d60365d0b4cc",
     "Type=Image, Notification=On, State=Default": "3791186c187b63397bde66eaa73df93c10b295c9",
     "Type=Image, Notification=Off, State=Hover": "059fb40f2402ae76f270b34bbde72793f1e795b1",
+    "Type=Initials, Notification=On, State=Hover": "1b41585d074b0e612c970c7a24dd5041c9ab6e2c",
+    "Platform=Desktop, Categories=New": "3f024152539239af31d98428bd326778f76f2d00",
+    "Platform=Desktop, Categories=Exclusive": "434dc88fd14019d1b0508d941fbc45e1efcc3fb9",
+    "Platform = Mobile, Categories = Freebet": "4cbfc0e6763ceb2f68663cf1a097fe81b24c6282",
+    "Type=Success, Size=Small, Focus=High": "00f436d992955e459ecd865d31c8dfd57acbb3a0",
+    "Type=Success, Size=Medium, Focus=High": "05be977660b9d811559349a264ebcb5702a8778c",
+    "Platform=Desktop, Categories=Promotion": "05be9d56cd4412671a547012ccbc0132656116b3",
+    "Type=Success, Size=Medium, Focus=Low": "0bcb138b39e387a869da5fa66af7f3950509c49d",
+    "Type=Warning, Size=Small, Focus=High": "307a6d2c7df0a6dd0545ae16d1a014369b2e490b",
+    "Platform=Desktop, Categories=Daily Jackpot": "323411c0da88664765a455cc40a9962fdebe2b06",
+    "Type=Error, Size=Medium, Focus=Low": "3984cf90e7a43595f6cb1b01c3abb85b5d8ca73a",
+    "Type=Initials, Notification=Off, State=Hover": "88ad90504d29e230dca7909669a038a5a13bff69",
+    "Type=Information, Size=Small, Focus=High": "3ec7464aeb9a96d5b71970b674ab9415fb2a93f1",
+    "Type=Warning, Size=Small, Focus=Low": "591546a8249710d535aa6f184843b11971bd962d",
+    "Platform = Mobile, Categories = Exclusive": "5c04270f676cc50c681df63c1bc56bcac2ca6889",
+    "Platform=Mobile, Categories=Daily Jackpot": "62cb07e0695a5c3c13b849b0b105339e3a00e06c",
+    "Type=Error, Size=Small, Focus=High": "642da049cfeef26913d20f03cb4e0e14ae50e967",
+    "Type=Image, Notification=On, State=Hover": "7ca01a2421c409c3d48976cedbde4fdf69b92d0a",
+    "Type=Warning, Size=Medium, Focus=Low": "8965719a17c4de8e62ba989ace0fb079bf070883",
+    "Type=Information, Size=Small, Focus=Low": "8cb8913fbc27212403617c169b6bbfd15fa1aeaa",
+    "Platform = Mobile, Categories = Promotion": "8e599256204a9c8454f70d58caf64e1b42e9130e",
+    "Platform=Desktop, Categories=Freebet": "a301b54128caf5f8fcce2191a74e3d103019081e",
+    "Platform = Mobile, Categories = Jackpot": "a5fc650f99b95f1ac5c76bdc9a9a38cf9f3c3e53",
+    "Platform=Mobile, Categories=New": "ad94b5d75e0c0e95bfbd0c5391cd09425a42abc4",
+    "Platform = Mobile, Categories = Intern": "ad9d5c250215cbd0bd2839bc048fbd39232f83ad",
+    "Type=Information, Size=Medium, Focus=Low": "b84b95dd06f170ead4b41febf87ae54f65ee1bd6",
+    "Type=Warning, Size=Medium, Focus=High": "b8fc64e750611ae94fed1690aba8ffefcf82de99",
+    "Platform=Desktop, Categories=Jackpot": "c3cb1600bb67cd7cd9896774e48d1b785509a008",
+    "Platform=Desktop, Categories=Popular": "c614867d68bffd7910e5d25cdfda03e163bb08ef",
+    "Platform=Desktop, Categories=Intern": "c6e511b0b17efa80be29f3f65b6072da960d7f9b",
+    "Type=Error, Size=Medium, Focus=High": "c6e658da036a4bd769fe3ab37834da2b77a44289",
     "Type=User, Notification=On, State=Default": "f2a7134b45eb172693893066b1431dfa3f64afdc",
-    "Type=Initials, Notification=On, State=Hover": "1b41585d074b0e612c970c7a24dd5041c9ab6e2c"
+    "Type=Success, Size=Small, Focus=Low": "e66127eaf322bf1d042719a21b1c8c573517f405",
+    "Platform = Mobile, Categories = Popular": "ec2b159adc470d6539164d2044307f5488e28421",
+    "Type=Error, Size=Small, Focus=Low": "f649a1b32e9f8e37616d27233ae69f2471ae0048"
   }
 }
