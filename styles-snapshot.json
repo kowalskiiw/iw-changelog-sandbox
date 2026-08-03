@@ -1212,21 +1212,358 @@
   "grid": {},
   "variables": {},
   "components": {
-    "Badges/Account status": "4::c76643d47d61",
-    "Avatar/XS": "12::f02f39e3ec12",
-    "Avatar/SM": "12::b0345085d694",
-    "Alerts Default (Inline)": "16::60682cebbe79",
-    "Spacer": "84::8b7c978ea3e6",
-    "Betslip (Inline)": "2::02f2a93fe706",
-    "Secondary Buttons": "96::23e6fa47d009",
-    "Primary Buttons": "270::1ddd01fe1a6e",
-    "Banner": "4::9b63b46a011a",
-    "Badges/Apps": "1::7c817ad3e95b",
-    "Badge/Betslip": "1::40a1b247422f",
-    "Avatar/Casino/Bonus": "1::8d6327e6517d",
-    "Avatar/Casino/XS": "1::7ed80878a11b",
-    "Badges/Marketing": "1::ba45bd9c7b9e",
-    "Badge/Default": "1::9cad8b57c753",
-    "Badges/Casino": "16::3b3ee43edd03"
+    "Badges/Account status": {
+      "count": 4,
+      "layers": {
+        "alerts/warning-filled": [
+          "sw1"
+        ],
+        "alerts/warning-filled / Vector": [
+          "fill:#BB1B1B;sw4"
+        ],
+        "Text": [
+          "fill:#BB1B1B;sw1"
+        ],
+        "(root)": [
+          "fill:#FDF3F3;stroke:#F1B4B4;sw1;r2"
+        ]
+      }
+    },
+    "Avatar/XS": {
+      "count": 12,
+      "layers": {
+        ".AvatarXS": [
+          "sw1;r800"
+        ],
+        ".AvatarXS / Background": [
+          "fill:#FFD200;stroke:#CCA800;sw1"
+        ],
+        ".AvatarXS / image": [
+          "fill:img:d6a3cdfbed6f3a222b4282d8585b4a61b2ad13c5;sw1"
+        ],
+        ".AvatarXS / Text": [
+          "fill:#232323;sw1"
+        ],
+        ".AvatarXS / system/user-locked": [
+          "sw1"
+        ],
+        ".AvatarXS / system/user-locked / Vector": [
+          "fill:#232323;sw1"
+        ],
+        ".AvatarXS / .Notifications": [
+          "fill:#1C652C;sw0.75;r75"
+        ],
+        ".AvatarXS / .Notifications / Text": [
+          "fill:#FFFFFF;sw0.75"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Avatar/SM": {
+      "count": 12,
+      "layers": {
+        ".AvatarSmall": [
+          "sw1;r800"
+        ],
+        ".AvatarSmall / Background": [
+          "fill:#FFD200;stroke:#CCA800;sw1"
+        ],
+        ".AvatarSmall / image": [
+          "fill:img:d6a3cdfbed6f3a222b4282d8585b4a61b2ad13c5;sw1"
+        ],
+        ".AvatarSmall / Text": [
+          "fill:#232323;sw1"
+        ],
+        ".AvatarSmall / system/user-locked": [
+          "sw1"
+        ],
+        ".AvatarSmall / system/user-locked / Vector": [
+          "fill:#232323;sw1"
+        ],
+        ".AvatarSmall / .Notifications": [
+          "fill:#1C652C;sw0.75;r75"
+        ],
+        ".AvatarSmall / .Notifications / Text": [
+          "fill:#FFFFFF;sw0.75"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Alerts Default (Inline)": {
+      "count": 16,
+      "layers": {
+        "Padding": [
+          "fill:#F1F8FF;stroke:#A7D5FF;sw1;r4"
+        ],
+        "Padding / alerts/info-circle-filled": [
+          "sw1"
+        ],
+        "Padding / alerts/info-circle-filled / Vector": [
+          "fill:#1575CF;sw1"
+        ],
+        "Padding / .Alert Base/Medium": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Text": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Text / Text": [
+          "fill:#001A33;sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": [
+          "fill:#FFD200;sw1;r2"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": [
+          "fill:#000000;sw1"
+        ],
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": [
+          "fill:#1575CF;sw1"
+        ],
+        "Padding / .Alert Base/Medium / navigation/cross-small": [
+          "sw1"
+        ],
+        "Padding / .Alert Base/Medium / navigation/cross-small / Vector": [
+          "fill:#000000;sw0"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Spacer": {
+      "count": 84,
+      "layers": {
+        "Line 5": [
+          "stroke:#FF0000;sw1"
+        ],
+        "Line 6": [
+          "stroke:#FF0000;sw1"
+        ],
+        "Line 7": [
+          "stroke:#FF0000;sw1"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Betslip (Inline)": {
+      "count": 2,
+      "layers": {
+        "Container": [
+          "fill:#F0FBF3;stroke:#A4E6B3;sw1"
+        ],
+        "Container / Icon": [
+          "sw1"
+        ],
+        "Container / Icon / alerts/checkmark-filled-1": [
+          "sw1"
+        ],
+        "Container / Icon / alerts/checkmark-filled-1 / Vector": [
+          "fill:#25873A;sw1"
+        ],
+        "Container / Text": [
+          "sw1"
+        ],
+        "Container / Text / Text": [
+          "fill:#0B2811;sw1"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Secondary Buttons": {
+      "count": 96,
+      "layers": {
+        "Padding": [
+          "sw1"
+        ],
+        "Padding / .ButtonBase/Text": [
+          "sw1"
+        ],
+        "Padding / .ButtonBase/Text / Text": [
+          "sw1"
+        ],
+        "Padding / .ButtonBase/Text / Text / Text": [
+          "fill:#939393;sw1"
+        ],
+        "(root)": [
+          "stroke:#939393;sw1;r2"
+        ]
+      }
+    },
+    "Primary Buttons": {
+      "count": 270,
+      "layers": {
+        ".ButtonBase/Text+Icon": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Left": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Left / navigation/chevron-left": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Left / navigation/chevron-left / Vector": [
+          "fill:#FFFFFF;sw1"
+        ],
+        ".ButtonBase/Text+Icon / Text": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Text / Text": [
+          "fill:#FFFFFF;sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Right": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Right / navigation/chevron-right": [
+          "sw1"
+        ],
+        ".ButtonBase/Text+Icon / Icon Right / navigation/chevron-right / Vector": [
+          "fill:#FFFFFF;sw1"
+        ],
+        "(root)": [
+          "fill:#333333;sw1;r2"
+        ]
+      }
+    },
+    "Banner": {
+      "count": 4,
+      "layers": {
+        "Container": [
+          "fill:#FDF3F3;stroke:#F1B4B4;sw1;r4"
+        ],
+        "Container / alerts/warning-circle-filled": [
+          "sw1"
+        ],
+        "Container / alerts/warning-circle-filled / Vector": [
+          "fill:#BB1B1B;sw1"
+        ],
+        "Container / Text": [
+          "sw1"
+        ],
+        "Container / Text / Text": [
+          "fill:#2B0808;sw1"
+        ],
+        "Container / navigation/cross-mini": [
+          "sw1"
+        ],
+        "Container / navigation/cross-mini / Vector": [
+          "fill:#000000;sw1"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Badges/Apps": {
+      "count": 1,
+      "layers": {
+        "Badge": [
+          "sw1"
+        ],
+        "Badge / Badges/Apps": [
+          "fill:#FFD200;sw0.9549988508224487"
+        ],
+        "Badge / Text": [
+          "fill:#000000;sw0.9549988508224487"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Badge/Betslip": {
+      "count": 1,
+      "layers": {
+        "Text": [
+          "fill:#FFFFFF;sw1"
+        ],
+        "(root)": [
+          "fill:#25873A;sw1;r60"
+        ]
+      }
+    },
+    "Avatar/Casino/Bonus": {
+      "count": 1,
+      "layers": {
+        "Background": [
+          "fill:#FFD200;stroke:#CCA800;sw1"
+        ],
+        "Image": [
+          "fill:img:b2887bd476d6a2f8ca3764d75533d88b6cca773b;sw1"
+        ],
+        "(root)": [
+          "sw0.875;r700"
+        ]
+      }
+    },
+    "Avatar/Casino/XS": {
+      "count": 1,
+      "layers": {
+        "Game Provider": [
+          "sw1"
+        ],
+        "Game Provider / Vector": [
+          "fill:#DC5527;sw1"
+        ],
+        "(root)": [
+          "fill:#FFFFFF;stroke:#FFFFFF;sw2;r40"
+        ]
+      }
+    },
+    "Badges/Marketing": {
+      "count": 1,
+      "layers": {
+        "Text": [
+          "fill:#FFFFFF;sw1"
+        ],
+        "(root)": [
+          "fill:#2194FF;sw1;r2"
+        ]
+      }
+    },
+    "Badge/Default": {
+      "count": 1,
+      "layers": {
+        ".Notifications": [
+          "fill:#1C652C;sw1.375;r150"
+        ],
+        ".Notifications / Text": [
+          "fill:#FFFFFF;sw1.375"
+        ],
+        "(root)": [
+          "sw1"
+        ]
+      }
+    },
+    "Badges/Casino": {
+      "count": 16,
+      "layers": {
+        "Text": [
+          "fill:#FFFFFF;sw1"
+        ],
+        "(root)": [
+          "fill:#BB1B1B;sw1;r2"
+        ]
+      }
+    }
   }
 }
