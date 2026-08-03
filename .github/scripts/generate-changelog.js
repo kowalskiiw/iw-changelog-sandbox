@@ -225,6 +225,10 @@ function describeWrappedChange(old, nw, formatValueFn) {
   return parts.join(' · ');
 }
 
+function describeSimpleChange(oldVal, newVal) {
+  return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
+}
+
 function buildDiff(oldSnap, newSnap) {
   return {
     text:       diffMap(oldSnap.text   ?? {}, newSnap.text,   (o, n) => describeWrappedChange(o, n, describeTextValueChange)),
