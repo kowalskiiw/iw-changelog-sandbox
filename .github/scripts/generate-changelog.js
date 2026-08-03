@@ -111,6 +111,7 @@ async function fetchAllStyles() {
     if (s.description) figmaDescriptions[s.name] = s.description;
   }
   console.log(`   Found ${Object.keys(figmaDescriptions).length} style descriptions`);
+  console.log('   Descriptions:', JSON.stringify(figmaDescriptions, null, 2)); // ← neu, temporär zum Debuggen
 
   async function fetchNodes(styleList) {
     if (!styleList.length) return {};
