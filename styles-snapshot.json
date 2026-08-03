@@ -1,16 +1,16 @@
 {
   "text": {
-    "🌮 Body/S/Medium": {
-      "fontSize": 12,
-      "lineHeight": 16,
-      "fontWeight": 500,
-      "fontFamily": "Atlassian Sans",
-      "letterSpacing": 0
-    },
     "🌮 Heading/XXL": {
       "fontSize": 32,
       "lineHeight": 36,
       "fontWeight": 653,
+      "fontFamily": "Atlassian Sans",
+      "letterSpacing": 0
+    },
+    "🌮 Body/S/Medium": {
+      "fontSize": 12,
+      "lineHeight": 16,
+      "fontWeight": 500,
       "fontFamily": "Atlassian Sans",
       "letterSpacing": 0
     },
