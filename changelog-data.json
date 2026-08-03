@@ -1,5 +1,28 @@
 [
   {
+    "version": "test",
+    "date": "2026-08-03",
+    "ticket": "test",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/test",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "changed",
+            "title": "🌮 Heading/XXXL",
+            "desc": "description updated in Figma"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Verify and replace the placeholder description on the Heading/XXXL style in Figma — current content appears to be test/lorem data, not a valid usage guideline.",
+      "Developer: Hold off on updating the --heading-xxxl token documentation until the Figma description is corrected and a valid description is confirmed.",
+      "Tester: No visual property changes detected for Heading/XXXL — skip visual regression, but flag the description state for review in Jira ticket: test."
+    ]
+  },
+  {
     "version": "v1.NaN",
     "date": "2026-08-03",
     "ticket": "",
