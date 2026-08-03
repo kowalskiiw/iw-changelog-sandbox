@@ -1,5 +1,27 @@
 [
   {
+    "version": "test",
+    "date": "2026-08-03",
+    "ticket": "test",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/test",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "changed",
+            "title": "🌮 Heading/XL",
+            "desc": "description updated in Figma"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update 1 text style token(s) — check font sizes and line heights.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v0.7",
     "date": "2026-08-03",
     "ticket": "",

@@ -10,6 +10,16 @@
       },
       "description": "💡 Oversized screen titles. Use in moderation. Previously H900.\n\nToken name: font.heading.XXL\nTHIS IS A TEST"
     },
+    "🌮 Heading/XL": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 32,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Empty states and feature introductions. Top level headers. Previously H800.\n\nToken name: font.heading.XL\nTEST"
+    },
     "🌮 Body/S/Medium": {
       "value": {
         "fontSize": 12,
@@ -29,16 +39,6 @@
         "letterSpacing": 0
       },
       "description": "💡 Long-form content. Use in generic paragraphs to contrast with headings, and medium text.\n\nToken name: font.body.large"
-    },
-    "🌮 Heading/XL": {
-      "value": {
-        "fontSize": 28,
-        "lineHeight": 32,
-        "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Empty states and feature introductions. Top level headers. Previously H800.\n\nToken name: font.heading.XL"
     },
     "🌮 Heading/L": {
       "value": {
