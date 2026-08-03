@@ -20,16 +20,6 @@
       },
       "description": "💡 Empty states and feature introductions. Top level headers. Previously H800.\n\nToken name: font.heading.XL\nTEST"
     },
-    "🌮 Heading/XXXL": {
-      "value": {
-        "fontSize": 36,
-        "lineHeight": 42,
-        "fontWeight": 400,
-        "fontFamily": "Inter",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "🌮 Body/S/Regular": {
       "value": {
         "fontSize": 12,
@@ -179,6 +169,16 @@
         "letterSpacing": 0
       },
       "description": "💡 Components or where space is limited, for differentiating detailed or descriptive content such as primary descriptions in flags. Use sparingly.\n\nToken name: font.body"
+    },
+    "🌮 Heading/XXXL": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 42,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "this is a test test test"
     },
     "🌮 Body/L/Regular": {
       "value": {
