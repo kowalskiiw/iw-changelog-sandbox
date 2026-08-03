@@ -1,5 +1,28 @@
 [
   {
+    "version": "v2026.08.03.25",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar component visually updated. Review affected UI areas such as account screens and navigation where Avatar/SM is currently in use."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Open the updated IW Design Library v2026.08.03.25 in Figma and inspect Avatar/SM to identify exactly what changed (e.g. size, border radius, icon, placeholder asset) before sign-off.",
+      "Developer: Locate all React component usages of Avatar/SM across account screens, navigation, and profile-related views and verify the rendered output matches the updated Figma spec.",
+      "Tester: Perform visual verification of Avatar/SM across all five markets (DE, AT, ES, SE, CY) on both mobile and desktop breakpoints to confirm consistent rendering after the update."
+    ]
+  },
+  {
     "version": "v2026.08.03.24",
     "date": "2026-08-03",
     "ticket": "",
