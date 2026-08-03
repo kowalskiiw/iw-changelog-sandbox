@@ -1,0 +1,2727 @@
+{
+  "text": {
+    "Title/M/Regular": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/M/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Medium/Desktop": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Medium/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Regular": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Medium/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Regular/Desktop": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/L/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.7
+      },
+      "description": null
+    },
+    "Body/M/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Medium": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Regular/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Medium/Mobile": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 44,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Medium": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Medium/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/M/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Regular/Mobile": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Regular/Mobile": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Regular/Desktop": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/M/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.6
+      },
+      "description": null
+    },
+    "Headlines/H1/Regular/Desktop": {
+      "value": {
+        "fontSize": 40,
+        "lineHeight": 48,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Regular/Desktop": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Underline": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/M/Medium": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Regular": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/M/Underline": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Underline": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/S/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/S/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Medium/Desktop": {
+      "value": {
+        "fontSize": 40,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/L/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.7
+      },
+      "description": null
+    },
+    "Body/M/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Medium": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/M/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.6
+      },
+      "description": null
+    },
+    "Headlines/H3/Medium/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Medium/Desktop": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/M/Underline": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Medium/Mobile": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/Club/Desktop": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto Condensed",
+        "letterSpacing": 0
+      },
+      "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is desktop only"
+    },
+    "Title/S/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Regular": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/Club/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto Condensed",
+        "letterSpacing": 0
+      },
+      "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is mobile only"
+    },
+    "Display/Regular/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/M/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Underline": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Regular/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Regular/Mobile": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 44,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Medium/Desktop": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Helpers/H1": {
+      "value": {
+        "fontSize": 140,
+        "lineHeight": 164,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "Used for text within project thumbnails only"
+    },
+    "Headlines/H2/Regular/Mobile": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Medium/Mobile": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Regular/Desktop": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Medium/Desktop": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Regular": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Underline": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Medium": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Regular/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Underline": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Medium/Mobile": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    }
+  },
+  "fill": {
+    "Accent Light Mode/Purple/Alpha/300": {
+      "value": "#7B61FF (30%)",
+      "description": null
+    },
+    "Neutral/Grey/Dark/900": {
+      "value": "#232323",
+      "description": null
+    },
+    "Virtuals/300": {
+      "value": "#AAD1E6",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/150": {
+      "value": "#F0FADA",
+      "description": null
+    },
+    "Virtuals/400": {
+      "value": "#86BEDD",
+      "description": null
+    },
+    "Yellow/200": {
+      "value": "#FFED9B",
+      "description": null
+    },
+    "Neutral/Grey/Light/20": {
+      "value": "#E3E3E3",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/800": {
+      "value": "#2D3D31",
+      "description": null
+    },
+    "Accent Light Mode/Red/500": {
+      "value": "#DB3F3F",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/500": {
+      "value": "#2EA949",
+      "description": null
+    },
+    "Casino Game Search Filter/Default Fill Color": {
+      "value": "#2B94FE",
+      "description": "This color is only used for the slider elements inside of the casino game filter element.\n\nLight mode only"
+    },
+    "Accent Light Mode/Orange/350": {
+      "value": "#FFC170",
+      "description": null
+    },
+    "Accent Light Mode/Blue/500": {
+      "value": "#2194FF",
+      "description": null
+    },
+    "Accent Light Mode/Red/200": {
+      "value": "#F6CFCF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/800": {
+      "value": "#333333",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/900": {
+      "value": "#3F550A",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/200": {
+      "value": "#C5EFCE",
+      "description": null
+    },
+    "Virtuals/900": {
+      "value": "#0B466E",
+      "description": null
+    },
+    "Accent Light Mode/Forest Green/500": {
+      "value": "#1BA57B",
+      "description": "Library backgrounds"
+    },
+    "Accent Light Mode/Default Green/350": {
+      "value": "#7CDB91",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/300": {
+      "value": "#CEC6F6",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/500": {
+      "value": "#66CE7E",
+      "description": null
+    },
+    "Gradients/Linear/02": {
+      "value": "gradient linear",
+      "description": "Live Casino Big Teaser Hover"
+    },
+    "Accent Light Mode/Lime Green/500": {
+      "value": "#C6EC6B",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/300": {
+      "value": "#A4E6B3",
+      "description": null
+    },
+    "Gamecards/Gras": {
+      "value": "#006837",
+      "description": "Use for the following gamecards:\nBadminton, Baseball, Cricket, Fieldhockey, Football, Australian Football, Rugby, Snooker, Soccer, Tennis Gras Court"
+    },
+    "Accent Light Mode/Lime Green/600": {
+      "value": "#B5D45E",
+      "description": null
+    },
+    "Accent Light Mode/Blue/700": {
+      "value": "#145999",
+      "description": null
+    },
+    "Accent Light Mode/Blue/150": {
+      "value": "#D6EAFF",
+      "description": null
+    },
+    "Accent Light Mode/Orange/300": {
+      "value": "#FFD49B",
+      "description": null
+    },
+    "Yellow/500": {
+      "value": "#FFD200",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/100": {
+      "value": "#F7FCEA",
+      "description": null
+    },
+    "Gradients/Linear/01": {
+      "value": "gradient linear",
+      "description": "Live Casino Special Headlines"
+    },
+    "Neutral/Grey/Medium/200": {
+      "value": "#939393",
+      "description": null
+    },
+    "Yellow/600": {
+      "value": "#CCA800",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/800": {
+      "value": "#59780C",
+      "description": null
+    },
+    "Accent Light Mode/Red/300": {
+      "value": "#F1B4B4",
+      "description": null
+    },
+    "Neutral/Grey/Medium/400": {
+      "value": "#737373",
+      "description": null
+    },
+    "Neutral/Grey/Light/15": {
+      "value": "#EDEDED",
+      "description": null
+    },
+    "Accent Light Mode/Red/700": {
+      "value": "#832626",
+      "description": null
+    },
+    "Neutral/Grey/Light/40": {
+      "value": "#D3D3D3",
+      "description": null
+    },
+    "Accent Light Mode/Blue/300": {
+      "value": "#A7D5FF",
+      "description": null
+    },
+    "Neutral/Grey/Light/10": {
+      "value": "#F3F3F3",
+      "description": null
+    },
+    "Neutral/White Alpha/600": {
+      "value": "#FFFFFF (60%)",
+      "description": null
+    },
+    "Neutral/Grey/Medium/300": {
+      "value": "#838383",
+      "description": null
+    },
+    "Accent Light Mode/Blue/400": {
+      "value": "#53ACFF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/700": {
+      "value": "#434343",
+      "description": null
+    },
+    "Neutral/Grey/Medium/100": {
+      "value": "#A3A3A3",
+      "description": null
+    },
+    "Virtuals/700": {
+      "value": "#1583BC",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/500": {
+      "value": "#78B9FF",
+      "description": "Dark Mode Blue"
+    },
+    "Footer Greece/800": {
+      "value": "#1A3362",
+      "description": null
+    },
+    "Gamecards/Concrete": {
+      "value": "#585F60",
+      "description": "Use for the following gamecards:\nFormula 1, Moto"
+    },
+    "Accent Light Mode/Orange/650": {
+      "value": "#C16D00",
+      "description": null
+    },
+    "Accent Light Mode/Orange/50": {
+      "value": "#FFF8EF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/600": {
+      "value": "#535353",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/600": {
+      "value": "#608012",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/200": {
+      "value": "#DAD5F5",
+      "description": null
+    },
+    "Accent Light Mode/Red/50": {
+      "value": "#FDF3F3",
+      "description": null
+    },
+    "Neutral/Generic/White": {
+      "value": "#FFFFFF",
+      "description": null
+    },
+    "Yellow/800": {
+      "value": "#665400",
+      "description": null
+    },
+    "Neutral/Grey/Medium/500": {
+      "value": "#636363",
+      "description": null
+    },
+    "Yellow/50": {
+      "value": "#FFFCEF",
+      "description": null
+    },
+    "Neutral/Grey Alpha/500": {
+      "value": "#000000 (50%)",
+      "description": null
+    },
+    "Yellow/150": {
+      "value": "#FFF3BF",
+      "description": null
+    },
+    "Yellow/700": {
+      "value": "#997E00",
+      "description": null
+    },
+    "Accent Dark Mode/Red/700": {
+      "value": "#4F3B3B",
+      "description": null
+    },
+    "Accent Light Mode/Blue/600": {
+      "value": "#1575CF",
+      "description": null
+    },
+    "Accent Light Mode/Blue/50": {
+      "value": "#F1F8FF",
+      "description": null
+    },
+    "Yellow/300": {
+      "value": "#FFE570",
+      "description": null
+    },
+    "Accent Light Mode/Orange/800": {
+      "value": "#663900",
+      "description": null
+    },
+    "Neutral/White Alpha/200": {
+      "value": "#FFFFFF (20%)",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/50": {
+      "value": "#FBFEF6",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/300": {
+      "value": "#DEF4AB",
+      "description": null
+    },
+    "Neutral/Grey/Light/60": {
+      "value": "#C3C3C3",
+      "description": null
+    },
+    "Accent Light Mode/Orange/200": {
+      "value": "#FFE3BF",
+      "description": null
+    },
+    "Accent Light Mode/Orange/400": {
+      "value": "#FFAA3C",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/500": {
+      "value": "#7B61FF",
+      "description": null
+    },
+    "Neutral/White Alpha/100": {
+      "value": "#FFFFFF (10%)",
+      "description": null
+    },
+    "Accent Light Mode/Orange/700": {
+      "value": "#995600",
+      "description": null
+    },
+    "Neutral/Grey Alpha/300": {
+      "value": "#000000 (30%)",
+      "description": null
+    },
+    "Yellow/400": {
+      "value": "#FFDB3C",
+      "description": null
+    },
+    "Accent Light Mode/Blue/800": {
+      "value": "#0D3B66",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/800": {
+      "value": "#12441D",
+      "description": null
+    },
+    "Accent Light Mode/Magenta/500": {
+      "value": "#BA26C6",
+      "description": "Casino Intern Badge"
+    },
+    "Accent Dark Mode/Lime Green/900": {
+      "value": "#1F2611",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/150": {
+      "value": "#DBF2E0",
+      "description": null
+    },
+    "Yellow/100": {
+      "value": "#FFF8DB",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/700": {
+      "value": "#1C652C",
+      "description": null
+    },
+    "Yellow/900": {
+      "value": "#332A00",
+      "description": null
+    },
+    "Accent Light Mode/Red/600": {
+      "value": "#BB1B1B",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/600": {
+      "value": "#3F734B",
+      "description": null
+    },
+    "Accent Light Mode/Red/800": {
+      "value": "#581919",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/100": {
+      "value": "#E6E3F3",
+      "description": null
+    },
+    "Casino Game Search Filter/Active Border": {
+      "value": "#96DBFA",
+      "description": "This color is only used for the slider elements inside of the casino game filter element.\n\nIt is meant to highlight the active slider control element\n\nLight mode only"
+    },
+    "Neutral/Grey/Light/80": {
+      "value": "#B3B3B3",
+      "description": null
+    },
+    "Virtuals/850": {
+      "value": "#0E5689",
+      "description": null
+    },
+    "Accent Light Mode/Red/150": {
+      "value": "#FAE4E4",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Alpha/100": {
+      "value": "#7B61FF (10%)",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/600": {
+      "value": "#25873A",
+      "description": null
+    },
+    "Accent Light Mode/Orange/500": {
+      "value": "#FF8F00",
+      "description": "- Casino Promo Badges"
+    },
+    "Accent Light Mode/Lime Green/200": {
+      "value": "#E8F7C5",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/400": {
+      "value": "#4DCE69",
+      "description": null
+    },
+    "Accent Light Mode/Orange/600": {
+      "value": "#E17F00",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/700": {
+      "value": "#99BE4A",
+      "description": null
+    },
+    "Neutral/Grey/Light/05": {
+      "value": "#FBFBFB",
+      "description": null
+    },
+    "Yellow/550": {
+      "value": "#ECC200",
+      "description": null
+    },
+    "Accent Dark Mode/Red/400": {
+      "value": "#FE9898",
+      "description": "Dark Mode Red"
+    },
+    "Accent Dark Mode/Default Green/400": {
+      "value": "#94FFAC",
+      "description": "Dark Mode Green"
+    },
+    "Gamecards/Water": {
+      "value": "#005366",
+      "description": "Use for the following gamecards:\nDarts, Entertainment, eSoccer, Handball, Swimming, Table tennis, Tennis Hard Court, Waterpolo"
+    },
+    "Accent Light Mode/Orange/100": {
+      "value": "#FFF4E5",
+      "description": null
+    },
+    "Accent Dark Mode/Red/800": {
+      "value": "#473434",
+      "description": null
+    },
+    "Gradients/Linear/04": {
+      "value": "gradient linear",
+      "description": "Live Casino Teaser, except big teasers"
+    },
+    "Accent Dark Mode/Lime Green/800": {
+      "value": "#374515",
+      "description": null
+    },
+    "Neutral/White Alpha/300": {
+      "value": "#FFFFFF (30%)",
+      "description": null
+    },
+    "Accent Dark Mode/Orange/500": {
+      "value": "#FFBA61",
+      "description": "Dark Mode Orange"
+    },
+    "Accent Light Mode/Blue/200": {
+      "value": "#C7E4FF",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/400": {
+      "value": "#D2F08D",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/700": {
+      "value": "#455912",
+      "description": null
+    },
+    "Accent Dark Mode/Orange/800": {
+      "value": "#473E32",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/400": {
+      "value": "#91D1FF",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/700": {
+      "value": "#374A3B",
+      "description": null
+    },
+    "Accent Light Mode/Red/100": {
+      "value": "#FBECEC",
+      "description": null
+    },
+    "Neutral/White Alpha/700": {
+      "value": "#FFFFFF (70%)",
+      "description": null
+    },
+    "Accent Dark Mode/Red/600": {
+      "value": "#814444",
+      "description": null
+    },
+    "Neutral/Generic/Black": {
+      "value": "#000000",
+      "description": null
+    },
+    "Accent Light Mode/Red/350": {
+      "value": "#EA9393",
+      "description": null
+    },
+    "Accent Light Mode/Magenta/600": {
+      "value": "#951E9E",
+      "description": null
+    },
+    "Accent Light Mode/Blue/350": {
+      "value": "#81C2FF",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/750": {
+      "value": "#6A8F0E",
+      "description": null
+    },
+    "Gamecards/Plastic": {
+      "value": "#A6653C",
+      "description": "Use for the following gamecards:\nFutsal, Basketball, Volleyball"
+    },
+    "Gamecards/Sand": {
+      "value": "#AF511F",
+      "description": "Use for the following gamecards:\nBeachvolleyball, Tennis Sand Court"
+    },
+    "Accent Light Mode/Red/900": {
+      "value": "#2B0808",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/900": {
+      "value": "#0B2811",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/50": {
+      "value": "#F0FBF3",
+      "description": null
+    },
+    "Accent Light Mode/Red/400": {
+      "value": "#E36B6B",
+      "description": null
+    },
+    "Accent Light Mode/Orange/900": {
+      "value": "#331D00",
+      "description": null
+    },
+    "Neutral/Grey Alpha/200": {
+      "value": "#000000 (20%)",
+      "description": null
+    },
+    "Accent Light Mode/Orange/150": {
+      "value": "#FFE9CC",
+      "description": null
+    },
+    "Gradients/Linear/03": {
+      "value": "gradient linear",
+      "description": "Used for hero images"
+    },
+    "Gradients/Linear/05": {
+      "value": "gradient linear",
+      "description": "Sports teasers on the sportsbook frontpage"
+    },
+    "Virtuals/800": {
+      "value": "#145999",
+      "description": null
+    },
+    "Live Casino/900": {
+      "value": "#1F1F1F",
+      "description": "Used for the live casino background only"
+    },
+    "Gamecards/Ice": {
+      "value": "#567A8D",
+      "description": "Use for the following gamecards:\nBiathlon, Cross Country, Curling, Icehockey, Ski Alpine,  Ski Alpine Helmet, Skijumping"
+    },
+    "Accent Light Mode/Blue/100": {
+      "value": "#E9F4FF",
+      "description": null
+    },
+    "Neutral/White Alpha/900": {
+      "value": "#FFFFFF (90%)",
+      "description": null
+    },
+    "Betslip/Loading Blue": {
+      "value": "#0067C6",
+      "description": "This color is currently used as a background color for the betslip loading indicatior. This one needs to be changed in the future and swaped with one of the existing blue shades"
+    },
+    "Accent Light Mode/Default Green/100": {
+      "value": "#E5F7EA",
+      "description": null
+    },
+    "Neutral/White Alpha/500": {
+      "value": "#FFFFFF (50%)",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/800": {
+      "value": "#2E3D4D",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/600": {
+      "value": "#644ED7",
+      "description": null
+    },
+    "Virtuals/950": {
+      "value": "#0D3B66",
+      "description": null
+    },
+    "Neutral/White Alpha/800": {
+      "value": "#FFFFFF (80%)",
+      "description": null
+    },
+    "Virtuals/750": {
+      "value": "#2970B2",
+      "description": null
+    },
+    "Casino Game Search Filter/Background": {
+      "value": "#EEEBE5",
+      "description": "This background color is used inside of the casino game filter section only. It is used for the dismissable tags.\n\nLight mode only"
+    },
+    "Neutral/White Alpha/400": {
+      "value": "#FFFFFF (40%)",
+      "description": null
+    },
+    "Accent Light Mode/Blue/900": {
+      "value": "#001A33",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/500": {
+      "value": "#D9F476",
+      "description": null
+    }
+  },
+  "effect": {
+    "divider-old/bottom/light": {
+      "value": "drop shadow: offset 0/1 blur 0 color #ECECEC",
+      "description": null
+    },
+    "divider-old/right/dark": {
+      "value": "drop shadow: offset 1/0 blur 0 color #000000 (10%)",
+      "description": null
+    },
+    "divider-old/bottom/medium": {
+      "value": "drop shadow: offset 0/1 blur 0 color #E3E3E3",
+      "description": null
+    },
+    "divider-old/left/dark": {
+      "value": "drop shadow: offset -1/0 blur 0 color #000000 (10%)",
+      "description": null
+    },
+    "focus state-old": {
+      "value": "inner shadow: offset 2.75/0 blur 0 color #2194FF | inner shadow: offset 0/2.75 blur 0 color #2194FF | inner shadow: offset -2.75/0 blur 0 color #2194FF | inner shadow: offset 0/-2.75 blur 0 color #2194FF",
+      "description": null
+    },
+    "divider-old/top+bottom/dark": {
+      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3 | drop shadow: offset 0/-1 blur 0 color #D3D3D3",
+      "description": null
+    },
+    "divider-old/bottom/dark": {
+      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3",
+      "description": null
+    },
+    "Shadows/Extra Small": {
+      "value": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)",
+      "description": "The lowest elevation — a tight, barely-there shadow. For elements that need to lift off the background just slightly: input fields, tags, or subtle dividers between surfaces."
+    },
+    "Shadows/Base": {
+      "value": "drop shadow: offset 0/5 blur 12 color #000000 (5%) | drop shadow: offset 0/2 blur 8 color #000000 (8%)",
+      "description": "The default resting elevation for most raised surfaces — standard cards, list items, and containers sitting on a page. The everyday shadow when a component just needs to feel grounded."
+    },
+    "Background Blur/Small": {
+      "value": "background blur: radius 10",
+      "description": "The lightest frost. Gently softens whatever sits behind an element while keeping it recognisable — good for subtle glass effects on floating bars, sticky headers, or chips layered over content."
+    },
+    "Shadows/Medium": {
+      "value": "drop shadow: offset 0/6 blur 12 color #000000 (8%) | drop shadow: offset 0/4 blur 16 color #000000 (5%)",
+      "description": "A step up for interactive or temporarily raised surfaces — hover/active card states, dropdowns, and popovers. Signals that an element is above its neighbours."
+    },
+    "Background Blur/Medium": {
+      "value": "background blur: radius 20",
+      "description": "A moderate blur that noticeably obscures the background without fully hiding it. Suited to popovers, dropdowns, and smaller panels where you want depth and a frosted feel but still hint at the content underneath."
+    },
+    "Shadows/XLarge": {
+      "value": "drop shadow: offset 0/20 blur 25 color #000000 (10%)",
+      "description": "The highest elevation. Reserved for the most prominent overlays — modals, dialogs, and bottom sheets — where a strong, soft shadow separates them from everything behind."
+    },
+    "Background Blur/XLarge": {
+      "value": "background blur: radius 100",
+      "description": "A heavy blur that reduces the background to soft colour and shape. For full-screen scrims and modal backdrops where the goal is to pull focus firmly onto the foreground layer."
+    },
+    "Shadows/Large": {
+      "value": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)",
+      "description": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as \"on top of\" the content below."
+    },
+    "Background Blur/XXLarge": {
+      "value": "background blur: radius 120",
+      "description": "The strongest blur — the background becomes an abstract wash of colour. Reserved for the most immersive overlays, onboarding takeovers, or loading/transition states where the content behind should all but disappear."
+    }
+  },
+  "grid": {
+    "Small Grid": {
+      "value": "COLUMNS count:4 size:1 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": "Best for mobile\nBreakpoint: 320px - 600px"
+    },
+    "Large Grid": {
+      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Medium - Sportsbook": {
+      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Medium Grid": {
+      "value": "COLUMNS count:8 size:-7.5 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Android": {
+      "value": "COLUMNS count:6 size:4.666666507720947 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "iOS": {
+      "value": "COLUMNS count:6 size:6 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Casino/Desktop 1920": {
+      "value": "ROWS count:-1 size:4 gutter:0 | COLUMNS count:6 size:-103.33333587646484 gutter:16",
+      "description": null
+    },
+    "Casino/Mobile 360": {
+      "value": "COLUMNS count:2 size:36 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Extra Large Grid": {
+      "value": "COLUMNS count:12 size:100 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    }
+  },
+  "variables": {},
+  "components": {
+    "Status=Critical/Error": "b88a8920ee5963c6ce3995a807c911eda1352a0d",
+    "Status=Warning": "5a7c4be561b3468b93e54062e22f0ee02d995de5",
+    "Status=Pending": "7d304f9594b9f1c9c6deef596d81a98093c79436",
+    "Status=Success": "94e6ab701bd8279b9c1a3337efe47483dcb903ab",
+    "Platform=Mobile, Categories=New": "ad94b5d75e0c0e95bfbd0c5391cd09425a42abc4",
+    "Platform=Desktop, Categories=Exclusive": "434dc88fd14019d1b0508d941fbc45e1efcc3fb9",
+    "Platform = Mobile, Categories = Popular": "ec2b159adc470d6539164d2044307f5488e28421",
+    "Platform=Desktop, Categories=New": "3f024152539239af31d98428bd326778f76f2d00",
+    "Platform = Mobile, Categories = Exclusive": "5c04270f676cc50c681df63c1bc56bcac2ca6889",
+    "Platform=Desktop, Categories=Intern": "c6e511b0b17efa80be29f3f65b6072da960d7f9b",
+    "Platform=Desktop, Categories=Daily Jackpot": "323411c0da88664765a455cc40a9962fdebe2b06",
+    "Platform=Mobile, Categories=Daily Jackpot": "62cb07e0695a5c3c13b849b0b105339e3a00e06c",
+    "Platform=Desktop, Categories=Promotion": "05be9d56cd4412671a547012ccbc0132656116b3",
+    "Platform=Desktop, Categories=Jackpot": "c3cb1600bb67cd7cd9896774e48d1b785509a008",
+    "Platform = Mobile, Categories = Promotion": "8e599256204a9c8454f70d58caf64e1b42e9130e",
+    "Platform = Mobile, Categories = Jackpot": "a5fc650f99b95f1ac5c76bdc9a9a38cf9f3c3e53",
+    "Platform=Desktop, Categories=Popular": "c614867d68bffd7910e5d25cdfda03e163bb08ef",
+    "Platform=Desktop, Categories=Freebet": "a301b54128caf5f8fcce2191a74e3d103019081e",
+    "Platform = Mobile, Categories = Intern": "ad9d5c250215cbd0bd2839bc048fbd39232f83ad",
+    "Platform = Mobile, Categories = Freebet": "4cbfc0e6763ceb2f68663cf1a097fe81b24c6282",
+    "Type=User, Notification=Off, State=Hover": "ce91a75f2ad182ad47a5d04a001dac7acdf65d14",
+    "Type=User, Notification=On, State=Default": "20fe7a0cc9b50bd2aee04ff25ae471cb62f620d8",
+    "Type=Initials, Notification=Off, State=Hover": "b0ca0fec62e0e7d75148af9c46e1e311ba1c8f54",
+    "Type=Image, Notification=Off, State=Hover": "ff83628e9a46c2600867a6db7e1a1e07ccea0809",
+    "Type=User, Notification=On, State=Hover": "61afeb4c8001722a700343c3fea8e387e989d490",
+    "Type=Initials, Notification=Off, State=Default": "4d424c60bbadb4a21c99730c54c4faa97dcd6edd",
+    "Type=Initials, Notification=On, State=Hover": "2f169b2f4eb9e1b948d56431349eced7dcd47f77",
+    "Type=Image, Notification=On, State=Default": "0c90fb91f9eb34f766d2a927c5362c610c15f3da",
+    "Type=Image, Notification=Off, State=Default": "6d140433ce2410f645f6235ae01faaee0d04d219",
+    "Type=Image, Notification=On, State=Hover": "0b21542512ece0607d54cebee7f1d8267bd50b8f",
+    "Type=User, Notification=Off, State=Default": "a1839c33d6d5462a23b7fbb5ebd6dabd10459cf7",
+    "Type=Initials, Notification=On, State=Default": "44d926709a5371d517a128d5aa444ffb0cbdc4c7",
+    "Type=Text + Icon (Default), State=Loading, Size=L (Default)": "8b362204748f78c7091c8695e79e580544b59506",
+    "Type=Text + Icon (Default), State=Mouseover, Size=L (Default)": "77a28da201b72f23bdb15aa45f40ced6da408da0",
+    "Type=Icon, State=Mouseover, Size=S": "fc1f5385128d64758095491ddc745e5505fc441b",
+    "Type=Icon, State=Focus, Size=S": "eefdbc6105de3f5a35468a779b81fae5239d357c",
+    "Type=Icon, State=Pressed, Size=L (Default)": "554d176402cf1ee3e67bd73bb046f3ee951212f0",
+    "Type=Text + Icon (Default), State=Pressed, Size=L (Default)": "3f58abb7c7816ca07eb2c8145d250796212ad215",
+    "Type=Icon, State=Pressed, Size=S": "d1f86f9e816302faa2fd6fd91f8284376b1135f3",
+    "Type=Text + Icon (Default), State=Disabled, Size=L (Default)": "fe4d29339a40014262d49c440b979a1701a400fb",
+    "Type=Icon, State=Disabled, Size=L (Default)": "0e4fde7011187f862f0a68dd0f835b4f93658087",
+    "Type=Icon, State=Loading, Size=S": "6f974c728682c94e88968a11cfd0ff7908edff37",
+    "Type=Icon, State=Disabled, Size=S": "297789cda44ae0eebac835c516a2fadd9ddc775b",
+    "Type=Icon, State=Loading, Size=L (Default)": "a3848ac340168edd646dc578bf23be539da04501",
+    "State=Default, Size=L (Default)": "64d32a78f821b7f7403d2c6e2c9f587fcede2a58",
+    "State=Focus, Size=S": "5ddc1810a10fc528eeedbc16592c9516d23980d9",
+    "State=Loading, Size=S": "cabffe95886d4e0ad5cf62188fa4d9429bd90561",
+    "State=Default, Size=S": "ce7f47437e2b5c83b76fb8353b780f80902c6f3e",
+    "State=Mouseover, Size=L (Default)": "35f0b83d681c6bba43863c90af9603b9782e9f3b",
+    "Type=Error, Size=Medium, Focus=High": "c6e658da036a4bd769fe3ab37834da2b77a44289",
+    "Type=Information, Size=Medium, Focus=High": "991826ccd22a76bb71997fc4593c0f098150e580",
+    "Type=Information, Size=Small, Focus=High": "3ec7464aeb9a96d5b71970b674ab9415fb2a93f1",
+    "Type=Error, Size=Small, Focus=High": "642da049cfeef26913d20f03cb4e0e14ae50e967",
+    "Type=Information, Size=Small, Focus=Low": "8cb8913fbc27212403617c169b6bbfd15fa1aeaa",
+    "Type=Information, Size=Medium, Focus=Low": "b84b95dd06f170ead4b41febf87ae54f65ee1bd6",
+    "Type=Success, Size=Medium, Focus=Low": "0bcb138b39e387a869da5fa66af7f3950509c49d",
+    "State=Focus, Size=L (Default)": "ac05294e98d6cf722f9e6ea0ad8fa5c3075f3201",
+    "Type=Error, Size=Medium, Focus=Low": "3984cf90e7a43595f6cb1b01c3abb85b5d8ca73a",
+    "Type=Error, Size=Small, Focus=Low": "f649a1b32e9f8e37616d27233ae69f2471ae0048",
+    "Type=Success, Size=Medium, Focus=High": "05be977660b9d811559349a264ebcb5702a8778c",
+    "Type=Warning, Size=Medium, Focus=Low": "8965719a17c4de8e62ba989ace0fb079bf070883",
+    "Type=Success, Size=Small, Focus=Low": "e66127eaf322bf1d042719a21b1c8c573517f405",
+    "Type=Warning, Size=Medium, Focus=High": "b8fc64e750611ae94fed1690aba8ffefcf82de99",
+    "Type=Warning, Size=Small, Focus=Low": "591546a8249710d535aa6f184843b11971bd962d",
+    "Type=Success, Size=Small, Focus=High": "00f436d992955e459ecd865d31c8dfd57acbb3a0",
+    "Type=Warning, Size=Small, Focus=High": "307a6d2c7df0a6dd0545ae16d1a014369b2e490b",
+    "Type=Icon, State=Focus, Size=L (Default)": "90ba5fb66832e6d02514ba479598eee97cfe00f6",
+    "Type=Icon, State=Default, Size=L (Default)": "20d5baad67a969eb6797dd965be9ae46499dcd40",
+    "Type=Text + Icon (Default), State=Default, Size=L (Default)": "455c52fcc5480fde1ccbbf608a517425b3d045d3",
+    "Type=Icon, State=Mouseover, Size=L (Default)": "8361d5c077df8ca35599cff34d6104b23f1d466b",
+    "Type=Icon, State=Default, Size=S": "814377e92790c18b6385e3ae2d5a0e8a157405c8",
+    "Type=Text + Icon (Default), State=Focus, Size=L (Default)": "f3e0a02767943a2ad26141204970336d869c9fba",
+    "State=Mouseover, Size=S": "43e9a40a22a2ac84b27213a634a0848535bc3695",
+    "State=Disabled, Size=S": "b3e901e5b76951cba431c0bb8fdab63d4286797c",
+    "State=Pressed, Size=S": "a7bcd5a7bfa95ddd9124ccfaf8e93a63a300a409",
+    "State=Pressed, Size=L (Default)": "0eecb0c7ba499868434a3a0a84904d927179c7aa",
+    "State=Disabled, Size=L (Default)": "8605c14f6c8ade140567bf8ede59d9ead185b774",
+    "State=Loading, Size=L (Default)": "40b17c2d89248791d9b865315a3aaea907f2d99b",
+    "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Text": "257e2bda621ca2781abf146636bbc28b86e9b811",
+    "Variant=Tertiary White, Size=L, State=Focused, Type=Text": "fea68d71e9bcf73b12ffb4923f35f2733a9fe62b",
+    "Variant=Tertiary White, Size=S, State=Disabled, Type=Icon": "b05f5c052c72057ef598c09cc4ff9ffe0bc21b6f",
+    "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Text": "82a087e9203642adfdc7dd601da83150294399e7",
+    "Variant=Tertiary Black (Default), Size=M, State=Loading, Type=Icon": "07f1c41a04592a22d82380f054911e476fb1c30d",
+    "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Icon": "a50fb61ba04e6897e08c209bc1a290df37625e0c",
+    "Variant=Tertiary White, Size=L, State=Disabled, Type=Text": "217293b234cd1515a70511cd76e2a23d7e4433bd",
+    "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Icon": "196d6808e93da8e6f275c32786eec530ef74a001",
+    "Variant=Tertiary White, Size=L, State=Default, Type=Text": "cc33694813bcfecd2aa39b47d90276eae87d8f07",
+    "Variant=Tertiary White, Size=S, State=Mouseover, Type=Text + Icon": "a2f8d539a83c40ccb077881600316d2e251c52fa",
+    "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Text": "720687a113109aaa37ea601c407526574af472ee",
+    "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Icon": "686838a8ea37c65c87506fdee84982e9f9e25645",
+    "Variant=Tertiary Black (Default), Size=S, State=Loading, Type=Icon": "58479eec42f54ccb6af878ac17fd3b5c786d6b37",
+    "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Text": "cee3f5a4e887f9ac1c4a41b2660b14ee470d28b6",
+    "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Text + Icon": "0962437e4e322c2bdfa3cd31e6278097f434f0cb",
+    "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Icon": "1d50c36ad12c0948908fab773ff26e1d7a1c0371",
+    "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Text": "d22724f164d4e5e854fd8550f1cb2e19d650d52c",
+    "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Text + Icon": "6d87f1c68c27430f597a6d048eef7e4ef12b8695",
+    "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Text": "4a0e49dde781208a7a2b534c66fad593f53972e0",
+    "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Text": "fa80ed3e728e0f9f4031a2908d24d3d2f172fdfc",
+    "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Text + Icon": "c7663fc4892343a48d6e6935f5204ff32871df00",
+    "Variant=Tertiary White, Size=M, State=Mouseover, Type=Icon": "abb617f2749e1c0321f9e37e290bbd24cbadb1c5",
+    "Variant=Tertiary White, Size=M, State=Loading, Type=Icon": "8a5bcdf95f621f85b24dab70cf5cf4b552164d94",
+    "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Text": "fe7db688f3e37fde83872c63a93a9b7be08861d0",
+    "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Text + Icon": "c499c648de7b36c3af1cb54ef93f60e0d60a6d1b",
+    "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Text + Icon": "cc340eb99fbd0089c32b840c7143170f04947ace",
+    "Variant=Tertiary White, Size=S, State=Default, Type=Text": "ef30099c7d2de392329280c16f9522eb98294e3f",
+    "Variant=Tertiary White, Size=M, State=Default, Type=Text": "8909936ed648cb20b23378f58cf371c012bcd1c4",
+    "Variant=Tertiary White, Size=M, State=Mouseover, Type=Text": "dd37439ef5bec43eeba5d954dedd0bb0e15ace30",
+    "Variant=Tertiary White, Size=L, State=Disabled, Type=Icon": "7b0864125508d3b0e279feb7390e46eb814fbc81",
+    "Variant=Tertiary White, Size=S, State=Mouseover, Type=Text": "452b78f46ca4195a3c2518100bc0714fd4ad11d6",
+    "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Text": "5d2af0778befc210febf9babde708916998c79ad",
+    "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Icon": "a560eec59179fc46512cfde752dd60b46771ecb9",
+    "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Icon": "35e1d1b2dd2a782e669fab6409a2e66f254d0e6b",
+    "Variant=Tertiary White, Size=L, State=Mouseover, Type=Text": "4b5ffba9cdff23f126c95aa898a8e38ec56d3df9",
+    "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Text": "f277cbf14c4b9fcbc9b77408a31198c84f184059",
+    "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Text": "dc28a2043e3b1ed83df4bdc6640234d01d39b5f8",
+    "Variant=Tertiary White, Size=M, State=Disabled, Type=Text": "2e60b080583f2db0d1592f537985da59a6f03757",
+    "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Text": "e58dcc79dab033ccd7fb380f39f02501588dfc36",
+    "Variant=Tertiary White, Size=S, State=Disabled, Type=Text": "5a9133603a98cf3d81ba0224d3efd122cecf9e1e",
+    "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Text + Icon": "a9397163f1fe755f5ef62280e61096c4d517b338",
+    "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Icon": "a075c051025342f9501e36065b9ed5e33975182a",
+    "Variant=Tertiary White, Size=M, State=Focused, Type=Text": "08920e8230bd044b5ac24dda3635a5948d22eec8",
+    "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Text": "9f0f3466ae37d85325e2645a2d9479d261b7c258",
+    "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Text + Icon": "2d5fbadca1d2b34adee2adfd16c8bde252fd8387",
+    "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Text": "7ce95bb58bdcc87198c0e21c2c2774d8ef7d2f42",
+    "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Text": "1d4307a9f8047c3cbf0ea99c0a40f77d87a307cd",
+    "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Text + Icon": "9b3a47c880848593d09ce542a58aa2b35b2ee968",
+    "Variant=Tertiary White, Size=S, State=Focused, Type=Text": "9c373946d7d69ab80fdc8ec8d8ef44b76ec73444",
+    "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Text": "9afa2bc0ed787d97c00c181a7dffce2b88ea1635",
+    "Variant=Tertiary White, Size=L, State=Default, Type=Text + Icon": "75ccbad1ee632afac68683fb992c98e8923198dc",
+    "Variant=Tertiary White, Size=L, State=Mouseover, Type=Text + Icon": "aafe89ff403df60b16e91366762cb7e9a6a3db83",
+    "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Text": "c197442dfdb9d0bbb741770a39356ad25c720a53",
+    "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Text + Icon": "97626b620c030c82d325f9d893f79c9b876e8e3e",
+    "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Text": "97614e3715cc9e649eed0455968430eee2879788",
+    "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Text + Icon": "5696a5657671e1d9cd6bd89d03d7028cc94e71ab",
+    "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Text + Icon": "8ed624eae348a64b599a80455fa05c8b68b9b91b",
+    "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Text + Icon": "6e3b393c3dff4b8ecb693545314853b45121e873",
+    "Variant=Tertiary White, Size=L, State=Focused, Type=Text + Icon": "e1f6e0cc11aefcf463fb2b1979ea8463d4ea891d",
+    "Variant=Tertiary White, Size=M, State=Default, Type=Text + Icon": "bb961e38287a8d3020c103d58706fe40c19207ed",
+    "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Icon": "b6138742f622b5b71542084189ac65c8fcec403c",
+    "Variant=Tertiary White, Size=S, State=Default, Type=Text + Icon": "378d9b0c3b2877e01b6becc2681ce836a78abc81",
+    "Variant=Tertiary White, Size=M, State=Mouseover, Type=Text + Icon": "638a8e9106f990ef94d406c313d555db2c0079dd",
+    "Variant=Tertiary White, Size=L, State=Disabled, Type=Text + Icon": "a4bc15a9110c6c39b566cb4169d782073dff7896",
+    "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Text + Icon": "136c1b99731af25b90bf0083ef1c912a05e4a316",
+    "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Text + Icon": "48589b4f6515c79010cef8c00599944c7eeb346d",
+    "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Text + Icon": "50e83928bbe79fbbe34c6a9378a5820a2f848f9e",
+    "Variant=Tertiary White, Size=M, State=Disabled, Type=Text + Icon": "877eb74881360fca16c7dbf21be10658c17fd02d",
+    "Variant=Tertiary White, Size=S, State=Loading, Type=Icon": "d48a4b3e16b240534e4cebb31d2c583961bd4c9c",
+    "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Text + Icon": "ea01fdf6a997d724e9eb9e3c06c9fbf7dc056b80",
+    "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Icon": "fdd78c9eb8cc6fe0f2038b4f2c198c352744fe46",
+    "Variant=Tertiary White, Size=S, State=Disabled, Type=Text + Icon": "62675969268a258d8daf0d2a878c1d7608bcc723",
+    "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Text + Icon": "8e6281ca942c03f29331ca6daabc65355808dc4a",
+    "Variant=Tertiary White, Size=M, State=Focused, Type=Text + Icon": "b70f77b837aa58b2469f687287ecbd128ec59e3e",
+    "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Icon": "6aa62ee1e0d4063747fc47bb3bef21e77a494457",
+    "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Text + Icon": "af01369ecab6dd8c345ebd0ac748550c1da20586",
+    "Variant=Tertiary White, Size=M, State=Focused, Type=Icon": "83f97ad88ec8fdfc67e496c3550a5268e7d35b40",
+    "Variant=Tertiary White, Size=S, State=Focused, Type=Text + Icon": "82352ef513b1a0f8f318e4e6be0b3a5cb7a0f8fb",
+    "Variant=Tertiary White, Size=M, State=Default, Type=Icon": "a84cb02dbd75465cb3ad5657adfadc2ad739b92b",
+    "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Icon": "3db68b45a4d5106ece85d0aa6532d438966fd67a",
+    "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Icon": "e6d75dc7ded25d88af2000ccbe64ca807fc63f02",
+    "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Icon": "ec727e94ae6ff6cf66b2f7f8e8a08b7d78be268f",
+    "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Icon": "861feeea4370bf5122839f12add7a4766c789790",
+    "Variant=Tertiary White, Size=M, State=Disabled, Type=Icon": "d78124ba290460ad8d64387d8f4c1ce00e495874",
+    "Variant=Tertiary White, Size=S, State=Default, Type=Icon": "46f331e2d6de96527997a0861586fe2c213ba60c",
+    "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Icon": "f779b3b4e2d0e094e7bc557cdf7f4ba1b7558a9a",
+    " Size=48": "e61235cb74827ce3ca72634f4e2fc7880490240a",
+    " Size=24": "980874c259e13b180b3e47468a9977611bda32e5",
+    " Size=16": "81ce3148696c3642bac35995c6e481c8b17b53f4",
+    "-> Logo Slot=Apple Pay": "e87c60709b10cda33ee4b00145c22d26ed772a51",
+    "-> Logo Slot=EPS": "d6df0046a393cb1269abd6ac140d892def7c4fc9",
+    "-> Logo Slot=Banktransfer EN": "2f486ec0dcdeccbb705a88d32b9974246898b9f4",
+    "-> Logo Slot=Trustly": "c8cf0c05b8573a37fb6968a979d757a2401950d1",
+    "-> Logo Slot=Much Better": "f0bcd9dc41be063f89be15e73f76b0dd9ed12549",
+    "-> Logo Slot=Banktransfer DE": "b4157b371e0250736861e89de4ab6968e93ded8b",
+    "-> Logo Slot=Paysafe Card": "046903226ef2e021a2f124c5d49af56325e15630",
+    "-> Logo Slot=Google Pay": "93dfffbd70b3ba218058dbcad223e1ca902629e1",
+    "-> Logo Slot=Visa": "06c707ac09f52435fe226263a9ab954eb7946fb2",
+    "-> Logo Slot=Netseller": "68e38bd94f5397cc6069d82839f20bc56c78b35c",
+    "-> Logo Slot=Iris Payments": "fad14b63ad5c401e95075307b6ad82dcd83ca884",
+    "-> Logo Slot=Mastercard": "bf1aa91752f4d2d053eb7d5cdad622cbe606bde2",
+    "-> Logo Slot=Further EN": "8c23cb9ab61d16c75c77a5be8337f563e3ca9081",
+    "-> Logo Slot=PayPal": "e99f8b4d6488b38053c17728edb1672c2cbf9678",
+    "-> Logo Slot=Skrill": "a5b18658a7a5bccbe0b627fa706a69bad9175d72",
+    "-> Logo Slot=Skrill 1 Tap": "aba013b66c6176ac54ba252b28d865298a59765a",
+    "-> Logo Slot=Further DE": "b7dbde9a0bcf313c7ff17974b63bd9a45a4665eb",
+    "-> Logo Slot=Sofortüberweisung": "f7207f17b6c34403b213632c85c45c206b6d32c1",
+    "-> Logo Slot=VPay": "a87463879c0c3948292f5c0c8405e967933272f5",
+    "-> Logo Slot=Viva Spot": "2e548fd8e6408bd208607ffd3cd2c851754ec2fd",
+    "-> Logo Slot=Pas Lamia": "eb6bcd0569e7ba93bac2a6a1a81f52214a32677e",
+    "-> Logo Slot=OFI 1925 PAE": "670d2b60c8d295ae77a352d36df47d626c496764",
+    "-> Logo Slot=Paok Volley": "d59de9270b18eac0df552f60b74ae92d0ddf1524",
+    "-> Logo Slot=ΑΟΜ 35years": "aa526d462e04a29bdc17ff3d88d005b9cb5328f5",
+    "-> Logo Slot=AS Papagou": "298ead631c3cba3ea2abfb09e5362d7b3ac94ada",
+    "-> Logo Slot=Ilisiakos Volleyball": "1c19a39c63fb003606966effafe69c1a5586aa69",
+    "-> Logo Slot=PGSS BC": "16d3cb933eb6a08da5492710d91beff0712004bc",
+    "-> Logo Slot=PAOK BC": "b2936927001bc8308021f77c82098fd98834e4d2",
+    "-> Logo Slot=ATP": "37e78cad9e0497172bd68250324d31d2cd473737",
+    "-> Logo Slot=Boss Open": "7d5b31f324d9b19709a5c9fdbd7d7819cc62aef6",
+    "-> Logo Slot=FC Liverpool": "010b46167525e7993c0417df3a34c673c497133c",
+    "-> Logo Slot=DFB": "c7d5905dacacc1dc5e6e100bc1d669d18de7f1d6",
+    "-> Logo Slot=NHL": "99a46d77a93307c9d4e8ca46a00ceb317ddc6d2d",
+    "-> Logo Slot=DSV": "63d2913f471f0643024e11109b513db5b099e39a",
+    "-> Logo Slot=FCBB": "9eff7647a7299d30705030436bfedf32c8a07d87",
+    "-> Logo Slot=FIS Alpine World Ski": "ac40b0e3de89b4ae0cd25ae4fcde9d3e033743c1",
+    "-> Logo Slot=Ski Austria Old": "7e6105eda2318d934d56f903849c763bdfb85f78",
+    "-> Logo Slot=Generali Open": "c8df3faefd95c67ccc94aa5ea05c2d4775973799",
+    "-> Logo Slot=Borussia": "29ed3f283a1a7d8225c516a706552e4b1b5c069c",
+    "-> Logo Slot=PDC": "c9d68674fac9a219a13d703f8dae8f0aa209a926",
+    "-> Logo Slot=Ski Austria New": "ae551bdeccdee094c53029838f6823a127e224f1",
+    "Variant=Tertiary White, Size=S, State=Focused, Type=Icon": "9e283fc10f97678001fdc3d8c7ad29fd712b4b68",
+    "Variant=Tertiary White, Size=L, State=Default, Type=Icon": "8a498bfa8fa359d0a1f28007f07a28dd0df82ba2",
+    "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Icon": "4d51ca09709a04f4ed787b0268a2c3555f7980ab",
+    "Variant=Tertiary White, Size=S, State=Mouseover, Type=Icon": "6598252bbb49b24ae831944abecbe5ec7d9b0f0c",
+    "Variant=Tertiary White, Size=L, State=Mouseover, Type=Icon": "e1306e1f36bddc6edb289f04240bd47497d1c2f1",
+    "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Icon": "bcbda309aec248a1c9d9242d4af2be3f80ebc6f3",
+    "Variant=Tertiary Black (Default), Size=L, State=Loading, Type=Icon": "656cd673decff73d74462919f2460af15cdc45d5",
+    "Variant=Tertiary White, Size=L, State=Focused, Type=Icon": "b6741a08e496276556c59e66dd0fec329dd0ea53",
+    "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Icon": "ecb5ebbd0d5955566eddb26f1ee48af37d6797b2",
+    "Variant=Tertiary White, Size=L, State=Loading, Type=Icon": "3e45d835ad35cfacce2e9a010262ba33d08860c7",
+    "Type=Divider, Orientation=Horizontal, Size=4px": "3edf10300f86356d3abb1fa11cee6af89ade4e74",
+    "Type=Filled, Orientation=Vertical, Size=160px": "23adb6eb5d94f3851b5d8791878bc3f189e3fce2",
+    "Type=Divider, Orientation=Vertical, Size=4px": "b8eb1e1cbb4b67c8d9dea7e3af6b6aae392674e7",
+    "Type=Divider, Orientation=Vertical, Size=12px": "cecd97c131c9f1d2ff4c0299c02b2160f59761bb",
+    "Type=Divider, Orientation=Vertical, Size=224px": "6be1eb33cb5cf4d919c1541fc5e557f8b56f0de5",
+    "Type=Divider, Orientation=Horizontal, Size=16px": "f47e3710ddc3ab7220a301b21a11e73ac578e1d5",
+    "Type=Divider, Orientation=Vertical, Size=16px": "5aac44f599737f68d3d6a7480e72e016aa8c6606",
+    "Type=Divider, Orientation=Vertical, Size=20px": "c9cb28a8885cbf7d7baa28b648bf416c7bc7cb72",
+    "Type=Divider, Orientation=Horizontal, Size=8px": "5aecf6906ad5ed16eed19d5d85f56b8c1c855b23",
+    "Type=Divider, Orientation=Horizontal, Size=24px": "d9c7dd4e8635891dc0acd1954f69a0dfc894dff4",
+    "Type=Divider, Orientation=Vertical, Size=32px": "16b711aaeaacc8a947ef58608277032db617bdc6",
+    "Type=Divider, Orientation=Horizontal, Size=128px": "6252bad961e6ebad7aa164d5762c742c5f4bb4c7",
+    "Type=Filled, Orientation=Horizontal, Size=160px": "745249607943cd9b9ce51e71a89740a55d0e2ddb",
+    "Type=Divider, Orientation=Vertical, Size=24px": "6f324b8c6576c717fb02092d064b2d4c3c392823",
+    "Type=Divider, Orientation=Vertical, Size=8px": "8b62287c1a5c267114923e21f0ae35c78dc82990",
+    "Type=Divider, Orientation=Horizontal, Size=32px": "71cace6b0ccb00dd5e80012de225c9d47a36f9c1",
+    "Type=Filled, Orientation=Vertical, Size=12px": "0b2e573d4844bf3ef1b1e687a1d03ea7c5970a55",
+    "Type=Divider, Orientation=Horizontal, Size=56px": "5dfee6ae3e2616644a21f8d3f2db05a1581de94f",
+    "Type=Divider, Orientation=Horizontal, Size=196px": "a0922eada1cdcde8e549ab3945ff67d36c1b35d2",
+    "Type=Divider, Orientation=Vertical, Size=28px": "6f084365f236b35b8ebf27140e93e73afb73f870",
+    "Type=Divider, Orientation=Horizontal, Size=36px": "8b11d2dba9bca4ac4ff7ab2b174e9dc0536e84e7",
+    "Type=Divider, Orientation=Horizontal, Size=96px": "eca4da3d29bb5e351f51e0d6f403687006f44e69",
+    "Type=Filled, Orientation=Vertical, Size=72px": "bf0de40eaef90df1162384536501b5c3e2877c93",
+    "Type=Divider, Orientation=Horizontal, Size=40px": "772b42670852b8bc15f8106709e059642e4be9aa",
+    "Type=Divider, Orientation=Horizontal, Size=28px": "fc715f0f7d8347451d7e90c9d1896a90995efd38",
+    "Type=Divider, Orientation=Horizontal, Size=48px": "7f6a911a8757912f2f332c231752ee4ab68b84ce",
+    "Type=Divider, Orientation=Vertical, Size=48px": "03ce39b8e6547ec7abc230b4cf5aa41896ff995a",
+    "Type=Divider, Orientation=Vertical, Size=80px": "5aff9b630f07f6a4d5d591c469688501095e6097",
+    "Type=Divider, Orientation=Horizontal, Size=64px": "cfade4503f759b3f306f054d8ccde88cf57b1f7c",
+    "Type=Divider, Orientation=Vertical, Size=96px": "3975f6883d91e5e90f7661cfb836552f7f92775e",
+    "Type=Divider, Orientation=Horizontal, Size=20px": "b22238932da7ac8517352e78b7da1cefb128df65",
+    "Type=Divider, Orientation=Horizontal, Size=12px": "548da3b3d4e25e763e001548750c8a7b90758d79",
+    "Type=Divider, Orientation=Vertical, Size=36px": "9c08c78332e67cd6082976d99664fcfeea85ab24",
+    "Type=Divider, Orientation=Vertical, Size=64px": "acae7643ccc4f9944c544cf1171c51e8a8934c71",
+    "Type=Divider, Orientation=Horizontal, Size=80px": "246e5cf3d23996528de906bd1cc408070f1e61c3",
+    "Type=Divider, Orientation=Horizontal, Size=144px": "42ed4f05a19e011d66c5bb18fdb0d0aedab46501",
+    "Type=Filled, Orientation=Horizontal, Size=144px": "3c9b9d25cf13353a24ec3449dafa8a3266e899c1",
+    "Type=Filled, Orientation=Vertical, Size=4px": "95af96019846116d0669f76a00c27762e2449eaa",
+    "Type=Divider, Orientation=Vertical, Size=72px": "6ab86c2b9c8f58b24b5445b4da063b0d18e484c3",
+    "Type=Divider, Orientation=Horizontal, Size=224px": "624d8ccc26755bdd710671e01a290cfc72c37641",
+    "Type=Divider, Orientation=Vertical, Size=56px": "ef9263731610ffbccc3503aa5b81f1cbcad05a5a",
+    "Type=Filled, Orientation=Horizontal, Size=36px": "648b559a5055deb1d22459f989628cb2534bd5a4",
+    "Type=Filled, Orientation=Horizontal, Size=32px": "ab557913243c4fb6fa3f6e7201b841f40f1f890f",
+    "Type=Filled, Orientation=Vertical, Size=32px": "8c8db8c87a0b9f43aee17c574ed8a99a956265d6",
+    "Type=Filled, Orientation=Vertical, Size=36px": "782c83d24d1eebdc1eeb7f4fc7b08d36ca7e8329",
+    "Type=Filled, Orientation=Horizontal, Size=40px": "cf46030753d2e517f637e26bab5046751b57c021",
+    "Type=Filled, Orientation=Vertical, Size=128px": "2ba8fd212e3d7b09addc327916b79cb384759d73",
+    "Type=Filled, Orientation=Horizontal, Size=48px": "245f5248b651bf98aecb655f4130d65ef134bae5",
+    "Type=Filled, Orientation=Vertical, Size=144px": "6ed197f3aacfb3720d1c5faaa26e636f70fb806e",
+    "Type=Filled, Orientation=Vertical, Size=48px": "e7e43c303bdb398148b5d888dc90c18c48774e5b",
+    "Type=Filled, Orientation=Horizontal, Size=56px": "e9dd9a8956f1f668e65a10b21ff19d0cde4a4569",
+    "Type=Filled, Orientation=Vertical, Size=56px": "5ff0b8aa1df8f45d6f28c3438af257b040be5e8b",
+    "Type=Filled, Orientation=Horizontal, Size=64px": "b52085ef3f9a7b80f1039a4d54e390cebab45a1c",
+    "Type=Filled, Orientation=Vertical, Size=64px": "46df4b407daec9f985d2605494076dfe0422959e",
+    "Type=Filled, Orientation=Horizontal, Size=72px": "626230cc4d98aab44de4f617a6b6b18a0c6c9938",
+    "Type=Filled, Orientation=Horizontal, Size=80px": "94b39c55b70c2cd499e7c620bcb0245ca9b65c50",
+    "Type=Filled, Orientation=Vertical, Size=80px": "9b1468f687c4a96f18eda883ce7c374e14f8b8e1",
+    "Type=Filled, Orientation=Horizontal, Size=96px": "2c3712097f08b0056889692bbb283b2f424c06d2",
+    "Type=Divider, Orientation=Vertical, Size=128px": "68c3b99a22fda84c0b16feba0ee4c5d0b0a90cec",
+    "Type=Divider, Orientation=Horizontal, Size=160px": "7fd6b78aee142b7e553b2fc49bb001611b6d7581",
+    "Type=Divider, Orientation=Vertical, Size=144px": "ff8d50f6beb355fa165ca6f682185d97968b7ae2",
+    "Type=Filled, Orientation=Horizontal, Size=4px": "3a4b236fc63c4e22d241717ad51d0d12e27dd4cd",
+    "Type=Filled, Orientation=Vertical, Size=8px": "81a2018feb9f186c935f099cb9fbb30b29325b66",
+    "Type=Divider, Orientation=Vertical, Size=160px": "d49754d14c2f34a0b498d0f7882538010776ff88",
+    "Type=Filled, Orientation=Vertical, Size=96px": "aacb7f52fc4f9d28d108c72cdfc9504ae4aeab15",
+    "Type=Filled, Orientation=Horizontal, Size=128px": "9070cc471a2c8c36a5f89f30125c3986d3a32d40",
+    "Type=Divider, Orientation=Vertical, Size=196px": "03380c73b938274417d475a7d7b313dfad846c9c",
+    "Type=Divider, Orientation=Vertical, Size=40px": "df40ef5ce018eea6caf92d3ed32b42cbc0fb5385",
+    "Type=Divider, Orientation=Horizontal, Size=72px": "2a8a0a799c923b463aacf7570187bca319094cda",
+    "Type=Filled, Orientation=Horizontal, Size=8px": "b2354fdf0a39e0e6b0a1f118d28ba444dd2bbe20",
+    "Type=Filled, Orientation=Horizontal, Size=12px": "fb52c6d87b6827830b8b1f7c0f7dad0dd876ec16",
+    "Type=Filled, Orientation=Horizontal, Size=24px": "3151a005f376fa9a30ea3b355475a1fb62f6f1df",
+    "Type=Filled, Orientation=Horizontal, Size=16px": "140a63d90ad8b9f1298016ffd915e4db50b88742",
+    "Type=Filled, Orientation=Vertical, Size=16px": "2b83b2c33daab28635eaadd768f0b59e0805844f",
+    "Type=Filled, Orientation=Horizontal, Size=20px": "e9fe7c1cb0e83a83088b4c6d6662761e94472c53",
+    "Type=Filled, Orientation=Vertical, Size=20px": "dcff8d83ccb01345b3e06045097b8551ade6be70",
+    "Type=Filled, Orientation=Vertical, Size=40px": "d6b1b13ade9e0a7ad3686db27f103362fbb9cfa3",
+    "Type=Filled, Orientation=Horizontal, Size=224px": "065df626fa0a42296d3ddece1ae82c37bc575582",
+    "Type=Filled, Orientation=Horizontal, Size=28px": "6d1f6b6b00d92de59d7b18f25d123cf1ae855bce",
+    "Type=Filled, Orientation=Vertical, Size=24px": "2677ba8280a07385b058ebe842a82a7c2067b021",
+    "Type=Filled, Orientation=Vertical, Size=28px": "4689519f65c5e7aa944ea9205b5cf7139367ec04",
+    "Type=Filled, Orientation=Horizontal, Size=196px": "42527828520ce58027205b84d1244f56ae75839b",
+    "Type=Filled, Orientation=Vertical, Size=196px": "089db1a8af073b839ec0c26fcf6db3305c18c5a3",
+    "Type=Filled, Orientation=Vertical, Size=224px": "ae09371bbf75d8d1ee93606ed572b5f4d6fb5c7f",
+    "Country=IE Ireland": "9eeab071560d1f91f4083e1dcf47ea8cdb23c6dc",
+    "Country=EE Estonia": "2aec338d7c306ce49bac414ea5abc00ff4699919",
+    "Country=AO Angola": "d833f34873a0124045e48796b1b17a7a8056b916",
+    "Country=DK Denmark": "ae37b0e023b9c354ebf64819d3c37b8398364c84",
+    "Country=SV El Salvador": "f3f50744dbb7908bc87ec237c7ae422346110210",
+    "Country=DZ Algeria": "66e837352ef8fb46ede4636e0127fc37d505f3f5",
+    "Country=BD Bangladesh": "824da3e7625bd2985dd83e938fc326c16007d02e",
+    "Country=ES Spain": "3c53bccbb0d2233079515393abc73e83a3b29d7c",
+    "Country=BW Botswana": "5af2b75a1e209c81aaadad887423c552675a37ba",
+    "Country=PE Peru": "15b72cc7e252c473f6a4210873832cfd41ca7fee",
+    "Country=VN Viet Nam": "5954126d7c0bcd6a392318467e228ad19529b2e3",
+    "Country=AZ Azerbaijan": "6524a9a39281c8ad169569d0b5424644727f960c",
+    "Country=SY Syrian Arab Republic (the)": "e60e607b66c2f0c4560a9d9eabd5da3179a4d8df",
+    "Country=BG Bulgaria": "9c316c23fc7748e91a3ed7eeb098e7d2a762f5cb",
+    "Country=CM Cameroon": "8435f86f0bbc1714dc4fe4bc254e02500bbb3883",
+    "Country=IS Iceland": "37d90e0d5b8b14c4348f8ddaedc4c58af5f2650c",
+    "Country=CL Chile": "e2d01c9dbcf331600e72ca176a3b7bd907d3ca02",
+    "Country=UA Ukraine": "815c3a2bd9f375455285264396ac17d8905b5ca0",
+    "Country=FR France": "25467b832a1f314832ed79915e16a950b413f71a",
+    "Country=TJ Tajikistan": "fc9d7d55e83bebdd368906a1cdaaf9899c33c8bc",
+    "Country=HN Honduras": "e68e556551aef3b1da822515b7544ecb7c549210",
+    "Country=GB-WLS Wales": "acaa55a4bcb738b65e2a539db21068d0e6e08108",
+    "Country=CU Cuba": "7cac922a3d43424b5256d0680f653a327b245b7e",
+    "Country=MZ Mozambique": "dbcec8c3f695934a41e81d76c28d425a0cf7a34c",
+    "Country=LT Lithuania": "0dff3ae67a3bdae65651f02c1bcf0af8f3af4839",
+    "Country=PS Palestine (State of)": "d2ada5c4493fdb79c6cd64bd09efa1998bde7a4e",
+    "Country=GB United Kingdom of Great Britain and Northern Ireland (the)": "659aeec8ec52237a0a14a5ae5512581a865a4fe2",
+    "Country=CZ Czech Republic": "1c6bba9ef3c93358293c9a9bf433ca0679078270",
+    "Country=AE United Arab Emirates (the)": "4a68a3a51c54c67a4477fe87a06c18837856a755",
+    "Country=DE Germany": "7dd6a3ba65278549d8afef974c67297caa6d4d91",
+    "Country=RU Russian Federation (the)": "604d02c9325b585cc48da42553504ded84b7f4d1",
+    "Country=GB-ENG England": "0822853c9f8e239ab8fcbcdf79cad9b7f0e39eb8",
+    "Country=MT Malta": "8edbd82f5e365ba9540e927012341aa5988efa8c",
+    "Country=KR Korea (the Republic of)": "319f2babf0391ec21eef2ceec9f8e3a00ee983e2",
+    "Country=CR Costa Rica": "8a8b7bd927f1e75bcc646bde4c6c907b0960a74f",
+    "Country=GH Ghana": "e966118ce68c6d038e996a881e2cce96818a3004",
+    "Country=BH Bahrain": "cf724633bd9225eb9ba30524bf1347263db40f09",
+    "Country=GB-NIR Northern Ireland": "56d57b97cba429b308ac38108a2fd31f2819b5fe",
+    "Country=GI Gibraltar": "fb6f3d91da5432c681a3b700fe2f0e6ee90ecbdb",
+    "Country=BO Bolivia (Plurinational State of)": "76765d99a4638ab6928ffe763b200a7a5f109f99",
+    "Country=EC Ecuador": "5e27a828d31f910d7c95937df0b2bebc910a9ad9",
+    "Country=MM Myanmar": "30d9232a31ac45029e1fd987d7860bd044286ce3",
+    "Country=JO Jordan": "26dc6c275b4d9b366201e439a2076456c7fbef2a",
+    "Country=TH Thailand": "754c4d588c8b901b065dee27d7b98e8a528f308e",
+    "Country=AM Armenia": "0421ce2bc61084aac4cfaa795a88d00593d80a0a",
+    "Country=MK North Macedonia": "da93bf89e7f9ae8b90a84e870dc8143476c480e7",
+    "Country=AL Albania": "3972829082392c346ac94c6b82321879c8f76090",
+    "Country=BT Bhutan": "6b6d3bc451076e2c4fbab007d655b5fd7a0edab8",
+    "Country=IT Italy": "0661b9b31bfe8304a04e5e5c1577863230fbdbad",
+    "Country=KZ Kazakhstan": "1ef72562a965ff94e2d463b206b81e9fb04272ec",
+    "Country=BY Belarus": "93dc12f13ae2037db17c052d30137d088e42d021",
+    "Country=FO Faroe Islands (the)": "b4042b52c426d6f3f42d95450c5e03ad926c7684",
+    "Country=MA Morocco": "b497393c36eb53d9542073360b14f05d67f897df",
+    "Country=LU Luxembourg": "048c3bfd7035403798a5574bd3df6b135068315b",
+    "Country=TW Taiwan (Province of China)": "dd0cdfad44e922c77c7e8a726f882f8a0bedacd9",
+    "Country=NL Netherlands (the)": "9c67ac10875d87691c46ca9299ef509cb18813da",
+    "Country=IR Iran (Islamic Republic of)": "cebe9d73125e77775c53f1692dcdddeb1391f58d",
+    "Country=JM Jamaica": "0231bbc5610bf76c1d8275abb0eab0d2e339e4ab",
+    "Country=NG Nigeria": "8ce31a436a6f8028876070ca2998785a2fe946cb",
+    "Country=SI Slovenia": "474a373e3a0b3b4f86ab6efd069b3eae5b9aa107",
+    "Country=SM San Marino": "5752fb291bd3b9a9c7326f8212d10625a10c6ad7",
+    "Country=PK Pakistan": "2878d045912fcfec3dff74af5f7886853d37a2da",
+    "Country=NI Nicaragua": "98c7ace2f45466b3f4a7f48223acc90586e323fc",
+    "Country=EG Egypt": "84c55c6919279c52e52df7aca96141044ca53271",
+    "Country=CO Colombia": "a784c42f5fd30f8ca04e9c94a3cf54eba88eca2f",
+    "Country=OM Oman": "ff36e7b10ffd4b35ac60b66bf4764bacf73e71b6",
+    "Country=AD Andorra": "01cfc0f390334f727bc1e2f41da92ecd0bf72e9c",
+    "Country=PH Philippines (the)": "b760d1d65c95432131f0ba7ae79ff1d9ba55f9e2",
+    "Country=RS Serbia": "a09a173a36669a5af7daa165b5a228083920b1be",
+    "Country=PY Paraguay": "7eb848f56a54624abc71866f3df4145263be976c",
+    "Country=SE Sweden": "5f8427739a129690dff3931dcc0e7a75d735b449",
+    "Country=RW Rwanda": "8295f708f775beb45b8b33d71d06b21ffb605b99",
+    "Country=SK Slovakia": "a4c09420cf3a97c9058b20cf30cf5b189397428d",
+    "Country=CY Cyprus": "9064ca02d2e39981ef4696bb85bdbb236a4f1b52",
+    "Country=ET Ethiopia": "fc0cb8056c4e9a54621808619ddb18901e039933",
+    "Country=SD Sudan (the)": "c82aa06f4edbd0b8f7d2d4a3a0896bd4b4db77b2",
+    "Country=GT Guatemala": "88e0fe3b4fd31d3061eebf19503eb81e594fe5df",
+    "Country=RO Romania": "decb08914a0d9f4a7b8972a2cbce0e631b2e6e4d",
+    "Country=TM Turkmenistan": "77e6768c1a41dcd579be654c4094c49567c2435c",
+    "Country=MX Mexico": "a56887750d557d89395f7ccc33cd0ea9732f7068",
+    "Country=PA Panama": "e5e46062ac76b869534bdf089ff7379797560bdc",
+    "Country=HK Hong Kong": "b396496232adc6366927600f63a9b3682c3c86f2",
+    "Country=TT Trinidad and Tobago": "2137baec831c55ef4b9d9810025a0e37ee257eb6",
+    "Country=GE Georgia": "cb6d4673ae55f140f5576264a72d4d0e4b631cae",
+    "Country=CH Switzerland": "f1b2f37f1a69893a24f70572736c599a5a1e7e04",
+    "Country=ML Mali": "b4951a2d13e149b6564cd24d7e639659ee051e7c",
+    "Country=VE Venezuela (Bolivarian Republic of)": "2e66b4ef11d454de4c39538fad08eaa8ae715873",
+    "Country=BE Belgium": "ef8ab8add7d75be5dffd2c887536cf2722ecdfbf",
+    "Country=QA Qatar": "596f22c3f17308d3802eb80967ce546340915a50",
+    "Country=GR Greece": "c84e83a3a1c488676ef5c17ead2159116dd1b1f9",
+    "Country=AU Australia": "c3f5d790c733755743cd3df5485b8f058b8c9c8e",
+    "Country=TR Turkey": "478bf2df5611145d7dce8b383207f05ba5d4e97a",
+    "Country=PT Portugal": "e79d9dd586375fc36e11c51c2dcee3806de9ae09",
+    "Country=ME Montenegro": "b237842746f986305dd28c8591f7ab6747e2b1b0",
+    "Country=FI Finland": "29758229e3d35b8b275aeb312791304b5356e100",
+    "Country=KE Kenya": "f92296e73280c74e7393d6447af95d7e758b4e34",
+    "Country=IN India": "6f0c6a0bf9f233e71dfad10730542fbdf5d097ea",
+    "Country=IL Israel": "3455eba3ac7c463f87eb5a74564a218a1a3f10ca",
+    "Country=HT Haiti": "2b88d8864a2253e919e8ac0bf901911a53714d1b",
+    "Country=SN Senegal": "9681ea1f482ef61145822476a96fd11dbfd8d5cc",
+    "Country=JP Japan": "5cf7ae70688c8633a6b6af54ccbbc2bb475d5927",
+    "Country=CN China": "65f9f4b021f3b3f402dd5f90c6be6666aa9a179e",
+    "Country=CA Canada": "24c2a76c2376663dd3f19e367ef5ad28087a8b34",
+    "Country=BA Bosnia and Herzegovina": "54fe05e86cfb849c9d7040dd2854d1c2808f499d",
+    "Country=AT Austria": "a3edb51db890444952557fbde9c9bcc59a829f8e",
+    "Country=HU Hungary": "f7830e578399b71229360a4b201d07016472eb65",
+    "Country=LV Latvia": "e502fcb309e4cfffae37368f44a93fa2bc54e7c2",
+    "Country=LB Lebanon": "59b83cbdbd8050fee14d3e3894249cc2f7cc8ad1",
+    "Country=XK Kosovo (the Republic of)": "79b350f73efedb870893b9f95eddfdd1f9e415ba",
+    "Country=PL Poland": "6e660780febf1a99f04236fc54509874d5fe1792",
+    "Country=Demokratische Republik Kongo": "23700525ed1a376dc1f4b00b834d3ad79f67f9a1",
+    "Country=ID Indonesia": "7b779d0e72346ed5cc4c4d88d68e28cc0c66596e",
+    "Country=US United States of America (the)": "db7c9d5a5ca0546dad3a9677fc4ef98c4fad7cde",
+    "Country=HR Croatia": "b2ba6d4e9c91c84fd4ef70a3de574e4145a8c468",
+    "Country=TN Tunisia": "d7ea15c2cc6168f9a4e284ccead3f9029d0b00ac",
+    "Country=MO Macao": "ba59237908501cb2504f88b319773232437b29f3",
+    "Country=ZA South Africa": "9dc017dc1f3bae0da531c368c997859170912c8f",
+    "Country=VU Vanuatu": "bee603051f7bfcac27e9da5b4b99535cfb48c348",
+    "Country=GB-SCT Scotland": "681240da52fedef6aee47dce21ec4542e7ac0b00",
+    "Country=KW Kuwait": "99d60873e8c9d94c126701d4b731dce926ab2aaa",
+    "Country=NPL Nepal": "cdfd9c2199295ea3b46b71071674235fa247a26c",
+    "Country=NO Norway": "e2a120fb7cb806eaec0b65b3ee9e315009456262",
+    "Country=EU": "65d49ae47a6736fa3c346609882378dadcd12f23",
+    "Country=SJ Svalbard and Jan Mayen": "3d45aacebc22d7bd23733aaa6d260240b4ffdc80",
+    "Country=MY Malaysia": "d235d374a360874db907a00849ef0e2827c1dea9",
+    "Country=World": "963931b457f0a3d1660221656cb85b4936c90edf",
+    "Country=MW Malawi": "95b32f71ad6ef7073ad7e7d8a784bb8e670755fb",
+    "Country=TZ Tanzania (the United Republic of)": "e51cc2a0ba69f9025a7e8c7a85ea91336d6af484",
+    "Country=UZ Uzbekistan": "988878e62f6a144fd8eda4ccfb4257daad713313",
+    "Country=SG Singapore": "284b15098e6e81c429865509ad904dec5d79771e",
+    "Country=SA Saudi Arabia": "fbb80a9af2dc18ecea723bd4d4b2e2ec9bad0861",
+    "Country=AR Argentina": "7da8549840907ba11363b791849262e23e300200",
+    "Country=VAT Vatican City State": "9cd86ca25f02e43fbc88b7bf1c00187e2d02af61",
+    "Country=IRQ Iraq": "3c3fd7626693a04fe05176a3f79e2f439a60eaf7",
+    "Country=KHM Cambodia": "2243b7fc1187ed923c8ab9dfa596003017a5e70c",
+    "Country=KGZ Kirgisistan": "49aabe3be817d76358e1150602eb56ad7b836c19",
+    "Country=PRI Puerto Rico": "51db8809f906460fcb40002d45780f1a8d6ad518",
+    "Country=MKD North Macedonia": "ebfa1bc627fff2f5b429108f1ca5ef511e66a8d9",
+    "Country=Curacao": "16d53f0abf2d76403c719de212978a04f8890429",
+    "Country=Kap Verde": "4887fd8c86b6cd4bf94a89fc133da99f8cd999e6",
+    "Country=UY Uruguay": "389a3e3d30b2438dafed43a7416f9585c5274d5b",
+    "Country=BR Brazil": "9562b81aac61c6479da3ce02f3ac76c49ec4503c",
+    "Country=CI Côte d'Ivoire": "7accedf370337f3e072f022c765f21a71600843f",
+    "Type=Success": "022fdcd7e4d461ccc6fb361666e163564b0347a9",
+    "Type=Error": "f1b852d14a74e4bec8372ddd4aae8f43c642b84e",
+    "Country=MO Mozambique": "e841839132cf3627f24804fd27b232de19b5c617",
+    "Variant=Secondary White, Size=L, State=Disabled, Type=Text": "c5e451c20352462c1d04b987ce6b91ec08903fc1",
+    "Variant=Secondary White, Size=S, State=Focused, Type=Text + Icon": "9b3ea635aa7ceae21dca96334cb0e693e9a84a7f",
+    "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text": "c2b56afbc9b51d91c2d4f027a50c841b8dbe6851",
+    "Variant=Secondary White, Size=S, State=Focused, Type=Text": "f630834dc502cbf7994628841888475a3c16a2d3",
+    "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text + Icon": "63ae364dc7b121549b810d479c88ea1264fce2e6",
+    "Variant=Secondary White, Size=M, State=Mouseover, Type=Text": "0be50c0637aabd377312345b3caafb596ec26527",
+    "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text + Icon": "09f85e63e999ca78ff297b419efc97b04a2fb3b8",
+    "Variant=Secondary White, Size=M, State=Disabled, Type=Icon": "3b15981ef8bda4512dc198eb8b50272f6102e2cd",
+    "Variant=Secondary White, Size=L, State=Focused, Type=Text": "1c693cc79bb783fdf7fb74811458ee3e9bebc69c",
+    "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text": "d3f3439fd217d49fe19e0c993ed32a3d925807c1",
+    "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text": "cab928a464cd3dd7005c552fc85d74620756c7d4",
+    "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Icon": "837e03233145079ff7a9c6b0f035d903529e1f39",
+    "Variant=Secondary White, Size=S, State=Focused, Type=Icon": "2062583c810550963afdf90e9296931141100962",
+    "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text": "b191f18b3fbca9e82c044f38818bd40560a7c31f",
+    "Company=Google, Type=Grey": "76fe978abedce7ae0bad51cb8b63d848cc8531db",
+    "Company=Apple, Type=Outlined": "c7a15132cf154d382feedfff22c796ed9b995949",
+    "Company=Huawei, Type=Outlined": "cb556d2f9e5dcf71bbf4593b8e056b37f85221ba",
+    "Company=Android, Type=Outlined": "d0892ad2ffef179a12c32d3eabbc921108398a67",
+    "Company=Google, Type=Outlined": "b812da112da5b239c46d0d54f59a5991c2950378",
+    "Company=Huawei, Type=Grey": "8aa6c0a5f9ae1081a5feecfd662fcf8519b996eb",
+    "Company=Apple, Type=Grey": "348ead58dd0dab9e8dfba136fd01893e44f130c2",
+    "Company=Android, Type=Default": "0366e42d0cf4bfc7e9a23422eccc85f519e4271b",
+    "Company=Huawei, Type=Default": "ff323dc5438f6d9a699edb88cf8813b16347b232",
+    "Company=Android, Type=Grey": "d98c3951e7e02a863295886ff3bb0e28ecfe2cc4",
+    "Company=Google, Type=Default": "a1bdbe5c91c6b2dc0f4a40a209a306737510c5f3",
+    "Company=Apple, Type=Default": "f1e845db08e00a237f8766aaa37c1f5655fbea6d",
+    "Variant=Secondary White, Size=L, State=Default, Type=Text": "d8be1590be61e8a7a1adff79effa47c6cf4e55a4",
+    "Variant=Secondary White, Size=L, State=Focused, Type=Text + Icon": "5da7da0a6b750347f0a4fd29e7788e24159b4a64",
+    "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text": "a1ba2da68afbf713c4564f0dfc2eeb379b75f529",
+    "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text + Icon": "bbafc22cb0e8ca7456685f6bd72af56f2684788b",
+    "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text + Icon": "7766ba38cc4006e784a0cc183945be275b755ff2",
+    "Variant=Secondary White, Size=L, State=Mouseover, Type=Icon": "5a31dd8a7af84c235de0a6f6d4a2b625cfd2112c",
+    "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text": "fdbffe2f276d096367577aea551c038ccb4e2edf",
+    "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text + Icon": "98169646e0b45d238e1eff83a3f69ebc49e37ec7",
+    "Variant=Secondary White, Size=M, State=Default, Type=Icon": "10261a7292d561e430f257261e853cd6bb5c214e",
+    "Variant=Secondary White, Size=M, State=Default, Type=Text": "f3c1ae481294bcd1600055af5cf54bb520d9ef5d",
+    "Variant=Secondary White, Size=S, State=Default, Type=Text": "a4fd4746f359daf467a59b3ff81f103afbb26527",
+    "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text": "26bf7e2c0cb8be61c300f6703d08453819362e66",
+    "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text": "e364ffb2c8fd1aa0fc9d2324fe1e11d9468863f0",
+    "Variant=Secondary White, Size=S, State=Default, Type=Text + Icon": "80c889946cee4df727991b0307ab9dea9c9fcef1",
+    "Variant=Secondary Black (Default), Size=L, State=Loading, Type=Icon": "5b63eb35b3d6f0c25ee9b405e6e8944dcde9ab1b",
+    "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text": "3ee52d62bd1e44fe5f1f7773eff50f5e3dfcd3e3",
+    "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Icon": "e05f1a8154e6539703848b7f0338b4e5f8d8687a",
+    "Variant=Secondary White, Size=M, State=Disabled, Type=Text": "1449bf3daadd3a3d9f33ec474b954ff14303ca4c",
+    "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text": "26cd758ef967349b9afba403596c5bf47c263c9d",
+    "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text + Icon": "fa8723a504cf23863bab64237a51f560973fdc07",
+    "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text + Icon": "48b219569f936069d3e5a2be2f8ae40ee671a266",
+    "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Icon": "dedecf04c97978ff0b3866eecf21df6666eace58",
+    "Variant=Secondary Black (Default), Size=S, State=Loading, Type=Icon": "1a11cb59910358cd5c4d3b99d090e7e80f9b6796",
+    "Variant=Secondary White, Size=M, State=Focused, Type=Text": "0a1855af1bdbf266212824bba9fb71e18680e291",
+    "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text": "35fb345b0e4ef4bc01fabad87c2da12163f7b318",
+    "Variant=Secondary White, Size=L, State=Default, Type=Text + Icon": "a03670df73d4d4c94f13c98335a8e1879a5d709c",
+    "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text + Icon": "3513ad5d17e9c546ffad2e146a9adde2ace89ed6",
+    "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text + Icon": "f2fe68f69388c7bcd76a72dceef10715124a9b6c",
+    "Variant=Secondary White, Size=L, State=Mouseover, Type=Text + Icon": "57da96ba0bec156feec3ebd033f8db2ec0631a11",
+    "Variant=Secondary White, Size=M, State=Disabled, Type=Text + Icon": "36216fce7a731fa2eb0ff1f0d98cde8b72363a8b",
+    "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Icon": "b5a55addda1f842bd8ccb7393268c80099ecec53",
+    "Variant=Secondary White, Size=L, State=Disabled, Type=Icon": "74eb3c2c77e008928e5a8cb01874c7f11cc79d77",
+    "Variant=Secondary White, Size=M, State=Mouseover, Type=Icon": "2012c67e3a68fa45cae5dcb5fc8100e5b37a60af",
+    "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Icon": "1b8f35a095aae1facd46bfcb1e342e8f42bc2892",
+    "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text + Icon": "d8aea9002bc69cc50c6db7816f06780cf62c593c",
+    "Variant=Secondary White, Size=L, State=Mouseover, Type=Text": "39d1909d14af970904f31f151535954feac951bd",
+    "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text + Icon": "98feba1b17579ee7436e684cf06e32f6dc10ad4b",
+    "Variant=Secondary White, Size=L, State=Disabled, Type=Text + Icon": "6733a23dc7cb0022121a2b5a6aa38b62e0e87489",
+    "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text + Icon": "f81bccfa4c876359be3688a99242ab43cbf78e01",
+    "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text + Icon": "bce505debea95d65c06d1d4d7e4c8d62fc04777d",
+    "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text": "8b8adea1df71eb00c4c1edeb3c1abe5aeccdc91f",
+    "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Icon": "06bdae65bf853c944414466ae17fee90182ccc4e",
+    "Variant=Secondary White, Size=M, State=Mouseover, Type=Text + Icon": "91dee649dd59a094723cca97fa4dbd0795e0f295",
+    "Variant=Secondary White, Size=M, State=Loading, Type=Icon": "962c8749b0c4883fb6abe03fc1e6392e3da68eb4",
+    "Variant=Secondary White, Size=S, State=Mouseover, Type=Text + Icon": "7fc809442bb45d8a5dde3cf1537a811dc5cf611c",
+    "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Icon": "632316983a76b821ceebc84470b7ef242ab2869c",
+    "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text + Icon": "93e64dd3e90e88ce8f5da2e2fc9476f506cb65bc",
+    "Variant=Secondary White, Size=S, State=Disabled, Type=Text + Icon": "71cfc133fc4becb6a07da0e1bc6d5918cf82df4d",
+    "Variant=Secondary White, Size=M, State=Focused, Type=Text + Icon": "89bb0ea2371dc914519afe8d6abcd0d0e75be735",
+    "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text + Icon": "66c0b22e26f989ee843aa9f187c146791e3bb31c",
+    "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text + Icon": "f91048207752c3d4833762d8f014f92563fbaae5",
+    "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text + Icon": "fc2cdc0b82dcc797d7cb3f303f262d54c69a1150",
+    "Variant=Secondary White, Size=L, State=Focused, Type=Icon": "040b23a262da1e776ebb9faccf6bd040dcacf1e8",
+    "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text + Icon": "395451b0c7fa2b78f3e510698f280697e5f68fb4",
+    "Variant=Secondary White, Size=L, State=Default, Type=Icon": "096a371342f54f71e4e16a663aa110ca312c40f7",
+    "Variant=Secondary Black (Default), Size=S, State=Default, Type=Icon": "fe85e2a718e70e4be36ad5da2425aa4823a504ff",
+    "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Icon": "859124b2c97f7cd54f3d49c542199b3715e6bb94",
+    "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Icon": "c03ead284d0fafbe4b94a5385a091e74c6cde84e",
+    "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Icon": "4f7464d7f48e97f1cab8325db79e3146fd298367",
+    "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Icon": "d8ebb3486d9abde51b5d42175ea80e69b20709e9",
+    "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Icon": "550b09a74f42bc6fe546a94251cbaa7e09662d47",
+    "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Icon": "cbe7de77733abd18d1208845239bfd6bd02684ba",
+    "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Icon": "bc1f58bfed8ad013d73d457f03a63995c6d083db",
+    "Variant=Secondary Black (Default), Size=M, State=Loading, Type=Icon": "04b3f0dfbdcf6bdd76d2ed5735746286ad71c53f",
+    "Variant=Secondary White, Size=S, State=Mouseover, Type=Icon": "1e0848e4cb54eab11ee1cebcefb0e3ed9a19c9e9",
+    "Variant=Secondary White, Size=S, State=Disabled, Type=Icon": "ce718c5099a5e767e6f0d46211265f40687a71b6",
+    "Variant=Secondary White, Size=S, State=Default, Type=Icon": "7d9a7b64a9212cbe09fed31916e1daaa36c0c656",
+    "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text": "c209cf59f85ac5fa0a7812bfb146df7f756ff2f2",
+    "Variant=Secondary White, Size=M, State=Default, Type=Text + Icon": "d20f5b404cac9a2fb202cecc28d282e6b60a389e",
+    "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text": "2e10aa063d4e45f1aa26beb63ac9ca82b357f92c",
+    "Variant=Secondary Black (Default), Size=L, State=Default, Type=Icon": "56b95ab6a76532b2ffa3cf01d07a641a6bfc6b95",
+    "Variant=Secondary Black (Default), Size=M, State=Default, Type=Icon": "73cdae40b005d980ccd4f1dd8ed057f3b889d3f5",
+    "Variant=Secondary White, Size=L, State=Loading, Type=Icon": "b5f6ac5eb7461f70df840cf4994c6951d8db2e63",
+    "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text": "2f6a9242d4ea2f0857235ccc94b8058a76b01139",
+    "Variant=Secondary White, Size=S, State=Disabled, Type=Text": "167921fabf409b1333107871c3afe6dd1cbfef55",
+    "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text": "ad48a463d8b84747858c5c5b701e9670ca6c15dd",
+    "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text": "0a50e3d88972751e51fed7ce5316c5ce9316013e",
+    "Variant=Secondary White, Size=S, State=Mouseover, Type=Text": "a3ad5e15e6e02de892c09339736fb0e5a37778d2",
+    "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text": "c4013d035967476ff19d58df633972a0a853043f",
+    "Provider=Evolution": "03f2421f1adde8d61bf742ade9ff6758fa7617db",
+    "Provider=Skywind": "f686c5e125eeefbf6a7a8e69fddf7bfa332b4ba2",
+    "Provider=Playtech": "e4951353ce31cfe7981fc0a102ce66ac375b9e3d",
+    "Provider=Pragmatic Play": "862072c6ac1f7bbba8a4e8e0838413983c490c19",
+    "Provider=Stake Logic": "92e904a5d7827999d3f7b4f2e77c8438946e5ce1",
+    "Variant=Secondary White, Size=S, State=Loading, Type=Icon": "42b8460a8c58fc5cabff712ac22cda2b545fdede",
+    "Variant=Secondary White, Size=M, State=Focused, Type=Icon": "ab955d93b5d212212c046419a5ab5f3982d5cb1b",
+    "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Icon": "1ddb1d84ecbec76f1cd3771359d7375bab2d37e7",
+    "Rank = Ninth ": "b088bdba219c5f5799df5eba734d57f5260d12e3",
+    "Rank = First ": "2ce8fd45e8df350b62b4db1c8bbb088e1fcfab36",
+    "Rank = Fifth ": "898dd592000f4db30698d65b2f33a7f4f9e1cc73",
+    "Rank = Second ": "bd8b0cf1afc54d4142c8ce2072eba5a9b65f495b",
+    "Rank = Third ": "6fe12a3a90f13acc19bbe7539b372cd4a523af26",
+    "Provider=Booming Games": "910a109c623afca80e68c9817351e77295e62bec",
+    "Provider=Swintt": "95a33e0a7bd63fa20cbc4144ffff6dd820337206",
+    "Provider=Holle Games": "a849cd94b911e0537928287fb0d081b3281c49d7",
+    "Provider=Isoftbet": "d5590925bb5b529896c9cbb4072fc7099ccd9566",
+    "Provider=Betsoft": "54f529541c000e061e5ca4414d7f09c5dc5cc94e",
+    "Provider=BGaming": "c38e6a17a38cc259adb6147ec5bba68ec87542bd",
+    "Provider=Wazdan": "7e27b98091c6d574c2890998ba8130962cd9b022",
+    "Provider=Reevo": "bc34d817725597634e99fa9ad30bbbd2a7f3c75b",
+    "Provider=Ela Games": "92bb1662ab8801a0958524efa31150ff1821ebef",
+    "Provider=Games Global": "3caa1afb1c8f7d666a4987c395f1143ce6c5dc4a",
+    "Provider=Endorphina": "9ff401110a5a3aa05e22dea9ec9691f69b829dcf",
+    "Provider=Evoplay": "105470dac2b40c2630f3ed6451eb4f04a7bb0a63",
+    "Provider=Relax Gaming": "96235d28bb2fca35399e2e491454cbce153c1b02",
+    "Provider=4theplayer": "153282ccde005bf1f95e11aaf86f3e96c9e16277",
+    "Provider=Fantasma Games": "6e5ef90f93d6317d3ce2cd2d5ded66a3d799594c",
+    "Provider=Iron Dog": "376cc99d9a02a740d250b3fe8d444bfe5fd7d51e",
+    "Provider=Gaming 1": "daf80a56d8042740952fa732b5b2cfcb8f7396ea",
+    "Provider=Foxium": "35b8615227b794ca67449ecd31d1581afd9b0e5b",
+    "Provider=PG Soft": "770f8f4a4c970c9de2eff87ad029ea1e61716289",
+    "Provider=Eletric Elephant": "6013208ed00874b434fccab0c988775b568344d7",
+    "Provider=Wizard Games": "32cac38be0b79b027e330e8131844fc82bde0c4a",
+    "Provider=Gamomat": "bd5f4908e2bfc305079a6c0a3aa89da828f1a935",
+    "Provider=Nolimitcity": "0f066f5d743a8460e39f65c7f8f47b8c68c3702f",
+    "Provider=G Games": "678b4acc0a3ec160fe48bdda137c747497d13ef3",
+    "Provider=Ainsworth": "70440da686e5619e67a70b46f94a3a6c1ebcc72e",
+    "Provider=JFTW": "58b703fdfcb9e7c71ed44b1a186cdadc1dcb3199",
+    "Provider=Kalamba": "5afc27af0cf91facb05f0ee276bf8c672cbcbb57",
+    "Provider=Bragg": "7a397af2033c8d515a6c58d6e36cb5d6b74de736",
+    "Provider=Red Tiger": "31e2798c63afadc723ffc74bbe13c4e316c5ba79",
+    "Provider=Leap": "f95fe4ca4f85d486f0163b5beeeed9fee50a7bdf",
+    "Provider=Hacksaw Gaming": "985a8bded3383b9a7992bb463dbb291c54786ac4",
+    "Provider=Inspired": "92c82ee918570031f49a1f406848c501dde2335b",
+    "Provider=Galaxsys": "ed5469c1df9a99680b3434a1d5ea45344afe8541",
+    "Provider=Netent": "adb5b0e9fce2ce27bde9ef089c2547b7f3f1a5b5",
+    "Provider=Gamingcorps": "971af70f813ca2ed579a7fb7c4d34b181c91cfd7",
+    "Provider=Aviatrix": "436648d288beb2b8a1b197380f664df4c67016e3",
+    "Provider=Playn Go": "f989b1e7c2ede0fc57c9cc941c51d4ed0f92cd58",
+    "Provider=Playson": "340eaefd1cc2b9c92d6ab2d9e395009ea0298164",
+    "Rank = Fourth ": "79ff6c21e1de20b703b0088bbd72b51e6de38725",
+    "Rank = Sixth ": "d6335eaa4ffad00e86c4296cfa0bd63f895796f5",
+    "Rank = Seventh ": "27388b00ca8e2ff073e7e8f878e7de59474dfdef",
+    "Rank = Eighths ": "fae67568aa02028d4a7cb0f662acfe700ce19517",
+    "Rank = Tenth ": "654f9df6099e2ef47afdd4e7be3b340f1ca6e296",
+    "Provider=Big Time Gaming": "d7f39b9d4446a77bedc58fdf5e79ccf8fceb625b",
+    "Provider=Blue Print": "e642d673fa61e43f01fc6277c47bee7df4ae60ac",
+    "Provider=1x2 Gaming": "06616c5eb9afda7211e02179c49992323dd85419",
+    "Provider=Print Studios": "4f3e31645bf23734f979e9819fbdc8f14a838643",
+    "Provider=Golden Rock Studios": "35c61e97a353cbee74fe6464b204ed7e49aa0f2a",
+    "Provider=Pushgaming": "3de3be3abb06a853d325b75bb07cae6dcd2123fe",
+    "Provider=Red Rake Gaming": "ad3c77e46d3a35194d79997e8a875131b923f18f",
+    "Provider=Rubyplay": "bc9984c17bbb63b7d02dbd3b3f52bcfff49d065a",
+    "Provider=Elk": "4ae4f12c75bcdfb9363573f46cf42de7acd834d5",
+    "Provider=Silverback": "545bf16f53ca9bc582c6139b89f4853ec95f5c60",
+    "Provider=Thunderkick": "cab2c18fd72fe36d8b373a4cebe04918808544c8",
+    "Provider=Slot Factory": "8082a2fb03d084da288a64d18c60e29aad0f4042",
+    "Provider=Spinmatic": "bdce07c07fef06a236298f71ee51898194f4d0fa",
+    "Provider=Stakelogic": "ff25ad24bf493613dca0f6344f83283f8f8c1c1e",
+    "Provider=Yggdrasil": "3bc96b397ece77de2c719557c606b9134806ccf9",
+    "Provider=Synot Games": "4e0ba070fdb707763147965f4e034f805b2d9fc3",
+    "Provider=Tom Horn": "d7d6a14e7b0eccedf36496465a7bd9356f8e2011",
+    "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text + Icon": "e96100f4b01d7d9e78670c996ce640c3478a41fd",
+    "Variant=Primary Warning, Size=L, State=Disabled, Type=Text + Icon": "513404ce0a89b6cefa0abf9c3455590ebb2df0f6",
+    "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text + Icon": "1c1b69b5c8d4c336117327e5c0682b033aab1261",
+    "Variant=Primary Success, Size=L, State=Disabled, Type=Text + Icon": "35b5b8f1624e3987b741bf9647d8925438d9c97f",
+    "Variant=Primary Danger, Size=M, State=Default, Type=Icon": "835d754463159bccb5acadb52b5e959487940108",
+    "Variant=Primary Black, Size=L, State=Disabled, Type=Text + Icon": "50cf67a5cd8cae43e769d1367419d9173bb91d16",
+    "Variant=Primary Danger, Size=L, State=Default, Type=Text + Icon": "2103dc608fe10ac246b3b2765dc1b9914c2d504d",
+    "Variant=Primary (Default), Size=M, State=Default, Type=Text": "ade193d492c3bb0a98479210232bdc4ca7af779b",
+    "Variant=Primary Danger, Size=S, State=Focused, Type=Icon": "57cc097255ef9b5125c437e01735647c773081fb",
+    "Variant=Primary Success, Size=S, State=Loading, Type=Text": "0cf2775a36baa509f1e5bb995ac9634f11e62f91",
+    "Variant=Primary Black, Size=L, State=Mouseover, Type=Text": "06527240208b86c3492c8777c759176c5164f3f9",
+    "Variant=Primary Black, Size=S, State=Loading, Type=Text + Icon": "c11ad7fd89aada140ca2ad84455d5e07b6266807",
+    "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Icon": "8cd93cfce0e0edb7e409621013356a14a2a76e41",
+    "Variant=Primary (Default), Size=M, State=Focused, Type=Text + Icon": "cf2c19dde62caa8625a16b77e5390a5ab814883d",
+    "Variant=Primary Warning, Size=S, State=Default, Type=Icon": "9ff25605524d803f8717407a686d92c49ae26bec",
+    "Variant=Primary (Default), Size=M, State=Disabled, Type=Text + Icon": "e724203c58ceeccce360c515d32396cfc4a6305b",
+    "Variant=Primary Warning, Size=S, State=Disabled, Type=Icon": "5352103641dde1c8d972610c4768c15506262675",
+    "Variant=Primary (Default), Size=L, State=Disabled, Type=Icon": "89df9568ae96280cdf0b38fec134a1ec9b9e6f0e",
+    "Variant=Primary (Default), Size=M, State=Focused, Type=Text": "9285cbf88578c68576e174560f13bed41a251098",
+    "Variant=Primary Danger, Size=M, State=Default, Type=Text": "df81c21f6353a3a3d427ed9f9123302cafd278e2",
+    "Variant=Primary Success, Size=M, State=Focused, Type=Icon": "c941afbe6664ff426578f551d0c5a5a42735d730",
+    "Variant=Primary Success, Size=L, State=Default, Type=Text": "0b896471ec69ba30613b32b4508d3ab89cf428f3",
+    "Variant=Primary Success, Size=M, State=Focused, Type=Text + Icon": "f0a0c4c305f4e9f81d301b4bf4a118a73cb533d5",
+    "Variant=Primary Danger, Size=L, State=Focused, Type=Text": "8a006fefb593fa36d931af1f5ed29436ed812757",
+    "Variant=Primary (Default), Size=S, State=Disabled, Type=Icon": "490106f46001a4c8eb8bcc7ded8c48620c97c532",
+    "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text + Icon": "6a2b1107bffb4fa8af79ed754cf652c97c50d346",
+    "Variant=Primary Danger, Size=S, State=Loading, Type=Text + Icon": "d8ab5e9e9243f221daeb26cba0f6ff37cf2ae243",
+    "Variant=Primary Danger, Size=S, State=Loading, Type=Icon": "b8792bce77a63de75e955e5324a4df2d58f9b413",
+    "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text": "a6978fc5736d40baed7f7da0b0a8bc00afd253ad",
+    "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text": "971aec2f79c7cbc084d34f8622f776cfe9212f83",
+    "Variant=Primary Warning, Size=M, State=Focused, Type=Text": "3dd84a8b0c8016262765cf3f13e0f2bc49a30b18",
+    "Variant=Primary (Default), Size=L, State=Disabled, Type=Text": "f463cc4e4e8f7ca8cb91f8b46ade0ccf0bcfbacb",
+    "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text": "b7149fddea486ea1f11f10977c38b45c1cad4441",
+    "Variant=Primary Black, Size=M, State=Default, Type=Icon": "3680863e697440f02dabf2af7926727a1f53491f",
+    "Variant=Primary Success, Size=L, State=Disabled, Type=Text": "83a39f8b0d49180215afd3a7cec61ba8db511ec7",
+    "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text": "d3fe8cb3868a5bb388732d0d4ace768aa1e8d3c5",
+    "Variant=Primary Success, Size=M, State=Focused, Type=Text": "157a0b8c4e4083f745c31d1d0893f311a50f5f6d",
+    "Variant=Primary Warning, Size=M, State=Focused, Type=Icon": "b8fa80f43dde6b82dba883d0ec4f0c146978be2a",
+    "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text": "4b8d7356f15c7be203ebcacf3ee1baa5824b90f6",
+    "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text": "25c75853032230932c54ac2c477b72eb155e6fc2",
+    "Variant=Primary Black, Size=M, State=Mouseover, Type=Text + Icon": "37dc313e74743c3966fe650395b29fa9711bfb3f",
+    "Variant=Primary Black, Size=M, State=Focused, Type=Text + Icon": "3c7d157447a16f919217df60ff3f43c266979280",
+    "Variant=Primary Warning, Size=L, State=Mouseover, Type=Icon": "378089331ff8fdfff60dbf35e7a0d9fb199bed48",
+    "Variant=Primary Black, Size=S, State=Default, Type=Icon": "25436a4cc66eb9b7483814c76eacb25dd183a9bb",
+    "Variant=Primary Danger, Size=L, State=Disabled, Type=Text": "a42d51c7f34c62cc7d57ca004d0fe2f19348efe3",
+    "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text + Icon": "69ad034cda9cb10eeaa5b56885ffb25b1851dc40",
+    "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Icon": "c6d7456e93517420766909e1156ef9756930a851",
+    "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text": "26310f10dca54e8578d6efd009f50ab191947784",
+    "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text": "8ea442f0e7b76957b73a788b2d86ccdfc2a96681",
+    "Variant=Primary Black, Size=S, State=Focused, Type=Text": "6f2cb60eec5c8377c772ca0274ebaa808c2e3bad",
+    "Variant=Primary Danger, Size=L, State=Disabled, Type=Icon": "4a3070452a123ea209e1403f83239615bf59cf1a",
+    "Variant=Primary Black, Size=M, State=Mouseover, Type=Icon": "54e119d24057b440c5c6dd91724a97083e00fab8",
+    "Variant=Primary Black, Size=L, State=Default, Type=Text": "928c8d06bfcb8d1f2bb55a764b298b99ecee2542",
+    "Variant=Primary Warning, Size=S, State=Default, Type=Text + Icon": "1f5e393b863740e35997ea59d471d5897348256b",
+    "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text": "77b221d8146ca9f34ab8710201cbce81ec64d11d",
+    "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text": "5d0ec1b4a94675ed8bf0bab89f54b10f2405e1d9",
+    "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text + Icon": "65bd0cb614bdffa69f48b9a51df1efc7ad45f72a",
+    "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text + Icon": "12179158e26223f009779496ebbc657d7badb313",
+    "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text": "55741db86303526a49b384d16393f5007348e434",
+    "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text": "e29598b2af2431d68c2a444f8e528e2dff4de8bf",
+    "Variant=Primary Danger, Size=L, State=Disabled, Type=Text + Icon": "432a006f7ee4721f05ff469c91ae8ed79a0b957d",
+    "Variant=Primary Danger, Size=L, State=Default, Type=Text": "888fe220e67f3a0d6660ee78bd8b89472e098acb",
+    "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text + Icon": "08eb9679e6b8c23c95f7f4af5dcca1888d1aaa48",
+    "Variant=Primary Danger, Size=S, State=Loading, Type=Text": "50fd998392cdf74a4aee3b7c4175181e056aff35",
+    "Variant=Primary Warning, Size=S, State=Loading, Type=Icon": "ce5925d4652140e811737aee207294d66ac332bf",
+    "Variant=Primary (Default), Size=L, State=Default, Type=Text": "7c04753ba01dc81946a5e08d21a2889386ebb573",
+    "Variant=Primary Danger, Size=S, State=Mouseover, Type=Icon": "c80d5b839c1f808eff2608297c9a0b410f7771a6",
+    "Variant=Primary Black, Size=S, State=Default, Type=Text + Icon": "2d49efa6794b792b9ec609fd5f4b3f89d02a2ce8",
+    "Variant=Primary Warning, Size=L, State=Disabled, Type=Text": "1a21629211c3f00ad0ef03b05b95911aecaf4805",
+    "Variant=Primary Black, Size=L, State=Focused, Type=Text": "609cf3715c2f370451285663cb1323d68c4aebc1",
+    "Variant=Primary Black, Size=S, State=Disabled, Type=Text + Icon": "259cd2e2479ccf5c3ee40eb23a5b6f60489b7835",
+    "Variant=Primary Success, Size=S, State=Default, Type=Text": "3f8d9e102cf6f18e7937439d4e340eab96bfd149",
+    "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text + Icon": "f011013abfdd5b6f92adc5676c65dff4c9039dd0",
+    "Variant=Primary Black, Size=M, State=Focused, Type=Text": "4bb5437fa2abed454839eea885c258fccdbdb191",
+    "Variant=Primary Warning, Size=L, State=Default, Type=Text + Icon": "cf1bf4d2dfdb03ef75e245cea98319c563b2586b",
+    "Variant=Primary Danger, Size=S, State=Default, Type=Text": "904e64abfa12fc5276bb5d6a38fb71f541e0c3e0",
+    "Variant=Primary (Default), Size=S, State=Loading, Type=Icon": "3a92148b3475d1548625f176916e488a7294907a",
+    "Variant=Primary Danger, Size=L, State=Focused, Type=Text + Icon": "036aab26e8709d03911f50178205a81eb4df4a7a",
+    "Variant=Primary Black, Size=L, State=Focused, Type=Text + Icon": "803a937177b48c23a6743244adf5653619d7d884",
+    "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text + Icon": "9fab796a6484ee8cd8c67426a9697380ae36a6d2",
+    "Variant=Primary (Default), Size=L, State=Default, Type=Icon": "afc707de225d89f98101d68d43be40a7ecf29d40",
+    "Variant=Primary (Default), Size=L, State=Default, Type=Text + Icon": "c677fd779c5c14feadddf30202bf04fe6b993824",
+    "Variant=Primary Danger, Size=M, State=Default, Type=Text + Icon": "55e4e33e06ffe3782524b3dd7c55d3bd612a24cf",
+    "Variant=Primary Success, Size=L, State=Default, Type=Icon": "b2f788894654e5a8fc8299f4b0f07ad255fbf7ee",
+    "Variant=Primary Black, Size=L, State=Mouseover, Type=Text + Icon": "f99438175232490080259e4cce5d9a149a3904b4",
+    "Variant=Primary (Default), Size=L, State=Focused, Type=Text + Icon": "0cb95507f83226e2520be4525a44165c63f00e59",
+    "Variant=Primary (Default), Size=L, State=Disabled, Type=Text + Icon": "423986d7c01be6622b33a3e0f871c5fa26cf54d1",
+    "Variant=Primary (Default), Size=L, State=Loading, Type=Text + Icon": "970e9d531c58636d4990a9f92f87d5af86f6722a",
+    "Variant=Primary Warning, Size=M, State=Default, Type=Text + Icon": "1c9b0846840e7d639349f14f2d91926fe01f6ad0",
+    "Variant=Primary Success, Size=L, State=Loading, Type=Text + Icon": "e019dae51569ed4339f95dfea107bfd1eb4e4b99",
+    "Variant=Primary Black, Size=S, State=Focused, Type=Text + Icon": "4cb9a5d8aca9577c84063fa85c261346c858d055",
+    "Variant=Primary Black, Size=M, State=Loading, Type=Text + Icon": "886390eaaced6b0db6368d02b766ed724e304fe4",
+    "Variant=Primary Black, Size=L, State=Loading, Type=Text + Icon": "a881e6175359047f91137f76b7cecec3bdfc2366",
+    "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text + Icon": "89b4d39f147f8f02b0298c1291c7a534aab99e6d",
+    "Variant=Primary Danger, Size=L, State=Loading, Type=Text": "e533e1115bc669e0916612643db9cd4d063f9277",
+    "Variant=Primary Danger, Size=L, State=Loading, Type=Text + Icon": "1cc771d25d03901795cf62b893e8e465b5a35871",
+    "Variant=Primary Success, Size=L, State=Mouseover, Type=Text": "172978558817e5d635346c5f8e4f88be6b1ecbee",
+    "Variant=Primary Success, Size=L, State=Focused, Type=Text + Icon": "cbb5518c04218387f36d3b09a96569bf47cb7801",
+    "Variant=Primary Warning, Size=L, State=Focused, Type=Text + Icon": "6549c156fe0ecd4aecec04c938121e01c626b082",
+    "Variant=Primary Success, Size=L, State=Focused, Type=Text": "7cb9b5f05f7339b1f191901b5f2306a3926c25e5",
+    "Variant=Primary Success, Size=M, State=Default, Type=Icon": "db162bfaffd1fee75a385db9640c5fdeb8e6b4d5",
+    "Variant=Primary Black, Size=M, State=Disabled, Type=Text + Icon": "92bacfc40ad90e2f0eddd654dfcdf67aa74893c5",
+    "Variant=Primary Black, Size=L, State=Default, Type=Icon": "9188fe98929d82095214639a5fbe7c4d0be1269d",
+    "Variant=Primary Warning, Size=M, State=Loading, Type=Text": "943fb4ee7c47480e7d2b3df0b2657b854b6ac7f4",
+    "Variant=Primary Success, Size=M, State=Mouseover, Type=Text + Icon": "8bbe1a0868aa25954b159ea5d45eaa27c897fca8",
+    "Variant=Primary Danger, Size=M, State=Focused, Type=Text": "085036bccf27234622cd15f21cc678aa263dcbba",
+    "Variant=Primary Black, Size=M, State=Default, Type=Text + Icon": "08b25c06a6ac97dd5ac097a00ef551807fbd664a",
+    "Variant=Primary Black, Size=L, State=Focused, Type=Icon": "bb12b4b0a70b9098b182d97d3a9489db3c7f16c4",
+    "Variant=Primary Warning, Size=M, State=Loading, Type=Text + Icon": "bf5ca5be74262ee94b278e78e0a1421565b2c229",
+    "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text + Icon": "76240768a33b010319ee395d195d46ec433f75c5",
+    "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text + Icon": "79a8e4e1c42493a92c2b2408c4581b875ea1b2c0",
+    "Variant=Primary Black, Size=L, State=Mouseover, Type=Icon": "9172f4bd0f32f9a6ad7069666c90cf5851296347",
+    "Variant=Primary (Default), Size=M, State=Mouseover, Type=Icon": "165fb5fbc1a7bc54b263cf4a521d27d94958307f",
+    "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text + Icon": "7966c17fb616eaa6fd59238f377af72af922f683",
+    "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text + Icon": "a7e10114e1d8fbf8ba5e3e03ef4a920153b6e93b",
+    "Variant=Primary (Default), Size=M, State=Default, Type=Icon": "f0bece946f5b532c5697c2b7f3c9459a88754288",
+    "Variant=Primary Black, Size=L, State=Disabled, Type=Text": "2be8df306836e511ef59de2c3cae4465aa4b7b60",
+    "Variant=Primary (Default), Size=S, State=Focused, Type=Text": "cc00297273d6c3147094853a4a62cde9e881b3c6",
+    "Variant=Primary Danger, Size=M, State=Loading, Type=Text + Icon": "f939bbdf81fbbbd0ce53fb811916cdefdc13a3e9",
+    "Variant=Primary Danger, Size=S, State=Focused, Type=Text": "1c8068bac154d0b09715bbe21c0a8a50030a6b27",
+    "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text": "8b3f218bdcba0b2a425aa9e505e04108d7529cdb",
+    "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text": "1ec28d00b1b5342f215a3300bf5f2deb20d7d848",
+    "Variant=Primary Success, Size=M, State=Disabled, Type=Text + Icon": "5e2cc13ecc6782c09e39c46c1df29569a24d024e",
+    "Variant=Primary (Default), Size=M, State=Focused, Type=Icon": "02ba5b70367b8073f63bb66aa4e7b1bdc39b6b60",
+    "Variant=Primary Success, Size=L, State=Default, Type=Text + Icon": "5716990469a6698c9d69377788c65f6bd833e8aa",
+    "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Icon": "87a2923e5bbc8836d746b0aec9b52c2fc63b78f9",
+    "Variant=Primary Warning, Size=S, State=Default, Type=Text": "a05d86fb48effaa24bb0371912772a4d34b7f32c",
+    "Variant=Primary (Default), Size=L, State=Loading, Type=Icon": "c99b1ce970c492c2a620fab0e8a6259f684e7423",
+    "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text + Icon": "46b69c0843d08ded87efc7af9d41f9492d5510b1",
+    "Variant=Primary Danger, Size=M, State=Disabled, Type=Text + Icon": "4242bc3d91e469d69c69e6c798b2d1f86814ae7f",
+    "Variant=Primary (Default), Size=S, State=Default, Type=Text + Icon": "60595856c2c207b02ef3c557b0e68e81462f4f05",
+    "Variant=Primary Warning, Size=M, State=Disabled, Type=Text": "af8f844e76105f0f1b0c9db0b87959c348858526",
+    "Variant=Primary Black, Size=S, State=Focused, Type=Icon": "54c3ff9a396fa2483dbe966125107051c729f0a6",
+    "Variant=Primary Warning, Size=M, State=Disabled, Type=Text + Icon": "7ecdcef1b6a889d19fbcb8ce7e4e7adea803b364",
+    "Variant=Primary Warning, Size=L, State=Focused, Type=Icon": "157826b563bf11de2677dd272c7205b56c656393",
+    "Variant=Primary Warning, Size=M, State=Default, Type=Text": "475a9bbcb079645e0a20cfe82f68c8fdf54b4093",
+    "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text": "d9db0e52b85eec83a5b46158adef570e1401beb2",
+    "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Icon": "d79f10bc47f2685071456dae8febee322c0b6cfc",
+    "Variant=Primary (Default), Size=L, State=Focused, Type=Text": "d7727ad6497bc0e9229979c4f62d6c2b2a015a5b",
+    "Variant=Primary Success, Size=L, State=Mouseover, Type=Text + Icon": "3da6d16c658f8209996d982c91b31d9e0bb28150",
+    "Variant=Primary Black, Size=S, State=Mouseover, Type=Text": "0871236f61bc6d378185959bef170f2e9db1bcad",
+    "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text": "240da796d2d2a29f942822d2df9619a0ed44f74c",
+    "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text + Icon": "ab027755aaf8baec38dcdfb4eacf597cef9b1ebf",
+    "Variant=Primary Warning, Size=L, State=Focused, Type=Text": "5c8fa6d0f9348499e874fed6b82b4fd8145193cb",
+    "Variant=Primary (Default), Size=S, State=Disabled, Type=Text + Icon": "a3e7124004332a73843a53cd47060c9db595e37b",
+    "Variant=Primary Danger, Size=M, State=Focused, Type=Icon": "06ca2a8d3401e3debc1c994da68d7602ef2fa142",
+    "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text + Icon": "ed9c1f16904cb5dc8e7499bb5eea0c5661e73754",
+    "Variant=Primary Black, Size=S, State=Disabled, Type=Text": "05caef953eb27818eeca97cd4dbc2ac21d3752f4",
+    "Variant=Primary Success, Size=S, State=Focused, Type=Icon": "8617fc47be90887ea89318622ca8501f16135018",
+    "Variant=Primary (Default), Size=S, State=Loading, Type=Text + Icon": "221bfcb0a7660a5858adc5bb2a825a400a22a977",
+    "Variant=Primary (Default), Size=M, State=Loading, Type=Text + Icon": "02dde008cd97a7cba05c10a64f80f7d6d542d465",
+    "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text": "82eecae835d6c027d6f81bafc753caf5313c702a",
+    "Variant=Primary Black, Size=S, State=Mouseover, Type=Text + Icon": "f789a62ec9d8c64f4bf83decdbb8e1719a3e89aa",
+    "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text": "d90abfdc0a808c2e9053a5726a2c2fe0636a5f0f",
+    "Variant=Primary Warning, Size=S, State=Disabled, Type=Text + Icon": "394b909b3ed862e1eb28fff71fbf805a7ecd5f6a",
+    "Variant=Primary (Default), Size=S, State=Disabled, Type=Text": "761941a83b2c69528cd046c8783b6dbcb73649d2",
+    "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Icon": "bf2de65e0dccd6475838082fbdc1869565690499",
+    "Variant=Primary Success, Size=S, State=Disabled, Type=Text": "52b73c8266ce783f0463279d574a7a50661df25b",
+    "Variant=Primary (Default), Size=S, State=Focused, Type=Text + Icon": "923e754183f58ec11be7d3f7fb00912655b600d6",
+    "Variant=Primary Warning, Size=L, State=Default, Type=Text": "c7a2f03716a572928b67e67e67e653a87a5f71f2",
+    "Variant=Primary Danger, Size=S, State=Focused, Type=Text + Icon": "6d2d46d04733a3781e91c2c1e99427a738dd3475",
+    "Variant=Primary Danger, Size=M, State=Mouseover, Type=Icon": "4df6abdc152f9d9af0409420a84faa2b8b0d77d3",
+    "Variant=Primary Success, Size=M, State=Default, Type=Text + Icon": "db4a6980d1eb72a8525c88e4a0ff5017c759aed1",
+    "Variant=Primary Success, Size=S, State=Loading, Type=Text + Icon": "a6982792bd5c7fecd32a353f7d9a0e680fb303e7",
+    "Variant=Primary Warning, Size=S, State=Focused, Type=Text + Icon": "fdcf452db95c3dea88e98d13b5d93ef527ce3f69",
+    "Variant=Primary Success, Size=S, State=Mouseover, Type=Text + Icon": "742d34c98d6543ceac0b42bf5f1521f1d0183a0f",
+    "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text + Icon": "6c58bec22ea7dc22131a8c5130d1fe1e7eb37412",
+    "Variant=Primary Danger, Size=L, State=Focused, Type=Icon": "e7645262fe0971f36e1d2bac22f76dcac25f4d9e",
+    "Variant=Primary Black, Size=L, State=Default, Type=Text + Icon": "b0cc0a25c3e5f295d1440013a741d6f018827373",
+    "Variant=Primary Black, Size=M, State=Focused, Type=Icon": "2fc1815a4e0979cb2913d76ccba38e10bd520a09",
+    "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text + Icon": "495b3666c6167d9c4bc9d55ef17f36bc8faa77f4",
+    "Variant=Primary Warning, Size=M, State=Mouseover, Type=Icon": "5b9d6ea5766892c8d037a36a560c3207c5dc7e22",
+    "Variant=Primary Warning, Size=S, State=Focused, Type=Icon": "2202fef49c35ea3b266239f328540fb6c95cf502",
+    "Variant=Primary Danger, Size=S, State=Disabled, Type=Text + Icon": "f9efde0d0b6f3e16c558b44b6370b15049c38be6",
+    "Variant=Primary (Default), Size=L, State=Focused, Type=Icon": "b2d19c70b994a83975e0b7844b46bfbff1973ab7",
+    "Variant=Primary Success, Size=L, State=Focused, Type=Icon": "1a488e80e8804a4e6cfbb972797e2645f49c9499",
+    "Variant=Primary (Default), Size=S, State=Default, Type=Icon": "c8ba31dfbe6c99ef634e449a382431315049e359",
+    "Variant=Primary Warning, Size=L, State=Disabled, Type=Icon": "b89c0e5660f3bad772d61ae06ff124381151a4ad",
+    "Variant=Primary Warning, Size=M, State=Default, Type=Icon": "7052af707d79660c5172eea1ec46053ad469e788",
+    "Variant=Primary Success, Size=S, State=Focused, Type=Text + Icon": "3a8830846b0320588f9795277565f40352802d43",
+    "Variant=Primary Warning, Size=S, State=Disabled, Type=Text": "811558a59831f02bcbb9c1f925c3a9b431afdec1",
+    "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text + Icon": "622adaaab03570cff67711a17c6055355d100641",
+    "Variant=Primary Black, Size=S, State=Default, Type=Text": "49dc32a56f1bf2639dc747ab06a3e2d782bd0e52",
+    "Variant=Primary Success, Size=S, State=Mouseover, Type=Text": "8a765d7702ec97c917e23476b9a10255de7834c6",
+    "Variant=Primary Warning, Size=L, State=Default, Type=Icon": "5e80ca2f4d5ccf0a0e79742b1ea05f049f1f73ce",
+    "Variant=Primary Success, Size=L, State=Mouseover, Type=Icon": "79fffcb399e509abf16dd8022a8693634c56f868",
+    "Variant=Primary Danger, Size=L, State=Mouseover, Type=Icon": "32890969b3ba045d63eedcc7836064ad3f70a965",
+    "Variant=Primary Success, Size=S, State=Focused, Type=Text": "8f98792102917e80248bdd8b109affb612d610ea",
+    "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Icon": "f465bce898aebd3a566d5e638f19cbdd1422951c",
+    "Variant=Primary Black, Size=S, State=Loading, Type=Icon": "8539e80c27f9e6362f845d13db207c299ffd268c",
+    "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Icon": "5744dfa39a8237c5d1edd8d482031cc842eb6701",
+    "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Icon": "428d8eb08ead3a5d27f5fa04ed44afa939f61a37",
+    "Variant=Primary Black, Size=L, State=Disabled, Type=Icon": "3b510b8793022447955f6a76fe03bf2c6adb1d6f",
+    "Variant=Primary (Default), Size=L, State=Loading, Type=Text": "61939afb63c29deea02222f41d903247459be152",
+    "Variant=Primary Success, Size=L, State=Loading, Type=Text": "032c754deb1453f1115fb4ccb87fee460fcc5e09",
+    "Variant=Primary Warning, Size=L, State=Loading, Type=Text": "32d5ff185acd27cf3465d21eb070a9805b411a95",
+    "Variant=Primary Success, Size=L, State=Loading, Type=Icon": "ead84ce4920f29ad267d80dd0c85ea86f16d23f0",
+    "Variant=Primary Warning, Size=M, State=Focused, Type=Text + Icon": "c48d7cfc2a1910d71693ddc730435709c50e2ad2",
+    "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text": "1b63deee050703787b2440b29de35b71445ad8ee",
+    "Variant=Primary Warning, Size=S, State=Loading, Type=Text + Icon": "7061f018c4723d918617da8b630f057018a620df",
+    "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text + Icon": "bad8f3fa9f5c479ce1abab73e99d54e6c84a5f16",
+    "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text + Icon": "e29adcae7d118609695fc30006645374fc6481bb",
+    "Variant=Primary Success, Size=M, State=Default, Type=Text": "91c348f11ae5a4261486a151d431d507491be67b",
+    "Variant=Primary Danger, Size=S, State=Default, Type=Text + Icon": "b33bed8a979bc25732ac58a3826adb548b66aaf3",
+    "Variant=Primary Danger, Size=M, State=Focused, Type=Text + Icon": "83e80ccfcb46121d7561e62312cdc3a149628d32",
+    "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text + Icon": "85daa66ce684024369b39a80116400668e66f54d",
+    "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text": "b7164c290da3381169fb5dc9961b75dd1cb672d5",
+    "Variant=Primary (Default), Size=L, State=Mouseover, Type=Icon": "e637f0b591112175179e25db2ead92ac699a4df0",
+    "Variant=Primary Black, Size=M, State=Default, Type=Text": "53263689eb55f574ae8729f4667bdb1d0f0a9e9e",
+    "Variant=Primary Success, Size=M, State=Loading, Type=Text + Icon": "dad77d3dab1855a6f94d5c5ebe8fb637850089ee",
+    "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text": "e71ba09e335adabb645ab4bcad793793236aea3d",
+    "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text": "8e43c476e926cea416a135e4985d9877458a25c7",
+    "Variant=Primary (Default), Size=S, State=Default, Type=Text": "b835091a723bc3da1b29ec52de51e8822edd02c9",
+    "Variant=Primary Black, Size=S, State=Loading, Type=Text": "5d6b651e4768cc73fcc3741650a423691ab0fe90",
+    "Variant=Primary Success, Size=S, State=Default, Type=Text + Icon": "37c9682016cf64ffe6d30fbfac742a9ee8a9b89a",
+    "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text": "439b2fb4a2058c23a87c6ac049706bf14d38eeb5",
+    "Variant=Primary Success, Size=S, State=Disabled, Type=Text + Icon": "3c98f96a77a51dbc1945fe5534136d3172f4bef0",
+    "Variant=Primary Danger, Size=L, State=Default, Type=Icon": "2c0e4b9ece3426f7e4179b6722ef0ade432a5eef",
+    "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text": "ee0bd520781effac50af82bb223116930d177fdc",
+    "Variant=Primary Danger, Size=L, State=Loading, Type=Icon": "54d0d60f4905469e3b1843b92b4a633ba37936bc",
+    "Variant=Primary Danger, Size=M, State=Disabled, Type=Text": "244b96d72e71d9f9f5ef036119028d36deb44c36",
+    "Variant=Primary (Default), Size=M, State=Default, Type=Text + Icon": "308b766fab21be755adb40b84ed3b24188d1db5c",
+    "Variant=Primary Success, Size=M, State=Disabled, Type=Icon": "3397b1bc04614fccbb95affa72f9f37c85e728f5",
+    "Variant=Primary Warning, Size=L, State=Loading, Type=Icon": "2add5b2a422675acbae3e68618f46223bb40f9b3",
+    "Variant=Primary Black, Size=L, State=Loading, Type=Icon": "0e1bfbb406af740c0a0f51fb79a14464af245888",
+    "Variant=Primary Danger, Size=S, State=Disabled, Type=Text": "b3549ee66205ecc4ab50fab48a3ad774a9ad07a7",
+    "Variant=Primary Success, Size=S, State=Default, Type=Icon": "bf548695481889766aeb066f431907a672109f4d",
+    "Variant=Primary Success, Size=M, State=Mouseover, Type=Text": "b782f23bd47048c92229c2714e4ccd2d94e17c95",
+    "Variant=Primary Success, Size=L, State=Disabled, Type=Icon": "349433ed1e509c218337c87eea0a4c2e12ac1f5d",
+    "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Icon": "51bb256395fd748970f42c67a720af25215ad86a",
+    "Variant=Primary Success, Size=M, State=Disabled, Type=Text": "c3a7dc93553242ce0eb40057b387ba338f879e69",
+    "Variant=Primary Black, Size=L, State=Loading, Type=Text": "52506288792605e9f1297929328e6ecd7d0b8407",
+    "Variant=Primary Black, Size=M, State=Disabled, Type=Text": "b46353d347ec5c36b9a401bf28603f20928a73ef",
+    "Variant=Primary Black, Size=M, State=Mouseover, Type=Text": "b34aa8cc067b46e1594542aeba798e60d52a50e1",
+    "Variant=Primary Warning, Size=S, State=Focused, Type=Text": "2d646c3e388589832c00cf008ed15c17bf02602d",
+    "Variant=Primary (Default), Size=M, State=Disabled, Type=Text": "36bb3c517217da99eeb8843a950c80a64da2ce12",
+    "Variant=Primary Warning, Size=L, State=Loading, Type=Text + Icon": "8c16996c830cc4f5811a0a3aad936e176132c480",
+    "Variant=Primary (Default), Size=M, State=Disabled, Type=Icon": "a8d1282f061cd55d25c0d6ed90d82e362af15eb2",
+    "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text + Icon": "788e5bcd89d5086112482702dd47b7b7d4613dd1",
+    "Variant=Primary Success, Size=M, State=Mouseover, Type=Icon": "225c8346ad25fbe33ed1f04d87f16c7ca6078b75",
+    "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Icon": "4acb5af788e62b1061a228de7ad3c6991324e949",
+    "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Icon": "882fd69b966d9fa0649e6e7730b6deba39cfd01f",
+    "Variant=Primary Black, Size=S, State=Mouseover, Type=Icon": "69f4d199ced3ea3b2c8dafd59b87b383702fa3a1",
+    "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Icon": "16631ac795ceaa8ebb6e300bb25b80cb21193bb7",
+    "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Icon": "5c79dcadc39db2d2960d259ffec3004f963d01af",
+    "Variant=Primary Danger, Size=M, State=Disabled, Type=Icon": "cc3b97f7812a1d26ae71948443997cd4e3116f0b",
+    "Variant=Primary Warning, Size=M, State=Disabled, Type=Icon": "c13911c460b9acdeb1fb14cbc73a667dcd9063d0",
+    "Variant=Primary Black, Size=M, State=Disabled, Type=Icon": "9648f2792bbeb6b6dda4d7b18b4653376136a5e1",
+    "Variant=Primary (Default), Size=M, State=Loading, Type=Icon": "8c9563b6bf5a46b956fa4c9516792d6e6e786a9a",
+    "Variant=Primary (Default), Size=M, State=Loading, Type=Text": "4a61a26702f3226865e98b007d3d25bcce9753a8",
+    "Variant=Primary Success, Size=M, State=Loading, Type=Text": "b99f152d95611e24c6f76675efc66098a32c274c",
+    "Variant=Primary Danger, Size=M, State=Loading, Type=Text": "b48f0ff8d1ed48fd36fabadc1cd2e4e8f121f2e3",
+    "Variant=Primary Black, Size=M, State=Loading, Type=Text": "e405742990d2621bc0558f50732390efc43bd28b",
+    "Variant=Primary Success, Size=M, State=Loading, Type=Icon": "ba1281a945f2d398e68cb3921be8d55daa9dd9fc",
+    "Variant=Primary Danger, Size=M, State=Loading, Type=Icon": "4c034b680175574d28ff4e567ba1a44ffd0814f4",
+    "Variant=Primary Success, Size=S, State=Loading, Type=Icon": "e6b0d01e5321e185b6df57b89175336302b59315",
+    "Variant=Primary Warning, Size=M, State=Loading, Type=Icon": "590d0069aeab70cb6249cc14212fa31cd4d97bf6",
+    "Variant=Primary Black, Size=M, State=Loading, Type=Icon": "403d22e952379298de59741c86add86adaf6ff81",
+    "Variant=Primary (Default), Size=S, State=Focused, Type=Icon": "ddb0e8a4f78394b737c18e4500c4cd80793b16ab",
+    "Variant=Primary Danger, Size=S, State=Default, Type=Icon": "d01fe6ed3d5627b006f5a6e26b51e20ab3ced175",
+    "Variant=Primary (Default), Size=S, State=Mouseover, Type=Icon": "2af72e78733d1948da81b7ffe330a83263742f4e",
+    "Variant=Primary Success, Size=S, State=Mouseover, Type=Icon": "b3ed64ba8bd752e3138c7d72c6336d6e077dcccb",
+    "Variant=Primary Warning, Size=S, State=Mouseover, Type=Icon": "817ce17f593d535e9e08ddb1399175a6f94d2630",
+    "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Icon": "5ec09a9d4f35e6e0a1a2d9b95f08ee9bca924fb6",
+    "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Icon": "8bcb92f9eff148af7aac19f2904cbec977ddc3de",
+    "Variant=Primary Success, Size=S, State=Disabled, Type=Icon": "8e57732a31f1aa2afdecbe33a539bffc6f6fc7fe",
+    "Variant=Primary Danger, Size=S, State=Disabled, Type=Icon": "f4c725bf475399c19979174402ddb7f3b4107ed9",
+    "Variant=Primary Black, Size=S, State=Disabled, Type=Icon": "58cb99d5b369b7f3c6f02cb9bf8cd516cc1eed5e",
+    "Variant=Primary (Default), Size=S, State=Loading, Type=Text": "c41661501424357145ec471d8d1de82541cc508f",
+    "Variant=Primary Warning, Size=S, State=Loading, Type=Text": "b7c719fcc4c02c1790d959056c5e093d05c57802",
+    "-> Logo Slot=18 Plus Red": "40db0af505379184758f0b761a5bf243ccaf8876",
+    "-> Logo Slot=Gambling Therapy": "af2d602c2e404325411d09ec91095068089388c3",
+    "-> Logo Slot=21 Plus": "86675c2f99839c051fcbd321f183d955285d8d29",
+    "-> Logo Slot=Auto Prohibicion": "f5986890627368febea6a44ad0692317f02b7ecf",
+    "-> Logo Slot=GA": "a62ee0811ddd3f25867b9048caf94e8286c33bd7",
+    "-> Logo Slot=18 Plus Black": "ca04d2befceaf72ef9c924c36a57785f545a9140",
+    "-> Logo Slot=Jordenacion del Juego": "bf8e25c88e7d4b7faea47032b4688fa5344562c3",
+    "-> Logo Slot=Play Fair Code": "8d9d59665138e68e45c8f4feca85544cf7ba7682",
+    "-> Logo Slot=GGL": "26c67122d208a46844cab72de626da793815c684",
+    "-> Logo Slot=Juego Seguro": "bb9acdf74bf98d62df4eaa6e00338dc424c50f6b",
+    "-> Logo Slot=MGA": "d6bcb29531e514e908f4342706c1b5e0fd2e5653",
+    "-> Logo Slot=Gluecksfall": "e461bcb834d50830bc20d289a36a9cc949e7b2c5",
+    "-> Logo Slot=Ibia": "363396cc1146fa22a691b3f54ee5213ebd3c815c",
+    "-> Logo Slot=Jugar Bien": "0bea10d9f16d117a799fbf22bc97f51e72f5dfcf",
+    "-> Logo Slot=Kethea": "8996c89d8caa975b35e34b287fb0dcb62a6b887b",
+    "-> Logo Slot=Spelinspektionen": "b01060b70fe0573096dfbe26f7d85b3ca621b071",
+    "-> Logo Slot=Thawte": "2a7534f56dc8b44ce37e094795a78c191e9650f6",
+    "-> Logo Slot=TUV": "301ec7c38fc4f467efe6f6dd37a9483f5884d77d",
+    "Type=Information": "abd1759f7e2d8e25624c7b670afd8eb801e4cf13",
+    "Type=Warning": "96ebcf7739a25ae86ce4ff5a925e22353e739074",
+    "Badges/Apps": "3541d3ac5c9c15e78d1d629f28a5623c4f172569",
+    "Badge/Betslip": "44b4130adb65e68f0de1263fc57d55baf65a45ef",
+    "Avatar/Casino/Bonus": "a27c2c804d3c7179ee7e0d444dd16635665b8fe6",
+    "navigation/cross-mini": "a06607721cd6fe1073c999f626f46fade623df0c",
+    "system/live": "213c6ffecdf319e44b75bc08f0f87ff62e87aa1d",
+    "casino/exclusive-filled": "376f75d2442885effd1f404917e3d3a189941a06",
+    "scoreboard/green-card": "cd71dc60e05d55cc0fa55b5d636f87af19fc6ac1",
+    "scoreboard/grey-circle": "e6295d5465c1c603c36c0cfe90561064f328e34f",
+    "scoreboard/dark-green-circle": "f25832c7b899012a4d1169b4b458cd76eb55efdb",
+    "scoreboard/alert": "e8f457ec6678dd29a4e58eed848ac91b8d8e04e4",
+    "scoreboard/yellow-card": "3333e3c1cd38c1af36e403cb1a59555a8d4cf1f3",
+    "scoreboard/yellow-circle": "460fb22a57322b344eafa5169666f71120fa316a",
+    "scoreboard/blue-circle": "fa510fe42400bbc1b3d54563283e989d86929bab",
+    "scoreboard/green-shirt": "659f539300e132ec066526861f62d77635349e17",
+    "scoreboard/yellow-red-card-1": "12a3eae5d944d2554b9070e4434e4d4e3fe9379b",
+    "scoreboard/yellow-red-card-2": "8fa7b7bb7fb1cd6a2a3a3b62dcdde9761ea242e0",
+    "general/bet-2-go": "f1bc8f11ad2312f8a517a160b434f9c177e88d97",
+    "scoreboard/red-circle": "5c20ca1f0522419528a15a098c3118f1d52272e6",
+    "special/anniversary": "09199a1e4b09e4a275c8a69c45db53ee77e2667a",
+    "app/for-you": "4e22b499eb1c587aa8723da1204e91d8f80021c3",
+    "app/info": "b6c37c7030cbe297adaa4ca26cf530fca6c03f76",
+    "app/live": "1e3d6e7afb65bc08a0e2f21d1a1dd863d6d31e54",
+    "app/betslip": "08dbcfec6235c7f926eb612c5ef558dfa6078409",
+    "app/casino": "8eb3df89551f2427d7516555c973b5db4f7f0240",
+    "app/home": "87f14bfe251598a9fc2412dd63f76b58e8b0029d",
+    "alerts/checkmark-filled-2": "22698a11bb0550a9a83abbbbe70f28ce31f95562",
+    "alerts/information": "63515958607c4b5ab968fbe3794ed2261e58a12a",
+    "alerts/info-circle-filled": "11016f83cfcbddffa6ea53eccb327972a5b54865",
+    "alerts/checkmark-circle": "9c0f05fb87625b604781b281cb3f3a19578ddbcc",
+    "alerts/question-mark-2": "93f6f5b8e232b2092df62e4c2eed165baa90af94",
+    "alerts/question-circle-filled": "4dab3fe342fcb15bcf24f439011d86cd388ca9e8",
+    "navigation/arrow-right-1": "4176b07501325b4969f6d9f4e4ed6f318e7d19d9",
+    "navigation/chevron-up": "2430d713b7e2336c3df48e91f3cf04b21d43687b",
+    "navigation/chevron-right": "af6d107b55f9776cf76aebd09c4ca200a68643c5",
+    "navigation/chevron-left-small": "13ecf832f4f382b34a306c9395594e0786b19e73",
+    "navigation/cross-small": "fd5d416f578e6b92facc897237df78fb92cecd78",
+    "navigation/cross-big": "1365b5fd6148b703fd9f9b058abf718b62efd302",
+    "navigation/arrow-left": "2884b86d5fad1762fef153b1db4ababbddf3d37b",
+    "navigation/arrow-right": "1133032bfac91ad1e31b7e06a4ffc049a49369d3",
+    "system/streaming": "9610ea6b239bb2bca3e64d39f4855980a08b146c",
+    "system/loading": "de42feec6b925d6fe1ff27ce8289aa210f0e80c5",
+    "system/copy-document": "1b8610270803fe9f2ed4486b28be4d76484bd88d",
+    "system/play": "0dff8957703518c67a967ac4ef9d068700986732",
+    "system/face-id": "c0ded65af518b548148b92996897cc4114cdda66",
+    "system/volume-2": "037413da48aef07812bfa1e418d6828b20f08910",
+    "system/user-locked": "28d37c02037ef624cba12691172383f0c070fdb1",
+    "system/swap-chips": "12d8b99866fcfe464af90d02a0a4c96156d3d69a",
+    "system/top-deals-filled": "536d48c16172e3398b23a69b583c9a7e5ccd606f",
+    "system/logout": "8a98c4f02a057f8d94f008d4b94a17f3e43add6a",
+    "system/lock": "738b5b5b0d1ebde4b0fc491b3838c0e4c296957e",
+    "system/chart-filled": "ab977b7c6074bbbfbb4c745f8f6a0ab9fbe27b0d",
+    "system/chart": "f02abe1d764dc20efd91d83a41b65db795f4f2f4",
+    "system/image-landscape": "1fbcbe3378669636206d4ed13c30a70fcf588674",
+    "alerts/i-3": "fef9161ba5938d6995f0f59ae708057d7d4fb811",
+    "system/pause-2-filled": "feca8c76a0e89b84c0f977aff77d0a18996444c5",
+    "system/lock-filled": "7f1c74c839a3f7761b0ba960c51e75e8bb08d58d",
+    "system/live-versal-filled": "d5db84c12029ae8e2361e508c1a3ab5d242ebb10",
+    "system/bonus": "c930219eb3799c0299568801defa74303a0d4d14",
+    "system/18-circle-filled": "196c430caf3edd92fa4987c767ab35fb815c1052",
+    "system/cross-circle-filled": "624f41c64ca693751313cab743467f246ac44bb5",
+    "system/icon-popup": "f44a0388649dfce7273c660f5e0c1fa677855d33",
+    "system/search-1": "fcc82839053647460c2e72c2dbaa42819c2ecc05",
+    "system/search": "54630fed56ae3dd62ce47ff06b4a80d2a2b6d2f8",
+    "system/columns-2": "6d080e5e6206f41e2f1e7aa28a67fb442012fb31",
+    "system/bonus-filled": "1e837f890dd7579ad916df05b927e48c3db32b4e",
+    "system/pause-outlined": "35275d8061c85ec0472c2a2514f317a6590713c7",
+    "system/volume": "c4f208e15d636055c7dab600cd21bd3f0088c146",
+    "system/user-filled": "d72e682907117c9a94fc089f644594db17256cdb",
+    "system/checkmark-1": "3e5c73e032253aedbd2b6db911c85f10aecba6a8",
+    "system/shop-iwclub": "6270ad22ccc04ae10cbf11088e8d6bf8e9b350c9",
+    "system/square": "3d377291ea8b9589a6573273bd84a229b3253c3f",
+    "system/plus-circle-filled": "513f9fc5cd3ee801764faadd81a2457c4e6ad896",
+    "system/columns-4": "a579cb34223fe898726c13c592dc60e9d9c50cc7",
+    "system/checkmark-square": "71168ff0a41864830a78c6302c4a931fcaa30a4d",
+    "system/licensing": "b6ddd0cdd54d2bfa9c94f6349c9705918e9de9df",
+    "system/odds-boost": "5e67a8483995988278348c747d564014a8a140cc",
+    "system/est-1990": "221f1b7913f5f225d4f02dd6b92ea5b328ca945d",
+    "system/18-plus": "44030c7db430ea4ce43b517c05b463477ac7df8d",
+    "system/user-circle": "ad79dd261dbd54eb9870c8fd7adc867c3dff4740",
+    "system/calender": "75483221da22e7d7575f6a447447389ab9786f5b",
+    "system/trash": "dfd24c3627e40f7a38a0c347fc64c214af61ab46",
+    "system/verification": "8e61cbee8cc1cddb49fa7c102e77f354dee456a3",
+    "system/minus": "bb40d77f3c6f2f8f839a9974add3a23a4ba705e5",
+    "system/list-filled": "b38e0621c0095509b6bc7b21ff168edcdaf2e914",
+    "system/session-time": "9ee8973932d48a3a2d1417d7f7ca265eb6099df1",
+    "social media/youtube-footer": "6c036dcd8ea58c0d7592f3450ff8feb054ee8dae",
+    "social media/pinterest": "c077f681fa31b5a24afda240e7f5103aef299420",
+    "social media/youtube-circle": "2da83e9abea3dfa541aa9358e8f5d4ecfa38db4a",
+    "social media/youtube-circle-filled": "b338c6898ab7154363ce41b57c550b4a66b8cb6b",
+    "social media/facebook-circle": "ed636d463a698ec634245bceed975c98578bb53f",
+    "social media/instagram-circle-filled": "8725e0f30376f04afdbe2dbdf716f65c977005b7",
+    "social media/instagram-footer": "4921f199e64c47898b3b6cc445ee212a3da80307",
+    "esports/rocket-league": "1a2adea3e9a494589a62a61784d5534ed53a973c",
+    "esports/starcraft": "956a55df10f1c19770500fef396ef3ccd5bf63bb",
+    "esports/hearthstone": "39a73cc6e288a2738d8ab5d5ac99d0f05d3b68e0",
+    "sports/wta": "4c979a55fb23b510d083dbf1046478b8735c8a3b",
+    "sports/daviscup": "f906241f5dae99139f1e6dfe98cbc7c787d0601c",
+    "sports/itf": "4ce8cc0577741eb264d450ed8086144dfd15c4da",
+    "sports/tennis": "535d52826048feacd98b08c30097b11980c689a5",
+    "sports/fifa-esport": "597d959b5b73828ef104cc56c795fed27ac1ef85",
+    "sports/golf": "10db259f8d7d5f47c6ae09e61066631cad732e78",
+    "sports/volleyball": "6ade287b165a37aa57e8aabcc04b151c6ccd18d5",
+    "sports/nba": "ee0126866ccf8bec8baefc977a8f0b807b05a444",
+    "system/email": "b6e78a686e8f99f5f0659e0b7c3ec6954cdad20b",
+    "sports/copa": "2bd6b7921f6b17c9ca771d8b85c169832f020bd3",
+    "sports/motorcycling": "683b698f410b162075ad0f4ce2f35ced477e62fb",
+    "sports/skateboard-1105": "626486a8e5cc8d7014e0ac2b850db2d98f23dc0d",
+    "sports/dograce-greyhounds-1023": "11288f08d6c1e4ac2797a9323b7db61bb8e44d5a",
+    "sports/formele-formulae-1101": "ba03e9cc5611efbac90ac2e2a0554cba51b1e534",
+    "sports/kabaddi": "ec2dda5b8f49615899699da6861dfd9f9c7967db",
+    "sports/shorttrack": "f4f0b93fa4be93686cd21f3ddd5ffe50a64ebc81",
+    "sports/diving": "c2242275c9b14c02d2923f37dd0b50635966fc94",
+    "sports/athletics": "082c6d88b6edcdd62ad13af5577ee793297d12bf",
+    "sports/khl": "fa12018f967c44f3b6684c15cec526fde6bd3e69",
+    "sports/nordic-combined-1090": "12b2eead091eca685615b1b9ba57bba0c6a06010",
+    "sports/paddletennis": "8b8a24850848021659af60fd829fcab798d8a0b1",
+    "sports/darts-01": "15a29ba37d4abe03bef98dc905120a38640bd729",
+    "sports/entertainment": "bf5d64ad2fff586bd94b26ee1427c7d9c9667858",
+    "sports/darts": "43bd15c4df24290e9ed82f19fdc45369e0521003",
+    "sports/gaelic-hurling-1097": "4b9f68a5fa3b3ee650ddaf31c0d0df2ddbd13fa8",
+    "sports/poker-full-1037": "25725c5974c0c1c7186404795c9f4756cbacc33a",
+    "sports/taekondo": "ab1ebf527967356e0908d897a2386a5515466258",
+    "sports/poker-1037": "5473e4885f2bf0ad598924fe1ec18347bb68a1b6",
+    "sports/cricket-1027": "0e6c4446bce2e051668100a599c0891d2a37850d",
+    "sports/schwingen": "cd38798696323b0495d5379f3a49cb4a30f5f333",
+    "sports/champions-league": "ff3b4113aba6cc8d580d40e474ad397aeef34b82",
+    "sports/europa-league": "8e846f9115acbd96757148002e6bfe667180b1ca",
+    "sports/shooting-2": "ee8d7130949e42c7a244549093c7ce8f5cedfc0a",
+    "sports/hockey": "7576bebe1b2b6be63e476e1d6e1d28d19872a743",
+    "sports/rowing": "630e23394cfb2fec1cc06e5df6c0c49d1cbdccd3",
+    "sports/rugby": "e3de01d37b69d2ed2315e6c7ca64fd8d59b4a836",
+    "sports/snooker": "cc5cf2b500a5929d82c04b033ab18b6e71c1082b",
+    "sports/olympic-games": "6dcb832555caa69b5718464f9a560bb044c5c841",
+    "sports/nascar": "1e31da0a442d81f2b7753dab311029dda1bf8025",
+    "sports/table-tennis": "9f4d6cfac453d8c6e18e4ef35cedf725bff5f70e",
+    "sports/rugby-seven": "3f4aa8e9ad25d856bba4b0a7727cc33c256de190",
+    "sports/curling": "02eaa20bed04754b0b3f78b26e23b7ac71c2c237",
+    "sports/soccer-2": "a3c2734ddb6a37dc9a4f8ce29370e91fa798901d",
+    "sports/rugby-league": "c4bc60875960ddad9ff39b4917f57f8d6f463339",
+    "sports/fedcup": "6d0f72bdb9046ecd8dad3b9a5fdb107b8dca4da0",
+    "sports/water-polo": "fc5905cdbaa009b986a8ebe8d1dbaaac0b174c6d",
+    "sports/skeleton": "7c9b5ff7809f3b59715f3210b891378e00e4509e",
+    "sports/sports-entertainment": "68af55fa5e42444a72c88036874f537bd769eadf",
+    "sports/sailing": "5202f7006559a41294d2d0b2a95d37a12d67a716",
+    "sports/boxing": "b724f27cc1e36128a11dfcb4105304a3ec539a59",
+    "system/casino-wallet-4": "44d7abbf4fbf9e25ffcaec1d2f6d59331a9caac9",
+    "sports/youth-league": "6fda918e043237e91b1f69d2c08f0a7384d5675f",
+    "sports/netball": "c68bf61508dc6018c596f57266cb5ec804a50aca",
+    "sports/ice-hockey": "c5a740a76630423f2ce8fab7d15d7839ceed2fd3",
+    "sports/gaelic-football-1096": "056b6c1869241ddc893228d834a705f70b964294",
+    "sports/esports-1069": "f3a7b6a0464a54814e742556cc045c1b22b425e6",
+    "sports/biathlon-1057": "747e691b2011a39220494918b23f7eebba0d1efa",
+    "sports/bowling-1035": "6297fd2de3798977b8ff47e8b1600c8bdf53eecb",
+    "sports/softball-1107": "e8c32835e62e264069a452152f863094bb7feea4",
+    "general/fullscreen-exit": "04fb2c87fb3a215e5936bd01a144268f064ba3b9",
+    "general/fire-outlined": "3546af8a3e274e3f2a59581bd724ec7e64c03fa1",
+    "general/marketing-materials": "bef9a5237290f3a1783c9c3e7b94a9cedd19dbf9",
+    "general/pay-card": "f20fd4a6684f2d2d993a993bd92d5fd8995b8d5b",
+    "general/card-hand": "721456bce97994296d2e1b7b4785da3298139087",
+    "app/odd-up": "cf97675b070e91144d2c8c1e9b59ac15054fcf76",
+    "general/circle-filled": "af084024c01bc056845a428f9740998f534fb385",
+    "general/flower": "a24078b5efc8a4cec5c84882f4d5e52bc4c5bcae",
+    "general/sun": "726ffc2803aa03808b5319f77ebba3ee684a2cf4",
+    "general/accordion-minus": "a3af1f328e74e3c3d648ec6666e95a585f02cac8",
+    "general/promotions": "5c8231291754a65159bb3acbb16f14f484fc9436",
+    "general/pause": "772e97f80c96a458ef62785f16a39470a5533e92",
+    "general/fax": "eec4ffea3dd8b4890f015eeaad2e29790ce5a3f0",
+    "general/clover": "db279b105ec38dbc2340b1ef43ef1a0a5e523db6",
+    "general/cup": "6293a0eb973a3c079f65f35bc8928375c6bae4dc",
+    "general/show-leagues-up": "9a3afa1a4cc6df0b7b4659a604338b09408307d0",
+    "general/accordion-plus": "25170f48338495357c89733da887b07771aa04fb",
+    "general/minus-circle-filled": "133b721ff3d8ad0477da0e8c8154212b31ddd6db",
+    "general/edit": "61582fddc70e26e81486e64895d2b1e98428b0b7",
+    "general/gift-1": "349106acea26a800c53b2ef9a48fafdf51c5f594",
+    "general/gift": "855abeedda71d948d581befaaaf20e8072bd71cd",
+    "casino/exit": "9b9bf89d553656205431ff194e5d389dec5ecde5",
+    "casino/exclusive-games-3": "44fe68b309153ac1458ba17e4e78b1d6374b59c5",
+    "casino/all-games": "7585c7e7dbbd35e81222bb178ae8ca0b106f9ecc",
+    "casino/most-popular-1": "adb4d1b861fcb7bd8a56192089db2016e51f0d18",
+    "casino/dream-drop": "d38a7f1055e94b2f38a7af7537cfc7851b646850",
+    "system/globe": "c56ae2d45290557f4f694fedc249365a52fc8dac",
+    "casino/table-games": "5a5b3f048561328599bf67338850e1a1f193e5f1",
+    "casino/exclusive-games": "817e15e221fb5b33f2db52174da4e730c1da73b5",
+    "casino/book-of-games": "5a8dda68dc5e8f0eb11bcced32cb46ce9ddd98c0",
+    "casino/exclusive-games-1": "c08cd81d57d9f0356ffd656ee1fac1c64ae91371",
+    "casino/casino": "e8d2718e0af985ec188ad87e6fecc16189dd83cc",
+    "continents/europe": "8d9d665fa19b518fa0caedd3e3fd4663c5b1559f",
+    "continents/africa": "917206fdeeac0c7df6075f4d0cd837f040030f76",
+    "communication tools/jira": "98d9a3d48056937b03a916c7f7751e4895584a04",
+    "navigation/chevron-left": "ecb8848c5f64ab2708c415787a5e61e1bee1001c",
+    "sports/archery-1042": "b495caef5d3d46e531c3e75fc967156127bf96fa",
+    "communication tools/confluence-white": "4acdca7b2dc7fac2377cca1aa2ad3a4a025f15b0",
+    "communication tools/slack": "76b91ca6e5f09677c3669a90306e8e1be40a701f",
+    "responsible-gaming/self-test": "3d1541b10aa95d56d3b231b327fba0b8e1f3e09a",
+    "responsible-gaming/self-exclusion": "62ec275bd2cb0c8d3a4172ef0a40f728b30a8954",
+    "general/edit-2": "343c1b9b55dcc034a263d1a5df5d0bd4d8fbfce5",
+    "sports/squash": "2c86e858731016a8923d1ed1d214d7824f901e0f",
+    "sports/top-soccer": "76f9f5fadf98e64d00adc3a73596bc1b322db98b",
+    "sports/snowboarding": "6cd0cc7731eeaab754ec89dc56d41d3d0a1790c2",
+    "sports/basketball": "f7105e0b3fce9d3aa94705ab01674f9722ec3f9d",
+    "system/play-video": "95c147abb9f9d36dbd8523cb67dd6cb8034e7f5f",
+    "Filter Flags/Senegal": "bc9ea0b7f99a9de37d0ae96012042462498384b3",
+    "sports/basketball-3": "a76e50f47335c1b1c44bfb72c9b7b6d1823add5e",
+    "casino/game-shows-live": "973ed72ec20462240261f31f62e05948dd06e8b1",
+    "casino/daily-jackpot": "edc3a3eb69ef682dfd845937429aa9f040661a1f",
+    "general/folder-open-filled": "f6065ddb90b27080f942046c461e0c535bc63d6d",
+    "sports/curling-1018": "418718f18c751080d3669130bbe1a072c0939e04",
+    "sports/mma": "28ca4fd74d601e46cdb393c02a7181701b1d207d",
+    "system/volume-x": "2edf3ea958d7acfa4059cf92ba25a721c14d55d5",
+    "social media/instagram-circle": "59590cc9143f1ba93265894c9a783f0bce55bdc2",
+    "alerts/checkmark-filled": "62f5c06897d17b33a51b41a337d243cb3e69da2d",
+    "Avatar/Casino/XS": "7b7c5da7fda7b7976e9df2114142d77e7d0c7f20",
+    "casino/live-casino": "8c11ec1ffb5be298ef6dc89c006197227b4dd851",
+    "sports/swimming": "5a2d302594c9c17580e3b3bb8a44cd78eddedd7d",
+    "social media/x-footer": "3d8d2fd8adb1582a47dc75f89fd59b5f96bd9f07",
+    "system/pause": "301061c5b2cd5112305707f327f98285217db3f4",
+    "general/paperclip": "04c0e4add372631eafcf0ee2d5bd8d432a482f31",
+    "social media/youtube-filled": "4772f510ff8c8301e9b68dd7b505591d981708bc",
+    "general/lightning": "49d387c49580c9dd1f7ab63658031a29eb4a039e",
+    "general/snowflake": "a4af455f918549493ebec4313d598768e8aa6512",
+    "app/my-casino": "1432b8a3e22df0ec4bf879e95e80615114069512",
+    "system/filter": "dcfb3d103862b1956068965bb19996916bc6ef25",
+    "scoreboard/black-circle": "7a3d80f45f67f05b0c2088f39a370dcc0039fc44",
+    "navigation/chevron-up-small": "8bad4539c0f883eeb85dab0b6c0b157dfea0447b",
+    "system/ticket-outlined": "c6bcd5440ee2ea04691a298c7a169ea4c9757ce1",
+    "casino/casino-lobby": "027b3da3fe0e9c75b11dd89bb99737b08f71129e",
+    "system/plus": "ba4d03f0cff3cf4b6bc516383e681183da6de20b",
+    "esports/king-of-glory": "c6ff7472d8b01bd0f4c6ffd461d776011a1e508d",
+    "system/locked": "5612b0d396fb817bf74ed1a085e6e6982b141a4c",
+    "general/heart": "9c493af7f7857dcb9610d1be2a84719a46939322",
+    "casino/game-seats": "da93fc7a8af046679e6dee12f5252c5e4e301d62",
+    "casino/seats-filled": "41c9c7299b8da624287445f3b05457d070e1a134",
+    "sports/nhl": "8b41aa54d00ffbaa74bf621762b86b81288eadd0",
+    "general/candy": "6738d3e463d0f52d593a1c4fdc5a204dbd0ba33d",
+    "system/email-filled": "0c72d6cad9128b64045ed131c2739074e76c8c1f",
+    "system/cross-circle-filled-1": "b86a7f54dfdf107c5f6d52bce8f73ba4986eaaab",
+    "system/casino-wallet-2": "0909d8739f68fbc707c940d024576493c0163486",
+    "sports/floorball": "abad69a3d07081cebe7b598e8860eab968c3eb8b",
+    "alerts/information-2": "367806026cbceac65d8b3e6fe01e87d5d9fd40fa",
+    "sports/superbike-1058": "52d7d4ab3e6b4f60d9b5a5142409a2a46633b0d9",
+    "sports/rally-1033": "bc23bda9b7b659512cf09660e8cb2b347bef40e3",
+    "general/pumpkin": "f393cbaa6250ab4ee3dec3cee5f8c24e71c48f6c",
+    "navigation/arrow-up": "34dc9161acb383433ce9580a7e509694d89ad079",
+    "alerts/info-circle": "99873cde5b909901c89e8b1f09156fb76b8592af",
+    "general/switch-mode": "a720aba4e86d69b14a9365f01a09050d12056437",
+    "system/reload": "d4c0e3097abacfd69d99f0407e674418fe5e2767",
+    "casino/christmas": "6725c4c6eae547bc70451e20d04dc8b8309ee407",
+    "system/volume-1": "1354370c379580f1c5232bfa3e7f198de5780c68",
+    "sports/pool-full-1021": "f53cfb8fdfba40ccb6ed46542ba674a6f6dd5303",
+    "sports/bob": "ab3cfe8476f34828e2c3ce28ec22ad4731d6f9d5",
+    "Badges/Live": "369f863643c9b9826e0621048032db894cfec0fa",
+    "sports/freeskate-figureskating-1066": "e9d346e01ace92f6fb1db89e52dd3a45ef49472e",
+    "scoreboard/pink.circle": "29f9881b5c617a367a04d21a92993c5e2258732f",
+    "continents/asia": "b42f17a6bb6cba85ddd26aa01f386b1eae088980",
+    "esports/nba2k": "b5b94a5b6431f7b51ab4f8345cee0c1bdf0408df",
+    "system/statistics": "9a69305cbc0b237077e0dbe1d159ad348c3d8b7f",
+    "app/odd-down": "e2870e4d912dc52fd312380d1e2036f4ddff9f67",
+    "sports/other": "9865d93d0a8a40beb480404a87cfb4bce565ad3a",
+    "general/partnership": "1df12f0774f135689010c693ca4cbb512afab1ba",
+    "system/circle": "474d591fbc54a05369e62c52696a10eb9831b6d3",
+    "system/statistics-2": "c432bb3389c9b78a898575e0f9cfc8a2082048d1",
+    "sports/kayak": "6b79ae1f1f4ce652ff16aa112b73d9f31b6ecf3c",
+    "casino/black-jack": "4e090c064d4ab79641f7d67e587880d3b7d5419a",
+    "alerts/question-mark-1": "0c0636c588ead93944c377d228cad8ef26c8a32b",
+    "system/scoreboard-live-match": "b1c729473dd77fe4cc3cbb1d97c3025a124726a2",
+    "general/video": "ba852c6c3e0be4afab37210be62e710da1a82f8b",
+    "scoreboard/flag-2": "116e5cb3be6ef758d960de44d83dd801764545ac",
+    "social media/instagram": "2a38913923800e157dfe1ee4e7011547e406e9d5",
+    "sports/fencing": "a1f83d826fa009703f521c072da04dc15289c6ec",
+    "esports/counterstrike": "d906d559d296edcdbef516e8db482ab0bf5cb825",
+    "sports/bowls": "1b8e0c5dcef0e18463b80b80ac092b09eec5292e",
+    "esports/dota": "d46b2e3a4405817ac30beeaf9dcd9dfe3d6a3121",
+    "system/player-protection-page-filled": "aa96b053f6127e4eb873fd2800fc561b20c233de",
+    "system/statistics-1": "c622109ebdd27b32213d296aa373f46fc6e43939",
+    "esports/callofduty": "19dc7ecaa11d7c2a2055edf81d52b4c6d7763497",
+    "general/show-leagues-down": "6e453e9b5edbe83267baa92a879d672e1b26adb2",
+    "Badges/Odd-Boost": "094b9c8f3308dc597f2a79a2f232f8bcf9e155f4",
+    "system/odds-2.0": "c388915095e94a37e25a3b6766dc5988f857f09c",
+    "alerts/warning-filled": "8be69b7372f7000fe53a7029bf913e45b6426822",
+    "system/payment": "d54498fe1360887944c5677238a44d32cd869974",
+    "sports/chess-2": "09cc7e362479c78855a103af70d2fed3aba75b53",
+    "system/phone-filled": "2f391cfc4b799e72b9e4308bbd8c0eadcf48fc51",
+    "system/hide-outlined": "dde3081fc29d2a89f24d5cf05d22eee52f123e6a",
+    "esports/pubg-battleground": "62dadc36c04f122d968afd20b7236ed9ad73913e",
+    "general/my-bets": "7aacea655f3410364798401704f1f70a5bf92838",
+    "esports/overwatch": "3c62a41721e0ecffda245914d28dafbb179aaa81",
+    "system/top-deals": "9e8d6cd9e0e178dfb1aa12b25feca49cf4e61dd2",
+    "system/casino-wallet-3": "df7a5c3b543e046acd04847493a28fcb1d58b170",
+    "sports/australian-rules": "424ecfafe6aabfbe409f4f0d8b69930093abe14c",
+    "alerts/warning-circle-filled": "d5d29859e7212be192157946e0c61d22b48952f7",
+    "continents/australia": "8d6ddbdbc44c55b3a6948aff04e00be72919b972",
+    "continents/north-central-america": "e49194789aea1068c4531c3453181531b7dc5cfb",
+    "sports/surfing": "95e944656af1b8767b306b7e9eabbf11a75f125b",
+    "sports/virtuals": "9c897da3bc3a977a74781ad447a3e2644c14c2b0",
+    "communication tools/miro": "28d2fad7a1373a474b006b32148b53f1eb4ddaeb",
+    "system/chips-buy-sell": "8911f2ae1068149b2dec81d0e9719dac4a148939",
+    "casino/gameshow-1": "557b9211254106a5db46933435ea7e1ab4e264eb",
+    "scoreboard/green-circle": "ca2b93b0cf5bbfd14e8449f803e429a4d0ec1eb7",
+    "alerts/error-filled": "e152f6cb13e4053c6a9849ad5fe82e74c511e209",
+    "casino/provider-of-the-week": "a1304da736ec7a85b0bcb4b80b0de7b047b235a4",
+    "sports/alpineski": "04fbfc20ef500a8893a6570d04538b204a3226cf",
+    "social media/facebook-circle-filled": "0e006a0b35ddea936a3f43a470cd5ece29aca7e8",
+    "sports/freestyleskiing-1064": "8e5223cd8dcdd2a0bdc2fc34e5f8fc03ae558e08",
+    "system/square-grid-filled": "5e77c6b12a45103a34d5f0c11e875ac5360068f7",
+    "system/trust-24-hours": "3cb772cbb548505717e6115af538c1a54f836ff5",
+    "system/messsage": "1e26a9a8210240bef49623070bf84d9718d1eb3a",
+    "social media/facebook": "5b80e748847dc74b61ced18158e52656bffa0658",
+    "navigation/double-chevron-up": "f48b43862bb56592aae4dfd99f3078938690630f",
+    "scoreboard/180": "b66d6b04dafee4b73863464ecce45f84c5df7bd2",
+    "system/stopwatch": "8a028b29ee55de1e636bf3caf0aae9758e9379fd",
+    "alerts/checkmark-filled-1": "38f6678c7ddec74510db24da7019aaf89c94546f",
+    "social media/whatsapp-circle": "262c7df0d99e856d71c6c1a4d2bbaf3fa0f4f5be",
+    "sports/lottery-1081": "fc32b073d2d7bca9d4958089f3ae52f822ccf610",
+    "general/pen": "a0f11bf0c9d6366f5a006f461d50651a724aa055",
+    "system/18-plus-circle": "40c9ea4dda0c37b6755f3000776dd4e14983aa6e",
+    "system/clock": "ad8559d8d77f0912a36e1ba3f77f437a61370d52",
+    "sports/karate-1104": "0cec99fec1615c08fb89a9ab1190a7f656f89d68",
+    "communication tools/figma-white": "8300225c0486e6208d45a24f38fb72262258619a",
+    "system/sport-wallet": "038719bd9462a4afac71219b000a74861d4d3878",
+    "system/security": "4c360f176d922248992d5d42cdb81434ae5b60c0",
+    "scoreboard/flag-1": "3f86883a9fc96109b1196036dee2471e0b21cb3a",
+    "sports/worldcup": "3028f6e9d59e444bac157aabdab46901d1233de9",
+    "system/player-protection-page": "fa75ef156ab1af3d5f6a07cc78ca4b7f86f0257d",
+    "alerts/info-circle-1": "4a74e04544eafecb3e95ece43ec5e1eaf4431900",
+    "sports/formula-e": "a9681334f79ceb248fc6fdabbbbf18447ffc4d22",
+    "sports/handball": "089501cf51c8eb3d90363e27eb5ffdbc684e9409",
+    "casino/star-outlined": "768627fc6024344ffc68d9d5ce128dd013deac6b",
+    "sports/equestrian": "6dd0ac6a75e4eda24c239cb9af25a86cdc4c9678",
+    "general/lightbulb": "452333f2e5345f744f3d85fc6fe2de40a3b4e786",
+    "system/casino-wallet-1": "b4c315c566274a74d43732228ba351e9e4d641c4",
+    "sports/chess-1": "5dea510b35247b95630710e7adad4c3a6fd5e453",
+    "casino/most-popular-2": "8086e26cdfafdf47ef049860a245caf425ac141f",
+    "system/crown": "a755df2fd9695cce17bddeb1d1e5710200cb485a",
+    "sports/beach-volleyball": "819ee1fda4d5f285ea0bd33db03cbd7551f12bf5",
+    "general/fish": "f19ed97bf28f8124fc1d8296d40fe3abcddb170b",
+    "Badges/Marketing": "ded5744681fa7e23c4c2f62de6f98b14e0fd31f3",
+    "sports/speedskating": "66138764cf6312cc43f4fec383d4afba45208e52",
+    "sports/pesapallo-1041": "064a4de7b6b7c2368eb2be86ff4fa16f415a1f2a",
+    "general/betting-slip": "5bf93b3a544d6916322fbfe569a109b0559027b5",
+    "sports/oddsboost-1100": "054f4cc5efa20d9f62cc28b1cab7b53be6b7c4ba",
+    "system/filter-filled": "7052fa948974adac3c07a809d4079883c814bcdc",
+    "alerts/warning": "2b6e7e22136e1d3cfd3752690ac13f1bbabb15b9",
+    "social media/x-circle": "4c863c3321b1cf66323470f422a61f944b7e0e73",
+    "sports/badminton": "9bae7b08666f041f56417a030a64e85a8c505c36",
+    "communication tools/figma": "587a0b7adfb784a31f61bf055948d0cc6614c6b3",
+    "sports/cycling": "bd45fbb54c6ea8988aff6aa5a0ff79201a5ef9d5",
+    "sports/gaelic-football": "3adab21e9582a52c27855ce598ebaee468bbcdc3",
+    "sports/politics-75": "06011ca986c9e6b53c915b02fac9e2c11448f60e",
+    "casino/promotion-games": "078cd17c2d37a6db705983381f7bdbfacdec066e",
+    "alerts/i-1": "ae51dee393c0286f1a0594fd90e4df92bd5206ed",
+    "system/trust-payin-payout": "5aa567fdc4302fe9ccf659831f60beb1b797df15",
+    "casino/most-popular-3": "7c18cd256a72561765df96b2e2e7f87bea685803",
+    "sports/esoccer-fifa": "281c3a915539c91397aa7fa6a81f1caf31784a81",
+    "general/star-favorites": "1901d1e42e7b6d9f9b9063b1cce078f63e65420c",
+    "navigation/chevron-right-small": "cd1c4fe2504d7f3141d7b008b273879c2a2d4550",
+    "sports/snowboard": "63797725580ede89bac16a85d03bc47e51817ebd",
+    "social media/facebook-footer": "9cf077b18ec4ff317815e19e0ecd6bc25ec4ce53",
+    "navigation/chevron-down": "54711303f41ac62d90d40bd2b3230abf280e21ac",
+    "system/24-7-service": "e34dadc0ada04dc4ae5d173bc1c9399082c74c78",
+    "sports/atp": "00d7650f8ed1c28cbb25f9e96bf0368a1ca845f8",
+    "casino/drops-and-wins": "470a08003b15de765a3e31bce2eae5f28924acc2",
+    "communication tools/confluence": "2b548de3e17036077e26b92626c31521437c7636",
+    "alerts/i-2": "61c2ed873ecb5aa407a11d6ae57e3497d41a79f2",
+    "sports/ski-jumping": "f8bb64cbf8bbced9b5fdaab258973a3e3a03de87",
+    "casino/exclusive-games-2": "9cbf8f35b923c6944a43d8e4fea7f27106c09f76",
+    "sports/sportclimb-1106": "f3529bdfd6fb6931e65697487215a1cd8be88b8f",
+    "system/crown-filled": "dc0cd8dc6bd8e1d635efbcfc2aaf9c0d3293d80a",
+    "system/scoreboard": "732bf0c990cf840146fef3ceb1b43d837f1d25ac",
+    "system/stars-filled": "c0190a0cdf3348c7153e1888575cd7006c18f396",
+    "sports/speedway-1085": "59a5bcd2fa49aee6a0ad580acb7c74875936d15b",
+    "social media/pinterest-circle-filled": "33916f03832f686458ce490ae95c9ce34427ad2c",
+    "system/calender-2": "087fb788c3fb6da9f47524093d4afb677231fcc3",
+    "general/comission": "5371f080605cda20e21db0a8a32eea45717849d6",
+    "sports/lacross": "1643d4c60b0fa901387547712c53be1ef37fe895",
+    "sports/motorsport": "582118bdbfb4e8f04374cc8fd46fb11f056b9c1b",
+    "system/filter-1": "0373aaf226e27b90ed1da43ed681d514fbb6b8ed",
+    "general/show-leagues": "4b13670b49875b563be91c0c68e34417b96090c3",
+    "navigation/arrow-down": "dbcf1ce680308d25e929cf78651c2be43b0e4073",
+    "system/live-versal": "eae578877435e7a643ece65e70b8dc7ebb70e501",
+    "sports/pool-1021": "e9af7af6449e9f89cd3d53e908de799fab45dc6d",
+    "navigation/chevron-down-small": "0ffc3b077148cb18c52106224ac35d74c79f6635",
+    "system/cross-circle": "1d0a03b53621087e634fd582eae2153ba41ac696",
+    "system/user": "f62464ad0b37a4b0708d49b99035a18ae9465847",
+    "system/checkmark-circle-1": "67ec48e05f993b6d332721b5a7cd1e618e573ef6",
+    "casino/star-filled": "b7966f087ce7fe5100b744ee67a6b39867849b96",
+    "sports/luge": "34a40679fdbeb4eae89cf8dce6b563d378d75121",
+    "Badges/Countdown": "b7aa5d4786d34e0d4179f8aa624ec99edeaafb3c",
+    "social media/pinterest-circle": "e8df1ce95aa649ac1beaf8b208d9d6353d53a9b9",
+    "sports/weightlifting": "1b67a302b4c860f36bc299a5062ee9209b8cfbfe",
+    "sports/baseball": "e62df2226e94593cb305f6af8dbf28a62f8123e0",
+    "system/checkmark": "c9ca28b64f394ef112d4c7d5b6f6ee7292bd8a36",
+    "continents/earth": "8ee3903f1994788e57339ca5bced1e6c24b6ae7c",
+    "alerts/error-circle": "51cd44b897c284ae9541897968b84d204fbb7e93",
+    "system/christmas-tree": "18f29c5705a59ba3358c5b693c8606938e4104ef",
+    "system/18-plus-circle-1": "7b5d15e2229f0b7846f0861673460427b3b9ea4d",
+    "navigation/double-chevron-down": "bc5082f5f2a3ccb9587fee0b3a4a8e02370dc4ac",
+    "system/show-outlined": "35d278d645294029bbe20f2f134e1c2861e2c932",
+    "system/settings": "ecb7a336d0c25afb170625fbeb2a5de6b1b9059e",
+    "responsible-gaming/self-limits": "37cd3fa1549eba58eedfe2c8102c13b9831c78e7",
+    "general/fire-filled": "87997a95deec713f5763878ffa19ae1f23ba0210",
+    "sports/mixed-1000": "74d25d98a751d6b4abbce75a84ee5e03db199891",
+    "scoreboard/brown-circle": "abc546366d1452ea7ee0a177cd4924bcfad1fe5c",
+    "system/biometric-id": "f4f93a3655d447305fa63d8a497c1d66af1ecc29",
+    "Badge/Default": "e0a8094074c7d0a251c043cef6a618ed560b8b11",
+    "system/pause-1-filled": "4b38184ee5ff400962ca112eaead88b047f43d4d",
+    "sports/american-football": "927c420303b45749573096de819dc8132aaa9b2d",
+    "system/image-portrait": "e67e2c551721cdff3dce6e521cd6a94146e35318",
+    "general/music": "145327e24a7f9cd1007209d8d39ce8975e9c11b5",
+    "sports/formula-1": "614f259bba7b62e0aeca7a62a826f14942816d57",
+    "esports/league-of-legends": "4c0bc14b54324ef1fb247ea846059890f05b6311",
+    "sports/handball-with-hand": "e7bbec15faa810f283e25587518d5b6a559a9f2a",
+    "system/streaming-outlined": "1aed8f3d83ec8312ee00bd7d726f763690e83c33",
+    "scoreboard/arrows": "ad020244319de92fb210a422d25f246e16f26f26",
+    "system/copy": "c4825da10fa57a5dbc6a7bd5e2385199910bbaf8",
+    "general/fullscreen-open": "8bccb513ac784f4551a5196a6b62478d0b8be7f9",
+    "system/verification-filled": "904255aefd6ebdb37587e2f1479e4f5f58601557",
+    "scoreboard/red-card": "0118c513239552b14598367afb90dcb395d6590c",
+    "Variant=Text + Icon, State=Disabled": "f62abe8c50f5b604647a79142d5b31d783ccb385",
+    "Type=Icon, State=Loading": "f9adf189fcc3af05306a10857bda127ef82ea155",
+    "Variant=Text + Icon, State=Mouseover": "09a5babd703d8e2edffcfc0cb985ad9e6b234678",
+    "Variant=Icon (Default), State=Focus": "12c059f91700bce6db68632d5e12d44fd7240398",
+    "Type=Icon, State=Pressed / Selected": "15a8a3ed0461338d6f88ae8db6cb657ce21655f2",
+    "Type=Text (Default), State=Pressed / Selected": "31bab3764a9f7498b29096d18dcbd7decb95afbd",
+    "Type=Text (Default), State=Default": "3a555d11e852764317804e9cca20dac717740cae",
+    "Variant=Text + Icon, State=Pressed / Selected": "3d6ac9837b33fd20b60286bbb04def11a9fa5a75",
+    "Variant=Text + Icon, State=Default": "3e145060f57268b0bdd5f63a265b7a590314b141",
+    "Type=Text (Default), State=Loading": "3f4cc2dc48a9e0ef77a8d4984108c38a1e6fcf95",
+    "Type=Text (Default), State=Focus": "42675835a2d11a439b7d89c379fc7d9a57fb8c2b",
+    "Type=Icon, State=Focus": "4a7b20b923317b06907d5e6840cd28f57d72a06a",
+    "Type=Text (Default), State=Mouseover": "51661e363c075091b1ed46c8d927d99336b470ad",
+    "Variant=Icon (Default), State=Disabled": "660abdc184de44323e0c06dfbc232c212fe02bbe",
+    "Type=Icon, State=Disabled": "820e401ee234864b1fda47253127efa857deb9aa",
+    "Variant=Icon (Default), State=Default": "977f8aa78cd1f11302c335d7d49d2116e723ab93",
+    "Variant=Icon (Default), State=Mouseover": "9e557f3ee1c7970a1a7d7a5eca5013eb4e6efee7",
+    "Type=Icon, State=Default": "bfbf2371f60fa34c12829641d3eeae7eeba1f76f",
+    "Type=Text (Default), State=Disabled": "d5af7b84c6152d0fa331e05220bf9f5ff013519f",
+    "Type=Icon, State=Mouseover": "d67bcbf9ad67e344d7ebb44dc2d080e588393a1d",
+    "Variant=Text + Icon, State=Focus": "dea2acdbf592aa2a60f5a80510e130050698982e",
+    "Variant=Icon (Default), State=Pressed / Selected": "e36e43b09f5c0f7c6b2e3d5019ffa1c07633bbe1",
+    "Variant=Icon (Default), State=Loading": "f3824f03b9249f70906a0cde9d60dd49868b6d44"
+  }
+}
