@@ -1,5 +1,1219 @@
 [
   {
+    "version": "v2026.08.03.30",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Title/M/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Desktop",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Desktop",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Regular",
+            "desc": "14px · lh 20px · w400 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Mobile",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Mobile",
+            "desc": "36px · lh 44px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Medium",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Mobile",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Mobile",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Desktop",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Medium",
+            "desc": "12px · lh 16px · w500 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Desktop",
+            "desc": "40px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Desktop",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Underline",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Desktop",
+            "desc": "40px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Medium",
+            "desc": "14px · lh 20px · w500 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Medium",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Regular",
+            "desc": "12px · lh 16px · w400 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Mobile",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Desktop",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Mobile",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Desktop",
+            "desc": "48px · lh 48px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Regular",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Mobile",
+            "desc": "28px · lh 36px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Underline",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Mobile",
+            "desc": "36px · lh 44px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Desktop",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Helpers/H1",
+            "desc": "140px · lh 164px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Mobile",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Mobile",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Desktop",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Desktop",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Regular",
+            "desc": "18px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Mobile",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/M",
+            "desc": "60px · lh 60px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/L",
+            "desc": "72px · lh 72px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/S",
+            "desc": "48px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/M",
+            "desc": "60px · lh 60px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/L",
+            "desc": "72px · lh 72px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/S",
+            "desc": "48px · lh 48px · w400"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/300",
+            "desc": "#7B61FF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/900",
+            "desc": "#232323"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/300",
+            "desc": "#AAD1E6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/150",
+            "desc": "#F0FADA"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/400",
+            "desc": "#86BEDD"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/200",
+            "desc": "#FFED9B"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/20",
+            "desc": "#E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/800",
+            "desc": "#2D3D31"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/500",
+            "desc": "#DB3F3F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/500",
+            "desc": "#2EA949"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Default Fill Color",
+            "desc": "#2B94FE"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/350",
+            "desc": "#FFC170"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/500",
+            "desc": "#2194FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/200",
+            "desc": "#F6CFCF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/800",
+            "desc": "#333333"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/900",
+            "desc": "#3F550A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/200",
+            "desc": "#C5EFCE"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/900",
+            "desc": "#0B466E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Forest Green/500",
+            "desc": "#1BA57B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/350",
+            "desc": "#7CDB91"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/300",
+            "desc": "#CEC6F6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/500",
+            "desc": "#66CE7E"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/02",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/500",
+            "desc": "#C6EC6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/300",
+            "desc": "#A4E6B3"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Gras",
+            "desc": "#006837"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/600",
+            "desc": "#B5D45E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/700",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/150",
+            "desc": "#D6EAFF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/300",
+            "desc": "#FFD49B"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/500",
+            "desc": "#FFD200"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/100",
+            "desc": "#F7FCEA"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/01",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/200",
+            "desc": "#939393"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/600",
+            "desc": "#CCA800"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/800",
+            "desc": "#59780C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/300",
+            "desc": "#F1B4B4"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/400",
+            "desc": "#737373"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/15",
+            "desc": "#EDEDED"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/700",
+            "desc": "#832626"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/40",
+            "desc": "#D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/300",
+            "desc": "#A7D5FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/10",
+            "desc": "#F3F3F3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/600",
+            "desc": "#FFFFFF (60%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/300",
+            "desc": "#838383"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/400",
+            "desc": "#53ACFF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/700",
+            "desc": "#434343"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/100",
+            "desc": "#A3A3A3"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/700",
+            "desc": "#1583BC"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/500",
+            "desc": "#78B9FF"
+          },
+          {
+            "type": "new",
+            "title": "Footer Greece/800",
+            "desc": "#1A3362"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Concrete",
+            "desc": "#585F60"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/650",
+            "desc": "#C16D00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/50",
+            "desc": "#FFF8EF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/600",
+            "desc": "#535353"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/600",
+            "desc": "#608012"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/200",
+            "desc": "#DAD5F5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/50",
+            "desc": "#FDF3F3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/White",
+            "desc": "#FFFFFF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/800",
+            "desc": "#665400"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/500",
+            "desc": "#636363"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/50",
+            "desc": "#FFFCEF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/500",
+            "desc": "#000000 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/150",
+            "desc": "#FFF3BF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/700",
+            "desc": "#997E00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/700",
+            "desc": "#4F3B3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/600",
+            "desc": "#1575CF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/50",
+            "desc": "#F1F8FF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/300",
+            "desc": "#FFE570"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/800",
+            "desc": "#663900"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/200",
+            "desc": "#FFFFFF (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/50",
+            "desc": "#FBFEF6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/300",
+            "desc": "#DEF4AB"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/60",
+            "desc": "#C3C3C3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/200",
+            "desc": "#FFE3BF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/400",
+            "desc": "#FFAA3C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/500",
+            "desc": "#7B61FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/100",
+            "desc": "#FFFFFF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/700",
+            "desc": "#995600"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/300",
+            "desc": "#000000 (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/400",
+            "desc": "#FFDB3C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/800",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/800",
+            "desc": "#12441D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/500",
+            "desc": "#BA26C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/900",
+            "desc": "#1F2611"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/150",
+            "desc": "#DBF2E0"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/100",
+            "desc": "#FFF8DB"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/700",
+            "desc": "#1C652C"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/900",
+            "desc": "#332A00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/600",
+            "desc": "#BB1B1B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/600",
+            "desc": "#3F734B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/800",
+            "desc": "#581919"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/100",
+            "desc": "#E6E3F3"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Active Border",
+            "desc": "#96DBFA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/80",
+            "desc": "#B3B3B3"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/850",
+            "desc": "#0E5689"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/150",
+            "desc": "#FAE4E4"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/100",
+            "desc": "#7B61FF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/600",
+            "desc": "#25873A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/500",
+            "desc": "#FF8F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/200",
+            "desc": "#E8F7C5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/400",
+            "desc": "#4DCE69"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/600",
+            "desc": "#E17F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/700",
+            "desc": "#99BE4A"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/05",
+            "desc": "#FBFBFB"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/550",
+            "desc": "#ECC200"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/400",
+            "desc": "#FE9898"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/400",
+            "desc": "#94FFAC"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Water",
+            "desc": "#005366"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/100",
+            "desc": "#FFF4E5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/800",
+            "desc": "#473434"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/04",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/800",
+            "desc": "#374515"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/300",
+            "desc": "#FFFFFF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/500",
+            "desc": "#FFBA61"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/200",
+            "desc": "#C7E4FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/400",
+            "desc": "#D2F08D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/700",
+            "desc": "#455912"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/800",
+            "desc": "#473E32"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/400",
+            "desc": "#91D1FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/700",
+            "desc": "#374A3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/100",
+            "desc": "#FBECEC"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/700",
+            "desc": "#FFFFFF (70%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/600",
+            "desc": "#814444"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/Black",
+            "desc": "#000000"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/350",
+            "desc": "#EA9393"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/600",
+            "desc": "#951E9E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/350",
+            "desc": "#81C2FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/750",
+            "desc": "#6A8F0E"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Plastic",
+            "desc": "#A6653C"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Sand",
+            "desc": "#AF511F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/900",
+            "desc": "#2B0808"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/900",
+            "desc": "#0B2811"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/50",
+            "desc": "#F0FBF3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/400",
+            "desc": "#E36B6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/900",
+            "desc": "#331D00"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/200",
+            "desc": "#000000 (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/150",
+            "desc": "#FFE9CC"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/03",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/05",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/800",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Live Casino/900",
+            "desc": "#1F1F1F"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Ice",
+            "desc": "#567A8D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/100",
+            "desc": "#E9F4FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/900",
+            "desc": "#FFFFFF (90%)"
+          },
+          {
+            "type": "new",
+            "title": "Betslip/Loading Blue",
+            "desc": "#0067C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/100",
+            "desc": "#E5F7EA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/500",
+            "desc": "#FFFFFF (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/800",
+            "desc": "#2E3D4D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/600",
+            "desc": "#644ED7"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/950",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/800",
+            "desc": "#FFFFFF (80%)"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/750",
+            "desc": "#2970B2"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Background",
+            "desc": "#EEEBE5"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/400",
+            "desc": "#FFFFFF (40%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/900",
+            "desc": "#001A33"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/500",
+            "desc": "#D9F476"
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Shadows/Extra Small",
+            "desc": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Base",
+            "desc": "drop shadow: offset 0/5 blur 12 color #000000 (5%) | drop shadow: offset 0/2 blur 8 color #000000 (8%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Small",
+            "desc": "background blur: radius 10"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Medium",
+            "desc": "drop shadow: offset 0/6 blur 12 color #000000 (8%) | drop shadow: offset 0/4 blur 16 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Medium",
+            "desc": "background blur: radius 20"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/XLarge",
+            "desc": "drop shadow: offset 0/20 blur 25 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XLarge",
+            "desc": "background blur: radius 100"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XXLarge",
+            "desc": "background blur: radius 120"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Large",
+            "desc": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Badges/Account status",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XS",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/SM",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Alerts Default (Inline)",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Spacer",
+            "desc": "84 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Betslip (Inline)",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Secondary Buttons",
+            "desc": "Used on non solid backgrounds. for example images"
+          },
+          {
+            "type": "new",
+            "title": "Primary Buttons",
+            "desc": "270 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Banner",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Apps",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Betslip",
+            "desc": "Used as tablet and mobile betslip badge"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/XS",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Marketing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Default",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Casino",
+            "desc": "16 variant(s)"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 54 new text style token(s) to global stylesheet.",
+      "Developer: Review color token updates in global stylesheet.",
+      "Developer: 16 new component(s) in Figma — check Dev Mode for specs.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.03.27",
     "date": "2026-08-03",
     "ticket": "",
