@@ -177,15 +177,35 @@ async function fetchAllStyles() {
 
 try {
   const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-  console.log(JSON.stringify(compData.meta.components[0], null, 2)); // ← TEMP: inspect one component's shape
-  const setKeys = {}; // setName → [variant keys]
+  console.log(JSON.stringify(
+  compData.meta.components.find(c => c.name.startsWith('Status=')), null, 2
+  )); // ← TEMP: inspect a component that resolved wrong
+  
+  // Build a lookup: componentSetId → set name (reliable source for variant grouping)
+  let setNames = {};
+  try {
+    const setData = await figmaGet(`/files/${FIGMA_FILE_ID}/component_sets`);
+    for (const cs of setData.meta?.component_sets ?? []) setNames[cs.node_id] = cs.name;
+  } catch (e) {
+    console.warn('   Component sets fetch failed:', e.message);
+  }
+
+  const setKeys = {}; // displayName → [variant keys]
   for (const c of compData.meta?.components ?? []) {
-    // variants live under the parent set's name; standalone components fall back to their own name
-    const name = c.containing_frame?.containingStateGroup?.name ?? c.name;
+    // 1st choice: real set name via component_set_id
+    // 2nd choice: containingStateGroup (older files)
+    // 3rd choice: strip the "Prop=Value, ..." suffix off the variant's own name
+    const name =
+      setNames[c.component_set_id] ??
+      c.containing_frame?.containingStateGroup?.name ??
+      (c.name.includes('=') ? null : c.name) ??
+      c.name.split(',')[0].split('=').slice(1).join('=').trim() ??
+      c.name;
     (setKeys[name] ??= []).push(c.key);
   }
+
   for (const [name, keys] of Object.entries(setKeys)) {
-    snapshot.components[name] = keys.sort().join('|'); // sort → stable, avoids false "changed"
+    snapshot.components[name] = keys.sort().join('|');
   }
   console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
 } catch (e) {
