@@ -38,6 +38,7 @@ jobs:
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MANUAL_VERSION: ${{ github.event.inputs.version }}
           MANUAL_TICKET: ${{ github.event.inputs.ticket }}
           # From webhook payload (set automatically when Figma triggers)
