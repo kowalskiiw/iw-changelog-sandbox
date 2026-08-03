@@ -1,5 +1,69 @@
 [
   {
+    "version": "v2026.08.03.20",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Type=Initials, Notification=Off, State=Default",
+            "desc": "Avatar showing user initials, no notification badge, default resting state. Visual appearance updated — verify initials rendering and layout alignment."
+          },
+          {
+            "type": "changed",
+            "title": "Type=Image, Notification=On, State=Default",
+            "desc": "Avatar with profile image and active notification badge, default state. Badge or image container styling changed — confirm badge positioning and overlap behaviour."
+          },
+          {
+            "type": "changed",
+            "title": "Type=User, Notification=Off, State=Default",
+            "desc": "Generic user icon avatar, no notification badge, default state. Icon or container visuals updated — verify icon rendering across account and navigation screens."
+          },
+          {
+            "type": "changed",
+            "title": "Type=Image, Notification=Off, State=Default",
+            "desc": "Avatar with profile image, no notification badge, default state. Image container or clipping mask updated — confirm image scaling and border radius consistency."
+          },
+          {
+            "type": "changed",
+            "title": "Type=Initials, Notification=On, State=Hover",
+            "desc": "Avatar showing user initials with notification badge, interactive hover state. Hover styling changed — validate hover feedback and badge visibility on pointer interaction."
+          },
+          {
+            "type": "changed",
+            "title": "Type=Initials, Notification=On, State=Default",
+            "desc": "Avatar showing user initials with active notification badge, default resting state. Badge or initials container updated — confirm badge placement and text legibility."
+          },
+          {
+            "type": "changed",
+            "title": "Type=Image, Notification=On, State=Hover",
+            "desc": "Avatar with profile image and notification badge, interactive hover state. Hover or badge styling changed — verify hover transition and badge overlap on image avatars."
+          },
+          {
+            "type": "changed",
+            "title": "Type=User, Notification=Off, State=Hover",
+            "desc": "Generic user icon avatar, no notification badge, hover state. Hover appearance updated — validate interactive state styling in navigation and account header contexts."
+          },
+          {
+            "type": "changed",
+            "title": "Type=User, Notification=On, State=Default",
+            "desc": "Generic user icon avatar with active notification badge, default state. Badge or icon styling changed — confirm badge visibility and icon alignment in header components."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Re-inspect all Avatar component variants in code — check for CSS changes affecting border-radius, badge positioning (top/right offsets), and image clip-path across Type=Image, Type=Initials, and Type=User.",
+      "Designer: Review all nine updated Avatar variants in the new library version (v2026.08.03.20) and re-link any detached instances in account, navigation, and header screens across DE, AT, ES, SE, and CY market files.",
+      "Tester: Perform visual regression on the Avatar component in account screens and the main navigation header — specifically validate notification badge rendering, hover states, and image/initials display across all five markets.",
+      "Developer: Confirm that notification badge visibility logic and hover state CSS are correctly reflected in the React Avatar component props, particularly for the Notification=On and State=Hover variant combinations."
+    ]
+  },
+  {
     "version": "v1.NaN",
     "date": "2026-08-03",
     "ticket": "",
