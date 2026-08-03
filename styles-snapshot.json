@@ -1251,7 +1251,7 @@
           "fill:#232323;sw1"
         ],
         ".AvatarXS / .Notifications": [
-          "fill:#1C652C;sw0.75;r75"
+          "fill:#25873A;sw0.75;r75"
         ],
         ".AvatarXS / .Notifications / Text": [
           "fill:#FFFFFF;sw0.75"
@@ -1283,7 +1283,7 @@
           "fill:#232323;sw1"
         ],
         ".AvatarSmall / .Notifications": [
-          "fill:#1C652C;sw0.75;r75"
+          "fill:#25873A;sw0.75;r75"
         ],
         ".AvatarSmall / .Notifications / Text": [
           "fill:#FFFFFF;sw0.75"
@@ -1544,7 +1544,7 @@
       "count": 1,
       "layers": {
         ".Notifications": [
-          "fill:#1C652C;sw1.375;r150"
+          "fill:#25873A;sw1.375;r150"
         ],
         ".Notifications / Text": [
           "fill:#FFFFFF;sw1.375"

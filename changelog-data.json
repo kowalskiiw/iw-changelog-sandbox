@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.03.33",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications: fill:#1C652C;sw0.75;r75 → fill:#25873A;sw0.75;r75"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / .Notifications: fill:#1C652C;sw0.75;r75 → fill:#25873A;sw0.75;r75"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications: fill:#1C652C;sw1.375;r150 → fill:#25873A;sw1.375;r150"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the CSS token or hardcoded fill value for notification badge backgrounds from #1C652C to #25873A across Avatar/XS, Avatar/SM, and Badge/Default components.",
+      "Designer: Verify the updated green (#25873A) meets contrast requirements against all background surfaces where Avatar and Badge/Default notification indicators appear.",
+      "Tester: Visually verify notification badge colour has changed to the lighter green (#25873A) on Avatar/XS, Avatar/SM, and Badge/Default across all five markets (DE, AT, ES, SE, CY).",
+      "Developer: Search codebase for any direct references to #1C652C in badge or avatar-related stylesheets and replace with the new value #25873A to prevent inconsistency."
+    ]
+  },
+  {
     "version": "v2026.08.03.31",
     "date": "2026-08-03",
     "ticket": "",
