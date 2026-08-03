@@ -1,5 +1,64 @@
 [
   {
+    "version": "v1.NaN",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Display/Regular/M",
+            "desc": "Slightly restrained hero size for prominent page or section openers alongside other content, or as Display/L replacement on narrower desktop layouts."
+          },
+          {
+            "type": "changed",
+            "title": "Display/Regular/L",
+            "desc": "Largest type in the scale. Single high-impact moments — marketing heroes, splash sections, promotional numbers. Desktop only; step down on smaller breakpoints."
+          },
+          {
+            "type": "changed",
+            "title": "Display/Medium/S",
+            "desc": "Entry point to the display range. For feature headers, campaign banners, and emphasis moments needing more presence than a standard headline without going full hero."
+          },
+          {
+            "type": "changed",
+            "title": "Display/Medium/M",
+            "desc": "Slightly restrained hero size for prominent page or section openers alongside other content, or as Display/L replacement on narrower desktop layouts."
+          },
+          {
+            "type": "changed",
+            "title": "Display/Medium/L",
+            "desc": "Largest type in the scale. Single high-impact moments — marketing heroes, splash sections, promotional numbers. Desktop only; step down on smaller breakpoints."
+          },
+          {
+            "type": "changed",
+            "title": "Display/Regular/S",
+            "desc": "Entry point to the display range. For feature headers, campaign banners, and emphasis moments needing more presence than a standard headline without going full hero."
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Shadows/Large",
+            "desc": "For floating overlays clearly detaching from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to signal layering above content below."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Audit all campaign banner, hero, and promotional screens across DE, AT, ES, SE, CY markets to confirm Display/S, M, L variants are applied at the correct breakpoints per updated usage guidance.",
+      "Developer: Review components using Display text styles — particularly marketing heroes, splash sections, and feature headers — and ensure Display/Regular/L and Display/Medium/L are not applied below desktop breakpoints; add responsive step-down tokens where missing.",
+      "Developer: Verify the updated box-shadow value for Shadows/Large is correctly mapped in CSS for menus, tooltips, date pickers, and toasts; check that no other shadow token is being used on these components in place of Shadows/Large.",
+      "Tester: Visually verify Shadows/Large depth on floating overlay components (dropdowns, tooltips, date pickers, toasts) across breakpoints in DE and ES builds to confirm the shadow reads as clearly elevated above underlying content."
+    ]
+  },
+  {
     "version": "v1",
     "date": "2026-08-03",
     "ticket": "-",

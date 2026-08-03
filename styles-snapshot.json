@@ -30,31 +30,11 @@
       },
       "description": null
     },
-    "Display/Medium/M": {
-      "value": {
-        "fontSize": 60,
-        "lineHeight": 60,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Body/L/Regular": {
       "value": {
         "fontSize": 16,
         "lineHeight": 24,
         "fontWeight": 400,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Display/Medium/S": {
-      "value": {
-        "fontSize": 48,
-        "lineHeight": 48,
-        "fontWeight": 500,
         "fontFamily": "Roboto",
         "letterSpacing": 0
       },
@@ -124,16 +104,6 @@
       "value": {
         "fontSize": 20,
         "lineHeight": 28,
-        "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Display/Medium/L": {
-      "value": {
-        "fontSize": 72,
-        "lineHeight": 72,
         "fontWeight": 500,
         "fontFamily": "Roboto",
         "letterSpacing": 0
@@ -430,16 +400,6 @@
       },
       "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is mobile only"
     },
-    "Display/Regular/S": {
-      "value": {
-        "fontSize": 48,
-        "lineHeight": 48,
-        "fontWeight": 400,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Label/M/Medium": {
       "value": {
         "fontSize": 12,
@@ -455,16 +415,6 @@
         "fontSize": 18,
         "lineHeight": 24,
         "fontWeight": 500,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
-    "Display/Regular/L": {
-      "value": {
-        "fontSize": 72,
-        "lineHeight": 72,
-        "fontWeight": 400,
         "fontFamily": "Roboto",
         "letterSpacing": 0
       },
@@ -600,16 +550,6 @@
       },
       "description": null
     },
-    "Display/Regular/M": {
-      "value": {
-        "fontSize": 60,
-        "lineHeight": 60,
-        "fontWeight": 400,
-        "fontFamily": "Roboto",
-        "letterSpacing": 0
-      },
-      "description": null
-    },
     "Body/L/Underline": {
       "value": {
         "fontSize": 16,
@@ -629,6 +569,66 @@
         "letterSpacing": 0
       },
       "description": null
+    },
+    "Display/Regular/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "A slightly more restrained hero size. For prominent page or section openers that still need presence but sit alongside other content, or as the Display L replacement on narrower desktop layouts."
+    },
+    "Display/Regular/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The largest type in the scale. For single high-impact moments — marketing hero headlines, splash/landing sections, or big promotional numbers — where one short line needs to dominate the screen. Desktop only; step down on smaller breakpoints."
+    },
+    "Display/Medium/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The entry point to the display range, bridging into the Headline scale below it. For feature headers, campaign banners, and emphasis moments that need to feel larger than a standard headline without going full hero."
+    },
+    "Display/Medium/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "A slightly more restrained hero size. For prominent page or section openers that still need presence but sit alongside other content, or as the Display L replacement on narrower desktop layouts."
+    },
+    "Display/Medium/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The largest type in the scale. For single high-impact moments — marketing hero headlines, splash/landing sections, or big promotional numbers — where one short line needs to dominate the screen. Desktop only; step down on smaller breakpoints."
+    },
+    "Display/Regular/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The entry point to the display range, bridging into the Headline scale below it. For feature headers, campaign banners, and emphasis moments that need to feel larger than a standard headline without going full hero."
     }
   },
   "fill": {
@@ -1318,13 +1318,13 @@
       "value": "background blur: radius 100",
       "description": "A heavy blur that reduces the background to soft colour and shape. For full-screen scrims and modal backdrops where the goal is to pull focus firmly onto the foreground layer."
     },
-    "Shadows/Large": {
-      "value": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)",
-      "description": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as \"on top of\" the content below."
-    },
     "Background Blur/XXLarge": {
       "value": "background blur: radius 120",
       "description": "The strongest blur — the background becomes an abstract wash of colour. Reserved for the most immersive overlays, onboarding takeovers, or loading/transition states where the content behind should all but disappear."
+    },
+    "Shadows/Large": {
+      "value": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)",
+      "description": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as on top of the content below."
     }
   },
   "grid": {
