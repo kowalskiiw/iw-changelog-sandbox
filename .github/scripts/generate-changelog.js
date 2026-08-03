@@ -135,16 +135,28 @@ async function fetchAllStyles() {
   const snapshot = { text: {}, fill: {}, effect: {}, grid: {}, variables: {}, components: {} };
 
   for (const [name, node] of Object.entries(textNodes)) {
-    if (node) snapshot.text[name] = normalizeTextStyle(node.style ?? {});
+    if (node) snapshot.text[name] = {
+      value: normalizeTextStyle(node.style ?? {}),
+      description: figmaDescriptions[name] ?? null,
+    };
   }
   for (const [name, node] of Object.entries(fillNodes)) {
-    if (node?.fills?.length) snapshot.fill[name] = normalizePaint(node.fills[0]);
+    if (node?.fills?.length) snapshot.fill[name] = {
+      value: normalizePaint(node.fills[0]),
+      description: figmaDescriptions[name] ?? null,
+    };
   }
   for (const [name, node] of Object.entries(effectNodes)) {
-    if (node?.effects?.length) snapshot.effect[name] = normalizeEffectStyle(node.effects);
+    if (node?.effects?.length) snapshot.effect[name] = {
+      value: normalizeEffectStyle(node.effects),
+      description: figmaDescriptions[name] ?? null,
+    };
   }
   for (const [name, node] of Object.entries(gridNodes)) {
-    if (node?.layoutGrids?.length) snapshot.grid[name] = normalizeGridStyle(node.layoutGrids);
+    if (node?.layoutGrids?.length) snapshot.grid[name] = {
+      value: normalizeGridStyle(node.layoutGrids),
+      description: figmaDescriptions[name] ?? null,
+    };
   }
 
   try {
@@ -191,7 +203,7 @@ function diffMap(oldMap, newMap, describeChangeFn) {
   return { added, changed, removed };
 }
 
-function describeTextChange(old, nw) {
+function describeTextValueChange(old, nw) {
   const parts = [];
   if (old.fontSize      !== nw.fontSize)      parts.push(`fontSize: ${old.fontSize}px → ${nw.fontSize}px`);
   if (old.lineHeight    !== nw.lineHeight)     parts.push(`lineHeight: ${old.lineHeight}px → ${nw.lineHeight}px`);
@@ -201,16 +213,24 @@ function describeTextChange(old, nw) {
   return parts.join(' · ');
 }
 
-function describeSimpleChange(oldVal, newVal) {
+function describeSimpleValueChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
+}
+
+function describeWrappedChange(old, nw, formatValueFn) {
+  const parts = [];
+  const valueDiff = formatValueFn(old.value, nw.value);
+  if (valueDiff) parts.push(valueDiff);
+  if ((old.description ?? '') !== (nw.description ?? '')) parts.push('description updated in Figma');
+  return parts.join(' · ');
 }
 
 function buildDiff(oldSnap, newSnap) {
   return {
-    text:       diffMap(oldSnap.text       ?? {}, newSnap.text,       describeTextChange),
-    fill:       diffMap(oldSnap.fill       ?? {}, newSnap.fill,       describeSimpleChange),
-    effect:     diffMap(oldSnap.effect     ?? {}, newSnap.effect,     describeSimpleChange),
-    grid:       diffMap(oldSnap.grid       ?? {}, newSnap.grid,       describeSimpleChange),
+    text:       diffMap(oldSnap.text   ?? {}, newSnap.text,   (o, n) => describeWrappedChange(o, n, describeTextValueChange)),
+    fill:       diffMap(oldSnap.fill   ?? {}, newSnap.fill,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
+    effect:     diffMap(oldSnap.effect ?? {}, newSnap.effect, (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
+    grid:       diffMap(oldSnap.grid   ?? {}, newSnap.grid,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
     components: diffMap(oldSnap.components ?? {}, newSnap.components, describeSimpleChange),
   };
@@ -241,10 +261,11 @@ function buildGroups(diff) {
     const items = [];
 
     for (const s of d.added) {
-      // Format new text styles as readable property list instead of raw JSON
       let desc = '';
-      if (key === 'text' && typeof s.value === 'object' && s.value !== null) {
-        desc = formatTextStyleValues(s.value);
+      if (key === 'text' && s.value?.value) {
+        desc = formatTextStyleValues(s.value.value);
+      } else if (['fill', 'effect', 'grid'].includes(key) && s.value?.value !== undefined) {
+        desc = s.value.value;
       } else {
         desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
       }
