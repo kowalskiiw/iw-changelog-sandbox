@@ -175,13 +175,22 @@ async function fetchAllStyles() {
     console.warn('   Variables not accessible:', e.message);
   }
 
-  try {
-    const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-    for (const c of compData.meta?.components ?? []) snapshot.components[c.name] = c.key;
-    console.log(`   Found ${Object.keys(snapshot.components).length} components`);
-  } catch (e) {
-    console.warn('   Components fetch failed:', e.message);
+try {
+  const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
+  console.log(JSON.stringify(compData.meta.components[0], null, 2)); // ← TEMP: inspect one component's shape
+  const setKeys = {}; // setName → [variant keys]
+  for (const c of compData.meta?.components ?? []) {
+    // variants live under the parent set's name; standalone components fall back to their own name
+    const name = c.containing_frame?.containingStateGroup?.name ?? c.name;
+    (setKeys[name] ??= []).push(c.key);
   }
+  for (const [name, keys] of Object.entries(setKeys)) {
+    snapshot.components[name] = keys.sort().join('|'); // sort → stable, avoids false "changed"
+  }
+  console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
+} catch (e) {
+  console.warn('   Components fetch failed:', e.message);
+}
 
   return { snapshot, figmaDescriptions };
 }
@@ -230,6 +239,12 @@ function describeSimpleChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
 }
 
+function describeComponentChange(oldVal, newVal) {
+  if (oldVal === newVal) return '';
+  const oldN = oldVal.split('|').length, newN = newVal.split('|').length;
+  return oldN !== newN ? `variants: ${oldN} → ${newN}` : 'variant(s) updated';
+}
+
 function buildDiff(oldSnap, newSnap) {
   return {
     text:       diffMap(oldSnap.text   ?? {}, newSnap.text,   (o, n) => describeWrappedChange(o, n, describeTextValueChange)),
@@ -237,7 +252,7 @@ function buildDiff(oldSnap, newSnap) {
     effect:     diffMap(oldSnap.effect ?? {}, newSnap.effect, (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     grid:       diffMap(oldSnap.grid   ?? {}, newSnap.grid,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
-    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeSimpleChange),
+    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeComponentChange),
   };
 }
 
@@ -271,6 +286,8 @@ function buildGroups(diff) {
         desc = formatTextStyleValues(s.value.value);
       } else if (['fill', 'effect', 'grid'].includes(key) && s.value?.value !== undefined) {
         desc = s.value.value;
+      } else if (key === 'components') {
+        desc = `${String(s.value).split('|').length} variant(s)`;
       } else {
         desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
       }
