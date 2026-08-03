@@ -24,10 +24,11 @@ function extractTicket(str = '') {
   return match ? match[1] : null;
 }
 
-function nextVersion(changelog) {
-  if (!changelog.length) return 'v1.0';
-  const [major, minor] = changelog[0].version.replace('v', '').split('.').map(Number);
-  return `v${major}.${minor + 1}`;
+function autoVersion() {
+  // "2026-08-03" in Vienna time, regardless of the runner's UTC clock
+  const date = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Vienna' });
+  const run  = process.env.GITHUB_RUN_NUMBER || '0';
+  return `v${date.replace(/-/g, '.')}.${run}`; // → "v2026.08.03.18"
 }
 
 function round2(n) { return Math.round(n * 100) / 100; }
@@ -431,7 +432,7 @@ async function main() {
 
   const branchName = process.env.BRANCH_NAME || '';
   const ticket     = process.env.MANUAL_TICKET || extractTicket(branchName) || extractTicket(process.env.TICKET_FROM_WEBHOOK || '') || '';
-  const version    = process.env.MANUAL_VERSION || nextVersion(changelog);
+  const version    = process.env.MANUAL_VERSION || autoVersion();
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
   const rawGroups = buildGroups(diff);
