@@ -177,35 +177,39 @@ async function fetchAllStyles() {
 
 try {
   const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-  console.log(JSON.stringify(
-  compData.meta.components.find(c => c.name.startsWith('Status=')), null, 2
-  )); // ← TEMP: inspect a component that resolved wrong
-  
-  // Build a lookup: componentSetId → set name (reliable source for variant grouping)
-  let setNames = {};
+
+  // set node_id → { name, description }
+  let sets = {};
   try {
     const setData = await figmaGet(`/files/${FIGMA_FILE_ID}/component_sets`);
-    for (const cs of setData.meta?.component_sets ?? []) setNames[cs.node_id] = cs.name;
+    for (const cs of setData.meta?.component_sets ?? []) {
+      sets[cs.node_id] = { name: cs.name, description: cs.description || '' };
+    }
   } catch (e) {
     console.warn('   Component sets fetch failed:', e.message);
   }
 
-  const setKeys = {}; // displayName → [variant keys]
+  const setInfo = {}; // displayName → { keys:[], updated:[], description:'' }
   for (const c of compData.meta?.components ?? []) {
-    // 1st choice: real set name via component_set_id
-    // 2nd choice: containingStateGroup (older files)
-    // 3rd choice: strip the "Prop=Value, ..." suffix off the variant's own name
+    const set = sets[c.component_set_id];
     const name =
-      setNames[c.component_set_id] ??
+      set?.name ??
       c.containing_frame?.containingStateGroup?.name ??
-      (c.name.includes('=') ? null : c.name) ??
-      c.name.split(',')[0].split('=').slice(1).join('=').trim() ??
-      c.name;
-    (setKeys[name] ??= []).push(c.key);
+      (c.name.includes('=')
+        ? (c.name.split(',')[0].split('=').slice(1).join('=').trim() || c.name)
+        : c.name);
+
+    const info = (setInfo[name] ??= { keys: [], updated: [], description: '' });
+    info.keys.push(c.key);
+    if (c.updated_at) info.updated.push(c.updated_at);
+    if (!info.description) info.description = set?.description || c.description || '';
   }
 
-  for (const [name, keys] of Object.entries(setKeys)) {
-    snapshot.components[name] = keys.sort().join('|');
+  for (const [name, info] of Object.entries(setInfo)) {
+    const count  = info.keys.length;
+    const latest = info.updated.sort().slice(-1)[0] ?? '';
+    snapshot.components[name] = `${count}::${latest}`; // count + newest edit time → detects content edits
+    if (info.description) figmaDescriptions[name] = info.description; // real Figma desc → feeds AI + fallback
   }
   console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
 } catch (e) {
@@ -261,8 +265,10 @@ function describeSimpleChange(oldVal, newVal) {
 
 function describeComponentChange(oldVal, newVal) {
   if (oldVal === newVal) return '';
-  const oldN = oldVal.split('|').length, newN = newVal.split('|').length;
-  return oldN !== newN ? `variants: ${oldN} → ${newN}` : 'variant(s) updated';
+  const [oldN] = oldVal.split('::');
+  const [newN] = newVal.split('::');
+  if (oldN !== newN) return `variants: ${oldN} → ${newN}`;
+  return 'component content updated in Figma';
 }
 
 function buildDiff(oldSnap, newSnap) {
@@ -283,7 +289,7 @@ function totalChanges(diff) {
 
 // ── BUILD RAW GROUPS ──────────────────────────────────────────────────────────
 
-function buildGroups(diff) {
+function buildGroups(diff, figmaDescriptions = {}) {
   const groups = [];
   const CATEGORIES = [
     { key: 'text',       label: 'Typography / Text Styles' },
@@ -307,7 +313,8 @@ function buildGroups(diff) {
       } else if (['fill', 'effect', 'grid'].includes(key) && s.value?.value !== undefined) {
         desc = s.value.value;
       } else if (key === 'components') {
-        desc = `${String(s.value).split('|').length} variant(s)`;
+        const count = String(s.value).split('::')[0];
+        desc = figmaDescriptions[s.name] || `${count} variant(s)`;
       } else {
         desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
       }
@@ -472,7 +479,7 @@ async function main() {
   const version    = process.env.MANUAL_VERSION || autoVersion();
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
-  const rawGroups = buildGroups(diff);
+  const rawGroups = buildGroups(diff, figmaDescriptions);
   const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
