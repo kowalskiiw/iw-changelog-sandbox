@@ -7,8 +7,8 @@
  * node-fetch v3 is ESM-only, so it is loaded via dynamic import() below.
  */
 
-const { readFileSync, writeFileSync, existsSync } = require('fs');
-const { createHash } = require('crypto');
+import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { createHash } from 'crypto';
 
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
 
