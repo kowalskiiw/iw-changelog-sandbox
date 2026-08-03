@@ -1,5 +1,39 @@
 [
   {
+    "version": "new",
+    "date": "2026-08-03",
+    "ticket": "new",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/new",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "🌮 Heading/Test",
+            "desc": "Use for the largest, most prominent headline — hero sections, landing pages, or high-impact campaigns. Use sparingly; reserve for the single most important message on screen."
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Code/Code",
+            "desc": "Use for code blocks only. Font family updated from Atlassian Mono to Andale Mono. Token: font.code."
+          },
+          {
+            "type": "deprecated",
+            "title": "🌮 Heading/XXXL",
+            "desc": "Removed from the library. Migrate existing uses to Heading/Test if a large hero-scale heading is required."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the font.code token (--font-code-family or equivalent) from Atlassian Mono to Andale Mono and verify Andale Mono is loaded in the font stack across all markets (DE, AT, ES, SE, CY).",
+      "Developer: Remove any references to the Heading/XXXL text style from React components and replace with Heading/Test where a large-scale heading is needed, ensuring the 120px/145px/w400 Inter values are applied.",
+      "Designer: Audit all Figma files for remaining uses of Heading/XXXL and migrate to Heading/Test; confirm Heading/Test is used only for single hero-level messages per screen.",
+      "Tester: Visually verify that code blocks across betting UI screens (odds displays, account screens) render in Andale Mono and not Atlassian Mono in all five markets."
+    ]
+  },
+  {
     "version": "test",
     "date": "2026-08-03",
     "ticket": "test",

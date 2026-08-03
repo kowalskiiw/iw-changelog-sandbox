@@ -170,15 +170,25 @@
       },
       "description": "💡 Components or where space is limited, for differentiating detailed or descriptive content such as primary descriptions in flags. Use sparingly.\n\nToken name: font.body"
     },
-    "🌮 Heading/XXXL": {
+    "🌮 Code/Code": {
       "value": {
-        "fontSize": 36,
-        "lineHeight": 42,
+        "fontSize": 12,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Andale Mono",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use code text to represent code blocks only.\n\nToken name: font.code"
+    },
+    "🌮 Heading/Test": {
+      "value": {
+        "fontSize": 120,
+        "lineHeight": 145,
         "fontWeight": 400,
         "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "this is a test test testdasdasdasdasdsadathis is a test test testdasdasdasdasdsadathis is a test test testdasdasdasdasdsadathis is a test test testdasdasdasdasdsadathis is a test test testdasdasdasdasdsada"
+      "description": "💡 Use for the largest, most prominent headline on a page — hero sections, landing page titles, or high-impact campaign moments. Use sparingly; reserve for the single most important message on screen."
     },
     "🌮 Body/L/Regular": {
       "value": {
@@ -199,16 +209,6 @@
         "letterSpacing": 0
       },
       "description": "💡 Components or where space is limited, for detailed or descriptive content such as primary descriptions in flags.\n\nToken name: font.body"
-    },
-    "🌮 Code/Code": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 20,
-        "fontWeight": 400,
-        "fontFamily": "Atlassian Mono",
-        "letterSpacing": 0
-      },
-      "description": "💡 Use code text to represent code blocks only.\n\nToken name: font.code"
     }
   },
   "fill": {
