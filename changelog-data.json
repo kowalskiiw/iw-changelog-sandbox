@@ -1,5 +1,4933 @@
 [
   {
+    "version": "v2026.08.03.21",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Badges/Account status",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Casino",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XS",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/MD",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/SM",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Header / Login",
+            "desc": "18 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Header / Register",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Alerts Default (Inline)",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tertiary Buttons",
+            "desc": "96 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/cddn",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Payment Provider",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Team Logos",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Partner Logos",
+            "desc": "13 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Spacer",
+            "desc": "84 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XL",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "flags/flags rectangle",
+            "desc": "143 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/bank-id",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Betslip (Inline)",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "flags/flags round",
+            "desc": "143 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Secondary Buttons",
+            "desc": "96 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "store badges",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "gaming providers/big",
+            "desc": "5 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XXL",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Numbers",
+            "desc": "10 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "gaming providers/small",
+            "desc": "59 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/reference-transfer",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/signicat",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Primary Buttons",
+            "desc": "270 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Responsible Gaming Logos",
+            "desc": "18 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Banner",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/video-selfie",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/idin",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Special Icon Button",
+            "desc": "11 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / FAB",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/LG",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "changed",
+            "title": "system/cross-circle-filled",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/copa",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/paddletennis",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/nascar",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/rugby-seven",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/bowls",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "system/payment",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "changed",
+            "title": "sports/speedskating",
+            "desc": "variants: 1 → 2"
+          },
+          {
+            "type": "deprecated",
+            "title": "Status=Critical/Error",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Status=Warning",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Status=Pending",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Status=Success",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Mobile, Categories=New",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Exclusive",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Popular",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=New",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Exclusive",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Intern",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Daily Jackpot",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Mobile, Categories=Daily Jackpot",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Promotion",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Jackpot",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Promotion",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Jackpot",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Popular",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform=Desktop, Categories=Freebet",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Intern",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Platform = Mobile, Categories = Freebet",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Initials, Notification=Off, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Image, Notification=On, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Image, Notification=Off, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=User, Notification=Off, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=User, Notification=On, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Image, Notification=Off, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Mouseover, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Focus, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Pressed, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Loading, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Disabled, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Focus, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Loading, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Default, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Error, Size=Medium, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Information, Size=Medium, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Information, Size=Small, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Error, Size=Small, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Information, Size=Small, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Information, Size=Medium, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Success, Size=Medium, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Error, Size=Medium, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Error, Size=Small, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Success, Size=Medium, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Warning, Size=Medium, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Success, Size=Small, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Warning, Size=Medium, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Warning, Size=Small, Focus=Low",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Success, Size=Small, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Warning, Size=Small, Focus=High",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Default, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Mouseover, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Default, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text + Icon (Default), State=Focus, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Mouseover, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Disabled, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Pressed, Size=S",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Pressed, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Disabled, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "State=Loading, Size=L (Default)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": " Size=48",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": " Size=24",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": " Size=16",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Apple Pay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=EPS",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Banktransfer EN",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Trustly",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Much Better",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Banktransfer DE",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Paysafe Card",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Google Pay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Visa",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Netseller",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Iris Payments",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Mastercard",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Further EN",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=PayPal",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Skrill",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Skrill 1 Tap",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Further DE",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Sofortüberweisung",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=VPay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Viva Spot",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Pas Lamia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=OFI 1925 PAE",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Paok Volley",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=ΑΟΜ 35years",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=AS Papagou",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Ilisiakos Volleyball",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=PGSS BC",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=PAOK BC",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=ATP",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Boss Open",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=FC Liverpool",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=DFB",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=NHL",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=DSV",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=FCBB",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=FIS Alpine World Ski",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Ski Austria Old",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Generali Open",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Borussia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=PDC",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Ski Austria New",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary Black (Default), Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Tertiary White, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=4px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=160px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=4px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=12px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=224px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=16px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=16px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=20px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=8px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=24px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=32px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=128px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=160px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=24px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=8px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=32px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=12px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=56px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=196px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=28px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=36px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=96px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=72px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=40px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=28px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=48px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=48px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=80px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=64px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=96px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=20px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=12px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=36px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=64px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=80px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=144px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=144px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=4px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=72px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=224px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=56px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=36px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=32px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=32px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=36px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=40px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=128px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=48px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=144px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=48px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=56px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=56px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=64px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=64px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=72px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=80px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=80px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=96px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=128px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=160px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=144px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=4px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=8px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=160px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=96px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=128px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=196px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Vertical, Size=40px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Divider, Orientation=Horizontal, Size=72px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=8px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=12px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=24px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=16px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=16px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=20px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=20px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=40px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=224px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=28px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=24px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=28px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Horizontal, Size=196px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=196px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Filled, Orientation=Vertical, Size=224px",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IE Ireland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=EE Estonia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AO Angola",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=DK Denmark",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SV El Salvador",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=DZ Algeria",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BD Bangladesh",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ES Spain",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BW Botswana",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PE Peru",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=VN Viet Nam",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AZ Azerbaijan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SY Syrian Arab Republic (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BG Bulgaria",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CM Cameroon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IS Iceland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CL Chile",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=UA Ukraine",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=FR France",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TJ Tajikistan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=HN Honduras",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GB-WLS Wales",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CU Cuba",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MZ Mozambique",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=LT Lithuania",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PS Palestine (State of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GB United Kingdom of Great Britain and Northern Ireland (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CZ Czech Republic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AE United Arab Emirates (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=DE Germany",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=RU Russian Federation (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GB-ENG England",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MT Malta",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KR Korea (the Republic of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CR Costa Rica",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GH Ghana",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BH Bahrain",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GB-NIR Northern Ireland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GI Gibraltar",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BO Bolivia (Plurinational State of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=EC Ecuador",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MM Myanmar",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=JO Jordan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TH Thailand",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AM Armenia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MK North Macedonia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AL Albania",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BT Bhutan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IT Italy",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KZ Kazakhstan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BY Belarus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=FO Faroe Islands (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MA Morocco",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=LU Luxembourg",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TW Taiwan (Province of China)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=NL Netherlands (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IR Iran (Islamic Republic of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=JM Jamaica",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=NG Nigeria",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SI Slovenia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SM San Marino",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PK Pakistan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=NI Nicaragua",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=EG Egypt",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CO Colombia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=OM Oman",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AD Andorra",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PH Philippines (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=RS Serbia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PY Paraguay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SE Sweden",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=RW Rwanda",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SK Slovakia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CY Cyprus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ET Ethiopia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SD Sudan (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GT Guatemala",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=RO Romania",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TM Turkmenistan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MX Mexico",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PA Panama",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=HK Hong Kong",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TT Trinidad and Tobago",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GE Georgia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CH Switzerland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ML Mali",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=VE Venezuela (Bolivarian Republic of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BE Belgium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=QA Qatar",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GR Greece",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AU Australia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TR Turkey",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PT Portugal",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ME Montenegro",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=FI Finland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KE Kenya",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IN India",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IL Israel",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=HT Haiti",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SN Senegal",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=JP Japan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CN China",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CA Canada",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BA Bosnia and Herzegovina",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AT Austria",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=HU Hungary",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=LV Latvia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=LB Lebanon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=XK Kosovo (the Republic of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PL Poland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=Demokratische Republik Kongo",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ID Indonesia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=US United States of America (the)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=HR Croatia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TN Tunisia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MO Macao",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=ZA South Africa",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=VU Vanuatu",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=GB-SCT Scotland",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KW Kuwait",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=NPL Nepal",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=NO Norway",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=EU",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SJ Svalbard and Jan Mayen",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MY Malaysia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=World",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MW Malawi",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=TZ Tanzania (the United Republic of)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=UZ Uzbekistan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SG Singapore",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=SA Saudi Arabia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=AR Argentina",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=VAT Vatican City State",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=IRQ Iraq",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KHM Cambodia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=KGZ Kirgisistan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=PRI Puerto Rico",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MKD North Macedonia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=Curacao",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=Kap Verde",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=UY Uruguay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=BR Brazil",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=CI Côte d'Ivoire",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Success",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Error",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Country=MO Mozambique",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Google, Type=Grey",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Apple, Type=Outlined",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Huawei, Type=Outlined",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Android, Type=Outlined",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Google, Type=Outlined",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Huawei, Type=Grey",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Apple, Type=Grey",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Android, Type=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Huawei, Type=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Android, Type=Grey",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Google, Type=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Company=Apple, Type=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Evolution",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Skywind",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Playtech",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Pragmatic Play",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Stake Logic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Initials, Notification=Off, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Ninth ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = First ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Fifth ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Second ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Third ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Booming Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Swintt",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Holle Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Isoftbet",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Betsoft",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=BGaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Wazdan",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Reevo",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Ela Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Games Global",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Endorphina",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Evoplay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Relax Gaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=4theplayer",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Fantasma Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Iron Dog",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Gaming 1",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Foxium",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=PG Soft",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Eletric Elephant",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Wizard Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Gamomat",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Nolimitcity",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=G Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Ainsworth",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=JFTW",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Kalamba",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Bragg",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Red Tiger",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Leap",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Hacksaw Gaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Inspired",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Galaxsys",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Netent",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Gamingcorps",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Aviatrix",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Playn Go",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Playson",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Fourth ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Sixth ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Seventh ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Eighths ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Rank = Tenth ",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Big Time Gaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Blue Print",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=1x2 Gaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Print Studios",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Golden Rock Studios",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Pushgaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Red Rake Gaming",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Rubyplay",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Elk",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Silverback",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Thunderkick",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Slot Factory",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Spinmatic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Stakelogic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Yggdrasil",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Synot Games",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Provider=Tom Horn",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Icon",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Text",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=18 Plus Red",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Gambling Therapy",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=21 Plus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Auto Prohibicion",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=GA",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=18 Plus Black",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Jordenacion del Juego",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Play Fair Code",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=GGL",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Juego Seguro",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=MGA",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Gluecksfall",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Ibia",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Jugar Bien",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Kethea",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Spelinspektionen",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=Thawte",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "-> Logo Slot=TUV",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Information",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Warning",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Text + Icon, State=Disabled",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Loading",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Text + Icon, State=Mouseover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Focus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Pressed / Selected",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Pressed / Selected",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Text + Icon, State=Pressed / Selected",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Text + Icon, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Loading",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Focus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Focus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Mouseover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Disabled",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Disabled",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Mouseover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Text (Default), State=Disabled",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Icon, State=Mouseover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Text + Icon, State=Focus",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Pressed / Selected",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Variant=Icon (Default), State=Loading",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Initials, Notification=On, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Initials, Notification=On, State=Default",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=Image, Notification=On, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=User, Notification=Off, State=Hover",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Type=User, Notification=On, State=Default",
+            "desc": "Removed from library."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 35 new component(s) in Figma — check Dev Mode for specs.",
+      "Developer: 939 component(s) removed — check codebase for usages.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.03.20",
     "date": "2026-08-03",
     "ticket": "",
