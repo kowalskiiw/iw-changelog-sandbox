@@ -1213,8 +1213,8 @@
   "variables": {},
   "components": {
     "Badges/Account status": "4::c76643d47d61",
-    "Avatar/XS": "12::0a48b9c6cf21",
-    "Avatar/SM": "12::560de5e6b5c8",
+    "Avatar/XS": "12::f02f39e3ec12",
+    "Avatar/SM": "12::b0345085d694",
     "Alerts Default (Inline)": "16::60682cebbe79",
     "Spacer": "84::8b7c978ea3e6",
     "Betslip (Inline)": "2::02f2a93fe706",
@@ -1226,7 +1226,7 @@
     "Avatar/Casino/Bonus": "1::8d6327e6517d",
     "Avatar/Casino/XS": "1::7ed80878a11b",
     "Badges/Marketing": "1::ba45bd9c7b9e",
-    "Badge/Default": "1::8dcf39ed0e5a",
+    "Badge/Default": "1::9cad8b57c753",
     "Badges/Casino": "16::3b3ee43edd03"
   }
 }

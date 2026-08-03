@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.03.31",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Extra-small avatar component received a visual/style update; verify appearance in compact UI contexts such as navigation bars or chat elements."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar component received a visual/style update; check rendering in account menus, user profile headers, and related UI surfaces."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default badge component received a visual/style update; review usage across notification indicators, sport tags, and promotional labels."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Inspect Avatar/XS and Avatar/SM rendered output for any token or nested component changes that may affect sizing, spacing, or color in account and navigation screens.",
+      "Designer: Re-check all frames using Avatar/XS, Avatar/SM, and Badge/Default in Figma to confirm the updated visuals align with design intent across DE, AT, ES, SE, and CY market files.",
+      "Tester: Run visual regression checks on screens containing Avatar/XS, Avatar/SM, and Badge/Default — including user account headers, navigation bars, and any surfaces displaying notification or promotional badges.",
+      "Developer: Confirm no underlying design token changes (e.g. border-radius, background color, or icon size tokens) surfaced by the Badge/Default update are breaking existing CSS overrides in consuming React components."
+    ]
+  },
+  {
     "version": "v2026.08.03.30",
     "date": "2026-08-03",
     "ticket": "",
