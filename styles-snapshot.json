@@ -1,0 +1,1004 @@
+{
+  "text": {
+    "🌮 Heading/XXL": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 36,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Oversized screen titles. Use in moderation. Previously H900.\n\nToken name: font.heading.XXL"
+    },
+    "🌮 Body/S/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use sparingly and for secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
+    },
+    "🌮 Body/L/Regular": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Long-form content. Use in generic paragraphs to contrast with headings, and medium text.\n\nToken name: font.body.large"
+    },
+    "🌮 Heading/XL": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 32,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Empty states and feature introductions. Top level headers. Previously H800.\n\nToken name: font.heading.XL"
+    },
+    "🌮 Heading/L": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 28,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Main titles, use only once per page. Previously H700.\n\nToken name: font.heading.L"
+    },
+    "🌮 Heading/M": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 24,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Headings that identify key functionality. Previously H600.\n\nToken name: font.heading.M"
+    },
+    "🌮 Heading/S": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 20,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Sub-section and field group headings. Previously H500.\n\nToken name: font.heading.S"
+    },
+    "🌮 Heading/XS": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Deep headings and for highlighting important pieces of information. Previously H400.\n\nToken name: font.heading.XS"
+    },
+    "🌮 Body/L/Medium": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Long-form content. Use when text could be seen beside line icons.\n\nToken name: font.body.large"
+    },
+    "🌮 Body/L/Bold": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Long-form content. Use sparingly to differentiate text.\n\nToken name: font.body.large"
+    },
+    "🌮 Body/M (Default)/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Components or where space is limited, for detailed or descriptive content such as primary descriptions in flags.\n\nToken name: font.body"
+    },
+    "🌮 Body/M (Default)/Bold": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Components or where space is limited, for differentiating detailed or descriptive content such as primary descriptions in flags. Use sparingly.\n\nToken name: font.body"
+    },
+    "🌮 Body/S/Bold": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use sparingly and for emphasising secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
+    },
+    "🌮 Body/M (Default)/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 For longer-form text that is not a part of the UI. This has a larger line height and paragraph spacing.\n\nToken name: font.body"
+    },
+    "🌮 Metric/S": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 20,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "Use to emphasize a number and words in single-value tiles, or small donuts.\n\nToken name: font.metric.small"
+    },
+    "🌮 Metric/M": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 28,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "Use to emphasize a number within a medium donut.\n\nToken name: font.metric.medium"
+    },
+    "🌮 Metric/L": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 32,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "Use to emphasize a number within a large donut.\n\nToken name: font.metric.large"
+    },
+    "🌮 Heading/XXS": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 653,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Low level headings. Previously H200.\n\nToken name: font.heading.XXS"
+    },
+    "🌮 Body/S/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Atlassian Sans",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
+    },
+    "🌮 Code/Code": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Atlassian Mono",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use code text to represent code blocks only.\n\nToken name: font.code"
+    }
+  },
+  "fill": {
+    "Humans/Silhouette": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Effie": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Robi Lopez": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Eliot": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Notes": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Fran Perez": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Refresh": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Rocket": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Simon Maclaughlin-Tai": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Fabian": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Raul Gonzalez": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Gael": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Silhouette Dark": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Priya Hansra": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Plane": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Power": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Settings": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Annika Rangarajan": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Spanner": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Andres Ramos": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Yeti": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Science": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Michael Henderson": {
+      "value": "image fill",
+      "description": null
+    },
+    "Other / Clickable": {
+      "value": "#FFFFFF (0%)",
+      "description": null
+    },
+    "Projects/Red flag": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Lightning": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Money": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Mountains": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Mouse hand": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Claudia": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Jen Holloway": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Boat": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Narul": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Maribel": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/CD": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Myra": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Ed": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Blair": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Lara": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Collin": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Renato": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Dunya Syed": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Norah": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Dev Rana": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Milo": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Loom Record": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Amar Sundaram": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Rahul": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Ivan": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Brooke Hadwor": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Oliver": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/David Hsieh": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Helena": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Christine Sanchez": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Unicorn": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Joshua Williams": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Molly Clark": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans / Samuel Hall": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans / Stefanie Auer": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Omar Darboe": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Phan Kim": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Abdullah Ibrahim": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Arjun": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Andrea Wilson": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Magnifying Glass": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Annie Clare": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Video": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Life Ring": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Canvas": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Design": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Dirk Pink": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Eli Young": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Coffee": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Florence Applebee": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Rocket": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Thomas Beckerie": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Paper airplane": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Fidelis Ejima": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Austin Lambert": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Alexander": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Aoife Burke": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Aliza": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Cat": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Gabrielle Bossio": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Alvin": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Celebration": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Florence Garcia": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Angie": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Beeboop": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Code": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Leo": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Steve": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Tanya": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Tori": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Vania": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Bird": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Cloud": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Code": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/ID": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Hina Aurora": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Default": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Drill": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Jane Rotanson": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Jie Yan Song": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Lightning": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Andrew Park": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Megaphone": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Apple": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Food": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Electric Vehicle": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Lifesaver": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Bradley Phillips": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Liam Estrada": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Koala": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Graph": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Brian Lin": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Maia Ma": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Melanie Lee": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Michael Chu": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Olivia Yang": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Compass": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Anthony Chen": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Laila Ali": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans / Taha Kandemir": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Shopping Cart": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Gears": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Tracking": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Light Bulb": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Vrej Shahanian": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Sun": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Jenna Nangong": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Service bell": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Hasan": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/IT": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Battery": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Star": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Government": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Grace Harris": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Katina": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Luna Delacour": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Pencil": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans / Eva Lien": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Soulintha Douang": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Storefront": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Omar Salah": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Connie Blog": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Louis Au": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Support Wrench": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Gerard": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Roshini Malik": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Science": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Crystal Wu": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Jolin Xu": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Priyanka Mehta": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects/Phone": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Graduation": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans / Donald Stephens": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Mia McDougall": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Phone": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Plant": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Zack Bishop": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Rohan Kaur": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Shield": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Charles Rex": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Mail": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Veronica Rodriguez": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Group": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Belle Adams": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/HR Badge": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Issac Varghese": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Launch Ship": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Palm Tree": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Store Bag": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Kayla Parajuli": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Map": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Hassana Ajayi": {
+      "value": "image fill",
+      "description": null
+    },
+    "Meeples / Lydia": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Bank": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Loom Video": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Claire Harrington": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Victoria Styles": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Stopwatch": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Zlatica Chalupka": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Cloud": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Matthew Bertrand": {
+      "value": "image fill",
+      "description": null
+    },
+    "Humans/Darius Pavri": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Book": {
+      "value": "image fill",
+      "description": null
+    },
+    "Projects (new)/Pin": {
+      "value": "image fill",
+      "description": null
+    }
+  },
+  "effect": {
+    "Dark/elevation.shadow.overflow": {
+      "value": "drop shadow: offset 0/0 blur 12 color #010404 (56%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)",
+      "description": "Use to create a shadow when content scrolls under other content."
+    },
+    "Dark/elevation.shadow.raised": {
+      "value": "inner shadow: offset 0/0 blur 0 color #000000 (0%) | drop shadow: offset 0/1 blur 1 color #010404 (50%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)",
+      "description": "Use for the box shadow of raised card elements, such as Jira cards on a Kanban board. Combine with elevation.surface.raised"
+    },
+    "Dark/elevation.shadow.overlay": {
+      "value": "inner shadow: offset 0/0 blur 0 color #BDBDBD (12%) | drop shadow: offset 0/8 blur 12 color #010404 (36%) | drop shadow: offset 0/0 blur 1 color #010404 (50%)",
+      "description": "Use for the box shadow of elements that sit on top of the UI, such as modals, dropdown menus, flags, and inline dialogs. Combine with elevation.surface.overlay\n\nAlso use for the box shadow of raised cards in a dragged state."
+    },
+    "Light/elevation.shadow.overlay": {
+      "value": "drop shadow: offset 0/8 blur 12 color #1E1F21 (15%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (31%)",
+      "description": "Use for the box shadow of elements that sit on top of the UI, such as modals, dropdown menus, flags, and inline dialogs. Combine with elevation.surface.overlay\n\nAlso use for the box shadow of raised cards in a dragged state."
+    },
+    "Light/elevation.shadow.overflow": {
+      "value": "drop shadow: offset 0/0 blur 8 color #1E1F21 (16%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (12%)",
+      "description": "Use to create a shadow when content scrolls under other content."
+    },
+    "Light/elevation.shadow.raised": {
+      "value": "drop shadow: offset 0/1 blur 1 color #1E1F21 (25%) | drop shadow: offset 0/0 blur 1 color #1E1F21 (31%)",
+      "description": "Use for the box shadow of raised card elements, such as Jira cards on a Kanban board. Combine with elevation.surface.raised"
+    }
+  },
+  "grid": {
+    "Grid types/Fixed Narrow": {
+      "value": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2",
+      "description": "Grid for long form content that is restricted for better legibility"
+    },
+    "Grid types/Fixed Wide": {
+      "value": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2",
+      "description": "Grid for content that is not intended to span wide screens"
+    },
+    "Grid types/Fluid": {
+      "value": "COLUMNS count:12 size:-11.666666984558105 gutter:16 | COLUMNS count:1 size:100 gutter:2",
+      "description": "Grid for content to stretch from edge to edge regardless of viewport"
+    }
+  },
+  "variables": {},
+  "components": {
+    "Grid type=Fixed Narrow": "beaad7d2a7e8bea90df91e766c6f77cb7a5ff299",
+    "Grid type=Fixed Wide": "d349df18809fd27f5ff27a15d6fc19d8740e3a63",
+    "Grid type=Fluid": "fbd5b17d705ca81ff3e8ca8aab311ee06ecd7bd1"
+  }
+}
