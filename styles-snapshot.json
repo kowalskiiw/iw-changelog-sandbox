@@ -1696,13 +1696,11 @@
     "Type=Warning, Size=Small, Focus=High": "307a6d2c7df0a6dd0545ae16d1a014369b2e490b",
     "Platform=Desktop, Categories=Daily Jackpot": "323411c0da88664765a455cc40a9962fdebe2b06",
     "Type=Error, Size=Medium, Focus=Low": "3984cf90e7a43595f6cb1b01c3abb85b5d8ca73a",
-    "Type=Initials, Notification=Off, State=Hover": "88ad90504d29e230dca7909669a038a5a13bff69",
     "Type=Information, Size=Small, Focus=High": "3ec7464aeb9a96d5b71970b674ab9415fb2a93f1",
     "Type=Warning, Size=Small, Focus=Low": "591546a8249710d535aa6f184843b11971bd962d",
     "Platform = Mobile, Categories = Exclusive": "5c04270f676cc50c681df63c1bc56bcac2ca6889",
     "Platform=Mobile, Categories=Daily Jackpot": "62cb07e0695a5c3c13b849b0b105339e3a00e06c",
     "Type=Error, Size=Small, Focus=High": "642da049cfeef26913d20f03cb4e0e14ae50e967",
-    "Type=Image, Notification=On, State=Hover": "7ca01a2421c409c3d48976cedbde4fdf69b92d0a",
     "Type=Warning, Size=Medium, Focus=Low": "8965719a17c4de8e62ba989ace0fb079bf070883",
     "Type=Information, Size=Small, Focus=Low": "8cb8913fbc27212403617c169b6bbfd15fa1aeaa",
     "Platform = Mobile, Categories = Promotion": "8e599256204a9c8454f70d58caf64e1b42e9130e",
@@ -1716,9 +1714,11 @@
     "Platform=Desktop, Categories=Popular": "c614867d68bffd7910e5d25cdfda03e163bb08ef",
     "Platform=Desktop, Categories=Intern": "c6e511b0b17efa80be29f3f65b6072da960d7f9b",
     "Type=Error, Size=Medium, Focus=High": "c6e658da036a4bd769fe3ab37834da2b77a44289",
-    "Type=User, Notification=On, State=Default": "f2a7134b45eb172693893066b1431dfa3f64afdc",
     "Type=Success, Size=Small, Focus=Low": "e66127eaf322bf1d042719a21b1c8c573517f405",
     "Platform = Mobile, Categories = Popular": "ec2b159adc470d6539164d2044307f5488e28421",
-    "Type=Error, Size=Small, Focus=Low": "f649a1b32e9f8e37616d27233ae69f2471ae0048"
+    "Type=Error, Size=Small, Focus=Low": "f649a1b32e9f8e37616d27233ae69f2471ae0048",
+    "Type=Initials, Notification=Off, State=Hover": "88ad90504d29e230dca7909669a038a5a13bff69",
+    "Type=Image, Notification=On, State=Hover": "7ca01a2421c409c3d48976cedbde4fdf69b92d0a",
+    "Type=User, Notification=On, State=Default": "f2a7134b45eb172693893066b1431dfa3f64afdc"
   }
 }
