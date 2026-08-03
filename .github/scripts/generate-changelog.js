@@ -275,7 +275,9 @@ async function refineWithClaude(groups, diff, version, ticket, figmaDescriptions
 
   const rawSummary = groups.map(g =>
     `${g.title}:\n${g.items.map(i => {
-      const figmaDesc = figmaDescriptions[i.title] ? ` (Figma description: "${figmaDescriptions[i.title]}")` : '';
+      const figmaDesc = figmaDescriptions[i.title]
+        ? `\n    Figma description (PRIMARY SOURCE — use this): "${figmaDescriptions[i.title]}"`
+        : '';
       return `  [${i.type}] ${i.title}: ${i.desc}${figmaDesc}`;
     }).join('\n')}`
   ).join('\n\n');
@@ -289,10 +291,11 @@ ${rawSummary}
 Your task is to return a JSON object with two keys:
 
 1. "items" — an array of refined descriptions for each changed style. For each item:
-   - "new" styles: write 1 short sentence explaining what the style is and when to use it. Include the key values (size, weight) naturally in the sentence.
-   - "changed" styles: write 1 short sentence explaining what changed and the impact. Always include old → new values.
-   - "deprecated" styles: write 1 short sentence explaining it was removed and what to use instead if obvious from the name.
-   - Max 20 words per description. Be specific, not generic.
+   - If a "Figma description" is provided in the input, treat it as the PRIMARY source of truth. Base your description on it directly — closely paraphrase or lightly tighten it, but do NOT replace it with a generic invented description or ignore it in favor of the raw values.
+   - If NO Figma description is provided, fall back to: for "new" styles, write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
+   - "changed" styles: always include old → new values. If a Figma description exists, weave it in as context for why/what the style is for.
+   - "deprecated" styles: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
+   - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
 2. "actions" — an array of 2-4 specific, actionable strings for the "Action required" section. Each action must:
    - Start with the role: "Developer:", "Designer:", or "Tester:"
@@ -336,7 +339,6 @@ Return ONLY valid JSON, no markdown, no explanation:
     const text = data.content?.[0]?.text ?? '';
     const parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
 
-    // Apply refined descriptions
     const refinedMap = Object.fromEntries((parsed.items ?? []).map(r => [r.title, r.desc]));
     const refinedGroups = groups.map(group => ({
       ...group,
