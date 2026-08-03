@@ -1,0 +1,1823 @@
+{
+  "text": {
+    "Title/M/Regular": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/M/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Medium/Desktop": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Regular": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Regular/Desktop": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/L/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.7
+      },
+      "description": null
+    },
+    "Body/M/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Medium": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Regular/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Medium/Mobile": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 44,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Medium": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/M/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Regular/Mobile": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Regular/Mobile": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Regular/Desktop": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/M/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.6
+      },
+      "description": null
+    },
+    "Headlines/H1/Regular/Desktop": {
+      "value": {
+        "fontSize": 40,
+        "lineHeight": 48,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Regular/Desktop": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Underline": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/M/Medium": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Regular": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/M/Underline": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/S/Underline": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/S/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/S/Underline": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Medium/Desktop": {
+      "value": {
+        "fontSize": 40,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/L/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.7
+      },
+      "description": null
+    },
+    "Body/M/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Medium": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/Overline/M/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0.6
+      },
+      "description": null
+    },
+    "Headlines/H3/Medium/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Medium/Desktop": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/M/Underline": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H2/Medium/Mobile": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/Club/Desktop": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto Condensed",
+        "letterSpacing": 0
+      },
+      "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is desktop only"
+    },
+    "Title/S/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/XL/Regular": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/Club/Mobile": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto Condensed",
+        "letterSpacing": 0
+      },
+      "description": "This type of font is only available for the promotion teasers in the club section. \n----\nThis is mobile only"
+    },
+    "Label/M/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Underline": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H1/Regular/Mobile": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 44,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H3/Medium/Desktop": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 36,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Helpers/H1": {
+      "value": {
+        "fontSize": 140,
+        "lineHeight": 164,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "Used for text within project thumbnails only"
+    },
+    "Headlines/H2/Regular/Mobile": {
+      "value": {
+        "fontSize": 32,
+        "lineHeight": 40,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Medium/Mobile": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Regular/Desktop": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H4/Medium/Desktop": {
+      "value": {
+        "fontSize": 24,
+        "lineHeight": 32,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Title/L/Regular": {
+      "value": {
+        "fontSize": 18,
+        "lineHeight": 24,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/S/Underline": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Label/L/Regular": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Medium": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Body/L/Underline": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Headlines/H5/Medium/Mobile": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 28,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "Display/Regular/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "A slightly more restrained hero size. For prominent page or section openers that still need presence but sit alongside other content, or as the Display L replacement on narrower desktop layouts."
+    },
+    "Display/Regular/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The largest type in the scale. For single high-impact moments — marketing hero headlines, splash/landing sections, or big promotional numbers — where one short line needs to dominate the screen. Desktop only; step down on smaller breakpoints."
+    },
+    "Display/Medium/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The entry point to the display range, bridging into the Headline scale below it. For feature headers, campaign banners, and emphasis moments that need to feel larger than a standard headline without going full hero."
+    },
+    "Display/Medium/M": {
+      "value": {
+        "fontSize": 60,
+        "lineHeight": 60,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "A slightly more restrained hero size. For prominent page or section openers that still need presence but sit alongside other content, or as the Display L replacement on narrower desktop layouts."
+    },
+    "Display/Medium/L": {
+      "value": {
+        "fontSize": 72,
+        "lineHeight": 72,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The largest type in the scale. For single high-impact moments — marketing hero headlines, splash/landing sections, or big promotional numbers — where one short line needs to dominate the screen. Desktop only; step down on smaller breakpoints."
+    },
+    "Display/Regular/S": {
+      "value": {
+        "fontSize": 48,
+        "lineHeight": 48,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "The entry point to the display range, bridging into the Headline scale below it. For feature headers, campaign banners, and emphasis moments that need to feel larger than a standard headline without going full hero."
+    }
+  },
+  "fill": {
+    "Accent Light Mode/Purple/Alpha/300": {
+      "value": "#7B61FF (30%)",
+      "description": null
+    },
+    "Neutral/Grey/Dark/900": {
+      "value": "#232323",
+      "description": null
+    },
+    "Virtuals/300": {
+      "value": "#AAD1E6",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/150": {
+      "value": "#F0FADA",
+      "description": null
+    },
+    "Virtuals/400": {
+      "value": "#86BEDD",
+      "description": null
+    },
+    "Yellow/200": {
+      "value": "#FFED9B",
+      "description": null
+    },
+    "Neutral/Grey/Light/20": {
+      "value": "#E3E3E3",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/800": {
+      "value": "#2D3D31",
+      "description": null
+    },
+    "Accent Light Mode/Red/500": {
+      "value": "#DB3F3F",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/500": {
+      "value": "#2EA949",
+      "description": null
+    },
+    "Casino Game Search Filter/Default Fill Color": {
+      "value": "#2B94FE",
+      "description": "This color is only used for the slider elements inside of the casino game filter element.\n\nLight mode only"
+    },
+    "Accent Light Mode/Orange/350": {
+      "value": "#FFC170",
+      "description": null
+    },
+    "Accent Light Mode/Blue/500": {
+      "value": "#2194FF",
+      "description": null
+    },
+    "Accent Light Mode/Red/200": {
+      "value": "#F6CFCF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/800": {
+      "value": "#333333",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/900": {
+      "value": "#3F550A",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/200": {
+      "value": "#C5EFCE",
+      "description": null
+    },
+    "Virtuals/900": {
+      "value": "#0B466E",
+      "description": null
+    },
+    "Accent Light Mode/Forest Green/500": {
+      "value": "#1BA57B",
+      "description": "Library backgrounds"
+    },
+    "Accent Light Mode/Default Green/350": {
+      "value": "#7CDB91",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/300": {
+      "value": "#CEC6F6",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/500": {
+      "value": "#66CE7E",
+      "description": null
+    },
+    "Gradients/Linear/02": {
+      "value": "gradient linear",
+      "description": "Live Casino Big Teaser Hover"
+    },
+    "Accent Light Mode/Lime Green/500": {
+      "value": "#C6EC6B",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/300": {
+      "value": "#A4E6B3",
+      "description": null
+    },
+    "Gamecards/Gras": {
+      "value": "#006837",
+      "description": "Use for the following gamecards:\nBadminton, Baseball, Cricket, Fieldhockey, Football, Australian Football, Rugby, Snooker, Soccer, Tennis Gras Court"
+    },
+    "Accent Light Mode/Lime Green/600": {
+      "value": "#B5D45E",
+      "description": null
+    },
+    "Accent Light Mode/Blue/700": {
+      "value": "#145999",
+      "description": null
+    },
+    "Accent Light Mode/Blue/150": {
+      "value": "#D6EAFF",
+      "description": null
+    },
+    "Accent Light Mode/Orange/300": {
+      "value": "#FFD49B",
+      "description": null
+    },
+    "Yellow/500": {
+      "value": "#FFD200",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/100": {
+      "value": "#F7FCEA",
+      "description": null
+    },
+    "Gradients/Linear/01": {
+      "value": "gradient linear",
+      "description": "Live Casino Special Headlines"
+    },
+    "Neutral/Grey/Medium/200": {
+      "value": "#939393",
+      "description": null
+    },
+    "Yellow/600": {
+      "value": "#CCA800",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/800": {
+      "value": "#59780C",
+      "description": null
+    },
+    "Accent Light Mode/Red/300": {
+      "value": "#F1B4B4",
+      "description": null
+    },
+    "Neutral/Grey/Medium/400": {
+      "value": "#737373",
+      "description": null
+    },
+    "Neutral/Grey/Light/15": {
+      "value": "#EDEDED",
+      "description": null
+    },
+    "Accent Light Mode/Red/700": {
+      "value": "#832626",
+      "description": null
+    },
+    "Neutral/Grey/Light/40": {
+      "value": "#D3D3D3",
+      "description": null
+    },
+    "Accent Light Mode/Blue/300": {
+      "value": "#A7D5FF",
+      "description": null
+    },
+    "Neutral/Grey/Light/10": {
+      "value": "#F3F3F3",
+      "description": null
+    },
+    "Neutral/White Alpha/600": {
+      "value": "#FFFFFF (60%)",
+      "description": null
+    },
+    "Neutral/Grey/Medium/300": {
+      "value": "#838383",
+      "description": null
+    },
+    "Accent Light Mode/Blue/400": {
+      "value": "#53ACFF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/700": {
+      "value": "#434343",
+      "description": null
+    },
+    "Neutral/Grey/Medium/100": {
+      "value": "#A3A3A3",
+      "description": null
+    },
+    "Virtuals/700": {
+      "value": "#1583BC",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/500": {
+      "value": "#78B9FF",
+      "description": "Dark Mode Blue"
+    },
+    "Footer Greece/800": {
+      "value": "#1A3362",
+      "description": null
+    },
+    "Gamecards/Concrete": {
+      "value": "#585F60",
+      "description": "Use for the following gamecards:\nFormula 1, Moto"
+    },
+    "Accent Light Mode/Orange/650": {
+      "value": "#C16D00",
+      "description": null
+    },
+    "Accent Light Mode/Orange/50": {
+      "value": "#FFF8EF",
+      "description": null
+    },
+    "Neutral/Grey/Dark/600": {
+      "value": "#535353",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/600": {
+      "value": "#608012",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/200": {
+      "value": "#DAD5F5",
+      "description": null
+    },
+    "Accent Light Mode/Red/50": {
+      "value": "#FDF3F3",
+      "description": null
+    },
+    "Neutral/Generic/White": {
+      "value": "#FFFFFF",
+      "description": null
+    },
+    "Yellow/800": {
+      "value": "#665400",
+      "description": null
+    },
+    "Neutral/Grey/Medium/500": {
+      "value": "#636363",
+      "description": null
+    },
+    "Yellow/50": {
+      "value": "#FFFCEF",
+      "description": null
+    },
+    "Neutral/Grey Alpha/500": {
+      "value": "#000000 (50%)",
+      "description": null
+    },
+    "Yellow/150": {
+      "value": "#FFF3BF",
+      "description": null
+    },
+    "Yellow/700": {
+      "value": "#997E00",
+      "description": null
+    },
+    "Accent Dark Mode/Red/700": {
+      "value": "#4F3B3B",
+      "description": null
+    },
+    "Accent Light Mode/Blue/600": {
+      "value": "#1575CF",
+      "description": null
+    },
+    "Accent Light Mode/Blue/50": {
+      "value": "#F1F8FF",
+      "description": null
+    },
+    "Yellow/300": {
+      "value": "#FFE570",
+      "description": null
+    },
+    "Accent Light Mode/Orange/800": {
+      "value": "#663900",
+      "description": null
+    },
+    "Neutral/White Alpha/200": {
+      "value": "#FFFFFF (20%)",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/50": {
+      "value": "#FBFEF6",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/300": {
+      "value": "#DEF4AB",
+      "description": null
+    },
+    "Neutral/Grey/Light/60": {
+      "value": "#C3C3C3",
+      "description": null
+    },
+    "Accent Light Mode/Orange/200": {
+      "value": "#FFE3BF",
+      "description": null
+    },
+    "Accent Light Mode/Orange/400": {
+      "value": "#FFAA3C",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/500": {
+      "value": "#7B61FF",
+      "description": null
+    },
+    "Neutral/White Alpha/100": {
+      "value": "#FFFFFF (10%)",
+      "description": null
+    },
+    "Accent Light Mode/Orange/700": {
+      "value": "#995600",
+      "description": null
+    },
+    "Neutral/Grey Alpha/300": {
+      "value": "#000000 (30%)",
+      "description": null
+    },
+    "Yellow/400": {
+      "value": "#FFDB3C",
+      "description": null
+    },
+    "Accent Light Mode/Blue/800": {
+      "value": "#0D3B66",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/800": {
+      "value": "#12441D",
+      "description": null
+    },
+    "Accent Light Mode/Magenta/500": {
+      "value": "#BA26C6",
+      "description": "Casino Intern Badge"
+    },
+    "Accent Dark Mode/Lime Green/900": {
+      "value": "#1F2611",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/150": {
+      "value": "#DBF2E0",
+      "description": null
+    },
+    "Yellow/100": {
+      "value": "#FFF8DB",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/700": {
+      "value": "#1C652C",
+      "description": null
+    },
+    "Yellow/900": {
+      "value": "#332A00",
+      "description": null
+    },
+    "Accent Light Mode/Red/600": {
+      "value": "#BB1B1B",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/600": {
+      "value": "#3F734B",
+      "description": null
+    },
+    "Accent Light Mode/Red/800": {
+      "value": "#581919",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/100": {
+      "value": "#E6E3F3",
+      "description": null
+    },
+    "Casino Game Search Filter/Active Border": {
+      "value": "#96DBFA",
+      "description": "This color is only used for the slider elements inside of the casino game filter element.\n\nIt is meant to highlight the active slider control element\n\nLight mode only"
+    },
+    "Neutral/Grey/Light/80": {
+      "value": "#B3B3B3",
+      "description": null
+    },
+    "Virtuals/850": {
+      "value": "#0E5689",
+      "description": null
+    },
+    "Accent Light Mode/Red/150": {
+      "value": "#FAE4E4",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Alpha/100": {
+      "value": "#7B61FF (10%)",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/600": {
+      "value": "#25873A",
+      "description": null
+    },
+    "Accent Light Mode/Orange/500": {
+      "value": "#FF8F00",
+      "description": "- Casino Promo Badges"
+    },
+    "Accent Light Mode/Lime Green/200": {
+      "value": "#E8F7C5",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/400": {
+      "value": "#4DCE69",
+      "description": null
+    },
+    "Accent Light Mode/Orange/600": {
+      "value": "#E17F00",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/700": {
+      "value": "#99BE4A",
+      "description": null
+    },
+    "Neutral/Grey/Light/05": {
+      "value": "#FBFBFB",
+      "description": null
+    },
+    "Yellow/550": {
+      "value": "#ECC200",
+      "description": null
+    },
+    "Accent Dark Mode/Red/400": {
+      "value": "#FE9898",
+      "description": "Dark Mode Red"
+    },
+    "Accent Dark Mode/Default Green/400": {
+      "value": "#94FFAC",
+      "description": "Dark Mode Green"
+    },
+    "Gamecards/Water": {
+      "value": "#005366",
+      "description": "Use for the following gamecards:\nDarts, Entertainment, eSoccer, Handball, Swimming, Table tennis, Tennis Hard Court, Waterpolo"
+    },
+    "Accent Light Mode/Orange/100": {
+      "value": "#FFF4E5",
+      "description": null
+    },
+    "Accent Dark Mode/Red/800": {
+      "value": "#473434",
+      "description": null
+    },
+    "Gradients/Linear/04": {
+      "value": "gradient linear",
+      "description": "Live Casino Teaser, except big teasers"
+    },
+    "Accent Dark Mode/Lime Green/800": {
+      "value": "#374515",
+      "description": null
+    },
+    "Neutral/White Alpha/300": {
+      "value": "#FFFFFF (30%)",
+      "description": null
+    },
+    "Accent Dark Mode/Orange/500": {
+      "value": "#FFBA61",
+      "description": "Dark Mode Orange"
+    },
+    "Accent Light Mode/Blue/200": {
+      "value": "#C7E4FF",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/400": {
+      "value": "#D2F08D",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/700": {
+      "value": "#455912",
+      "description": null
+    },
+    "Accent Dark Mode/Orange/800": {
+      "value": "#473E32",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/400": {
+      "value": "#91D1FF",
+      "description": null
+    },
+    "Accent Dark Mode/Default Green/700": {
+      "value": "#374A3B",
+      "description": null
+    },
+    "Accent Light Mode/Red/100": {
+      "value": "#FBECEC",
+      "description": null
+    },
+    "Neutral/White Alpha/700": {
+      "value": "#FFFFFF (70%)",
+      "description": null
+    },
+    "Accent Dark Mode/Red/600": {
+      "value": "#814444",
+      "description": null
+    },
+    "Neutral/Generic/Black": {
+      "value": "#000000",
+      "description": null
+    },
+    "Accent Light Mode/Red/350": {
+      "value": "#EA9393",
+      "description": null
+    },
+    "Accent Light Mode/Magenta/600": {
+      "value": "#951E9E",
+      "description": null
+    },
+    "Accent Light Mode/Blue/350": {
+      "value": "#81C2FF",
+      "description": null
+    },
+    "Accent Light Mode/Lime Green/750": {
+      "value": "#6A8F0E",
+      "description": null
+    },
+    "Gamecards/Plastic": {
+      "value": "#A6653C",
+      "description": "Use for the following gamecards:\nFutsal, Basketball, Volleyball"
+    },
+    "Gamecards/Sand": {
+      "value": "#AF511F",
+      "description": "Use for the following gamecards:\nBeachvolleyball, Tennis Sand Court"
+    },
+    "Accent Light Mode/Red/900": {
+      "value": "#2B0808",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/900": {
+      "value": "#0B2811",
+      "description": null
+    },
+    "Accent Light Mode/Default Green/50": {
+      "value": "#F0FBF3",
+      "description": null
+    },
+    "Accent Light Mode/Red/400": {
+      "value": "#E36B6B",
+      "description": null
+    },
+    "Accent Light Mode/Orange/900": {
+      "value": "#331D00",
+      "description": null
+    },
+    "Neutral/Grey Alpha/200": {
+      "value": "#000000 (20%)",
+      "description": null
+    },
+    "Accent Light Mode/Orange/150": {
+      "value": "#FFE9CC",
+      "description": null
+    },
+    "Gradients/Linear/03": {
+      "value": "gradient linear",
+      "description": "Used for hero images"
+    },
+    "Gradients/Linear/05": {
+      "value": "gradient linear",
+      "description": "Sports teasers on the sportsbook frontpage"
+    },
+    "Virtuals/800": {
+      "value": "#145999",
+      "description": null
+    },
+    "Live Casino/900": {
+      "value": "#1F1F1F",
+      "description": "Used for the live casino background only"
+    },
+    "Gamecards/Ice": {
+      "value": "#567A8D",
+      "description": "Use for the following gamecards:\nBiathlon, Cross Country, Curling, Icehockey, Ski Alpine,  Ski Alpine Helmet, Skijumping"
+    },
+    "Accent Light Mode/Blue/100": {
+      "value": "#E9F4FF",
+      "description": null
+    },
+    "Neutral/White Alpha/900": {
+      "value": "#FFFFFF (90%)",
+      "description": null
+    },
+    "Betslip/Loading Blue": {
+      "value": "#0067C6",
+      "description": "This color is currently used as a background color for the betslip loading indicatior. This one needs to be changed in the future and swaped with one of the existing blue shades"
+    },
+    "Accent Light Mode/Default Green/100": {
+      "value": "#E5F7EA",
+      "description": null
+    },
+    "Neutral/White Alpha/500": {
+      "value": "#FFFFFF (50%)",
+      "description": null
+    },
+    "Accent Dark Mode/Blue/800": {
+      "value": "#2E3D4D",
+      "description": null
+    },
+    "Accent Light Mode/Purple/Default/600": {
+      "value": "#644ED7",
+      "description": null
+    },
+    "Virtuals/950": {
+      "value": "#0D3B66",
+      "description": null
+    },
+    "Neutral/White Alpha/800": {
+      "value": "#FFFFFF (80%)",
+      "description": null
+    },
+    "Virtuals/750": {
+      "value": "#2970B2",
+      "description": null
+    },
+    "Casino Game Search Filter/Background": {
+      "value": "#EEEBE5",
+      "description": "This background color is used inside of the casino game filter section only. It is used for the dismissable tags.\n\nLight mode only"
+    },
+    "Neutral/White Alpha/400": {
+      "value": "#FFFFFF (40%)",
+      "description": null
+    },
+    "Accent Light Mode/Blue/900": {
+      "value": "#001A33",
+      "description": null
+    },
+    "Accent Dark Mode/Lime Green/500": {
+      "value": "#D9F476",
+      "description": null
+    }
+  },
+  "effect": {
+    "divider-old/bottom/light": {
+      "value": "drop shadow: offset 0/1 blur 0 color #ECECEC",
+      "description": null
+    },
+    "divider-old/right/dark": {
+      "value": "drop shadow: offset 1/0 blur 0 color #000000 (10%)",
+      "description": null
+    },
+    "divider-old/bottom/medium": {
+      "value": "drop shadow: offset 0/1 blur 0 color #E3E3E3",
+      "description": null
+    },
+    "divider-old/left/dark": {
+      "value": "drop shadow: offset -1/0 blur 0 color #000000 (10%)",
+      "description": null
+    },
+    "focus state-old": {
+      "value": "inner shadow: offset 2.75/0 blur 0 color #2194FF | inner shadow: offset 0/2.75 blur 0 color #2194FF | inner shadow: offset -2.75/0 blur 0 color #2194FF | inner shadow: offset 0/-2.75 blur 0 color #2194FF",
+      "description": null
+    },
+    "divider-old/top+bottom/dark": {
+      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3 | drop shadow: offset 0/-1 blur 0 color #D3D3D3",
+      "description": null
+    },
+    "divider-old/bottom/dark": {
+      "value": "drop shadow: offset 0/1 blur 0 color #D3D3D3",
+      "description": null
+    },
+    "Shadows/Extra Small": {
+      "value": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)",
+      "description": "The lowest elevation — a tight, barely-there shadow. For elements that need to lift off the background just slightly: input fields, tags, or subtle dividers between surfaces."
+    },
+    "Shadows/Base": {
+      "value": "drop shadow: offset 0/5 blur 12 color #000000 (5%) | drop shadow: offset 0/2 blur 8 color #000000 (8%)",
+      "description": "The default resting elevation for most raised surfaces — standard cards, list items, and containers sitting on a page. The everyday shadow when a component just needs to feel grounded."
+    },
+    "Background Blur/Small": {
+      "value": "background blur: radius 10",
+      "description": "The lightest frost. Gently softens whatever sits behind an element while keeping it recognisable — good for subtle glass effects on floating bars, sticky headers, or chips layered over content."
+    },
+    "Shadows/Medium": {
+      "value": "drop shadow: offset 0/6 blur 12 color #000000 (8%) | drop shadow: offset 0/4 blur 16 color #000000 (5%)",
+      "description": "A step up for interactive or temporarily raised surfaces — hover/active card states, dropdowns, and popovers. Signals that an element is above its neighbours."
+    },
+    "Background Blur/Medium": {
+      "value": "background blur: radius 20",
+      "description": "A moderate blur that noticeably obscures the background without fully hiding it. Suited to popovers, dropdowns, and smaller panels where you want depth and a frosted feel but still hint at the content underneath."
+    },
+    "Shadows/XLarge": {
+      "value": "drop shadow: offset 0/20 blur 25 color #000000 (10%)",
+      "description": "The highest elevation. Reserved for the most prominent overlays — modals, dialogs, and bottom sheets — where a strong, soft shadow separates them from everything behind."
+    },
+    "Background Blur/XLarge": {
+      "value": "background blur: radius 100",
+      "description": "A heavy blur that reduces the background to soft colour and shape. For full-screen scrims and modal backdrops where the goal is to pull focus firmly onto the foreground layer."
+    },
+    "Background Blur/XXLarge": {
+      "value": "background blur: radius 120",
+      "description": "The strongest blur — the background becomes an abstract wash of colour. Reserved for the most immersive overlays, onboarding takeovers, or loading/transition states where the content behind should all but disappear."
+    },
+    "Shadows/Large": {
+      "value": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)",
+      "description": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as on top of the content below."
+    }
+  },
+  "grid": {
+    "Small Grid": {
+      "value": "COLUMNS count:4 size:1 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": "Best for mobile\nBreakpoint: 320px - 600px"
+    },
+    "Large Grid": {
+      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Medium - Sportsbook": {
+      "value": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Medium Grid": {
+      "value": "COLUMNS count:8 size:-7.5 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Android": {
+      "value": "COLUMNS count:6 size:4.666666507720947 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "iOS": {
+      "value": "COLUMNS count:6 size:6 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Casino/Desktop 1920": {
+      "value": "ROWS count:-1 size:4 gutter:0 | COLUMNS count:6 size:-103.33333587646484 gutter:16",
+      "description": null
+    },
+    "Casino/Mobile 360": {
+      "value": "COLUMNS count:2 size:36 gutter:8 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    },
+    "Extra Large Grid": {
+      "value": "COLUMNS count:12 size:100 gutter:16 | ROWS count:-1 size:4 gutter:0",
+      "description": null
+    }
+  },
+  "variables": {},
+  "components": {
+    "Badges/Account status": "4::2026-08-03T14:59:36.873Z",
+    "Badges/Casino": "16::2026-08-03T15:00:15.727Z",
+    "Avatar/XS": "12::2026-08-03T16:37:58.669Z",
+    "Avatar/MD": "12::2026-08-03T16:37:58.666Z",
+    "Avatar/SM": "12::2026-08-03T17:51:11.264Z",
+    "Buttons / Header / Login": "18::2026-08-03T15:00:16.461Z",
+    "Buttons / Header / Register": "12::2026-08-03T15:00:16.526Z",
+    "Alerts Default (Inline)": "16::2026-08-03T15:00:16.359Z",
+    "Tertiary Buttons": "96::2026-08-03T15:00:34.719Z",
+    "authentification/cddn": "3::2026-08-03T15:00:34.838Z",
+    "Payment Provider": "20::2026-08-03T15:00:34.955Z",
+    "Team Logos": "8::2026-08-03T15:00:35.043Z",
+    "Partner Logos": "13::2026-08-03T15:00:35.187Z",
+    "Spacer": "84::2026-08-03T15:00:54.153Z",
+    "Avatar/XL": "12::2026-08-03T16:37:58.658Z",
+    "flags/flags rectangle": "143::2026-08-03T15:01:03.640Z",
+    "authentification/bank-id": "3::2026-08-03T15:01:03.793Z",
+    "Betslip (Inline)": "2::2026-08-03T15:01:12.883Z",
+    "flags/flags round": "143::2026-08-03T15:01:24.727Z",
+    "Secondary Buttons": "96::2026-08-03T15:01:40.076Z",
+    "store badges": "12::2026-08-03T15:01:39.575Z",
+    "gaming providers/big": "5::2026-08-03T15:01:40.308Z",
+    "Avatar/XXL": "12::2026-08-03T16:37:58.651Z",
+    "Numbers": "10::2026-08-03T15:01:57.394Z",
+    "gaming providers/small": "59::2026-08-03T15:01:57.683Z",
+    "authentification/reference-transfer": "3::2026-08-03T15:01:57.415Z",
+    "authentification/signicat": "3::2026-08-03T15:02:10.093Z",
+    "Primary Buttons": "270::2026-08-03T15:02:22.094Z",
+    "Responsible Gaming Logos": "18::2026-08-03T15:02:38.100Z",
+    "Banner": "4::2026-08-03T15:02:38.163Z",
+    "authentification/video-selfie": "3::2026-08-03T15:03:20.630Z",
+    "authentification/idin": "3::2026-08-03T15:03:20.512Z",
+    "Badges/Apps": "1::2026-08-03T15:03:20.968Z",
+    "Badge/Betslip": "1::2026-08-03T15:03:21.053Z",
+    "Avatar/Casino/Bonus": "1::2026-08-03T15:03:21.073Z",
+    "navigation/cross-mini": "1::2026-08-03T15:03:21.095Z",
+    "system/live": "1::2026-08-03T15:03:21.105Z",
+    "casino/exclusive-filled": "1::2026-08-03T15:03:21.109Z",
+    "scoreboard/green-card": "1::2026-08-03T15:03:21.114Z",
+    "scoreboard/grey-circle": "1::2026-08-03T15:03:21.117Z",
+    "scoreboard/dark-green-circle": "1::2026-08-03T15:03:21.122Z",
+    "scoreboard/alert": "1::2026-08-03T15:03:21.128Z",
+    "scoreboard/yellow-card": "1::2026-08-03T15:03:21.132Z",
+    "scoreboard/yellow-circle": "1::2026-08-03T15:03:21.136Z",
+    "scoreboard/blue-circle": "1::2026-08-03T15:03:21.141Z",
+    "scoreboard/green-shirt": "1::2026-08-03T15:03:21.145Z",
+    "scoreboard/yellow-red-card-1": "1::2026-08-03T15:03:21.149Z",
+    "scoreboard/yellow-red-card-2": "1::2026-08-03T15:03:21.153Z",
+    "general/bet-2-go": "1::2026-08-03T15:03:21.157Z",
+    "scoreboard/red-circle": "1::2026-08-03T15:03:21.161Z",
+    "special/anniversary": "1::2026-08-03T15:03:21.165Z",
+    "app/for-you": "1::2026-08-03T15:03:21.169Z",
+    "app/info": "1::2026-08-03T15:03:21.175Z",
+    "app/live": "1::2026-08-03T15:03:21.179Z",
+    "app/betslip": "1::2026-08-03T15:03:21.183Z",
+    "app/casino": "1::2026-08-03T15:03:21.188Z",
+    "app/home": "1::2026-08-03T15:03:21.192Z",
+    "alerts/checkmark-filled-2": "1::2026-08-03T15:03:21.196Z",
+    "alerts/information": "1::2026-08-03T15:03:21.278Z",
+    "alerts/info-circle-filled": "1::2026-08-03T15:03:21.287Z",
+    "alerts/checkmark-circle": "1::2026-08-03T15:03:21.291Z",
+    "alerts/question-mark-2": "1::2026-08-03T15:03:21.296Z",
+    "alerts/question-circle-filled": "1::2026-08-03T15:03:21.300Z",
+    "navigation/arrow-right-1": "1::2026-08-03T15:03:21.305Z",
+    "navigation/chevron-up": "1::2026-08-03T15:03:21.309Z",
+    "navigation/chevron-right": "1::2026-08-03T15:03:21.313Z",
+    "navigation/chevron-left-small": "1::2026-08-03T15:03:21.317Z",
+    "navigation/cross-small": "1::2026-08-03T15:03:21.320Z",
+    "navigation/cross-big": "1::2026-08-03T15:03:21.325Z",
+    "navigation/arrow-left": "1::2026-08-03T15:03:21.329Z",
+    "navigation/arrow-right": "1::2026-08-03T15:03:21.333Z",
+    "system/streaming": "1::2026-08-03T15:03:21.338Z",
+    "system/loading": "1::2026-08-03T15:03:21.344Z",
+    "system/copy-document": "1::2026-08-03T15:03:21.349Z",
+    "system/play": "1::2026-08-03T15:03:21.354Z",
+    "system/face-id": "1::2026-08-03T15:03:21.359Z",
+    "system/volume-2": "1::2026-08-03T15:03:21.367Z",
+    "system/user-locked": "1::2026-08-03T15:03:21.371Z",
+    "system/swap-chips": "1::2026-08-03T15:03:21.376Z",
+    "system/top-deals-filled": "1::2026-08-03T15:03:21.381Z",
+    "system/logout": "1::2026-08-03T15:03:21.386Z",
+    "system/lock": "1::2026-08-03T15:03:21.390Z",
+    "system/chart-filled": "1::2026-08-03T15:03:21.396Z",
+    "system/chart": "1::2026-08-03T15:03:21.491Z",
+    "system/image-landscape": "1::2026-08-03T15:03:21.499Z",
+    "alerts/i-3": "1::2026-08-03T15:03:21.504Z",
+    "system/pause-2-filled": "1::2026-08-03T15:03:21.508Z",
+    "system/lock-filled": "1::2026-08-03T15:03:21.513Z",
+    "system/live-versal-filled": "1::2026-08-03T15:03:21.517Z",
+    "system/bonus": "1::2026-08-03T15:03:21.521Z",
+    "system/18-circle-filled": "1::2026-08-03T15:03:21.526Z",
+    "system/cross-circle-filled": "2::2026-08-03T15:04:08.093Z",
+    "system/icon-popup": "1::2026-08-03T15:03:21.535Z",
+    "system/search-1": "1::2026-08-03T15:03:21.539Z",
+    "system/search": "1::2026-08-03T15:03:21.543Z",
+    "system/columns-2": "1::2026-08-03T15:03:21.547Z",
+    "system/bonus-filled": "1::2026-08-03T15:03:21.552Z",
+    "system/pause-outlined": "1::2026-08-03T15:03:21.555Z",
+    "system/volume": "1::2026-08-03T15:03:21.565Z",
+    "system/user-filled": "1::2026-08-03T15:03:21.569Z",
+    "system/checkmark-1": "1::2026-08-03T15:03:21.573Z",
+    "system/shop-iwclub": "1::2026-08-03T15:03:21.577Z",
+    "system/square": "1::2026-08-03T15:03:21.582Z",
+    "system/plus-circle-filled": "1::2026-08-03T15:03:21.586Z",
+    "system/columns-4": "1::2026-08-03T15:03:21.590Z",
+    "system/checkmark-square": "1::2026-08-03T15:03:21.595Z",
+    "system/licensing": "1::2026-08-03T15:03:21.600Z",
+    "system/odds-boost": "1::2026-08-03T15:03:21.604Z",
+    "system/est-1990": "1::2026-08-03T15:03:21.609Z",
+    "system/18-plus": "1::2026-08-03T15:03:21.614Z",
+    "system/user-circle": "1::2026-08-03T15:03:21.765Z",
+    "system/calender": "1::2026-08-03T15:03:21.848Z",
+    "system/trash": "1::2026-08-03T15:03:21.854Z",
+    "system/verification": "1::2026-08-03T15:03:21.859Z",
+    "system/minus": "1::2026-08-03T15:03:21.865Z",
+    "system/list-filled": "1::2026-08-03T15:03:21.871Z",
+    "system/session-time": "1::2026-08-03T15:03:21.878Z",
+    "social media/youtube-footer": "1::2026-08-03T15:03:21.883Z",
+    "social media/pinterest": "1::2026-08-03T15:03:21.889Z",
+    "social media/youtube-circle": "1::2026-08-03T15:03:21.894Z",
+    "social media/youtube-circle-filled": "1::2026-08-03T15:03:21.899Z",
+    "social media/facebook-circle": "1::2026-08-03T15:03:21.904Z",
+    "social media/instagram-circle-filled": "1::2026-08-03T15:03:21.910Z",
+    "social media/instagram-footer": "1::2026-08-03T15:03:21.914Z",
+    "esports/rocket-league": "1::2026-08-03T15:03:21.920Z",
+    "esports/starcraft": "1::2026-08-03T15:03:21.924Z",
+    "esports/hearthstone": "1::2026-08-03T15:03:21.930Z",
+    "sports/wta": "1::2026-08-03T15:03:21.936Z",
+    "sports/daviscup": "1::2026-08-03T15:03:21.940Z",
+    "sports/itf": "1::2026-08-03T15:03:21.945Z",
+    "sports/tennis": "1::2026-08-03T15:03:21.950Z",
+    "sports/fifa-esport": "1::2026-08-03T15:03:21.954Z",
+    "sports/golf": "1::2026-08-03T15:03:21.958Z",
+    "sports/volleyball": "1::2026-08-03T15:03:21.964Z",
+    "sports/nba": "1::2026-08-03T15:03:21.969Z",
+    "system/email": "1::2026-08-03T15:03:21.973Z",
+    "sports/copa": "2::2026-08-03T15:04:07.580Z",
+    "sports/motorcycling": "1::2026-08-03T15:03:21.983Z",
+    "sports/skateboard-1105": "1::2026-08-03T15:03:21.988Z",
+    "sports/dograce-greyhounds-1023": "1::2026-08-03T15:03:22.064Z",
+    "sports/formele-formulae-1101": "1::2026-08-03T15:03:22.075Z",
+    "sports/kabaddi": "1::2026-08-03T15:03:22.080Z",
+    "sports/shorttrack": "1::2026-08-03T15:03:22.085Z",
+    "sports/diving": "1::2026-08-03T15:03:22.091Z",
+    "sports/athletics": "1::2026-08-03T15:03:22.095Z",
+    "sports/khl": "1::2026-08-03T15:03:22.101Z",
+    "sports/nordic-combined-1090": "1::2026-08-03T15:04:07.426Z",
+    "sports/paddletennis": "2::2026-08-03T15:04:58.593Z",
+    "sports/darts-01": "1::2026-08-03T15:04:07.436Z",
+    "sports/entertainment": "1::2026-08-03T15:04:07.440Z",
+    "sports/darts": "1::2026-08-03T15:04:07.522Z",
+    "sports/gaelic-hurling-1097": "1::2026-08-03T15:04:07.531Z",
+    "sports/poker-full-1037": "1::2026-08-03T15:04:07.536Z",
+    "sports/taekondo": "1::2026-08-03T15:04:08.290Z",
+    "sports/poker-1037": "1::2026-08-03T15:04:07.541Z",
+    "sports/cricket-1027": "1::2026-08-03T15:04:07.547Z",
+    "sports/schwingen": "1::2026-08-03T15:04:07.552Z",
+    "sports/champions-league": "1::2026-08-03T15:04:07.557Z",
+    "sports/europa-league": "1::2026-08-03T15:04:07.561Z",
+    "sports/shooting-2": "1::2026-08-03T15:04:07.566Z",
+    "sports/hockey": "1::2026-08-03T15:04:07.575Z",
+    "sports/rowing": "1::2026-08-03T15:04:07.585Z",
+    "sports/rugby": "1::2026-08-03T15:04:07.589Z",
+    "sports/snooker": "1::2026-08-03T15:04:07.594Z",
+    "sports/olympic-games": "1::2026-08-03T15:04:07.599Z",
+    "sports/nascar": "2::2026-08-03T15:04:08.016Z",
+    "sports/table-tennis": "1::2026-08-03T15:04:07.608Z",
+    "sports/rugby-seven": "2::2026-08-03T15:04:59.174Z",
+    "sports/curling": "1::2026-08-03T15:04:07.616Z",
+    "sports/soccer-2": "1::2026-08-03T15:04:07.620Z",
+    "sports/rugby-league": "1::2026-08-03T15:04:07.625Z",
+    "sports/fedcup": "1::2026-08-03T15:04:07.628Z",
+    "sports/water-polo": "1::2026-08-03T15:04:07.632Z",
+    "sports/skeleton": "1::2026-08-03T15:04:07.636Z",
+    "sports/sports-entertainment": "1::2026-08-03T15:04:07.640Z",
+    "sports/sailing": "1::2026-08-03T15:04:07.644Z",
+    "sports/boxing": "1::2026-08-03T15:04:07.647Z",
+    "system/casino-wallet-4": "1::2026-08-03T15:04:07.651Z",
+    "sports/youth-league": "1::2026-08-03T15:04:07.654Z",
+    "sports/netball": "1::2026-08-03T15:04:07.658Z",
+    "sports/ice-hockey": "1::2026-08-03T15:04:07.662Z",
+    "sports/gaelic-football-1096": "1::2026-08-03T15:04:07.666Z",
+    "sports/esports-1069": "1::2026-08-03T15:04:07.670Z",
+    "sports/biathlon-1057": "1::2026-08-03T15:04:07.674Z",
+    "sports/bowling-1035": "1::2026-08-03T15:04:07.747Z",
+    "sports/softball-1107": "1::2026-08-03T15:04:07.755Z",
+    "general/fullscreen-exit": "1::2026-08-03T15:04:07.759Z",
+    "general/fire-outlined": "1::2026-08-03T15:04:07.764Z",
+    "general/marketing-materials": "1::2026-08-03T15:04:07.769Z",
+    "general/pay-card": "1::2026-08-03T15:04:07.775Z",
+    "general/card-hand": "1::2026-08-03T15:04:07.780Z",
+    "app/odd-up": "1::2026-08-03T15:04:07.785Z",
+    "general/circle-filled": "1::2026-08-03T15:04:07.789Z",
+    "general/flower": "1::2026-08-03T15:04:07.793Z",
+    "general/sun": "1::2026-08-03T15:04:07.796Z",
+    "general/accordion-minus": "1::2026-08-03T15:04:07.800Z",
+    "general/promotions": "1::2026-08-03T15:04:07.804Z",
+    "general/pause": "1::2026-08-03T15:04:07.808Z",
+    "general/fax": "1::2026-08-03T15:04:07.812Z",
+    "general/clover": "1::2026-08-03T15:04:07.816Z",
+    "general/cup": "1::2026-08-03T15:04:07.820Z",
+    "general/show-leagues-up": "1::2026-08-03T15:04:07.824Z",
+    "general/accordion-plus": "1::2026-08-03T15:04:07.827Z",
+    "general/minus-circle-filled": "1::2026-08-03T15:04:07.831Z",
+    "general/edit": "1::2026-08-03T15:04:07.834Z",
+    "general/gift-1": "1::2026-08-03T15:04:07.838Z",
+    "general/gift": "1::2026-08-03T15:04:07.842Z",
+    "casino/exit": "1::2026-08-03T15:04:07.846Z",
+    "casino/exclusive-games-3": "1::2026-08-03T15:04:07.850Z",
+    "casino/all-games": "1::2026-08-03T15:04:07.853Z",
+    "casino/most-popular-1": "1::2026-08-03T15:04:07.857Z",
+    "casino/dream-drop": "1::2026-08-03T15:04:07.861Z",
+    "system/globe": "1::2026-08-03T15:04:07.865Z",
+    "casino/table-games": "1::2026-08-03T15:04:07.868Z",
+    "casino/exclusive-games": "1::2026-08-03T15:04:07.872Z",
+    "casino/book-of-games": "1::2026-08-03T15:04:07.876Z",
+    "casino/exclusive-games-1": "1::2026-08-03T15:04:07.880Z",
+    "casino/casino": "1::2026-08-03T15:04:07.884Z",
+    "continents/europe": "1::2026-08-03T15:04:07.888Z",
+    "continents/africa": "1::2026-08-03T15:04:07.972Z",
+    "communication tools/jira": "1::2026-08-03T15:04:07.981Z",
+    "navigation/chevron-left": "1::2026-08-03T15:04:08.300Z",
+    "sports/archery-1042": "1::2026-08-03T15:04:08.309Z",
+    "communication tools/confluence-white": "1::2026-08-03T15:04:07.985Z",
+    "communication tools/slack": "1::2026-08-03T15:04:07.990Z",
+    "responsible-gaming/self-test": "1::2026-08-03T15:04:07.994Z",
+    "responsible-gaming/self-exclusion": "1::2026-08-03T15:04:07.998Z",
+    "general/edit-2": "1::2026-08-03T15:04:08.313Z",
+    "sports/squash": "1::2026-08-03T15:04:08.003Z",
+    "sports/top-soccer": "1::2026-08-03T15:04:08.007Z",
+    "sports/snowboarding": "1::2026-08-03T15:04:08.012Z",
+    "sports/basketball": "1::2026-08-03T15:04:08.020Z",
+    "system/play-video": "1::2026-08-03T15:04:08.025Z",
+    "Filter Flags/Senegal": "1::2026-08-03T15:04:08.029Z",
+    "sports/basketball-3": "1::2026-08-03T15:04:08.033Z",
+    "casino/game-shows-live": "1::2026-08-03T15:04:08.037Z",
+    "casino/daily-jackpot": "1::2026-08-03T15:04:08.042Z",
+    "general/folder-open-filled": "1::2026-08-03T15:04:08.046Z",
+    "sports/curling-1018": "1::2026-08-03T15:04:08.050Z",
+    "sports/mma": "1::2026-08-03T15:04:08.054Z",
+    "system/volume-x": "1::2026-08-03T15:04:08.058Z",
+    "social media/instagram-circle": "1::2026-08-03T15:04:08.062Z",
+    "alerts/checkmark-filled": "1::2026-08-03T15:04:08.066Z",
+    "Avatar/Casino/XS": "1::2026-08-03T15:04:08.071Z",
+    "casino/live-casino": "1::2026-08-03T15:04:08.076Z",
+    "sports/swimming": "1::2026-08-03T15:04:08.084Z",
+    "social media/x-footer": "1::2026-08-03T15:04:08.088Z",
+    "system/pause": "1::2026-08-03T15:04:08.096Z",
+    "general/paperclip": "1::2026-08-03T15:04:08.101Z",
+    "social media/youtube-filled": "1::2026-08-03T15:04:08.104Z",
+    "general/lightning": "1::2026-08-03T15:04:08.109Z",
+    "general/snowflake": "1::2026-08-03T15:04:08.113Z",
+    "app/my-casino": "1::2026-08-03T15:04:08.118Z",
+    "system/filter": "1::2026-08-03T15:04:08.123Z",
+    "scoreboard/black-circle": "1::2026-08-03T15:04:08.127Z",
+    "navigation/chevron-up-small": "1::2026-08-03T15:04:08.131Z",
+    "system/ticket-outlined": "1::2026-08-03T15:04:08.135Z",
+    "casino/casino-lobby": "1::2026-08-03T15:04:08.763Z",
+    "system/plus": "1::2026-08-03T15:04:08.775Z",
+    "esports/king-of-glory": "1::2026-08-03T15:04:08.781Z",
+    "system/locked": "1::2026-08-03T15:04:08.786Z",
+    "general/heart": "1::2026-08-03T15:04:08.791Z",
+    "casino/game-seats": "1::2026-08-03T15:04:08.796Z",
+    "casino/seats-filled": "1::2026-08-03T15:04:08.802Z",
+    "sports/nhl": "1::2026-08-03T15:04:08.808Z",
+    "general/candy": "1::2026-08-03T15:04:08.812Z",
+    "system/email-filled": "1::2026-08-03T15:04:08.818Z",
+    "system/cross-circle-filled-1": "1::2026-08-03T15:04:08.321Z",
+    "system/casino-wallet-2": "1::2026-08-03T15:04:08.326Z",
+    "sports/floorball": "1::2026-08-03T15:04:08.333Z",
+    "alerts/information-2": "1::2026-08-03T15:04:08.338Z",
+    "sports/superbike-1058": "1::2026-08-03T15:04:08.344Z",
+    "sports/rally-1033": "1::2026-08-03T15:04:08.348Z",
+    "general/pumpkin": "1::2026-08-03T15:04:08.353Z",
+    "navigation/arrow-up": "1::2026-08-03T15:04:08.357Z",
+    "alerts/info-circle": "1::2026-08-03T15:04:08.361Z",
+    "general/switch-mode": "1::2026-08-03T15:04:08.366Z",
+    "system/reload": "1::2026-08-03T15:04:08.371Z",
+    "casino/christmas": "1::2026-08-03T15:04:08.376Z",
+    "system/volume-1": "1::2026-08-03T15:04:08.383Z",
+    "sports/pool-full-1021": "1::2026-08-03T15:04:08.387Z",
+    "sports/bob": "1::2026-08-03T15:04:08.391Z",
+    "Badges/Live": "1::2026-08-03T15:04:08.395Z",
+    "sports/freeskate-figureskating-1066": "1::2026-08-03T15:04:08.399Z",
+    "scoreboard/pink.circle": "1::2026-08-03T15:04:08.403Z",
+    "continents/asia": "1::2026-08-03T15:04:08.408Z",
+    "esports/nba2k": "1::2026-08-03T15:04:08.412Z",
+    "system/statistics": "1::2026-08-03T15:04:08.416Z",
+    "app/odd-down": "1::2026-08-03T15:04:08.422Z",
+    "sports/other": "1::2026-08-03T15:04:08.426Z",
+    "general/partnership": "1::2026-08-03T15:04:08.431Z",
+    "system/circle": "1::2026-08-03T15:04:08.436Z",
+    "system/statistics-2": "1::2026-08-03T15:04:08.524Z",
+    "sports/kayak": "1::2026-08-03T15:04:08.534Z",
+    "casino/black-jack": "1::2026-08-03T15:04:08.539Z",
+    "alerts/question-mark-1": "1::2026-08-03T15:04:08.544Z",
+    "system/scoreboard-live-match": "1::2026-08-03T15:04:08.549Z",
+    "general/video": "1::2026-08-03T15:04:08.555Z",
+    "scoreboard/flag-2": "1::2026-08-03T15:04:08.561Z",
+    "social media/instagram": "1::2026-08-03T15:04:08.566Z",
+    "sports/fencing": "1::2026-08-03T15:04:08.571Z",
+    "esports/counterstrike": "1::2026-08-03T15:04:08.577Z",
+    "sports/bowls": "2::2026-08-03T15:04:59.446Z",
+    "esports/dota": "1::2026-08-03T15:04:08.588Z",
+    "system/player-protection-page-filled": "1::2026-08-03T15:04:08.596Z",
+    "system/statistics-1": "1::2026-08-03T15:04:08.603Z",
+    "esports/callofduty": "1::2026-08-03T15:04:08.607Z",
+    "general/show-leagues-down": "1::2026-08-03T15:04:08.614Z",
+    "Badges/Odd-Boost": "1::2026-08-03T15:04:08.619Z",
+    "system/odds-2.0": "1::2026-08-03T15:04:08.623Z",
+    "alerts/warning-filled": "1::2026-08-03T15:04:08.627Z",
+    "system/payment": "2::2026-08-03T15:04:58.575Z",
+    "sports/chess-2": "1::2026-08-03T15:04:08.638Z",
+    "system/phone-filled": "1::2026-08-03T15:04:08.642Z",
+    "system/hide-outlined": "1::2026-08-03T15:04:08.822Z",
+    "esports/pubg-battleground": "1::2026-08-03T15:04:08.648Z",
+    "general/my-bets": "1::2026-08-03T15:04:08.652Z",
+    "esports/overwatch": "1::2026-08-03T15:04:08.835Z",
+    "system/top-deals": "1::2026-08-03T15:04:08.840Z",
+    "system/casino-wallet-3": "1::2026-08-03T15:04:08.846Z",
+    "sports/australian-rules": "1::2026-08-03T15:04:08.851Z",
+    "alerts/warning-circle-filled": "1::2026-08-03T15:04:08.861Z",
+    "continents/australia": "1::2026-08-03T15:04:08.865Z",
+    "continents/north-central-america": "1::2026-08-03T15:04:08.870Z",
+    "sports/surfing": "1::2026-08-03T15:04:08.875Z",
+    "sports/virtuals": "1::2026-08-03T15:04:08.879Z",
+    "communication tools/miro": "1::2026-08-03T15:04:08.884Z",
+    "system/chips-buy-sell": "1::2026-08-03T15:04:08.888Z",
+    "casino/gameshow-1": "1::2026-08-03T15:04:08.892Z",
+    "scoreboard/green-circle": "1::2026-08-03T15:04:08.896Z",
+    "alerts/error-filled": "1::2026-08-03T15:04:08.900Z",
+    "casino/provider-of-the-week": "1::2026-08-03T15:04:08.905Z",
+    "sports/alpineski": "1::2026-08-03T15:04:08.989Z",
+    "social media/facebook-circle-filled": "1::2026-08-03T15:04:09.000Z",
+    "sports/freestyleskiing-1064": "1::2026-08-03T15:04:09.010Z",
+    "system/square-grid-filled": "1::2026-08-03T15:04:09.015Z",
+    "system/trust-24-hours": "1::2026-08-03T15:04:09.019Z",
+    "system/messsage": "1::2026-08-03T15:04:09.023Z",
+    "social media/facebook": "1::2026-08-03T15:04:59.005Z",
+    "navigation/double-chevron-up": "1::2026-08-03T15:04:59.135Z",
+    "scoreboard/180": "1::2026-08-03T15:04:59.157Z",
+    "system/stopwatch": "1::2026-08-03T15:04:58.985Z",
+    "alerts/checkmark-filled-1": "1::2026-08-03T15:04:58.989Z",
+    "social media/whatsapp-circle": "1::2026-08-03T15:04:58.560Z",
+    "sports/lottery-1081": "1::2026-08-03T15:04:58.566Z",
+    "general/pen": "1::2026-08-03T15:04:58.584Z",
+    "system/18-plus-circle": "1::2026-08-03T15:04:58.589Z",
+    "system/clock": "1::2026-08-03T15:04:58.597Z",
+    "sports/karate-1104": "1::2026-08-03T15:04:58.601Z",
+    "communication tools/figma-white": "1::2026-08-03T15:04:58.605Z",
+    "system/sport-wallet": "1::2026-08-03T15:04:58.608Z",
+    "system/security": "1::2026-08-03T15:04:58.993Z",
+    "scoreboard/flag-1": "1::2026-08-03T15:04:58.685Z",
+    "sports/worldcup": "1::2026-08-03T15:04:58.692Z",
+    "system/player-protection-page": "1::2026-08-03T15:04:58.696Z",
+    "alerts/info-circle-1": "1::2026-08-03T15:04:58.700Z",
+    "sports/formula-e": "1::2026-08-03T15:04:58.704Z",
+    "sports/handball": "1::2026-08-03T15:04:58.708Z",
+    "casino/star-outlined": "1::2026-08-03T15:04:58.711Z",
+    "sports/equestrian": "1::2026-08-03T15:04:58.715Z",
+    "general/lightbulb": "1::2026-08-03T15:04:58.719Z",
+    "system/casino-wallet-1": "1::2026-08-03T15:04:58.723Z",
+    "sports/chess-1": "1::2026-08-03T15:04:58.726Z",
+    "casino/most-popular-2": "1::2026-08-03T15:04:58.730Z",
+    "system/crown": "1::2026-08-03T15:04:58.733Z",
+    "sports/beach-volleyball": "1::2026-08-03T15:04:58.736Z",
+    "general/fish": "1::2026-08-03T15:04:58.740Z",
+    "Badges/Marketing": "1::2026-08-03T15:04:58.746Z",
+    "sports/speedskating": "2::2026-08-03T15:04:59.180Z",
+    "sports/pesapallo-1041": "1::2026-08-03T15:04:58.755Z",
+    "general/betting-slip": "1::2026-08-03T15:04:58.763Z",
+    "sports/oddsboost-1100": "1::2026-08-03T15:04:58.767Z",
+    "system/filter-filled": "1::2026-08-03T15:04:58.773Z",
+    "alerts/warning": "1::2026-08-03T15:04:58.776Z",
+    "social media/x-circle": "1::2026-08-03T15:04:58.779Z",
+    "sports/badminton": "1::2026-08-03T15:04:58.786Z",
+    "communication tools/figma": "1::2026-08-03T15:04:58.789Z",
+    "sports/cycling": "1::2026-08-03T15:04:58.793Z",
+    "sports/gaelic-football": "1::2026-08-03T15:04:58.796Z",
+    "sports/politics-75": "1::2026-08-03T15:04:58.884Z",
+    "casino/promotion-games": "1::2026-08-03T15:04:58.892Z",
+    "alerts/i-1": "1::2026-08-03T15:04:58.897Z",
+    "system/trust-payin-payout": "1::2026-08-03T15:04:58.905Z",
+    "casino/most-popular-3": "1::2026-08-03T15:04:58.909Z",
+    "sports/esoccer-fifa": "1::2026-08-03T15:04:58.914Z",
+    "general/star-favorites": "1::2026-08-03T15:04:58.918Z",
+    "navigation/chevron-right-small": "1::2026-08-03T15:04:58.921Z",
+    "sports/snowboard": "1::2026-08-03T15:04:58.997Z",
+    "social media/facebook-footer": "1::2026-08-03T15:04:58.925Z",
+    "navigation/chevron-down": "1::2026-08-03T15:04:58.929Z",
+    "system/24-7-service": "1::2026-08-03T15:04:58.933Z",
+    "sports/atp": "1::2026-08-03T15:04:58.937Z",
+    "casino/drops-and-wins": "1::2026-08-03T15:04:59.001Z",
+    "communication tools/confluence": "1::2026-08-03T15:04:58.940Z",
+    "alerts/i-2": "1::2026-08-03T15:04:58.945Z",
+    "sports/ski-jumping": "1::2026-08-03T15:04:58.948Z",
+    "casino/exclusive-games-2": "1::2026-08-03T15:04:58.952Z",
+    "sports/sportclimb-1106": "1::2026-08-03T15:04:58.957Z",
+    "system/crown-filled": "1::2026-08-03T15:04:58.961Z",
+    "system/scoreboard": "1::2026-08-03T15:04:58.965Z",
+    "system/stars-filled": "1::2026-08-03T15:04:58.969Z",
+    "sports/speedway-1085": "1::2026-08-03T15:04:58.972Z",
+    "social media/pinterest-circle-filled": "1::2026-08-03T15:04:58.977Z",
+    "system/calender-2": "1::2026-08-03T15:04:58.981Z",
+    "general/comission": "1::2026-08-03T15:04:59.162Z",
+    "sports/lacross": "1::2026-08-03T15:04:59.170Z",
+    "sports/motorsport": "1::2026-08-03T15:04:59.185Z",
+    "system/filter-1": "1::2026-08-03T15:04:59.190Z",
+    "general/show-leagues": "1::2026-08-03T15:04:59.199Z",
+    "navigation/arrow-down": "1::2026-08-03T15:04:59.203Z",
+    "system/live-versal": "1::2026-08-03T15:04:59.207Z",
+    "sports/pool-1021": "1::2026-08-03T15:04:59.211Z",
+    "navigation/chevron-down-small": "1::2026-08-03T15:04:59.215Z",
+    "system/cross-circle": "1::2026-08-03T15:04:59.219Z",
+    "system/user": "1::2026-08-03T15:04:59.224Z",
+    "system/checkmark-circle-1": "1::2026-08-03T15:04:59.230Z",
+    "casino/star-filled": "1::2026-08-03T15:04:59.235Z",
+    "sports/luge": "1::2026-08-03T15:04:59.240Z",
+    "Badges/Countdown": "1::2026-08-03T15:04:59.245Z",
+    "social media/pinterest-circle": "1::2026-08-03T15:04:59.255Z",
+    "sports/weightlifting": "1::2026-08-03T15:04:59.262Z",
+    "sports/baseball": "1::2026-08-03T15:04:59.267Z",
+    "system/checkmark": "1::2026-08-03T15:04:59.271Z",
+    "continents/earth": "1::2026-08-03T15:04:59.276Z",
+    "alerts/error-circle": "1::2026-08-03T15:04:59.354Z",
+    "system/christmas-tree": "1::2026-08-03T15:04:59.363Z",
+    "system/18-plus-circle-1": "1::2026-08-03T15:04:59.367Z",
+    "navigation/double-chevron-down": "1::2026-08-03T15:04:59.373Z",
+    "system/show-outlined": "1::2026-08-03T15:04:59.377Z",
+    "system/settings": "1::2026-08-03T15:04:59.392Z",
+    "responsible-gaming/self-limits": "1::2026-08-03T15:04:59.383Z",
+    "general/fire-filled": "1::2026-08-03T15:04:59.387Z",
+    "sports/mixed-1000": "1::2026-08-03T15:04:59.430Z",
+    "scoreboard/brown-circle": "1::2026-08-03T15:04:59.435Z",
+    "system/biometric-id": "1::2026-08-03T15:04:59.440Z",
+    "Badge/Default": "1::2026-08-03T15:04:59.450Z",
+    "system/pause-1-filled": "1::2026-08-03T15:04:59.459Z",
+    "sports/american-football": "1::2026-08-03T15:04:59.463Z",
+    "system/image-portrait": "1::2026-08-03T15:04:59.468Z",
+    "general/music": "1::2026-08-03T15:04:59.471Z",
+    "sports/formula-1": "1::2026-08-03T15:04:59.476Z",
+    "esports/league-of-legends": "1::2026-08-03T15:04:59.479Z",
+    "sports/handball-with-hand": "1::2026-08-03T15:04:59.483Z",
+    "system/streaming-outlined": "1::2026-08-03T15:04:59.399Z",
+    "scoreboard/arrows": "1::2026-08-03T15:04:59.404Z",
+    "system/copy": "1::2026-08-03T15:04:59.410Z",
+    "general/fullscreen-open": "1::2026-08-03T15:04:59.414Z",
+    "system/verification-filled": "1::2026-08-03T15:04:59.420Z",
+    "scoreboard/red-card": "1::2026-08-03T15:04:59.426Z",
+    "Buttons / Special Icon Button": "11::2026-08-03T15:30:05.716Z",
+    "Buttons / FAB": "12::2026-08-03T15:30:05.722Z",
+    "Avatar/LG": "12::2026-08-03T16:37:58.673Z"
+  }
+}
