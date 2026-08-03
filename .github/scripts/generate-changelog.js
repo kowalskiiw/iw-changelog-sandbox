@@ -2,9 +2,13 @@
  * IW Design Library — Figma Changelog Generator (Full + AI Refinement)
  * ----------------------------------------------------------------------
  * Tracks ALL design changes and refines descriptions via Claude API.
+ *
+ * CommonJS build (.js). Runs on plain Node without "type": "module".
+ * node-fetch v3 is ESM-only, so it is loaded via dynamic import() below.
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+const { readFileSync, writeFileSync, existsSync } = require('fs');
+const { createHash } = require('crypto');
 
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
 
@@ -97,6 +101,50 @@ function normalizeGridStyle(grids = []) {
   ).join(' | ');
 }
 
+// ── COMPONENT VISUAL SIGNATURE ─────────────────────────────────────────────────
+// These let us detect visual changes that never touch top-level metadata:
+// nested component edits (e.g. a shared .Notifications badge going green600 →
+// green700), swapped styles, or rebound variables. We read the resolved node
+// tree and hash its paints/strokes/effects.
+
+function paintSig(paints = []) {
+  return paints.map(p => {
+    if (!p || p.visible === false) return '';
+    if (p.type === 'SOLID') {
+      const { r = 0, g = 0, b = 0 } = p.color || {};
+      return normalizeColor(r, g, b, p.opacity ?? 1);
+    }
+    if (p.type === 'IMAGE') return `img:${p.imageRef ?? ''}`;
+    if (p.type?.includes('GRADIENT')) {
+      const stops = (p.gradientStops || [])
+        .map(s => { const { r = 0, g = 0, b = 0, a = 1 } = s.color || {}; return `${normalizeColor(r, g, b, a)}@${round2(s.position ?? 0)}`; })
+        .join(',');
+      return `${p.type}:${stops}`;
+    }
+    return p.type ?? '';
+  }).join('|');
+}
+
+function nodeVisualSig(node) {
+  const parts = [];
+  const walk = (n) => {
+    if (!n) return;
+    const bits = [
+      n.name ?? '',
+      paintSig(n.fills),
+      paintSig(n.strokes),
+      n.strokeWeight != null ? `sw${n.strokeWeight}` : '',
+      Array.isArray(n.effects) && n.effects.length ? normalizeEffectStyle(n.effects) : '',
+      n.cornerRadius != null ? `r${n.cornerRadius}` : '',
+      n.opacity != null && n.opacity !== 1 ? `o${round2(n.opacity)}` : '',
+    ].filter(Boolean);
+    if (bits.length) parts.push(bits.join(';'));
+    for (const c of n.children ?? []) walk(c);
+  };
+  walk(node);
+  return createHash('sha1').update(parts.join('\n')).digest('hex').slice(0, 12);
+}
+
 // ── FETCH ALL STYLES ──────────────────────────────────────────────────────────
 
 async function fetchAllStyles() {
@@ -112,7 +160,6 @@ async function fetchAllStyles() {
     if (s.description) figmaDescriptions[s.name] = s.description;
   }
   console.log(`   Found ${Object.keys(figmaDescriptions).length} style descriptions`);
-  console.log('   Descriptions:', JSON.stringify(figmaDescriptions, null, 2)); // ← neu, temporär zum Debuggen
 
   async function fetchNodes(styleList) {
     if (!styleList.length) return {};
@@ -175,10 +222,69 @@ async function fetchAllStyles() {
     console.warn('   Variables not accessible:', e.message);
   }
 
+  // ── COMPONENTS ────────────────────────────────────────────────────────────
+  // Fix 1 (naming):  group variants under their SET name, not the raw
+  //                  "Type=…, Notification=…" variant name.
+  // Fix 2 (desc):    pull the real Figma description from the component set.
+  // Fix 3 (content): store "variantCount::visualHash". The hash is computed
+  //                  from each set's resolved node tree, so visual edits are
+  //                  caught — INCLUDING ripple changes from nested components
+  //                  (e.g. a shared .Notifications badge changing color), which
+  //                  never bump the consumer's own updated_at.
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-    for (const c of compData.meta?.components ?? []) snapshot.components[c.name] = c.key;
-    console.log(`   Found ${Object.keys(snapshot.components).length} components`);
+
+    // set node_id → { name, description }
+    const sets = {};
+    try {
+      const setData = await figmaGet(`/files/${FIGMA_FILE_ID}/component_sets`);
+      for (const cs of setData.meta?.component_sets ?? []) {
+        sets[cs.node_id] = { name: cs.name, description: cs.description || '' };
+      }
+    } catch (e) {
+      console.warn('   Component sets fetch failed:', e.message);
+    }
+
+    // displayName → { nodeId, keys:[], description:'' }
+    const setInfo = {};
+    for (const c of compData.meta?.components ?? []) {
+      const set = sets[c.component_set_id];
+      const name =
+        set?.name ??                                          // 1st: real set name
+        c.containing_frame?.containingStateGroup?.name ??     // 2nd: older files
+        (c.name.includes('=')                                 // 3rd: strip "Prop=Value" suffix
+          ? (c.name.split(',')[0].split('=').slice(1).join('=').trim() || c.name)
+          : c.name);                                          // 4th: standalone component
+
+      const info = (setInfo[name] ??= { nodeId: null, keys: [], description: '' });
+      info.keys.push(c.key);
+      // Prefer the SET node (contains all variants + their nested instances);
+      // fall back to the component's own node for standalone components.
+      if (c.component_set_id && sets[c.component_set_id]) info.nodeId = c.component_set_id;
+      else if (!info.nodeId) info.nodeId = c.node_id;
+      if (!info.description) info.description = set?.description || c.description || '';
+    }
+
+    // Fetch each set's full node tree and hash its resolved visuals.
+    const nodeIds = [...new Set(Object.values(setInfo).map(i => i.nodeId).filter(Boolean))];
+    const hashes = {};
+    for (let i = 0; i < nodeIds.length; i += 50) {
+      const batch = nodeIds.slice(i, i + 50);
+      const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${batch.join(',')}`);
+      for (const id of batch) {
+        const doc = nodes?.[id]?.document;
+        hashes[id] = doc ? nodeVisualSig(doc) : '';
+      }
+    }
+
+    // Store "variantCount::visualHash" → detects BOTH structural and visual edits.
+    for (const [name, info] of Object.entries(setInfo)) {
+      const count = info.keys.length;
+      const hash  = hashes[info.nodeId] ?? '';
+      snapshot.components[name] = `${count}::${hash}`;
+      if (info.description) figmaDescriptions[name] = info.description; // feeds AI + fallback
+    }
+    console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
   } catch (e) {
     console.warn('   Components fetch failed:', e.message);
   }
@@ -230,6 +336,15 @@ function describeSimpleChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
 }
 
+// Component values are "variantCount::visualHash".
+function describeComponentChange(oldVal, newVal) {
+  if (oldVal === newVal) return '';
+  const [oldCount] = oldVal.split('::');
+  const [newCount] = newVal.split('::');
+  if (oldCount !== newCount) return `variants: ${oldCount} → ${newCount}`;
+  return 'component visuals updated in Figma';
+}
+
 function buildDiff(oldSnap, newSnap) {
   return {
     text:       diffMap(oldSnap.text   ?? {}, newSnap.text,   (o, n) => describeWrappedChange(o, n, describeTextValueChange)),
@@ -237,7 +352,7 @@ function buildDiff(oldSnap, newSnap) {
     effect:     diffMap(oldSnap.effect ?? {}, newSnap.effect, (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     grid:       diffMap(oldSnap.grid   ?? {}, newSnap.grid,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
-    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeSimpleChange),
+    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeComponentChange),
   };
 }
 
@@ -248,7 +363,7 @@ function totalChanges(diff) {
 
 // ── BUILD RAW GROUPS ──────────────────────────────────────────────────────────
 
-function buildGroups(diff) {
+function buildGroups(diff, figmaDescriptions = {}) {
   const groups = [];
   const CATEGORIES = [
     { key: 'text',       label: 'Typography / Text Styles' },
@@ -271,6 +386,9 @@ function buildGroups(diff) {
         desc = formatTextStyleValues(s.value.value);
       } else if (['fill', 'effect', 'grid'].includes(key) && s.value?.value !== undefined) {
         desc = s.value.value;
+      } else if (key === 'components') {
+        const count = String(s.value).split('::')[0];
+        desc = figmaDescriptions[s.name] || `${count} variant(s)`;
       } else {
         desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
       }
@@ -317,11 +435,13 @@ ${rawSummary}
 
 Your task is to return a JSON object with two keys:
 
-1. "items" — an array of refined descriptions for each changed style. For each item:
+1. "items" — an array of refined descriptions for each changed style OR component. For each item:
    - If a "Figma description" is provided in the input, treat it as the PRIMARY source of truth. Base your description on it directly — closely paraphrase or lightly tighten it, but do NOT replace it with a generic invented description or ignore it in favor of the raw values.
-   - If NO Figma description is provided, fall back to: for "new" styles, write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
-   - "changed" styles: always include old → new values. If a Figma description exists, weave it in as context for why/what the style is for.
-   - "deprecated" styles: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
+   - If NO Figma description is provided:
+       • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
+       • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name and variant count. Do NOT invent specific visual claims you cannot verify (e.g. do not assert exact colors or pixel values).
+   - "changed" styles/components: always include old → new values / the nature of the change. If a Figma description exists, weave it in as context. Note: "component visuals updated in Figma" often means an underlying token or nested component changed — describe it as a visual/style update rather than guessing specifics.
+   - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
 2. "actions" — an array of 2-4 specific, actionable strings for the "Action required" section. Each action must:
@@ -356,7 +476,7 @@ Return ONLY valid JSON, no markdown, no explanation:
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
-        max_tokens: 2048,
+        max_tokens: 4096,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
@@ -398,6 +518,8 @@ function buildFallbackActions(diff) {
     actions.push('Developer: Review color token updates in global stylesheet.');
   if (diff.components.added.length)
     actions.push(`Developer: ${diff.components.added.length} new component(s) in Figma — check Dev Mode for specs.`);
+  if (diff.components.changed.length)
+    actions.push(`Developer: ${diff.components.changed.length} component(s) visually changed — verify rendering against Figma.`);
   if (diff.components.removed.length)
     actions.push(`Developer: ${diff.components.removed.length} component(s) removed — check codebase for usages.`);
   if (diff.variables.changed.length || diff.variables.added.length)
@@ -435,7 +557,7 @@ async function main() {
   const version    = process.env.MANUAL_VERSION || autoVersion();
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
-  const rawGroups = buildGroups(diff);
+  const rawGroups = buildGroups(diff, figmaDescriptions);
   const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
