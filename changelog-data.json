@@ -1,5 +1,113 @@
 [
   {
+    "version": "1",
+    "date": "2026-08-03",
+    "ticket": "1",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/1",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "🌮 Heading/XXXL",
+            "desc": "36px · lh 42px · w400 · Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/S/Regular",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Heading/L",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/L/Medium",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Metric/L",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/L/Bold",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Heading/S",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Heading/XS",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Heading/XXS",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/M (Default)/Regular",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Metric/S",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Heading/M",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/S/Bold",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/S/Medium",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Metric/M",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/M (Default)/Bold",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/L/Regular",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          },
+          {
+            "type": "changed",
+            "title": "🌮 Body/M (Default)/Medium",
+            "desc": "fontFamily: Atlassian Sans → Inter"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 1 new text style token(s) to global stylesheet.",
+      "Developer: Update 17 text style token(s) — check font sizes and line heights.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "test",
     "date": "2026-08-03",
     "ticket": "test",

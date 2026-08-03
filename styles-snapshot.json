@@ -20,52 +20,72 @@
       },
       "description": "💡 Empty states and feature introductions. Top level headers. Previously H800.\n\nToken name: font.heading.XL\nTEST"
     },
-    "🌮 Body/S/Medium": {
+    "🌮 Heading/XXXL": {
+      "value": {
+        "fontSize": 36,
+        "lineHeight": 42,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": null
+    },
+    "🌮 Body/S/Regular": {
       "value": {
         "fontSize": 12,
         "lineHeight": 16,
-        "fontWeight": 500,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Use sparingly and for secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
-    },
-    "🌮 Body/L/Regular": {
-      "value": {
-        "fontSize": 16,
-        "lineHeight": 24,
         "fontWeight": 400,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "💡 Long-form content. Use in generic paragraphs to contrast with headings, and medium text.\n\nToken name: font.body.large"
+      "description": "💡 Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
     },
     "🌮 Heading/L": {
       "value": {
         "fontSize": 24,
         "lineHeight": 28,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "💡 Main titles, use only once per page. Previously H700.\n\nToken name: font.heading.L"
     },
-    "🌮 Heading/M": {
+    "🌮 Body/L/Medium": {
       "value": {
-        "fontSize": 20,
+        "fontSize": 16,
         "lineHeight": 24,
-        "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontWeight": 500,
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "💡 Headings that identify key functionality. Previously H600.\n\nToken name: font.heading.M"
+      "description": "💡 Long-form content. Use when text could be seen beside line icons.\n\nToken name: font.body.large"
+    },
+    "🌮 Metric/L": {
+      "value": {
+        "fontSize": 28,
+        "lineHeight": 32,
+        "fontWeight": 653,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "Use to emphasize a number within a large donut.\n\nToken name: font.metric.large"
+    },
+    "🌮 Body/L/Bold": {
+      "value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 653,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "💡 Long-form content. Use sparingly to differentiate text.\n\nToken name: font.body.large"
     },
     "🌮 Heading/S": {
       "value": {
         "fontSize": 16,
         "lineHeight": 20,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "💡 Sub-section and field group headings. Previously H500.\n\nToken name: font.heading.S"
@@ -75,67 +95,27 @@
         "fontSize": 14,
         "lineHeight": 20,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "💡 Deep headings and for highlighting important pieces of information. Previously H400.\n\nToken name: font.heading.XS"
     },
-    "🌮 Body/L/Medium": {
-      "value": {
-        "fontSize": 16,
-        "lineHeight": 24,
-        "fontWeight": 500,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Long-form content. Use when text could be seen beside line icons.\n\nToken name: font.body.large"
-    },
-    "🌮 Body/L/Bold": {
-      "value": {
-        "fontSize": 16,
-        "lineHeight": 24,
-        "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Long-form content. Use sparingly to differentiate text.\n\nToken name: font.body.large"
-    },
-    "🌮 Body/M (Default)/Medium": {
-      "value": {
-        "fontSize": 14,
-        "lineHeight": 20,
-        "fontWeight": 500,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Components or where space is limited, for detailed or descriptive content such as primary descriptions in flags.\n\nToken name: font.body"
-    },
-    "🌮 Body/M (Default)/Bold": {
-      "value": {
-        "fontSize": 14,
-        "lineHeight": 20,
-        "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Components or where space is limited, for differentiating detailed or descriptive content such as primary descriptions in flags. Use sparingly.\n\nToken name: font.body"
-    },
-    "🌮 Body/S/Bold": {
+    "🌮 Heading/XXS": {
       "value": {
         "fontSize": 12,
         "lineHeight": 16,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "💡 Use sparingly and for emphasising secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
+      "description": "💡 Low level headings. Previously H200.\n\nToken name: font.heading.XXS"
     },
     "🌮 Body/M (Default)/Regular": {
       "value": {
         "fontSize": 14,
         "lineHeight": 20,
         "fontWeight": 400,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "💡 For longer-form text that is not a part of the UI. This has a larger line height and paragraph spacing.\n\nToken name: font.body"
@@ -145,50 +125,80 @@
         "fontSize": 16,
         "lineHeight": 20,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "Use to emphasize a number and words in single-value tiles, or small donuts.\n\nToken name: font.metric.small"
+    },
+    "🌮 Heading/M": {
+      "value": {
+        "fontSize": 20,
+        "lineHeight": 24,
+        "fontWeight": 653,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "💡 Headings that identify key functionality. Previously H600.\n\nToken name: font.heading.M"
+    },
+    "🌮 Body/S/Bold": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 653,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use sparingly and for emphasising secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
+    },
+    "🌮 Body/S/Medium": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 16,
+        "fontWeight": 500,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "💡 Use sparingly and for secondary level content such as fine print or semantic messaging.\n\nToken name: font.body.small"
     },
     "🌮 Metric/M": {
       "value": {
         "fontSize": 24,
         "lineHeight": 28,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
       "description": "Use to emphasize a number within a medium donut.\n\nToken name: font.metric.medium"
     },
-    "🌮 Metric/L": {
+    "🌮 Body/M (Default)/Bold": {
       "value": {
-        "fontSize": 28,
-        "lineHeight": 32,
+        "fontSize": 14,
+        "lineHeight": 20,
         "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "Use to emphasize a number within a large donut.\n\nToken name: font.metric.large"
+      "description": "💡 Components or where space is limited, for differentiating detailed or descriptive content such as primary descriptions in flags. Use sparingly.\n\nToken name: font.body"
     },
-    "🌮 Heading/XXS": {
+    "🌮 Body/L/Regular": {
       "value": {
-        "fontSize": 12,
-        "lineHeight": 16,
-        "fontWeight": 653,
-        "fontFamily": "Atlassian Sans",
-        "letterSpacing": 0
-      },
-      "description": "💡 Low level headings. Previously H200.\n\nToken name: font.heading.XXS"
-    },
-    "🌮 Body/S/Regular": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 16,
+        "fontSize": 16,
+        "lineHeight": 24,
         "fontWeight": 400,
-        "fontFamily": "Atlassian Sans",
+        "fontFamily": "Inter",
         "letterSpacing": 0
       },
-      "description": "💡 Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
+      "description": "💡 Long-form content. Use in generic paragraphs to contrast with headings, and medium text.\n\nToken name: font.body.large"
+    },
+    "🌮 Body/M (Default)/Medium": {
+      "value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 500,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": "💡 Components or where space is limited, for detailed or descriptive content such as primary descriptions in flags.\n\nToken name: font.body"
     },
     "🌮 Code/Code": {
       "value": {
