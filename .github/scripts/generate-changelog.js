@@ -175,46 +175,13 @@ async function fetchAllStyles() {
     console.warn('   Variables not accessible:', e.message);
   }
 
-try {
-  const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
-
-  // set node_id → { name, description }
-  let sets = {};
   try {
-    const setData = await figmaGet(`/files/${FIGMA_FILE_ID}/component_sets`);
-    for (const cs of setData.meta?.component_sets ?? []) {
-      sets[cs.node_id] = { name: cs.name, description: cs.description || '' };
-    }
+    const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
+    for (const c of compData.meta?.components ?? []) snapshot.components[c.name] = c.key;
+    console.log(`   Found ${Object.keys(snapshot.components).length} components`);
   } catch (e) {
-    console.warn('   Component sets fetch failed:', e.message);
+    console.warn('   Components fetch failed:', e.message);
   }
-
-  const setInfo = {}; // displayName → { keys:[], updated:[], description:'' }
-  for (const c of compData.meta?.components ?? []) {
-    const set = sets[c.component_set_id];
-    const name =
-      set?.name ??
-      c.containing_frame?.containingStateGroup?.name ??
-      (c.name.includes('=')
-        ? (c.name.split(',')[0].split('=').slice(1).join('=').trim() || c.name)
-        : c.name);
-
-    const info = (setInfo[name] ??= { keys: [], updated: [], description: '' });
-    info.keys.push(c.key);
-    if (c.updated_at) info.updated.push(c.updated_at);
-    if (!info.description) info.description = set?.description || c.description || '';
-  }
-
-  for (const [name, info] of Object.entries(setInfo)) {
-    const count  = info.keys.length;
-    const latest = info.updated.sort().slice(-1)[0] ?? '';
-    snapshot.components[name] = `${count}::${latest}`; // count + newest edit time → detects content edits
-    if (info.description) figmaDescriptions[name] = info.description; // real Figma desc → feeds AI + fallback
-  }
-  console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
-} catch (e) {
-  console.warn('   Components fetch failed:', e.message);
-}
 
   return { snapshot, figmaDescriptions };
 }
@@ -263,14 +230,6 @@ function describeSimpleChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
 }
 
-function describeComponentChange(oldVal, newVal) {
-  if (oldVal === newVal) return '';
-  const [oldN] = oldVal.split('::');
-  const [newN] = newVal.split('::');
-  if (oldN !== newN) return `variants: ${oldN} → ${newN}`;
-  return 'component content updated in Figma';
-}
-
 function buildDiff(oldSnap, newSnap) {
   return {
     text:       diffMap(oldSnap.text   ?? {}, newSnap.text,   (o, n) => describeWrappedChange(o, n, describeTextValueChange)),
@@ -278,7 +237,7 @@ function buildDiff(oldSnap, newSnap) {
     effect:     diffMap(oldSnap.effect ?? {}, newSnap.effect, (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     grid:       diffMap(oldSnap.grid   ?? {}, newSnap.grid,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
-    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeComponentChange),
+    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeSimpleChange),
   };
 }
 
@@ -289,7 +248,7 @@ function totalChanges(diff) {
 
 // ── BUILD RAW GROUPS ──────────────────────────────────────────────────────────
 
-function buildGroups(diff, figmaDescriptions = {}) {
+function buildGroups(diff) {
   const groups = [];
   const CATEGORIES = [
     { key: 'text',       label: 'Typography / Text Styles' },
@@ -312,9 +271,6 @@ function buildGroups(diff, figmaDescriptions = {}) {
         desc = formatTextStyleValues(s.value.value);
       } else if (['fill', 'effect', 'grid'].includes(key) && s.value?.value !== undefined) {
         desc = s.value.value;
-      } else if (key === 'components') {
-        const count = String(s.value).split('::')[0];
-        desc = figmaDescriptions[s.name] || `${count} variant(s)`;
       } else {
         desc = typeof s.value === 'string' ? s.value : JSON.stringify(s.value);
       }
@@ -479,7 +435,7 @@ async function main() {
   const version    = process.env.MANUAL_VERSION || autoVersion();
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
 
-  const rawGroups = buildGroups(diff, figmaDescriptions);
+  const rawGroups = buildGroups(diff);
   const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
