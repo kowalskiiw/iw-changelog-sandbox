@@ -1,5 +1,3959 @@
 [
   {
+    "version": "v2026.08.03.26",
+    "date": "2026-08-03",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Title/M/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Desktop",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Desktop",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Regular",
+            "desc": "14px · lh 20px · w400 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Medium",
+            "desc": "10px · lh 14px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Mobile",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Mobile",
+            "desc": "36px · lh 44px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Medium",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Mobile",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Mobile",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Desktop",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Medium",
+            "desc": "12px · lh 16px · w500 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Desktop",
+            "desc": "40px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Desktop",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Underline",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Regular",
+            "desc": "10px · lh 14px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Underline",
+            "desc": "10px · lh 14px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Desktop",
+            "desc": "40px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Medium",
+            "desc": "14px · lh 20px · w500 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Medium",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Regular",
+            "desc": "12px · lh 16px · w400 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Mobile",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Desktop",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Mobile",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Desktop",
+            "desc": "48px · lh 48px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Regular",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Mobile",
+            "desc": "28px · lh 36px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Underline",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Mobile",
+            "desc": "36px · lh 44px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Desktop",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Helpers/H1",
+            "desc": "140px · lh 164px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Mobile",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Mobile",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Desktop",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Desktop",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Regular",
+            "desc": "18px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Mobile",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/M",
+            "desc": "60px · lh 60px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/L",
+            "desc": "72px · lh 72px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/S",
+            "desc": "48px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/M",
+            "desc": "60px · lh 60px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/L",
+            "desc": "72px · lh 72px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/S",
+            "desc": "48px · lh 48px · w400"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/300",
+            "desc": "#7B61FF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/900",
+            "desc": "#232323"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/300",
+            "desc": "#AAD1E6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/150",
+            "desc": "#F0FADA"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/400",
+            "desc": "#86BEDD"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/200",
+            "desc": "#FFED9B"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/20",
+            "desc": "#E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/800",
+            "desc": "#2D3D31"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/500",
+            "desc": "#DB3F3F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/500",
+            "desc": "#2EA949"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Default Fill Color",
+            "desc": "#2B94FE"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/350",
+            "desc": "#FFC170"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/500",
+            "desc": "#2194FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/200",
+            "desc": "#F6CFCF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/800",
+            "desc": "#333333"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/900",
+            "desc": "#3F550A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/200",
+            "desc": "#C5EFCE"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/900",
+            "desc": "#0B466E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Forest Green/500",
+            "desc": "#1BA57B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/350",
+            "desc": "#7CDB91"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/300",
+            "desc": "#CEC6F6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/500",
+            "desc": "#66CE7E"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/02",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/500",
+            "desc": "#C6EC6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/300",
+            "desc": "#A4E6B3"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Gras",
+            "desc": "#006837"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/600",
+            "desc": "#B5D45E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/700",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/150",
+            "desc": "#D6EAFF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/300",
+            "desc": "#FFD49B"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/500",
+            "desc": "#FFD200"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/100",
+            "desc": "#F7FCEA"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/01",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/200",
+            "desc": "#939393"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/600",
+            "desc": "#CCA800"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/800",
+            "desc": "#59780C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/300",
+            "desc": "#F1B4B4"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/400",
+            "desc": "#737373"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/15",
+            "desc": "#EDEDED"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/700",
+            "desc": "#832626"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/40",
+            "desc": "#D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/300",
+            "desc": "#A7D5FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/10",
+            "desc": "#F3F3F3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/600",
+            "desc": "#FFFFFF (60%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/300",
+            "desc": "#838383"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/400",
+            "desc": "#53ACFF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/700",
+            "desc": "#434343"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/100",
+            "desc": "#A3A3A3"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/700",
+            "desc": "#1583BC"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/500",
+            "desc": "#78B9FF"
+          },
+          {
+            "type": "new",
+            "title": "Footer Greece/800",
+            "desc": "#1A3362"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Concrete",
+            "desc": "#585F60"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/650",
+            "desc": "#C16D00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/50",
+            "desc": "#FFF8EF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/600",
+            "desc": "#535353"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/600",
+            "desc": "#608012"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/200",
+            "desc": "#DAD5F5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/50",
+            "desc": "#FDF3F3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/White",
+            "desc": "#FFFFFF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/800",
+            "desc": "#665400"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/500",
+            "desc": "#636363"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/50",
+            "desc": "#FFFCEF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/500",
+            "desc": "#000000 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/150",
+            "desc": "#FFF3BF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/700",
+            "desc": "#997E00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/700",
+            "desc": "#4F3B3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/600",
+            "desc": "#1575CF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/50",
+            "desc": "#F1F8FF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/300",
+            "desc": "#FFE570"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/800",
+            "desc": "#663900"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/200",
+            "desc": "#FFFFFF (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/50",
+            "desc": "#FBFEF6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/300",
+            "desc": "#DEF4AB"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/60",
+            "desc": "#C3C3C3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/200",
+            "desc": "#FFE3BF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/400",
+            "desc": "#FFAA3C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/500",
+            "desc": "#7B61FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/100",
+            "desc": "#FFFFFF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/700",
+            "desc": "#995600"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/300",
+            "desc": "#000000 (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/400",
+            "desc": "#FFDB3C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/800",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/800",
+            "desc": "#12441D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/500",
+            "desc": "#BA26C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/900",
+            "desc": "#1F2611"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/150",
+            "desc": "#DBF2E0"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/100",
+            "desc": "#FFF8DB"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/700",
+            "desc": "#1C652C"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/900",
+            "desc": "#332A00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/600",
+            "desc": "#BB1B1B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/600",
+            "desc": "#3F734B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/800",
+            "desc": "#581919"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/100",
+            "desc": "#E6E3F3"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Active Border",
+            "desc": "#96DBFA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/80",
+            "desc": "#B3B3B3"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/850",
+            "desc": "#0E5689"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/150",
+            "desc": "#FAE4E4"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/100",
+            "desc": "#7B61FF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/600",
+            "desc": "#25873A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/500",
+            "desc": "#FF8F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/200",
+            "desc": "#E8F7C5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/400",
+            "desc": "#4DCE69"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/600",
+            "desc": "#E17F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/700",
+            "desc": "#99BE4A"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/05",
+            "desc": "#FBFBFB"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/550",
+            "desc": "#ECC200"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/400",
+            "desc": "#FE9898"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/400",
+            "desc": "#94FFAC"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Water",
+            "desc": "#005366"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/100",
+            "desc": "#FFF4E5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/800",
+            "desc": "#473434"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/04",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/800",
+            "desc": "#374515"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/300",
+            "desc": "#FFFFFF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/500",
+            "desc": "#FFBA61"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/200",
+            "desc": "#C7E4FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/400",
+            "desc": "#D2F08D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/700",
+            "desc": "#455912"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/800",
+            "desc": "#473E32"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/400",
+            "desc": "#91D1FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/700",
+            "desc": "#374A3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/100",
+            "desc": "#FBECEC"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/700",
+            "desc": "#FFFFFF (70%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/600",
+            "desc": "#814444"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/Black",
+            "desc": "#000000"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/350",
+            "desc": "#EA9393"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/600",
+            "desc": "#951E9E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/350",
+            "desc": "#81C2FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/750",
+            "desc": "#6A8F0E"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Plastic",
+            "desc": "#A6653C"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Sand",
+            "desc": "#AF511F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/900",
+            "desc": "#2B0808"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/900",
+            "desc": "#0B2811"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/50",
+            "desc": "#F0FBF3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/400",
+            "desc": "#E36B6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/900",
+            "desc": "#331D00"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/200",
+            "desc": "#000000 (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/150",
+            "desc": "#FFE9CC"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/03",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/05",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/800",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Live Casino/900",
+            "desc": "#1F1F1F"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Ice",
+            "desc": "#567A8D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/100",
+            "desc": "#E9F4FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/900",
+            "desc": "#FFFFFF (90%)"
+          },
+          {
+            "type": "new",
+            "title": "Betslip/Loading Blue",
+            "desc": "#0067C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/100",
+            "desc": "#E5F7EA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/500",
+            "desc": "#FFFFFF (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/800",
+            "desc": "#2E3D4D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/600",
+            "desc": "#644ED7"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/950",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/800",
+            "desc": "#FFFFFF (80%)"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/750",
+            "desc": "#2970B2"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Background",
+            "desc": "#EEEBE5"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/400",
+            "desc": "#FFFFFF (40%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/900",
+            "desc": "#001A33"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/500",
+            "desc": "#D9F476"
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "divider-old/bottom/light",
+            "desc": "drop shadow: offset 0/1 blur 0 color #ECECEC"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/right/dark",
+            "desc": "drop shadow: offset 1/0 blur 0 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/bottom/medium",
+            "desc": "drop shadow: offset 0/1 blur 0 color #E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/left/dark",
+            "desc": "drop shadow: offset -1/0 blur 0 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "focus state-old",
+            "desc": "inner shadow: offset 2.75/0 blur 0 color #2194FF | inner shadow: offset 0/2.75 blur 0 color #2194FF | inner shadow: offset -2.75/0 blur 0 color #2194FF | inner shadow: offset 0/-2.75 blur 0 color #2194FF"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/top+bottom/dark",
+            "desc": "drop shadow: offset 0/1 blur 0 color #D3D3D3 | drop shadow: offset 0/-1 blur 0 color #D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/bottom/dark",
+            "desc": "drop shadow: offset 0/1 blur 0 color #D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Extra Small",
+            "desc": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Base",
+            "desc": "drop shadow: offset 0/5 blur 12 color #000000 (5%) | drop shadow: offset 0/2 blur 8 color #000000 (8%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Small",
+            "desc": "background blur: radius 10"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Medium",
+            "desc": "drop shadow: offset 0/6 blur 12 color #000000 (8%) | drop shadow: offset 0/4 blur 16 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Medium",
+            "desc": "background blur: radius 20"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/XLarge",
+            "desc": "drop shadow: offset 0/20 blur 25 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XLarge",
+            "desc": "background blur: radius 100"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XXLarge",
+            "desc": "background blur: radius 120"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Large",
+            "desc": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)"
+          }
+        ]
+      },
+      {
+        "title": "Grid Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Small Grid",
+            "desc": "COLUMNS count:4 size:1 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Large Grid",
+            "desc": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Medium - Sportsbook",
+            "desc": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Medium Grid",
+            "desc": "COLUMNS count:8 size:-7.5 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Android",
+            "desc": "COLUMNS count:6 size:4.666666507720947 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "iOS",
+            "desc": "COLUMNS count:6 size:6 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Casino/Desktop 1920",
+            "desc": "ROWS count:-1 size:4 gutter:0 | COLUMNS count:6 size:-103.33333587646484 gutter:16"
+          },
+          {
+            "type": "new",
+            "title": "Casino/Mobile 360",
+            "desc": "COLUMNS count:2 size:36 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Extra Large Grid",
+            "desc": "COLUMNS count:12 size:100 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Status=Critical/Error",
+            "desc": "b88a8920ee5963c6ce3995a807c911eda1352a0d"
+          },
+          {
+            "type": "new",
+            "title": "Status=Warning",
+            "desc": "5a7c4be561b3468b93e54062e22f0ee02d995de5"
+          },
+          {
+            "type": "new",
+            "title": "Status=Pending",
+            "desc": "7d304f9594b9f1c9c6deef596d81a98093c79436"
+          },
+          {
+            "type": "new",
+            "title": "Status=Success",
+            "desc": "94e6ab701bd8279b9c1a3337efe47483dcb903ab"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Mobile, Categories=New",
+            "desc": "ad94b5d75e0c0e95bfbd0c5391cd09425a42abc4"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Exclusive",
+            "desc": "434dc88fd14019d1b0508d941fbc45e1efcc3fb9"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Popular",
+            "desc": "ec2b159adc470d6539164d2044307f5488e28421"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=New",
+            "desc": "3f024152539239af31d98428bd326778f76f2d00"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Exclusive",
+            "desc": "5c04270f676cc50c681df63c1bc56bcac2ca6889"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Intern",
+            "desc": "c6e511b0b17efa80be29f3f65b6072da960d7f9b"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Daily Jackpot",
+            "desc": "323411c0da88664765a455cc40a9962fdebe2b06"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Mobile, Categories=Daily Jackpot",
+            "desc": "62cb07e0695a5c3c13b849b0b105339e3a00e06c"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Promotion",
+            "desc": "05be9d56cd4412671a547012ccbc0132656116b3"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Jackpot",
+            "desc": "c3cb1600bb67cd7cd9896774e48d1b785509a008"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Promotion",
+            "desc": "8e599256204a9c8454f70d58caf64e1b42e9130e"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Jackpot",
+            "desc": "a5fc650f99b95f1ac5c76bdc9a9a38cf9f3c3e53"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Popular",
+            "desc": "c614867d68bffd7910e5d25cdfda03e163bb08ef"
+          },
+          {
+            "type": "new",
+            "title": "Platform=Desktop, Categories=Freebet",
+            "desc": "a301b54128caf5f8fcce2191a74e3d103019081e"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Intern",
+            "desc": "ad9d5c250215cbd0bd2839bc048fbd39232f83ad"
+          },
+          {
+            "type": "new",
+            "title": "Platform = Mobile, Categories = Freebet",
+            "desc": "4cbfc0e6763ceb2f68663cf1a097fe81b24c6282"
+          },
+          {
+            "type": "new",
+            "title": "Type=Initials, Notification=Off, State=Default",
+            "desc": "783469f0c704626703cbd3e84a1963ae99e9eec2"
+          },
+          {
+            "type": "new",
+            "title": "Type=User, Notification=Off, State=Default",
+            "desc": "8a36c99609158de40bc30fe85f0898e91d3c04b1"
+          },
+          {
+            "type": "new",
+            "title": "Type=User, Notification=On, State=Hover",
+            "desc": "3f99261523d136b19ac73c24b5602c33c0dcfd44"
+          },
+          {
+            "type": "new",
+            "title": "Type=Image, Notification=Off, State=Default",
+            "desc": "f675c7d7141b5cf7d363866ccfed1b063bcd1c46"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Loading, Size=L (Default)",
+            "desc": "8b362204748f78c7091c8695e79e580544b59506"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Mouseover, Size=L (Default)",
+            "desc": "77a28da201b72f23bdb15aa45f40ced6da408da0"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Mouseover, Size=S",
+            "desc": "fc1f5385128d64758095491ddc745e5505fc441b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Focus, Size=S",
+            "desc": "eefdbc6105de3f5a35468a779b81fae5239d357c"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Pressed, Size=L (Default)",
+            "desc": "554d176402cf1ee3e67bd73bb046f3ee951212f0"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Pressed, Size=L (Default)",
+            "desc": "3f58abb7c7816ca07eb2c8145d250796212ad215"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Pressed, Size=S",
+            "desc": "d1f86f9e816302faa2fd6fd91f8284376b1135f3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Disabled, Size=L (Default)",
+            "desc": "fe4d29339a40014262d49c440b979a1701a400fb"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Disabled, Size=L (Default)",
+            "desc": "0e4fde7011187f862f0a68dd0f835b4f93658087"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Loading, Size=S",
+            "desc": "6f974c728682c94e88968a11cfd0ff7908edff37"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Disabled, Size=S",
+            "desc": "297789cda44ae0eebac835c516a2fadd9ddc775b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Loading, Size=L (Default)",
+            "desc": "a3848ac340168edd646dc578bf23be539da04501"
+          },
+          {
+            "type": "new",
+            "title": "State=Default, Size=L (Default)",
+            "desc": "64d32a78f821b7f7403d2c6e2c9f587fcede2a58"
+          },
+          {
+            "type": "new",
+            "title": "State=Focus, Size=S",
+            "desc": "5ddc1810a10fc528eeedbc16592c9516d23980d9"
+          },
+          {
+            "type": "new",
+            "title": "State=Loading, Size=S",
+            "desc": "cabffe95886d4e0ad5cf62188fa4d9429bd90561"
+          },
+          {
+            "type": "new",
+            "title": "State=Default, Size=S",
+            "desc": "ce7f47437e2b5c83b76fb8353b780f80902c6f3e"
+          },
+          {
+            "type": "new",
+            "title": "State=Mouseover, Size=L (Default)",
+            "desc": "35f0b83d681c6bba43863c90af9603b9782e9f3b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Error, Size=Medium, Focus=High",
+            "desc": "c6e658da036a4bd769fe3ab37834da2b77a44289"
+          },
+          {
+            "type": "new",
+            "title": "Type=Information, Size=Medium, Focus=High",
+            "desc": "991826ccd22a76bb71997fc4593c0f098150e580"
+          },
+          {
+            "type": "new",
+            "title": "Type=Information, Size=Small, Focus=High",
+            "desc": "3ec7464aeb9a96d5b71970b674ab9415fb2a93f1"
+          },
+          {
+            "type": "new",
+            "title": "Type=Error, Size=Small, Focus=High",
+            "desc": "642da049cfeef26913d20f03cb4e0e14ae50e967"
+          },
+          {
+            "type": "new",
+            "title": "Type=Information, Size=Small, Focus=Low",
+            "desc": "8cb8913fbc27212403617c169b6bbfd15fa1aeaa"
+          },
+          {
+            "type": "new",
+            "title": "Type=Information, Size=Medium, Focus=Low",
+            "desc": "b84b95dd06f170ead4b41febf87ae54f65ee1bd6"
+          },
+          {
+            "type": "new",
+            "title": "Type=Success, Size=Medium, Focus=Low",
+            "desc": "0bcb138b39e387a869da5fa66af7f3950509c49d"
+          },
+          {
+            "type": "new",
+            "title": "State=Focus, Size=L (Default)",
+            "desc": "ac05294e98d6cf722f9e6ea0ad8fa5c3075f3201"
+          },
+          {
+            "type": "new",
+            "title": "Type=Error, Size=Medium, Focus=Low",
+            "desc": "3984cf90e7a43595f6cb1b01c3abb85b5d8ca73a"
+          },
+          {
+            "type": "new",
+            "title": "Type=Error, Size=Small, Focus=Low",
+            "desc": "f649a1b32e9f8e37616d27233ae69f2471ae0048"
+          },
+          {
+            "type": "new",
+            "title": "Type=Success, Size=Medium, Focus=High",
+            "desc": "05be977660b9d811559349a264ebcb5702a8778c"
+          },
+          {
+            "type": "new",
+            "title": "Type=Warning, Size=Medium, Focus=Low",
+            "desc": "8965719a17c4de8e62ba989ace0fb079bf070883"
+          },
+          {
+            "type": "new",
+            "title": "Type=Success, Size=Small, Focus=Low",
+            "desc": "e66127eaf322bf1d042719a21b1c8c573517f405"
+          },
+          {
+            "type": "new",
+            "title": "Type=Warning, Size=Medium, Focus=High",
+            "desc": "b8fc64e750611ae94fed1690aba8ffefcf82de99"
+          },
+          {
+            "type": "new",
+            "title": "Type=Warning, Size=Small, Focus=Low",
+            "desc": "591546a8249710d535aa6f184843b11971bd962d"
+          },
+          {
+            "type": "new",
+            "title": "Type=Success, Size=Small, Focus=High",
+            "desc": "00f436d992955e459ecd865d31c8dfd57acbb3a0"
+          },
+          {
+            "type": "new",
+            "title": "Type=Warning, Size=Small, Focus=High",
+            "desc": "307a6d2c7df0a6dd0545ae16d1a014369b2e490b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Focus, Size=L (Default)",
+            "desc": "90ba5fb66832e6d02514ba479598eee97cfe00f6"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Default, Size=L (Default)",
+            "desc": "20d5baad67a969eb6797dd965be9ae46499dcd40"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Default, Size=L (Default)",
+            "desc": "455c52fcc5480fde1ccbbf608a517425b3d045d3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Mouseover, Size=L (Default)",
+            "desc": "8361d5c077df8ca35599cff34d6104b23f1d466b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Icon, State=Default, Size=S",
+            "desc": "814377e92790c18b6385e3ae2d5a0e8a157405c8"
+          },
+          {
+            "type": "new",
+            "title": "Type=Text + Icon (Default), State=Focus, Size=L (Default)",
+            "desc": "f3e0a02767943a2ad26141204970336d869c9fba"
+          },
+          {
+            "type": "new",
+            "title": "State=Mouseover, Size=S",
+            "desc": "43e9a40a22a2ac84b27213a634a0848535bc3695"
+          },
+          {
+            "type": "new",
+            "title": "State=Disabled, Size=S",
+            "desc": "b3e901e5b76951cba431c0bb8fdab63d4286797c"
+          },
+          {
+            "type": "new",
+            "title": "State=Pressed, Size=S",
+            "desc": "a7bcd5a7bfa95ddd9124ccfaf8e93a63a300a409"
+          },
+          {
+            "type": "new",
+            "title": "State=Pressed, Size=L (Default)",
+            "desc": "0eecb0c7ba499868434a3a0a84904d927179c7aa"
+          },
+          {
+            "type": "new",
+            "title": "State=Disabled, Size=L (Default)",
+            "desc": "8605c14f6c8ade140567bf8ede59d9ead185b774"
+          },
+          {
+            "type": "new",
+            "title": "State=Loading, Size=L (Default)",
+            "desc": "40b17c2d89248791d9b865315a3aaea907f2d99b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=4px",
+            "desc": "3edf10300f86356d3abb1fa11cee6af89ade4e74"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=160px",
+            "desc": "23adb6eb5d94f3851b5d8791878bc3f189e3fce2"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=4px",
+            "desc": "b8eb1e1cbb4b67c8d9dea7e3af6b6aae392674e7"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=12px",
+            "desc": "cecd97c131c9f1d2ff4c0299c02b2160f59761bb"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=224px",
+            "desc": "6be1eb33cb5cf4d919c1541fc5e557f8b56f0de5"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=16px",
+            "desc": "f47e3710ddc3ab7220a301b21a11e73ac578e1d5"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=16px",
+            "desc": "5aac44f599737f68d3d6a7480e72e016aa8c6606"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=20px",
+            "desc": "c9cb28a8885cbf7d7baa28b648bf416c7bc7cb72"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=8px",
+            "desc": "5aecf6906ad5ed16eed19d5d85f56b8c1c855b23"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=24px",
+            "desc": "d9c7dd4e8635891dc0acd1954f69a0dfc894dff4"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=32px",
+            "desc": "16b711aaeaacc8a947ef58608277032db617bdc6"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=128px",
+            "desc": "6252bad961e6ebad7aa164d5762c742c5f4bb4c7"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=160px",
+            "desc": "745249607943cd9b9ce51e71a89740a55d0e2ddb"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=24px",
+            "desc": "6f324b8c6576c717fb02092d064b2d4c3c392823"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=8px",
+            "desc": "8b62287c1a5c267114923e21f0ae35c78dc82990"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=32px",
+            "desc": "71cace6b0ccb00dd5e80012de225c9d47a36f9c1"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=12px",
+            "desc": "0b2e573d4844bf3ef1b1e687a1d03ea7c5970a55"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=56px",
+            "desc": "5dfee6ae3e2616644a21f8d3f2db05a1581de94f"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=196px",
+            "desc": "a0922eada1cdcde8e549ab3945ff67d36c1b35d2"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=28px",
+            "desc": "6f084365f236b35b8ebf27140e93e73afb73f870"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=36px",
+            "desc": "8b11d2dba9bca4ac4ff7ab2b174e9dc0536e84e7"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=96px",
+            "desc": "eca4da3d29bb5e351f51e0d6f403687006f44e69"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=72px",
+            "desc": "bf0de40eaef90df1162384536501b5c3e2877c93"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=40px",
+            "desc": "772b42670852b8bc15f8106709e059642e4be9aa"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=28px",
+            "desc": "fc715f0f7d8347451d7e90c9d1896a90995efd38"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=48px",
+            "desc": "7f6a911a8757912f2f332c231752ee4ab68b84ce"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=48px",
+            "desc": "03ce39b8e6547ec7abc230b4cf5aa41896ff995a"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=80px",
+            "desc": "5aff9b630f07f6a4d5d591c469688501095e6097"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=64px",
+            "desc": "cfade4503f759b3f306f054d8ccde88cf57b1f7c"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=96px",
+            "desc": "3975f6883d91e5e90f7661cfb836552f7f92775e"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=20px",
+            "desc": "b22238932da7ac8517352e78b7da1cefb128df65"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=12px",
+            "desc": "548da3b3d4e25e763e001548750c8a7b90758d79"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=36px",
+            "desc": "9c08c78332e67cd6082976d99664fcfeea85ab24"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=64px",
+            "desc": "acae7643ccc4f9944c544cf1171c51e8a8934c71"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=80px",
+            "desc": "246e5cf3d23996528de906bd1cc408070f1e61c3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=144px",
+            "desc": "42ed4f05a19e011d66c5bb18fdb0d0aedab46501"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=144px",
+            "desc": "3c9b9d25cf13353a24ec3449dafa8a3266e899c1"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=4px",
+            "desc": "95af96019846116d0669f76a00c27762e2449eaa"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=72px",
+            "desc": "6ab86c2b9c8f58b24b5445b4da063b0d18e484c3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=224px",
+            "desc": "624d8ccc26755bdd710671e01a290cfc72c37641"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=56px",
+            "desc": "ef9263731610ffbccc3503aa5b81f1cbcad05a5a"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=36px",
+            "desc": "648b559a5055deb1d22459f989628cb2534bd5a4"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=32px",
+            "desc": "ab557913243c4fb6fa3f6e7201b841f40f1f890f"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=32px",
+            "desc": "8c8db8c87a0b9f43aee17c574ed8a99a956265d6"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=36px",
+            "desc": "782c83d24d1eebdc1eeb7f4fc7b08d36ca7e8329"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=40px",
+            "desc": "cf46030753d2e517f637e26bab5046751b57c021"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=128px",
+            "desc": "2ba8fd212e3d7b09addc327916b79cb384759d73"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=48px",
+            "desc": "245f5248b651bf98aecb655f4130d65ef134bae5"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=144px",
+            "desc": "6ed197f3aacfb3720d1c5faaa26e636f70fb806e"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=48px",
+            "desc": "e7e43c303bdb398148b5d888dc90c18c48774e5b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=56px",
+            "desc": "e9dd9a8956f1f668e65a10b21ff19d0cde4a4569"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=56px",
+            "desc": "5ff0b8aa1df8f45d6f28c3438af257b040be5e8b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=64px",
+            "desc": "b52085ef3f9a7b80f1039a4d54e390cebab45a1c"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=64px",
+            "desc": "46df4b407daec9f985d2605494076dfe0422959e"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=72px",
+            "desc": "626230cc4d98aab44de4f617a6b6b18a0c6c9938"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=80px",
+            "desc": "94b39c55b70c2cd499e7c620bcb0245ca9b65c50"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=80px",
+            "desc": "9b1468f687c4a96f18eda883ce7c374e14f8b8e1"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=96px",
+            "desc": "2c3712097f08b0056889692bbb283b2f424c06d2"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=128px",
+            "desc": "68c3b99a22fda84c0b16feba0ee4c5d0b0a90cec"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=160px",
+            "desc": "7fd6b78aee142b7e553b2fc49bb001611b6d7581"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=144px",
+            "desc": "ff8d50f6beb355fa165ca6f682185d97968b7ae2"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=4px",
+            "desc": "3a4b236fc63c4e22d241717ad51d0d12e27dd4cd"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=8px",
+            "desc": "81a2018feb9f186c935f099cb9fbb30b29325b66"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=160px",
+            "desc": "d49754d14c2f34a0b498d0f7882538010776ff88"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=96px",
+            "desc": "aacb7f52fc4f9d28d108c72cdfc9504ae4aeab15"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=128px",
+            "desc": "9070cc471a2c8c36a5f89f30125c3986d3a32d40"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=196px",
+            "desc": "03380c73b938274417d475a7d7b313dfad846c9c"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Vertical, Size=40px",
+            "desc": "df40ef5ce018eea6caf92d3ed32b42cbc0fb5385"
+          },
+          {
+            "type": "new",
+            "title": "Type=Divider, Orientation=Horizontal, Size=72px",
+            "desc": "2a8a0a799c923b463aacf7570187bca319094cda"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=8px",
+            "desc": "b2354fdf0a39e0e6b0a1f118d28ba444dd2bbe20"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=12px",
+            "desc": "fb52c6d87b6827830b8b1f7c0f7dad0dd876ec16"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=24px",
+            "desc": "3151a005f376fa9a30ea3b355475a1fb62f6f1df"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=16px",
+            "desc": "140a63d90ad8b9f1298016ffd915e4db50b88742"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=16px",
+            "desc": "2b83b2c33daab28635eaadd768f0b59e0805844f"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=20px",
+            "desc": "e9fe7c1cb0e83a83088b4c6d6662761e94472c53"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=20px",
+            "desc": "dcff8d83ccb01345b3e06045097b8551ade6be70"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=40px",
+            "desc": "d6b1b13ade9e0a7ad3686db27f103362fbb9cfa3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=224px",
+            "desc": "065df626fa0a42296d3ddece1ae82c37bc575582"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=28px",
+            "desc": "6d1f6b6b00d92de59d7b18f25d123cf1ae855bce"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=24px",
+            "desc": "2677ba8280a07385b058ebe842a82a7c2067b021"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=28px",
+            "desc": "4689519f65c5e7aa944ea9205b5cf7139367ec04"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Horizontal, Size=196px",
+            "desc": "42527828520ce58027205b84d1244f56ae75839b"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=196px",
+            "desc": "089db1a8af073b839ec0c26fcf6db3305c18c5a3"
+          },
+          {
+            "type": "new",
+            "title": "Type=Filled, Orientation=Vertical, Size=224px",
+            "desc": "ae09371bbf75d8d1ee93606ed572b5f4d6fb5c7f"
+          },
+          {
+            "type": "new",
+            "title": "Type=Success",
+            "desc": "022fdcd7e4d461ccc6fb361666e163564b0347a9"
+          },
+          {
+            "type": "new",
+            "title": "Type=Error",
+            "desc": "f1b852d14a74e4bec8372ddd4aae8f43c642b84e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Text",
+            "desc": "c5e451c20352462c1d04b987ce6b91ec08903fc1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "9b3ea635aa7ceae21dca96334cb0e693e9a84a7f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text",
+            "desc": "c2b56afbc9b51d91c2d4f027a50c841b8dbe6851"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Text",
+            "desc": "f630834dc502cbf7994628841888475a3c16a2d3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "63ae364dc7b121549b810d479c88ea1264fce2e6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Text",
+            "desc": "0be50c0637aabd377312345b3caafb596ec26527"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "09f85e63e999ca78ff297b419efc97b04a2fb3b8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Icon",
+            "desc": "3b15981ef8bda4512dc198eb8b50272f6102e2cd"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Text",
+            "desc": "1c693cc79bb783fdf7fb74811458ee3e9bebc69c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "d3f3439fd217d49fe19e0c993ed32a3d925807c1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "cab928a464cd3dd7005c552fc85d74620756c7d4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Icon",
+            "desc": "837e03233145079ff7a9c6b0f035d903529e1f39"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Focused, Type=Icon",
+            "desc": "2062583c810550963afdf90e9296931141100962"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text",
+            "desc": "b191f18b3fbca9e82c044f38818bd40560a7c31f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Text",
+            "desc": "d8be1590be61e8a7a1adff79effa47c6cf4e55a4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "5da7da0a6b750347f0a4fd29e7788e24159b4a64"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text",
+            "desc": "a1ba2da68afbf713c4564f0dfc2eeb379b75f529"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text + Icon",
+            "desc": "bbafc22cb0e8ca7456685f6bd72af56f2684788b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text + Icon",
+            "desc": "7766ba38cc4006e784a0cc183945be275b755ff2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Icon",
+            "desc": "5a31dd8a7af84c235de0a6f6d4a2b625cfd2112c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Text",
+            "desc": "fdbffe2f276d096367577aea551c038ccb4e2edf"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "98169646e0b45d238e1eff83a3f69ebc49e37ec7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Icon",
+            "desc": "10261a7292d561e430f257261e853cd6bb5c214e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Text",
+            "desc": "f3c1ae481294bcd1600055af5cf54bb520d9ef5d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Text",
+            "desc": "a4fd4746f359daf467a59b3ff81f103afbb26527"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text",
+            "desc": "26bf7e2c0cb8be61c300f6703d08453819362e66"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text",
+            "desc": "e364ffb2c8fd1aa0fc9d2324fe1e11d9468863f0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Text + Icon",
+            "desc": "80c889946cee4df727991b0307ab9dea9c9fcef1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Loading, Type=Icon",
+            "desc": "5b63eb35b3d6f0c25ee9b405e6e8944dcde9ab1b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "3ee52d62bd1e44fe5f1f7773eff50f5e3dfcd3e3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Mouseover, Type=Icon",
+            "desc": "e05f1a8154e6539703848b7f0338b4e5f8d8687a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Text",
+            "desc": "1449bf3daadd3a3d9f33ec474b954ff14303ca4c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text",
+            "desc": "26cd758ef967349b9afba403596c5bf47c263c9d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "fa8723a504cf23863bab64237a51f560973fdc07"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "48b219569f936069d3e5a2be2f8ae40ee671a266"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Icon",
+            "desc": "dedecf04c97978ff0b3866eecf21df6666eace58"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Loading, Type=Icon",
+            "desc": "1a11cb59910358cd5c4d3b99d090e7e80f9b6796"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Text",
+            "desc": "0a1855af1bdbf266212824bba9fb71e18680e291"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text",
+            "desc": "35fb345b0e4ef4bc01fabad87c2da12163f7b318"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Text + Icon",
+            "desc": "a03670df73d4d4c94f13c98335a8e1879a5d709c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "3513ad5d17e9c546ffad2e146a9adde2ace89ed6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Text + Icon",
+            "desc": "f2fe68f69388c7bcd76a72dceef10715124a9b6c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "57da96ba0bec156feec3ebd033f8db2ec0631a11"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "36216fce7a731fa2eb0ff1f0d98cde8b72363a8b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Mouseover, Type=Icon",
+            "desc": "b5a55addda1f842bd8ccb7393268c80099ecec53"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Icon",
+            "desc": "74eb3c2c77e008928e5a8cb01874c7f11cc79d77"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Icon",
+            "desc": "2012c67e3a68fa45cae5dcb5fc8100e5b37a60af"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "1b8f35a095aae1facd46bfcb1e342e8f42bc2892"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "d8aea9002bc69cc50c6db7816f06780cf62c593c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Mouseover, Type=Text",
+            "desc": "39d1909d14af970904f31f151535954feac951bd"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "98feba1b17579ee7436e684cf06e32f6dc10ad4b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "6733a23dc7cb0022121a2b5a6aa38b62e0e87489"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "f81bccfa4c876359be3688a99242ab43cbf78e01"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text + Icon",
+            "desc": "bce505debea95d65c06d1d4d7e4c8d62fc04777d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text",
+            "desc": "8b8adea1df71eb00c4c1edeb3c1abe5aeccdc91f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Disabled, Type=Icon",
+            "desc": "06bdae65bf853c944414466ae17fee90182ccc4e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "91dee649dd59a094723cca97fa4dbd0795e0f295"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Loading, Type=Icon",
+            "desc": "962c8749b0c4883fb6abe03fc1e6392e3da68eb4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "7fc809442bb45d8a5dde3cf1537a811dc5cf611c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "632316983a76b821ceebc84470b7ef242ab2869c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "93e64dd3e90e88ce8f5da2e2fc9476f506cb65bc"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "71cfc133fc4becb6a07da0e1bc6d5918cf82df4d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "89bb0ea2371dc914519afe8d6abcd0d0e75be735"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text + Icon",
+            "desc": "66c0b22e26f989ee843aa9f187c146791e3bb31c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "f91048207752c3d4833762d8f014f92563fbaae5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "fc2cdc0b82dcc797d7cb3f303f262d54c69a1150"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Focused, Type=Icon",
+            "desc": "040b23a262da1e776ebb9faccf6bd040dcacf1e8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Focused, Type=Text + Icon",
+            "desc": "395451b0c7fa2b78f3e510698f280697e5f68fb4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Default, Type=Icon",
+            "desc": "096a371342f54f71e4e16a663aa110ca312c40f7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Default, Type=Icon",
+            "desc": "fe85e2a718e70e4be36ad5da2425aa4823a504ff"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "859124b2c97f7cd54f3d49c542199b3715e6bb94"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "c03ead284d0fafbe4b94a5385a091e74c6cde84e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Mouseover, Type=Icon",
+            "desc": "4f7464d7f48e97f1cab8325db79e3146fd298367"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Icon",
+            "desc": "d8ebb3486d9abde51b5d42175ea80e69b20709e9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "550b09a74f42bc6fe546a94251cbaa7e09662d47"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Disabled, Type=Icon",
+            "desc": "cbe7de77733abd18d1208845239bfd6bd02684ba"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "bc1f58bfed8ad013d73d457f03a63995c6d083db"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Loading, Type=Icon",
+            "desc": "04b3f0dfbdcf6bdd76d2ed5735746286ad71c53f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Icon",
+            "desc": "1e0848e4cb54eab11ee1cebcefb0e3ed9a19c9e9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Icon",
+            "desc": "ce718c5099a5e767e6f0d46211265f40687a71b6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Default, Type=Icon",
+            "desc": "7d9a7b64a9212cbe09fed31916e1daaa36c0c656"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "c209cf59f85ac5fa0a7812bfb146df7f756ff2f2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Default, Type=Text + Icon",
+            "desc": "d20f5b404cac9a2fb202cecc28d282e6b60a389e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "2e10aa063d4e45f1aa26beb63ac9ca82b357f92c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Icon",
+            "desc": "56b95ab6a76532b2ffa3cf01d07a641a6bfc6b95"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Icon",
+            "desc": "73cdae40b005d980ccd4f1dd8ed057f3b889d3f5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=L, State=Loading, Type=Icon",
+            "desc": "b5f6ac5eb7461f70df840cf4994c6951d8db2e63"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=S, State=Focused, Type=Text",
+            "desc": "2f6a9242d4ea2f0857235ccc94b8058a76b01139"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Disabled, Type=Text",
+            "desc": "167921fabf409b1333107871c3afe6dd1cbfef55"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=M, State=Default, Type=Text",
+            "desc": "ad48a463d8b84747858c5c5b701e9670ca6c15dd"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Default, Type=Text",
+            "desc": "0a50e3d88972751e51fed7ce5316c5ce9316013e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Mouseover, Type=Text",
+            "desc": "a3ad5e15e6e02de892c09339736fb0e5a37778d2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "c4013d035967476ff19d58df633972a0a853043f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=S, State=Loading, Type=Icon",
+            "desc": "42b8460a8c58fc5cabff712ac22cda2b545fdede"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary White, Size=M, State=Focused, Type=Icon",
+            "desc": "ab955d93b5d212212c046419a5ab5f3982d5cb1b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Secondary Black (Default), Size=L, State=Focused, Type=Icon",
+            "desc": "1ddb1d84ecbec76f1cd3771359d7375bab2d37e7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "e96100f4b01d7d9e78670c996ce640c3478a41fd"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "513404ce0a89b6cefa0abf9c3455590ebb2df0f6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "1c1b69b5c8d4c336117327e5c0682b033aab1261"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "35b5b8f1624e3987b741bf9647d8925438d9c97f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Icon",
+            "desc": "835d754463159bccb5acadb52b5e959487940108"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "50cf67a5cd8cae43e769d1367419d9173bb91d16"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Text + Icon",
+            "desc": "2103dc608fe10ac246b3b2765dc1b9914c2d504d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Text",
+            "desc": "ade193d492c3bb0a98479210232bdc4ca7af779b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Icon",
+            "desc": "57cc097255ef9b5125c437e01735647c773081fb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Text",
+            "desc": "0cf2775a36baa509f1e5bb995ac9634f11e62f91"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Text",
+            "desc": "06527240208b86c3492c8777c759176c5164f3f9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "c11ad7fd89aada140ca2ad84455d5e07b6266807"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "8cd93cfce0e0edb7e409621013356a14a2a76e41"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Text + Icon",
+            "desc": "cf2c19dde62caa8625a16b77e5390a5ab814883d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Icon",
+            "desc": "9ff25605524d803f8717407a686d92c49ae26bec"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "e724203c58ceeccce360c515d32396cfc4a6305b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Icon",
+            "desc": "5352103641dde1c8d972610c4768c15506262675"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Icon",
+            "desc": "89df9568ae96280cdf0b38fec134a1ec9b9e6f0e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Text",
+            "desc": "9285cbf88578c68576e174560f13bed41a251098"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Text",
+            "desc": "df81c21f6353a3a3d427ed9f9123302cafd278e2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Icon",
+            "desc": "c941afbe6664ff426578f551d0c5a5a42735d730"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Text",
+            "desc": "0b896471ec69ba30613b32b4508d3ab89cf428f3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "f0a0c4c305f4e9f81d301b4bf4a118a73cb533d5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Text",
+            "desc": "8a006fefb593fa36d931af1f5ed29436ed812757"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Icon",
+            "desc": "490106f46001a4c8eb8bcc7ded8c48620c97c532"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "6a2b1107bffb4fa8af79ed754cf652c97c50d346"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "d8ab5e9e9243f221daeb26cba0f6ff37cf2ae243"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Icon",
+            "desc": "b8792bce77a63de75e955e5324a4df2d58f9b413"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text",
+            "desc": "a6978fc5736d40baed7f7da0b0a8bc00afd253ad"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "971aec2f79c7cbc084d34f8622f776cfe9212f83"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Text",
+            "desc": "3dd84a8b0c8016262765cf3f13e0f2bc49a30b18"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Text",
+            "desc": "f463cc4e4e8f7ca8cb91f8b46ade0ccf0bcfbacb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "b7149fddea486ea1f11f10977c38b45c1cad4441"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Icon",
+            "desc": "3680863e697440f02dabf2af7926727a1f53491f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Text",
+            "desc": "83a39f8b0d49180215afd3a7cec61ba8db511ec7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "d3fe8cb3868a5bb388732d0d4ace768aa1e8d3c5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Focused, Type=Text",
+            "desc": "157a0b8c4e4083f745c31d1d0893f311a50f5f6d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Icon",
+            "desc": "b8fa80f43dde6b82dba883d0ec4f0c146978be2a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "4b8d7356f15c7be203ebcacf3ee1baa5824b90f6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text",
+            "desc": "25c75853032230932c54ac2c477b72eb155e6fc2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "37dc313e74743c3966fe650395b29fa9711bfb3f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "3c7d157447a16f919217df60ff3f43c266979280"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Icon",
+            "desc": "378089331ff8fdfff60dbf35e7a0d9fb199bed48"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Icon",
+            "desc": "25436a4cc66eb9b7483814c76eacb25dd183a9bb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Text",
+            "desc": "a42d51c7f34c62cc7d57ca004d0fe2f19348efe3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "69ad034cda9cb10eeaa5b56885ffb25b1851dc40"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "c6d7456e93517420766909e1156ef9756930a851"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text",
+            "desc": "26310f10dca54e8578d6efd009f50ab191947784"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "8ea442f0e7b76957b73a788b2d86ccdfc2a96681"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Text",
+            "desc": "6f2cb60eec5c8377c772ca0274ebaa808c2e3bad"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Icon",
+            "desc": "4a3070452a123ea209e1403f83239615bf59cf1a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Icon",
+            "desc": "54e119d24057b440c5c6dd91724a97083e00fab8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Text",
+            "desc": "928c8d06bfcb8d1f2bb55a764b298b99ecee2542"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Text + Icon",
+            "desc": "1f5e393b863740e35997ea59d471d5897348256b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "77b221d8146ca9f34ab8710201cbce81ec64d11d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text",
+            "desc": "5d0ec1b4a94675ed8bf0bab89f54b10f2405e1d9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "65bd0cb614bdffa69f48b9a51df1efc7ad45f72a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "12179158e26223f009779496ebbc657d7badb313"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "55741db86303526a49b384d16393f5007348e434"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "e29598b2af2431d68c2a444f8e528e2dff4de8bf"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "432a006f7ee4721f05ff469c91ae8ed79a0b957d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Text",
+            "desc": "888fe220e67f3a0d6660ee78bd8b89472e098acb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "08eb9679e6b8c23c95f7f4af5dcca1888d1aaa48"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Loading, Type=Text",
+            "desc": "50fd998392cdf74a4aee3b7c4175181e056aff35"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Icon",
+            "desc": "ce5925d4652140e811737aee207294d66ac332bf"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Text",
+            "desc": "7c04753ba01dc81946a5e08d21a2889386ebb573"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Icon",
+            "desc": "c80d5b839c1f808eff2608297c9a0b410f7771a6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Text + Icon",
+            "desc": "2d49efa6794b792b9ec609fd5f4b3f89d02a2ce8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Text",
+            "desc": "1a21629211c3f00ad0ef03b05b95911aecaf4805"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Text",
+            "desc": "609cf3715c2f370451285663cb1323d68c4aebc1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "259cd2e2479ccf5c3ee40eb23a5b6f60489b7835"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Text",
+            "desc": "3f8d9e102cf6f18e7937439d4e340eab96bfd149"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "f011013abfdd5b6f92adc5676c65dff4c9039dd0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Text",
+            "desc": "4bb5437fa2abed454839eea885c258fccdbdb191"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Text + Icon",
+            "desc": "cf1bf4d2dfdb03ef75e245cea98319c563b2586b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Text",
+            "desc": "904e64abfa12fc5276bb5d6a38fb71f541e0c3e0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Icon",
+            "desc": "3a92148b3475d1548625f176916e488a7294907a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "036aab26e8709d03911f50178205a81eb4df4a7a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "803a937177b48c23a6743244adf5653619d7d884"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "9fab796a6484ee8cd8c67426a9697380ae36a6d2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Icon",
+            "desc": "afc707de225d89f98101d68d43be40a7ecf29d40"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Default, Type=Text + Icon",
+            "desc": "c677fd779c5c14feadddf30202bf04fe6b993824"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Default, Type=Text + Icon",
+            "desc": "55e4e33e06ffe3782524b3dd7c55d3bd612a24cf"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Icon",
+            "desc": "b2f788894654e5a8fc8299f4b0f07ad255fbf7ee"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "f99438175232490080259e4cce5d9a149a3904b4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Text + Icon",
+            "desc": "0cb95507f83226e2520be4525a44165c63f00e59"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Disabled, Type=Text + Icon",
+            "desc": "423986d7c01be6622b33a3e0f871c5fa26cf54d1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Text + Icon",
+            "desc": "970e9d531c58636d4990a9f92f87d5af86f6722a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Text + Icon",
+            "desc": "1c9b0846840e7d639349f14f2d91926fe01f6ad0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "e019dae51569ed4339f95dfea107bfd1eb4e4b99"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "4cb9a5d8aca9577c84063fa85c261346c858d055"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "886390eaaced6b0db6368d02b766ed724e304fe4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "a881e6175359047f91137f76b7cecec3bdfc2366"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "89b4d39f147f8f02b0298c1291c7a534aab99e6d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Text",
+            "desc": "e533e1115bc669e0916612643db9cd4d063f9277"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "1cc771d25d03901795cf62b893e8e465b5a35871"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Text",
+            "desc": "172978558817e5d635346c5f8e4f88be6b1ecbee"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "cbb5518c04218387f36d3b09a96569bf47cb7801"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Text + Icon",
+            "desc": "6549c156fe0ecd4aecec04c938121e01c626b082"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Text",
+            "desc": "7cb9b5f05f7339b1f191901b5f2306a3926c25e5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Icon",
+            "desc": "db162bfaffd1fee75a385db9640c5fdeb8e6b4d5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "92bacfc40ad90e2f0eddd654dfcdf67aa74893c5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Icon",
+            "desc": "9188fe98929d82095214639a5fbe7c4d0be1269d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Text",
+            "desc": "943fb4ee7c47480e7d2b3df0b2657b854b6ac7f4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "8bbe1a0868aa25954b159ea5d45eaa27c897fca8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Text",
+            "desc": "085036bccf27234622cd15f21cc678aa263dcbba"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Text + Icon",
+            "desc": "08b25c06a6ac97dd5ac097a00ef551807fbd664a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Focused, Type=Icon",
+            "desc": "bb12b4b0a70b9098b182d97d3a9489db3c7f16c4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "bf5ca5be74262ee94b278e78e0a1421565b2c229"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "76240768a33b010319ee395d195d46ec433f75c5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text + Icon",
+            "desc": "79a8e4e1c42493a92c2b2408c4581b875ea1b2c0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Mouseover, Type=Icon",
+            "desc": "9172f4bd0f32f9a6ad7069666c90cf5851296347"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Mouseover, Type=Icon",
+            "desc": "165fb5fbc1a7bc54b263cf4a521d27d94958307f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "7966c17fb616eaa6fd59238f377af72af922f683"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "a7e10114e1d8fbf8ba5e3e03ef4a920153b6e93b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Icon",
+            "desc": "f0bece946f5b532c5697c2b7f3c9459a88754288"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Text",
+            "desc": "2be8df306836e511ef59de2c3cae4465aa4b7b60"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Text",
+            "desc": "cc00297273d6c3147094853a4a62cde9e881b3c6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "f939bbdf81fbbbd0ce53fb811916cdefdc13a3e9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Text",
+            "desc": "1c8068bac154d0b09715bbe21c0a8a50030a6b27"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "8b3f218bdcba0b2a425aa9e505e04108d7529cdb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Text",
+            "desc": "1ec28d00b1b5342f215a3300bf5f2deb20d7d848"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "5e2cc13ecc6782c09e39c46c1df29569a24d024e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Focused, Type=Icon",
+            "desc": "02ba5b70367b8073f63bb66aa4e7b1bdc39b6b60"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Default, Type=Text + Icon",
+            "desc": "5716990469a6698c9d69377788c65f6bd833e8aa"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "87a2923e5bbc8836d746b0aec9b52c2fc63b78f9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Default, Type=Text",
+            "desc": "a05d86fb48effaa24bb0371912772a4d34b7f32c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Icon",
+            "desc": "c99b1ce970c492c2a620fab0e8a6259f684e7423"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "46b69c0843d08ded87efc7af9d41f9492d5510b1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "4242bc3d91e469d69c69e6c798b2d1f86814ae7f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Text + Icon",
+            "desc": "60595856c2c207b02ef3c557b0e68e81462f4f05"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Text",
+            "desc": "af8f844e76105f0f1b0c9db0b87959c348858526"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Focused, Type=Icon",
+            "desc": "54c3ff9a396fa2483dbe966125107051c729f0a6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Text + Icon",
+            "desc": "7ecdcef1b6a889d19fbcb8ce7e4e7adea803b364"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Icon",
+            "desc": "157826b563bf11de2677dd272c7205b56c656393"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Text",
+            "desc": "475a9bbcb079645e0a20cfe82f68c8fdf54b4093"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Mouseover, Type=Text",
+            "desc": "d9db0e52b85eec83a5b46158adef570e1401beb2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "d79f10bc47f2685071456dae8febee322c0b6cfc"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Text",
+            "desc": "d7727ad6497bc0e9229979c4f62d6c2b2a015a5b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "3da6d16c658f8209996d982c91b31d9e0bb28150"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Text",
+            "desc": "0871236f61bc6d378185959bef170f2e9db1bcad"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "240da796d2d2a29f942822d2df9619a0ed44f74c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "ab027755aaf8baec38dcdfb4eacf597cef9b1ebf"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Focused, Type=Text",
+            "desc": "5c8fa6d0f9348499e874fed6b82b4fd8145193cb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "a3e7124004332a73843a53cd47060c9db595e37b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Icon",
+            "desc": "06ca2a8d3401e3debc1c994da68d7602ef2fa142"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "ed9c1f16904cb5dc8e7499bb5eea0c5661e73754"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Text",
+            "desc": "05caef953eb27818eeca97cd4dbc2ac21d3752f4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Icon",
+            "desc": "8617fc47be90887ea89318622ca8501f16135018"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Text + Icon",
+            "desc": "221bfcb0a7660a5858adc5bb2a825a400a22a977"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Text + Icon",
+            "desc": "02dde008cd97a7cba05c10a64f80f7d6d542d465"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Text",
+            "desc": "82eecae835d6c027d6f81bafc753caf5313c702a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "f789a62ec9d8c64f4bf83decdbb8e1719a3e89aa"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "d90abfdc0a808c2e9053a5726a2c2fe0636a5f0f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "394b909b3ed862e1eb28fff71fbf805a7ecd5f6a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Disabled, Type=Text",
+            "desc": "761941a83b2c69528cd046c8783b6dbcb73649d2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "bf2de65e0dccd6475838082fbdc1869565690499"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Text",
+            "desc": "52b73c8266ce783f0463279d574a7a50661df25b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Text + Icon",
+            "desc": "923e754183f58ec11be7d3f7fb00912655b600d6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Text",
+            "desc": "c7a2f03716a572928b67e67e67e653a87a5f71f2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "6d2d46d04733a3781e91c2c1e99427a738dd3475"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Mouseover, Type=Icon",
+            "desc": "4df6abdc152f9d9af0409420a84faa2b8b0d77d3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Text + Icon",
+            "desc": "db4a6980d1eb72a8525c88e4a0ff5017c759aed1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "a6982792bd5c7fecd32a353f7d9a0e680fb303e7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "fdcf452db95c3dea88e98d13b5d93ef527ce3f69"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "742d34c98d6543ceac0b42bf5f1521f1d0183a0f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "6c58bec22ea7dc22131a8c5130d1fe1e7eb37412"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Focused, Type=Icon",
+            "desc": "e7645262fe0971f36e1d2bac22f76dcac25f4d9e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Default, Type=Text + Icon",
+            "desc": "b0cc0a25c3e5f295d1440013a741d6f018827373"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Focused, Type=Icon",
+            "desc": "2fc1815a4e0979cb2913d76ccba38e10bd520a09"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "495b3666c6167d9c4bc9d55ef17f36bc8faa77f4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Icon",
+            "desc": "5b9d6ea5766892c8d037a36a560c3207c5dc7e22"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Icon",
+            "desc": "2202fef49c35ea3b266239f328540fb6c95cf502"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "f9efde0d0b6f3e16c558b44b6370b15049c38be6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Focused, Type=Icon",
+            "desc": "b2d19c70b994a83975e0b7844b46bfbff1973ab7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Focused, Type=Icon",
+            "desc": "1a488e80e8804a4e6cfbb972797e2645f49c9499"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Icon",
+            "desc": "c8ba31dfbe6c99ef634e449a382431315049e359"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Disabled, Type=Icon",
+            "desc": "b89c0e5660f3bad772d61ae06ff124381151a4ad"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Default, Type=Icon",
+            "desc": "7052af707d79660c5172eea1ec46053ad469e788"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Text + Icon",
+            "desc": "3a8830846b0320588f9795277565f40352802d43"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Disabled, Type=Text",
+            "desc": "811558a59831f02bcbb9c1f925c3a9b431afdec1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Text + Icon",
+            "desc": "622adaaab03570cff67711a17c6055355d100641"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Default, Type=Text",
+            "desc": "49dc32a56f1bf2639dc747ab06a3e2d782bd0e52"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Text",
+            "desc": "8a765d7702ec97c917e23476b9a10255de7834c6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Default, Type=Icon",
+            "desc": "5e80ca2f4d5ccf0a0e79742b1ea05f049f1f73ce"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Mouseover, Type=Icon",
+            "desc": "79fffcb399e509abf16dd8022a8693634c56f868"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Icon",
+            "desc": "32890969b3ba045d63eedcc7836064ad3f70a965"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Focused, Type=Text",
+            "desc": "8f98792102917e80248bdd8b109affb612d610ea"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "f465bce898aebd3a566d5e638f19cbdd1422951c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Icon",
+            "desc": "8539e80c27f9e6362f845d13db207c299ffd268c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "5744dfa39a8237c5d1edd8d482031cc842eb6701"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "428d8eb08ead3a5d27f5fa04ed44afa939f61a37"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Disabled, Type=Icon",
+            "desc": "3b510b8793022447955f6a76fe03bf2c6adb1d6f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Loading, Type=Text",
+            "desc": "61939afb63c29deea02222f41d903247459be152"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Text",
+            "desc": "032c754deb1453f1115fb4ccb87fee460fcc5e09"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Text",
+            "desc": "32d5ff185acd27cf3465d21eb070a9805b411a95"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Loading, Type=Icon",
+            "desc": "ead84ce4920f29ad267d80dd0c85ea86f16d23f0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "c48d7cfc2a1910d71693ddc730435709c50e2ad2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Mouseover, Type=Text",
+            "desc": "1b63deee050703787b2440b29de35b71445ad8ee"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Text + Icon",
+            "desc": "7061f018c4723d918617da8b630f057018a620df"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Mouseover, Type=Text + Icon",
+            "desc": "bad8f3fa9f5c479ce1abab73e99d54e6c84a5f16"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "e29adcae7d118609695fc30006645374fc6481bb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Default, Type=Text",
+            "desc": "91c348f11ae5a4261486a151d431d507491be67b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Text + Icon",
+            "desc": "b33bed8a979bc25732ac58a3826adb548b66aaf3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Focused, Type=Text + Icon",
+            "desc": "83e80ccfcb46121d7561e62312cdc3a149628d32"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "85daa66ce684024369b39a80116400668e66f54d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Mouseover, Type=Text",
+            "desc": "b7164c290da3381169fb5dc9961b75dd1cb672d5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Mouseover, Type=Icon",
+            "desc": "e637f0b591112175179e25db2ead92ac699a4df0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Default, Type=Text",
+            "desc": "53263689eb55f574ae8729f4667bdb1d0f0a9e9e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Text + Icon",
+            "desc": "dad77d3dab1855a6f94d5c5ebe8fb637850089ee"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Pressed / Selected, Type=Text",
+            "desc": "e71ba09e335adabb645ab4bcad793793236aea3d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Pressed / Selected, Type=Text",
+            "desc": "8e43c476e926cea416a135e4985d9877458a25c7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Default, Type=Text",
+            "desc": "b835091a723bc3da1b29ec52de51e8822edd02c9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Loading, Type=Text",
+            "desc": "5d6b651e4768cc73fcc3741650a423691ab0fe90"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Text + Icon",
+            "desc": "37c9682016cf64ffe6d30fbfac742a9ee8a9b89a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "439b2fb4a2058c23a87c6ac049706bf14d38eeb5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Text + Icon",
+            "desc": "3c98f96a77a51dbc1945fe5534136d3172f4bef0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Default, Type=Icon",
+            "desc": "2c0e4b9ece3426f7e4179b6722ef0ade432a5eef"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Pressed / Selected, Type=Text",
+            "desc": "ee0bd520781effac50af82bb223116930d177fdc"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=L, State=Loading, Type=Icon",
+            "desc": "54d0d60f4905469e3b1843b92b4a633ba37936bc"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Text",
+            "desc": "244b96d72e71d9f9f5ef036119028d36deb44c36"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Default, Type=Text + Icon",
+            "desc": "308b766fab21be755adb40b84ed3b24188d1db5c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Icon",
+            "desc": "3397b1bc04614fccbb95affa72f9f37c85e728f5"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Icon",
+            "desc": "2add5b2a422675acbae3e68618f46223bb40f9b3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Icon",
+            "desc": "0e1bfbb406af740c0a0f51fb79a14464af245888"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Text",
+            "desc": "b3549ee66205ecc4ab50fab48a3ad774a9ad07a7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Default, Type=Icon",
+            "desc": "bf548695481889766aeb066f431907a672109f4d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Text",
+            "desc": "b782f23bd47048c92229c2714e4ccd2d94e17c95"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=L, State=Disabled, Type=Icon",
+            "desc": "349433ed1e509c218337c87eea0a4c2e12ac1f5d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=L, State=Pressed / Selected, Type=Icon",
+            "desc": "51bb256395fd748970f42c67a720af25215ad86a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Disabled, Type=Text",
+            "desc": "c3a7dc93553242ce0eb40057b387ba338f879e69"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=L, State=Loading, Type=Text",
+            "desc": "52506288792605e9f1297929328e6ecd7d0b8407"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Text",
+            "desc": "b46353d347ec5c36b9a401bf28603f20928a73ef"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Mouseover, Type=Text",
+            "desc": "b34aa8cc067b46e1594542aeba798e60d52a50e1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Focused, Type=Text",
+            "desc": "2d646c3e388589832c00cf008ed15c17bf02602d"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Text",
+            "desc": "36bb3c517217da99eeb8843a950c80a64da2ce12"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=L, State=Loading, Type=Text + Icon",
+            "desc": "8c16996c830cc4f5811a0a3aad936e176132c480"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Disabled, Type=Icon",
+            "desc": "a8d1282f061cd55d25c0d6ed90d82e362af15eb2"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Text + Icon",
+            "desc": "788e5bcd89d5086112482702dd47b7b7d4613dd1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Mouseover, Type=Icon",
+            "desc": "225c8346ad25fbe33ed1f04d87f16c7ca6078b75"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "4acb5af788e62b1061a228de7ad3c6991324e949"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "882fd69b966d9fa0649e6e7730b6deba39cfd01f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Mouseover, Type=Icon",
+            "desc": "69f4d199ced3ea3b2c8dafd59b87b383702fa3a1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "16631ac795ceaa8ebb6e300bb25b80cb21193bb7"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Pressed / Selected, Type=Icon",
+            "desc": "5c79dcadc39db2d2960d259ffec3004f963d01af"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Disabled, Type=Icon",
+            "desc": "cc3b97f7812a1d26ae71948443997cd4e3116f0b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Disabled, Type=Icon",
+            "desc": "c13911c460b9acdeb1fb14cbc73a667dcd9063d0"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Disabled, Type=Icon",
+            "desc": "9648f2792bbeb6b6dda4d7b18b4653376136a5e1"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Icon",
+            "desc": "8c9563b6bf5a46b956fa4c9516792d6e6e786a9a"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=M, State=Loading, Type=Text",
+            "desc": "4a61a26702f3226865e98b007d3d25bcce9753a8"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Text",
+            "desc": "b99f152d95611e24c6f76675efc66098a32c274c"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Text",
+            "desc": "b48f0ff8d1ed48fd36fabadc1cd2e4e8f121f2e3"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Text",
+            "desc": "e405742990d2621bc0558f50732390efc43bd28b"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=M, State=Loading, Type=Icon",
+            "desc": "ba1281a945f2d398e68cb3921be8d55daa9dd9fc"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=M, State=Loading, Type=Icon",
+            "desc": "4c034b680175574d28ff4e567ba1a44ffd0814f4"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Loading, Type=Icon",
+            "desc": "e6b0d01e5321e185b6df57b89175336302b59315"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=M, State=Loading, Type=Icon",
+            "desc": "590d0069aeab70cb6249cc14212fa31cd4d97bf6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=M, State=Loading, Type=Icon",
+            "desc": "403d22e952379298de59741c86add86adaf6ff81"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Focused, Type=Icon",
+            "desc": "ddb0e8a4f78394b737c18e4500c4cd80793b16ab"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Default, Type=Icon",
+            "desc": "d01fe6ed3d5627b006f5a6e26b51e20ab3ced175"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Mouseover, Type=Icon",
+            "desc": "2af72e78733d1948da81b7ffe330a83263742f4e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Mouseover, Type=Icon",
+            "desc": "b3ed64ba8bd752e3138c7d72c6336d6e077dcccb"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Mouseover, Type=Icon",
+            "desc": "817ce17f593d535e9e08ddb1399175a6f94d2630"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "5ec09a9d4f35e6e0a1a2d9b95f08ee9bca924fb6"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Pressed / Selected, Type=Icon",
+            "desc": "8bcb92f9eff148af7aac19f2904cbec977ddc3de"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Success, Size=S, State=Disabled, Type=Icon",
+            "desc": "8e57732a31f1aa2afdecbe33a539bffc6f6fc7fe"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Danger, Size=S, State=Disabled, Type=Icon",
+            "desc": "f4c725bf475399c19979174402ddb7f3b4107ed9"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Black, Size=S, State=Disabled, Type=Icon",
+            "desc": "58cb99d5b369b7f3c6f02cb9bf8cd516cc1eed5e"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary (Default), Size=S, State=Loading, Type=Text",
+            "desc": "c41661501424357145ec471d8d1de82541cc508f"
+          },
+          {
+            "type": "new",
+            "title": "Variant=Primary Warning, Size=S, State=Loading, Type=Text",
+            "desc": "b7c719fcc4c02c1790d959056c5e093d05c57802"
+          },
+          {
+            "type": "new",
+            "title": "Type=Information",
+            "desc": "abd1759f7e2d8e25624c7b670afd8eb801e4cf13"
+          },
+          {
+            "type": "new",
+            "title": "Type=Warning",
+            "desc": "96ebcf7739a25ae86ce4ff5a925e22353e739074"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Apps",
+            "desc": "3541d3ac5c9c15e78d1d629f28a5623c4f172569"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Betslip",
+            "desc": "44b4130adb65e68f0de1263fc57d55baf65a45ef"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "a27c2c804d3c7179ee7e0d444dd16635665b8fe6"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/XS",
+            "desc": "7b7c5da7fda7b7976e9df2114142d77e7d0c7f20"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Marketing",
+            "desc": "ded5744681fa7e23c4c2f62de6f98b14e0fd31f3"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Default",
+            "desc": "e0a8094074c7d0a251c043cef6a618ed560b8b11"
+          },
+          {
+            "type": "new",
+            "title": "Type=Image, Notification=On, State=Hover",
+            "desc": "652f4b0702940407e461ccb2e0878f05e0cc802a"
+          },
+          {
+            "type": "new",
+            "title": "Type=Initials, Notification=Off, State=Hover",
+            "desc": "5065f676fe35f46a2820d9df4623b830817a7b81"
+          },
+          {
+            "type": "new",
+            "title": "Type=Initials, Notification=On, State=Default",
+            "desc": "1f8a873a199e25540cc3e2488ccfd8442d639627"
+          },
+          {
+            "type": "new",
+            "title": "Type=User, Notification=Off, State=Hover",
+            "desc": "611cab6a3c2cff6920c50747dfd0d60365d0b4cc"
+          },
+          {
+            "type": "new",
+            "title": "Type=Image, Notification=On, State=Default",
+            "desc": "3791186c187b63397bde66eaa73df93c10b295c9"
+          },
+          {
+            "type": "new",
+            "title": "Type=Image, Notification=Off, State=Hover",
+            "desc": "059fb40f2402ae76f270b34bbde72793f1e795b1"
+          },
+          {
+            "type": "new",
+            "title": "Type=User, Notification=On, State=Default",
+            "desc": "f2a7134b45eb172693893066b1431dfa3f64afdc"
+          },
+          {
+            "type": "new",
+            "title": "Type=Initials, Notification=On, State=Hover",
+            "desc": "1b41585d074b0e612c970c7a24dd5041c9ab6e2c"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 63 new text style token(s) to global stylesheet.",
+      "Developer: Review color token updates in global stylesheet.",
+      "Developer: 538 new component(s) in Figma — check Dev Mode for specs.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.03.25",
     "date": "2026-08-03",
     "ticket": "",
