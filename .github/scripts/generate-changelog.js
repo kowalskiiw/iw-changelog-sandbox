@@ -12,6 +12,10 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
 
@@ -21,7 +25,9 @@ const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
 const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
-const VARIABLES_PATH = 'variables.json';
+// Look for variables.json next to this script first, then in the working dir,
+// so it's found regardless of where the workflow runs `node` from.
+const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json'];
 
 // Bumped whenever the component snapshot shape/value representation changes, so
 // a format migration is adopted silently instead of reporting every layer.
@@ -219,17 +225,20 @@ function collectVisualMap(root) {
 // Preferred: committed variables.json exported from Figma via the Desktop Bridge
 // (any plan). Fallback: the Enterprise-only Variables REST API.
 async function loadVariables(snapshot) {
-  if (existsSync(VARIABLES_PATH)) {
+  const varsPath = VARIABLES_CANDIDATES.find(p => existsSync(p));
+  if (varsPath) {
     try {
-      const vj = JSON.parse(readFileSync(VARIABLES_PATH, 'utf8'));
+      const vj = JSON.parse(readFileSync(varsPath, 'utf8'));
       for (const [hex, name] of Object.entries(vj.colorTokens ?? {})) {
         (COLOR_TOKENS_BY_HEX[hex] ??= []).push({ name, collection: 'Color Styles' });
       }
-      console.log(`   Loaded ${VARIABLES_PATH} (${Object.keys(vj.colorTokens ?? {}).length} colour tokens)`);
+      console.log(`   Loaded ${varsPath} (${Object.keys(vj.colorTokens ?? {}).length} colour tokens)`);
       return; // file wins; skip REST (which 403s on non-Enterprise plans)
     } catch (e) {
-      console.warn(`   ${VARIABLES_PATH} unreadable, falling back to REST:`, e.message);
+      console.warn(`   ${varsPath} unreadable, falling back to REST:`, e.message);
     }
+  } else {
+    console.warn('   variables.json not found next to script or in working dir.');
   }
 
   // Fallback: REST Variables API (Enterprise only)
@@ -625,7 +634,7 @@ Return ONLY valid JSON, no markdown, no explanation:
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
-        max_tokens: 4096,
+        max_tokens: 8192,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
