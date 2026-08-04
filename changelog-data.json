@@ -1,5 +1,449 @@
 [
   {
+    "version": "v2026.08.04.43",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Title/M/Regular",
+            "desc": "Mid-size title style at 16px/24px line-height, regular weight. Use for section titles or UI labels that need moderate prominence without bold emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Regular",
+            "desc": "Standard body copy at 14px/20px line-height, regular weight. Default reading style for match cards, descriptions, and general UI text."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Desktop",
+            "desc": "Desktop H2 headline at 32px/40px line-height, medium weight. Use for major section headings on desktop layouts."
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Regular",
+            "desc": "Large body text at 16px/24px line-height, regular weight. Use for prominent body copy where slightly increased size aids readability."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Desktop",
+            "desc": "Desktop H2 headline at 32px/40px line-height, regular weight. Lighter-weight alternative to H2/Medium/Desktop for section headings."
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Regular",
+            "desc": "Large overline at 14px/20px, regular weight with 0.7px letter-spacing. Use for category labels or eyebrow text above headlines."
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Underline",
+            "desc": "14px/20px medium-weight body text with underline. Use for inline text links or interactive labels within body copy."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Mobile",
+            "desc": "Mobile H3 headline at 28px/36px line-height, regular weight. Use for sub-section headings on mobile layouts."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Mobile",
+            "desc": "Mobile H1 headline at 36px/44px line-height, medium weight. Primary page heading for mobile, with added weight for emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Medium",
+            "desc": "Extra-large body text at 20px/28px, medium weight. Use for prominent UI text or lead paragraphs that need added emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Mobile",
+            "desc": "Mobile H4 headline at 24px/32px, regular weight. Use for subsection or card-level headings on mobile."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Mobile",
+            "desc": "Mobile H5 headline at 20px/28px, regular weight. Smallest headline tier for mobile, suitable for widget or component titles."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Desktop",
+            "desc": "Desktop H4 headline at 24px/32px, regular weight. Use for subsection or card-level headings on desktop."
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Medium",
+            "desc": "Medium overline at 12px/16px, medium weight with 0.6px letter-spacing. Use for compact category labels or metadata tags."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Desktop",
+            "desc": "Desktop H1 headline at 40px/48px, regular weight. Primary page heading for desktop in the lighter-weight variant."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Desktop",
+            "desc": "Desktop H3 headline at 28px/36px, regular weight. Use for sub-section headings on desktop layouts."
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Underline",
+            "desc": "Extra-large body text at 20px/28px, medium weight with underline. Use for large prominent inline links or interactive text."
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Medium",
+            "desc": "Mid-size title at 16px/24px, medium weight. Use for UI labels or section titles requiring moderate visual emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Medium",
+            "desc": "Small title at 14px/20px, medium weight. Use for compact labels, tab names, or minor section headings."
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Underline",
+            "desc": "Small title at 14px/20px, medium weight with underline. Use for small interactive text links or navigational labels."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Desktop",
+            "desc": "Desktop H1 headline at 40px/48px, medium weight. Primary page heading for desktop with stronger visual presence."
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Medium",
+            "desc": "Large overline at 14px/20px, medium weight with 0.7px letter-spacing. Use for prominent category labels or eyebrow text above headlines."
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Medium",
+            "desc": "Standard body text at 14px/20px, medium weight. Use where body copy needs added emphasis without changing size."
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Medium",
+            "desc": "Large title at 18px/24px, medium weight. Use for prominent UI titles, modal headings, or navigation items."
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Regular",
+            "desc": "Medium overline at 12px/16px, regular weight with 0.6px letter-spacing. Lighter-weight companion to Overline/M/Medium for subtle labels."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Mobile",
+            "desc": "Mobile H3 headline at 28px/36px, medium weight. Use for sub-section headings on mobile requiring added weight."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Desktop",
+            "desc": "Desktop H5 headline at 20px/28px, medium weight. Smallest desktop headline tier with added weight for component or widget titles."
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Underline",
+            "desc": "Mid-size title at 16px/24px, medium weight with underline. Use for interactive title-level text links in the UI."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Mobile",
+            "desc": "Mobile H2 headline at 32px/40px, medium weight. Use for major section headings on mobile with stronger emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Desktop",
+            "desc": "Desktop-only Roboto Condensed style at 48px/48px, medium weight. Exclusively for promotion teasers in the Club section."
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Regular",
+            "desc": "Small title at 14px/20px, regular weight. Lightest title tier for low-emphasis labels, tags, or minor UI headings."
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Regular",
+            "desc": "Extra-large body text at 20px/28px, regular weight. Use for lead paragraphs or prominent descriptive text."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Mobile",
+            "desc": "Mobile-only Roboto Condensed style at 28px/36px, medium weight. Exclusively for promotion teasers in the Club section on mobile."
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Underline",
+            "desc": "Large title at 18px/24px, medium weight with underline. Use for interactive large-title text links or prominent navigational labels."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Mobile",
+            "desc": "Mobile H1 headline at 36px/44px, regular weight. Primary page heading for mobile in the lighter-weight variant."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Desktop",
+            "desc": "Desktop H3 headline at 28px/36px, medium weight. Use for sub-section headings on desktop requiring added visual weight."
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Regular",
+            "desc": "Small body text at 12px/16px, regular weight. Use for secondary metadata, timestamps, or supporting UI text."
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Medium",
+            "desc": "Small body text at 12px/16px, medium weight. Use for compact labels or small UI text requiring slight emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Helpers/H1",
+            "desc": "Used for text within project thumbnails only. Not intended for any product UI surface."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Mobile",
+            "desc": "Mobile H2 headline at 32px/40px, regular weight. Use for major section headings on mobile in the lighter-weight variant."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Mobile",
+            "desc": "Mobile H4 headline at 24px/32px, medium weight. Use for card or subsection headings on mobile with added emphasis."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Desktop",
+            "desc": "Desktop H5 headline at 20px/28px, regular weight. Lightest desktop headline tier for widget or component-level titles."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Desktop",
+            "desc": "Desktop H4 headline at 24px/32px, medium weight. Use for subsection or card headings on desktop with added weight."
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Regular",
+            "desc": "Large title at 18px/24px, regular weight. Use for prominent but understated UI titles or modal headings."
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Underline",
+            "desc": "Small body text at 12px/16px, medium weight with underline. Use for small inline text links or compact interactive labels."
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Medium",
+            "desc": "Large body text at 16px/24px, medium weight. Use for prominent body copy that needs added emphasis at a larger size."
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Underline",
+            "desc": "Large body text at 16px/24px, medium weight with underline. Use for prominent inline links within large body copy."
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Mobile",
+            "desc": "Mobile H5 headline at 20px/28px, medium weight. Smallest mobile headline tier with added weight for component titles."
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/M",
+            "desc": "A slightly more restrained hero size at 60px/60px, regular weight. For prominent page or section openers needing presence alongside other content, or as Display L on narrower desktop layouts."
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/L",
+            "desc": "The largest type in the scale at 72px/72px, regular weight. For single high-impact moments — hero headlines, splash sections — where one short line must dominate. Desktop only."
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/S",
+            "desc": "Entry point to the display range at 48px/48px, medium weight. For feature headers and campaign banners that need to feel larger than a headline without going full hero."
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/M",
+            "desc": "A slightly more restrained hero size at 60px/60px, medium weight. For prominent page or section openers alongside other content, or as Display L on narrower desktop layouts."
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/L",
+            "desc": "The largest type in the scale at 72px/72px, medium weight. For single high-impact moments — hero headlines, splash sections — where one short line must dominate. Desktop only."
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/S",
+            "desc": "Entry point to the display range at 48px/48px, regular weight. For feature headers and campaign banners needing more presence than a headline without going full hero."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS/Regular",
+            "desc": "Use primarily on help text under form fields and as secondary supporting text. Token: font.body.small. Use sparingly."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS/Medium",
+            "desc": "Medium-weight extra-small text at 10px/14px. Use primarily on help text under form fields and secondary supporting text. Token: font.body.small. Use sparingly."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS/Underline",
+            "desc": "Underlined extra-small text at 10px/14px, medium weight. Use primarily on help text under form fields and secondary supporting text. Token: font.body.small. Use sparingly."
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Shadows/Extra Small",
+            "desc": "The lowest elevation — a tight, barely-there shadow. For elements needing just slight lift: input fields, tags, or subtle dividers between surfaces."
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Base",
+            "desc": "Default resting elevation for most raised surfaces — standard cards, list items, and containers. The everyday shadow when a component just needs to feel grounded."
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Small",
+            "desc": "The lightest frost at radius 10. Gently softens background content while keeping it recognisable — for subtle glass effects on floating bars, sticky headers, or chips over content."
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Medium",
+            "desc": "A step up for interactive or temporarily raised surfaces — hover and active card states, dropdowns, and popovers. Signals an element is above its neighbours."
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Medium",
+            "desc": "Moderate blur at radius 20. Noticeably obscures the background without fully hiding it — suited to popovers, dropdowns, and panels needing depth with a frosted feel."
+          },
+          {
+            "type": "new",
+            "title": "Shadows/XLarge",
+            "desc": "The highest elevation. Reserved for the most prominent overlays — modals, dialogs, and bottom sheets — where a strong, soft shadow separates them from everything behind."
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XLarge",
+            "desc": "Heavy blur at radius 100. Reduces background to soft colour and shape — for full-screen scrims and modal backdrops pulling focus firmly onto the foreground."
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XXLarge",
+            "desc": "The strongest blur at radius 120 — the background becomes an abstract wash of colour. Reserved for immersive overlays, onboarding takeovers, or loading states where background content should disappear."
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Large",
+            "desc": "For floating overlays clearly detaching from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper to read as sitting on top of content below."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Badges/Account status",
+            "desc": "Badge component with 4 variants for displaying a user's account status in the UI."
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XS",
+            "desc": "Extra-small avatar component with 12 variants for representing users or accounts in compact UI contexts."
+          },
+          {
+            "type": "new",
+            "title": "Alerts Default (Inline)",
+            "desc": "Inline alert component with 16 variants for surfacing contextual feedback, warnings, or informational messages within page content."
+          },
+          {
+            "type": "new",
+            "title": "Spacer",
+            "desc": "Utility spacing component with 84 variants for maintaining consistent layout spacing between elements across screens."
+          },
+          {
+            "type": "new",
+            "title": "Betslip (Inline)",
+            "desc": "Inline betslip component with 2 variants for embedding bet selection or summary directly within page layouts."
+          },
+          {
+            "type": "new",
+            "title": "Secondary Buttons",
+            "desc": "Secondary button component for use on non-solid backgrounds, such as images, where a standard solid button would clash."
+          },
+          {
+            "type": "new",
+            "title": "Primary Buttons",
+            "desc": "Primary call-to-action button component with 270 variants covering states, sizes, and configurations across the UI."
+          },
+          {
+            "type": "new",
+            "title": "Banner",
+            "desc": "Banner component with 4 variants for displaying promotional or informational messages prominently across page sections."
+          },
+          {
+            "type": "new",
+            "title": "Badges/Apps",
+            "desc": "App store badge component for linking to or promoting mobile application downloads."
+          },
+          {
+            "type": "new",
+            "title": "Badge/Betslip",
+            "desc": "Betslip badge used on tablet and mobile to indicate betslip count or status in navigation."
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "Specialised casino avatar variant for representing bonus-related user states or promotions."
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/XS",
+            "desc": "Extra-small casino-specific avatar component for compact representations in casino UI contexts."
+          },
+          {
+            "type": "new",
+            "title": "Badges/Marketing",
+            "desc": "Marketing badge component for highlighting promotional offers, new features, or campaign labels in the UI."
+          },
+          {
+            "type": "new",
+            "title": "Badge/Default",
+            "desc": "General-purpose default badge for labelling or flagging items with a count, status, or short text."
+          },
+          {
+            "type": "new",
+            "title": "Avatar/SM",
+            "desc": "Small avatar component with 12 variants for representing users or accounts in moderately compact UI contexts."
+          },
+          {
+            "type": "new",
+            "title": "Badges/Casino",
+            "desc": "Casino-specific badge component with 16 variants for labelling game types, states, or promotional attributes."
+          },
+          {
+            "type": "new",
+            "title": "Avatar/MD",
+            "desc": "Medium avatar component with 12 variants for representing users or accounts at a standard display size."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Map all new text styles to CSS custom properties following the existing convention (e.g. Body/XS/* → --body-xs-size, --body-xs-line-height) and register Body/XS token as font.body.small per the Figma spec before using in form field help text.",
+      "Developer: Integrate new Shadows/* and Background Blur/* effect styles as CSS tokens (e.g. --shadow-extra-small, --blur-small) and apply to existing components — input fields for Shadows/Extra Small, modals for Shadows/XLarge, sticky headers for Background Blur/Small.",
+      "Designer: Audit all betting UI screens (match cards, odds displays, account screens, club/promotions teasers) across DE, AT, ES, SE, CY markets to replace any ad-hoc type usage with the appropriate new text styles, particularly Headlines/Club/* which is restricted to Club section promotion teasers only.",
+      "Tester: Verify Headlines/Club/Desktop and Headlines/Club/Mobile (Roboto Condensed) render correctly only within Club section promotion teasers, and confirm Display/Regular/L and Display/Medium/L are absent from mobile breakpoints as per their desktop-only specification."
+    ]
+  },
+  {
     "version": "v2026.08.04.42",
     "date": "2026-08-04",
     "ticket": "",
