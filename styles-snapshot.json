@@ -539,6 +539,36 @@
         "letterSpacing": 0
       },
       "description": "The entry point to the display range, bridging into the Headline scale below it. For feature headers, campaign banners, and emphasis moments that need to feel larger than a standard headline without going full hero."
+    },
+    "Body/XS/Regular": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 400,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
+    },
+    "Body/XS/Medium": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
+    },
+    "Body/XS/Underline": {
+      "value": {
+        "fontSize": 10,
+        "lineHeight": 14,
+        "fontWeight": 500,
+        "fontFamily": "Roboto",
+        "letterSpacing": 0
+      },
+      "description": "Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
     }
   },
   "fill": {
@@ -1577,6 +1607,39 @@
         ],
         "(root)": [
           "fill=#BB1B1B;strokeWeight=1;radius=2"
+        ]
+      },
+      "fmt": 3
+    },
+    "Avatar/MD": {
+      "count": 12,
+      "layers": {
+        ".AvatarMedium": [
+          "strokeWeight=1;radius=800"
+        ],
+        ".AvatarMedium / Background": [
+          "fill=#ECC200;stroke=#997E00;strokeWeight=1"
+        ],
+        ".AvatarMedium / image": [
+          "fill=img:d6a3cdfbed6f3a222b4282d8585b4a61b2ad13c5;strokeWeight=1"
+        ],
+        ".AvatarMedium / Text": [
+          "fill=#232323;strokeWeight=1"
+        ],
+        ".AvatarMedium / iw_sb_user_locked": [
+          "strokeWeight=1"
+        ],
+        ".AvatarMedium / iw_sb_user_locked / Vector": [
+          "fill=#232323;strokeWeight=1"
+        ],
+        ".AvatarMedium / .Notifications": [
+          "fill=#4DCE69;strokeWeight=1.375;radius=150"
+        ],
+        ".AvatarMedium / .Notifications / Text": [
+          "fill=#FFFFFF;strokeWeight=1.375"
+        ],
+        "(root)": [
+          "strokeWeight=1"
         ]
       },
       "fmt": 3

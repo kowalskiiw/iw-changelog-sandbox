@@ -1,5 +1,49 @@
 [
   {
+    "version": "v2026.08.04.39",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Body/XS/Regular",
+            "desc": "Use primarily for help text under form fields and secondary supporting text. Use sparingly. Token: font.body.small · 10px / lh 14px / w400."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS/Medium",
+            "desc": "Use primarily for help text under form fields and secondary supporting text. Use sparingly. Token: font.body.small · 10px / lh 14px / w500."
+          },
+          {
+            "type": "new",
+            "title": "Body/XS/Underline",
+            "desc": "Use primarily for help text under form fields and secondary supporting text. Use sparingly. Token: font.body.small · 10px / lh 14px / w500 + underline."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Avatar/MD",
+            "desc": "Medium-sized avatar component with 12 variants, used to represent users or entities across account and navigation UI."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Implement CSS tokens --body-xs-size (10px) and --body-xs-line-height (14px) mapped to font.body.small, covering Regular (w400), Medium (w500), and Underline (w500) variants.",
+      "Designer: Apply Body/XS styles only to form field help text and secondary supporting text — avoid using them as primary body copy across DE, AT, ES, SE, and CY layouts.",
+      "Developer: Integrate the Avatar/MD component (12 variants) into account and navigation screens, ensuring all variant states are mapped to the correct props in React.",
+      "Tester: Verify Body/XS text renders at exactly 10px with 14px line height on form screens across all markets, and confirm Avatar/MD renders correctly across all 12 variants at breakpoints."
+    ]
+  },
+  {
     "version": "v2026.08.04.38",
     "date": "2026-08-04",
     "ticket": "",
