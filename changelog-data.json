@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.04.35",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications — fill: #1C652C → #2EA949"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / Background — fill: #FFD200 → #ECC200, border color: #CCA800 → #997E00 · .AvatarSmall / .Notifications — fill: #1C652C → #2EA949"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications — fill: #1C652C → #2EA949"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification badge background token from #1C652C to #2EA949 wherever it maps to Avatar/XS, Avatar/SM, and Badge/Default notification fill values in CSS.",
+      "Developer: Update Avatar/SM background fill token to #ECC200 and border-color token to #997E00, checking all React components that render the SM avatar variant.",
+      "Designer: Verify Avatar/XS, Avatar/SM, and Badge/Default notification badge colors render as #2EA949 across all markets (DE, AT, ES, SE, CY) in Figma mockups.",
+      "Tester: Visually verify notification badges on Avatar/XS, Avatar/SM, and Badge/Default components across account screens and match cards to confirm the green fill shift from #1C652C to #2EA949 is applied correctly."
+    ]
+  },
+  {
     "version": "v2026.08.03.33",
     "date": "2026-08-03",
     "ticket": "",

@@ -1252,7 +1252,7 @@
           "fill=#232323;strokeWeight=1"
         ],
         ".AvatarXS / .Notifications": [
-          "fill=#1C652C;strokeWeight=0.75;radius=75"
+          "fill=#2EA949;strokeWeight=0.75;radius=75"
         ],
         ".AvatarXS / .Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=0.75"
@@ -1270,7 +1270,7 @@
           "strokeWeight=1;radius=800"
         ],
         ".AvatarSmall / Background": [
-          "fill=#FFD200;stroke=#CCA800;strokeWeight=1"
+          "fill=#ECC200;stroke=#997E00;strokeWeight=1"
         ],
         ".AvatarSmall / image": [
           "fill=img:d6a3cdfbed6f3a222b4282d8585b4a61b2ad13c5;strokeWeight=1"
@@ -1285,7 +1285,7 @@
           "fill=#232323;strokeWeight=1"
         ],
         ".AvatarSmall / .Notifications": [
-          "fill=#1C652C;strokeWeight=0.75;radius=75"
+          "fill=#2EA949;strokeWeight=0.75;radius=75"
         ],
         ".AvatarSmall / .Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=0.75"
@@ -1558,7 +1558,7 @@
       "count": 1,
       "layers": {
         ".Notifications": [
-          "fill=#1C652C;strokeWeight=1.375;radius=150"
+          "fill=#2EA949;strokeWeight=1.375;radius=150"
         ],
         ".Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=1.375"
