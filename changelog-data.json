@@ -1,5 +1,64 @@
 [
   {
+    "version": "v2026.08.04.41",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Badges/Account status",
+            "desc": "alerts/warning-filled / Vector — fill: #BB1B1B → #995600 · Text — fill: #BB1B1B → #995600 · (root) — fill: #FDF3F3 → #FFF8EF, border color: #F1B4B4 → #FFD49B"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications — fill: #4DCE69 → #2EA949"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / .Notifications — fill: #4DCE69 → #2EA949"
+          },
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Used on non-solid backgrounds, for example images. Text and border color updated #939393 → #000000; .absolute-ring layer added."
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "Primary button now reflects a disabled-style appearance. Root fill #333333 → #D3D3D3; icon and text fills #FFFFFF → #939393."
+          },
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Banner shifted from warning to success state. Background #FDF3F3 → #F0FBF3, border #F1B4B4 → #A4E6B3, text #2B0808 → #0B2811; warning icon replaced with checkmark-filled-1."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications — fill: #4DCE69 → #2EA949"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": ".AvatarMedium / .Notifications — fill: #4DCE69 → #2EA949"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update account status warning badge token values — replace red-based fills (#BB1B1B) and background (#FDF3F3) with amber equivalents (#995600, #FFF8EF, border #FFD49B) wherever the warning-filled badge is rendered in account screens.",
+      "Developer: Update Secondary Button styles to use #000000 for text and border color (was #939393) and integrate the new .absolute-ring layer; confirm this renders correctly on image and non-solid backgrounds per component spec.",
+      "Designer: Verify the Primary Button change (fill #333333 → #D3D3D3, icons/text → #939393) is intentionally scoped to a disabled or ghost variant and does not affect the default active Primary Button across DE, AT, ES, SE, and CY layouts.",
+      "Tester: Validate Banner component across all markets — confirm the warning icon is fully replaced by checkmark-filled-1, background and border reflect the new green success palette (#F0FBF3 / #A4E6B3), and no red warning styling persists."
+    ]
+  },
+  {
     "version": "v2026.08.04.40",
     "date": "2026-08-04",
     "ticket": "",
