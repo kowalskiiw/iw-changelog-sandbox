@@ -1305,7 +1305,7 @@
           "strokeWeight=1"
         ],
         "Container / alerts/checkmark-filled-1 / Vector": [
-          "fill=Accent Light Mode/Default Green/600;strokeWeight=1"
+          "fill=Accent Light Mode/Default Green/500;strokeWeight=1"
         ]
       },
       "fmt": 5
@@ -1409,9 +1409,9 @@
           "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=2",
           "fill=Accent Light Mode/Magenta/600;strokeWeight=1;radius=2",
           "fill=Accent Light Mode/Orange/500;strokeWeight=1;radius=2",
-          "fill=Accent Light Mode/Purple/Default/200;strokeWeight=1;radius=2",
+          "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2",
           "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2",
-          "fill=Yellow/300;strokeWeight=1;radius=2"
+          "fill=Yellow/500;strokeWeight=1;radius=2"
         ]
       },
       "fmt": 5

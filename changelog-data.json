@@ -1,5 +1,34 @@
 [
   {
+    "version": "v2026.08.04.50",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Container / alerts/checkmark-filled-1 / Vector — fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500"
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Casino",
+            "desc": "Badge fills updated: Purple/Default/200 → Purple/Default/500 and Yellow/300 → Yellow/500. A badge shows numeric values like tallies and scores. Bold variant is experimental and unconfirmed for Team24+6."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the checkmark icon fill token from Accent Light Mode/Default Green/600 to Accent Light Mode/Default Green/500 wherever the Banner alert checkmark is rendered, and verify Banner max-width constraints match per page type (Sports/Rest: 1299px, Live: 1451px, Magazine: 1232px).",
+      "Developer: Update Badges/Casino fill tokens from Purple/Default/200 to Purple/Default/500 and Yellow/300 to Yellow/500 in all casino badge implementations; treat any Bold variant usage as experimental pending Team24+6 confirmation.",
+      "Designer: Verify the darker Purple/500 and Yellow/500 badge fills meet contrast requirements in both light and dark contexts across DE, AT, ES, SE, and CY market layouts.",
+      "Tester: Visually verify the Banner checkmark icon and Casino badge colours reflect the updated tokens on Sports, Live, and Casino pages across all supported markets."
+    ]
+  },
+  {
     "version": "v2026.08.04.49",
     "date": "2026-08-04",
     "ticket": "",
