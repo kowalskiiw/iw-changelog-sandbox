@@ -653,7 +653,7 @@
           "fill=Neutral/Grey/Dark/900;strokeWeight=1"
         ],
         ".AvatarXS / .Notifications": [
-          "fill=Accent Light Mode/Default Green/600;strokeWeight=0.75;radius=75"
+          "fill=Accent Light Mode/Default Green/400;strokeWeight=0.75;radius=75"
         ],
         ".AvatarXS / .Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=0.75"
@@ -929,7 +929,7 @@
       "count": 1,
       "layers": {
         ".Notifications": [
-          "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150"
+          "fill=Accent Light Mode/Default Green/400;strokeWeight=1.375;radius=150"
         ],
         ".Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=1.375"
@@ -962,7 +962,7 @@
           "fill=Neutral/Grey/Dark/900;strokeWeight=1"
         ],
         ".AvatarSmall / .Notifications": [
-          "fill=Accent Light Mode/Default Green/600;strokeWeight=0.75;radius=75"
+          "fill=Accent Light Mode/Default Green/400;strokeWeight=0.75;radius=75"
         ],
         ".AvatarSmall / .Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=0.75"
@@ -1007,7 +1007,7 @@
           "fill=Neutral/Grey/Dark/900;strokeWeight=1"
         ],
         ".AvatarMedium / .Notifications": [
-          "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150"
+          "fill=Accent Light Mode/Default Green/400;strokeWeight=1.375;radius=150"
         ],
         ".AvatarMedium / .Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=1.375"

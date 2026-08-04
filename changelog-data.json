@@ -1,5 +1,43 @@
 [
   {
+    "version": "v2026.08.04.44",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Extra-small avatar component with notification indicator. Notification badge fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400, resulting in a lighter green dot."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default badge component used for notification counts. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400, producing a lighter green background."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar component with notification indicator. Notification badge fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400, resulting in a lighter green dot."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Medium avatar component with notification indicator. Notification badge fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400, resulting in a lighter green dot."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification indicator token from --accent-default-green-600 to --accent-default-green-400 wherever Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default are rendered in React components.",
+      "Designer: Verify the lighter green (Default Green/400) meets contrast requirements on all backgrounds where notification badges appear across DE, AT, ES, SE, and CY market screens.",
+      "Tester: Visually verify the notification badge color appears lighter green on Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default across account screens, navigation, and any other surfaces where these components are used."
+    ]
+  },
+  {
     "version": "v2026.08.04.43",
     "date": "2026-08-04",
     "ticket": "",
