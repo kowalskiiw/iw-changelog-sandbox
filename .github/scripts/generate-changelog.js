@@ -31,8 +31,9 @@ const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json
 
 // Bumped whenever the component snapshot shape/value representation changes, so
 // a format migration is adopted silently instead of reporting every layer.
-// (v4: colours now resolve to token names instead of hex.)
-const COMPONENT_FMT = 4;
+// (v4: colours resolve to token names. v5: analyse ALL variants of a set, not
+// just the first — the set node comes from containingStateGroup.nodeId.)
+const COMPONENT_FMT = 5;
 
 // Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
@@ -368,23 +369,32 @@ async function fetchAllStyles() {
       console.warn('   Component sets fetch failed:', e.message);
     }
 
+    // groupKey → { name, nodeId, keys:[], description:'' }
+    // The set's node id lives on containing_frame.containingStateGroup.nodeId
+    // (the REST /components response has NO component_set_id field). Using it
+    // means we fetch the whole SET and walk EVERY variant — not just the first.
     const setInfo = {};
     for (const c of compData.meta?.components ?? []) {
-      const set = sets[c.component_set_id];
-      const name =
-        set?.name ??
-        c.containing_frame?.containingStateGroup?.name ??
-        (c.name.includes('=')
+      const sg = c.containing_frame?.containingStateGroup;
+      const setNodeId = sg?.nodeId || null;
+      const displayName =
+        sg?.name ??                                   // variant set name
+        (c.name.includes('=')                         // strip "Prop=Value" suffix
           ? (c.name.split(',')[0].split('=').slice(1).join('=').trim() || c.name)
-          : c.name);
+          : c.name);                                  // standalone component
 
-      const info = (setInfo[name] ??= { nodeId: null, keys: [], description: '' });
+      const groupKey = setNodeId || c.node_id;        // group all variants of a set together
+      const info = (setInfo[groupKey] ??= {
+        name: displayName,
+        nodeId: setNodeId || c.node_id,               // SET node (all variants) or standalone node
+        keys: [],
+        description: '',
+      });
       info.keys.push(c.key);
-      if (c.component_set_id && sets[c.component_set_id]) info.nodeId = c.component_set_id;
-      else if (!info.nodeId) info.nodeId = c.node_id;
-      if (!info.description) info.description = set?.description || c.description || '';
+      if (!info.description) info.description = sets[setNodeId]?.description || c.description || '';
     }
 
+    // Fetch each set's full node tree and build its per-layer visual map.
     const nodeIds = [...new Set(Object.values(setInfo).map(i => i.nodeId).filter(Boolean))];
     const maps = {};
     for (let i = 0; i < nodeIds.length; i += 50) {
@@ -396,9 +406,9 @@ async function fetchAllStyles() {
       }
     }
 
-    for (const [name, info] of Object.entries(setInfo)) {
-      snapshot.components[name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {}, fmt: COMPONENT_FMT };
-      if (info.description) figmaDescriptions[name] = info.description;
+    for (const info of Object.values(setInfo)) {
+      snapshot.components[info.name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {}, fmt: COMPONENT_FMT };
+      if (info.description) figmaDescriptions[info.name] = info.description;
     }
     console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
   } catch (e) {
