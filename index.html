@@ -621,7 +621,7 @@
         ${dot(item.type)}
         <div class="change-item-content">
           <div class="change-title">${escHtml(item.title)}</div>
-          ${item.desc ? `<div class="change-desc">${escHtml(item.desc)}</div>` : ''}
+          ${item.desc ? `<div class="change-desc">${highlightDesc(escHtml(item.desc))}</div>` : ''}
         </div>
       </div>`;
   }
@@ -642,7 +642,7 @@
         <div class="action-content">
           <div class="action-title">Action required</div>
           <ul class="action-list">
-            ${actions.map(a => `<li>${escHtml(a)}</li>`).join('')}
+            ${actions.map(a => `<li>${highlightDesc(escHtml(a))}</li>`).join('')}
           </ul>
         </div>
       </div>`;
@@ -684,6 +684,36 @@
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  // Subtle highlighting of technical tokens in descriptions and actions.
+  // Runs on ALREADY-ESCAPED text and wraps matches in mono "pills"
+  // (.change-token), colouring transition arrows (.val-arrow).
+  // One single-pass regex → non-overlapping matches, no double-wrapping.
+  function highlightDesc(escaped) {
+    // Priority order in the alternation:
+    //   1) CSS custom properties     --accent-default-green-400
+    //   2) hex colours               #25873A   (optional " (NN%)")
+    //   3) slash paths               Accent Light Mode/Default Green/600, Avatar/XS, Badge/Default
+    //   4) transition arrows         →
+    // Path segments must be Capitalised/numeric words, so ordinary prose words
+    // ("wherever", "and", "across") are never pulled into a pill.
+    const SEG = '[A-Z0-9][\\w]*(?: [A-Z0-9][\\w]*)*';
+    const RE = new RegExp(
+      '(--[a-z0-9-]+)' +                          // 1) CSS var
+      '|(#[0-9A-Fa-f]{6}(?:\\s\\(\\d+%\\))?)' +   // 2) hex (optional alpha %)
+      '|(' + SEG + '(?:\\/' + SEG + ')+)' +       // 3) slash path
+      '|(→)',                                     // 4) arrow
+      'g'
+    );
+
+    return escaped.replace(RE, (m, cssVar, hex, path, arrow) => {
+      if (cssVar) return `<span class="change-token">${cssVar}</span>`;
+      if (hex)    return `<span class="change-token">${hex}</span>`;
+      if (path)   return `<span class="change-token">${path}</span>`;
+      if (arrow)  return `<span class="val-arrow">→</span>`;
+      return m;
+    });
   }
 
   // ── LOAD & RENDER ──────────────────────────────────────────────────────────
