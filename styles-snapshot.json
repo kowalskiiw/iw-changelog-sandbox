@@ -653,7 +653,7 @@
           "fill=Neutral/Grey/Dark/900;strokeWeight=1"
         ],
         ".AvatarXS / .Notifications": [
-          "fill=Accent Light Mode/Default Green/400;strokeWeight=0.75;radius=75"
+          "fill=Accent Light Mode/Default Green/500;strokeWeight=0.75;radius=75"
         ],
         ".AvatarXS / .Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=0.75"
@@ -940,6 +940,18 @@
       },
       "fmt": 4
     },
+    "Badges/Casino": {
+      "count": 16,
+      "layers": {
+        "Text": [
+          "fill=Neutral/Generic/White;strokeWeight=1"
+        ],
+        "(root)": [
+          "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
+        ]
+      },
+      "fmt": 4
+    },
     "Avatar/SM": {
       "count": 12,
       "layers": {
@@ -947,7 +959,7 @@
           "strokeWeight=1;radius=800"
         ],
         ".AvatarSmall / Background": [
-          "fill=Yellow/550;stroke=Yellow/700;strokeWeight=1"
+          "fill=Yellow/500;stroke=Yellow/600;strokeWeight=1"
         ],
         ".AvatarSmall / image": [
           "fill=img:d6a3cdfbed6f3a222b4282d8585b4a61b2ad13c5;strokeWeight=1"
@@ -962,25 +974,13 @@
           "fill=Neutral/Grey/Dark/900;strokeWeight=1"
         ],
         ".AvatarSmall / .Notifications": [
-          "fill=Accent Light Mode/Default Green/400;strokeWeight=0.75;radius=75"
+          "fill=Accent Light Mode/Default Green/500;strokeWeight=0.75;radius=75"
         ],
         ".AvatarSmall / .Notifications / Text": [
           "fill=Neutral/Generic/White;strokeWeight=0.75"
         ],
         "(root)": [
           "strokeWeight=1"
-        ]
-      },
-      "fmt": 4
-    },
-    "Badges/Casino": {
-      "count": 16,
-      "layers": {
-        "Text": [
-          "fill=Neutral/Generic/White;strokeWeight=1"
-        ],
-        "(root)": [
-          "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
         ]
       },
       "fmt": 4

@@ -1,5 +1,34 @@
 [
   {
+    "version": "v2026.08.04.47",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications — fill: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / Background — fill: Yellow/550 → Yellow/500, border color: Yellow/700 → Yellow/600 · .AvatarSmall / .Notifications — fill: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification badge token for both Avatar/XS and Avatar/SM components from --default-green-400 to --default-green-500 in all markets where avatars appear (account screens, navigation headers).",
+      "Developer: Update Avatar/SM background token from Yellow/550 to Yellow/500 and border token from Yellow/700 to Yellow/600; verify no hardcoded hex values override these tokens in the codebase.",
+      "Designer: Review Avatar/XS and Avatar/SM instances in Figma across DE, AT, ES, SE, and CY market files to confirm the updated green-500 notification badge and revised yellow tokens render correctly at both sizes.",
+      "Tester: Visually verify Avatar/XS and Avatar/SM components in account screens and navigation bars across all markets, confirming the notification dot displays green-500 and the SM avatar background and border reflect the updated yellow tokens."
+    ]
+  },
+  {
     "version": "v2026.08.04.44",
     "date": "2026-08-04",
     "ticket": "",
