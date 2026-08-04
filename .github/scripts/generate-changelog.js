@@ -18,9 +18,29 @@ const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
 
-// Populated during the variables fetch; lets paintSig() show token names
-// (e.g. "green/600") instead of raw hex when a fill is bound to a variable.
+// Bumped whenever the component snapshot shape/value representation changes, so
+// a format migration is adopted silently instead of reporting every layer.
+const COMPONENT_FMT = 3;
+
+// Built during the variables fetch:
+//   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
+//   COLOR_TOKENS_BY_HEX   : resolved hex → [{ name, collection }] (for hardcoded
+//                           fills whose hex matches a token's value)
 let VARIABLE_NAMES = {};
+let COLOR_TOKENS_BY_HEX = {};
+
+// Values in a layer signature are ";"/"="-delimited, so keep token names clear of those.
+const safeToken = s => String(s).replace(/[;=]/g, '-');
+
+// When one hex maps to several tokens, prefer a primitive-collection token,
+// then the shortest name — so a raw ramp value shows as e.g. "green/600".
+function pickToken(list) {
+  if (list.length === 1) return list[0].name;
+  const prim = list.filter(t => /primitive/i.test(t.collection));
+  const pool = prim.length ? prim : list;
+  pool.sort((a, b) => a.name.length - b.name.length || a.name.localeCompare(b.name));
+  return pool[0].name;
+}
 
 // ── HELPERS ───────────────────────────────────────────────────────────────────
 
@@ -105,22 +125,37 @@ function normalizeGridStyle(grids = []) {
 }
 
 // ── COMPONENT VISUAL SIGNATURES ────────────────────────────────────────────────
-// We record, per component, a map of layer → its resolved visual value(s).
-// Diffing these maps lets us report the EXACT change (e.g. green/600 → green/700)
-// instead of only flagging that something changed. Because nested component
-// instances (like a shared .Notifications badge) resolve their real colors here,
-// ripple changes are caught too.
+// We record, per component, a map of layer → its resolved visual value(s), where
+// each value is a set of "prop=value" tokens. Diffing these lets us report the
+// EXACT property that changed (e.g. "fill: green/600 → green/700") and hide the
+// properties that stayed the same. Colors resolve to token names — whether the
+// fill is bound to a variable or is a hardcoded hex that matches a token's value.
 
-// One paint → a readable token: prefer the bound variable name, else hex.
+const PROP_LABEL = {
+  fill:         'fill',
+  stroke:       'border color',
+  strokeWeight: 'border width',
+  effects:      'effects',
+  radius:       'corner radius',
+  opacity:      'opacity',
+};
+
+// One paint → a readable token. Order of preference:
+//   1) the variable it is BOUND to
+//   2) a token whose value equals this hex (hardcoded-but-matches)
+//   3) the raw hex
 function paintSig(paints = []) {
   return paints.map(p => {
     if (!p || p.visible === false) return '';
     if (p.type === 'SOLID') {
       const varId = p.boundVariables?.color?.id;
-      const named = varId && VARIABLE_NAMES[varId];
-      if (named) return `var(${named})`;
+      const bound = varId && VARIABLE_NAMES[varId];
+      if (bound) return safeToken(bound);
       const { r = 0, g = 0, b = 0 } = p.color || {};
-      return normalizeColor(r, g, b, p.opacity ?? 1);
+      const hex = normalizeColor(r, g, b, p.opacity ?? 1);
+      const match = COLOR_TOKENS_BY_HEX[hex];
+      if (match?.length) return safeToken(pickToken(match));
+      return hex;
     }
     if (p.type === 'IMAGE') return `img:${p.imageRef ?? ''}`;
     if (p.type?.includes('GRADIENT')) {
@@ -133,19 +168,30 @@ function paintSig(paints = []) {
   }).filter(Boolean).join('|');
 }
 
-// The visual value of a single layer (no name — the name lives in the map key).
+// The visual value of a single layer as ";"-joined "prop=value" tokens.
 function layerSig(n) {
   const f = paintSig(n.fills);
   const s = paintSig(n.strokes);
   const bits = [
-    f ? `fill:${f}` : '',
-    s ? `stroke:${s}` : '',
-    n.strokeWeight != null ? `sw${n.strokeWeight}` : '',
-    (Array.isArray(n.effects) && n.effects.length) ? `fx:${normalizeEffectStyle(n.effects)}` : '',
-    n.cornerRadius != null ? `r${n.cornerRadius}` : '',
-    (n.opacity != null && n.opacity !== 1) ? `o${round2(n.opacity)}` : '',
+    f ? `fill=${f}` : '',
+    s ? `stroke=${s}` : '',
+    n.strokeWeight != null ? `strokeWeight=${n.strokeWeight}` : '',
+    (Array.isArray(n.effects) && n.effects.length) ? `effects=${normalizeEffectStyle(n.effects)}` : '',
+    n.cornerRadius != null ? `radius=${n.cornerRadius}` : '',
+    (n.opacity != null && n.opacity !== 1) ? `opacity=${round2(n.opacity)}` : '',
   ].filter(Boolean);
   return bits.join(';');
+}
+
+// Parse a layerSig string back into { prop: value }.
+function parseSig(sig) {
+  const obj = {};
+  for (const tok of String(sig).split(';')) {
+    const idx = tok.indexOf('=');
+    if (idx === -1) continue;
+    obj[tok.slice(0, idx)] = tok.slice(idx + 1);
+  }
+  return obj;
 }
 
 // Build { "Layer / Path": [uniqueValues...] } for a component (or set).
@@ -238,23 +284,52 @@ async function fetchAllStyles() {
     const varData = await figmaGet(`/files/${FIGMA_FILE_ID}/variables/local`);
     const collections = varData.meta?.variableCollections ?? {};
     const variables   = varData.meta?.variables ?? {};
+
+    // Names for BOUND fills + snapshot of variable values.
     for (const [id, variable] of Object.entries(variables)) {
       const collection = collections[variable.variableCollectionId];
-      VARIABLE_NAMES[id] = variable.name; // e.g. "green/600" — used by paintSig
+      VARIABLE_NAMES[id] = variable.name; // e.g. "green/600"
       const key = `${collection?.name ?? 'Unknown'} / ${variable.name}`;
       const modeId = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
       snapshot.variables[key] = JSON.stringify(variable.valuesByMode?.[modeId] ?? null);
     }
-    console.log(`   Found ${Object.keys(snapshot.variables).length} variables`);
+
+    // Reverse index: resolved hex → token(s), for hardcoded fills that match a
+    // token's value. Follows aliases to the underlying color (default mode).
+    const resolveColorVar = (id, seen = new Set()) => {
+      if (!id || seen.has(id)) return null;
+      seen.add(id);
+      const v = variables[id];
+      if (!v || v.resolvedType !== 'COLOR') return null;
+      const coll = collections[v.variableCollectionId];
+      const modeId = coll?.defaultModeId ?? Object.keys(v.valuesByMode ?? {})[0];
+      const val = v.valuesByMode?.[modeId];
+      if (val && val.type === 'VARIABLE_ALIAS') return resolveColorVar(val.id, seen);
+      if (val && typeof val === 'object' && 'r' in val) return val;
+      return null;
+    };
+    for (const [id, v] of Object.entries(variables)) {
+      if (v.resolvedType !== 'COLOR') continue;
+      const rgba = resolveColorVar(id);
+      if (!rgba) continue;
+      const hex = normalizeColor(rgba.r, rgba.g, rgba.b, rgba.a ?? 1);
+      (COLOR_TOKENS_BY_HEX[hex] ??= []).push({
+        name: v.name,
+        collection: collections[v.variableCollectionId]?.name ?? '',
+      });
+    }
+
+    console.log(`   Found ${Object.keys(snapshot.variables).length} variables, ${Object.keys(COLOR_TOKENS_BY_HEX).length} color values indexed`);
   } catch (e) {
     console.warn('   Variables not accessible:', e.message);
   }
 
   // ── COMPONENTS ────────────────────────────────────────────────────────────
-  // Stored as { count, layers } per set:
+  // Stored as { count, layers, fmt } per set:
   //   count  → detects variants added/removed
   //   layers → { "Layer / Path": [values] } → detects & names visual changes,
   //            including ripples from nested components and variable rebinding.
+  //   fmt    → snapshot format version (see COMPONENT_FMT).
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
 
@@ -300,7 +375,7 @@ async function fetchAllStyles() {
     }
 
     for (const [name, info] of Object.entries(setInfo)) {
-      snapshot.components[name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {} };
+      snapshot.components[name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {}, fmt: COMPONENT_FMT };
       if (info.description) figmaDescriptions[name] = info.description; // feeds AI + fallback
     }
     console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
@@ -355,39 +430,60 @@ function describeSimpleChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
 }
 
-// Coerce a component value into { count, layers, _migrated } regardless of the
-// snapshot format it was stored in (older builds used strings like "12::hash").
+// Coerce a component value into { count, layers, fmt, _migrated } regardless of
+// the snapshot format it was stored in (older builds used strings like "12::hash").
 function asComp(v) {
-  if (v && typeof v === 'object') return { count: v.count ?? 0, layers: v.layers ?? {}, _migrated: false };
+  if (v && typeof v === 'object') return { count: v.count ?? 0, layers: v.layers ?? {}, fmt: v.fmt, _migrated: false };
   const [c] = String(v).split('::');
-  return { count: Number(c) || 0, layers: {}, _migrated: true };
+  return { count: Number(c) || 0, layers: {}, fmt: undefined, _migrated: true };
 }
 
-// Compare two layer maps and return readable "Layer: old → new" lines.
+// Compare two layer maps and return readable per-property lines, e.g.
+//   ".AvatarXS / .Notifications — fill: green/600 → green/700"
+// Only the properties that actually changed are shown.
 function diffLayers(oldL = {}, newL = {}) {
   const out = [];
   const keys = new Set([...Object.keys(oldL), ...Object.keys(newL)]);
   for (const k of keys) {
-    const o = new Set(oldL[k] ?? []);
-    const n = new Set(newL[k] ?? []);
-    const removed = [...o].filter(x => !n.has(x));
-    const added   = [...n].filter(x => !o.has(x));
+    const oArr = oldL[k] ?? [];
+    const nArr = newL[k] ?? [];
+    const oSet = new Set(oArr), nSet = new Set(nArr);
+    const removed = [...oSet].filter(x => !nSet.has(x));
+    const added   = [...nSet].filter(x => !oSet.has(x));
     if (!removed.length && !added.length) continue;
-    if (!oldL[k]) { out.push(`${k}: added (${[...n].join(', ')})`); continue; }
-    if (!newL[k]) { out.push(`${k}: removed`); continue; }
-    if (removed.length === 1 && added.length === 1) out.push(`${k}: ${removed[0]} → ${added[0]}`);
-    else out.push(`${k}: ${removed.join(' / ') || '∅'} → ${added.join(' / ') || '∅'}`);
+
+    if (!oldL[k]) { out.push(`${k} — layer added`); continue; }
+    if (!newL[k]) { out.push(`${k} — layer removed`); continue; }
+
+    // Clean 1→1 case: diff individual properties, show only what changed.
+    if (removed.length === 1 && added.length === 1) {
+      const o = parseSig(removed[0]);
+      const n = parseSig(added[0]);
+      const props = new Set([...Object.keys(o), ...Object.keys(n)]);
+      const changes = [];
+      for (const p of props) {
+        if (o[p] !== n[p]) {
+          const label = PROP_LABEL[p] ?? p;
+          changes.push(`${label}: ${o[p] ?? '∅'} → ${n[p] ?? '∅'}`);
+        }
+      }
+      if (changes.length) out.push(`${k} — ${changes.join(', ')}`);
+      continue;
+    }
+
+    // Fallback (a layer that legitimately varies across variants): list raw values.
+    out.push(`${k} — ${removed.join(' / ') || '∅'} → ${added.join(' / ') || '∅'}`);
   }
   return [...new Set(out)]; // dedupe identical ripple lines
 }
 
-// Component values are { count, layers }.
+// Component values are { count, layers, fmt }.
 function describeComponentChange(oldVal, newVal) {
   const o = asComp(oldVal), n = asComp(newVal);
+  // Format migration (older string form, or an older fmt): adopt the new
+  // snapshot silently. Real value diffs begin on the next run.
+  if (o._migrated || o.fmt !== n.fmt) return '';
   if (o.count !== n.count) return `variants: ${o.count} → ${n.count}`;
-  // On a format-migration run the old side has no layer data — stay quiet and
-  // let the new format become the baseline; real value diffs start next run.
-  if (o._migrated) return '';
   const lines = diffLayers(o.layers, n.layers);
   if (!lines.length) return '';
   const MAX = 5;
@@ -489,8 +585,8 @@ Your task is to return a JSON object with two keys:
    - If a "Figma description" is provided in the input, treat it as the PRIMARY source of truth. Base your description on it directly — closely paraphrase or lightly tighten it, but do NOT replace it with a generic invented description or ignore it in favor of the raw values.
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
-       • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name and variant count. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "Badge / Ellipse: var(green/600) → var(green/700)"). Keep those exact tokens/values — do not drop or round them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+       • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: green/600 → green/700" or "corner radius: 75 → 80"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
@@ -569,7 +665,7 @@ function buildFallbackActions(diff) {
   if (diff.components.added.length)
     actions.push(`Developer: ${diff.components.added.length} new component(s) in Figma — check Dev Mode for specs.`);
   if (diff.components.changed.length)
-    actions.push(`Developer: ${diff.components.changed.length} component(s) visually changed — verify the noted value changes in code.`);
+    actions.push(`Developer: ${diff.components.changed.length} component(s) visually changed — apply the noted property changes in code.`);
   if (diff.components.removed.length)
     actions.push(`Developer: ${diff.components.removed.length} component(s) removed — check codebase for usages.`);
   if (diff.variables.changed.length || diff.variables.added.length)
