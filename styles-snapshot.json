@@ -1252,7 +1252,7 @@
           "fill=#232323;strokeWeight=1"
         ],
         ".AvatarXS / .Notifications": [
-          "fill=#25873A;strokeWeight=0.75;radius=75"
+          "fill=#4DCE69;strokeWeight=0.75;radius=75"
         ],
         ".AvatarXS / .Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=0.75"
@@ -1285,7 +1285,7 @@
           "fill=#232323;strokeWeight=1"
         ],
         ".AvatarSmall / .Notifications": [
-          "fill=#25873A;strokeWeight=0.75;radius=75"
+          "fill=#4DCE69;strokeWeight=0.75;radius=75"
         ],
         ".AvatarSmall / .Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=0.75"
@@ -1558,7 +1558,7 @@
       "count": 1,
       "layers": {
         ".Notifications": [
-          "fill=#25873A;strokeWeight=1.375;radius=150"
+          "fill=#4DCE69;strokeWeight=1.375;radius=150"
         ],
         ".Notifications / Text": [
           "fill=#FFFFFF;strokeWeight=1.375"

@@ -1,5 +1,38 @@
 [
   {
+    "version": "v2026.08.04.38",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications — fill: #25873A → #4DCE69"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / .Notifications — fill: #25873A → #4DCE69"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications — fill: #25873A → #4DCE69"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification badge background-color token or hardcoded value from #25873A to #4DCE69 in Avatar (XS, SM) and Badge/Default components across all markets.",
+      "Designer: Verify the new #4DCE69 green meets WCAG contrast requirements against white badge text and surrounding UI surfaces in all five market layouts.",
+      "Tester: Visually verify notification badges on Avatar/XS, Avatar/SM, and Badge/Default render the updated green (#4DCE69) on account screens, navigation bars, and any surface where these components appear."
+    ]
+  },
+  {
     "version": "v2026.08.04.37",
     "date": "2026-08-04",
     "ticket": "",
