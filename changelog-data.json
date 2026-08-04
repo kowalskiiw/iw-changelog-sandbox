@@ -1,5 +1,832 @@
 [
   {
+    "version": "v2026.08.04.42",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Virtuals/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gradients/Linear/02",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gradients/Linear/01",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gradients/Linear/04",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Red/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gradients/Linear/03",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gradients/Linear/05",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Lime Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Casino Game Search Filter/Active Border",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Blue/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Default/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Ice",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Alpha/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/950",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Plastic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Orange/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Dark/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Lime Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Default Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Default Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Medium/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Red/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Generic/Black",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Sand",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Generic/White",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/10",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Water",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Dark/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/20",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Medium/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Lime Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/750",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Lime Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Gras",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Blue/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Orange/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Magenta/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/60",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Gamecards/Concrete",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/40",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Default Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/650",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Default/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Casino Game Search Filter/Background",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Virtuals/850",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Lime Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Dark/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey Alpha/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Red/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Dark/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Forest Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Red/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Medium/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Default/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/15",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey Alpha/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Medium/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/750",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Casino Game Search Filter/Default Fill Color",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/05",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/White Alpha/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Default/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Default Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Orange/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Blue/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Footer Greece/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/550",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Default Green/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Medium/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Purple/Default/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Betslip/Loading Blue",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Live Casino/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Yellow/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Red/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Neutral/Grey/Light/80",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Lime Green/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Blue/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Light Mode/Magenta/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Accent Dark Mode/Default Green/500",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / .Notifications — fill: #2EA949 → #25873A"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications — fill: #2EA949 → #25873A"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / .Notifications — fill: #2EA949 → #25873A"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": ".AvatarMedium / .Notifications — fill: #2EA949 → #25873A"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 4 component(s) visually changed — apply the noted property changes in code.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.04.41",
     "date": "2026-08-04",
     "ticket": "",
