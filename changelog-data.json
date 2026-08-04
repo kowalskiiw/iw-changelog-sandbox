@@ -1,5 +1,104 @@
 [
   {
+    "version": "v2026.08.04.36",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Badges/Account status",
+            "desc": "alerts/warning-filled: strokeWeight=1 → sw1 · alerts/warning-filled / Vector: fill=#BB1B1B;strokeWeight=4 → fill:#BB1B1B;sw4 · Text: fill=#BB1B1B;strokeWeight=1 → fill:#BB1B1B;sw1 · (root): fill=#FDF3F3;stroke=#F1B4B4;strokeWeight=1;radius=2 → fill:#FDF3F3;stroke:#F1B4B4;sw1;r2"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Extra-small avatar component. strokeWeight renamed to sw1 and radius to r800 across all internal layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar component. strokeWeight renamed to sw1 and radius to r800 across all internal layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Inline info alert component. strokeWeight renamed to sw1 and radius to r4 across root and all child layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Spacer",
+            "desc": "Layout spacer utility component. strokeWeight renamed to sw1 on root and all guide lines; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "Inline betslip confirmation alert. strokeWeight renamed to sw1 across container, icon, and text layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Used on non-solid backgrounds, for example images. strokeWeight renamed to sw1 across all layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "Primary action button. strokeWeight renamed to sw1 across all internal layers including icon and text; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Warning banner component. strokeWeight renamed to sw1 and radius to r4 across container and all child layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Apps",
+            "desc": "App-store-style badge component. strokeWeight renamed to sw1 on root; sub-layers retain sw0.955 value; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Betslip",
+            "desc": "Used as tablet and mobile betslip badge. strokeWeight renamed to sw1 and radius to r60; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "Casino bonus avatar. strokeWeight renamed to sw0.875 and radius to r700 across root and background layers; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/Casino/XS",
+            "desc": "Extra-small casino game-provider avatar. strokeWeight renamed to sw2 and radius to r40 on root; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Marketing",
+            "desc": "Marketing label badge. strokeWeight renamed to sw1 and radius to r2 on root; no visual change."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Notification badge. Fill updated from #2EA949 → #25873A (green/600 → green/700); strokeWeight renamed to sw1; radius to r150."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Casino",
+            "desc": "Casino-specific badge. strokeWeight renamed to sw1 and radius to r2 on root; no visual change."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Verify that the internal Figma token property rename from strokeWeight to sw does not break any automated token-extraction or code-generation scripts that reference the strokeWeight key by name.",
+      "Designer: Confirm the Badge/Default fill change from #2EA949 to #25873A is intentional and matches the green/700 token across all badge usages in Figma before consuming the updated library.",
+      "Tester: Visually verify Badge/Default across betslip, account, and notification surfaces in DE, AT, ES, SE, and CY markets to confirm the green fill shift (#2EA949 → #25873A) renders correctly and meets contrast requirements.",
+      "Developer: Ensure Secondary Button styles applied on image or non-solid backgrounds still render correctly after the sw1 property rename, particularly in React components using odds displays and match cards."
+    ]
+  },
+  {
     "version": "v2026.08.04.35",
     "date": "2026-08-04",
     "ticket": "",
