@@ -5,6 +5,10 @@
  *
  * ES module (.js). Matches a package.json with "type": "module".
  * node-fetch v3 is ESM-only and loaded via dynamic import() below.
+ *
+ * Colour token names come from a committed variables.json (exported from Figma
+ * via the Desktop Bridge — works on any plan). The Enterprise-only Variables
+ * REST API is used only as a fallback.
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -17,15 +21,17 @@ const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
 const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
+const VARIABLES_PATH = 'variables.json';
 
 // Bumped whenever the component snapshot shape/value representation changes, so
 // a format migration is adopted silently instead of reporting every layer.
-const COMPONENT_FMT = 3;
+// (v4: colours now resolve to token names instead of hex.)
+const COMPONENT_FMT = 4;
 
-// Built during the variables fetch:
+// Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
-//   COLOR_TOKENS_BY_HEX   : resolved hex → [{ name, collection }] (for hardcoded
-//                           fills whose hex matches a token's value)
+//   COLOR_TOKENS_BY_HEX   : resolved hex → [{ name, collection }] (for fills whose
+//                           resolved hex matches a token's value)
 let VARIABLE_NAMES = {};
 let COLOR_TOKENS_BY_HEX = {};
 
@@ -33,7 +39,7 @@ let COLOR_TOKENS_BY_HEX = {};
 const safeToken = s => String(s).replace(/[;=]/g, '-');
 
 // When one hex maps to several tokens, prefer a primitive-collection token,
-// then the shortest name — so a raw ramp value shows as e.g. "green/600".
+// then the shortest name.
 function pickToken(list) {
   if (list.length === 1) return list[0].name;
   const prim = list.filter(t => /primitive/i.test(t.collection));
@@ -125,11 +131,11 @@ function normalizeGridStyle(grids = []) {
 }
 
 // ── COMPONENT VISUAL SIGNATURES ────────────────────────────────────────────────
-// We record, per component, a map of layer → its resolved visual value(s), where
-// each value is a set of "prop=value" tokens. Diffing these lets us report the
-// EXACT property that changed (e.g. "fill: green/600 → green/700") and hide the
-// properties that stayed the same. Colors resolve to token names — whether the
-// fill is bound to a variable or is a hardcoded hex that matches a token's value.
+// Per component: a map of layer → its resolved visual value(s), each a set of
+// "prop=value" tokens. Diffing names the exact property that changed
+// (e.g. "fill: Accent Light Mode/Default Green/600 → …/400") and hides unchanged
+// properties. Colours resolve to token names whether bound to a variable or a
+// hardcoded hex that matches a token's value.
 
 const PROP_LABEL = {
   fill:         'fill',
@@ -140,10 +146,6 @@ const PROP_LABEL = {
   opacity:      'opacity',
 };
 
-// One paint → a readable token. Order of preference:
-//   1) the variable it is BOUND to
-//   2) a token whose value equals this hex (hardcoded-but-matches)
-//   3) the raw hex
 function paintSig(paints = []) {
   return paints.map(p => {
     if (!p || p.visible === false) return '';
@@ -168,7 +170,6 @@ function paintSig(paints = []) {
   }).filter(Boolean).join('|');
 }
 
-// The visual value of a single layer as ";"-joined "prop=value" tokens.
 function layerSig(n) {
   const f = paintSig(n.fills);
   const s = paintSig(n.strokes);
@@ -183,7 +184,6 @@ function layerSig(n) {
   return bits.join(';');
 }
 
-// Parse a layerSig string back into { prop: value }.
 function parseSig(sig) {
   const obj = {};
   for (const tok of String(sig).split(';')) {
@@ -194,9 +194,6 @@ function parseSig(sig) {
   return obj;
 }
 
-// Build { "Layer / Path": [uniqueValues...] } for a component (or set).
-// The variant name is excluded from the path so the same layer across all
-// variants collapses to one entry — a change reports once, not per-variant.
 function collectVisualMap(root) {
   const map = {};
   const variants = root.type === 'COMPONENT_SET' ? (root.children ?? []) : [root];
@@ -216,6 +213,65 @@ function collectVisualMap(root) {
   const out = {};
   for (const [k, set] of Object.entries(map)) out[k] = [...set].sort();
   return out;
+}
+
+// ── VARIABLE / COLOUR TOKEN LOADING ─────────────────────────────────────────────
+// Preferred: committed variables.json exported from Figma via the Desktop Bridge
+// (any plan). Fallback: the Enterprise-only Variables REST API.
+async function loadVariables(snapshot) {
+  if (existsSync(VARIABLES_PATH)) {
+    try {
+      const vj = JSON.parse(readFileSync(VARIABLES_PATH, 'utf8'));
+      for (const [hex, name] of Object.entries(vj.colorTokens ?? {})) {
+        (COLOR_TOKENS_BY_HEX[hex] ??= []).push({ name, collection: 'Color Styles' });
+      }
+      console.log(`   Loaded ${VARIABLES_PATH} (${Object.keys(vj.colorTokens ?? {}).length} colour tokens)`);
+      return; // file wins; skip REST (which 403s on non-Enterprise plans)
+    } catch (e) {
+      console.warn(`   ${VARIABLES_PATH} unreadable, falling back to REST:`, e.message);
+    }
+  }
+
+  // Fallback: REST Variables API (Enterprise only)
+  try {
+    const varData = await figmaGet(`/files/${FIGMA_FILE_ID}/variables/local`);
+    const collections = varData.meta?.variableCollections ?? {};
+    const variables   = varData.meta?.variables ?? {};
+
+    for (const [id, variable] of Object.entries(variables)) {
+      const collection = collections[variable.variableCollectionId];
+      VARIABLE_NAMES[id] = variable.name;
+      const key = `${collection?.name ?? 'Unknown'} / ${variable.name}`;
+      const modeId = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
+      snapshot.variables[key] = JSON.stringify(variable.valuesByMode?.[modeId] ?? null);
+    }
+
+    const resolveColorVar = (id, seen = new Set()) => {
+      if (!id || seen.has(id)) return null;
+      seen.add(id);
+      const v = variables[id];
+      if (!v || v.resolvedType !== 'COLOR') return null;
+      const coll = collections[v.variableCollectionId];
+      const modeId = coll?.defaultModeId ?? Object.keys(v.valuesByMode ?? {})[0];
+      const val = v.valuesByMode?.[modeId];
+      if (val && val.type === 'VARIABLE_ALIAS') return resolveColorVar(val.id, seen);
+      if (val && typeof val === 'object' && 'r' in val) return val;
+      return null;
+    };
+    for (const [id, v] of Object.entries(variables)) {
+      if (v.resolvedType !== 'COLOR') continue;
+      const rgba = resolveColorVar(id);
+      if (!rgba) continue;
+      const hex = normalizeColor(rgba.r, rgba.g, rgba.b, rgba.a ?? 1);
+      (COLOR_TOKENS_BY_HEX[hex] ??= []).push({
+        name: v.name,
+        collection: collections[v.variableCollectionId]?.name ?? '',
+      });
+    }
+    console.log(`   Variables via REST (${Object.keys(snapshot.variables).length} vars, ${Object.keys(COLOR_TOKENS_BY_HEX).length} colours)`);
+  } catch (e) {
+    console.warn('   Variables not accessible (no variables.json, REST failed):', e.message);
+  }
 }
 
 // ── FETCH ALL STYLES ──────────────────────────────────────────────────────────
@@ -280,49 +336,9 @@ async function fetchAllStyles() {
     };
   }
 
-  try {
-    const varData = await figmaGet(`/files/${FIGMA_FILE_ID}/variables/local`);
-    const collections = varData.meta?.variableCollections ?? {};
-    const variables   = varData.meta?.variables ?? {};
-
-    // Names for BOUND fills + snapshot of variable values.
-    for (const [id, variable] of Object.entries(variables)) {
-      const collection = collections[variable.variableCollectionId];
-      VARIABLE_NAMES[id] = variable.name; // e.g. "green/600"
-      const key = `${collection?.name ?? 'Unknown'} / ${variable.name}`;
-      const modeId = collection?.defaultModeId ?? Object.keys(variable.valuesByMode ?? {})[0];
-      snapshot.variables[key] = JSON.stringify(variable.valuesByMode?.[modeId] ?? null);
-    }
-
-    // Reverse index: resolved hex → token(s), for hardcoded fills that match a
-    // token's value. Follows aliases to the underlying color (default mode).
-    const resolveColorVar = (id, seen = new Set()) => {
-      if (!id || seen.has(id)) return null;
-      seen.add(id);
-      const v = variables[id];
-      if (!v || v.resolvedType !== 'COLOR') return null;
-      const coll = collections[v.variableCollectionId];
-      const modeId = coll?.defaultModeId ?? Object.keys(v.valuesByMode ?? {})[0];
-      const val = v.valuesByMode?.[modeId];
-      if (val && val.type === 'VARIABLE_ALIAS') return resolveColorVar(val.id, seen);
-      if (val && typeof val === 'object' && 'r' in val) return val;
-      return null;
-    };
-    for (const [id, v] of Object.entries(variables)) {
-      if (v.resolvedType !== 'COLOR') continue;
-      const rgba = resolveColorVar(id);
-      if (!rgba) continue;
-      const hex = normalizeColor(rgba.r, rgba.g, rgba.b, rgba.a ?? 1);
-      (COLOR_TOKENS_BY_HEX[hex] ??= []).push({
-        name: v.name,
-        collection: collections[v.variableCollectionId]?.name ?? '',
-      });
-    }
-
-    console.log(`   Found ${Object.keys(snapshot.variables).length} variables, ${Object.keys(COLOR_TOKENS_BY_HEX).length} color values indexed`);
-  } catch (e) {
-    console.warn('   Variables not accessible:', e.message);
-  }
+  // Colour tokens (variables.json preferred, REST fallback) — must run before
+  // components so paintSig can resolve colour names.
+  await loadVariables(snapshot);
 
   // ── COMPONENTS ────────────────────────────────────────────────────────────
   // Stored as { count, layers, fmt } per set:
@@ -333,7 +349,6 @@ async function fetchAllStyles() {
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
 
-    // set node_id → { name, description }
     const sets = {};
     try {
       const setData = await figmaGet(`/files/${FIGMA_FILE_ID}/component_sets`);
@@ -344,16 +359,15 @@ async function fetchAllStyles() {
       console.warn('   Component sets fetch failed:', e.message);
     }
 
-    // displayName → { nodeId, keys:[], description:'' }
     const setInfo = {};
     for (const c of compData.meta?.components ?? []) {
       const set = sets[c.component_set_id];
       const name =
-        set?.name ??                                          // 1st: real set name
-        c.containing_frame?.containingStateGroup?.name ??     // 2nd: older files
-        (c.name.includes('=')                                 // 3rd: strip "Prop=Value" suffix
+        set?.name ??
+        c.containing_frame?.containingStateGroup?.name ??
+        (c.name.includes('=')
           ? (c.name.split(',')[0].split('=').slice(1).join('=').trim() || c.name)
-          : c.name);                                          // 4th: standalone component
+          : c.name);
 
       const info = (setInfo[name] ??= { nodeId: null, keys: [], description: '' });
       info.keys.push(c.key);
@@ -362,7 +376,6 @@ async function fetchAllStyles() {
       if (!info.description) info.description = set?.description || c.description || '';
     }
 
-    // Fetch each set's full node tree and build its per-layer visual map.
     const nodeIds = [...new Set(Object.values(setInfo).map(i => i.nodeId).filter(Boolean))];
     const maps = {};
     for (let i = 0; i < nodeIds.length; i += 50) {
@@ -376,7 +389,7 @@ async function fetchAllStyles() {
 
     for (const [name, info] of Object.entries(setInfo)) {
       snapshot.components[name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {}, fmt: COMPONENT_FMT };
-      if (info.description) figmaDescriptions[name] = info.description; // feeds AI + fallback
+      if (info.description) figmaDescriptions[name] = info.description;
     }
     console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
   } catch (e) {
@@ -430,17 +443,12 @@ function describeSimpleChange(oldVal, newVal) {
   return oldVal !== newVal ? `${oldVal} → ${newVal}` : '';
 }
 
-// Coerce a component value into { count, layers, fmt, _migrated } regardless of
-// the snapshot format it was stored in (older builds used strings like "12::hash").
 function asComp(v) {
   if (v && typeof v === 'object') return { count: v.count ?? 0, layers: v.layers ?? {}, fmt: v.fmt, _migrated: false };
   const [c] = String(v).split('::');
   return { count: Number(c) || 0, layers: {}, fmt: undefined, _migrated: true };
 }
 
-// Compare two layer maps and return readable per-property lines, e.g.
-//   ".AvatarXS / .Notifications — fill: green/600 → green/700"
-// Only the properties that actually changed are shown.
 function diffLayers(oldL = {}, newL = {}) {
   const out = [];
   const keys = new Set([...Object.keys(oldL), ...Object.keys(newL)]);
@@ -455,7 +463,6 @@ function diffLayers(oldL = {}, newL = {}) {
     if (!oldL[k]) { out.push(`${k} — layer added`); continue; }
     if (!newL[k]) { out.push(`${k} — layer removed`); continue; }
 
-    // Clean 1→1 case: diff individual properties, show only what changed.
     if (removed.length === 1 && added.length === 1) {
       const o = parseSig(removed[0]);
       const n = parseSig(added[0]);
@@ -471,18 +478,14 @@ function diffLayers(oldL = {}, newL = {}) {
       continue;
     }
 
-    // Fallback (a layer that legitimately varies across variants): list raw values.
     out.push(`${k} — ${removed.join(' / ') || '∅'} → ${added.join(' / ') || '∅'}`);
   }
-  return [...new Set(out)]; // dedupe identical ripple lines
+  return [...new Set(out)];
 }
 
-// Component values are { count, layers, fmt }.
 function describeComponentChange(oldVal, newVal) {
   const o = asComp(oldVal), n = asComp(newVal);
-  // Format migration (older string form, or an older fmt): adopt the new
-  // snapshot silently. Real value diffs begin on the next run.
-  if (o._migrated || o.fmt !== n.fmt) return '';
+  if (o._migrated || o.fmt !== n.fmt) return ''; // format migration → adopt silently
   if (o.count !== n.count) return `variants: ${o.count} → ${n.count}`;
   const lines = diffLayers(o.layers, n.layers);
   if (!lines.length) return '';
@@ -586,7 +589,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: green/600 → green/700" or "corner radius: 75 → 80"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400" or "corner radius: 75 → 80"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
