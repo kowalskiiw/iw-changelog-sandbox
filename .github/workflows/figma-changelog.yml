@@ -14,6 +14,11 @@ on:
         description: 'Jira ticket (e.g. CXI-2010)'
         required: false
         default: ''
+      create_jira_ticket:
+        description: 'Jira-Ticket automatisch erstellen?'
+        type: boolean
+        required: false
+        default: true
 permissions:
   contents: write
 jobs:
@@ -52,7 +57,13 @@ jobs:
           git commit -m "chore: auto-update changelog via Figma publish"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
       - name: Create Jira ticket
-        if: steps.changelog.outputs.has_changes == 'true'
+        # Runs when the diff script found real changes AND the "create_jira_ticket"
+        # checkbox wasn't explicitly unchecked. Using "!= 'false'" (not "== 'true'")
+        # so this still runs on repository_dispatch (Figma webhook), where this
+        # input doesn't exist at all and would otherwise evaluate to empty/undefined.
+        if: >
+          steps.changelog.outputs.has_changes == 'true' &&
+          (github.event.inputs.create_jira_ticket != 'false')
         env:
           ATLASSIAN_DOMAIN: ${{ secrets.ATLASSIAN_DOMAIN }}
           ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
