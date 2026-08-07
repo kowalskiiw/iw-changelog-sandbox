@@ -11,7 +11,7 @@
  * REST API is used only as a fallback.
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -53,6 +53,14 @@ function pickToken(list) {
   const pool = prim.length ? prim : list;
   pool.sort((a, b) => a.name.length - b.name.length || a.name.localeCompare(b.name));
   return pool[0].name;
+}
+
+// ── OUTPUT HELPER (for GitHub Actions step outputs) ────────────────────────────
+// Writes `key=value` to $GITHUB_OUTPUT so later workflow steps can read it via
+// steps.<id>.outputs.<key>. No-ops locally when GITHUB_OUTPUT isn't set.
+function setOutput(key, value) {
+  if (!process.env.GITHUB_OUTPUT) return;
+  appendFileSync(process.env.GITHUB_OUTPUT, `${key}=${value}\n`);
 }
 
 // ── HELPERS ───────────────────────────────────────────────────────────────────
@@ -717,6 +725,7 @@ async function main() {
 
   if (total === 0) {
     console.log('✅ No changes detected — changelog not updated.');
+    setOutput('has_changes', 'false');
     return;
   }
 
@@ -734,6 +743,12 @@ async function main() {
 
   console.log(`✅ Changelog updated: ${version} — ${total} changes across ${refinedGroups.length} categories`);
   if (!ticket) console.log('   ⚠ No ticket detected — add manually if needed');
+
+  // Signal to the workflow that a real changelog entry was created, so the
+  // downstream "Create Jira ticket" step knows whether to run.
+  setOutput('has_changes', 'true');
+  setOutput('version', version);
+  setOutput('total_changes', String(total));
 }
 
 main().catch(err => {
