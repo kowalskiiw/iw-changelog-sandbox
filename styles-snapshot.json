@@ -2782,7 +2782,7 @@
           "Type": "Icon"
         },
         "12258:4590": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Default",
           "Type": "Icon"
@@ -2794,7 +2794,7 @@
           "Type": "Icon"
         },
         "12329:7464": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Focused",
           "Type": "Icon"
@@ -2829,56 +2829,50 @@
           "State": "Disabled",
           "Type": "Icon"
         },
-        "12258:4289": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "L",
-          "State": "Default",
-          "Type": "Text"
-        },
         "12329:7472": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Focused",
           "Type": "Icon"
         },
         "12258:4534": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Focused",
           "Type": "Text"
         },
         "12258:4516": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4593": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4528": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4531": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4614": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "12258:4506": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Focused",
           "Type": "Text"
@@ -2890,13 +2884,13 @@
           "Type": "Icon"
         },
         "12258:4623": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
         },
         "12258:4611": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2908,7 +2902,7 @@
           "Type": "Text"
         },
         "12258:4525": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -2920,7 +2914,7 @@
           "Type": "Text"
         },
         "12258:4576": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -2932,25 +2926,25 @@
           "Type": "Text + Icon"
         },
         "12258:4497": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4617": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4500": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4632": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Loading",
           "Type": "Icon"
@@ -2974,13 +2968,13 @@
           "Type": "Icon"
         },
         "12258:4545": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4599": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2992,13 +2986,13 @@
           "Type": "Icon"
         },
         "12258:4554": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4626": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3016,13 +3010,13 @@
           "Type": "Text + Icon"
         },
         "12258:4551": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text + Icon"
         },
         "12258:4579": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -3034,7 +3028,7 @@
           "Type": "Icon"
         },
         "12258:4605": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Disabled",
           "Type": "Icon"
@@ -3046,19 +3040,19 @@
           "Type": "Text + Icon"
         },
         "12258:4596": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4567": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4561": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3076,7 +3070,7 @@
           "Type": "Icon"
         },
         "12258:4582": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -3088,25 +3082,25 @@
           "Type": "Text"
         },
         "12258:4564": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4573": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4620": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Loading",
           "Type": "Icon"
         },
         "12258:4570": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
@@ -3118,13 +3112,13 @@
           "Type": "Text + Icon"
         },
         "12258:4586": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4542": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3136,13 +3130,13 @@
           "Type": "Text"
         },
         "12258:4519": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12329:7468": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Focused",
           "Type": "Icon"
@@ -3160,7 +3154,7 @@
           "Type": "Icon"
         },
         "12258:4608": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Loading",
           "Type": "Icon"
@@ -3178,7 +3172,7 @@
           "Type": "Text + Icon"
         },
         "12258:4602": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3196,25 +3190,25 @@
           "Type": "Text"
         },
         "12258:4522": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4503": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4629": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4558": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3226,13 +3220,13 @@
           "Type": "Text"
         },
         "12258:4548": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4494": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
@@ -3262,7 +3256,7 @@
           "Type": "Text + Icon"
         },
         "12258:4538": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
@@ -3291,6 +3285,12 @@
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
+        "12258:4289": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "L",
+          "State": "Default",
+          "Type": "Text"
+        },
         "12258:4318": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "M",
@@ -3304,7 +3304,7 @@
           "Type": "Icon"
         },
         "12258:4513": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "S",
           "State": "Default",
           "Type": "Text"
@@ -3322,7 +3322,7 @@
           "Type": "Icon"
         },
         "12258:4510": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary Neutral White - 1",
           "Size": "M",
           "State": "Default",
           "Type": "Text"
@@ -7388,7 +7388,7 @@
         "10167:1049": {
           "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
           "Container / alerts/checkmark-filled-1": "strokeWeight=1",
-          "Container / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/500;strokeWeight=1",
+          "Container / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Container / Text": "strokeWeight=1",
           "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
           "Container / navigation/cross-mini": "strokeWeight=1",
@@ -8070,11 +8070,11 @@
         "10608:1055": {
           "Padding": "strokeWeight=1",
           "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Default Green/500;strokeWeight=1",
+          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Default Green/500;strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
@@ -8100,11 +8100,11 @@
         "10608:1063": {
           "Padding": "strokeWeight=1",
           "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/500;strokeWeight=1",
+          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Orange/500;strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
