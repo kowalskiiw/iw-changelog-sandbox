@@ -1000,7 +1000,7 @@
       },
       "fmt": 5
     },
-    "Primary Buttons": {
+    "Primary Buttons-test": {
       "count": 270,
       "layers": {
         ".ButtonBase/Text": [
@@ -1350,16 +1350,16 @@
         "Padding / .Alert Base/Medium / Message + Button / Button + Link": [
           "strokeWeight=1"
         ],
-        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": [
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test": [
           "fill=Yellow/500;strokeWeight=1;radius=2"
         ],
-        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": [
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text": [
           "strokeWeight=1"
         ],
-        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": [
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text": [
           "strokeWeight=1"
         ],
-        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": [
+        "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text / Text": [
           "fill=Neutral/Generic/Black;strokeWeight=1"
         ],
         "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": [
