@@ -521,7 +521,23 @@ function asComp(v) {
   return { name: '', count: Number(c) || 0, layers: {}, variants: {}, fmt: undefined, _migrated: true };
 }
 
-function diffLayers(oldL = {}, newL = {}) {
+// Rewrites any path segment matching a known old component/variant name to its
+// new name (whole-segment match only, not substring, to avoid accidental
+// collisions). Used to normalize layer-path keys before diffing, so a pure
+// rename ripple (every nested layer whose path mirrors a renamed component)
+// cancels out instead of showing as spurious layer add/remove noise.
+function applyRenames(pathKey, renameMap) {
+  if (!renameMap || !Object.keys(renameMap).length) return pathKey;
+  return pathKey.split(' / ').map(seg => renameMap[seg] ?? seg).join(' / ');
+}
+
+function diffLayers(oldL = {}, newL = {}, renameMap = {}) {
+  const oldNormalized = {};
+  for (const [k, v] of Object.entries(oldL)) {
+    oldNormalized[applyRenames(k, renameMap)] = v;
+  }
+  oldL = oldNormalized;
+
   const out = [];
   const keys = new Set([...Object.keys(oldL), ...Object.keys(newL)]);
   for (const k of keys) {
@@ -577,7 +593,7 @@ function diffVariantProps(oldV = {}, newV = {}) {
   return [...new Set(out)];
 }
 
-function describeComponentChange(oldVal, newVal) {
+function describeComponentChange(oldVal, newVal, renameMap = {}) {
   const o = asComp(oldVal), n = asComp(newVal);
   if (o._migrated || o.fmt !== n.fmt) return ''; // format migration → adopt silently
 
@@ -588,7 +604,7 @@ function describeComponentChange(oldVal, newVal) {
   }
   if (o.count !== n.count) lines.push(`variants: ${o.count} → ${n.count}`);
   lines.push(...diffVariantProps(o.variants, n.variants));
-  lines.push(...diffLayers(o.layers, n.layers));
+  lines.push(...diffLayers(o.layers, n.layers, renameMap));
 
   if (!lines.length) return '';
   const MAX = 5;
@@ -611,13 +627,28 @@ function diffComponents(oldMap = {}, newMap = {}) {
   const isMigration = oldValues.length > 0 && oldValues.every(v => asComp(v).fmt !== COMPONENT_FMT);
   if (isMigration) return { added: [], changed: [], removed: [] };
 
+  // Pass 1: collect every component-level rename first (same node ID, name
+  // changed). Other components that merely CONTAIN a nested instance of a
+  // renamed component (e.g. "Alerts Default (Inline)" using "Primary
+  // Buttons-test") will have layer paths that shifted purely because Figma
+  // mirrors an instance's default name onto its main component's name — this
+  // rename map lets diffLayers cancel out that ripple instead of reporting a
+  // flood of spurious layer add/remove lines for every downstream consumer.
+  const renameMap = {};
+  for (const [nodeId, newVal] of Object.entries(newMap)) {
+    const oldVal = oldMap[nodeId];
+    if (!oldVal) continue;
+    const oName = asComp(oldVal).name, nName = asComp(newVal).name;
+    if (oName && nName && oName !== nName) renameMap[oName] = nName;
+  }
+
   const added = [], changed = [], removed = [];
   for (const [nodeId, newVal] of Object.entries(newMap)) {
     const oldVal = oldMap[nodeId];
     if (oldVal === undefined) {
       added.push({ name: asComp(newVal).name || nodeId, value: newVal });
     } else {
-      const desc = describeComponentChange(oldVal, newVal);
+      const desc = describeComponentChange(oldVal, newVal, renameMap);
       if (desc) changed.push({ name: asComp(newVal).name || nodeId, desc });
     }
   }
