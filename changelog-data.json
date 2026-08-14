@@ -1,5 +1,1437 @@
 [
   {
+    "version": "v2026.08.14.69",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Basic Numbers / 18",
+            "desc": "18"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 8",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 6",
+            "desc": "6"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 144",
+            "desc": "144"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 50",
+            "desc": "50"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 44",
+            "desc": "44"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 64",
+            "desc": "64"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 4",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 34",
+            "desc": "34"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 30",
+            "desc": "30"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 22",
+            "desc": "22"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 96",
+            "desc": "96"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 38",
+            "desc": "38"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 26",
+            "desc": "26"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 0",
+            "desc": "0"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 56",
+            "desc": "56"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 2",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 80",
+            "desc": "80"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 90",
+            "desc": "90"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 120",
+            "desc": "120"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Generic/Black",
+            "desc": "#000000"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Generic/White",
+            "desc": "#FFFFFF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Dark/900",
+            "desc": "#232323"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Dark/800",
+            "desc": "#333333"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Dark/700",
+            "desc": "#434343"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Dark/600",
+            "desc": "#535353"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Medium/500",
+            "desc": "#636363"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Medium/400",
+            "desc": "#737373"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Medium/300",
+            "desc": "#838383"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Medium/200",
+            "desc": "#939393"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Medium/100",
+            "desc": "#A3A3A3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/80",
+            "desc": "#B3B3B3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/60",
+            "desc": "#C3C3C3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/40",
+            "desc": "#D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/20",
+            "desc": "#E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/15",
+            "desc": "#EDEDED"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/10",
+            "desc": "#F3F3F3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey/Light/05",
+            "desc": "#FBFBFB"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey Alpha/500",
+            "desc": "#00000080"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey Alpha/300",
+            "desc": "#0000004D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/Grey Alpha/200",
+            "desc": "#00000033"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/100",
+            "desc": "#FFFFFF1A"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/200",
+            "desc": "#FFFFFF33"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/300",
+            "desc": "#FFFFFF4D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/400",
+            "desc": "#FFFFFF66"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/500",
+            "desc": "#FFFFFF80"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/600",
+            "desc": "#FFFFFF99"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/700",
+            "desc": "#FFFFFFB2"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/800",
+            "desc": "#FFFFFFCC"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Neutral/White Alpha/900",
+            "desc": "#FFFFFFE5"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/900",
+            "desc": "#0B2811"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/800",
+            "desc": "#12441D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/700",
+            "desc": "#1C652C"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/600",
+            "desc": "#25873A"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/500",
+            "desc": "#2EA949"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/400",
+            "desc": "#4DCE69"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/350",
+            "desc": "#7CDB91"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/300",
+            "desc": "#A4E6B3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/200",
+            "desc": "#C5EFCE"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/150",
+            "desc": "#DBF2E0"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/100",
+            "desc": "#E5F7EA"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Default Green/50",
+            "desc": "#F0FBF3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Forest Green/500",
+            "desc": "#1BA57B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/900",
+            "desc": "#331D00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/800",
+            "desc": "#663900"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/700",
+            "desc": "#995600"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/650",
+            "desc": "#C16D00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/600",
+            "desc": "#E17F00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/500",
+            "desc": "#FF8F00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/400",
+            "desc": "#FFAA3C"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/350",
+            "desc": "#FFC170"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/300",
+            "desc": "#FFD49B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/200",
+            "desc": "#FFE3BF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/150",
+            "desc": "#FFE9CC"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/100",
+            "desc": "#FFF4E5"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Orange/50",
+            "desc": "#FFF8EF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/900",
+            "desc": "#2B0808"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/800",
+            "desc": "#581919"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/700",
+            "desc": "#832626"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/600",
+            "desc": "#BB1B1B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/500",
+            "desc": "#DB3F3F"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/400",
+            "desc": "#E36B6B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/350",
+            "desc": "#EA9393"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/300",
+            "desc": "#F1B4B4"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/200",
+            "desc": "#F6CFCF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/150",
+            "desc": "#FAE4E4"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/100",
+            "desc": "#FBECEC"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Red/50",
+            "desc": "#FDF3F3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/900",
+            "desc": "#001A33"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/800",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/700",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/600",
+            "desc": "#1575CF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/500",
+            "desc": "#2194FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/400",
+            "desc": "#53ACFF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/350",
+            "desc": "#81C2FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/300",
+            "desc": "#A7D5FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/200",
+            "desc": "#C7E4FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/150",
+            "desc": "#D6EAFF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/100",
+            "desc": "#E9F4FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Blue/50",
+            "desc": "#F1F8FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Magenta/500",
+            "desc": "#BA26C6"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Magenta/600",
+            "desc": "#951E9E"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/100",
+            "desc": "#E6E3F3"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/200",
+            "desc": "#DAD5F5"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/300",
+            "desc": "#CEC6F6"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/500",
+            "desc": "#7B61FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/600",
+            "desc": "#644ED7"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/100",
+            "desc": "#7B61FF1A"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/300",
+            "desc": "#7B61FF4D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/900",
+            "desc": "#3F550A"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/800",
+            "desc": "#59780C"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/750",
+            "desc": "#6A8F0E"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/700",
+            "desc": "#99BE4A"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/600",
+            "desc": "#B5D45E"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/500",
+            "desc": "#C6EC6B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/400",
+            "desc": "#D2F08D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/300",
+            "desc": "#DEF4AB"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/200",
+            "desc": "#E8F7C5"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/150",
+            "desc": "#F0FADA"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/100",
+            "desc": "#F7FCEA"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Default Green/800",
+            "desc": "#2D3D31"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Default Green/700",
+            "desc": "#374A3B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Default Green/600",
+            "desc": "#3F734B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Default Green/500",
+            "desc": "#66CE7E"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Default Green/400",
+            "desc": "#94FFAC"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Red/800",
+            "desc": "#473434"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Red/700",
+            "desc": "#4F3B3B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Red/600",
+            "desc": "#814444"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Red/400",
+            "desc": "#FE9898"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Orange/800",
+            "desc": "#473E32"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Orange/500",
+            "desc": "#FFBA61"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Blue/800",
+            "desc": "#2E3D4D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Blue/500",
+            "desc": "#78B9FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Blue/400",
+            "desc": "#91D1FF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/900",
+            "desc": "#1F2611"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/800",
+            "desc": "#374515"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/700",
+            "desc": "#455912"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/600",
+            "desc": "#608012"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/500",
+            "desc": "#D9F476"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Gras",
+            "desc": "#006837"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Ice",
+            "desc": "#567A8D"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Plastic",
+            "desc": "#A6653C"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Sand",
+            "desc": "#AF511F"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Water",
+            "desc": "#005366"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Gamecards/Concrete",
+            "desc": "#585F60"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/900",
+            "desc": "#332A00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/800",
+            "desc": "#665400"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/700",
+            "desc": "#997E00"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/600",
+            "desc": "#CCA800"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/550",
+            "desc": "#ECC200"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/500",
+            "desc": "#FFD200"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/400",
+            "desc": "#FFDB3C"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/300",
+            "desc": "#FFE570"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/200",
+            "desc": "#FFED9B"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/150",
+            "desc": "#FFF3BF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/100",
+            "desc": "#FFF8DB"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Yellow/50",
+            "desc": "#FFFCEF"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Betslip/Loading Blue",
+            "desc": "#0067C6"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Default Fill Color",
+            "desc": "#2B94FE"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Active Border",
+            "desc": "#96DBFA"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Background",
+            "desc": "#EEEBE5"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/950",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/900",
+            "desc": "#0B466E"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/850",
+            "desc": "#0E5689"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/800",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/750",
+            "desc": "#2970B2"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/700",
+            "desc": "#1583BC"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/400",
+            "desc": "#86BEDD"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Virtuals/300",
+            "desc": "#AAD1E6"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Live Casino/900",
+            "desc": "#1F1F1F"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Footer Greece/800",
+            "desc": "#1A3362"
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Footer Greece/900",
+            "desc": "#030F26"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 1)",
+            "desc": "1920 - 1201"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 2)",
+            "desc": "1200 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 3)",
+            "desc": "1023 - 768"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 4)",
+            "desc": "768 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 1)",
+            "desc": "1920 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 2)",
+            "desc": "1023 - 376"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 3)",
+            "desc": "375 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 4)",
+            "desc": "375 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 1)",
+            "desc": "1920 - 1250"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 2)",
+            "desc": "1249 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 3)",
+            "desc": "1023 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 4)",
+            "desc": "1023 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<375",
+            "desc": "375"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<768",
+            "desc": "768"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1023",
+            "desc": "1023"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1200",
+            "desc": "1200"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1249",
+            "desc": "1249"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1920",
+            "desc": "1920"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1250",
+            "desc": "1250"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1201",
+            "desc": "1201"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1024",
+            "desc": "1024"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>768",
+            "desc": "768"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>376",
+            "desc": "376"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>360",
+            "desc": "360"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-18",
+            "desc": "18"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-44",
+            "desc": "44"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Regular",
+            "desc": "400"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Medium",
+            "desc": "500"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Bold",
+            "desc": "700"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Extra Bold",
+            "desc": "900"
+          },
+          {
+            "type": "new",
+            "title": "Typography / Font Family/Primary font",
+            "desc": "Roboto"
+          },
+          {
+            "type": "new",
+            "title": "Typography / Font Family/Club font",
+            "desc": "Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-04",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-02",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-08",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-08",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-06",
+            "desc": "6"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-04",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-144",
+            "desc": "144"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-96",
+            "desc": "96"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-56",
+            "desc": "56"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-64",
+            "desc": "64"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-02",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-00",
+            "desc": "0"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-30",
+            "desc": "30"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-50",
+            "desc": "50"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-56",
+            "desc": "56"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-80",
+            "desc": "80"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-90",
+            "desc": "90"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-120",
+            "desc": "120"
+          },
+          {
+            "type": "new",
+            "title": "Responsive / Number",
+            "desc": "0"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Variable values updated — sync token export.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.14.68",
     "date": "2026-08-14",
     "ticket": "",
