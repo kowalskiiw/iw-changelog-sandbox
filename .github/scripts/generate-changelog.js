@@ -282,7 +282,17 @@ async function loadVariables(snapshot) {
       for (const [hex, name] of Object.entries(vj.colorTokens ?? {})) {
         (COLOR_TOKENS_BY_HEX[hex] ??= []).push({ name, collection: 'Color Styles' });
       }
-      console.log(`   Loaded ${varsPath} (${Object.keys(vj.colorTokens ?? {}).length} colour tokens)`);
+      // Feed the full name→value map into snapshot.variables so the "Variables"
+      // changelog category actually diffs — previously only colorTokens (used
+      // for resolving fill hex→name inside components) was read here, so
+      // snapshot.variables stayed permanently empty and no variable of any
+      // type (new, changed, or removed) was ever detected.
+      let varCount = 0;
+      for (const [key, value] of Object.entries(vj.variables ?? {})) {
+        snapshot.variables[key] = String(value);
+        varCount++;
+      }
+      console.log(`   Loaded ${varsPath} (${Object.keys(vj.colorTokens ?? {}).length} colour tokens, ${varCount} variables)`);
       return; // file wins; skip REST (which 403s on non-Enterprise plans)
     } catch (e) {
       console.warn(`   ${varsPath} unreadable, falling back to REST:`, e.message);
