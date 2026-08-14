@@ -39,8 +39,14 @@ const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json
 // v7: the top-level `components` map is now keyed by the SET's node ID
 // instead of its display name (name lives inside the value as `.name`), so
 // renaming a whole component/component set is detected as "changed" instead
-// of a false remove+add.)
-const COMPONENT_FMT = 7;
+// of a false remove+add.
+// v8: `layers` is now keyed per VARIANT node ID — { [variantNodeId]: {path:
+// sig} } — instead of pooling every variant's values into one shared set per
+// path. A change on a single variant now diffs cleanly against that same
+// variant's own previous state, instead of fragmenting into a stray add +
+// a stray remove because other, unrelated variants still carry one side of
+// the value.)
+const COMPONENT_FMT = 8;
 
 // Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
@@ -232,24 +238,36 @@ function parseSig(sig) {
   return obj;
 }
 
-function collectVisualMap(root) {
+// Walks ONE variant's tree and returns { "Layer / Path": "sig" } — a single
+// signature string per path, not a pooled set. Keeping this per-variant (as
+// opposed to unioning every variant's values together) is what lets a
+// recolor on just one variant diff cleanly against that SAME variant's own
+// previous state, instead of getting fragmented against unrelated variants
+// that still carry the old or the new value.
+function collectVisualMapForVariant(v) {
   const map = {};
+  const walk = (n, path) => {
+    const sig = layerSig(n);
+    if (sig) {
+      const key = path.length ? path.join(' / ') : (n.name ?? 'layer');
+      map[key] = sig;
+    }
+    for (const c of n.children ?? []) walk(c, [...path, c.name ?? '?']);
+  };
+  for (const c of v.children ?? []) walk(c, [c.name ?? '?']);
+  const rootSig = layerSig(v);
+  if (rootSig) map['(root)'] = rootSig;
+  return map;
+}
+
+// Returns { [variantNodeId]: { "Layer / Path": "sig" } } for a component set
+// (one entry per variant, keyed by the variant's own node ID) or a single
+// entry for a standalone component (keyed by its own node ID, matching how
+// `variants` is keyed elsewhere).
+function collectComponentLayersByVariant(root) {
   const variants = root.type === 'COMPONENT_SET' ? (root.children ?? []) : [root];
-  for (const v of variants) {
-    const walk = (n, path) => {
-      const sig = layerSig(n);
-      if (sig) {
-        const key = path.length ? path.join(' / ') : (n.name ?? 'layer');
-        (map[key] ??= new Set()).add(sig);
-      }
-      for (const c of n.children ?? []) walk(c, [...path, c.name ?? '?']);
-    };
-    for (const c of v.children ?? []) walk(c, [c.name ?? '?']);
-    const rootSig = layerSig(v);
-    if (rootSig) (map['(root)'] ??= new Set()).add(rootSig);
-  }
   const out = {};
-  for (const [k, set] of Object.entries(map)) out[k] = [...set].sort();
+  for (const v of variants) out[v.id] = collectVisualMapForVariant(v);
   return out;
 }
 
@@ -384,8 +402,10 @@ async function fetchAllStyles() {
   // ── COMPONENTS ────────────────────────────────────────────────────────────
   // Stored as { count, layers, variants, fmt } per set:
   //   count    → detects variants added/removed
-  //   layers   → { "Layer / Path": [values] } → detects & names visual changes,
-  //              including ripples from nested components and variable rebinding.
+  //   layers   → { [variantNodeId]: { "Layer / Path": sig } } → per-variant
+  //              visual signatures, diffed variant-by-variant against its own
+  //              previous state (see diffComponentLayers), so a change on one
+  //              variant never gets fragmented by unrelated variants.
   //   variants → { [nodeId]: { PropName: value, ... } } → each variant's raw
   //              property values (e.g. Variant="Secondary Black (Default)"),
   //              keyed by the variant's OWN node ID so a rename is caught even
@@ -441,7 +461,7 @@ async function fetchAllStyles() {
       const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${batch.join(',')}`);
       for (const id of batch) {
         const doc = nodes?.[id]?.document;
-        maps[id] = doc ? collectVisualMap(doc) : {};
+        maps[id] = doc ? collectComponentLayersByVariant(doc) : {};
       }
     }
 
@@ -531,29 +551,39 @@ function applyRenames(pathKey, renameMap) {
   return pathKey.split(' / ').map(seg => renameMap[seg] ?? seg).join(' / ');
 }
 
-function diffLayers(oldL = {}, newL = {}, renameMap = {}) {
-  const oldNormalized = {};
-  for (const [k, v] of Object.entries(oldL)) {
-    oldNormalized[applyRenames(k, renameMap)] = v;
-  }
-  oldL = oldNormalized;
+// Diffs one component set's per-variant visual maps, matched by each
+// variant's own node ID. Comparing each variant strictly against its own
+// previous self (rather than pooling every variant's values per path into
+// one set, as the old approach did) means a change on a single variant
+// always produces one clean "property: old → new" line — it can no longer
+// fragment into a stray "value appeared" + a stray "value disappeared" just
+// because some other, unrelated variant still happens to carry one side of
+// the value.
+//
+// Variants only present on one side (added/removed) are skipped here — that
+// case is already surfaced via the `count` check in describeComponentChange.
+function diffComponentLayers(oldByVariant = {}, newByVariant = {}, renameMap = {}) {
+  const lines = new Set();
+  const variantIds = new Set([...Object.keys(oldByVariant), ...Object.keys(newByVariant)]);
 
-  const out = [];
-  const keys = new Set([...Object.keys(oldL), ...Object.keys(newL)]);
-  for (const k of keys) {
-    const oArr = oldL[k] ?? [];
-    const nArr = newL[k] ?? [];
-    const oSet = new Set(oArr), nSet = new Set(nArr);
-    const removed = [...oSet].filter(x => !nSet.has(x));
-    const added   = [...nSet].filter(x => !oSet.has(x));
-    if (!removed.length && !added.length) continue;
+  for (const vId of variantIds) {
+    const oldMap = oldByVariant[vId];
+    const newMap = newByVariant[vId];
+    if (!oldMap || !newMap) continue; // variant added/removed, not a value change
 
-    if (!oldL[k]) { out.push(`${k} — layer added`); continue; }
-    if (!newL[k]) { out.push(`${k} — layer removed`); continue; }
+    const normalizedOld = {};
+    for (const [k, v] of Object.entries(oldMap)) normalizedOld[applyRenames(k, renameMap)] = v;
 
-    if (removed.length === 1 && added.length === 1) {
-      const o = parseSig(removed[0]);
-      const n = parseSig(added[0]);
+    const paths = new Set([...Object.keys(normalizedOld), ...Object.keys(newMap)]);
+    for (const path of paths) {
+      const oldSig = normalizedOld[path];
+      const newSig = newMap[path];
+      if (oldSig === newSig) continue;
+
+      if (oldSig === undefined) { lines.add(`${path} — layer added`); continue; }
+      if (newSig === undefined) { lines.add(`${path} — layer removed`); continue; }
+
+      const o = parseSig(oldSig), n = parseSig(newSig);
       const props = new Set([...Object.keys(o), ...Object.keys(n)]);
       const changes = [];
       for (const p of props) {
@@ -562,13 +592,10 @@ function diffLayers(oldL = {}, newL = {}, renameMap = {}) {
           changes.push(`${label}: ${o[p] ?? '∅'} → ${n[p] ?? '∅'}`);
         }
       }
-      if (changes.length) out.push(`${k} — ${changes.join(', ')}`);
-      continue;
+      if (changes.length) lines.add(`${path} — ${changes.join(', ')}`);
     }
-
-    out.push(`${k} — ${removed.join(' / ') || '∅'} → ${added.join(' / ') || '∅'}`);
   }
-  return [...new Set(out)];
+  return [...lines];
 }
 
 // Compares each variant's raw property values (e.g. Variant="Secondary Black
@@ -604,7 +631,7 @@ function describeComponentChange(oldVal, newVal, renameMap = {}) {
   }
   if (o.count !== n.count) lines.push(`variants: ${o.count} → ${n.count}`);
   lines.push(...diffVariantProps(o.variants, n.variants));
-  lines.push(...diffLayers(o.layers, n.layers, renameMap));
+  lines.push(...diffComponentLayers(o.layers, n.layers, renameMap));
 
   if (!lines.length) return '';
   const MAX = 5;
