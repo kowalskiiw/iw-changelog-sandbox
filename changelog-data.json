@@ -1,5 +1,34 @@
 [
   {
+    "version": "v2026.08.14.63",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant: \"Secondary Neutral White\" → \"Secondary Neutral\""
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "Variant: \"Primary Brand (Default)\" → \"Primary Default\" · Variant: \"Primary Neutral\" → \"Primary Black\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code referencing the Secondary Button variant \"Secondary Neutral White\" to \"Secondary Neutral\" across all markets.",
+      "Developer: Update all references to Primary Button variants — replace \"Primary Brand (Default)\" with \"Primary Default\" and \"Primary Neutral\" with \"Primary Black\" in component props and any hardcoded variant strings.",
+      "Designer: Update local Figma files and specs to use the renamed variants \"Secondary Neutral\", \"Primary Default\", and \"Primary Black\" — detach and re-link any overridden instances still pointing to old variant names.",
+      "Tester: Verify Secondary Button renders correctly on image and non-solid backgrounds, and that both renamed Primary Button variants display as expected across DE, AT, ES, SE, and CY market builds."
+    ]
+  },
+  {
     "version": "v2026.08.14.62",
     "date": "2026-08-14",
     "ticket": "",
