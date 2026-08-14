@@ -32,8 +32,11 @@ const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json
 // Bumped whenever the component snapshot shape/value representation changes, so
 // a format migration is adopted silently instead of reporting every layer.
 // (v4: colours resolve to token names. v5: analyse ALL variants of a set, not
-// just the first — the set node comes from containingStateGroup.nodeId.)
-const COMPONENT_FMT = 5;
+// just the first — the set node comes from containingStateGroup.nodeId.
+// v6: also snapshot each variant's raw property values — e.g. Variant =
+// "Secondary Black (Default)" — keyed by the variant's own node ID, so
+// renaming a property value is detected even when nothing visual changed.)
+const COMPONENT_FMT = 6;
 
 // Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
@@ -89,6 +92,22 @@ function formatTextStyleValues(v) {
   if (v.fontFamily && v.fontFamily !== 'Roboto') parts.push(v.fontFamily);
   if (v.letterSpacing)                         parts.push(`ls ${v.letterSpacing}`);
   return parts.join(' · ');
+}
+
+// Parses a Figma variant node name like:
+//   "Variant=Secondary Black (Default), Size=M"
+// into { Variant: "Secondary Black (Default)", Size: "M" }.
+// Standalone (non-variant) components have no "=" and yield {}.
+function parseVariantProps(name = '') {
+  const props = {};
+  for (const part of name.split(',')) {
+    const idx = part.indexOf('=');
+    if (idx === -1) continue;
+    const key = part.slice(0, idx).trim();
+    const val = part.slice(idx + 1).trim();
+    if (key) props[key] = val;
+  }
+  return props;
 }
 
 // ── FIGMA API ─────────────────────────────────────────────────────────────────
@@ -359,11 +378,17 @@ async function fetchAllStyles() {
   await loadVariables(snapshot);
 
   // ── COMPONENTS ────────────────────────────────────────────────────────────
-  // Stored as { count, layers, fmt } per set:
-  //   count  → detects variants added/removed
-  //   layers → { "Layer / Path": [values] } → detects & names visual changes,
-  //            including ripples from nested components and variable rebinding.
-  //   fmt    → snapshot format version (see COMPONENT_FMT).
+  // Stored as { count, layers, variants, fmt } per set:
+  //   count    → detects variants added/removed
+  //   layers   → { "Layer / Path": [values] } → detects & names visual changes,
+  //              including ripples from nested components and variable rebinding.
+  //   variants → { [nodeId]: { PropName: value, ... } } → each variant's raw
+  //              property values (e.g. Variant="Secondary Black (Default)"),
+  //              keyed by the variant's OWN node ID so a rename is caught even
+  //              though nothing visual changed. Matching by node ID (rather
+  //              than by value) means a genuine delete+recreate correctly
+  //              shows up as add/remove instead of a false rename.
+  //   fmt      → snapshot format version (see COMPONENT_FMT).
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
 
@@ -377,7 +402,7 @@ async function fetchAllStyles() {
       console.warn('   Component sets fetch failed:', e.message);
     }
 
-    // groupKey → { name, nodeId, keys:[], description:'' }
+    // groupKey → { name, nodeId, keys:[], description:'', variants:{} }
     // The set's node id lives on containing_frame.containingStateGroup.nodeId
     // (the REST /components response has NO component_set_id field). Using it
     // means we fetch the whole SET and walk EVERY variant — not just the first.
@@ -397,8 +422,10 @@ async function fetchAllStyles() {
         nodeId: setNodeId || c.node_id,               // SET node (all variants) or standalone node
         keys: [],
         description: '',
+        variants: {},                                 // nodeId → { PropName: value }
       });
       info.keys.push(c.key);
+      info.variants[c.node_id] = parseVariantProps(c.name);
       if (!info.description) info.description = sets[setNodeId]?.description || c.description || '';
     }
 
@@ -415,7 +442,12 @@ async function fetchAllStyles() {
     }
 
     for (const info of Object.values(setInfo)) {
-      snapshot.components[info.name] = { count: info.keys.length, layers: maps[info.nodeId] ?? {}, fmt: COMPONENT_FMT };
+      snapshot.components[info.name] = {
+        count: info.keys.length,
+        layers: maps[info.nodeId] ?? {},
+        variants: info.variants,
+        fmt: COMPONENT_FMT,
+      };
       if (info.description) figmaDescriptions[info.name] = info.description;
     }
     console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
@@ -471,9 +503,15 @@ function describeSimpleChange(oldVal, newVal) {
 }
 
 function asComp(v) {
-  if (v && typeof v === 'object') return { count: v.count ?? 0, layers: v.layers ?? {}, fmt: v.fmt, _migrated: false };
+  if (v && typeof v === 'object') return {
+    count: v.count ?? 0,
+    layers: v.layers ?? {},
+    variants: v.variants ?? {},
+    fmt: v.fmt,
+    _migrated: false,
+  };
   const [c] = String(v).split('::');
-  return { count: Number(c) || 0, layers: {}, fmt: undefined, _migrated: true };
+  return { count: Number(c) || 0, layers: {}, variants: {}, fmt: undefined, _migrated: true };
 }
 
 function diffLayers(oldL = {}, newL = {}) {
@@ -510,11 +548,36 @@ function diffLayers(oldL = {}, newL = {}) {
   return [...new Set(out)];
 }
 
+// Compares each variant's raw property values (e.g. Variant="Secondary Black
+// (Default)") across two snapshots, matched by the variant's own node ID.
+// A node ID present in both sides with a changed value is a rename. A node ID
+// missing from one side is ignored here — that's an add/remove, already
+// surfaced via the `count` check in describeComponentChange.
+function diffVariantProps(oldV = {}, newV = {}) {
+  const out = [];
+  const nodeIds = new Set([...Object.keys(oldV), ...Object.keys(newV)]);
+  for (const id of nodeIds) {
+    const oProps = oldV[id];
+    const nProps = newV[id];
+    if (!oProps || !nProps) continue; // added/removed variant, not a rename
+    const keys = new Set([...Object.keys(oProps), ...Object.keys(nProps)]);
+    for (const key of keys) {
+      if (oProps[key] !== nProps[key]) {
+        out.push(`${key}: "${oProps[key] ?? '∅'}" → "${nProps[key] ?? '∅'}"`);
+      }
+    }
+  }
+  return [...new Set(out)];
+}
+
 function describeComponentChange(oldVal, newVal) {
   const o = asComp(oldVal), n = asComp(newVal);
   if (o._migrated || o.fmt !== n.fmt) return ''; // format migration → adopt silently
   if (o.count !== n.count) return `variants: ${o.count} → ${n.count}`;
-  const lines = diffLayers(o.layers, n.layers);
+
+  const renameLines = diffVariantProps(o.variants, n.variants);
+  const visualLines = diffLayers(o.layers, n.layers);
+  const lines = [...renameLines, ...visualLines];
   if (!lines.length) return '';
   const MAX = 5;
   const shown = lines.slice(0, MAX).join(' · ');
@@ -616,7 +679,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400" or "corner radius: 75 → 80"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", or Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
@@ -625,6 +688,7 @@ Your task is to return a JSON object with two keys:
    - Be specific to the actual changes (mention style names, token names, or affected screens)
    - Not be generic like "run regression tests" unless there are visual changes that require it
    - Mention specific CSS properties, token names, or component names where relevant
+   - If a component variant's property value was renamed, call out that any code referencing the old variant name/value must be updated
 
 Context about the codebase:
 - CSS token naming convention: --body-xl-size, --body-xl-line-height, --label-m-size etc.
@@ -695,7 +759,7 @@ function buildFallbackActions(diff) {
   if (diff.components.added.length)
     actions.push(`Developer: ${diff.components.added.length} new component(s) in Figma — check Dev Mode for specs.`);
   if (diff.components.changed.length)
-    actions.push(`Developer: ${diff.components.changed.length} component(s) visually changed — apply the noted property changes in code.`);
+    actions.push(`Developer: ${diff.components.changed.length} component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.`);
   if (diff.components.removed.length)
     actions.push(`Developer: ${diff.components.removed.length} component(s) removed — check codebase for usages.`);
   if (diff.variables.changed.length || diff.variables.added.length)
