@@ -613,7 +613,8 @@
   "grid": {},
   "variables": {},
   "components": {
-    "Badges/Account status": {
+    "12637:2935": {
+      "name": "Badges/Account status",
       "count": 4,
       "layers": {
         "alerts/warning-filled": [
@@ -652,9 +653,10 @@
           "Status": "Critical/Error"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Avatar/XS": {
+    "10473:2538": {
+      "name": "Avatar/XS",
       "count": 12,
       "layers": {
         ".AvatarXS": [
@@ -755,9 +757,10 @@
           "State": "Hover"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Spacer": {
+    "5389:148170": {
+      "name": "Spacer",
       "count": 84,
       "layers": {
         "24": [
@@ -1337,9 +1340,10 @@
           "Size": "224px"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Betslip (Inline)": {
+    "10172:12251": {
+      "name": "Betslip (Inline)",
       "count": 2,
       "layers": {
         "Container": [
@@ -1380,9 +1384,10 @@
           "Type": "Error"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Secondary Buttons": {
+    "12258:4334": {
+      "name": "Secondary Buttons",
       "count": 96,
       "layers": {
         "Padding": [
@@ -2082,9 +2087,10 @@
           "Type": "Icon"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Primary Buttons-test": {
+    "12222:25669": {
+      "name": "Primary Buttons-test",
       "count": 270,
       "layers": {
         ".ButtonBase/Text": [
@@ -3838,9 +3844,10 @@
           "Type": "Text + Icon"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Banner": {
+    "10167:1036": {
+      "name": "Banner",
       "count": 4,
       "layers": {
         "Container": [
@@ -3901,9 +3908,10 @@
           "Type": "Error"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Badges/Apps": {
+    "12637:2946": {
+      "name": "Badges/Apps",
       "count": 1,
       "layers": {
         "Badge": [
@@ -3922,9 +3930,10 @@
       "variants": {
         "12637:2946": {}
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Badge/Betslip": {
+    "11305:5825": {
+      "name": "Badge/Betslip",
       "count": 1,
       "layers": {
         "Text": [
@@ -3937,9 +3946,10 @@
       "variants": {
         "11305:5825": {}
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Avatar/Casino/Bonus": {
+    "13537:6104": {
+      "name": "Avatar/Casino/Bonus",
       "count": 1,
       "layers": {
         "Background": [
@@ -3955,9 +3965,10 @@
       "variants": {
         "13537:6104": {}
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Avatar/Casino/XS": {
+    "12869:3618": {
+      "name": "Avatar/Casino/XS",
       "count": 1,
       "layers": {
         "Game Provider": [
@@ -3973,9 +3984,10 @@
       "variants": {
         "12869:3618": {}
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Badges/Marketing": {
+    "12637:2944": {
+      "name": "Badges/Marketing",
       "count": 1,
       "layers": {
         "Text": [
@@ -3988,9 +4000,10 @@
       "variants": {
         "12637:2944": {}
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Avatar/SM": {
+    "10473:2635": {
+      "name": "Avatar/SM",
       "count": 12,
       "layers": {
         ".AvatarSmall": [
@@ -4084,9 +4097,10 @@
           "State": "Default"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Badges/Casino": {
+    "12637:2876": {
+      "name": "Badges/Casino",
       "count": 16,
       "layers": {
         "Text": [
@@ -4169,9 +4183,10 @@
           "Categories": "Intern"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Alerts Default (Inline)": {
+    "10172:12394": {
+      "name": "Alerts Default (Inline)",
       "count": 16,
       "layers": {
         "Padding": [
@@ -4378,9 +4393,10 @@
           "Focus": "Low"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Avatar/MD": {
+    "33244:939": {
+      "name": "Avatar/MD",
       "count": 12,
       "layers": {
         ".AvatarMedium": [
@@ -4474,9 +4490,10 @@
           "State": "Default"
         }
       },
-      "fmt": 6
+      "fmt": 7
     },
-    "Badge/Default": {
+    "11783:2476": {
+      "name": "Badge/Default",
       "count": 1,
       "layers": {
         ".Notifications": [
@@ -4492,7 +4509,7 @@
       "variants": {
         "11783:2476": {}
       },
-      "fmt": 6
+      "fmt": 7
     }
   }
 }
