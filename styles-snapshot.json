@@ -569,6 +569,16 @@
         "letterSpacing": 0
       },
       "description": "Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
+    },
+    "Display/Bold/Regular": {
+      "value": {
+        "fontSize": 12,
+        "lineHeight": 15,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "letterSpacing": 0
+      },
+      "description": null
     }
   },
   "fill": {},
