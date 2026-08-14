@@ -1512,16 +1512,10 @@
           "Type": "Text"
         },
         "12258:4513": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Default",
           "Type": "Text"
-        },
-        "12329:7472": {
-          "Variant": "Secondary Neutral White",
-          "Size": "L",
-          "State": "Focused",
-          "Type": "Icon"
         },
         "12258:4297": {
           "Variant": "Secondary Neutral Black (Default)",
@@ -1536,7 +1530,7 @@
           "Type": "Icon"
         },
         "12258:4590": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Default",
           "Type": "Icon"
@@ -1548,7 +1542,7 @@
           "Type": "Icon"
         },
         "12329:7464": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Focused",
           "Type": "Icon"
@@ -1564,18 +1558,6 @@
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
-        },
-        "12258:4576": {
-          "Variant": "Secondary Neutral White",
-          "Size": "M",
-          "State": "Disabled",
-          "Type": "Text + Icon"
-        },
-        "12258:4299": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Mouseover",
-          "Type": "Icon"
         },
         "12258:4325": {
           "Variant": "Secondary Neutral Black (Default)",
@@ -1601,50 +1583,56 @@
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
-        "12258:4534": {
-          "Variant": "Secondary Neutral White",
-          "Size": "M",
-          "State": "Focused",
-          "Type": "Text"
-        },
         "12258:4289": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
         },
+        "12329:7472": {
+          "Variant": "Secondary White",
+          "Size": "L",
+          "State": "Focused",
+          "Type": "Icon"
+        },
+        "12258:4534": {
+          "Variant": "Secondary White",
+          "Size": "M",
+          "State": "Focused",
+          "Type": "Text"
+        },
         "12258:4516": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4593": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4528": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4531": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4614": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "12258:4506": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Focused",
           "Type": "Text"
@@ -1656,13 +1644,13 @@
           "Type": "Icon"
         },
         "12258:4623": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
         },
         "12258:4611": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
@@ -1680,7 +1668,7 @@
           "Type": "Text"
         },
         "12258:4525": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -1691,6 +1679,12 @@
           "State": "Disabled",
           "Type": "Text"
         },
+        "12258:4576": {
+          "Variant": "Secondary White",
+          "Size": "M",
+          "State": "Disabled",
+          "Type": "Text + Icon"
+        },
         "12258:4302": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "M",
@@ -1698,25 +1692,25 @@
           "Type": "Text + Icon"
         },
         "12258:4497": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4617": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4500": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4632": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Loading",
           "Type": "Icon"
@@ -1726,6 +1720,12 @@
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
+        },
+        "12258:4299": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
+          "State": "Mouseover",
+          "Type": "Icon"
         },
         "12258:4328": {
           "Variant": "Secondary Neutral Black (Default)",
@@ -1740,13 +1740,13 @@
           "Type": "Icon"
         },
         "12258:4545": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4599": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Icon"
@@ -1758,13 +1758,13 @@
           "Type": "Icon"
         },
         "12258:4554": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4626": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -1782,13 +1782,13 @@
           "Type": "Text + Icon"
         },
         "12258:4551": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text + Icon"
         },
         "12258:4579": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -1800,7 +1800,7 @@
           "Type": "Icon"
         },
         "12258:4605": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Icon"
@@ -1812,19 +1812,19 @@
           "Type": "Text + Icon"
         },
         "12258:4596": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4567": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4561": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Default",
           "Type": "Text + Icon"
@@ -1842,7 +1842,7 @@
           "Type": "Icon"
         },
         "12258:4582": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -1854,25 +1854,25 @@
           "Type": "Text"
         },
         "12258:4564": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4573": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4620": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Loading",
           "Type": "Icon"
         },
         "12258:4570": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
@@ -1884,13 +1884,13 @@
           "Type": "Text + Icon"
         },
         "12258:4586": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4542": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Default",
           "Type": "Text + Icon"
@@ -1902,13 +1902,13 @@
           "Type": "Text"
         },
         "12258:4519": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12329:7468": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Focused",
           "Type": "Icon"
@@ -1932,7 +1932,7 @@
           "Type": "Icon"
         },
         "12258:4608": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Loading",
           "Type": "Icon"
@@ -1950,7 +1950,7 @@
           "Type": "Text + Icon"
         },
         "12258:4602": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -1968,25 +1968,25 @@
           "Type": "Text"
         },
         "12258:4522": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4503": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4629": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4558": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Default",
           "Type": "Text + Icon"
@@ -1998,13 +1998,13 @@
           "Type": "Text"
         },
         "12258:4548": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4494": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
@@ -2040,13 +2040,13 @@
           "Type": "Text + Icon"
         },
         "12258:4510": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "M",
           "State": "Default",
           "Type": "Text"
         },
         "12258:4538": {
-          "Variant": "Secondary Neutral White",
+          "Variant": "Secondary White",
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
@@ -2084,7 +2084,7 @@
       },
       "fmt": 6
     },
-    "Primary Buttons-test": {
+    "Primary Buttons": {
       "count": 270,
       "layers": {
         ".ButtonBase/Text": [
@@ -2236,7 +2236,7 @@
           "Type": "Icon"
         },
         "12222:25609": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Default",
           "Type": "Text + Icon"
@@ -2248,19 +2248,19 @@
           "Type": "Text + Icon"
         },
         "12246:26345": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12340:15402": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Focused",
           "Type": "Icon"
         },
         "12246:26327": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Default",
           "Type": "Text + Icon"
@@ -2272,7 +2272,7 @@
           "Type": "Text + Icon"
         },
         "12242:3407": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text"
@@ -2284,13 +2284,13 @@
           "Type": "Text"
         },
         "12246:26342": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12246:26195": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Default",
           "Type": "Text"
@@ -2314,19 +2314,19 @@
           "Type": "Text"
         },
         "12342:16096": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Focused",
           "Type": "Icon"
         },
         "18400:81324": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Loading",
           "Type": "Text"
         },
         "12242:3392": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -2338,13 +2338,13 @@
           "Type": "Text + Icon"
         },
         "12246:26333": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "18388:80923": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Loading",
           "Type": "Text + Icon"
@@ -2362,13 +2362,13 @@
           "Type": "Text + Icon"
         },
         "12246:26222": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
         },
         "12246:26210": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text"
@@ -2386,7 +2386,7 @@
           "Type": "Text"
         },
         "12246:26204": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text"
@@ -2404,7 +2404,7 @@
           "Type": "Text"
         },
         "12340:15372": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -2416,13 +2416,13 @@
           "Type": "Text"
         },
         "12246:26315": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Loading",
           "Type": "Icon"
         },
         "12230:3408": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
@@ -2440,7 +2440,7 @@
           "Type": "Text"
         },
         "12242:3323": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2494,7 +2494,7 @@
           "Type": "Text + Icon"
         },
         "12242:3380": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text"
@@ -2518,7 +2518,7 @@
           "Type": "Icon"
         },
         "18388:80883": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Loading",
           "Type": "Text + Icon"
@@ -2536,13 +2536,13 @@
           "Type": "Text"
         },
         "12246:26273": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Default",
           "Type": "Icon"
         },
         "12246:26351": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -2566,13 +2566,13 @@
           "Type": "Icon"
         },
         "12242:3320": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
         },
         "12246:26228": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
@@ -2584,7 +2584,7 @@
           "Type": "Icon"
         },
         "12246:26324": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Default",
           "Type": "Text + Icon"
@@ -2596,13 +2596,13 @@
           "Type": "Text"
         },
         "12342:16104": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Focused",
           "Type": "Icon"
         },
         "12222:25565": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Default",
           "Type": "Text + Icon"
@@ -2632,7 +2632,7 @@
           "Type": "Icon"
         },
         "12246:26276": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Default",
           "Type": "Icon"
@@ -2650,7 +2650,7 @@
           "Type": "Text + Icon"
         },
         "12246:26336": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text + Icon"
@@ -2668,19 +2668,19 @@
           "Type": "Text + Icon"
         },
         "12242:3424": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Loading",
           "Type": "Icon"
         },
         "12246:26306": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12342:16108": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -2704,13 +2704,13 @@
           "Type": "Text"
         },
         "12246:26312": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Loading",
           "Type": "Icon"
         },
         "12230:3474": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -2752,7 +2752,7 @@
           "Type": "Text"
         },
         "12242:3362": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Disabled",
           "Type": "Icon"
@@ -2764,31 +2764,31 @@
           "Type": "Icon"
         },
         "18395:80985": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Loading",
           "Type": "Text"
         },
         "12242:3341": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "12246:26219": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12342:16100": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Focused",
           "Type": "Text"
         },
         "12342:16124": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -2800,7 +2800,7 @@
           "Type": "Icon"
         },
         "12246:26357": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -2812,19 +2812,19 @@
           "Type": "Text"
         },
         "12242:3344": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "18400:81319": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Loading",
           "Type": "Text"
         },
         "12246:26198": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Default",
           "Type": "Text"
@@ -2842,7 +2842,7 @@
           "Type": "Icon"
         },
         "12246:26285": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2878,7 +2878,7 @@
           "Type": "Icon"
         },
         "12246:26300": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Disabled",
           "Type": "Icon"
@@ -2932,13 +2932,13 @@
           "Type": "Icon"
         },
         "12342:16112": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Focused",
           "Type": "Text"
         },
         "18395:80982": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Loading",
           "Type": "Text"
@@ -2956,19 +2956,19 @@
           "Type": "Text + Icon"
         },
         "12230:3441": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12230:3405": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12246:26288": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2992,7 +2992,7 @@
           "Type": "Text + Icon"
         },
         "12342:16092": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
@@ -3016,7 +3016,7 @@
           "Type": "Text + Icon"
         },
         "12242:3404": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
@@ -3028,7 +3028,7 @@
           "Type": "Text + Icon"
         },
         "12230:3438": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
@@ -3046,7 +3046,7 @@
           "Type": "Icon"
         },
         "12222:25590": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
@@ -3064,7 +3064,7 @@
           "Type": "Text + Icon"
         },
         "12342:16120": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -3082,7 +3082,7 @@
           "Type": "Icon"
         },
         "12242:3374": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text"
@@ -3100,7 +3100,7 @@
           "Type": "Text"
         },
         "12246:26309": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Loading",
           "Type": "Icon"
@@ -3124,7 +3124,7 @@
           "Type": "Icon"
         },
         "18400:81276": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Loading",
           "Type": "Text + Icon"
@@ -3142,7 +3142,7 @@
           "Type": "Text + Icon"
         },
         "12242:3356": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Disabled",
           "Type": "Icon"
@@ -3172,7 +3172,7 @@
           "Type": "Text + Icon"
         },
         "12246:26291": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3184,7 +3184,7 @@
           "Type": "Text + Icon"
         },
         "12242:3427": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Loading",
           "Type": "Icon"
@@ -3226,13 +3226,13 @@
           "Type": "Text"
         },
         "12246:26282": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Icon"
         },
         "12246:26279": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Default",
           "Type": "Icon"
@@ -3244,25 +3244,25 @@
           "Type": "Text"
         },
         "12340:15366": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12340:15348": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Focused",
           "Type": "Text"
         },
         "12246:26201": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
         },
         "12246:26354": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -3274,19 +3274,19 @@
           "Type": "Text"
         },
         "12246:26303": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Disabled",
           "Type": "Icon"
         },
         "18388:80887": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Loading",
           "Type": "Text + Icon"
         },
         "12246:26213": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -3310,7 +3310,7 @@
           "Type": "Text"
         },
         "12230:3468": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -3322,7 +3322,7 @@
           "Type": "Text"
         },
         "12242:3377": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
@@ -3340,25 +3340,25 @@
           "Type": "Text + Icon"
         },
         "18400:81274": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Loading",
           "Type": "Text + Icon"
         },
         "12242:3359": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12230:3402": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12222:25543": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Default",
           "Type": "Text"
@@ -3370,19 +3370,19 @@
           "Type": "Text"
         },
         "12222:25447": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Default",
           "Type": "Icon"
         },
         "12246:26330": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Default",
           "Type": "Text + Icon"
         },
         "12340:15399": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Focused",
           "Type": "Icon"
@@ -3400,7 +3400,7 @@
           "Type": "Text + Icon"
         },
         "12246:26207": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
@@ -3418,7 +3418,7 @@
           "Type": "Icon"
         },
         "12246:26225": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text"
@@ -3454,7 +3454,7 @@
           "Type": "Text"
         },
         "12222:25486": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Default",
           "Type": "Text"
@@ -3490,13 +3490,13 @@
           "Type": "Text + Icon"
         },
         "12342:16116": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Focused",
           "Type": "Icon"
         },
         "12242:3338": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3514,7 +3514,7 @@
           "Type": "Text + Icon"
         },
         "18400:81278": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "S",
           "State": "Loading",
           "Type": "Text + Icon"
@@ -3532,7 +3532,7 @@
           "Type": "Text"
         },
         "18395:80988": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Loading",
           "Type": "Text"
@@ -3544,13 +3544,13 @@
           "Type": "Text + Icon"
         },
         "12222:25535": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Default",
           "Type": "Text + Icon"
         },
         "12246:26294": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3568,7 +3568,7 @@
           "Type": "Icon"
         },
         "12222:25411": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Default",
           "Type": "Icon"
@@ -3580,7 +3580,7 @@
           "Type": "Icon"
         },
         "12242:3430": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Loading",
           "Type": "Icon"
@@ -3592,7 +3592,7 @@
           "Type": "Text + Icon"
         },
         "12340:15345": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
@@ -3616,7 +3616,7 @@
           "Type": "Text + Icon"
         },
         "12340:15369": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Focused",
           "Type": "Text + Icon"
@@ -3628,19 +3628,19 @@
           "Type": "Icon"
         },
         "12242:3395": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12340:15351": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Focused",
           "Type": "Text"
         },
         "12246:26297": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3682,7 +3682,7 @@
           "Type": "Text + Icon"
         },
         "12340:15405": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Focused",
           "Type": "Icon"
@@ -3712,7 +3712,7 @@
           "Type": "Text + Icon"
         },
         "18400:81321": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Loading",
           "Type": "Text"
@@ -3724,7 +3724,7 @@
           "Type": "Text"
         },
         "12242:3326": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Icon"
@@ -3736,13 +3736,13 @@
           "Type": "Icon"
         },
         "12242:3389": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12230:3471": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -3754,7 +3754,7 @@
           "Type": "Icon"
         },
         "12246:26348": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
@@ -3766,13 +3766,13 @@
           "Type": "Icon"
         },
         "12230:3435": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12246:26216": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -3790,13 +3790,13 @@
           "Type": "Text + Icon"
         },
         "12222:25429": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "M",
           "State": "Default",
           "Type": "Icon"
         },
         "12242:3410": {
-          "Variant": "Primary Brand (Default)",
+          "Variant": "Primary Default",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
@@ -3820,7 +3820,7 @@
           "Type": "Text + Icon"
         },
         "12246:26339": {
-          "Variant": "Primary Neutral",
+          "Variant": "Primary Black",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
