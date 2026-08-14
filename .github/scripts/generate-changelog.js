@@ -35,8 +35,12 @@ const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json
 // just the first — the set node comes from containingStateGroup.nodeId.
 // v6: also snapshot each variant's raw property values — e.g. Variant =
 // "Secondary Black (Default)" — keyed by the variant's own node ID, so
-// renaming a property value is detected even when nothing visual changed.)
-const COMPONENT_FMT = 6;
+// renaming a property value is detected even when nothing visual changed.
+// v7: the top-level `components` map is now keyed by the SET's node ID
+// instead of its display name (name lives inside the value as `.name`), so
+// renaming a whole component/component set is detected as "changed" instead
+// of a false remove+add.)
+const COMPONENT_FMT = 7;
 
 // Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
@@ -442,7 +446,9 @@ async function fetchAllStyles() {
     }
 
     for (const info of Object.values(setInfo)) {
-      snapshot.components[info.name] = {
+      // Keyed by node ID (stable across renames), not by name — see COMPONENT_FMT v7.
+      snapshot.components[info.nodeId] = {
+        name: info.name,
         count: info.keys.length,
         layers: maps[info.nodeId] ?? {},
         variants: info.variants,
@@ -504,6 +510,7 @@ function describeSimpleChange(oldVal, newVal) {
 
 function asComp(v) {
   if (v && typeof v === 'object') return {
+    name: v.name ?? '',
     count: v.count ?? 0,
     layers: v.layers ?? {},
     variants: v.variants ?? {},
@@ -511,7 +518,7 @@ function asComp(v) {
     _migrated: false,
   };
   const [c] = String(v).split('::');
-  return { count: Number(c) || 0, layers: {}, variants: {}, fmt: undefined, _migrated: true };
+  return { name: '', count: Number(c) || 0, layers: {}, variants: {}, fmt: undefined, _migrated: true };
 }
 
 function diffLayers(oldL = {}, newL = {}) {
@@ -573,15 +580,51 @@ function diffVariantProps(oldV = {}, newV = {}) {
 function describeComponentChange(oldVal, newVal) {
   const o = asComp(oldVal), n = asComp(newVal);
   if (o._migrated || o.fmt !== n.fmt) return ''; // format migration → adopt silently
-  if (o.count !== n.count) return `variants: ${o.count} → ${n.count}`;
 
-  const renameLines = diffVariantProps(o.variants, n.variants);
-  const visualLines = diffLayers(o.layers, n.layers);
-  const lines = [...renameLines, ...visualLines];
+  const lines = [];
+  // Whole-component/set rename — same node ID, different display name.
+  if (o.name && n.name && o.name !== n.name) {
+    lines.push(`component renamed: "${o.name}" → "${n.name}"`);
+  }
+  if (o.count !== n.count) lines.push(`variants: ${o.count} → ${n.count}`);
+  lines.push(...diffVariantProps(o.variants, n.variants));
+  lines.push(...diffLayers(o.layers, n.layers));
+
   if (!lines.length) return '';
   const MAX = 5;
   const shown = lines.slice(0, MAX).join(' · ');
   return lines.length > MAX ? `${shown} · +${lines.length - MAX} more` : shown;
+}
+
+// Diffs the top-level `components` map, matched by the SET's node ID (the map
+// key) rather than by name — so a rename shows up as "changed" (same node ID,
+// different `.name`) instead of a false remove+add. `s.name` on every
+// added/changed/removed entry is always the *current* display name available
+// on that side of the diff, ready to use directly in buildGroups().
+//
+// A full-format migration (e.g. adopting node-ID keys for the first time,
+// or any COMPONENT_FMT bump) is detected up front: if none of the old
+// entries match the current format, the whole map is treated as a fresh
+// baseline instead of reporting every component as removed+added.
+function diffComponents(oldMap = {}, newMap = {}) {
+  const oldValues = Object.values(oldMap);
+  const isMigration = oldValues.length > 0 && oldValues.every(v => asComp(v).fmt !== COMPONENT_FMT);
+  if (isMigration) return { added: [], changed: [], removed: [] };
+
+  const added = [], changed = [], removed = [];
+  for (const [nodeId, newVal] of Object.entries(newMap)) {
+    const oldVal = oldMap[nodeId];
+    if (oldVal === undefined) {
+      added.push({ name: asComp(newVal).name || nodeId, value: newVal });
+    } else {
+      const desc = describeComponentChange(oldVal, newVal);
+      if (desc) changed.push({ name: asComp(newVal).name || nodeId, desc });
+    }
+  }
+  for (const [nodeId, oldVal] of Object.entries(oldMap)) {
+    if (newMap[nodeId] === undefined) removed.push({ name: asComp(oldVal).name || nodeId });
+  }
+  return { added, changed, removed };
 }
 
 function buildDiff(oldSnap, newSnap) {
@@ -591,7 +634,7 @@ function buildDiff(oldSnap, newSnap) {
     effect:     diffMap(oldSnap.effect ?? {}, newSnap.effect, (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     grid:       diffMap(oldSnap.grid   ?? {}, newSnap.grid,   (o, n) => describeWrappedChange(o, n, describeSimpleValueChange)),
     variables:  diffMap(oldSnap.variables  ?? {}, newSnap.variables,  describeSimpleChange),
-    components: diffMap(oldSnap.components ?? {}, newSnap.components, describeComponentChange),
+    components: diffComponents(oldSnap.components ?? {}, newSnap.components ?? {}),
   };
 }
 
@@ -679,7 +722,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", or Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
@@ -688,7 +731,7 @@ Your task is to return a JSON object with two keys:
    - Be specific to the actual changes (mention style names, token names, or affected screens)
    - Not be generic like "run regression tests" unless there are visual changes that require it
    - Mention specific CSS properties, token names, or component names where relevant
-   - If a component variant's property value was renamed, call out that any code referencing the old variant name/value must be updated
+   - If a component variant's property value was renamed, or a whole component/set was renamed, call out that any code referencing the old variant/component name must be updated
 
 Context about the codebase:
 - CSS token naming convention: --body-xl-size, --body-xl-line-height, --label-m-size etc.
