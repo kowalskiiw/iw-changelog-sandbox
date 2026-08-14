@@ -1818,39 +1818,6 @@
       },
       "fmt": 8
     },
-    "10172:12251": {
-      "name": "Betslip (Inline)",
-      "count": 2,
-      "layers": {
-        "10172:12252": {
-          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1",
-          "Container / Icon": "strokeWeight=1",
-          "Container / Icon / alerts/checkmark-filled-1": "strokeWeight=1",
-          "Container / Icon / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        },
-        "10172:12258": {
-          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1",
-          "Container / Icon": "strokeWeight=1",
-          "Container / Icon / alerts/warning-circle-filled": "strokeWeight=1",
-          "Container / Icon / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1;opacity=0.8",
-          "(root)": "strokeWeight=1"
-        }
-      },
-      "variants": {
-        "10172:12252": {
-          "Type": "Success"
-        },
-        "10172:12258": {
-          "Type": "Error"
-        }
-      },
-      "fmt": 8
-    },
     "12258:4334": {
       "name": "Secondary Buttons",
       "count": 96,
@@ -2782,7 +2749,7 @@
           "Type": "Icon"
         },
         "12258:4590": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Default",
           "Type": "Icon"
@@ -2794,7 +2761,7 @@
           "Type": "Icon"
         },
         "12329:7464": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Focused",
           "Type": "Icon"
@@ -2830,49 +2797,49 @@
           "Type": "Icon"
         },
         "12329:7472": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Focused",
           "Type": "Icon"
         },
         "12258:4534": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Focused",
           "Type": "Text"
         },
         "12258:4516": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4593": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4528": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4531": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4614": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "12258:4506": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Focused",
           "Type": "Text"
@@ -2884,25 +2851,19 @@
           "Type": "Icon"
         },
         "12258:4623": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
         },
         "12258:4611": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
         },
-        "12258:4327": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "S",
-          "State": "Default",
-          "Type": "Text"
-        },
         "12258:4525": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text"
@@ -2914,7 +2875,7 @@
           "Type": "Text"
         },
         "12258:4576": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -2926,39 +2887,27 @@
           "Type": "Text + Icon"
         },
         "12258:4497": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12258:4617": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4500": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4632": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Loading",
-          "Type": "Icon"
-        },
-        "12258:4322": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Pressed / Selected",
-          "Type": "Text + Icon"
-        },
-        "12258:4299": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Mouseover",
           "Type": "Icon"
         },
         "12258:4330": {
@@ -2968,13 +2917,13 @@
           "Type": "Icon"
         },
         "12258:4545": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4599": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Mouseover",
           "Type": "Icon"
@@ -2986,13 +2935,13 @@
           "Type": "Icon"
         },
         "12258:4554": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4626": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3010,13 +2959,13 @@
           "Type": "Text + Icon"
         },
         "12258:4551": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text + Icon"
         },
         "12258:4579": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Text + Icon"
@@ -3028,7 +2977,7 @@
           "Type": "Icon"
         },
         "12258:4605": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Icon"
@@ -3040,19 +2989,19 @@
           "Type": "Text + Icon"
         },
         "12258:4596": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Default",
           "Type": "Icon"
         },
         "12258:4567": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4561": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3063,44 +3012,32 @@
           "State": "Disabled",
           "Type": "Icon"
         },
-        "12258:4313": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "L",
-          "State": "Pressed / Selected",
-          "Type": "Icon"
-        },
         "12258:4582": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Focused",
           "Type": "Text + Icon"
         },
-        "12258:4287": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Focused",
-          "Type": "Text"
-        },
         "12258:4564": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
         "12258:4573": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4620": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Loading",
           "Type": "Icon"
         },
         "12258:4570": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
@@ -3112,13 +3049,13 @@
           "Type": "Text + Icon"
         },
         "12258:4586": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Focused",
           "Type": "Text + Icon"
         },
         "12258:4542": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3130,22 +3067,16 @@
           "Type": "Text"
         },
         "12258:4519": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Text"
         },
         "12329:7468": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Focused",
           "Type": "Icon"
-        },
-        "12258:4319": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Default",
-          "Type": "Text"
         },
         "12258:4296": {
           "Variant": "Secondary Neutral Black (Default)",
@@ -3154,15 +3085,9 @@
           "Type": "Icon"
         },
         "12258:4608": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Loading",
-          "Type": "Icon"
-        },
-        "12258:4291": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "S",
-          "State": "Pressed / Selected",
           "Type": "Icon"
         },
         "12258:4311": {
@@ -3172,7 +3097,7 @@
           "Type": "Text + Icon"
         },
         "12258:4602": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Icon"
@@ -3190,25 +3115,25 @@
           "Type": "Text"
         },
         "12258:4522": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Pressed / Selected",
           "Type": "Text"
         },
         "12258:4503": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
         },
         "12258:4629": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Disabled",
           "Type": "Icon"
         },
         "12258:4558": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Default",
           "Type": "Text + Icon"
@@ -3220,13 +3145,13 @@
           "Type": "Text"
         },
         "12258:4548": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
         "12258:4494": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "L",
           "State": "Default",
           "Type": "Text"
@@ -3237,26 +3162,14 @@
           "State": "Focused",
           "Type": "Icon"
         },
-        "12258:4288": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "M",
-          "State": "Focused",
-          "Type": "Icon"
-        },
         "12258:4323": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "L",
           "State": "Disabled",
           "Type": "Text"
         },
-        "12258:4306": {
-          "Variant": "Secondary Neutral Black (Default)",
-          "Size": "S",
-          "State": "Default",
-          "Type": "Text + Icon"
-        },
         "12258:4538": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
@@ -3291,11 +3204,29 @@
           "State": "Default",
           "Type": "Text"
         },
+        "12258:4327": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "S",
+          "State": "Default",
+          "Type": "Text"
+        },
         "12258:4318": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "M",
           "State": "Mouseover",
           "Type": "Text"
+        },
+        "12258:4322": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
+          "State": "Pressed / Selected",
+          "Type": "Text + Icon"
+        },
+        "12258:4299": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
+          "State": "Mouseover",
+          "Type": "Icon"
         },
         "12258:4328": {
           "Variant": "Secondary Neutral Black (Default)",
@@ -3303,9 +3234,27 @@
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
+        "12258:4313": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "L",
+          "State": "Pressed / Selected",
+          "Type": "Icon"
+        },
+        "12258:4287": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
+          "State": "Focused",
+          "Type": "Text"
+        },
         "12258:4513": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "S",
+          "State": "Default",
+          "Type": "Text"
+        },
+        "12258:4319": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
           "State": "Default",
           "Type": "Text"
         },
@@ -3315,14 +3264,32 @@
           "State": "Disabled",
           "Type": "Text"
         },
+        "12258:4291": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "S",
+          "State": "Pressed / Selected",
+          "Type": "Icon"
+        },
+        "12258:4288": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "M",
+          "State": "Focused",
+          "Type": "Icon"
+        },
         "12258:4292": {
           "Variant": "Secondary Neutral Black (Default)",
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
         },
+        "12258:4306": {
+          "Variant": "Secondary Neutral Black (Default)",
+          "Size": "S",
+          "State": "Default",
+          "Type": "Text + Icon"
+        },
         "12258:4510": {
-          "Variant": "Secondary Neutral White - 1",
+          "Variant": "Secondary Neutral White",
           "Size": "M",
           "State": "Default",
           "Type": "Text"
@@ -7367,42 +7334,34 @@
       "layers": {
         "10167:1037": {
           "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=4",
-          "Container / alerts/warning-circle-filled": "strokeWeight=1",
-          "Container / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Container / Text": "strokeWeight=1",
           "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1",
-          "Container / navigation/cross-mini": "strokeWeight=1",
-          "Container / navigation/cross-mini / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "(root)": "strokeWeight=1"
         },
         "10167:1043": {
           "Container": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
-          "Container / alerts/info-circle-filled": "strokeWeight=1",
-          "Container / alerts/info-circle-filled / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Container / Text": "strokeWeight=1",
           "Container / Text / Text": "fill=Accent Light Mode/Blue/900;strokeWeight=1",
-          "Container / navigation/cross-mini": "strokeWeight=1",
-          "Container / navigation/cross-mini / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "(root)": "strokeWeight=1"
         },
         "10167:1049": {
           "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
-          "Container / alerts/checkmark-filled-1": "strokeWeight=1",
-          "Container / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Container / Text": "strokeWeight=1",
           "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
-          "Container / navigation/cross-mini": "strokeWeight=1",
-          "Container / navigation/cross-mini / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "(root)": "strokeWeight=1"
         },
         "10167:1055": {
           "Container": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=4",
-          "Container / alerts/warning-circle-filled": "strokeWeight=1",
-          "Container / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Container / Text": "strokeWeight=1",
           "Container / Text / Text": "fill=Accent Light Mode/Orange/900;strokeWeight=1",
-          "Container / navigation/cross-mini": "strokeWeight=1",
-          "Container / navigation/cross-mini / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
           "(root)": "strokeWeight=1"
         }
       },
@@ -7840,8 +7799,8 @@
       "layers": {
         "10172:12395": {
           "Padding": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -7852,20 +7811,20 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:1500": {
           "Padding": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Red/600;strokeWeight=1",
@@ -7873,8 +7832,8 @@
         },
         "10182:3005": {
           "Padding": "strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -7885,20 +7844,20 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10608:1003": {
           "Padding": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Red/600;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Neutral/Generic/Black;strokeWeight=1",
@@ -7906,14 +7865,14 @@
         },
         "10606:1248": {
           "Padding": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Blue/900;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
@@ -7921,14 +7880,14 @@
         },
         "10608:1059": {
           "Padding": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Neutral/Generic/Black;strokeWeight=1",
@@ -7936,8 +7895,8 @@
         },
         "10179:4175": {
           "Padding": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
-          "Padding / alerts/info-circle-filled": "strokeWeight=1",
-          "Padding / alerts/info-circle-filled / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -7948,14 +7907,14 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:2896": {
           "Padding": "strokeWeight=1;radius=4",
-          "Padding / alerts/info-circle-filled": "strokeWeight=1",
-          "Padding / alerts/info-circle-filled / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -7966,16 +7925,16 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "navigation/cross-small": "strokeWeight=1",
           "navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:2935": {
           "Padding": "strokeWeight=1;radius=4",
-          "Padding / alerts/checkmark-filled-1": "strokeWeight=1",
-          "Padding / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -7986,16 +7945,16 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "navigation/cross-small": "strokeWeight=1",
           "navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:1437": {
           "Padding": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
-          "Padding / alerts/checkmark-filled-1": "strokeWeight=1",
-          "Padding / alerts/checkmark-filled-1 / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -8006,16 +7965,16 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "navigation/cross-small": "strokeWeight=1",
           "navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:2965": {
           "Padding": "strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -8026,16 +7985,16 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "navigation/cross-small": "strokeWeight=1",
           "navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10182:1452": {
           "Padding": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/650;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Orange/650;strokeWeight=1",
           "Padding / .Alert Base/Medium": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
@@ -8046,22 +8005,22 @@
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "navigation/cross-small": "strokeWeight=1",
           "navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "(root)": "strokeWeight=1"
         },
         "10606:1261": {
           "Padding": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
@@ -8069,14 +8028,14 @@
         },
         "10608:1055": {
           "Padding": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Neutral/Generic/Black;strokeWeight=1",
@@ -8084,14 +8043,14 @@
         },
         "10606:1274": {
           "Padding": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=4",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/650;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Orange/650;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Orange/900;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Orange/650;strokeWeight=1",
@@ -8099,14 +8058,14 @@
         },
         "10608:1063": {
           "Padding": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled": "strokeWeight=1",
-          "Padding / alerts/warning-circle-filled / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
+          "Padding / <Icon>": "strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Orange/600;strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / navigation/cross-small / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
+          "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Neutral/Generic/Black;strokeWeight=1",
@@ -8410,6 +8369,39 @@
       },
       "variants": {
         "11783:2476": {}
+      },
+      "fmt": 8
+    },
+    "10172:12251": {
+      "name": "Betslip (Inline)",
+      "count": 2,
+      "layers": {
+        "10172:12252": {
+          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1",
+          "Container / Icon": "strokeWeight=1",
+          "Container / Icon / <Icon>": "strokeWeight=1",
+          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "10172:12258": {
+          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1",
+          "Container / Icon": "strokeWeight=1",
+          "Container / Icon / <Icon>": "strokeWeight=1",
+          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1;opacity=0.8",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "10172:12252": {
+          "Type": "Success"
+        },
+        "10172:12258": {
+          "Type": "Error"
+        }
       },
       "fmt": 8
     }
