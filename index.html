@@ -378,6 +378,10 @@
     border-radius: 3px;
     color: var(--text-secondary);
   }
+  .change-emphasis {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
   .val-old {
     color: var(--text-muted);
     font-family: 'Roboto Mono', monospace;
@@ -694,10 +698,16 @@
 
   // Subtle highlighting of technical tokens in descriptions and actions.
   // Runs on ALREADY-ESCAPED text and wraps matches in mono "pills"
-  // (.change-token), colouring transition arrows (.val-arrow).
-  // One single-pass regex → non-overlapping matches, no double-wrapping.
+  // (.change-token), bold quoted strings (.change-emphasis), and colours
+  // transition arrows (.val-arrow). One single-pass regex → non-overlapping
+  // matches, no double-wrapping.
   function highlightDesc(escaped) {
     // Priority order in the alternation:
+    //   0) quoted strings            &quot;Primary Buttons&quot; / &quot;Primary Buttons test&quot;
+    //      → matched FIRST and consumed whole, so a rename's before/after
+    //        names (which may or may not contain a slash, and may have a
+    //        suffix like "-test" tacked directly on) are always highlighted
+    //        completely — no more half-pilled "Badges/Casino"-test.
     //   1) CSS custom properties     --accent-default-green-400
     //   2) hex colours               #25873A   (optional " (NN%)")
     //   3) slash paths               Accent Light Mode/Default Green/600, Avatar/XS, Badge/Default
@@ -706,14 +716,16 @@
     // ("wherever", "and", "across") are never pulled into a pill.
     const SEG = '[A-Z0-9][\\w]*(?: [A-Z0-9][\\w]*)*';
     const RE = new RegExp(
-      '(--[a-z0-9-]+)' +                          // 1) CSS var
+      '(&quot;(?:(?!&quot;).)*&quot;)' +          // 0) quoted string (non-greedy, escaped quotes)
+      '|(--[a-z0-9-]+)' +                          // 1) CSS var
       '|(#[0-9A-Fa-f]{6}(?:\\s\\(\\d+%\\))?)' +   // 2) hex (optional alpha %)
       '|(' + SEG + '(?:\\/' + SEG + ')+)' +       // 3) slash path
       '|(→)',                                     // 4) arrow
       'g'
     );
 
-    return escaped.replace(RE, (m, cssVar, hex, path, arrow) => {
+    return escaped.replace(RE, (m, quoted, cssVar, hex, path, arrow) => {
+      if (quoted) return `<span class="change-emphasis">${quoted}</span>`;
       if (cssVar) return `<span class="change-token">${cssVar}</span>`;
       if (hex)    return `<span class="change-token">${hex}</span>`;
       if (path)   return `<span class="change-token">${path}</span>`;
