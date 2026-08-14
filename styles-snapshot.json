@@ -7866,7 +7866,7 @@
         "10606:1248": {
           "Padding": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
           "Padding / <Icon>": "strokeWeight=1",
-          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
@@ -7874,18 +7874,18 @@
           "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
-          "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / .Alert Base/Small / Link + Additional text / Link": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
+          "Padding / .Alert Base/Small / Link + Additional text / Days": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
           "(root)": "strokeWeight=1"
         },
         "10608:1059": {
           "Padding": "strokeWeight=1",
           "Padding / <Icon>": "strokeWeight=1",
-          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / <Icon> / Vector": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
           "Padding / .Alert Base/Small": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
+          "Padding / .Alert Base/Small / Container / Text / Text": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
           "Padding / .Alert Base/Small / Container / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Small / Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
           "Padding / .Alert Base/Small / Link + Additional text": "strokeWeight=1",
@@ -8157,7 +8157,7 @@
       "fmt": 8
     },
     "33244:939": {
-      "name": "Avatar/MD",
+      "name": "Avatar/MD-test",
       "count": 12,
       "layers": {
         "33244:940": {
@@ -8294,39 +8294,14 @@
         }
       },
       "variants": {
-        "33244:952": {
-          "Type": "User",
-          "Notification": "On",
-          "State": "Default"
-        },
         "33244:960": {
-          "Type": "Initials",
+          "Type": "Initials-neu",
           "Notification": "On",
           "State": "Default"
         },
         "33244:958": {
-          "Type": "Initials",
+          "Type": "Initials-neu",
           "Notification": "Off",
-          "State": "Hover"
-        },
-        "33244:948": {
-          "Type": "User",
-          "Notification": "Off",
-          "State": "Default"
-        },
-        "33244:946": {
-          "Type": "Image",
-          "Notification": "On",
-          "State": "Hover"
-        },
-        "33244:954": {
-          "Type": "User",
-          "Notification": "On",
-          "State": "Hover"
-        },
-        "33244:962": {
-          "Type": "Initials",
-          "Notification": "On",
           "State": "Hover"
         },
         "33244:942": {
@@ -8350,9 +8325,34 @@
           "State": "Default"
         },
         "33244:956": {
-          "Type": "Initials",
+          "Type": "Initials-neu",
           "Notification": "Off",
           "State": "Default"
+        },
+        "33244:948": {
+          "Type": "User",
+          "Notification": "Off",
+          "State": "Default"
+        },
+        "33244:952": {
+          "Type": "User",
+          "Notification": "On",
+          "State": "Default"
+        },
+        "33244:946": {
+          "Type": "Image",
+          "Notification": "On",
+          "State": "Hover"
+        },
+        "33244:954": {
+          "Type": "User",
+          "Notification": "On",
+          "State": "Hover"
+        },
+        "33244:962": {
+          "Type": "Initials-neu",
+          "Notification": "On",
+          "State": "Hover"
         }
       },
       "fmt": 8

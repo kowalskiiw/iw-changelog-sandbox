@@ -1,5 +1,34 @@
 [
   {
+    "version": "v2026.08.14.68",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Updated fill from Accent Light Mode/Blue/600 → Accent Light Mode/Blue/700 across icon, link, days, and text layers — applies a darker blue tone throughout inline alert variants."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD-test",
+            "desc": "Renamed: Avatar/MD → Avatar/MD-test; Type: Initials → Initials-neu. Small avatar for tight layouts needing slightly more presence than MD."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded or token-mapped references to Accent Light Mode/Blue/600 to Accent Light Mode/Blue/700 for inline alert icon, link, days, and text elements.",
+      "Designer: Replace all instances of Avatar/MD with Avatar/MD-test in Figma files; update the Type property from Initials to Initials-neu where applied.",
+      "Developer: Search codebase for component references to Avatar/MD and variant type Initials — rename to Avatar/MD-test and Initials-neu respectively to avoid broken references.",
+      "Tester: Visually verify inline alerts across all markets (DE, AT, ES, SE, CY) to confirm the blue fill shift from /Blue/600 to /Blue/700 renders correctly on icon, link, days, and text layers."
+    ]
+  },
+  {
     "version": "v2026.08.14.67",
     "date": "2026-08-14",
     "ticket": "",
