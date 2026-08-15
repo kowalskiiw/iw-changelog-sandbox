@@ -569,16 +569,6 @@
         "letterSpacing": 0
       },
       "description": "Use primarily on help text under form fields, and as secondary supporting text in applications. It should be used sparingly.\n\nToken name: font.body.small"
-    },
-    "Display/Bold/Regular": {
-      "value": {
-        "fontSize": 12,
-        "lineHeight": 15,
-        "fontWeight": 400,
-        "fontFamily": "Inter",
-        "letterSpacing": 0
-      },
-      "description": null
     }
   },
   "fill": {},
@@ -902,7 +892,8 @@
     "Color Styles / Virtuals/400": "#86BEDD",
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
-    "Color Styles / Footer Greece/800": "#1A3362"
+    "Color Styles / Footer Greece/800": "#1A3362",
+    "Color Styles / Footer Greece/900": "#0D234D"
   },
   "components": {
     "12637:2935": {
@@ -3602,7 +3593,7 @@
       "fmt": 8
     },
     "12222:25669": {
-      "name": "Primary Buttons test",
+      "name": "Primary Buttons",
       "count": 270,
       "layers": {
         "12222:25590": {
@@ -6231,12 +6222,6 @@
           "State": "Disabled",
           "Type": "Icon"
         },
-        "12242:3362": {
-          "Variant": "Primary Brand (Default)",
-          "Size": "S",
-          "State": "Disabled",
-          "Type": "Icon"
-        },
         "18388:80923": {
           "Variant": "Primary Brand (Default)",
           "Size": "M",
@@ -6621,6 +6606,12 @@
           "State": "Default",
           "Type": "Text"
         },
+        "12242:3362": {
+          "Variant": "Primary Brand (Default)",
+          "Size": "S",
+          "State": "Disabled",
+          "Type": "Icon"
+        },
         "12246:25607": {
           "Variant": "Primary Destructive",
           "Size": "L",
@@ -6699,12 +6690,6 @@
           "State": "Default",
           "Type": "Text"
         },
-        "12246:26300": {
-          "Variant": "Primary Neutral",
-          "Size": "S",
-          "State": "Disabled",
-          "Type": "Icon"
-        },
         "12246:25956": {
           "Variant": "Primary Warning",
           "Size": "S",
@@ -6741,6 +6726,12 @@
           "State": "Focused",
           "Type": "Icon"
         },
+        "12246:26300": {
+          "Variant": "Primary Neutral",
+          "Size": "S",
+          "State": "Disabled",
+          "Type": "Icon"
+        },
         "12246:25968": {
           "Variant": "Primary Warning",
           "Size": "M",
@@ -6752,12 +6743,6 @@
           "Size": "M",
           "State": "Mouseover",
           "Type": "Icon"
-        },
-        "12342:16112": {
-          "Variant": "Primary Neutral",
-          "Size": "L",
-          "State": "Focused",
-          "Type": "Text"
         },
         "12246:25950": {
           "Variant": "Primary Warning",
@@ -6794,6 +6779,12 @@
           "Size": "S",
           "State": "Pressed / Selected",
           "Type": "Icon"
+        },
+        "12342:16112": {
+          "Variant": "Primary Neutral",
+          "Size": "L",
+          "State": "Focused",
+          "Type": "Text"
         },
         "18395:80982": {
           "Variant": "Primary Brand (Default)",
@@ -6837,12 +6828,6 @@
           "State": "Pressed / Selected",
           "Type": "Text + Icon"
         },
-        "12246:25785": {
-          "Variant": "Primary Warning",
-          "Size": "M",
-          "State": "Disabled",
-          "Type": "Text + Icon"
-        },
         "12342:15721": {
           "Variant": "Primary Destructive",
           "Size": "S",
@@ -6878,12 +6863,6 @@
           "Size": "S",
           "State": "Disabled",
           "Type": "Text"
-        },
-        "12342:16120": {
-          "Variant": "Primary Neutral",
-          "Size": "L",
-          "State": "Focused",
-          "Type": "Text + Icon"
         },
         "12246:25340": {
           "Variant": "Primary Destructive",
@@ -6921,6 +6900,18 @@
           "State": "Focused",
           "Type": "Text"
         },
+        "12246:25785": {
+          "Variant": "Primary Warning",
+          "Size": "M",
+          "State": "Disabled",
+          "Type": "Text + Icon"
+        },
+        "12342:16120": {
+          "Variant": "Primary Neutral",
+          "Size": "L",
+          "State": "Focused",
+          "Type": "Text + Icon"
+        },
         "12246:25716": {
           "Variant": "Primary Warning",
           "Size": "S",
@@ -6932,12 +6923,6 @@
           "Size": "S",
           "State": "Mouseover",
           "Type": "Icon"
-        },
-        "18400:81276": {
-          "Variant": "Primary Neutral",
-          "Size": "M",
-          "State": "Loading",
-          "Type": "Text + Icon"
         },
         "12242:3374": {
           "Variant": "Primary Brand (Default)",
@@ -6975,16 +6960,16 @@
           "State": "Pressed / Selected",
           "Type": "Icon"
         },
+        "18400:81276": {
+          "Variant": "Primary Neutral",
+          "Size": "M",
+          "State": "Loading",
+          "Type": "Text + Icon"
+        },
         "12340:15644": {
           "Variant": "Primary Destructive",
           "Size": "L",
           "State": "Default",
-          "Type": "Text"
-        },
-        "12340:15458": {
-          "Variant": "Primary Positive",
-          "Size": "S",
-          "State": "Focused",
           "Type": "Text"
         },
         "12246:25352": {
@@ -7023,12 +7008,6 @@
           "State": "Mouseover",
           "Type": "Text + Icon"
         },
-        "12340:15638": {
-          "Variant": "Primary Destructive",
-          "Size": "S",
-          "State": "Default",
-          "Type": "Text"
-        },
         "12246:26291": {
           "Variant": "Primary Neutral",
           "Size": "S",
@@ -7063,6 +7042,18 @@
           "Variant": "Primary Positive",
           "Size": "L",
           "State": "Pressed / Selected",
+          "Type": "Text"
+        },
+        "12340:15458": {
+          "Variant": "Primary Positive",
+          "Size": "S",
+          "State": "Focused",
+          "Type": "Text"
+        },
+        "12340:15638": {
+          "Variant": "Primary Destructive",
+          "Size": "S",
+          "State": "Default",
           "Type": "Text"
         },
         "12246:26282": {
@@ -7365,12 +7356,6 @@
           "State": "Default",
           "Type": "Text"
         },
-        "12246:25604": {
-          "Variant": "Primary Destructive",
-          "Size": "M",
-          "State": "Disabled",
-          "Type": "Icon"
-        },
         "12246:25589": {
           "Variant": "Primary Destructive",
           "Size": "S",
@@ -7406,6 +7391,12 @@
           "Size": "S",
           "State": "Focused",
           "Type": "Text"
+        },
+        "12246:25604": {
+          "Variant": "Primary Destructive",
+          "Size": "M",
+          "State": "Disabled",
+          "Type": "Icon"
         },
         "12246:25965": {
           "Variant": "Primary Warning",
@@ -7949,7 +7940,7 @@
       "fmt": 8
     },
     "12637:2876": {
-      "name": "Badges/Casino-test",
+      "name": "Badges/Casino",
       "count": 16,
       "layers": {
         "12637:2900": {
@@ -8048,7 +8039,7 @@
         },
         "12637:7800": {
           "Platform": "Desktop",
-          "Categories": "New-test"
+          "Categories": "New"
         },
         "12637:2903": {
           "Platform": "Mobile",
@@ -8068,7 +8059,7 @@
         },
         "12637:2900": {
           "Platform": "Mobile",
-          "Categories": "New-test"
+          "Categories": "New"
         },
         "12637:2915": {
           "Platform": "Mobile",
@@ -8098,10 +8089,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8131,10 +8122,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Red/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8194,10 +8185,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Blue/900;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8212,10 +8203,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8232,10 +8223,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Blue/500;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8252,10 +8243,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8272,10 +8263,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Blue/500;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
@@ -8292,10 +8283,10 @@
           "Padding / .Alert Base/Medium / Message + Button / Text": "strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Text / Text": "fill=Accent Light Mode/Orange/900;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test": "fill=Yellow/500;strokeWeight=1;radius=2",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text": "strokeWeight=1",
-          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons test / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons": "fill=Yellow/500;strokeWeight=1;radius=2",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text": "strokeWeight=1",
+          "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text": "fill=Neutral/Generic/Black;strokeWeight=1",
           "Padding / .Alert Base/Medium / Message + Button / Button + Link / Link": "fill=Accent Light Mode/Blue/600;strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon>": "strokeWeight=1",
           "Padding / .Alert Base/Medium / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=0",
