@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IW Design Library — Changelog</title>
+<title>IW Design Library — Archiv</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -573,7 +573,6 @@
       <div class="legend-item"><div class="legend-dot legend-dot-deleted"></div>Deleted</div>
     </div>
     <div style="width:1px;height:16px;background:var(--border-strong)"></div>
-    <a href="archive.html" class="header-link">Archiv</a>
     <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank" class="header-btn">Design Library →</a>
   </div>
 </header>
@@ -581,13 +580,9 @@
 <!-- HERO -->
 <div style="border-bottom: 1px solid var(--border);">
   <div class="hero">
-    <!--
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-dot"></div>
-      IW Design System
-    </div> -->
-    <h1>Design Library Changelog</h1>
-    <p class="hero-sub">Track every change to the IW Design Library — type styles, components, tokens, and documentation updates across all releases.</p>
+    <a href="index.html" class="header-link" style="display:inline-block;margin-bottom:16px;">← Zurück zum Changelog</a>
+    <h1>Archiv</h1>
+    <p class="hero-sub">Ältere Releases der IW Design Library — automatisch archiviert, sobald die aktuelle Liste mehr als 20 Einträge umfasst.</p>
   </div>
 </div>
 
@@ -602,7 +597,7 @@
 
   <!-- ENTRIES — rendered dynamically -->
   <main class="entries" id="entries">
-    <div class="empty-state" id="emptyState">No changelog entries found.</div>
+    <div class="empty-state" id="emptyState">No archived entries yet.</div>
   </main>
 </div>
 
@@ -763,7 +758,7 @@
     let data = [];
 
     try {
-      const res = await fetch('changelog-data.json');
+      const res = await fetch('archives/changelog-archive.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       data = await res.json();
     } catch (err) {
