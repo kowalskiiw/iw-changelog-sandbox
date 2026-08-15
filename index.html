@@ -290,8 +290,10 @@
     letter-spacing: -.03em;
   }
   .entry-ticket-label {
-    font-size: 13px;
-    color: var(--text-muted);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    color: var(--text-secondary);
+    letter-spacing: .01em;
   }
   .entry-ticket {
     font-family: 'Roboto Mono', monospace;
@@ -682,7 +684,7 @@
 
   function renderEntry(entry, isLast) {
     const ticketEl = entry.ticket
-      ? `<span class="entry-ticket">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
+      ? `<span class="entry-ticket-label">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
       : `<span class="entry-ticket static">Initial Release</span>`;
 
     return `
