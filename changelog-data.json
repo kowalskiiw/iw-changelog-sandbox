@@ -1,5 +1,114 @@
 [
   {
+    "version": "v2026.08.15.72",
+    "date": "2026-08-15",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Color Styles / Accent Light Mode/Lime Green/50",
+            "desc": "New lightest Lime Green tint (#FBFEF6) for subtle light-mode backgrounds or hover states. Use as a low-emphasis surface accent."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/Grey Alpha/500",
+            "desc": "Grey alpha token updated from hex #00000080 to #000000 at 50% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/Grey Alpha/300",
+            "desc": "Grey alpha token updated from #0000004D to #000000 at 30% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/Grey Alpha/200",
+            "desc": "Grey alpha token updated from #00000033 to #000000 at 20% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/100",
+            "desc": "White alpha token updated from #FFFFFF1A to #FFFFFF at 10% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/200",
+            "desc": "White alpha token updated from #FFFFFF33 to #FFFFFF at 20% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/300",
+            "desc": "White alpha token updated from #FFFFFF4D to #FFFFFF at 30% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/400",
+            "desc": "White alpha token updated from #FFFFFF66 to #FFFFFF at 40% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/500",
+            "desc": "White alpha token updated from #FFFFFF80 to #FFFFFF at 50% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/600",
+            "desc": "White alpha token updated from #FFFFFF99 to #FFFFFF at 60% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/700",
+            "desc": "White alpha token updated from #FFFFFFB2 to #FFFFFF at 70% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/800",
+            "desc": "White alpha token updated from #FFFFFFCC to #FFFFFF at 80% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Neutral/White Alpha/900",
+            "desc": "White alpha token updated from #FFFFFFE5 to #FFFFFF at 90% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/100",
+            "desc": "Purple alpha token updated from #7B61FF1A to #7B61FF at 10% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "changed",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/300",
+            "desc": "Purple alpha token updated from #7B61FF4D to #7B61FF at 30% opacity. Functionally equivalent; value now expressed as Figma variable opacity."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Footer Greece/900",
+            "desc": "Removed market-specific footer color token. No direct replacement indicated; review Greece/CY footer components for hardcoded fallback or alternative neutral token."
+          },
+          {
+            "type": "deprecated",
+            "title": "Typography text styles / Font Weight/Extra Bold",
+            "desc": "Extra Bold font weight style removed from library. Replace any usage with the nearest available weight style (e.g. Bold)."
+          },
+          {
+            "type": "deprecated",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-56",
+            "desc": "opacity-56 effect style removed from library. Replace usages with the closest available opacity token (e.g. opacity-50 or opacity-60)."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Verify that all White Alpha and Grey Alpha tokens (e.g. --neutral-white-alpha-100 through --neutral-white-alpha-900, --neutral-grey-alpha-200/300/500) still resolve to correct RGBA values after the Figma variable opacity migration — spot-check dark overlays and glass-effect surfaces across DE, AT, ES, SE, CY builds.",
+      "Developer: Remove any CSS or token references to the deprecated opacity-56 token and Font Weight/Extra Bold text style; substitute with the closest available alternatives (opacity-50 or opacity-60, and Bold weight respectively) across all affected React components.",
+      "Designer: Audit Greece/CY footer designs that used Color Styles / Footer Greece/900 and replace with an appropriate neutral or market-approved token; update affected Figma frames before next handoff.",
+      "Tester: Visually verify footer components in the CY market for colour regressions following removal of Footer Greece/900, and confirm Extra Bold text in odds displays, match cards, and navigation renders correctly with the replacement font weight."
+    ]
+  },
+  {
     "version": "v2026.08.14.71",
     "date": "2026-08-14",
     "ticket": "",
