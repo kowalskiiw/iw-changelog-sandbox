@@ -136,6 +136,37 @@
   }
   .header-btn:hover { background: #333333; }
 
+  .search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .search-icon {
+    position: absolute;
+    left: 8px;
+    width: 13px;
+    height: 13px;
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+  .search-input {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    padding: 6px 10px 6px 28px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-subtle);
+    color: var(--text-primary);
+    width: 200px;
+    transition: border-color .15s, width .15s;
+  }
+  .search-input:focus {
+    outline: none;
+    border-color: var(--border-strong);
+    width: 240px;
+  }
+  .search-input::placeholder { color: var(--text-muted); }
+
   /* ── HERO ── */
   .hero {
     border-bottom: 1px solid var(--border);
@@ -544,7 +575,7 @@
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-left">
-    <a href="#" class="logo-mark" aria-label="Interwetten">
+    <a href="index.html" class="logo-mark" aria-label="Interwetten">
       <!-- Interwetten wordmark -->
       <svg class="logo-wordmark" width="119" height="20" viewBox="0 0 119 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interwetten">
         <path d="M5.98749 5.80876H2.53797L3.59247 0H7.04198L5.98749 5.80876Z" fill="currentColor"/>
@@ -567,6 +598,14 @@
     -->
   </div>
   <div class="header-right">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" class="search-input" placeholder="Version, Ticket oder Stichwort…" aria-label="Changelog durchsuchen">
+    </div>
+    <div style="width:1px;height:16px;background:var(--border-strong)"></div>
     <div class="legend">
       <div class="legend-item"><div class="legend-dot legend-dot-new"></div>New</div>
       <div class="legend-item"><div class="legend-dot legend-dot-changed"></div>Changed</div>
@@ -752,6 +791,47 @@
     });
   }
 
+  // ── SEARCH ─────────────────────────────────────────────────────────────────
+  // Filters by Version, Ticket, or freitext keyword across group/item titles,
+  // descriptions, and actions. Client-side only — no re-fetch, just toggles
+  // visibility of already-rendered entries and their timeline dots.
+
+  function entryMatches(entry, query) {
+    const q = query.trim().toLowerCase();
+    if (!q) return true;
+    if (entry.version && entry.version.toLowerCase().includes(q)) return true;
+    if (entry.ticket && entry.ticket.toLowerCase().includes(q)) return true;
+    for (const group of entry.groups || []) {
+      if (group.title && group.title.toLowerCase().includes(q)) return true;
+      for (const item of group.items || []) {
+        if (item.title && item.title.toLowerCase().includes(q)) return true;
+        if (item.desc && item.desc.toLowerCase().includes(q)) return true;
+      }
+    }
+    for (const action of entry.actions || []) {
+      if (action.toLowerCase().includes(q)) return true;
+    }
+    return false;
+  }
+
+  function applySearch(data, query) {
+    const searchEmptyEl = document.getElementById('searchEmptyState');
+    let anyVisible = false;
+
+    data.forEach(entry => {
+      const matches = entryMatches(entry, query);
+      if (matches) anyVisible = true;
+
+      const entryEl = document.getElementById(entry.version);
+      if (entryEl) entryEl.classList.toggle('hidden', !matches);
+
+      const timelineEl = document.querySelector(`.timeline-item[data-version="${CSS.escape(entry.version)}"]`);
+      if (timelineEl) timelineEl.style.display = matches ? '' : 'none';
+    });
+
+    if (searchEmptyEl) searchEmptyEl.style.display = anyVisible ? 'none' : 'block';
+  }
+
   // ── LOAD & RENDER ──────────────────────────────────────────────────────────
 
   async function init() {
@@ -776,7 +856,13 @@
 
     timelineEl.innerHTML = renderTimeline(data);
     entriesEl.innerHTML  = data.map((e, i) => renderEntry(e, i === data.length - 1)).join('') +
-                           '<div class="empty-state" id="emptyState"></div>';
+                           '<div class="empty-state" id="emptyState"></div>' +
+                           '<div class="empty-state" id="searchEmptyState">No results found.</div>';
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => applySearch(data, searchInput.value));
+    }
 
     // Intersection observer for timeline active state
     const observer = new IntersectionObserver((entries) => {
