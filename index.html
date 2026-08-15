@@ -289,19 +289,21 @@
     color: var(--text-primary);
     letter-spacing: -.03em;
   }
+  .entry-ticket-label {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
   .entry-ticket {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-strong);
     color: var(--text-secondary);
-    text-decoration: none;
-    transition: border-color .15s, color .15s;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color .15s;
     letter-spacing: .01em;
   }
-  .entry-ticket:hover { border-color: var(--border-strong); color: var(--text-primary); }
+  .entry-ticket:hover { color: var(--text-primary); }
+  .entry-ticket.static { text-decoration: none; cursor: default; }
   .entry-date-label {
     font-size: 13px;
     color: var(--text-muted);
@@ -680,8 +682,8 @@
 
   function renderEntry(entry, isLast) {
     const ticketEl = entry.ticket
-      ? `<a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
-      : `<span class="entry-ticket" style="cursor:default">Initial Release</span>`;
+      ? `<span class="entry-ticket-label">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
+      : `<span class="entry-ticket static">Initial Release</span>`;
 
     return `
       <article class="entry" id="${escHtml(entry.version)}">
