@@ -11,7 +11,7 @@
  * REST API is used only as a fallback.
  */
 
-import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -25,6 +25,12 @@ const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
 const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
+// Live changelog is kept trimmed to the most recent MAX_LIVE_ENTRIES; anything
+// older is moved into one continuously-growing archive file automatically —
+// no manual archiving step needed. See the trim step at the end of main().
+const MAX_LIVE_ENTRIES = 20;
+const ARCHIVE_DIR  = 'archives';
+const ARCHIVE_PATH = `${ARCHIVE_DIR}/changelog-archive.json`;
 // Look for variables.json next to this script first, then in the working dir,
 // so it's found regardless of where the workflow runs `node` from.
 const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json'];
@@ -885,7 +891,7 @@ async function main() {
   if (!FIGMA_TOKEN)   throw new Error('Missing FIGMA_TOKEN');
   if (!FIGMA_FILE_ID) throw new Error('Missing FIGMA_FILE_ID');
 
-  const changelog = existsSync(CHANGELOG_PATH)
+  let changelog = existsSync(CHANGELOG_PATH)
     ? JSON.parse(readFileSync(CHANGELOG_PATH, 'utf8')) : [];
 
   const oldSnap = existsSync(SNAPSHOT_PATH)
@@ -914,6 +920,25 @@ async function main() {
 
   const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
   changelog.unshift(newEntry);
+
+  // Keep the live changelog trimmed to the most recent MAX_LIVE_ENTRIES.
+  // Anything older is moved into the single, continuously-growing archive
+  // file — automatically, on every run, so the sidebar never needs a manual
+  // "archive now" step. Overflow entries are newer than whatever's already
+  // archived, so they're prepended (archive stays newest-first, same as the
+  // live list).
+  if (changelog.length > MAX_LIVE_ENTRIES) {
+    const overflow = changelog.slice(MAX_LIVE_ENTRIES);
+    changelog = changelog.slice(0, MAX_LIVE_ENTRIES);
+
+    if (!existsSync(ARCHIVE_DIR)) mkdirSync(ARCHIVE_DIR, { recursive: true });
+    const archive = existsSync(ARCHIVE_PATH)
+      ? JSON.parse(readFileSync(ARCHIVE_PATH, 'utf8'))
+      : [];
+    writeFileSync(ARCHIVE_PATH, JSON.stringify([...overflow, ...archive], null, 2));
+    console.log(`📦 Moved ${overflow.length} older entr${overflow.length === 1 ? 'y' : 'ies'} to ${ARCHIVE_PATH} — keeping the latest ${MAX_LIVE_ENTRIES} live.`);
+  }
+
   writeFileSync(CHANGELOG_PATH, JSON.stringify(changelog, null, 2));
 
   console.log(`✅ Changelog updated: ${version} — ${total} changes across ${refinedGroups.length} categories`);
