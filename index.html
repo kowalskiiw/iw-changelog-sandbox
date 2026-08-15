@@ -682,7 +682,7 @@
 
   function renderEntry(entry, isLast) {
     const ticketEl = entry.ticket
-      ? `<span class="entry-ticket-label">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
+      ? `<span class="entry-ticket">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
       : `<span class="entry-ticket static">Initial Release</span>`;
 
     return `
