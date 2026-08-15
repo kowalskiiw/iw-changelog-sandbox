@@ -379,8 +379,11 @@
     color: var(--text-secondary);
   }
   .change-emphasis {
-    font-weight: 600;
-    color: var(--text-secondary);
+    background: rgba(0,0,0,0.05);
+    padding: 1px 5px;
+  }
+  .title-element {
+    color: #717AFF;
   }
   .val-old {
     color: var(--text-muted);
@@ -625,12 +628,29 @@
     return `<span class="tag tag-${type}" style="background:${color}"></span>`;
   }
 
+  // Titles come in two shapes:
+  //   "Category / Element/Path"   (e.g. "Color Styles / Accent Light Mode/Lime Green/50")
+  //   "Element name"              (e.g. "Avatar/MD", "Primary Buttons test")
+  // Only the element part gets the purple highlight — for the first shape
+  // that's everything after the first " / "; for the second shape (no
+  // category prefix) the whole title IS the element, so it's all highlighted.
+  function highlightTitle(title) {
+    const escaped = escHtml(title);
+    const sepIdx = escaped.indexOf(' / ');
+    if (sepIdx === -1) {
+      return `<span class="title-element">${escaped}</span>`;
+    }
+    const category = escaped.slice(0, sepIdx + 3); // includes the " / " separator
+    const element = escaped.slice(sepIdx + 3);
+    return `${category}<span class="title-element">${element}</span>`;
+  }
+
   function renderItem(item) {
     return `
       <div class="change-item">
         ${dot(item.type)}
         <div class="change-item-content">
-          <div class="change-title">${escHtml(item.title)}</div>
+          <div class="change-title">${highlightTitle(item.title)}</div>
           ${item.desc ? `<div class="change-desc">${highlightDesc(escHtml(item.desc))}</div>` : ''}
         </div>
       </div>`;
