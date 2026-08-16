@@ -8612,6 +8612,16 @@
           "Notification": "On",
           "State": "Hover"
         },
+        "33244:950": {
+          "Type": "User",
+          "Notification": "Off",
+          "State": "Hover"
+        },
+        "33244:954": {
+          "Type": "User",
+          "Notification": "On",
+          "State": "Hover"
+        },
         "33244:958": {
           "Type": "Initials",
           "Notification": "Off",
@@ -8626,16 +8636,6 @@
           "Type": "Image",
           "Notification": "Off",
           "State": "Default"
-        },
-        "33244:950": {
-          "Type": "User",
-          "Notification": "Off",
-          "State": "Hover"
-        },
-        "33244:954": {
-          "Type": "User",
-          "Notification": "On",
-          "State": "Hover"
         }
       },
       "fmt": 8
