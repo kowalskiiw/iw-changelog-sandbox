@@ -23,6 +23,13 @@ const FIGMA_TOKEN    = process.env.FIGMA_TOKEN;
 const FIGMA_FILE_ID  = process.env.FIGMA_FILE_ID;
 const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
 const JIRA_BASE_URL  = 'https://interwetten.atlassian.net/browse';
+// Optional — only used to look up a ticket's Jira issue type (Story vs.
+// Task/Sub-task/etc.) so the changelog frontend can show the matching icon.
+// If any of these are missing, the lookup is skipped and ticketType stays
+// null — the frontend then just falls back to the generic ticket icon.
+const ATLASSIAN_DOMAIN = process.env.ATLASSIAN_DOMAIN;
+const ATLASSIAN_EMAIL  = process.env.ATLASSIAN_EMAIL;
+const ATLASSIAN_TOKEN  = process.env.ATLASSIAN_API_TOKEN;
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
 // Live changelog is kept trimmed to the most recent MAX_LIVE_ENTRIES; anything
@@ -885,6 +892,31 @@ function buildFallbackActions(diff) {
   return actions;
 }
 
+// ── JIRA ISSUE TYPE LOOKUP ─────────────────────────────────────────────────────
+// Looks up whether `ticket` is a Story, Task, Sub-task, etc. so the frontend
+// can show a matching icon next to the ticket link. Best-effort only: missing
+// credentials, a 404, or a network error all just resolve to null, and the
+// frontend falls back to the generic ticket icon in that case.
+async function fetchTicketType(ticket) {
+  if (!ticket || !ATLASSIAN_DOMAIN || !ATLASSIAN_EMAIL || !ATLASSIAN_TOKEN) return null;
+  try {
+    const auth = Buffer.from(`${ATLASSIAN_EMAIL}:${ATLASSIAN_TOKEN}`).toString('base64');
+    const res = await fetch(
+      `https://${ATLASSIAN_DOMAIN}/rest/api/3/issue/${encodeURIComponent(ticket)}?fields=issuetype`,
+      { headers: { Authorization: `Basic ${auth}`, Accept: 'application/json' } }
+    );
+    if (!res.ok) {
+      console.warn(`   Could not fetch Jira issue type for ${ticket}: HTTP ${res.status}`);
+      return null;
+    }
+    const data = await res.json();
+    return data.fields?.issuetype?.name ?? null;
+  } catch (e) {
+    console.warn(`   Could not fetch Jira issue type for ${ticket}:`, e.message);
+    return null;
+  }
+}
+
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -914,11 +946,12 @@ async function main() {
   const ticket     = process.env.MANUAL_TICKET || extractTicket(branchName) || extractTicket(process.env.TICKET_FROM_WEBHOOK || '') || '';
   const version    = process.env.MANUAL_VERSION || autoVersion();
   const ticketUrl  = ticket ? `${JIRA_BASE_URL}/${ticket}` : '';
+  const ticketType = await fetchTicketType(ticket);
 
   const rawGroups = buildGroups(diff, figmaDescriptions);
   const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
 
-  const newEntry = { version, date: today(), ticket, ticketUrl, groups: refinedGroups, actions };
+  const newEntry = { version, date: today(), ticket, ticketUrl, ticketType, groups: refinedGroups, actions };
   changelog.unshift(newEntry);
 
   // Keep the live changelog trimmed to the most recent MAX_LIVE_ENTRIES.
