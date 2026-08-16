@@ -1,5 +1,29 @@
 [
   {
+    "version": "v2026.08.04.49",
+    "date": "2026-08-04",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Badges/Casino",
+            "desc": "A badge for numeric values like tallies and scores. Fill updated: Accent Light Mode/Purple/Default/300 → Accent Light Mode/Purple/Default/200. Bold variant is experimental and unconfirmed for Team24+6."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the Casino badge background token from Accent Light Mode/Purple/Default/300 to Accent Light Mode/Purple/Default/200 wherever the Badges/Casino component is rendered.",
+      "Designer: Verify the lighter purple (200) meets contrast requirements for numeric badge content across all five markets (DE, AT, ES, SE, CY) in light mode.",
+      "Tester: Visually verify the Badges/Casino component reflects the updated fill colour (Purple/Default/200) in all screens where casino tallies or scores are displayed.",
+      "Developer: Treat any bold variant usage of Badges/Casino as experimental — flag it in code review and avoid shipping it to production for Team24+6 until confirmed."
+    ]
+  },
+  {
     "version": "v2026.08.04.43",
     "date": "2026-08-04",
     "ticket": "",

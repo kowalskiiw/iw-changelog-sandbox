@@ -1,5 +1,44 @@
 [
   {
+    "version": "v2026.08.16.79",
+    "date": "2026-08-16",
+    "ticket": "CXI-1987",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact and secondary contexts where space is tight. Notification badge fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar for tight layouts needing slightly more presence than XS. Notification badge fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification badge fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default notification badge. Fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500, producing a slightly deeper green."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification badge fill token from Accent Light Mode/Default Green/400 to Accent Light Mode/Default Green/500 across Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default implementations.",
+      "Designer: Verify that the Green/500 badge fill on all three Avatar sizes and Badge/Default meets contrast requirements and renders correctly in Figma across DE, AT, ES, SE, and CY market files.",
+      "Tester: Visually verify notification badge colour on Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default in all markets — confirm the badge no longer renders the lighter Green/400 value."
+    ]
+  },
+  {
     "version": "v2026.08.16.78",
     "date": "2026-08-16",
     "ticket": "",
@@ -2108,30 +2147,6 @@
       "Developer: Update Badges/Casino fill tokens from Purple/Default/200 to Purple/Default/500 and Yellow/300 to Yellow/500 in all casino badge implementations; treat any Bold variant usage as experimental pending Team24+6 confirmation.",
       "Designer: Verify the darker Purple/500 and Yellow/500 badge fills meet contrast requirements in both light and dark contexts across DE, AT, ES, SE, and CY market layouts.",
       "Tester: Visually verify the Banner checkmark icon and Casino badge colours reflect the updated tokens on Sports, Live, and Casino pages across all supported markets."
-    ]
-  },
-  {
-    "version": "v2026.08.04.49",
-    "date": "2026-08-04",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Badges/Casino",
-            "desc": "A badge for numeric values like tallies and scores. Fill updated: Accent Light Mode/Purple/Default/300 → Accent Light Mode/Purple/Default/200. Bold variant is experimental and unconfirmed for Team24+6."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update the Casino badge background token from Accent Light Mode/Purple/Default/300 to Accent Light Mode/Purple/Default/200 wherever the Badges/Casino component is rendered.",
-      "Designer: Verify the lighter purple (200) meets contrast requirements for numeric badge content across all five markets (DE, AT, ES, SE, CY) in light mode.",
-      "Tester: Visually verify the Badges/Casino component reflects the updated fill colour (Purple/Default/200) in all screens where casino tallies or scores are displayed.",
-      "Developer: Treat any bold variant usage of Badges/Casino as experimental — flag it in code review and avoid shipping it to production for Team24+6 until confirmed."
     ]
   }
 ]
