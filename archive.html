@@ -119,6 +119,10 @@
     text-decoration: none;
     transition: color .15s;
   }
+  .hero-back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
   .header-link:hover { color: var(--text-primary); }
   .header-btn {
     font-family: 'Inter', sans-serif;
@@ -612,6 +616,7 @@
       <div class="legend-item"><div class="legend-dot legend-dot-deleted"></div>Deleted</div>
     </div>
     <div style="width:1px;height:16px;background:var(--border-strong)"></div>
+    <a href="archive.html" class="header-link">Archiv</a>
     <a href="https://www.figma.com/design/e9id05pwA4x9x8DtJgwWXR" target="_blank" class="header-btn">Design Library →</a>
   </div>
 </header>
@@ -619,7 +624,7 @@
 <!-- HERO -->
 <div style="border-bottom: 1px solid var(--border);">
   <div class="hero">
-    <a href="index.html" class="header-link" style="display:inline-block;margin-bottom:16px;">← Zurück zum Changelog</a>
+    <a href="index.html" class="header-link hero-back-link">← Zurück zum Changelog</a>
     <h1>Archiv</h1>
     <p class="hero-sub">Ältere Releases der IW Design Library — automatisch archiviert, sobald die aktuelle Liste mehr als 20 Einträge umfasst.</p>
   </div>
