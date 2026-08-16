@@ -44,12 +44,18 @@ jobs:
           # From webhook payload (set automatically when Figma triggers)
           BRANCH_NAME: ${{ github.event.client_payload.branch_name }}
           TICKET_FROM_WEBHOOK: ${{ github.event.client_payload.ticket }}
+          # Optional — used only to look up the ticket's Jira issue type
+          # (Story vs. Task/Sub-task/etc.) for the frontend's ticket icon.
+          # Same secrets already used by the "Create Jira ticket" step below.
+          ATLASSIAN_DOMAIN: ${{ secrets.ATLASSIAN_DOMAIN }}
+          ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+          ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
         run: node .github/scripts/generate-changelog.js
       - name: Commit updated changelog
         run: |
           git config --global user.name "IW Changelog Bot"
           git config --global user.email "changelog-bot@interwetten.com"
-          git add changelog-data.json styles-snapshot.json
+          git add changelog-data.json styles-snapshot.json archives/
           if git diff --staged --quiet; then
             echo "No changes detected — skipping commit and deploy"
             exit 0
