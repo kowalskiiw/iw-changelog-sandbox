@@ -1,5 +1,30 @@
 [
   {
+    "version": "v2026.08.16.80",
+    "date": "2026-08-16",
+    "ticket": "CXI-1987",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Renamed from 'Banner-test' to 'Banner'. Max-width follows the corresponding page header: Sports 1299px, Live 1451px, Rest 1299px, Magazine 1232px."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code references from the old component name 'Banner-test' to 'Banner' to avoid broken component lookups.",
+      "Designer: Replace any instances of 'Banner-test' in Figma files with the now-stable 'Banner' component from the IW Design Library.",
+      "Developer: Ensure Banner max-width is applied per page context — 1299px for Sports and Rest, 1451px for Live, 1232px for Magazine — matching the page header constraint.",
+      "Tester: Verify the Banner renders at the correct max-width on Sports, Live, Magazine, and remaining page types across all markets (DE, AT, ES, SE, CY)."
+    ]
+  },
+  {
     "version": "v2026.08.16.79",
     "date": "2026-08-16",
     "ticket": "CXI-1987",
@@ -2118,35 +2143,6 @@
       "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files across DE, AT, ES, SE, and CY market flows reflect the new Default Green/600 notification fill.",
       "Tester: Visually validate the notification indicator colour on Avatar/XS, Avatar/MD, and Badge/Default in-browser across all five markets, confirming the darker green (600) renders correctly against light backgrounds.",
       "Developer: Search codebase for any hardcoded references to the Default Green/400 token used specifically on avatar or badge notification elements and replace with Default Green/600."
-    ]
-  },
-  {
-    "version": "v2026.08.04.50",
-    "date": "2026-08-04",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Banner",
-            "desc": "Container / alerts/checkmark-filled-1 / Vector — fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500"
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Casino",
-            "desc": "Badge fills updated: Purple/Default/200 → Purple/Default/500 and Yellow/300 → Yellow/500. A badge shows numeric values like tallies and scores. Bold variant is experimental and unconfirmed for Team24+6."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update the checkmark icon fill token from Accent Light Mode/Default Green/600 to Accent Light Mode/Default Green/500 wherever the Banner alert checkmark is rendered, and verify Banner max-width constraints match per page type (Sports/Rest: 1299px, Live: 1451px, Magazine: 1232px).",
-      "Developer: Update Badges/Casino fill tokens from Purple/Default/200 to Purple/Default/500 and Yellow/300 to Yellow/500 in all casino badge implementations; treat any Bold variant usage as experimental pending Team24+6 confirmation.",
-      "Designer: Verify the darker Purple/500 and Yellow/500 badge fills meet contrast requirements in both light and dark contexts across DE, AT, ES, SE, and CY market layouts.",
-      "Tester: Visually verify the Banner checkmark icon and Casino badge colours reflect the updated tokens on Sports, Live, and Casino pages across all supported markets."
     ]
   }
 ]
