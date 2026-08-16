@@ -161,13 +161,12 @@
     border-radius: 6px;
     background: var(--bg-subtle);
     color: var(--text-primary);
-    width: 400px;
-    transition: border-color .15s, width .15s;
+    width: 600px;
+    transition: border-color .15s;
   }
   .search-input:focus {
     outline: none;
     border-color: var(--border-strong);
-    width: 440px;
   }
   .search-input::placeholder { color: var(--text-muted); }
 
@@ -175,7 +174,7 @@
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
-    width: 680px;
+    width: 600px;
     max-height: 400px;
     overflow-y: auto;
     background: var(--bg);
@@ -226,6 +225,13 @@
     font-size: 12px;
     color: var(--text-muted);
     text-align: center;
+  }
+  .search-highlight {
+    background: rgba(113,122,255,0.22);
+    color: var(--text-primary);
+    border-radius: 2px;
+    padding: 0 1px;
+    font-weight: 600;
   }
 
   /* ── HERO ── */
@@ -901,6 +907,20 @@
     return hits;
   }
 
+  // Wraps every occurrence of the (already-typed) query inside a piece of
+  // text with a highlight span. Operates on the escaped text and an
+  // equally-escaped, regex-safe version of the query, so this is safe to
+  // call on raw strings straight out of the JSON.
+  function highlightMatch(text, query) {
+    const escapedText = escHtml(String(text ?? ''));
+    const q = query.trim();
+    if (!q) return escapedText;
+    const escapedQuery = escHtml(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (!escapedQuery) return escapedText;
+    const re = new RegExp(`(${escapedQuery})`, 'gi');
+    return escapedText.replace(re, '<mark class="search-highlight">$1</mark>');
+  }
+
   function renderSearchResults(hits, query) {
     if (!hits.length) {
       return `<div class="search-empty">No results for “${escHtml(query)}”</div>`;
@@ -910,10 +930,10 @@
     const rows = shown.map(h => `
       <a class="search-result" href="#${escHtml(h.version)}" data-version="${escHtml(h.version)}">
         <div class="search-result-version">
-          ${escHtml(h.version)}
-          ${h.ticket ? `<span class="search-result-ticket">${escHtml(h.ticket)}</span>` : ''}
+          ${highlightMatch(h.version, query)}
+          ${h.ticket ? `<span class="search-result-ticket">${highlightMatch(h.ticket, query)}</span>` : ''}
         </div>
-        ${h.label ? `<div class="search-result-item"><strong>${escHtml(h.label)}</strong>${h.snippet ? ' — ' + escHtml(h.snippet) : ''}</div>` : ''}
+        ${h.label ? `<div class="search-result-item"><strong>${highlightMatch(h.label, query)}</strong>${h.snippet ? ' — ' + highlightMatch(h.snippet, query) : ''}</div>` : ''}
       </a>`).join('');
     const overflowNote = hits.length > MAX
       ? `<div class="search-empty">+${hits.length - MAX} more — refine your search</div>`
