@@ -974,7 +974,7 @@
           ".AvatarXS / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarXS / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarXS / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarXS / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=0.75;radius=75",
+          ".AvatarXS / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=0.75;radius=75",
           ".AvatarXS / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=0.75",
           "(root)": "strokeWeight=1"
         },
@@ -985,7 +985,7 @@
           ".AvatarXS / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarXS / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarXS / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarXS / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=0.75;radius=75",
+          ".AvatarXS / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=0.75;radius=75",
           ".AvatarXS / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=0.75",
           "(root)": "strokeWeight=1"
         },
@@ -7881,21 +7881,6 @@
           "Notification": "On",
           "State": "Hover"
         },
-        "10473:2684": {
-          "Type": "User",
-          "Notification": "On",
-          "State": "Default"
-        },
-        "10473:2676": {
-          "Type": "User",
-          "Notification": "Off",
-          "State": "Hover"
-        },
-        "10473:2700": {
-          "Type": "Initials",
-          "Notification": "Off",
-          "State": "Default"
-        },
         "10473:2644": {
           "Type": "Image",
           "Notification": "Off",
@@ -7926,14 +7911,29 @@
           "Notification": "On",
           "State": "Hover"
         },
+        "10473:2636": {
+          "Type": "Image",
+          "Notification": "Off",
+          "State": "Default"
+        },
+        "10473:2676": {
+          "Type": "User",
+          "Notification": "Off",
+          "State": "Hover"
+        },
         "10473:2660": {
           "Type": "Image",
           "Notification": "On",
           "State": "Hover"
         },
-        "10473:2636": {
-          "Type": "Image",
+        "10473:2700": {
+          "Type": "Initials",
           "Notification": "Off",
+          "State": "Default"
+        },
+        "10473:2684": {
+          "Type": "User",
+          "Notification": "On",
           "State": "Default"
         }
       },
@@ -8450,7 +8450,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8461,7 +8461,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8472,7 +8472,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8483,7 +8483,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8494,7 +8494,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8505,7 +8505,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8516,7 +8516,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8527,7 +8527,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8538,7 +8538,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8549,7 +8549,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8560,7 +8560,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         },
@@ -8571,7 +8571,7 @@
           ".AvatarMedium / Text": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked": "strokeWeight=1",
           ".AvatarMedium / iw_sb_user_locked / Vector": "fill=Neutral/Grey/Dark/900;strokeWeight=1",
-          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".AvatarMedium / .Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".AvatarMedium / .Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         }
@@ -8581,6 +8581,36 @@
           "Type": "Initials",
           "Notification": "On",
           "State": "Default"
+        },
+        "33244:944": {
+          "Type": "Image",
+          "Notification": "On",
+          "State": "Default"
+        },
+        "33244:956": {
+          "Type": "Initials",
+          "Notification": "Off",
+          "State": "Default"
+        },
+        "33244:948": {
+          "Type": "User",
+          "Notification": "Off",
+          "State": "Default"
+        },
+        "33244:952": {
+          "Type": "User",
+          "Notification": "On",
+          "State": "Default"
+        },
+        "33244:946": {
+          "Type": "Image",
+          "Notification": "On",
+          "State": "Hover"
+        },
+        "33244:962": {
+          "Type": "Initials",
+          "Notification": "On",
+          "State": "Hover"
         },
         "33244:958": {
           "Type": "Initials",
@@ -8602,38 +8632,8 @@
           "Notification": "Off",
           "State": "Hover"
         },
-        "33244:944": {
-          "Type": "Image",
-          "Notification": "On",
-          "State": "Default"
-        },
-        "33244:956": {
-          "Type": "Initials",
-          "Notification": "Off",
-          "State": "Default"
-        },
-        "33244:948": {
-          "Type": "User",
-          "Notification": "Off",
-          "State": "Default"
-        },
-        "33244:952": {
-          "Type": "User",
-          "Notification": "On",
-          "State": "Default"
-        },
-        "33244:946": {
-          "Type": "Image",
-          "Notification": "On",
-          "State": "Hover"
-        },
         "33244:954": {
           "Type": "User",
-          "Notification": "On",
-          "State": "Hover"
-        },
-        "33244:962": {
-          "Type": "Initials",
           "Notification": "On",
           "State": "Hover"
         }
@@ -8645,7 +8645,7 @@
       "count": 1,
       "layers": {
         "11783:2476": {
-          ".Notifications": "fill=Accent Light Mode/Default Green/600;strokeWeight=1.375;radius=150",
+          ".Notifications": "fill=Accent Light Mode/Default Green/500;strokeWeight=1.375;radius=150",
           ".Notifications / Text": "fill=Neutral/Generic/White;strokeWeight=1.375",
           "(root)": "strokeWeight=1"
         }

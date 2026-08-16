@@ -1,5 +1,38 @@
 [
   {
+    "version": "v2026.08.16.76",
+    "date": "2026-08-16",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact, secondary contexts where space is tight. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default badge component. Notification fill lightened: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded references to the Green/600 token in Avatar/XS, Avatar/MD, and Badge/Default notification fills — replace with Accent Light Mode/Default Green/500.",
+      "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files have picked up the updated Green/500 notification fill and check contrast compliance.",
+      "Tester: Visually verify notification indicators on Avatar/XS, Avatar/MD, and Badge/Default across all markets (DE, AT, ES, SE, CY) reflect the lighter Green/500 fill."
+    ]
+  },
+  {
     "version": "v2026.08.15.75",
     "date": "2026-08-15",
     "ticket": "",
@@ -2505,35 +2538,6 @@
       "Developer: Headlines/Club/Desktop and Headlines/Club/Mobile use Roboto Condensed — confirm this font is loaded in all market bundles (DE, AT, ES, SE, CY) before referencing these styles in Club section promotion teasers. Do not apply outside that context.",
       "Designer: Audit existing screens using H1–H5 headlines, Body, Title, and Display styles to replace any ad-hoc type with the newly published tokens. Pay particular attention to Display/Regular/L and Display/Medium/L which are desktop-only and require a defined mobile step-down.",
       "Tester: Verify that Banner max-width renders correctly per section — 1299px for Sports/Rest, 1451px for Live, 1232px for Magazine — and that Secondary Buttons render correctly over image backgrounds across all five market storefronts."
-    ]
-  },
-  {
-    "version": "v2026.08.04.47",
-    "date": "2026-08-04",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Avatar/XS",
-            "desc": ".AvatarXS / .Notifications — fill: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500"
-          },
-          {
-            "type": "changed",
-            "title": "Avatar/SM",
-            "desc": ".AvatarSmall / Background — fill: Yellow/550 → Yellow/500, border color: Yellow/700 → Yellow/600 · .AvatarSmall / .Notifications — fill: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/500"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update the notification badge token for both Avatar/XS and Avatar/SM components from --default-green-400 to --default-green-500 in all markets where avatars appear (account screens, navigation headers).",
-      "Developer: Update Avatar/SM background token from Yellow/550 to Yellow/500 and border token from Yellow/700 to Yellow/600; verify no hardcoded hex values override these tokens in the codebase.",
-      "Designer: Review Avatar/XS and Avatar/SM instances in Figma across DE, AT, ES, SE, and CY market files to confirm the updated green-500 notification badge and revised yellow tokens render correctly at both sizes.",
-      "Tester: Visually verify Avatar/XS and Avatar/SM components in account screens and navigation bars across all markets, confirming the notification dot displays green-500 and the SM avatar background and border reflect the updated yellow tokens."
     ]
   }
 ]
