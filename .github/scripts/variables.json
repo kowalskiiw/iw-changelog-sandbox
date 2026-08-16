@@ -2,7 +2,7 @@
   "_generator": "IW Variables Publisher (Figma plugin, live Plugin API read)",
   "_note": "colorTokens: hex → colour token name, used to resolve fills inside components. variables: full name → value snapshot for ALL variable types, used to diff the 'Variables' changelog category. Generated directly from Figma's Plugin API — no REST/Enterprise access needed.",
   "_exportedFrom": "sandbox-library",
-  "_exportedAt": "2026-08-16T10:23:37.001Z",
+  "_exportedAt": "2026-08-16T10:26:46.585Z",
   "colorTokens": {
     "#000000": "Neutral/Generic/Black",
     "#FFFFFF": "Neutral/Generic/White",
