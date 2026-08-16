@@ -1,5 +1,43 @@
 [
   {
+    "version": "v2026.08.16.78",
+    "date": "2026-08-16",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact and secondary contexts where space is tight. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar for tight layouts needing slightly more presence than XS. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default notification badge. Fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400, producing a lighter green across all badge instances."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded references to the Green/500 token on .Notifications elements within Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default to use Accent Light Mode/Default Green/400.",
+      "Designer: Verify the lighter Green/400 notification badge colour meets contrast and visibility requirements across all five markets (DE, AT, ES, SE, CY) in both compact and standard layouts.",
+      "Tester: Visually verify that notification badges on Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default render the updated Green/400 fill correctly across account screens and navigation components in all markets."
+    ]
+  },
+  {
     "version": "v2026.08.16.76",
     "date": "2026-08-16",
     "ticket": "",
@@ -2094,450 +2132,6 @@
       "Designer: Verify the lighter purple (200) meets contrast requirements for numeric badge content across all five markets (DE, AT, ES, SE, CY) in light mode.",
       "Tester: Visually verify the Badges/Casino component reflects the updated fill colour (Purple/Default/200) in all screens where casino tallies or scores are displayed.",
       "Developer: Treat any bold variant usage of Badges/Casino as experimental — flag it in code review and avoid shipping it to production for Team24+6 until confirmed."
-    ]
-  },
-  {
-    "version": "v2026.08.04.48",
-    "date": "2026-08-04",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Typography / Text Styles",
-        "items": [
-          {
-            "type": "new",
-            "title": "Title/M/Regular",
-            "desc": "Medium title style at 16px/24px line height, weight 400. Use for standard mid-level titles in navigation, cards, or account screens."
-          },
-          {
-            "type": "new",
-            "title": "Body/M/Regular",
-            "desc": "Core body text at 14px/20px, weight 400. Use for standard readable content across betting UI, match cards, and account screens."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H2/Medium/Desktop",
-            "desc": "Desktop H2 headline at 32px/40px, weight 500. Use for prominent section headings on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/L/Regular",
-            "desc": "Large body text at 16px/24px, weight 400. Use for introductory or elevated body copy where standard body feels too small."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H2/Regular/Desktop",
-            "desc": "Desktop H2 headline at 32px/40px, weight 400. Use for section headings where a lighter-weight variant of H2 is preferred."
-          },
-          {
-            "type": "new",
-            "title": "Body/Overline/L/Regular",
-            "desc": "Large overline at 14px/20px, weight 400, letter-spacing 0.7. Use for category labels or eyebrow text above headings."
-          },
-          {
-            "type": "new",
-            "title": "Body/M/Underline",
-            "desc": "Medium body text at 14px/20px, weight 500, underlined. Use for inline text links or emphasis within body copy."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H3/Regular/Mobile",
-            "desc": "Mobile H3 headline at 28px/36px, weight 400. Use for sub-section headings on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H1/Medium/Mobile",
-            "desc": "Mobile H1 headline at 36px/44px, weight 500. Use as the primary page heading on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/XL/Medium",
-            "desc": "Extra-large body text at 20px/28px, weight 500. Use for prominent body content or lead text requiring additional emphasis."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H4/Regular/Mobile",
-            "desc": "Mobile H4 headline at 24px/32px, weight 400. Use for tertiary section headings on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H5/Regular/Mobile",
-            "desc": "Mobile H5 headline at 20px/28px, weight 400. Use for smaller section headings or grouping labels on mobile."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H4/Regular/Desktop",
-            "desc": "Desktop H4 headline at 24px/32px, weight 400. Use for tertiary section headings on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/Overline/M/Medium",
-            "desc": "Medium overline at 12px/16px, weight 500, letter-spacing 0.6. Use for compact category labels or uppercase eyebrow text."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H1/Regular/Desktop",
-            "desc": "Desktop H1 headline at 40px/48px, weight 400. Use as the primary page heading on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H3/Regular/Desktop",
-            "desc": "Desktop H3 headline at 28px/36px, weight 400. Use for sub-section headings on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/XL/Underline",
-            "desc": "Extra-large body text at 20px/28px, weight 500, underlined. Use for prominent inline links or emphasis in large body copy."
-          },
-          {
-            "type": "new",
-            "title": "Title/M/Medium",
-            "desc": "Medium title at 16px/24px, weight 500. Use for mid-level titles requiring stronger visual weight than the Regular variant."
-          },
-          {
-            "type": "new",
-            "title": "Title/S/Medium",
-            "desc": "Small title at 14px/20px, weight 500. Use for compact titles in tight UI areas like tags, labels, or secondary navigation."
-          },
-          {
-            "type": "new",
-            "title": "Title/S/Underline",
-            "desc": "Small title at 14px/20px, weight 500, underlined. Use for small-scale inline links or interactive title labels."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H1/Medium/Desktop",
-            "desc": "Desktop H1 headline at 40px/48px, weight 500. Use as the primary bold page heading on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/Overline/L/Medium",
-            "desc": "Large overline at 14px/20px, weight 500, letter-spacing 0.7. Use for prominent category labels or bold eyebrow text above headings."
-          },
-          {
-            "type": "new",
-            "title": "Body/M/Medium",
-            "desc": "Medium body text at 14px/20px, weight 500. Use for body copy requiring added emphasis, such as highlighted odds or key data."
-          },
-          {
-            "type": "new",
-            "title": "Title/L/Medium",
-            "desc": "Large title at 18px/24px, weight 500. Use for prominent titles in headers, modal headings, or section openers."
-          },
-          {
-            "type": "new",
-            "title": "Body/Overline/M/Regular",
-            "desc": "Medium overline at 12px/16px, weight 400, letter-spacing 0.6. Use for subtle category labels or lightweight eyebrow text."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H3/Medium/Mobile",
-            "desc": "Mobile H3 headline at 28px/36px, weight 500. Use for bold sub-section headings on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H5/Medium/Desktop",
-            "desc": "Desktop H5 headline at 20px/28px, weight 500. Use for bold smaller section headings or grouping labels on desktop."
-          },
-          {
-            "type": "new",
-            "title": "Title/M/Underline",
-            "desc": "Medium title at 16px/24px, weight 500, underlined. Use for interactive or linked mid-level titles."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H2/Medium/Mobile",
-            "desc": "Mobile H2 headline at 32px/40px, weight 500. Use for prominent section headings on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/Club/Desktop",
-            "desc": "Desktop-only display style using Roboto Condensed at 48px/48px, weight 500. Restricted to promotion teasers in the Club section only."
-          },
-          {
-            "type": "new",
-            "title": "Title/S/Regular",
-            "desc": "Small title at 14px/20px, weight 400. Use for compact, lightweight titles in tags, labels, or secondary UI elements."
-          },
-          {
-            "type": "new",
-            "title": "Body/XL/Regular",
-            "desc": "Extra-large body text at 20px/28px, weight 400. Use for prominent lead copy or introductory text that needs scale without emphasis."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/Club/Mobile",
-            "desc": "Mobile-only display style using Roboto Condensed at 28px/36px, weight 500. Restricted to promotion teasers in the Club section only."
-          },
-          {
-            "type": "new",
-            "title": "Title/L/Underline",
-            "desc": "Large title at 18px/24px, weight 500, underlined. Use for interactive or linked large title elements."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H1/Regular/Mobile",
-            "desc": "Mobile H1 headline at 36px/44px, weight 400. Use as the primary lightweight page heading on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H3/Medium/Desktop",
-            "desc": "Desktop H3 headline at 28px/36px, weight 500. Use for bold sub-section headings on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Body/S/Regular",
-            "desc": "Small body text at 12px/16px, weight 400. Use for secondary or supporting copy, fine print, and helper text."
-          },
-          {
-            "type": "new",
-            "title": "Body/S/Medium",
-            "desc": "Small body text at 12px/16px, weight 500. Use for small but emphasized content like labels, tags, or status indicators."
-          },
-          {
-            "type": "new",
-            "title": "Helpers/H1",
-            "desc": "Used for text within project thumbnails only. Not intended for production UI surfaces."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H2/Regular/Mobile",
-            "desc": "Mobile H2 headline at 32px/40px, weight 400. Use for section headings on mobile where a lighter H2 variant is preferred."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H4/Medium/Mobile",
-            "desc": "Mobile H4 headline at 24px/32px, weight 500. Use for bold tertiary section headings on mobile layouts."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H5/Regular/Desktop",
-            "desc": "Desktop H5 headline at 20px/28px, weight 400. Use for smaller lightweight section headings or grouping labels on desktop."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H4/Medium/Desktop",
-            "desc": "Desktop H4 headline at 24px/32px, weight 500. Use for bold tertiary section headings on desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Title/L/Regular",
-            "desc": "Large title at 18px/24px, weight 400. Use for prominent but lightweight titles in section openers or modal headings."
-          },
-          {
-            "type": "new",
-            "title": "Body/S/Underline",
-            "desc": "Small body text at 12px/16px, weight 500, underlined. Use for small inline links or emphasized interactive text."
-          },
-          {
-            "type": "new",
-            "title": "Body/L/Medium",
-            "desc": "Large body text at 16px/24px, weight 500. Use for elevated body copy requiring emphasis, such as lead paragraphs or key stats."
-          },
-          {
-            "type": "new",
-            "title": "Body/L/Underline",
-            "desc": "Large body text at 16px/24px, weight 500, underlined. Use for large-scale inline links or interactive body text."
-          },
-          {
-            "type": "new",
-            "title": "Headlines/H5/Medium/Mobile",
-            "desc": "Mobile H5 headline at 20px/28px, weight 500. Use for bold smaller section headings or grouping labels on mobile."
-          },
-          {
-            "type": "new",
-            "title": "Display/Regular/M",
-            "desc": "Restrained hero display at 60px/60px, weight 400. For prominent page or section openers alongside other content, or as a Display L replacement on narrower desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Display/Regular/L",
-            "desc": "Largest display type at 72px/72px, weight 400. For single high-impact hero headlines, splash sections, or big promotional numbers. Desktop only; step down on smaller breakpoints."
-          },
-          {
-            "type": "new",
-            "title": "Display/Medium/S",
-            "desc": "Entry-point display at 48px/48px, weight 500. For feature headers, campaign banners, and emphasis moments needing more presence than a standard headline without going full hero."
-          },
-          {
-            "type": "new",
-            "title": "Display/Medium/M",
-            "desc": "Restrained hero display at 60px/60px, weight 500. For prominent page or section openers alongside other content, or as a Display L replacement on narrower desktop layouts."
-          },
-          {
-            "type": "new",
-            "title": "Display/Medium/L",
-            "desc": "Largest display type at 72px/72px, weight 500. For single high-impact hero headlines, splash sections, or big promotional numbers. Desktop only; step down on smaller breakpoints."
-          },
-          {
-            "type": "new",
-            "title": "Display/Regular/S",
-            "desc": "Entry-point display at 48px/48px, weight 400. For feature headers, campaign banners, and emphasis moments needing more presence than a standard headline without going full hero."
-          },
-          {
-            "type": "new",
-            "title": "Body/XS/Regular",
-            "desc": "Smallest body size at 10px/14px, weight 400. Use sparingly — primarily for help text under form fields and secondary supporting text. Token: font.body.small."
-          },
-          {
-            "type": "new",
-            "title": "Body/XS/Medium",
-            "desc": "Smallest body size at 10px/14px, weight 500. Use sparingly — primarily for help text under form fields and secondary supporting text. Token: font.body.small."
-          },
-          {
-            "type": "new",
-            "title": "Body/XS/Underline",
-            "desc": "Smallest body size at 10px/14px, weight 500, underlined. Use sparingly — primarily for help text under form fields and secondary supporting text. Token: font.body.small."
-          }
-        ]
-      },
-      {
-        "title": "Effect Styles",
-        "items": [
-          {
-            "type": "new",
-            "title": "Shadows/Extra Small",
-            "desc": "Lowest elevation shadow. A tight, barely-there lift for input fields, tags, or subtle surface dividers that need minimal separation from the background."
-          },
-          {
-            "type": "new",
-            "title": "Shadows/Base",
-            "desc": "Default resting elevation for most raised surfaces — standard cards, list items, and containers. The everyday shadow when a component just needs to feel grounded."
-          },
-          {
-            "type": "new",
-            "title": "Background Blur/Small",
-            "desc": "Lightest frost at radius 10. Gently softens background content while keeping it recognisable — for glass effects on floating bars, sticky headers, or chips over content."
-          },
-          {
-            "type": "new",
-            "title": "Shadows/Medium",
-            "desc": "A step up for interactive or temporarily raised surfaces — hover/active card states, dropdowns, and popovers that need to signal elevation above neighbours."
-          },
-          {
-            "type": "new",
-            "title": "Background Blur/Medium",
-            "desc": "Moderate blur at radius 20. Noticeably obscures the background without hiding it — suited to popovers, dropdowns, and smaller panels for a frosted depth effect."
-          },
-          {
-            "type": "new",
-            "title": "Shadows/XLarge",
-            "desc": "Highest elevation shadow. Reserved for the most prominent overlays — modals, dialogs, and bottom sheets — where a strong soft shadow separates them from everything behind."
-          },
-          {
-            "type": "new",
-            "title": "Background Blur/XLarge",
-            "desc": "Heavy blur at radius 100. Reduces the background to soft colour and shape — for full-screen scrims and modal backdrops pulling focus firmly onto the foreground layer."
-          },
-          {
-            "type": "new",
-            "title": "Background Blur/XXLarge",
-            "desc": "Strongest blur at radius 120. Background becomes an abstract colour wash — reserved for immersive overlays, onboarding takeovers, or transitions where background content should all but disappear."
-          },
-          {
-            "type": "new",
-            "title": "Shadows/Large",
-            "desc": "For floating overlays that clearly detach from the page — menus, tooltips, date pickers, and toasts. Noticeably deeper shadow to read as clearly above surrounding content."
-          }
-        ]
-      },
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "new",
-            "title": "Badges/Account status",
-            "desc": "Badge component indicating a user's account status. Available in 4 variants for different status states."
-          },
-          {
-            "type": "new",
-            "title": "Avatar/XS",
-            "desc": "Smallest avatar size for compact and secondary contexts where space is tight."
-          },
-          {
-            "type": "new",
-            "title": "Alerts Default (Inline)",
-            "desc": "Inline alert component for communicating system feedback or contextual messages. Available in 16 variants covering different states and severity levels."
-          },
-          {
-            "type": "new",
-            "title": "Spacer",
-            "desc": "Utility component for applying consistent spacing between UI elements. Available in 84 variants across the spacing scale."
-          },
-          {
-            "type": "new",
-            "title": "Betslip (Inline)",
-            "desc": "Inline betslip component for displaying bet selections within the page flow. Available in 2 variants."
-          },
-          {
-            "type": "new",
-            "title": "Secondary Buttons",
-            "desc": "Secondary button variant designed for use on non-solid backgrounds such as images, where a standard filled button would not provide sufficient contrast."
-          },
-          {
-            "type": "new",
-            "title": "Primary Buttons",
-            "desc": "Primary call-to-action button component. Available in 270 variants covering states, sizes, and layout configurations."
-          },
-          {
-            "type": "new",
-            "title": "Banner",
-            "desc": "Banner component with max-width tied to the page context: Sports/Rest 1299px, Live 1451px, Magazine 1232px. Ensure correct max-width is applied per section."
-          },
-          {
-            "type": "new",
-            "title": "Badges/Apps",
-            "desc": "Badge component for app-related indicators such as app store or platform tags. Available in 1 variant."
-          },
-          {
-            "type": "new",
-            "title": "Badge/Betslip",
-            "desc": "Betslip badge used on tablet and mobile to indicate the number of selections in the betslip."
-          },
-          {
-            "type": "new",
-            "title": "Avatar/Casino/Bonus",
-            "desc": "Casino-specific avatar variant for representing bonus-related states or promotions. Available in 1 variant."
-          },
-          {
-            "type": "new",
-            "title": "Avatar/Casino/XS",
-            "desc": "Extra-small casino avatar for compact contexts within casino UI surfaces. Available in 1 variant."
-          },
-          {
-            "type": "new",
-            "title": "Badges/Marketing",
-            "desc": "Badge component for marketing-related labelling, such as promotional or campaign tags. Available in 1 variant."
-          },
-          {
-            "type": "new",
-            "title": "Badge/Default",
-            "desc": "Default badge component for general-purpose numeric or status indicators. Available in 1 variant."
-          },
-          {
-            "type": "new",
-            "title": "Badges/Casino",
-            "desc": "Visual indicator for numeric values like tallies and scores in casino contexts. Bold variant is experimental and not confirmed for Team24+6 — use with caution."
-          },
-          {
-            "type": "new",
-            "title": "Avatar/SM",
-            "desc": "Small avatar for tight layouts needing slightly more visual presence than the XS size."
-          },
-          {
-            "type": "new",
-            "title": "Avatar/MD",
-            "desc": "Medium avatar for layouts needing slightly more presence than the SM size."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Map all new text styles to CSS custom properties following the existing convention (e.g. Body/XS/Regular → --body-xs-size: 10px, --body-xs-line-height: 14px; Body/XL/Medium → --body-xl-size, --body-xl-line-height). Ensure Body/XS variants reference the token font.body.small.",
-      "Developer: Headlines/Club/Desktop and Headlines/Club/Mobile use Roboto Condensed — confirm this font is loaded in all market bundles (DE, AT, ES, SE, CY) before referencing these styles in Club section promotion teasers. Do not apply outside that context.",
-      "Designer: Audit existing screens using H1–H5 headlines, Body, Title, and Display styles to replace any ad-hoc type with the newly published tokens. Pay particular attention to Display/Regular/L and Display/Medium/L which are desktop-only and require a defined mobile step-down.",
-      "Tester: Verify that Banner max-width renders correctly per section — 1299px for Sports/Rest, 1451px for Live, 1232px for Magazine — and that Secondary Buttons render correctly over image backgrounds across all five market storefronts."
     ]
   }
 ]
