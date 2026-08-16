@@ -391,6 +391,12 @@
     font-size: 13px;
     color: var(--text-muted);
   }
+  .entry-ticket-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    margin-right: 1px;
+  }
   .entry-ticket {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
@@ -789,9 +795,20 @@
       </div>`;
   }
 
+  // Jira issue-type icons — green bookmark for Story, blue grid for
+  // everything else (Task, Sub-task, UX Task, Bug, etc.). `type` is the raw
+  // Jira issuetype.name looked up by generate-changelog.js; null/unknown
+  // (missing credentials, lookup failure) falls back to the generic icon.
+  const STORY_ICON = `<svg class="entry-ticket-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m4.98291 2.5c-.27614 0-.5.22386-.5.5v9.8059l3.51724-2.4727 3.51775 2.4728v-9.806c0-.27614-.2239-.5-.5-.5zm-2 .5c0-1.10457.89543-2 2-2h6.03499c1.1046 0 2 .89543 2 2v11.25c0 .2799-.1559.5366-.4043.6656s-.548.109-.777-.052l-3.8364-2.6968-3.83595 2.6968c-.229.1609-.5286.181-.77702.052-.24843-.129-.40432-.3857-.40432-.6656z" fill="#6a9a23" fill-rule="evenodd"/></svg>`;
+  const TICKET_ICON = `<svg class="entry-ticket-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m1 3c0-1.10457.89543-2 2-2h3.75c1.10457 0 2 .89543 2 2v4.25h4.25c1.1046 0 2 .89543 2 2v3.75c0 1.1046-.8954 2-2 2h-3.75c-1.10457 0-2-.8954-2-2v-4.25h-4.25c-1.10457 0-2-.89543-2-2zm6.25 4.25v-4.25c0-.27614-.22386-.5-.5-.5h-3.75c-.27614 0-.5.22386-.5.5v3.75c0 .27614.22386.5.5.5zm1.5 1.5v4.25c0 .2761.22386.5.5.5h3.75c.2761 0 .5-.2239.5-.5v-3.75c0-.27614-.2239-.5-.5-.5z" fill="#4688ec" fill-rule="evenodd"/></svg>`;
+
+  function ticketTypeIcon(type) {
+    return (type && type.toLowerCase() === 'story') ? STORY_ICON : TICKET_ICON;
+  }
+
   function renderEntry(entry, isLast) {
     const ticketEl = entry.ticket
-      ? `<span class="entry-ticket-label">Jira Ticket:</span> <a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
+      ? `<span class="entry-ticket-label">Jira Ticket:</span> ${ticketTypeIcon(entry.ticketType)}<a href="${escHtml(entry.ticketUrl)}" target="_blank" class="entry-ticket">${escHtml(entry.ticket)}</a>`
       : `<span class="entry-ticket static">Initial Release</span>`;
 
     return `
@@ -1004,8 +1021,7 @@
     }
 
     timelineEl.innerHTML = renderTimeline(data);
-    entriesEl.innerHTML  = data.map((e, i) => renderEntry(e, i === data.length - 1)).join('') +
-                           '<div class="empty-state" id="emptyState"></div>';
+    entriesEl.innerHTML  = data.map((e, i) => renderEntry(e, i === data.length - 1)).join('');
 
     setupSearch(data);
 
