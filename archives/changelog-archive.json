@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.07.53",
+    "date": "2026-08-07",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact and secondary contexts where space is tight. Notification fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default badge component. Notification fill darkened: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600 for improved contrast or visual alignment."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update the notification dot token from --default-green-400 to --default-green-600 in Avatar/XS, Avatar/MD, and Badge/Default component styles across all markets.",
+      "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files across DE, AT, ES, SE, and CY market flows reflect the new Default Green/600 notification fill.",
+      "Tester: Visually validate the notification indicator colour on Avatar/XS, Avatar/MD, and Badge/Default in-browser across all five markets, confirming the darker green (600) renders correctly against light backgrounds.",
+      "Developer: Search codebase for any hardcoded references to the Default Green/400 token used specifically on avatar or badge notification elements and replace with Default Green/600."
+    ]
+  },
+  {
     "version": "v2026.08.04.50",
     "date": "2026-08-04",
     "ticket": "",

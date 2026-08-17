@@ -1,5 +1,50 @@
 [
   {
+    "version": "v2026.08.17.81",
+    "date": "2026-08-17",
+    "ticket": "CXI-1987",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Badges/Casino-test",
+            "desc": "Renamed from Badges/Casino. A badge for numeric values like tallies and scores; includes a Daily Jackpot category renamed to 'Daily Jackpot test'. Bold variant is experimental and unconfirmed for Team24+6."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Apps-test",
+            "desc": "Renamed from Badges/Apps. Layer 'Badge / Badges/Apps-test' removed; layer 'Badge / Badges/Apps' added. Displays numeric badge indicators within app-level navigation contexts."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Betslip-test",
+            "desc": "Renamed from Badge/Betslip. Used as the tablet and mobile betslip badge."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Account status-test",
+            "desc": "Renamed from Badges/Account status. Status variant renamed: 'Pending' → 'Pending-test'. Displays account status indicators."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Marketing-test",
+            "desc": "Renamed from Badges/Marketing. Displays badge indicators within marketing contexts; no internal property changes detected."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update all code references from 'Badges/Casino', 'Badges/Apps', 'Badge/Betslip', 'Badges/Account status', and 'Badges/Marketing' to their respective '-test' suffixed names to avoid broken component mappings.",
+      "Developer: Update any logic referencing the 'Pending' account status variant to 'Pending-test', and the 'Daily Jackpot' casino badge category to 'Daily Jackpot test'.",
+      "Designer: Treat all '-test' renamed badge components as experimental; avoid using the bold variant of Badges/Casino-test in Team24+6 designs until confirmed.",
+      "Tester: Verify badge rendering across betslip (tablet and mobile), account status, casino, apps, and marketing surfaces to confirm no display regressions following the component renames."
+    ]
+  },
+  {
     "version": "v2026.08.16.80",
     "date": "2026-08-16",
     "ticket": "CXI-1987",
@@ -2109,40 +2154,6 @@
       "Developer: Search the codebase for references to the Primary Buttons component and replace with Primary Buttons-test; verify no broken component references remain in Alert inline implementations.",
       "Tester: Verify that inline alert variants using the Message + Button / Button + Link configuration render correctly with Primary Buttons-test across DE, AT, ES, SE, and CY market builds.",
       "Developer: Confirm Primary Buttons-test variant props map correctly to existing CSS token conventions (e.g. --label-m-size) and that no regression occurs in odds displays or match card CTAs using button styles."
-    ]
-  },
-  {
-    "version": "v2026.08.07.53",
-    "date": "2026-08-07",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Avatar/XS",
-            "desc": "Smallest avatar for compact and secondary contexts where space is tight. Notification fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600."
-          },
-          {
-            "type": "changed",
-            "title": "Badge/Default",
-            "desc": "Default badge component. Notification fill darkened: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600 for improved contrast or visual alignment."
-          },
-          {
-            "type": "changed",
-            "title": "Avatar/MD",
-            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification fill updated: Accent Light Mode/Default Green/400 → Accent Light Mode/Default Green/600."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update the notification dot token from --default-green-400 to --default-green-600 in Avatar/XS, Avatar/MD, and Badge/Default component styles across all markets.",
-      "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files across DE, AT, ES, SE, and CY market flows reflect the new Default Green/600 notification fill.",
-      "Tester: Visually validate the notification indicator colour on Avatar/XS, Avatar/MD, and Badge/Default in-browser across all five markets, confirming the darker green (600) renders correctly against light backgrounds.",
-      "Developer: Search codebase for any hardcoded references to the Default Green/400 token used specifically on avatar or badge notification elements and replace with Default Green/600."
     ]
   }
 ]

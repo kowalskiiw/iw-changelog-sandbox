@@ -896,51 +896,6 @@
     "Color Styles / Footer Greece/900": "#0D234D"
   },
   "components": {
-    "12637:2935": {
-      "name": "Badges/Account status",
-      "count": 4,
-      "layers": {
-        "12637:2936": {
-          "alerts/warning-filled": "strokeWeight=1",
-          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=4",
-          "Text": "fill=Accent Light Mode/Red/600;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=2"
-        },
-        "12637:2939": {
-          "alerts/warning-filled": "strokeWeight=1",
-          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Orange/700;strokeWeight=4",
-          "Text": "fill=Accent Light Mode/Orange/700;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=2"
-        },
-        "33148:172": {
-          "alerts/warning-filled": "strokeWeight=1",
-          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Blue/700;strokeWeight=4",
-          "Text": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=2"
-        },
-        "12637:2942": {
-          "alerts/warning-filled": "strokeWeight=1",
-          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Default Green/700;strokeWeight=4",
-          "Text": "fill=Accent Light Mode/Default Green/700;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=2"
-        }
-      },
-      "variants": {
-        "12637:2939": {
-          "Status": "Warning"
-        },
-        "33148:172": {
-          "Status": "Pending"
-        },
-        "12637:2942": {
-          "Status": "Success"
-        },
-        "12637:2936": {
-          "Status": "Critical/Error"
-        }
-      },
-      "fmt": 8
-    },
     "10473:2538": {
       "name": "Avatar/XS",
       "count": 12,
@@ -7664,36 +7619,6 @@
       },
       "fmt": 8
     },
-    "12637:2946": {
-      "name": "Badges/Apps",
-      "count": 1,
-      "layers": {
-        "12637:2946": {
-          "Badge": "strokeWeight=1",
-          "Badge / Badges/Apps": "fill=Yellow/500;strokeWeight=0.9549988508224487",
-          "Badge / Text": "fill=Neutral/Generic/Black;strokeWeight=0.9549988508224487",
-          "(root)": "strokeWeight=1"
-        }
-      },
-      "variants": {
-        "12637:2946": {}
-      },
-      "fmt": 8
-    },
-    "11305:5825": {
-      "name": "Badge/Betslip",
-      "count": 1,
-      "layers": {
-        "11305:5825": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=60"
-        }
-      },
-      "variants": {
-        "11305:5825": {}
-      },
-      "fmt": 8
-    },
     "13537:6104": {
       "name": "Avatar/Casino/Bonus",
       "count": 1,
@@ -7724,8 +7649,220 @@
       },
       "fmt": 8
     },
+    "12637:2876": {
+      "name": "Badges/Casino-test",
+      "count": 16,
+      "layers": {
+        "12637:2900": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
+        },
+        "12637:7800": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
+        },
+        "12637:7798": {
+          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "(root)": "fill=Yellow/500;strokeWeight=1;radius=2"
+        },
+        "12637:2903": {
+          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "(root)": "fill=Yellow/500;strokeWeight=1;radius=2"
+        },
+        "12637:7802": {
+          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Orange/500;strokeWeight=1;radius=2"
+        },
+        "12637:7804": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
+        },
+        "12637:2906": {
+          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Orange/500;strokeWeight=1;radius=2"
+        },
+        "12637:2909": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
+        },
+        "12637:7806": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Magenta/600;strokeWeight=1;radius=2"
+        },
+        "12637:7810": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Blue/600;strokeWeight=1;radius=2"
+        },
+        "12637:2912": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
+        },
+        "12637:7812": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=2"
+        },
+        "12637:7808": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
+        },
+        "12637:2915": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Magenta/600;strokeWeight=1;radius=2"
+        },
+        "12637:2918": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Blue/600;strokeWeight=1;radius=2"
+        },
+        "12637:2921": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=2"
+        }
+      },
+      "variants": {
+        "12637:7808": {
+          "Platform": "Desktop",
+          "Categories": "Daily Jackpot test"
+        },
+        "12637:7800": {
+          "Platform": "Desktop",
+          "Categories": "New"
+        },
+        "12637:2903": {
+          "Platform": "Mobile",
+          "Categories": "Exclusive"
+        },
+        "12637:2912": {
+          "Platform": "Mobile",
+          "Categories": "Daily Jackpot test"
+        },
+        "12637:7812": {
+          "Platform": "Desktop",
+          "Categories": "Freebet"
+        },
+        "12637:2909": {
+          "Platform": "Mobile",
+          "Categories": "Jackpot"
+        },
+        "12637:2900": {
+          "Platform": "Mobile",
+          "Categories": "New"
+        },
+        "12637:2915": {
+          "Platform": "Mobile",
+          "Categories": "Intern"
+        },
+        "12637:7798": {
+          "Platform": "Desktop",
+          "Categories": "Exclusive"
+        },
+        "12637:2906": {
+          "Platform": "Mobile",
+          "Categories": "Promotion"
+        },
+        "12637:2918": {
+          "Platform": "Mobile",
+          "Categories": "Popular"
+        },
+        "12637:2921": {
+          "Platform": "Mobile",
+          "Categories": "Freebet"
+        },
+        "12637:7802": {
+          "Platform": "Desktop",
+          "Categories": "Promotion"
+        },
+        "12637:7810": {
+          "Platform": "Desktop",
+          "Categories": "Popular"
+        },
+        "12637:7804": {
+          "Platform": "Desktop",
+          "Categories": "Jackpot"
+        },
+        "12637:7806": {
+          "Platform": "Desktop",
+          "Categories": "Intern"
+        }
+      },
+      "fmt": 8
+    },
+    "12637:2946": {
+      "name": "Badges/Apps-test",
+      "count": 1,
+      "layers": {
+        "12637:2946": {
+          "Badge": "strokeWeight=1",
+          "Badge / Badges/Apps": "fill=Yellow/500;strokeWeight=0.9549988508224487",
+          "Badge / Text": "fill=Neutral/Generic/Black;strokeWeight=0.9549988508224487",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "12637:2946": {}
+      },
+      "fmt": 8
+    },
+    "11305:5825": {
+      "name": "Badge/Betslip-test",
+      "count": 1,
+      "layers": {
+        "11305:5825": {
+          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=60"
+        }
+      },
+      "variants": {
+        "11305:5825": {}
+      },
+      "fmt": 8
+    },
+    "12637:2935": {
+      "name": "Badges/Account status-test",
+      "count": 4,
+      "layers": {
+        "12637:2936": {
+          "alerts/warning-filled": "strokeWeight=1",
+          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=4",
+          "Text": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=2"
+        },
+        "12637:2939": {
+          "alerts/warning-filled": "strokeWeight=1",
+          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Orange/700;strokeWeight=4",
+          "Text": "fill=Accent Light Mode/Orange/700;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=2"
+        },
+        "33148:172": {
+          "alerts/warning-filled": "strokeWeight=1",
+          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Blue/700;strokeWeight=4",
+          "Text": "fill=Accent Light Mode/Blue/700;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=2"
+        },
+        "12637:2942": {
+          "alerts/warning-filled": "strokeWeight=1",
+          "alerts/warning-filled / Vector": "fill=Accent Light Mode/Default Green/700;strokeWeight=4",
+          "Text": "fill=Accent Light Mode/Default Green/700;strokeWeight=1",
+          "(root)": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=2"
+        }
+      },
+      "variants": {
+        "12637:2939": {
+          "Status": "Warning"
+        },
+        "33148:172": {
+          "Status": "Pending-test"
+        },
+        "12637:2942": {
+          "Status": "Success"
+        },
+        "12637:2936": {
+          "Status": "Critical/Error"
+        }
+      },
+      "fmt": 8
+    },
     "12637:2944": {
-      "name": "Badges/Marketing",
+      "name": "Badges/Marketing-test",
       "count": 1,
       "layers": {
         "12637:2944": {
@@ -7935,143 +8072,6 @@
           "Type": "Initials",
           "Notification": "Off",
           "State": "Default"
-        }
-      },
-      "fmt": 8
-    },
-    "12637:2876": {
-      "name": "Badges/Casino",
-      "count": 16,
-      "layers": {
-        "12637:2900": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
-        },
-        "12637:7800": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Red/600;strokeWeight=1;radius=2"
-        },
-        "12637:7798": {
-          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "(root)": "fill=Yellow/500;strokeWeight=1;radius=2"
-        },
-        "12637:2903": {
-          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "(root)": "fill=Yellow/500;strokeWeight=1;radius=2"
-        },
-        "12637:7802": {
-          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Orange/500;strokeWeight=1;radius=2"
-        },
-        "12637:7804": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
-        },
-        "12637:2906": {
-          "Text": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Orange/500;strokeWeight=1;radius=2"
-        },
-        "12637:2909": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
-        },
-        "12637:7806": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Magenta/600;strokeWeight=1;radius=2"
-        },
-        "12637:7810": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Blue/600;strokeWeight=1;radius=2"
-        },
-        "12637:2912": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
-        },
-        "12637:7812": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=2"
-        },
-        "12637:7808": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Purple/Default/500;strokeWeight=1;radius=2"
-        },
-        "12637:2915": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Magenta/600;strokeWeight=1;radius=2"
-        },
-        "12637:2918": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Blue/600;strokeWeight=1;radius=2"
-        },
-        "12637:2921": {
-          "Text": "fill=Neutral/Generic/White;strokeWeight=1",
-          "(root)": "fill=Accent Light Mode/Default Green/600;strokeWeight=1;radius=2"
-        }
-      },
-      "variants": {
-        "12637:7798": {
-          "Platform": "Desktop",
-          "Categories": "Exclusive"
-        },
-        "12637:2906": {
-          "Platform": "Mobile",
-          "Categories": "Promotion"
-        },
-        "12637:2918": {
-          "Platform": "Mobile",
-          "Categories": "Popular"
-        },
-        "12637:2921": {
-          "Platform": "Mobile",
-          "Categories": "Freebet"
-        },
-        "12637:7802": {
-          "Platform": "Desktop",
-          "Categories": "Promotion"
-        },
-        "12637:7810": {
-          "Platform": "Desktop",
-          "Categories": "Popular"
-        },
-        "12637:7808": {
-          "Platform": "Desktop",
-          "Categories": "Daily Jackpot"
-        },
-        "12637:7800": {
-          "Platform": "Desktop",
-          "Categories": "New"
-        },
-        "12637:2903": {
-          "Platform": "Mobile",
-          "Categories": "Exclusive"
-        },
-        "12637:2912": {
-          "Platform": "Mobile",
-          "Categories": "Daily Jackpot"
-        },
-        "12637:7812": {
-          "Platform": "Desktop",
-          "Categories": "Freebet"
-        },
-        "12637:2909": {
-          "Platform": "Mobile",
-          "Categories": "Jackpot"
-        },
-        "12637:2900": {
-          "Platform": "Mobile",
-          "Categories": "New"
-        },
-        "12637:2915": {
-          "Platform": "Mobile",
-          "Categories": "Intern"
-        },
-        "12637:7804": {
-          "Platform": "Desktop",
-          "Categories": "Jackpot"
-        },
-        "12637:7806": {
-          "Platform": "Desktop",
-          "Categories": "Intern"
         }
       },
       "fmt": 8
