@@ -8603,7 +8603,7 @@
       "fmt": 8
     },
     "10167:1036": {
-      "name": "Banner-test",
+      "name": "Banner-test3434",
       "count": 4,
       "layers": {
         "10167:1037": {
@@ -8641,16 +8641,16 @@
       },
       "variants": {
         "10167:1055": {
-          "Type": "Warning"
+          "Type23": "Warning"
         },
         "10167:1049": {
-          "Type": "Success"
+          "Type23": "Success"
         },
         "10167:1043": {
-          "Type": "Information"
+          "Type23": "Information"
         },
         "10167:1037": {
-          "Type": "Error"
+          "Type23": "Error"
         }
       },
       "fmt": 8

@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.14.60",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Primary Buttons-test",
+            "desc": "New experimental button component with 270 variants, added as a test candidate to replace the deprecated Primary Buttons component."
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Updated to replace the Primary Buttons layer with Primary Buttons-test inside the Message + Button / Button + Link slot. Old Primary Buttons layers removed; new Primary Buttons-test layer added."
+          },
+          {
+            "type": "deprecated",
+            "title": "Primary Buttons",
+            "desc": "Deprecated and removed from the library. Use the new Primary Buttons-test component as the replacement going forward."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Replace any imports or references to the Primary Buttons component with Primary Buttons-test across all React components, ensuring the 270 new variants are mapped correctly to existing usage.",
+      "Designer: Update all Figma files consuming Primary Buttons to swap instances to Primary Buttons-test, particularly within Alerts Default (Inline) layouts using the Message + Button / Button + Link configuration.",
+      "Tester: Verify that Alerts Default (Inline) renders correctly across all markets (DE, AT, ES, SE, CY) with the new Primary Buttons-test layer, checking that button styles and link pairings display as expected.",
+      "Developer: Audit any hardcoded variant prop values referencing Primary Buttons in alert-related components and update them to match the corresponding Primary Buttons-test variant names to avoid broken renders."
+    ]
+  },
+  {
     "version": "v2026.08.14.59",
     "date": "2026-08-14",
     "ticket": "",
