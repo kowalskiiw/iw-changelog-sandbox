@@ -1,5 +1,55 @@
 [
   {
+    "version": "v2026.11.12.96",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Betslip/Loading Blue",
+            "desc": "Removed from library. No direct replacement named; check betslip loading state implementations and migrate to an appropriate token from the current color set."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Casino Game Search Filter/Default Fill Color",
+            "desc": "Removed from library. Replace with a current fill token; audit casino game search filter components for any remaining references."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Casino Game Search Filter/Active Border",
+            "desc": "Removed from library. Replace with a current border token; ensure active/focus states on the casino game search filter are updated accordingly."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Casino Game Search Filter/Background",
+            "desc": "Removed from library. Replace with a current background token; update casino game search filter background references across all affected markets."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "Button root fill changed: Accent Light Mode/Orange/700 → Accent Light Mode/Orange/650. Text and icon fills changed: Neutral/Generic/White → Neutral/Generic/Black across Text, Text+Icon Left, and Text+Icon Right variants."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Remove all references to the deprecated CSS tokens for `Betslip/Loading Blue` and all three `Casino Game Search Filter` color styles, replacing them with current approved tokens from the Accent and Neutral palettes.",
+      "Developer: Update Primary Button styles so the root background uses `Accent Light Mode/Orange/650` (was `Orange/700`) and text/icon color uses `Neutral/Generic/Black` (was `Neutral/Generic/White`); verify contrast ratios meet accessibility standards.",
+      "Designer: Detach or remap any Figma layers still referencing the four removed color styles (`Betslip/Loading Blue`, `Casino Game Search Filter/Default Fill Color`, `Casino Game Search Filter/Active Border`, `Casino Game Search Filter/Background`) to valid library tokens.",
+      "Tester: Visually verify Primary Buttons across all markets (DE, AT, ES, SE, CY) for the updated orange background shade and black text/icon color, confirming no white-on-light contrast failures appear in betting UI, odds displays, or match cards."
+    ]
+  },
+  {
     "version": "v2026.11.12.95",
     "date": "2026-11-12",
     "ticket": "",
@@ -2082,40 +2132,6 @@
       "Developer: Verify that the generic <Icon> slot integration in Banner, Alerts Default (Inline), and Betslip (Inline) components renders the correct icons across all markets (DE, AT, ES, SE, CY).",
       "Designer: Confirm Banner max-width breakpoints (Sports/Rest 1299px, Live 1451px, Magazine 1232px) are correctly applied in Figma layouts for all page templates.",
       "Tester: Validate icon rendering in all Betslip inline states (success, warning) and Alerts Default (Inline) to ensure <Icon> slot replacements display correctly."
-    ]
-  },
-  {
-    "version": "v2026.08.14.66",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant: \"Secondary Neutral White\" → \"Secondary Neutral White - 1\""
-          },
-          {
-            "type": "changed",
-            "title": "Banner",
-            "desc": "Container / alerts/checkmark-filled-1 / Vector — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600"
-          },
-          {
-            "type": "changed",
-            "title": "Alerts Default (Inline)",
-            "desc": "Padding / alerts/warning-circle-filled / Vector — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600 · Padding / .Alert Base/Small / Container / Text / Text — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600 · Padding / alerts/warning-circle-filled / Vector — fill: Accent Light Mode/Orange/500 → Accent Light Mode/Orange/600 · Padding / .Alert Base/Small / Container / Text / Text — fill: Accent Light Mode/Orange/500 → Accent Light Mode/Orange/600"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any code referencing the variant name \"Secondary Neutral White\" to \"Secondary Neutral White - 1\" to prevent broken component lookups.",
-      "Developer: Replace token references to Accent Light Mode/Default Green/500 and Accent Light Mode/Orange/500 with /600 equivalents in Banner and Alerts Default (Inline) components.",
-      "Designer: Verify that the renamed variant \"Secondary Neutral White - 1\" is correctly applied in all layouts where it appears over images or non-solid backgrounds.",
-      "Tester: Visually verify Banner checkmark icon and Alerts Default (Inline) — both success (green) and warning (orange) states — reflect the updated /600 fill tokens across DE, AT, ES, SE, and CY markets."
     ]
   }
 ]

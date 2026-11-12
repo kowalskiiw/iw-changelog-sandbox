@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.14.66",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant: \"Secondary Neutral White\" → \"Secondary Neutral White - 1\""
+          },
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Container / alerts/checkmark-filled-1 / Vector — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600"
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Padding / alerts/warning-circle-filled / Vector — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600 · Padding / .Alert Base/Small / Container / Text / Text — fill: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/600 · Padding / alerts/warning-circle-filled / Vector — fill: Accent Light Mode/Orange/500 → Accent Light Mode/Orange/600 · Padding / .Alert Base/Small / Container / Text / Text — fill: Accent Light Mode/Orange/500 → Accent Light Mode/Orange/600"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code referencing the variant name \"Secondary Neutral White\" to \"Secondary Neutral White - 1\" to prevent broken component lookups.",
+      "Developer: Replace token references to Accent Light Mode/Default Green/500 and Accent Light Mode/Orange/500 with /600 equivalents in Banner and Alerts Default (Inline) components.",
+      "Designer: Verify that the renamed variant \"Secondary Neutral White - 1\" is correctly applied in all layouts where it appears over images or non-solid backgrounds.",
+      "Tester: Visually verify Banner checkmark icon and Alerts Default (Inline) — both success (green) and warning (orange) states — reflect the updated /600 fill tokens across DE, AT, ES, SE, and CY markets."
+    ]
+  },
+  {
     "version": "v2026.08.14.64",
     "date": "2026-08-14",
     "ticket": "",
