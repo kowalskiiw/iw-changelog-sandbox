@@ -8541,6 +8541,11 @@
           "Size": "Small",
           "Focus": "High"
         },
+        "10182:2965": {
+          "Type": "Warning",
+          "Size": "Medium",
+          "Focus": "Low"
+        },
         "10182:1437": {
           "Type": "Success",
           "Size": "Medium",
@@ -8575,11 +8580,6 @@
           "Type": "Error",
           "Size": "Small",
           "Focus": "High"
-        },
-        "10182:2965": {
-          "Type": "Warning",
-          "Size": "Medium",
-          "Focus": "Low"
         },
         "10608:1059": {
           "Type": "Information",
