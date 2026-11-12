@@ -1095,7 +1095,8 @@
           "State": "Hover"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "5389:148170": {
       "name": "Spacer",
@@ -2054,7 +2055,8 @@
           "Size": "224px"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12258:4334": {
       "name": "Secondary Buttons",
@@ -3545,7 +3547,8 @@
           "Type": "Icon"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12222:25669": {
       "name": "Primary Buttons",
@@ -7564,7 +7567,8 @@
           "Type": "Text + Icon"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "13537:6104": {
       "name": "Avatar/Casino/Bonus",
@@ -7579,7 +7583,8 @@
       "variants": {
         "13537:6104": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12869:3618": {
       "name": "Avatar/Casino/XS",
@@ -7594,7 +7599,8 @@
       "variants": {
         "12869:3618": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12637:2876": {
       "name": "Badges/Casino-test",
@@ -7731,7 +7737,8 @@
           "Categories": "Intern"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12637:2946": {
       "name": "Badges/Apps-test",
@@ -7747,7 +7754,8 @@
       "variants": {
         "12637:2946": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "11305:5825": {
       "name": "Badge/Betslip-test",
@@ -7761,7 +7769,8 @@
       "variants": {
         "11305:5825": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "12637:2935": {
       "name": "Badges/Account status-test",
@@ -7806,7 +7815,17 @@
           "Status": "Critical/Error"
         }
       },
-      "fmt": 8
+      "props": {
+        "4503:0": {
+          "name": "Icon",
+          "type": "BOOLEAN"
+        },
+        "4504:4": {
+          "name": "Text",
+          "type": "TEXT"
+        }
+      },
+      "fmt": 9
     },
     "12637:2944": {
       "name": "Badges/Marketing-test",
@@ -7820,7 +7839,8 @@
       "variants": {
         "12637:2944": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "10473:2635": {
       "name": "Avatar/SM",
@@ -8021,7 +8041,8 @@
           "State": "Default"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "33244:939": {
       "name": "Avatar/MD",
@@ -8222,10 +8243,11 @@
           "State": "Hover"
         }
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "10172:12394": {
-      "name": "Alerts Default (Inline) 12313",
+      "name": "Alerts Default (Inline)",
       "count": 16,
       "layers": {
         "10172:12395": {
@@ -8506,86 +8528,92 @@
       "variants": {
         "10608:1003": {
           "Type": "Error",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "Low"
         },
         "10182:1452": {
           "Type": "Warning",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "High"
         },
         "10606:1261": {
           "Type": "Success",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "High"
         },
         "10182:1437": {
           "Type": "Success",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "High"
         },
         "10182:2935": {
           "Type": "Success",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "Low"
         },
         "10606:1274": {
           "Type": "Warning",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "High"
         },
         "10182:3005": {
           "Type": "Error",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "Low"
         },
         "10606:1248": {
           "Type": "Information",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "High"
         },
         "10608:1063": {
           "Type": "Warning",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "Low"
         },
         "10182:1500": {
           "Type": "Error",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "High"
         },
         "10182:2965": {
           "Type": "Warning",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "Low"
         },
         "10608:1059": {
           "Type": "Information",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "Low"
         },
         "10179:4175": {
           "Type": "Information",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "High"
         },
         "10182:2896": {
           "Type": "Information",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "Low"
         },
         "10172:12395": {
           "Type": "Error",
-          "Size test": "Medium",
+          "Size": "Medium",
           "Focus": "High"
         },
         "10608:1055": {
           "Type": "Success",
-          "Size test": "Small",
+          "Size": "Small",
           "Focus": "Low"
         }
       },
-      "fmt": 8
+      "props": {
+        "10182:0": {
+          "name": "→ Icon",
+          "type": "INSTANCE_SWAP"
+        }
+      },
+      "fmt": 9
     },
     "11783:2476": {
       "name": "Badge/Default",
@@ -8600,10 +8628,11 @@
       "variants": {
         "11783:2476": {}
       },
-      "fmt": 8
+      "props": {},
+      "fmt": 9
     },
     "10167:1036": {
-      "name": "Banner-test3434",
+      "name": "Banner",
       "count": 4,
       "layers": {
         "10167:1037": {
@@ -8641,19 +8670,25 @@
       },
       "variants": {
         "10167:1055": {
-          "Type23": "Warning"
+          "Type": "Warning"
         },
         "10167:1049": {
-          "Type23": "Success"
+          "Type": "Success"
         },
         "10167:1043": {
-          "Type23": "Information"
+          "Type": "Information"
         },
         "10167:1037": {
-          "Type23": "Error"
+          "Type": "Error"
         }
       },
-      "fmt": 8
+      "props": {
+        "10172:0": {
+          "name": "→ Icon",
+          "type": "INSTANCE_SWAP"
+        }
+      },
+      "fmt": 9
     },
     "10172:12251": {
       "name": "Betslip (Inline)",
@@ -8686,7 +8721,13 @@
           "Type": "Error"
         }
       },
-      "fmt": 8
+      "props": {
+        "10179:0": {
+          "name": "→ Icon",
+          "type": "INSTANCE_SWAP"
+        }
+      },
+      "fmt": 9
     }
   }
 }
