@@ -1,5 +1,28 @@
 [
   {
+    "version": "v2026.11.12.94",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "component renamed: \"Betslip (Inline) test\" → \"Betslip (Inline)\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 1 component(s) changed (visual, variant naming, and/or property renames) — check Dev Mode for updated specs and update any code referencing old variant/property/component names.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.11.12.93",
     "date": "2026-11-12",
     "ticket": "",
@@ -2102,35 +2125,6 @@
       "Developer: Update Primary Button variant references: \"Primary Default\" → \"Primary Brand (Default)\" and \"Primary Black\" → \"Primary Neutral\" across all React components and betting UI screens.",
       "Designer: Review any designs using the renamed button variants (Secondary Neutral, Primary Default, Primary Black) and remap them to the new variant names in Figma.",
       "Tester: Verify inline info Alerts visually across DE, AT, ES, SE, and CY — confirm the info-circle-filled icon is no longer rendered and alert message text renders in Accent Light Mode/Blue/600."
-    ]
-  },
-  {
-    "version": "v2026.08.14.63",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant: \"Secondary Neutral White\" → \"Secondary Neutral\""
-          },
-          {
-            "type": "changed",
-            "title": "Primary Buttons",
-            "desc": "Variant: \"Primary Brand (Default)\" → \"Primary Default\" · Variant: \"Primary Neutral\" → \"Primary Black\""
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any code referencing the Secondary Button variant \"Secondary Neutral White\" to \"Secondary Neutral\" across all markets.",
-      "Developer: Update all references to Primary Button variants — replace \"Primary Brand (Default)\" with \"Primary Default\" and \"Primary Neutral\" with \"Primary Black\" in component props and any hardcoded variant strings.",
-      "Designer: Update local Figma files and specs to use the renamed variants \"Secondary Neutral\", \"Primary Default\", and \"Primary Black\" — detach and re-link any overridden instances still pointing to old variant names.",
-      "Tester: Verify Secondary Button renders correctly on image and non-solid backgrounds, and that both renamed Primary Button variants display as expected across DE, AT, ES, SE, and CY market builds."
     ]
   }
 ]
