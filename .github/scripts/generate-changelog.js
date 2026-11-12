@@ -623,23 +623,74 @@ function diffComponentLayers(oldByVariant = {}, newByVariant = {}, renameMap = {
 
 // Compares each variant's raw property values (e.g. Variant="Secondary Black
 // (Default)") across two snapshots, matched by the variant's own node ID.
-// A node ID present in both sides with a changed value is a rename. A node ID
-// missing from one side is ignored here — that's an add/remove, already
-// surfaced via the `count` check in describeComponentChange.
+//
+// Three kinds of change are detected, in order:
+//   1. Property-NAME rename (Type → Type111): an old property key and a new
+//      property key whose per-variant value maps are identical. Without this
+//      step, renaming a property reads as every value vanishing under the old
+//      name and reappearing under the new one — one noisy "X → ∅ · ∅ → X" pair
+//      per variant (the Banner/"+3 more" soup). Collapsed to a single line.
+//   2. Property added / removed: an old or new key with no identical-value
+//      counterpart on the other side.
+//   3. Per-variant VALUE change on a property present on both sides
+//      (e.g. Variant="Secondary Black" → "Secondary Neutral Black").
+//
+// All matching is by the variant's own node ID, so a genuine delete+recreate
+// still shows up as an add/remove (surfaced via the `count` check in
+// describeComponentChange) rather than a false rename.
 function diffVariantProps(oldV = {}, newV = {}) {
   const out = [];
-  const nodeIds = new Set([...Object.keys(oldV), ...Object.keys(newV)]);
-  for (const id of nodeIds) {
-    const oProps = oldV[id];
-    const nProps = newV[id];
-    if (!oProps || !nProps) continue; // added/removed variant, not a rename
-    const keys = new Set([...Object.keys(oProps), ...Object.keys(nProps)]);
-    for (const key of keys) {
-      if (oProps[key] !== nProps[key]) {
-        out.push(`${key}: "${oProps[key] ?? '∅'}" → "${nProps[key] ?? '∅'}"`);
-      }
+
+  // Only variants present on both sides (matched by node ID). Variants added or
+  // removed outright are surfaced via the count check in describeComponentChange.
+  const commonIds = Object.keys(newV).filter(id => oldV[id]);
+  if (!commonIds.length) return out;
+
+  // For each property name, collect its value across every common variant:
+  //   key → { [variantNodeId]: value }
+  const oldKeyVals = {}, newKeyVals = {};
+  for (const id of commonIds) {
+    for (const [k, v] of Object.entries(oldV[id])) (oldKeyVals[k] ??= {})[id] = v;
+    for (const [k, v] of Object.entries(newV[id])) (newKeyVals[k] ??= {})[id] = v;
+  }
+
+  const removedKeys = Object.keys(oldKeyVals).filter(k => !(k in newKeyVals));
+  const addedKeys   = Object.keys(newKeyVals).filter(k => !(k in oldKeyVals));
+
+  // (1) Property-NAME rename: an old key and a new key whose per-variant value
+  // maps are identical.
+  const renameTo = {};          // oldKey → newKey
+  const pairedNew = new Set();
+  const sameMap = (a, b) => {
+    const ak = Object.keys(a);
+    return ak.length === Object.keys(b).length && ak.every(id => a[id] === b[id]);
+  };
+  for (const ok of removedKeys) {
+    const nk = addedKeys.find(k => !pairedNew.has(k) && sameMap(oldKeyVals[ok], newKeyVals[k]));
+    if (nk) {
+      renameTo[ok] = nk;
+      pairedNew.add(nk);
+      out.push(`property renamed: "${ok}" → "${nk}"`);
     }
   }
+
+  // (2) Unmatched keys are genuine property additions / removals.
+  for (const ok of removedKeys) if (!(ok in renameTo)) out.push(`property removed: "${ok}"`);
+  for (const nk of addedKeys)   if (!pairedNew.has(nk))  out.push(`property added: "${nk}"`);
+
+  // (3) Per-variant VALUE changes on properties present on both sides. A renamed
+  // property is mapped to its new name so its values line up and don't
+  // re-report as a change.
+  for (const id of commonIds) {
+    const oMapped = {};
+    for (const [k, v] of Object.entries(oldV[id])) oMapped[renameTo[k] ?? k] = v;
+    const nProps = newV[id];
+    for (const key of new Set([...Object.keys(oMapped), ...Object.keys(nProps)])) {
+      if (oMapped[key] === undefined || nProps[key] === undefined) continue; // add/remove handled above
+      if (oMapped[key] !== nProps[key]) out.push(`${key}: "${oMapped[key]}" → "${nProps[key]}"`);
+    }
+  }
+
   return [...new Set(out)];
 }
 
@@ -803,7 +854,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", a property rename like property renamed: "Type" → "Type111", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
@@ -812,7 +863,7 @@ Your task is to return a JSON object with two keys:
    - Be specific to the actual changes (mention style names, token names, or affected screens)
    - Not be generic like "run regression tests" unless there are visual changes that require it
    - Mention specific CSS properties, token names, or component names where relevant
-   - If a component variant's property value was renamed, or a whole component/set was renamed, call out that any code referencing the old variant/component name must be updated
+   - If a component variant's property value was renamed, a variant PROPERTY was renamed/added/removed (e.g. "Type" → "Type111"), or a whole component/set was renamed, call out that any code referencing the old variant/property/component name must be updated
 
 Context about the codebase:
 - CSS token naming convention: --body-xl-size, --body-xl-line-height, --label-m-size etc.
@@ -883,7 +934,7 @@ function buildFallbackActions(diff) {
   if (diff.components.added.length)
     actions.push(`Developer: ${diff.components.added.length} new component(s) in Figma — check Dev Mode for specs.`);
   if (diff.components.changed.length)
-    actions.push(`Developer: ${diff.components.changed.length} component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.`);
+    actions.push(`Developer: ${diff.components.changed.length} component(s) changed (visual, variant naming, and/or property renames) — check Dev Mode for updated specs and update any code referencing old variant/property/component names.`);
   if (diff.components.removed.length)
     actions.push(`Developer: ${diff.components.removed.length} component(s) removed — check codebase for usages.`);
   if (diff.variables.changed.length || diff.variables.added.length)
