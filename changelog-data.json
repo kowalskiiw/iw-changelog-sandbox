@@ -1,5 +1,30 @@
 [
   {
+    "version": "v2026.11.12.95",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Banner max-width depends on the corresponding page header: Sports 1299px, Live 1451px, Rest 1299px, Magazine 1232px. Property renamed: \"→ Icon2323\" → \"→ Icon\"."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Update any Banner instances in Figma that reference the old instance-swap property \"→ Icon2323\" to use the renamed property \"→ Icon\".",
+      "Developer: Update any code or prop mappings referencing the Banner's old property name \"→ Icon2323\" to \"→ Icon\" to avoid broken instance-swap bindings.",
+      "Developer: Verify Banner max-width constraints are correctly applied per page context — Sports/Rest: 1299px, Live: 1451px, Magazine: 1232px.",
+      "Tester: Confirm the Banner component renders correctly across Sports, Live, Magazine, and other page types, checking max-width behaviour at breakpoint boundaries."
+    ]
+  },
+  {
     "version": "v2026.11.12.94",
     "date": "2026-11-12",
     "ticket": "",
@@ -2091,40 +2116,6 @@
       "Developer: Replace token references to Accent Light Mode/Default Green/500 and Accent Light Mode/Orange/500 with /600 equivalents in Banner and Alerts Default (Inline) components.",
       "Designer: Verify that the renamed variant \"Secondary Neutral White - 1\" is correctly applied in all layouts where it appears over images or non-solid backgrounds.",
       "Tester: Visually verify Banner checkmark icon and Alerts Default (Inline) — both success (green) and warning (orange) states — reflect the updated /600 fill tokens across DE, AT, ES, SE, and CY markets."
-    ]
-  },
-  {
-    "version": "v2026.08.14.64",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant: \"Secondary Neutral\" → \"Secondary Neutral White\""
-          },
-          {
-            "type": "changed",
-            "title": "Primary Buttons",
-            "desc": "Variant: \"Primary Default\" → \"Primary Brand (Default)\" · Variant: \"Primary Black\" → \"Primary Neutral\""
-          },
-          {
-            "type": "changed",
-            "title": "Alerts Default (Inline)",
-            "desc": "Padding / .Alert Base/Medium / Message + Button / Text / Text — ∅ → fill=Accent Light Mode/Blue/600;strokeWeight=1 · Padding / alerts/info-circle-filled / Vector — fill=Accent Light Mode/Blue/500;strokeWeight=1 → ∅"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update all Secondary Button references from variant \"Secondary Neutral\" to \"Secondary Neutral White\" in component props and any hardcoded variant strings.",
-      "Developer: Update Primary Button variant references: \"Primary Default\" → \"Primary Brand (Default)\" and \"Primary Black\" → \"Primary Neutral\" across all React components and betting UI screens.",
-      "Designer: Review any designs using the renamed button variants (Secondary Neutral, Primary Default, Primary Black) and remap them to the new variant names in Figma.",
-      "Tester: Verify inline info Alerts visually across DE, AT, ES, SE, and CY — confirm the info-circle-filled icon is no longer rendered and alert message text renders in Accent Light Mode/Blue/600."
     ]
   }
 ]

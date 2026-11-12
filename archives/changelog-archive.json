@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.14.64",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant: \"Secondary Neutral\" → \"Secondary Neutral White\""
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "Variant: \"Primary Default\" → \"Primary Brand (Default)\" · Variant: \"Primary Black\" → \"Primary Neutral\""
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Padding / .Alert Base/Medium / Message + Button / Text / Text — ∅ → fill=Accent Light Mode/Blue/600;strokeWeight=1 · Padding / alerts/info-circle-filled / Vector — fill=Accent Light Mode/Blue/500;strokeWeight=1 → ∅"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update all Secondary Button references from variant \"Secondary Neutral\" to \"Secondary Neutral White\" in component props and any hardcoded variant strings.",
+      "Developer: Update Primary Button variant references: \"Primary Default\" → \"Primary Brand (Default)\" and \"Primary Black\" → \"Primary Neutral\" across all React components and betting UI screens.",
+      "Designer: Review any designs using the renamed button variants (Secondary Neutral, Primary Default, Primary Black) and remap them to the new variant names in Figma.",
+      "Tester: Verify inline info Alerts visually across DE, AT, ES, SE, and CY — confirm the info-circle-filled icon is no longer rendered and alert message text renders in Accent Light Mode/Blue/600."
+    ]
+  },
+  {
     "version": "v2026.08.14.63",
     "date": "2026-08-14",
     "ticket": "",
