@@ -58,8 +58,12 @@ const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json
 // path. A change on a single variant now diffs cleanly against that same
 // variant's own previous state, instead of fragmenting into a stray add +
 // a stray remove because other, unrelated variants still carry one side of
-// the value.)
-const COMPONENT_FMT = 8;
+// the value.
+// v9: also snapshot each set's non-variant component properties (instance-swap,
+// boolean, text) from componentPropertyDefinitions, keyed by the stable id
+// suffix (the "#8:0" part of "Icon#8:0"), so renaming one — e.g. instance-swap
+// "Icon" → "Icon1" — is detected. Variant props stay handled via node names.)
+const COMPONENT_FMT = 9;
 
 // Built during variable loading:
 //   VARIABLE_NAMES        : variableId → token name (for fills BOUND to a variable)
@@ -284,6 +288,25 @@ function collectComponentLayersByVariant(root) {
   return out;
 }
 
+// Extracts a set's NON-variant component properties (instance-swap, boolean,
+// text) from the node's componentPropertyDefinitions. Figma keys these as
+// "Name#<stable-id>" (e.g. "Icon#8:0"); the id suffix is stable across a
+// rename while the name changes, so we key the result by that suffix to make
+// rename detection possible. VARIANT-type properties are skipped here —
+// those are handled via variant node names in parseVariantProps/diffVariantProps.
+// Returns { [idSuffix]: { name, type } }.
+function extractComponentProps(doc) {
+  const defs = (doc && doc.componentPropertyDefinitions) || {};
+  const out = {};
+  for (const [key, def] of Object.entries(defs)) {
+    if (!def || def.type === 'VARIANT') continue;   // variants handled via node names
+    const hashIdx = key.indexOf('#');
+    if (hashIdx === -1) continue;                    // non-variant props always carry #id
+    out[key.slice(hashIdx + 1)] = { name: key.slice(0, hashIdx), type: def.type };
+  }
+  return out;
+}
+
 // ── VARIABLE / COLOUR TOKEN LOADING ─────────────────────────────────────────────
 // Preferred: committed variables.json exported from Figma via the Desktop Bridge
 // (any plan). Fallback: the Enterprise-only Variables REST API.
@@ -423,18 +446,23 @@ async function fetchAllStyles() {
   await loadVariables(snapshot);
 
   // ── COMPONENTS ────────────────────────────────────────────────────────────
-  // Stored as { count, layers, variants, fmt } per set:
+  // Stored as { count, layers, variants, props, fmt } per set:
   //   count    → detects variants added/removed
   //   layers   → { [variantNodeId]: { "Layer / Path": sig } } → per-variant
   //              visual signatures, diffed variant-by-variant against its own
   //              previous state (see diffComponentLayers), so a change on one
   //              variant never gets fragmented by unrelated variants.
   //   variants → { [nodeId]: { PropName: value, ... } } → each variant's raw
-  //              property values (e.g. Variant="Secondary Black (Default)"),
-  //              keyed by the variant's OWN node ID so a rename is caught even
-  //              though nothing visual changed. Matching by node ID (rather
-  //              than by value) means a genuine delete+recreate correctly
-  //              shows up as add/remove instead of a false rename.
+  //              VARIANT property values (e.g. Variant="Secondary Black
+  //              (Default)"), keyed by the variant's OWN node ID so a rename is
+  //              caught even though nothing visual changed. Matching by node ID
+  //              (rather than by value) means a genuine delete+recreate
+  //              correctly shows up as add/remove instead of a false rename.
+  //   props    → { [idSuffix]: { name, type } } → the set's NON-variant
+  //              component properties (instance-swap, boolean, text) from
+  //              componentPropertyDefinitions, keyed by the stable "#id"
+  //              suffix so an instance-swap/boolean/text rename is detected
+  //              (see extractComponentProps / diffComponentProps).
   //   fmt      → snapshot format version (see COMPONENT_FMT).
   try {
     const compData = await figmaGet(`/files/${FIGMA_FILE_ID}/components`);
@@ -476,30 +504,38 @@ async function fetchAllStyles() {
       if (!info.description) info.description = sets[setNodeId]?.description || c.description || '';
     }
 
-    // Fetch each set's full node tree and build its per-layer visual map.
+    // Fetch each set's full node tree and build its per-layer visual map AND
+    // its non-variant component-property map (both come from the same node doc,
+    // so no extra API calls).
     const nodeIds = [...new Set(Object.values(setInfo).map(i => i.nodeId).filter(Boolean))];
     const maps = {};
+    const propsMaps = {};
     for (let i = 0; i < nodeIds.length; i += 50) {
       const batch = nodeIds.slice(i, i + 50);
       const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${batch.join(',')}`);
       for (const id of batch) {
         const doc = nodes?.[id]?.document;
-        maps[id] = doc ? collectComponentLayersByVariant(doc) : {};
+        maps[id]      = doc ? collectComponentLayersByVariant(doc) : {};
+        propsMaps[id] = doc ? extractComponentProps(doc) : {};
       }
     }
 
+    let totalProps = 0;
     for (const info of Object.values(setInfo)) {
+      const props = propsMaps[info.nodeId] ?? {};
+      totalProps += Object.keys(props).length;
       // Keyed by node ID (stable across renames), not by name — see COMPONENT_FMT v7.
       snapshot.components[info.nodeId] = {
         name: info.name,
         count: info.keys.length,
         layers: maps[info.nodeId] ?? {},
         variants: info.variants,
+        props,
         fmt: COMPONENT_FMT,
       };
       if (info.description) figmaDescriptions[info.name] = info.description;
     }
-    console.log(`   Found ${Object.keys(snapshot.components).length} component sets`);
+    console.log(`   Found ${Object.keys(snapshot.components).length} component sets (${totalProps} non-variant properties)`);
   } catch (e) {
     console.warn('   Components fetch failed:', e.message);
   }
@@ -557,11 +593,12 @@ function asComp(v) {
     count: v.count ?? 0,
     layers: v.layers ?? {},
     variants: v.variants ?? {},
+    props: v.props ?? {},
     fmt: v.fmt,
     _migrated: false,
   };
   const [c] = String(v).split('::');
-  return { name: '', count: Number(c) || 0, layers: {}, variants: {}, fmt: undefined, _migrated: true };
+  return { name: '', count: Number(c) || 0, layers: {}, variants: {}, props: {}, fmt: undefined, _migrated: true };
 }
 
 // Rewrites any path segment matching a known old component/variant name to its
@@ -621,8 +658,8 @@ function diffComponentLayers(oldByVariant = {}, newByVariant = {}, renameMap = {
   return [...lines];
 }
 
-// Compares each variant's raw property values (e.g. Variant="Secondary Black
-// (Default)") across two snapshots, matched by the variant's own node ID.
+// Compares each variant's raw VARIANT property values (e.g. Variant="Secondary
+// Black (Default)") across two snapshots, matched by the variant's own node ID.
 //
 // Three kinds of change are detected, in order:
 //   1. Property-NAME rename (Type → Type111): an old property key and a new
@@ -638,6 +675,10 @@ function diffComponentLayers(oldByVariant = {}, newByVariant = {}, renameMap = {
 // All matching is by the variant's own node ID, so a genuine delete+recreate
 // still shows up as an add/remove (surfaced via the `count` check in
 // describeComponentChange) rather than a false rename.
+//
+// NOTE: this only covers VARIANT properties (encoded in variant node names).
+// Instance-swap / boolean / text properties live in componentPropertyDefinitions
+// and are diffed separately by diffComponentProps.
 function diffVariantProps(oldV = {}, newV = {}) {
   const out = [];
 
@@ -694,6 +735,24 @@ function diffVariantProps(oldV = {}, newV = {}) {
   return [...new Set(out)];
 }
 
+// Diffs a set's NON-variant component properties (instance-swap, boolean, text),
+// matched by the stable "#id" suffix that extractComponentProps keyed them by.
+// Same id on both sides with a changed name → a rename (e.g. instance-swap
+// "Icon" → "Icon1"). An id on only one side → a genuine add/remove of that
+// property. Keying by the stable id (not the name) is what makes a rename read
+// as one clean line instead of a remove+add pair.
+function diffComponentProps(oldP = {}, newP = {}) {
+  const out = [];
+  const ids = new Set([...Object.keys(oldP), ...Object.keys(newP)]);
+  for (const id of ids) {
+    const o = oldP[id], n = newP[id];
+    if (o && n) { if (o.name !== n.name) out.push(`property renamed: "${o.name}" → "${n.name}"`); }
+    else if (n) out.push(`property added: "${n.name}"`);
+    else if (o) out.push(`property removed: "${o.name}"`);
+  }
+  return out;
+}
+
 function describeComponentChange(oldVal, newVal, renameMap = {}) {
   const o = asComp(oldVal), n = asComp(newVal);
   if (o._migrated || o.fmt !== n.fmt) return ''; // format migration → adopt silently
@@ -705,6 +764,7 @@ function describeComponentChange(oldVal, newVal, renameMap = {}) {
   }
   if (o.count !== n.count) lines.push(`variants: ${o.count} → ${n.count}`);
   lines.push(...diffVariantProps(o.variants, n.variants));
+  lines.push(...diffComponentProps(o.props, n.props));
   lines.push(...diffComponentLayers(o.layers, n.layers, renameMap));
 
   if (!lines.length) return '';
@@ -854,7 +914,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", a property rename like property renamed: "Type" → "Type111", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", a property rename like property renamed: "Type" → "Type111" or property renamed: "Icon" → "Icon1", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
@@ -863,7 +923,7 @@ Your task is to return a JSON object with two keys:
    - Be specific to the actual changes (mention style names, token names, or affected screens)
    - Not be generic like "run regression tests" unless there are visual changes that require it
    - Mention specific CSS properties, token names, or component names where relevant
-   - If a component variant's property value was renamed, a variant PROPERTY was renamed/added/removed (e.g. "Type" → "Type111"), or a whole component/set was renamed, call out that any code referencing the old variant/property/component name must be updated
+   - If a component variant's property value was renamed, a variant or component PROPERTY was renamed/added/removed (e.g. "Type" → "Type111", instance-swap "Icon" → "Icon1"), or a whole component/set was renamed, call out that any code referencing the old variant/property/component name must be updated
 
 Context about the codebase:
 - CSS token naming convention: --body-xl-size, --body-xl-line-height, --label-m-size etc.
