@@ -8684,14 +8684,14 @@
       },
       "props": {
         "10172:0": {
-          "name": "→ Icon",
+          "name": "→ Icon2323",
           "type": "INSTANCE_SWAP"
         }
       },
       "fmt": 9
     },
     "10172:12251": {
-      "name": "Betslip (Inline)",
+      "name": "Betslip (Inline) test",
       "count": 2,
       "layers": {
         "10172:12252": {

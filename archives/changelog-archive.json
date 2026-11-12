@@ -1,5 +1,37 @@
 [
   {
+    "version": "v2026.08.14.62",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant: \"Secondary White\" → \"Secondary Neutral White\""
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "component renamed: \"Primary Buttons-test\" → \"Primary Buttons\" · Variant: \"Primary Black\" → \"Primary Neutral\""
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text / Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons — layer added · +3 more"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 3 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.14.60",
     "date": "2026-08-14",
     "ticket": "",

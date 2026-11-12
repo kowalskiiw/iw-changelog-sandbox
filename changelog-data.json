@@ -1,5 +1,35 @@
 [
   {
+    "version": "v2026.11.12.93",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Property renamed: \"→ Icon\" → \"→ Icon2323\". Banner max-width follows the corresponding page header: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline) test",
+            "desc": "component renamed: \"Betslip (Inline)\" → \"Betslip (Inline) test\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Update any instance-swap or property references using \"→ Icon\" to \"→ Icon2323\" in Banner component usages across all market files.",
+      "Developer: Replace all code references to the \"Betslip (Inline)\" component name with \"Betslip (Inline) test\"; confirm with CXI team whether this rename is intentional for production.",
+      "Developer: Verify Banner max-width constraints are correctly implemented per page context: 1299px for Sports/Rest, 1451px for Live, 1232px for Magazine.",
+      "Tester: Validate Banner width rendering across Sports, Live, and Magazine pages in DE, AT, ES, SE, and CY markets to confirm max-width values match spec."
+    ]
+  },
+  {
     "version": "v2026.11.12.90",
     "date": "2026-11-12",
     "ticket": "",
@@ -2101,38 +2131,6 @@
       "Developer: Update all references to Primary Button variants — replace \"Primary Brand (Default)\" with \"Primary Default\" and \"Primary Neutral\" with \"Primary Black\" in component props and any hardcoded variant strings.",
       "Designer: Update local Figma files and specs to use the renamed variants \"Secondary Neutral\", \"Primary Default\", and \"Primary Black\" — detach and re-link any overridden instances still pointing to old variant names.",
       "Tester: Verify Secondary Button renders correctly on image and non-solid backgrounds, and that both renamed Primary Button variants display as expected across DE, AT, ES, SE, and CY market builds."
-    ]
-  },
-  {
-    "version": "v2026.08.14.62",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant: \"Secondary White\" → \"Secondary Neutral White\""
-          },
-          {
-            "type": "changed",
-            "title": "Primary Buttons",
-            "desc": "component renamed: \"Primary Buttons-test\" → \"Primary Buttons\" · Variant: \"Primary Black\" → \"Primary Neutral\""
-          },
-          {
-            "type": "changed",
-            "title": "Alerts Default (Inline)",
-            "desc": "Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons-test / .ButtonBase/Text / Text / Text — layer removed · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons — layer added · +3 more"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: 3 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
-      "Tester: Run regression tests on affected screens."
     ]
   }
 ]
