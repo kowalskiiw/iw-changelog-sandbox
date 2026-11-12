@@ -7566,59 +7566,6 @@
       },
       "fmt": 8
     },
-    "10167:1036": {
-      "name": "Banner",
-      "count": 4,
-      "layers": {
-        "10167:1037": {
-          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=4",
-          "Container / <Icon>": "strokeWeight=1",
-          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        },
-        "10167:1043": {
-          "Container": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
-          "Container / <Icon>": "strokeWeight=1",
-          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Blue/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        },
-        "10167:1049": {
-          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
-          "Container / <Icon>": "strokeWeight=1",
-          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        },
-        "10167:1055": {
-          "Container": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=4",
-          "Container / <Icon>": "strokeWeight=1",
-          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Orange/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        }
-      },
-      "variants": {
-        "10167:1049": {
-          "Type": "Success"
-        },
-        "10167:1055": {
-          "Type": "Warning"
-        },
-        "10167:1043": {
-          "Type": "Information"
-        },
-        "10167:1037": {
-          "Type": "Error"
-        }
-      },
-      "fmt": 8
-    },
     "13537:6104": {
       "name": "Avatar/Casino/Bonus",
       "count": 1,
@@ -8684,6 +8631,59 @@
         },
         "10172:12252": {
           "Type": "Success"
+        }
+      },
+      "fmt": 8
+    },
+    "10167:1036": {
+      "name": "Banner",
+      "count": 4,
+      "layers": {
+        "10167:1037": {
+          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1;radius=4",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "10167:1043": {
+          "Container": "fill=Accent Light Mode/Blue/50;stroke=Accent Light Mode/Blue/300;strokeWeight=1;radius=4",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Blue/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "10167:1049": {
+          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1;radius=4",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "10167:1055": {
+          "Container": "fill=Accent Light Mode/Orange/50;stroke=Accent Light Mode/Orange/300;strokeWeight=1;radius=4",
+          "Container / <Icon>": "strokeWeight=1",
+          "Container / <Icon> / Vector": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Orange/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "10167:1049": {
+          "Type111": "Success"
+        },
+        "10167:1055": {
+          "Type111": "Warning"
+        },
+        "10167:1043": {
+          "Type111": "Information"
+        },
+        "10167:1037": {
+          "Type111": "Error"
         }
       },
       "fmt": 8

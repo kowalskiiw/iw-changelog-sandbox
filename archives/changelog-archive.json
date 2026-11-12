@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.14.56",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Primary Buttons-test",
+            "desc": "New experimental button component with 270 variants, introduced as a test replacement for the deprecated Primary Buttons component. Not yet production-ready."
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Updated to replace the Primary Buttons layer with Primary Buttons-test inside the Message + Button / Button + Link slot. Legacy Primary Buttons layers removed throughout."
+          },
+          {
+            "type": "deprecated",
+            "title": "Primary Buttons",
+            "desc": "Deprecated and removed from the library. Replace all usages with the new Primary Buttons-test component where applicable."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Designer: Swap any instance of Primary Buttons with Primary Buttons-test in designs using the Alerts Default (Inline) component and validate the Button + Link slot renders correctly across all 270 variants.",
+      "Developer: Search the codebase for references to the Primary Buttons component and replace with Primary Buttons-test; verify no broken component references remain in Alert inline implementations.",
+      "Tester: Verify that inline alert variants using the Message + Button / Button + Link configuration render correctly with Primary Buttons-test across DE, AT, ES, SE, and CY market builds.",
+      "Developer: Confirm Primary Buttons-test variant props map correctly to existing CSS token conventions (e.g. --label-m-size) and that no regression occurs in odds displays or match card CTAs using button styles."
+    ]
+  },
+  {
     "version": "v2026.08.07.53",
     "date": "2026-08-07",
     "ticket": "",
