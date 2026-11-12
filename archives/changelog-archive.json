@@ -1,5 +1,39 @@
 [
   {
+    "version": "v2026.08.14.59",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Primary Buttons",
+            "desc": "New component added with 270 variants covering the full range of primary button states and configurations across supported markets."
+          },
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant renamed: \"Secondary Neutral White\" → \"Secondary White\". Used on non-solid backgrounds, for example images."
+          },
+          {
+            "type": "deprecated",
+            "title": "Primary Buttons-test",
+            "desc": "Removed from the library. Use the new Primary Buttons component instead."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code referencing the variant value \"Secondary Neutral White\" to \"Secondary White\" in all Secondary Button implementations across DE, AT, ES, SE, and CY markets.",
+      "Designer: Replace all instances of the deprecated \"Primary Buttons-test\" component in Figma files with the new \"Primary Buttons\" component (270 variants available).",
+      "Developer: Audit React components consuming Secondary Buttons to ensure the renamed variant prop value \"Secondary White\" is applied correctly on image and non-solid backgrounds.",
+      "Tester: Verify Secondary Button rendering on image and non-solid backgrounds across all markets to confirm the \"Secondary White\" variant displays correctly after the rename."
+    ]
+  },
+  {
     "version": "v2026.08.14.56",
     "date": "2026-08-14",
     "ticket": "",

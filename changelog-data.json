@@ -1,5 +1,40 @@
 [
   {
+    "version": "v2026.11.12.89",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline) 12313",
+            "desc": "Component renamed from \"Alerts Default (Inline)\" → \"Alerts Default (Inline) 12313\"; property renamed: \"Size\" → \"Size test\". Update all references accordingly."
+          },
+          {
+            "type": "changed",
+            "title": "Banner-test",
+            "desc": "Renamed \"Banner\" → \"Banner-test\"; property renamed: \"Type111\" → \"Type\". Banner max-width follows header max-width: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "Component renamed from \"Betslip (Inline) test\" → \"Betslip (Inline)\". Update all code and design references to use the new stable name."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code referencing the component name \"Alerts Default (Inline)\" to \"Alerts Default (Inline) 12313\" and the property \"Size\" to \"Size test\" to avoid broken prop mappings.",
+      "Developer: Update all references to the \"Banner\" component to \"Banner-test\" and ensure the property previously named \"Type111\" is now referenced as \"Type\"; also validate that Banner max-width values (1299px, 1451px, 1232px) are correctly applied per page context.",
+      "Developer: Replace all references to \"Betslip (Inline) test\" with \"Betslip (Inline)\" across React components and any dynamic component-lookup logic.",
+      "Tester: Verify that the Banner component respects the correct max-width per section — Sports/Rest at 1299px, Live at 1451px, and Magazine at 1232px — across DE, AT, ES, SE, and CY markets."
+    ]
+  },
+  {
     "version": "v2026.11.12.88",
     "date": "2026-11-12",
     "ticket": "",
@@ -2109,40 +2144,6 @@
       "Designer: Update all Figma files consuming Primary Buttons to swap instances to Primary Buttons-test, particularly within Alerts Default (Inline) layouts using the Message + Button / Button + Link configuration.",
       "Tester: Verify that Alerts Default (Inline) renders correctly across all markets (DE, AT, ES, SE, CY) with the new Primary Buttons-test layer, checking that button styles and link pairings display as expected.",
       "Developer: Audit any hardcoded variant prop values referencing Primary Buttons in alert-related components and update them to match the corresponding Primary Buttons-test variant names to avoid broken renders."
-    ]
-  },
-  {
-    "version": "v2026.08.14.59",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "new",
-            "title": "Primary Buttons",
-            "desc": "New component added with 270 variants covering the full range of primary button states and configurations across supported markets."
-          },
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant renamed: \"Secondary Neutral White\" → \"Secondary White\". Used on non-solid backgrounds, for example images."
-          },
-          {
-            "type": "deprecated",
-            "title": "Primary Buttons-test",
-            "desc": "Removed from the library. Use the new Primary Buttons component instead."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any code referencing the variant value \"Secondary Neutral White\" to \"Secondary White\" in all Secondary Button implementations across DE, AT, ES, SE, and CY markets.",
-      "Designer: Replace all instances of the deprecated \"Primary Buttons-test\" component in Figma files with the new \"Primary Buttons\" component (270 variants available).",
-      "Developer: Audit React components consuming Secondary Buttons to ensure the renamed variant prop value \"Secondary White\" is applied correctly on image and non-solid backgrounds.",
-      "Tester: Verify Secondary Button rendering on image and non-solid backgrounds across all markets to confirm the \"Secondary White\" variant displays correctly after the rename."
     ]
   }
 ]
