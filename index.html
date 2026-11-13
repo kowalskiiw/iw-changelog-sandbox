@@ -314,10 +314,6 @@
     padding: 1px 6px; border-radius: 6px; color: var(--ink);
     white-space: nowrap;
   }
-  .change-emphasis {
-    background: var(--gray-tint); color: var(--ink); font-weight: 500;
-    padding: 1px 6px; border-radius: 6px;
-  }
   .title-element { color: var(--orange-ink); }
   .val-old { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
   .val-arrow { color: var(--faint); margin: 0 4px; }
@@ -581,7 +577,7 @@
 
   // Subtle highlighting of technical tokens in descriptions and actions.
   // Runs on ALREADY-ESCAPED text and wraps matches in "pills"
-  // (.change-token), emphasised quoted strings (.change-emphasis), and colours
+  // (.change-token — paths, hex, CSS vars, and quoted names alike), and colours
   // transition arrows (.val-arrow). One single-pass regex → non-overlapping
   // matches, no double-wrapping.
   function highlightDesc(escaped) {
@@ -618,8 +614,8 @@
     );
 
     return escaped.replace(RE, (m, dq, sq, cssVar, hex, path, arrow) => {
-      if (dq)     return `<span class="change-emphasis">${dq}</span>`;
-      if (sq)     return `<span class="change-emphasis">${sq}</span>`;
+      if (dq)     return `<span class="change-token">${dq}</span>`;
+      if (sq)     return `<span class="change-token">${sq}</span>`;
       if (cssVar) return `<span class="change-token">${cssVar}</span>`;
       if (hex)    return `<span class="change-token">${hex}</span>`;
       if (path)   return `<span class="change-token">${path}</span>`;
