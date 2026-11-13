@@ -1,5 +1,38 @@
 [
   {
+    "version": "v2026.08.16.76",
+    "date": "2026-08-16",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact, secondary contexts where space is tight. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default badge component. Notification fill lightened: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded references to the Green/600 token in Avatar/XS, Avatar/MD, and Badge/Default notification fills — replace with Accent Light Mode/Default Green/500.",
+      "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files have picked up the updated Green/500 notification fill and check contrast compliance.",
+      "Tester: Visually verify notification indicators on Avatar/XS, Avatar/MD, and Badge/Default across all markets (DE, AT, ES, SE, CY) reflect the lighter Green/500 fill."
+    ]
+  },
+  {
     "version": "v2026.08.15.75",
     "date": "2026-08-15",
     "ticket": "",

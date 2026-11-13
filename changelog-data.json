@@ -1,5 +1,29 @@
 [
   {
+    "version": "v2026.11.13.106",
+    "date": "2026-11-13",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Filter neu",
+            "desc": "New color token #ED5B5B for casino filter UI elements. Use for casino filter components requiring this distinct red accent."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Integrate the new color token 'Casino Filter neu' (#ED5B5B) into the CSS token system and apply it to casino filter components where the new red accent is required.",
+      "Designer: Reference the new 'Casino Filter neu' (#ED5B5B) color style in Figma when designing or updating casino filter UI elements across affected markets.",
+      "Tester: Verify that the new casino filter color (#ED5B5B) renders correctly on casino filter components across all relevant market builds (DE, AT, ES, SE, CY)."
+    ]
+  },
+  {
     "version": "v2026.11.13.105",
     "date": "2026-11-13",
     "ticket": "",
@@ -607,39 +631,6 @@
       "Developer: Update any hardcoded references to the Green/500 token on .Notifications elements within Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default to use Accent Light Mode/Default Green/400.",
       "Designer: Verify the lighter Green/400 notification badge colour meets contrast and visibility requirements across all five markets (DE, AT, ES, SE, CY) in both compact and standard layouts.",
       "Tester: Visually verify that notification badges on Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default render the updated Green/400 fill correctly across account screens and navigation components in all markets."
-    ]
-  },
-  {
-    "version": "v2026.08.16.76",
-    "date": "2026-08-16",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Avatar/XS",
-            "desc": "Smallest avatar for compact, secondary contexts where space is tight. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
-          },
-          {
-            "type": "changed",
-            "title": "Avatar/MD",
-            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification fill updated: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
-          },
-          {
-            "type": "changed",
-            "title": "Badge/Default",
-            "desc": "Default badge component. Notification fill lightened: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/500."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any hardcoded references to the Green/600 token in Avatar/XS, Avatar/MD, and Badge/Default notification fills — replace with Accent Light Mode/Default Green/500.",
-      "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files have picked up the updated Green/500 notification fill and check contrast compliance.",
-      "Tester: Visually verify notification indicators on Avatar/XS, Avatar/MD, and Badge/Default across all markets (DE, AT, ES, SE, CY) reflect the lighter Green/500 fill."
     ]
   }
 ]
