@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "from": "Casino Filter neu",
+    "to": "Accent Light Mode/Blue/300",
+    "components": [
+      ".Slider Control/Casino",
+      "Gaming/Modules/Slider Filter - Casino",
+      "Gaming/Modules/Slider Filter - Live Casino",
+      "Gaming/Single Item/Slider - Single Item - Gaming"
+    ],
+    "bindingCount": 1,
+    "date": "2026-11-13"
+  }
+]
