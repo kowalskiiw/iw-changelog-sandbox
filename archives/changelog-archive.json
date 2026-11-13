@@ -1,5 +1,28 @@
 [
   {
+    "version": "v2026.08.14.71",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Display/Bold/Regular",
+            "desc": "New 12px / 15px line-height, weight 400, Inter text style for display-level bold contexts at regular scale. Use where small display labels are needed."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add a new CSS token (e.g. --display-bold-regular-size: 12px and --display-bold-regular-line-height: 15px) mapped to the Inter font-family with font-weight 400 to match the new Display/Bold/Regular style.",
+      "Designer: Assign the new Display/Bold/Regular style from the IW Design Library to any components or frames that require a 12px display-level label, ensuring it is not confused with existing body or label styles.",
+      "Tester: Verify that any UI elements consuming Display/Bold/Regular render at exactly 12px font size and 15px line height in Inter across all five markets (DE, AT, ES, SE, CY), with no fallback or override applied."
+    ]
+  },
+  {
     "version": "v2026.08.14.70",
     "date": "2026-08-14",
     "ticket": "",
