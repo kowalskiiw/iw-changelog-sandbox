@@ -1,5 +1,44 @@
 [
   {
+    "version": "v2026.08.14.67",
+    "date": "2026-08-14",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Variant renamed: \"Secondary Neutral White - 1\" → \"Secondary Neutral White\". Update any code or design references using the old variant name."
+          },
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Icon layers refactored to generic <Icon> slots. Max-width follows page context: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Icon layers replaced with generic <Icon> slots; multiple additional layer changes detected. Review alert implementations for icon rendering consistency."
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "Specific icon layers (checkmark-filled-1, warning-circle-filled) replaced with generic <Icon> and <Icon>/Vector slots. Verify icon rendering in betslip states."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded references to variant \"Secondary Neutral White - 1\" to \"Secondary Neutral White\" in component props and tests.",
+      "Developer: Verify that the generic <Icon> slot integration in Banner, Alerts Default (Inline), and Betslip (Inline) components renders the correct icons across all markets (DE, AT, ES, SE, CY).",
+      "Designer: Confirm Banner max-width breakpoints (Sports/Rest 1299px, Live 1451px, Magazine 1232px) are correctly applied in Figma layouts for all page templates.",
+      "Tester: Validate icon rendering in all Betslip inline states (success, warning) and Alerts Default (Inline) to ensure <Icon> slot replacements display correctly."
+    ]
+  },
+  {
     "version": "v2026.08.14.66",
     "date": "2026-08-14",
     "ticket": "",

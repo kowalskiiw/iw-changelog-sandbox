@@ -1,5 +1,60 @@
 [
   {
+    "version": "v2026.11.13.97",
+    "date": "2026-11-13",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Active Border",
+            "desc": "New color token (#96DBFA) for the active border state of casino game search filter chips. Apply when a filter is selected."
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Default Fill Color",
+            "desc": "New color token (#2B94FE) defining the default fill for casino game search filter elements. Use for unselected filter chip backgrounds or icons."
+          },
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Game Search Filter/Background",
+            "desc": "New color token (#EEEBE5) for the background surface of the casino game search filter area. Apply to the filter container background."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Slider - Betslip",
+            "desc": "New slider component for the betslip, available in 4 variants. Used to adjust values such as stake amounts within the betslip UI."
+          },
+          {
+            "type": "new",
+            "title": "Gaming/Single Item/Slider - Single Item - Gaming",
+            "desc": "New gaming single-item slider component with 2 variants. Displays an individual game item within a horizontally scrollable slider context."
+          },
+          {
+            "type": "new",
+            "title": "Gaming/Modules/Slider Filter - Live Casino",
+            "desc": "New single-variant filter slider module for the Live Casino section. Enables users to filter live casino game listings via a horizontal slider interface."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Integrate the three new Casino Game Search Filter tokens (--casino-game-search-filter-active-border: #96DBFA, --casino-game-search-filter-default-fill: #2B94FE, --casino-game-search-filter-background: #EEEBE5) into the casino search filter stylesheet.",
+      "Designer: Reference the new Slider - Betslip (4 variants), Slider - Single Item - Gaming (2 variants), and Slider Filter - Live Casino components from the IW Design Library when designing betslip and casino game browsing flows.",
+      "Developer: Implement the new Slider - Betslip, Gaming Single Item Slider, and Slider Filter - Live Casino components in the React codebase, ensuring all variants are covered and mapped to their Figma counterparts.",
+      "Tester: Verify that the Casino Game Search Filter color tokens render correctly for active border, default fill, and background states across DE, AT, ES, SE, and CY markets, and validate all slider component variants display as expected in betslip and live casino screens."
+    ]
+  },
+  {
     "version": "v2026.11.12.96",
     "date": "2026-11-12",
     "ticket": "",
@@ -2093,45 +2148,6 @@
       "Designer: Replace all instances of Avatar/MD with Avatar/MD-test in Figma files; update the Type property from Initials to Initials-neu where applied.",
       "Developer: Search codebase for component references to Avatar/MD and variant type Initials — rename to Avatar/MD-test and Initials-neu respectively to avoid broken references.",
       "Tester: Visually verify inline alerts across all markets (DE, AT, ES, SE, CY) to confirm the blue fill shift from /Blue/600 to /Blue/700 renders correctly on icon, link, days, and text layers."
-    ]
-  },
-  {
-    "version": "v2026.08.14.67",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant renamed: \"Secondary Neutral White - 1\" → \"Secondary Neutral White\". Update any code or design references using the old variant name."
-          },
-          {
-            "type": "changed",
-            "title": "Banner",
-            "desc": "Icon layers refactored to generic <Icon> slots. Max-width follows page context: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
-          },
-          {
-            "type": "changed",
-            "title": "Alerts Default (Inline)",
-            "desc": "Icon layers replaced with generic <Icon> slots; multiple additional layer changes detected. Review alert implementations for icon rendering consistency."
-          },
-          {
-            "type": "changed",
-            "title": "Betslip (Inline)",
-            "desc": "Specific icon layers (checkmark-filled-1, warning-circle-filled) replaced with generic <Icon> and <Icon>/Vector slots. Verify icon rendering in betslip states."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any hardcoded references to variant \"Secondary Neutral White - 1\" to \"Secondary Neutral White\" in component props and tests.",
-      "Developer: Verify that the generic <Icon> slot integration in Banner, Alerts Default (Inline), and Betslip (Inline) components renders the correct icons across all markets (DE, AT, ES, SE, CY).",
-      "Designer: Confirm Banner max-width breakpoints (Sports/Rest 1299px, Live 1451px, Magazine 1232px) are correctly applied in Figma layouts for all page templates.",
-      "Tester: Validate icon rendering in all Betslip inline states (success, warning) and Alerts Default (Inline) to ensure <Icon> slot replacements display correctly."
     ]
   }
 ]

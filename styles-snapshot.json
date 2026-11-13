@@ -889,7 +889,10 @@
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
     "Color Styles / Footer Greece/800": "#1A3362",
-    "Color Styles / Footer Greece/900": "#0D234D"
+    "Color Styles / Footer Greece/900": "#0D234D",
+    "Color Styles / Casino Game Search Filter/Active Border": "#96DBFA",
+    "Color Styles / Casino Game Search Filter/Default Fill Color": "#2B94FE",
+    "Color Styles / Casino Game Search Filter/Background": "#EEEBE5"
   },
   "components": {
     "10473:2538": {
@@ -8723,6 +8726,125 @@
           "type": "INSTANCE_SWAP"
         }
       },
+      "fmt": 9
+    },
+    "33509:4729": {
+      "name": "Slider - Betslip",
+      "count": 4,
+      "layers": {
+        "33509:4730": {
+          "Container": "strokeWeight=1",
+          "Container / Background": "strokeWeight=1",
+          "Container / Background / Possible winnings": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=20",
+          "Container / Left Rail": "strokeWeight=1",
+          "Container / Left Rail / Cashout Amount": "fill=Yellow/500;strokeWeight=1",
+          "Container / Left Rail / Cashout more than stake": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "33509:4737": {
+          "Container": "strokeWeight=1",
+          "Container / Background": "strokeWeight=1",
+          "Container / Background / Possible winnings": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=20",
+          "Container / Left Rail": "strokeWeight=1",
+          "Container / Left Rail / Cashout Amount": "fill=Yellow/500;strokeWeight=1",
+          "Container / Left Rail / Cashout more than stake": "fill=Neutral/Generic/White;strokeWeight=1",
+          "Container / Cashout Amount": "fill=#69CD39;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "33509:4745": {
+          "Background": "strokeWeight=1",
+          "Background / Possible winnings": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=20",
+          ".Left Rail": "strokeWeight=1",
+          ".Left Rail / Cashount Amount": "fill=Yellow/500;strokeWeight=1;radius=20",
+          ".Left Rail / .Slider Control/Sportsbook": "strokeWeight=1",
+          ".Left Rail / .Slider Control/Sportsbook / Control": "fill=Neutral/Generic/White;stroke=Neutral/Grey/Light/40;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "33509:4749": {
+          "Background": "strokeWeight=1",
+          "Background / Possible winnings": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=20",
+          ".Left Rail": "strokeWeight=1",
+          ".Left Rail / Cashount Amount": "fill=Yellow/500;strokeWeight=1;radius=20",
+          ".Left Rail / .Slider Control/Sportsbook": "strokeWeight=1",
+          ".Left Rail / .Slider Control/Sportsbook / Control": "fill=Neutral/Generic/White;stroke=Neutral/Grey/Light/40;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "33509:4730": {
+          "Slider State": "Default",
+          "Type": "Cashout < Stake"
+        },
+        "33509:4749": {
+          "Slider State": "Edit Mode",
+          "Type": "Cashout < Stake"
+        },
+        "33509:4737": {
+          "Slider State": "Default",
+          "Type": "Cashout > Stake"
+        },
+        "33509:4745": {
+          "Slider State": "Edit Mode",
+          "Type": "Cashout > Stake"
+        }
+      },
+      "props": {},
+      "fmt": 9
+    },
+    "33509:4804": {
+      "name": "Gaming/Single Item/Slider - Single Item - Gaming",
+      "count": 2,
+      "layers": {
+        "33509:4805": {
+          "Slider Background": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=8",
+          "Container": "strokeWeight=1",
+          "Container / Selection": "fill=Casino Game Search Filter/Default Fill Color;strokeWeight=1;radius=8",
+          "Container / .Slider Control/Casino": "strokeWeight=1",
+          "Container / .Slider Control/Casino / Control": "fill=Casino Game Search Filter/Default Fill Color;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "33509:4811": {
+          "Slider Background": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=8",
+          "Container": "strokeWeight=1",
+          "Container / Selection": "fill=Casino Game Search Filter/Default Fill Color;strokeWeight=1;radius=8",
+          "Container / .Slider Control/Casino": "strokeWeight=1",
+          "Container / .Slider Control/Casino / Control": "fill=Casino Game Search Filter/Default Fill Color;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "33509:4805": {
+          "Control Positions": "Default"
+        },
+        "33509:4811": {
+          "Control Positions": "Random"
+        }
+      },
+      "props": {},
+      "fmt": 9
+    },
+    "33509:4799": {
+      "name": "Gaming/Modules/Slider Filter - Live Casino",
+      "count": 1,
+      "layers": {
+        "33509:4799": {
+          "Gaming/Single Item/Slider - Single Item - Gaming": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Slider Background": "fill=Neutral/Grey/Dark/600;strokeWeight=1;radius=8",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / Selection": "fill=Yellow/500;strokeWeight=1;radius=8",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino / Control": "fill=Neutral/Generic/White;strokeWeight=1",
+          "Additional Elements": "strokeWeight=1",
+          "Additional Elements / .Slider Value": "fill=Neutral/Grey/Dark/900;strokeWeight=1;radius=4",
+          "Additional Elements / .Slider Value / Label": "fill=Neutral/Grey/Medium/100;strokeWeight=1",
+          "Additional Elements / .Slider Value / Value": "fill=Neutral/Generic/White;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "33509:4799": {}
+      },
+      "props": {},
       "fmt": 9
     }
   }
