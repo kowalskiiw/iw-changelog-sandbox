@@ -1870,7 +1870,7 @@
       "fmt": 9
     },
     "12637:2946": {
-      "name": "Badges/Apps-test",
+      "name": "Badges/Apps",
       "count": 1,
       "layers": {
         "12637:2946": {
@@ -1887,7 +1887,7 @@
       "fmt": 9
     },
     "11305:5825": {
-      "name": "Badge/Betslip-test",
+      "name": "Badge/Betslip",
       "count": 1,
       "layers": {
         "11305:5825": {
@@ -1902,7 +1902,7 @@
       "fmt": 9
     },
     "12637:2935": {
-      "name": "Badges/Account status-test",
+      "name": "Badges/Account status",
       "count": 4,
       "layers": {
         "12637:2936": {
@@ -1957,7 +1957,7 @@
       "fmt": 9
     },
     "12637:2876": {
-      "name": "Badges/Casino-test",
+      "name": "Badges/Casino",
       "count": 16,
       "layers": {
         "12637:2900": {
@@ -2062,6 +2062,14 @@
           "Platform": "Mobile",
           "Categories": "Freebet"
         },
+        "12637:7812": {
+          "Platform": "Desktop",
+          "Categories": "Freebet"
+        },
+        "12637:2909": {
+          "Platform": "Mobile",
+          "Categories": "Jackpot"
+        },
         "12637:2903": {
           "Platform": "Mobile",
           "Categories": "Exclusive"
@@ -2073,14 +2081,6 @@
         "12637:2906": {
           "Platform": "Mobile",
           "Categories": "Promotion"
-        },
-        "12637:7812": {
-          "Platform": "Desktop",
-          "Categories": "Freebet"
-        },
-        "12637:2909": {
-          "Platform": "Mobile",
-          "Categories": "Jackpot"
         },
         "12637:7810": {
           "Platform": "Desktop",
@@ -2095,7 +2095,7 @@
       "fmt": 9
     },
     "12637:2944": {
-      "name": "Badges/Marketing-test",
+      "name": "Badges/Marketing",
       "count": 1,
       "layers": {
         "12637:2944": {
@@ -8192,6 +8192,45 @@
       },
       "fmt": 9
     },
+    "10172:12251": {
+      "name": "Betslip (Inline)",
+      "count": 2,
+      "layers": {
+        "10172:12252": {
+          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1",
+          "Container / Icon": "strokeWeight=1",
+          "Container / Icon / <Icon>": "strokeWeight=1",
+          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        },
+        "10172:12258": {
+          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1",
+          "Container / Icon": "strokeWeight=1",
+          "Container / Icon / <Icon>": "strokeWeight=1",
+          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
+          "Container / Text": "strokeWeight=1",
+          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1;opacity=0.8",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "10172:12252": {
+          "Type": "Success"
+        },
+        "10172:12258": {
+          "Type": "Error"
+        }
+      },
+      "props": {
+        "10179:0": {
+          "name": "→ Icon",
+          "type": "INSTANCE_SWAP"
+        }
+      },
+      "fmt": 9
+    },
     "10167:1036": {
       "name": "Banner",
       "count": 4,
@@ -8230,14 +8269,14 @@
         }
       },
       "variants": {
-        "10167:1055": {
-          "Type": "Warning"
-        },
         "10167:1049": {
           "Type": "Success"
         },
         "10167:1043": {
           "Type": "Information"
+        },
+        "10167:1055": {
+          "Type": "Warning"
         },
         "10167:1037": {
           "Type": "Error"
@@ -8245,45 +8284,6 @@
       },
       "props": {
         "10172:0": {
-          "name": "→ Icon",
-          "type": "INSTANCE_SWAP"
-        }
-      },
-      "fmt": 9
-    },
-    "10172:12251": {
-      "name": "Betslip (Inline)",
-      "count": 2,
-      "layers": {
-        "10172:12252": {
-          "Container": "fill=Accent Light Mode/Default Green/50;stroke=Accent Light Mode/Default Green/300;strokeWeight=1",
-          "Container / Icon": "strokeWeight=1",
-          "Container / Icon / <Icon>": "strokeWeight=1",
-          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Default Green/600;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Default Green/900;strokeWeight=1",
-          "(root)": "strokeWeight=1"
-        },
-        "10172:12258": {
-          "Container": "fill=Accent Light Mode/Red/50;stroke=Accent Light Mode/Red/300;strokeWeight=1",
-          "Container / Icon": "strokeWeight=1",
-          "Container / Icon / <Icon>": "strokeWeight=1",
-          "Container / Icon / <Icon> / Vector": "fill=Accent Light Mode/Red/600;strokeWeight=1",
-          "Container / Text": "strokeWeight=1",
-          "Container / Text / Text": "fill=Accent Light Mode/Red/900;strokeWeight=1;opacity=0.8",
-          "(root)": "strokeWeight=1"
-        }
-      },
-      "variants": {
-        "10172:12252": {
-          "Type": "Success"
-        },
-        "10172:12258": {
-          "Type": "Error"
-        }
-      },
-      "props": {
-        "10179:0": {
           "name": "→ Icon",
           "type": "INSTANCE_SWAP"
         }

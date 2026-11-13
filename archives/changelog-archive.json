@@ -1,5 +1,43 @@
 [
   {
+    "version": "v2026.08.16.78",
+    "date": "2026-08-16",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": "Smallest avatar for compact and secondary contexts where space is tight. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": "Small avatar for tight layouts needing slightly more presence than XS. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": "Small avatar for tight layouts needing slightly more presence than MD. Notification badge fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": "Default notification badge. Fill updated: Accent Light Mode/Default Green/500 → Accent Light Mode/Default Green/400, producing a lighter green across all badge instances."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any hardcoded references to the Green/500 token on .Notifications elements within Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default to use Accent Light Mode/Default Green/400.",
+      "Designer: Verify the lighter Green/400 notification badge colour meets contrast and visibility requirements across all five markets (DE, AT, ES, SE, CY) in both compact and standard layouts.",
+      "Tester: Visually verify that notification badges on Avatar/XS, Avatar/SM, Avatar/MD, and Badge/Default render the updated Green/400 fill correctly across account screens and navigation components in all markets."
+    ]
+  },
+  {
     "version": "v2026.08.16.76",
     "date": "2026-08-16",
     "ticket": "",
