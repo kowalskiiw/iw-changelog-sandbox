@@ -1,5 +1,27 @@
 [
   {
+    "version": "v2026.08.15.75",
+    "date": "2026-08-15",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner-test",
+            "desc": "component renamed: \"Banner\" → \"Banner-test\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.15.73",
     "date": "2026-08-15",
     "ticket": "",

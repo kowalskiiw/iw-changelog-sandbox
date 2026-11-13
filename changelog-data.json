@@ -1,5 +1,29 @@
 [
   {
+    "version": "v2026.11.13.105",
+    "date": "2026-11-13",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Casino Filter",
+            "desc": "Replaced by Accent Light Mode/Blue/300. Affects: .Slider Control/Casino."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Remove any references to the deprecated 'Casino Filter' color token from CSS and component stylesheets, ensuring no broken token references remain.",
+      "Designer: Audit Figma files across all markets (DE, AT, ES, SE, CY) for any frames or components still using 'Color Styles / Casino Filter' and replace or detach as appropriate.",
+      "Tester: Verify that casino filter UI elements across all markets render correctly without the removed color style, checking for any missing or fallback color rendering."
+    ]
+  },
+  {
     "version": "v2026.11.13.104",
     "date": "2026-11-13",
     "ticket": "",
@@ -616,28 +640,6 @@
       "Developer: Update any hardcoded references to the Green/600 token in Avatar/XS, Avatar/MD, and Badge/Default notification fills — replace with Accent Light Mode/Default Green/500.",
       "Designer: Verify Avatar/XS, Avatar/MD, and Badge/Default instances in Figma files have picked up the updated Green/500 notification fill and check contrast compliance.",
       "Tester: Visually verify notification indicators on Avatar/XS, Avatar/MD, and Badge/Default across all markets (DE, AT, ES, SE, CY) reflect the lighter Green/500 fill."
-    ]
-  },
-  {
-    "version": "v2026.08.15.75",
-    "date": "2026-08-15",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Banner-test",
-            "desc": "component renamed: \"Banner\" → \"Banner-test\""
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
-      "Tester: Run regression tests on affected screens."
     ]
   }
 ]
