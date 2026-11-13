@@ -1,5 +1,29 @@
 [
   {
+    "version": "v2026.11.13.100",
+    "date": "2026-11-13",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Casino Filter Outline",
+            "desc": "Deprecated and removed from the library. Replace any usage with an equivalent active border or outline token from the current color styles."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Remove or replace any references to the deprecated 'Casino Filter Outline' color token in CSS/SCSS; audit casino filter components for hardcoded or token-based outline styles relying on this value.",
+      "Designer: Remove 'Color Styles / Casino Filter Outline' from any Figma files or local styles still referencing it; substitute with an appropriate current outline token.",
+      "Tester: Verify casino filter UI elements across all markets (DE, AT, ES, SE, CY) to confirm no missing or broken outline styles following the token removal."
+    ]
+  },
+  {
     "version": "v2026.11.13.99",
     "date": "2026-11-13",
     "ticket": "",
@@ -722,50 +746,6 @@
       "Developer: Add a new CSS token (e.g. --display-bold-regular-size: 12px and --display-bold-regular-line-height: 15px) mapped to the Inter font-family with font-weight 400 to match the new Display/Bold/Regular style.",
       "Designer: Assign the new Display/Bold/Regular style from the IW Design Library to any components or frames that require a 12px display-level label, ensuring it is not confused with existing body or label styles.",
       "Tester: Verify that any UI elements consuming Display/Bold/Regular render at exactly 12px font size and 15px line height in Inter across all five markets (DE, AT, ES, SE, CY), with no fallback or override applied."
-    ]
-  },
-  {
-    "version": "v2026.08.14.70",
-    "date": "2026-08-14",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Secondary Buttons",
-            "desc": "Variant: \"Secondary Neutral White\" → \"Secondary Neutral White test\""
-          },
-          {
-            "type": "changed",
-            "title": "Primary Buttons test",
-            "desc": "component renamed: \"Primary Buttons\" → \"Primary Buttons test\""
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Casino-test",
-            "desc": "component renamed: \"Badges/Casino\" → \"Badges/Casino-test\" · Categories: \"New\" → \"New-test\""
-          },
-          {
-            "type": "changed",
-            "title": "Avatar/MD",
-            "desc": "component renamed: \"Avatar/MD-test\" → \"Avatar/MD\" · Type: \"Initials-neu\" → \"Initials\""
-          },
-          {
-            "type": "changed",
-            "title": "Betslip (Inline) test",
-            "desc": "component renamed: \"Betslip (Inline)\" → \"Betslip (Inline) test\""
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update all code references from \"Primary Buttons\" to \"Primary Buttons test\", \"Betslip (Inline)\" to \"Betslip (Inline) test\", and \"Secondary Neutral White\" to \"Secondary Neutral White test\" across all market implementations (DE, AT, ES, SE, CY).",
-      "Developer: Replace any references to \"Badges/Casino\" with \"Badges/Casino-test\" and category value \"New\" with \"New-test\"; treat as experimental and avoid production use until the bold variant is confirmed for Team24+6.",
-      "Designer: Update Figma usage of \"Avatar/MD-test\" to \"Avatar/MD\" and ensure the Type property is set to \"Initials\" (not \"Initials-neu\") in all layouts using this component.",
-      "Tester: Verify that renamed components — \"Primary Buttons test\", \"Betslip (Inline) test\", \"Badges/Casino-test\", and \"Secondary Neutral White test\" — render correctly in betting UI screens (match cards, betslip, account screens) and flag any broken references to old component names."
     ]
   }
 ]
