@@ -889,7 +889,8 @@
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
     "Color Styles / Footer Greece/800": "#1A3362",
-    "Color Styles / Footer Greece/900": "#0D234D"
+    "Color Styles / Footer Greece/900": "#0D234D",
+    "Color Styles / Casino Filter Outline": "#B0E3F7"
   },
   "components": {
     "5389:148170": {
@@ -8840,6 +8841,30 @@
       },
       "variants": {
         "11783:2476": {}
+      },
+      "props": {},
+      "fmt": 9
+    },
+    "35229:7001": {
+      "name": "Gaming/Modules/Slider Filter - Casino",
+      "count": 1,
+      "layers": {
+        "35229:7001": {
+          "Gaming/Single Item/Slider - Single Item - Gaming": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Slider Background": "fill=Neutral/Grey/Light/40;strokeWeight=1;radius=8",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / Selection": "fill=Accent Light Mode/Blue/500;strokeWeight=1;radius=8",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino": "strokeWeight=1",
+          "Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino / Control": "fill=Accent Light Mode/Blue/500;strokeWeight=1",
+          "Additional Elements": "strokeWeight=1",
+          "Additional Elements / .Slider Value": "fill=Neutral/Grey/Light/10;strokeWeight=1;radius=4",
+          "Additional Elements / .Slider Value / Label": "fill=Neutral/Grey/Dark/600;strokeWeight=1",
+          "Additional Elements / .Slider Value / Value": "fill=Neutral/Generic/Black;strokeWeight=1",
+          "(root)": "strokeWeight=1"
+        }
+      },
+      "variants": {
+        "35229:7001": {}
       },
       "props": {},
       "fmt": 9
