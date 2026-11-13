@@ -9,6 +9,11 @@
  * Colour token names come from a committed variables.json (exported from Figma
  * via the Desktop Bridge — works on any plan). The Enterprise-only Variables
  * REST API is used only as a fallback.
+ *
+ * Variable swaps (old variable deleted → usages rebound to another) are read
+ * from a committed variable-swaps.json written by the IW Variables Publisher
+ * plugin at swap time, so a removed variable can render a reliable
+ * "Replaced by …" instead of the diff having to guess.
  */
 
 import { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } from 'fs';
@@ -32,6 +37,9 @@ const ATLASSIAN_EMAIL  = process.env.ATLASSIAN_EMAIL;
 const ATLASSIAN_TOKEN  = process.env.ATLASSIAN_API_TOKEN;
 const CHANGELOG_PATH = 'changelog-data.json';
 const SNAPSHOT_PATH  = 'styles-snapshot.json';
+// Variable swaps recorded by the publisher plugin. Looked for next to this
+// script first, then in the working dir — same pattern as variables.json.
+const SWAPS_CANDIDATES = [join(__dirname, 'variable-swaps.json'), 'variable-swaps.json'];
 // Live changelog is kept trimmed to the most recent MAX_LIVE_ENTRIES; anything
 // older is moved into one continuously-growing archive file automatically —
 // no manual archiving step needed. See the trim step at the end of main().
@@ -107,6 +115,20 @@ function autoVersion() {
   const date = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Vienna' });
   const run  = process.env.GITHUB_RUN_NUMBER || '0';
   return `v${date.replace(/-/g, '.')}.${run}`; // → "v2026.08.03.18"
+}
+
+// Loads the variable-swaps.json recorded by the publisher plugin. Each entry:
+// { from, to, components: [...], date }. Missing/unreadable → empty list.
+function loadSwaps() {
+  const p = SWAPS_CANDIDATES.find(x => existsSync(x));
+  if (!p) return [];
+  try {
+    const arr = JSON.parse(readFileSync(p, 'utf8'));
+    return Array.isArray(arr) ? arr : [];
+  } catch (e) {
+    console.warn('   variable-swaps.json unreadable:', e.message);
+    return [];
+  }
 }
 
 function round2(n) { return Math.round(n * 100) / 100; }
@@ -882,6 +904,34 @@ function buildGroups(diff, figmaDescriptions = {}) {
   return groups;
 }
 
+// Forces a reliable "Replaced by …" description onto any removed VARIABLE whose
+// name matches a swap's `from`, after the AI pass — so the mapping recorded by
+// the publisher plugin always renders exactly, instead of being re-worded or
+// dropped. Also appends the affected component list (which covers the case where
+// old and new resolve to the same hex, so the component diff shows nothing).
+// Mutates refinedGroups in place.
+function applySwapReplacements(refinedGroups, swaps) {
+  if (!swaps || !swaps.length) return;
+  const swapByFrom = {};
+  for (const s of swaps) if (s && s.from) swapByFrom[s.from] = s;
+
+  for (const g of refinedGroups) {
+    if (g.title !== 'Variables') continue;
+    for (const it of g.items) {
+      if (it.type !== 'deprecated') continue;
+      // Variable keys read "Collection / Name"; the swap `from` is just the name.
+      const elem = it.title.includes(' / ') ? it.title.split(' / ').slice(1).join(' / ') : it.title;
+      const m = swapByFrom[elem]
+        || swapByFrom[it.title]
+        || Object.values(swapByFrom).find(s => elem.startsWith(s.from + ' (')); // "Name (Mode)"
+      if (m) {
+        it.desc = `Replaced by ${m.to}.`
+          + (m.components && m.components.length ? ` Affects: ${m.components.join(', ')}.` : '');
+      }
+    }
+  }
+}
+
 // ── CLAUDE AI REFINEMENT ──────────────────────────────────────────────────────
 
 async function refineWithClaude(groups, diff, version, ticket, figmaDescriptions = {}) {
@@ -915,7 +965,7 @@ Your task is to return a JSON object with two keys:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
    - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", a property rename like property renamed: "Type" → "Type111" or property renamed: "Icon" → "Icon1", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
-   - "deprecated" items: write 1 short sentence explaining it was removed, and what to use instead if obvious from the name.
+   - "deprecated" items: write 1 short sentence explaining it was removed. If the raw change already says "Replaced by X", keep that replacement name exactly.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
 2. "actions" — an array of 2-4 specific, actionable strings for the "Action required" section. Each action must:
@@ -1061,6 +1111,11 @@ async function main() {
 
   const rawGroups = buildGroups(diff, figmaDescriptions);
   const { groups: refinedGroups, actions } = await refineWithClaude(rawGroups, diff, version, ticket, figmaDescriptions);
+
+  // Overlay the publisher plugin's recorded variable swaps so a removed
+  // variable renders a reliable "Replaced by …" (and its affected components),
+  // regardless of how the AI phrased the deprecation.
+  applySwapReplacements(refinedGroups, loadSwaps());
 
   const newEntry = { version, date: today(), ticket, ticketUrl, ticketType, groups: refinedGroups, actions };
   changelog.unshift(newEntry);
