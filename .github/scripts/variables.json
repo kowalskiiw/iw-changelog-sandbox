@@ -2,7 +2,7 @@
   "_generator": "IW Variables Publisher (Figma plugin, live Plugin API read)",
   "_note": "colorTokens: hex → colour token name, used to resolve fills inside components. variables: full name → value snapshot for ALL variable types, used to diff the 'Variables' changelog category. Generated directly from Figma's Plugin API — no REST/Enterprise access needed.",
   "_exportedFrom": "sandbox-library",
-  "_exportedAt": "2026-11-13T10:12:09.150Z",
+  "_exportedAt": "2026-11-13T10:16:05.818Z",
   "colorTokens": {
     "#000000": "Neutral/Generic/Black",
     "#FFFFFF": "Neutral/Generic/White",
@@ -150,8 +150,7 @@
     "#AAD1E6": "Virtuals/300",
     "#1F1F1F": "Live Casino/900",
     "#1A3362": "Footer Greece/800",
-    "#0D234D": "Footer Greece/900",
-    "#8DF1E0": "Casino Filter"
+    "#0D234D": "Footer Greece/900"
   },
   "variables": {
     "Breakpoints Navigation / Magazine (BP 1)": "1920 - 1201",
@@ -431,7 +430,6 @@
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
     "Color Styles / Footer Greece/800": "#1A3362",
-    "Color Styles / Footer Greece/900": "#0D234D",
-    "Color Styles / Casino Filter": "#8DF1E0"
+    "Color Styles / Footer Greece/900": "#0D234D"
   }
 }
