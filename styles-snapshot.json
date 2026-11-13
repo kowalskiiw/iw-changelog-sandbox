@@ -889,8 +889,7 @@
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
     "Color Styles / Footer Greece/800": "#1A3362",
-    "Color Styles / Footer Greece/900": "#0D234D",
-    "Color Styles / Casino Filter neu": "#ED5B5B"
+    "Color Styles / Footer Greece/900": "#0D234D"
   },
   "components": {
     "5389:148170": {
@@ -8118,11 +8117,6 @@
           "Size": "Small",
           "Focus": "High"
         },
-        "10608:1059": {
-          "Type": "Information",
-          "Size": "Small",
-          "Focus": "Low"
-        },
         "10179:4175": {
           "Type": "Information",
           "Size": "Medium",
@@ -8167,6 +8161,11 @@
           "Type": "Error",
           "Size": "Small",
           "Focus": "High"
+        },
+        "10608:1059": {
+          "Type": "Information",
+          "Size": "Small",
+          "Focus": "Low"
         },
         "10182:2896": {
           "Type": "Information",
