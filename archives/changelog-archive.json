@@ -1,5 +1,53 @@
 [
   {
+    "version": "v2026.08.15.73",
+    "date": "2026-08-15",
+    "ticket": "",
+    "ticketUrl": "",
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Display/Bold/Regular",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Color Styles / Footer Greece/900",
+            "desc": "#0D234D"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": "component renamed: \"Primary Buttons test\" → \"Primary Buttons\""
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Casino",
+            "desc": "component renamed: \"Badges/Casino-test\" → \"Badges/Casino\" · Categories: \"New-test\" → \"New\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 2 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
+      "Developer: Variable values updated — sync token export.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.15.72",
     "date": "2026-08-15",
     "ticket": "",

@@ -1,5 +1,29 @@
 [
   {
+    "version": "v2026.11.13.104",
+    "date": "2026-11-13",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Color Styles / Casino Filter",
+            "desc": "New color token #8DF1E0 for casino filter UI elements. Apply when styling active or highlighted filter states in casino contexts."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add the new CSS token for `Casino Filter` (#8DF1E0) to the color token definitions and apply it to casino filter components where active or highlighted filter styling is required.",
+      "Designer: Use the new `Color Styles / Casino Filter` (#8DF1E0) token when designing casino filter states; do not use hardcoded hex values.",
+      "Tester: Verify that casino filter UI elements render with the correct color (#8DF1E0) across all relevant markets (DE, AT, ES, SE, CY) and that no other filter styles are unintentionally affected."
+    ]
+  },
+  {
     "version": "v2026.11.13.102",
     "date": "2026-11-13",
     "ticket": "",
@@ -613,54 +637,6 @@
     ],
     "actions": [
       "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
-      "Tester: Run regression tests on affected screens."
-    ]
-  },
-  {
-    "version": "v2026.08.15.73",
-    "date": "2026-08-15",
-    "ticket": "",
-    "ticketUrl": "",
-    "groups": [
-      {
-        "title": "Typography / Text Styles",
-        "items": [
-          {
-            "type": "deprecated",
-            "title": "Display/Bold/Regular",
-            "desc": "Removed from library."
-          }
-        ]
-      },
-      {
-        "title": "Variables",
-        "items": [
-          {
-            "type": "new",
-            "title": "Color Styles / Footer Greece/900",
-            "desc": "#0D234D"
-          }
-        ]
-      },
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Primary Buttons",
-            "desc": "component renamed: \"Primary Buttons test\" → \"Primary Buttons\""
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Casino",
-            "desc": "component renamed: \"Badges/Casino-test\" → \"Badges/Casino\" · Categories: \"New-test\" → \"New\""
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: 2 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
-      "Developer: Variable values updated — sync token export.",
       "Tester: Run regression tests on affected screens."
     ]
   }

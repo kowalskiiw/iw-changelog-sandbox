@@ -889,7 +889,8 @@
     "Color Styles / Virtuals/300": "#AAD1E6",
     "Color Styles / Live Casino/900": "#1F1F1F",
     "Color Styles / Footer Greece/800": "#1A3362",
-    "Color Styles / Footer Greece/900": "#0D234D"
+    "Color Styles / Footer Greece/900": "#0D234D",
+    "Color Styles / Casino Filter": "#8DF1E0"
   },
   "components": {
     "5389:148170": {
@@ -8398,11 +8399,11 @@
         }
       },
       "variants": {
-        "33509:4811": {
-          "Control Positions": "Random"
-        },
         "33509:4805": {
           "Control Positions": "Default"
+        },
+        "33509:4811": {
+          "Control Positions": "Random"
         }
       },
       "props": {},
