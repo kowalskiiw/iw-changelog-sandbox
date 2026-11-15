@@ -13,7 +13,7 @@
     color-scheme: light;
     --bg:#F3F2EF; --card:#FBFAF8; --surface:#FFFFFF; --ink:#16161A; --muted:#7A7873; --faint:#A9A6A0;
     --line:#E7E5E0; --line2:#EFEDE9; --hover:#F6F5F2; --soft:#F1EFEB;
-    --orange:#FF5B2E; --orange-ink:#D9481F; --orange-tint:#FFE9E0;
+    --accent:#717AFF; --accent-ink:#717AFF; --accent-tint:#E6E7FF;
     --blue-ink:#2C62D6; --blue-tint:#E3EDFF;
     --green-ink:#1B8A4B; --green-tint:#E2F5EA;
     --amber-ink:#8A5A00; --amber-tint:#FEF3DC; --amber:#F2A20C;
@@ -36,7 +36,7 @@
       color-scheme: dark;
       --bg:#121214; --card:#1B1B1F; --surface:#222227; --ink:#F2F1EE; --muted:#A3A09A; --faint:#6E6B66;
       --line:#2E2E34; --line2:#2A2A30; --hover:#26262C; --soft:#25252A;
-      --orange:#FF6A40; --orange-ink:#FF9472; --orange-tint:#3A2018;
+      --accent:#8E95FF; --accent-ink:#8E95FF; --accent-tint:#23264A;
       --blue-ink:#8DB3FF; --blue-tint:#1B2740;
       --green-ink:#6FD39A; --green-tint:#16301F;
       --amber-ink:#F5C46A; --amber-tint:#33280F; --amber:#F2A20C;
@@ -51,7 +51,7 @@
     color-scheme: dark;
     --bg:#121214; --card:#1B1B1F; --surface:#222227; --ink:#F2F1EE; --muted:#A3A09A; --faint:#6E6B66;
     --line:#2E2E34; --line2:#2A2A30; --hover:#26262C; --soft:#25252A;
-    --orange:#FF6A40; --orange-ink:#FF9472; --orange-tint:#3A2018;
+    --accent:#8E95FF; --accent-ink:#8E95FF; --accent-tint:#23264A;
     --blue-ink:#8DB3FF; --blue-tint:#1B2740;
     --green-ink:#6FD39A; --green-tint:#16301F;
     --amber-ink:#F5C46A; --amber-tint:#33280F; --amber:#F2A20C;
@@ -110,9 +110,9 @@
     background: var(--card);
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
-    flex: 0 1 460px;
+    flex: 0 1 920px;
   }
-  .search-wrap:focus-within { border-color: color-mix(in srgb, var(--orange) 55%, var(--line)); }
+  .search-wrap:focus-within { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
   .search-icon { width: 15px; height: 15px; color: var(--muted); flex: none; }
   .search-input {
     flex: 1; min-width: 0;
@@ -125,7 +125,7 @@
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-    width: min(560px, 90vw);
+    width: min(920px, 90vw);
     max-height: 420px;
     overflow-y: auto;
     background: var(--card);
@@ -162,7 +162,7 @@
   .search-result-item strong { color: var(--ink); font-weight: 600; }
   .search-empty { padding: 18px 14px; font-size: 13px; color: var(--muted); text-align: center; }
   .search-highlight {
-    background: var(--orange-tint); color: var(--orange-ink);
+    background: var(--accent-tint); color: var(--accent-ink);
     border-radius: 4px; padding: 0 2px; font-weight: 600;
   }
 
@@ -262,8 +262,7 @@
     background: var(--card); border: 1.5px solid var(--line); transition: all .2s;
   }
   .timeline-item.active::before {
-    background: var(--orange); border-color: var(--orange);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--orange) 18%, transparent);
+    background: var(--accent); border-color: var(--accent);
   }
   .timeline-link { text-decoration: none; display: block; }
   .timeline-version {
@@ -336,7 +335,7 @@
     padding: 1px 6px; border-radius: 6px; color: var(--ink);
     white-space: nowrap;
   }
-  .title-element { color: var(--orange-ink); }
+  .title-element { color: var(--accent-ink); }
   .val-old { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
   .val-arrow { color: var(--faint); margin: 0 4px; }
   .val-new { color: var(--ink); font-variant-numeric: tabular-nums; font-size: 12px; font-weight: 500; }
