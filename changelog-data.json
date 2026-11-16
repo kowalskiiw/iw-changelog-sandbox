@@ -1,5 +1,873 @@
 [
   {
+    "version": "v2026.11.16.111",
+    "date": "2026-11-16",
+    "ticket": "CXI-2131",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-2131",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Generic/Black",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Generic/White",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Dark/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Dark/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Dark/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Dark/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Medium/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Medium/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Medium/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Medium/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Medium/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/80",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/60",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/40",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/20",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/15",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/10",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey/Light/05",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey Alpha/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/Grey Alpha/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Neutral/White Alpha/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Default Green/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Forest Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/650",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Orange/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Red/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/350",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Blue/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Magenta/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Magenta/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Default/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Purple/Alpha/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/750",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Light Mode/Lime Green/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Default Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Default Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Default Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Default Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Default Green/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Red/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Red/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Red/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Red/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Orange/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Orange/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Blue/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Blue/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Blue/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Accent Dark Mode/Lime Green/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Gras",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Ice",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Plastic",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Sand",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Water",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Gamecards/Concrete",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/600",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/550",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/500",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/150",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/100",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Yellow/50",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/950",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/850",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/750",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/700",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/400",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Virtuals/300",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Live Casino/900",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Footer Greece/800",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Color Styles / Footer Greece/900",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Avatar/Casino/XS",
+            "desc": "(root) — fill: Neutral/Generic/White → #FFFFFF, border color: Neutral/Generic/White → #FFFFFF"
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Apps",
+            "desc": "Badge / Badges/Apps — fill: Yellow/500 → #FFD200 · Badge / Text — fill: Neutral/Generic/Black → #000000"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Betslip",
+            "desc": "Text — fill: Neutral/Generic/White → #FFFFFF · (root) — fill: Accent Light Mode/Default Green/600 → #25873A"
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Account status",
+            "desc": "alerts/warning-filled / Vector — fill: Accent Light Mode/Red/600 → #BB1B1B · Text — fill: Accent Light Mode/Red/600 → #BB1B1B · (root) — fill: Accent Light Mode/Red/50 → #FDF3F3, border color: Accent Light Mode/Red/300 → #F1B4B4 · alerts/warning-filled / Vector — fill: Accent Light Mode/Orange/700 → #995600 · Text — fill: Accent Light Mode/Orange/700 → #995600 · +7 more"
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Casino",
+            "desc": "Text — fill: Neutral/Generic/White → #FFFFFF · (root) — fill: Accent Light Mode/Red/600 → #BB1B1B · Text — fill: Neutral/Generic/Black → #000000 · (root) — fill: Yellow/500 → #FFD200 · (root) — fill: Accent Light Mode/Orange/500 → #FF8F00 · +4 more"
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Marketing",
+            "desc": "Text — fill: Neutral/Generic/White → #FFFFFF · (root) — fill: Accent Light Mode/Blue/500 → #2194FF"
+          },
+          {
+            "type": "changed",
+            "title": "Primary Buttons",
+            "desc": ".ButtonBase/Text / Text / Text — fill: Neutral/Generic/Black → #000000 · (root) — fill: Yellow/500 → #FFD200 · .ButtonBase/Text / Text / Text — fill: Neutral/Generic/White → #FFFFFF · (root) — fill: Accent Light Mode/Red/500 → #DB3F3F · .absolute-ring — border color: Accent Light Mode/Blue/500 → #2194FF · +48 more"
+          },
+          {
+            "type": "changed",
+            "title": "Secondary Buttons",
+            "desc": "Padding / .ButtonBase/Text / Text / Text — fill: Neutral/Generic/Black → #000000 · (root) — border color: Neutral/Generic/Black → #000000 · Padding / .ButtonBase/Text / Text / Text — fill: Neutral/Grey/Dark/700 → #434343 · (root) — border color: Neutral/Grey/Dark/700 → #434343 · Padding / .ButtonBase/Text / Text / Text — fill: Neutral/Generic/White → #FFFFFF · +35 more"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/MD",
+            "desc": ".AvatarMedium / Background — fill: Yellow/500 → #FFD200, border color: Yellow/600 → #CCA800 · .AvatarMedium / Text — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarMedium / iw_sb_user_locked / Vector — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarMedium / .Notifications — fill: Accent Light Mode/Default Green/500 → #2EA949 · .AvatarMedium / .Notifications / Text — fill: Neutral/Generic/White → #FFFFFF · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline)",
+            "desc": "Padding — fill: Accent Light Mode/Red/50 → #FDF3F3, border color: Accent Light Mode/Red/300 → #F1B4B4 · Padding / <Icon> / Vector — fill: Accent Light Mode/Red/600 → #BB1B1B · Padding / .Alert Base/Medium / Message + Button / Text / Text — fill: Accent Light Mode/Red/900 → #2B0808 · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons — fill: Yellow/500 → #FFD200 · Padding / .Alert Base/Medium / Message + Button / Button + Link / Primary Buttons / .ButtonBase/Text / Text / Text — fill: Neutral/Generic/Black → #000000 · +33 more"
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "Container — fill: Accent Light Mode/Default Green/50 → #F0FBF3, border color: Accent Light Mode/Default Green/300 → #A4E6B3 · Container / Icon / <Icon> / Vector — fill: Accent Light Mode/Default Green/600 → #25873A · Container / Text / Text — fill: Accent Light Mode/Default Green/900 → #0B2811 · Container — fill: Accent Light Mode/Red/50 → #FDF3F3, border color: Accent Light Mode/Red/300 → #F1B4B4 · Container / Icon / <Icon> / Vector — fill: Accent Light Mode/Red/600 → #BB1B1B · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Container — fill: Accent Light Mode/Red/50 → #FDF3F3, border color: Accent Light Mode/Red/300 → #F1B4B4 · Container / <Icon> / Vector — fill: Neutral/Generic/Black → #000000 · Container / Text / Text — fill: Accent Light Mode/Red/900 → #2B0808 · Container — fill: Accent Light Mode/Blue/50 → #F1F8FF, border color: Accent Light Mode/Blue/300 → #A7D5FF · Container / Text / Text — fill: Accent Light Mode/Blue/900 → #001A33 · +4 more"
+          },
+          {
+            "type": "changed",
+            "title": "Slider - Betslip",
+            "desc": "Container / Background / Possible winnings — fill: Neutral/Grey/Light/40 → #D3D3D3 · Container / Left Rail / Cashout Amount — fill: Yellow/500 → #FFD200 · Container / Left Rail / Cashout more than stake — fill: Neutral/Generic/White → #FFFFFF · Background / Possible winnings — fill: Neutral/Grey/Light/40 → #D3D3D3 · .Left Rail / Cashount Amount — fill: Yellow/500 → #FFD200 · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Gaming/Modules/Slider Filter - Live Casino",
+            "desc": "Gaming/Single Item/Slider - Single Item - Gaming / Slider Background — fill: Neutral/Grey/Dark/600 → #535353 · Gaming/Single Item/Slider - Single Item - Gaming / Container / Selection — fill: Yellow/500 → #FFD200 · Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino / Control — fill: Neutral/Generic/White → #FFFFFF · Additional Elements / .Slider Value — fill: Neutral/Grey/Dark/900 → #232323 · Additional Elements / .Slider Value / Label — fill: Neutral/Grey/Medium/100 → #A3A3A3 · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/SM",
+            "desc": ".AvatarSmall / Background — fill: Yellow/500 → #FFD200, border color: Yellow/600 → #CCA800 · .AvatarSmall / Text — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarSmall / system/user-locked / Vector — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarSmall / .Notifications — fill: Accent Light Mode/Default Green/500 → #2EA949 · .AvatarSmall / .Notifications / Text — fill: Neutral/Generic/White → #FFFFFF · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/XS",
+            "desc": ".AvatarXS / Background — fill: Yellow/500 → #FFD200, border color: Yellow/600 → #CCA800 · .AvatarXS / Text — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarXS / system/user-locked / Vector — fill: Neutral/Grey/Dark/900 → #232323 · .AvatarXS / .Notifications — fill: Accent Light Mode/Default Green/500 → #2EA949 · .AvatarXS / .Notifications / Text — fill: Neutral/Generic/White → #FFFFFF · +2 more"
+          },
+          {
+            "type": "changed",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "Background — fill: Yellow/500 → #FFD200, border color: Yellow/600 → #CCA800"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Default",
+            "desc": ".Notifications — fill: Accent Light Mode/Default Green/500 → #2EA949 · .Notifications / Text — fill: Neutral/Generic/White → #FFFFFF"
+          },
+          {
+            "type": "changed",
+            "title": "Gaming/Modules/Slider Filter - Casino",
+            "desc": "Gaming/Single Item/Slider - Single Item - Gaming / Slider Background — fill: Neutral/Grey/Light/40 → #D3D3D3 · Gaming/Single Item/Slider - Single Item - Gaming / Container / Selection — fill: Accent Light Mode/Blue/500 → #2194FF · Gaming/Single Item/Slider - Single Item - Gaming / Container / .Slider Control/Casino / Control — fill: Accent Light Mode/Blue/500 → #2194FF · Additional Elements / .Slider Value — fill: Neutral/Grey/Light/10 → #F3F3F3 · Additional Elements / .Slider Value / Label — fill: Neutral/Grey/Dark/600 → #535353 · +1 more"
+          },
+          {
+            "type": "changed",
+            "title": "Gaming/Single Item/Slider - Single Item - Gaming",
+            "desc": "Slider Background — fill: Neutral/Grey/Light/40 → #D3D3D3 · Container / Selection — fill: Accent Light Mode/Blue/500 → #2194FF · Container / .Slider Control/Casino / Control — fill: Accent Light Mode/Blue/500 → #2194FF"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 20 component(s) changed (visual, variant naming, and/or property renames) — check Dev Mode for updated specs and update any code referencing old variant/property/component names.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.11.13.108",
     "date": "2026-11-13",
     "ticket": "",
@@ -598,31 +1466,6 @@
       "Developer: Update any logic referencing the 'Pending' account status variant to 'Pending-test', and the 'Daily Jackpot' casino badge category to 'Daily Jackpot test'.",
       "Designer: Treat all '-test' renamed badge components as experimental; avoid using the bold variant of Badges/Casino-test in Team24+6 designs until confirmed.",
       "Tester: Verify badge rendering across betslip (tablet and mobile), account status, casino, apps, and marketing surfaces to confirm no display regressions following the component renames."
-    ]
-  },
-  {
-    "version": "v2026.08.16.80",
-    "date": "2026-08-16",
-    "ticket": "CXI-1987",
-    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
-    "ticketType": "UX Task",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Banner",
-            "desc": "Renamed from 'Banner-test' to 'Banner'. Max-width follows the corresponding page header: Sports 1299px, Live 1451px, Rest 1299px, Magazine 1232px."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any code references from the old component name 'Banner-test' to 'Banner' to avoid broken component lookups.",
-      "Designer: Replace any instances of 'Banner-test' in Figma files with the now-stable 'Banner' component from the IW Design Library.",
-      "Developer: Ensure Banner max-width is applied per page context — 1299px for Sports and Rest, 1451px for Live, 1232px for Magazine — matching the page header constraint.",
-      "Tester: Verify the Banner renders at the correct max-width on Sports, Live, Magazine, and remaining page types across all markets (DE, AT, ES, SE, CY)."
     ]
   }
 ]

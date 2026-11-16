@@ -1,5 +1,30 @@
 [
   {
+    "version": "v2026.08.16.80",
+    "date": "2026-08-16",
+    "ticket": "CXI-1987",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Renamed from 'Banner-test' to 'Banner'. Max-width follows the corresponding page header: Sports 1299px, Live 1451px, Rest 1299px, Magazine 1232px."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code references from the old component name 'Banner-test' to 'Banner' to avoid broken component lookups.",
+      "Designer: Replace any instances of 'Banner-test' in Figma files with the now-stable 'Banner' component from the IW Design Library.",
+      "Developer: Ensure Banner max-width is applied per page context — 1299px for Sports and Rest, 1451px for Live, 1232px for Magazine — matching the page header constraint.",
+      "Tester: Verify the Banner renders at the correct max-width on Sports, Live, Magazine, and remaining page types across all markets (DE, AT, ES, SE, CY)."
+    ]
+  },
+  {
     "version": "v2026.08.16.79",
     "date": "2026-08-16",
     "ticket": "CXI-1987",
