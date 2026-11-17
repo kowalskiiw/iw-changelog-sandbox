@@ -1,5 +1,5241 @@
 [
   {
+    "version": "v2026.11.17.116",
+    "date": "2026-11-17",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Typography / Text Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Display/Medium/L",
+            "desc": "72px · lh 72px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/M",
+            "desc": "60px · lh 60px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Underline",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Regular",
+            "desc": "18px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/L/Medium",
+            "desc": "18px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Regular",
+            "desc": "10px · lh 14px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Regular",
+            "desc": "14px · lh 20px · w400 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Medium",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Underline",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Underline",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Underline",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Regular",
+            "desc": "12px · lh 16px · w400 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Medium",
+            "desc": "12px · lh 16px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Regular",
+            "desc": "14px · lh 20px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Medium",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Underline",
+            "desc": "10px · lh 14px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/L/Regular",
+            "desc": "16px · lh 24px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/M",
+            "desc": "60px · lh 60px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/M/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/M/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Medium/S",
+            "desc": "48px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/S",
+            "desc": "48px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Title/M/Underline",
+            "desc": "16px · lh 24px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Title/S/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/M/Medium",
+            "desc": "12px · lh 16px · w500 · ls 0.6"
+          },
+          {
+            "type": "new",
+            "title": "Label/L/Medium",
+            "desc": "14px · lh 20px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Display/Regular/L",
+            "desc": "72px · lh 72px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/S/Regular",
+            "desc": "12px · lh 16px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Helpers/H1",
+            "desc": "140px · lh 164px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Body/Overline/L/Medium",
+            "desc": "14px · lh 20px · w500 · ls 0.7"
+          },
+          {
+            "type": "new",
+            "title": "Body/XL/Regular",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Label/S/Medium",
+            "desc": "10px · lh 14px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Desktop",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Medium/Mobile",
+            "desc": "24px · lh 32px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Mobile",
+            "desc": "36px · lh 44px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Mobile",
+            "desc": "36px · lh 44px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Mobile",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Mobile",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Medium/Desktop",
+            "desc": "40px · lh 48px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Mobile",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Mobile",
+            "desc": "28px · lh 36px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Mobile",
+            "desc": "28px · lh 36px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H1/Regular/Desktop",
+            "desc": "40px · lh 48px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Regular/Desktop",
+            "desc": "28px · lh 36px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Mobile",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Medium/Desktop",
+            "desc": "32px · lh 40px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H4/Regular/Desktop",
+            "desc": "24px · lh 32px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Desktop",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H2/Regular/Desktop",
+            "desc": "32px · lh 40px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Desktop",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Regular/Mobile",
+            "desc": "20px · lh 28px · w400"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/Club/Desktop",
+            "desc": "48px · lh 48px · w500 · Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H5/Medium/Mobile",
+            "desc": "20px · lh 28px · w500"
+          },
+          {
+            "type": "new",
+            "title": "Headlines/H3/Medium/Desktop",
+            "desc": "28px · lh 36px · w500"
+          }
+        ]
+      },
+      {
+        "title": "Color Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/700",
+            "desc": "#4F3B3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/400",
+            "desc": "#91D1FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/600",
+            "desc": "#814444"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/800",
+            "desc": "#473E32"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/700",
+            "desc": "#455912"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/600",
+            "desc": "#E17F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/100",
+            "desc": "#E9F4FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/700",
+            "desc": "#99BE4A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/500",
+            "desc": "#BA26C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/600",
+            "desc": "#3F734B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/800",
+            "desc": "#374515"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/600",
+            "desc": "#BB1B1B"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Water",
+            "desc": "#005366"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/400",
+            "desc": "#FE9898"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/600",
+            "desc": "#608012"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/700",
+            "desc": "#374A3B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Red/800",
+            "desc": "#473434"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/800",
+            "desc": "#663900"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/200",
+            "desc": "#939393"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/20",
+            "desc": "#E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/500",
+            "desc": "#2EA949"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/700",
+            "desc": "#1C652C"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/900",
+            "desc": "#232323"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/700",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/500",
+            "desc": "#7B61FF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/400",
+            "desc": "#737373"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/800",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/40",
+            "desc": "#D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/60",
+            "desc": "#C3C3C3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/800",
+            "desc": "#581919"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/700",
+            "desc": "#995600"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/100",
+            "desc": "#7B61FF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/750",
+            "desc": "#6A8F0E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/50",
+            "desc": "#F0FBF3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/200",
+            "desc": "#E8F7C5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/350",
+            "desc": "#7CDB91"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/900",
+            "desc": "#0B2811"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/350",
+            "desc": "#FFC170"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/400",
+            "desc": "#4DCE69"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/900",
+            "desc": "#001A33"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/50",
+            "desc": "#FDF3F3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/400",
+            "desc": "#E36B6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/900",
+            "desc": "#2B0808"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/150",
+            "desc": "#FFE9CC"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/150",
+            "desc": "#D6EAFF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/200",
+            "desc": "#C7E4FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/300",
+            "desc": "#FFD49B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/800",
+            "desc": "#59780C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/150",
+            "desc": "#DBF2E0"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/200",
+            "desc": "#F6CFCF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/300",
+            "desc": "#A4E6B3"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Background",
+            "desc": "#EEEBE5"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Default Fill Color",
+            "desc": "#2B94FE"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Ice",
+            "desc": "#567A8D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/500",
+            "desc": "#FF8F00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/500",
+            "desc": "#D9F476"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/900",
+            "desc": "#331D00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/100",
+            "desc": "#F7FCEA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/80",
+            "desc": "#B3B3B3"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/400",
+            "desc": "#53ACFF"
+          },
+          {
+            "type": "new",
+            "title": "Live Casino/900",
+            "desc": "#1F1F1F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/600",
+            "desc": "#B5D45E"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/950",
+            "desc": "#0D3B66"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Concrete",
+            "desc": "#585F60"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Plastic",
+            "desc": "#A6653C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/150",
+            "desc": "#F0FADA"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/03",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/04",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Search Filter/Active Border",
+            "desc": "#96DBFA"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Alpha/300",
+            "desc": "#7B61FF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/500",
+            "desc": "#66CE7E"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/02",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Gras",
+            "desc": "#006837"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/600",
+            "desc": "#535353"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/500",
+            "desc": "#636363"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/800",
+            "desc": "#333333"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Dark/700",
+            "desc": "#434343"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/100",
+            "desc": "#A3A3A3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/White",
+            "desc": "#FFFFFF"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Medium/300",
+            "desc": "#838383"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/15",
+            "desc": "#EDEDED"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Generic/Black",
+            "desc": "#000000"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/10",
+            "desc": "#F3F3F3"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey/Light/05",
+            "desc": "#FBFBFB"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/200",
+            "desc": "#C5EFCE"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/100",
+            "desc": "#E5F7EA"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/200",
+            "desc": "#000000 (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/300",
+            "desc": "#F1B4B4"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/850",
+            "desc": "#0E5689"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/400",
+            "desc": "#86BEDD"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/750",
+            "desc": "#2970B2"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/300",
+            "desc": "#AAD1E6"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/700",
+            "desc": "#1583BC"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/600",
+            "desc": "#1575CF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/400",
+            "desc": "#94FFAC"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/900",
+            "desc": "#0B466E"
+          },
+          {
+            "type": "new",
+            "title": "Virtuals/800",
+            "desc": "#145999"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards/Sand",
+            "desc": "#AF511F"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/600",
+            "desc": "#25873A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Forest Green/500",
+            "desc": "#1BA57B"
+          },
+          {
+            "type": "new",
+            "title": "Betslip/Loading Blue",
+            "desc": "#0067C6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/500",
+            "desc": "#DB3F3F"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/300",
+            "desc": "#000000 (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/Grey Alpha/500",
+            "desc": "#000000 (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/500",
+            "desc": "#2194FF"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/01",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/400",
+            "desc": "#FFAA3C"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/100",
+            "desc": "#E6E3F3"
+          },
+          {
+            "type": "new",
+            "title": "Gradients/Linear/05",
+            "desc": "gradient linear"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/200",
+            "desc": "#FFE3BF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/150",
+            "desc": "#FAE4E4"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/50",
+            "desc": "#F1F8FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Default Green/800",
+            "desc": "#2D3D31"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/700",
+            "desc": "#832626"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/100",
+            "desc": "#FFF4E5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/50",
+            "desc": "#FFF8EF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/100",
+            "desc": "#FBECEC"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/50",
+            "desc": "#FBFEF6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/300",
+            "desc": "#A7D5FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/500",
+            "desc": "#C6EC6B"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Lime Green/900",
+            "desc": "#1F2611"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/800",
+            "desc": "#2E3D4D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Blue/500",
+            "desc": "#78B9FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Orange/650",
+            "desc": "#C16D00"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Red/350",
+            "desc": "#EA9393"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Default Green/800",
+            "desc": "#12441D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Blue/350",
+            "desc": "#81C2FF"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/900",
+            "desc": "#3F550A"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/300",
+            "desc": "#CEC6F6"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/200",
+            "desc": "#DAD5F5"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Magenta/600",
+            "desc": "#951E9E"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Purple/Default/600",
+            "desc": "#644ED7"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/300",
+            "desc": "#DEF4AB"
+          },
+          {
+            "type": "new",
+            "title": "Accent Light Mode/Lime Green/400",
+            "desc": "#D2F08D"
+          },
+          {
+            "type": "new",
+            "title": "Accent Dark Mode/Orange/500",
+            "desc": "#FFBA61"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/300",
+            "desc": "#FFFFFF (30%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/200",
+            "desc": "#FFFFFF (20%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/400",
+            "desc": "#FFFFFF (40%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/500",
+            "desc": "#FFFFFF (50%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/700",
+            "desc": "#FFFFFF (70%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/900",
+            "desc": "#FFFFFF (90%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/600",
+            "desc": "#FFFFFF (60%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/800",
+            "desc": "#FFFFFF (80%)"
+          },
+          {
+            "type": "new",
+            "title": "Neutral/White Alpha/100",
+            "desc": "#FFFFFF (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Footer Greece/800",
+            "desc": "#1A3362"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/700",
+            "desc": "#997E00"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/550",
+            "desc": "#ECC200"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/100",
+            "desc": "#FFF8DB"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/50",
+            "desc": "#FFFCEF"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/900",
+            "desc": "#332A00"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/500",
+            "desc": "#FFD200"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/400",
+            "desc": "#FFDB3C"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/800",
+            "desc": "#665400"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/600",
+            "desc": "#CCA800"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/300",
+            "desc": "#FFE570"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/200",
+            "desc": "#FFED9B"
+          },
+          {
+            "type": "new",
+            "title": "Yellow/150",
+            "desc": "#FFF3BF"
+          }
+        ]
+      },
+      {
+        "title": "Effect Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Background Blur/Small",
+            "desc": "background blur: radius 10"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/bottom/light",
+            "desc": "drop shadow: offset 0/1 blur 0 color #ECECEC"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Base",
+            "desc": "drop shadow: offset 0/5 blur 12 color #000000 (5%) | drop shadow: offset 0/2 blur 8 color #000000 (8%)"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/bottom/medium",
+            "desc": "drop shadow: offset 0/1 blur 0 color #E3E3E3"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/left/dark",
+            "desc": "drop shadow: offset -1/0 blur 0 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Large",
+            "desc": "drop shadow: offset 0/10 blur 20 color #000000 (12%) | drop shadow: offset 0/4 blur 6 color #000000 (2%)"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/right/dark",
+            "desc": "drop shadow: offset 1/0 blur 0 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/bottom/dark",
+            "desc": "drop shadow: offset 0/1 blur 0 color #D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Medium",
+            "desc": "drop shadow: offset 0/6 blur 12 color #000000 (8%) | drop shadow: offset 0/4 blur 16 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/XLarge",
+            "desc": "drop shadow: offset 0/20 blur 25 color #000000 (10%)"
+          },
+          {
+            "type": "new",
+            "title": "Shadows/Extra Small",
+            "desc": "drop shadow: offset 0/2 blur 5 color #000000 (5%) | drop shadow: offset 0/2 blur 7 color #000000 (5%)"
+          },
+          {
+            "type": "new",
+            "title": "divider-old/top+bottom/dark",
+            "desc": "drop shadow: offset 0/1 blur 0 color #D3D3D3 | drop shadow: offset 0/-1 blur 0 color #D3D3D3"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XXLarge",
+            "desc": "background blur: radius 120"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/XLarge",
+            "desc": "background blur: radius 100"
+          },
+          {
+            "type": "new",
+            "title": "Background Blur/Medium",
+            "desc": "background blur: radius 20"
+          },
+          {
+            "type": "new",
+            "title": "focus state-old",
+            "desc": "inner shadow: offset 2.75/0 blur 0 color #2194FF | inner shadow: offset 0/2.75 blur 0 color #2194FF | inner shadow: offset -2.75/0 blur 0 color #2194FF | inner shadow: offset 0/-2.75 blur 0 color #2194FF"
+          }
+        ]
+      },
+      {
+        "title": "Grid Styles",
+        "items": [
+          {
+            "type": "new",
+            "title": "Small Grid",
+            "desc": "COLUMNS count:4 size:1 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Medium - Sportsbook",
+            "desc": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Android",
+            "desc": "COLUMNS count:6 size:4.666666507720947 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Medium Grid",
+            "desc": "COLUMNS count:8 size:-7.5 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "iOS",
+            "desc": "COLUMNS count:6 size:6 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Large Grid",
+            "desc": "COLUMNS count:12 size:-10.333333015441895 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Extra Large Grid",
+            "desc": "COLUMNS count:12 size:100 gutter:16 | ROWS count:-1 size:4 gutter:0"
+          },
+          {
+            "type": "new",
+            "title": "Casino/Desktop 1920",
+            "desc": "ROWS count:-1 size:4 gutter:0 | COLUMNS count:6 size:-103.33333587646484 gutter:16"
+          },
+          {
+            "type": "new",
+            "title": "Casino/Mobile 360",
+            "desc": "COLUMNS count:2 size:36 gutter:8 | ROWS count:-1 size:4 gutter:0"
+          }
+        ]
+      },
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 1)",
+            "desc": "1920 - 1201"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 2)",
+            "desc": "1200 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 3)",
+            "desc": "1023 - 768"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Magazine (BP 4)",
+            "desc": "768 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 1)",
+            "desc": "1920 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 2)",
+            "desc": "1023 - 376"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 3)",
+            "desc": "375 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / Sportsbook (BP 4)",
+            "desc": "375 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 1)",
+            "desc": "1920 - 1250"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 2)",
+            "desc": "1249 - 1024"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 3)",
+            "desc": "1023 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Breakpoints Navigation / All (BP 4)",
+            "desc": "1023 - 360"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1920",
+            "desc": "1920"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1249",
+            "desc": "1249"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1200",
+            "desc": "1200"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<1023",
+            "desc": "1023"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<768",
+            "desc": "768"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / max/<375",
+            "desc": "375"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1250",
+            "desc": "1250"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1201",
+            "desc": "1201"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>1024",
+            "desc": "1024"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>768",
+            "desc": "768"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>376",
+            "desc": "376"
+          },
+          {
+            "type": "new",
+            "title": "Max Min Sizes / min/>360",
+            "desc": "360"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-18",
+            "desc": "18"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font sizes/fontsize-72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-44",
+            "desc": "44"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Line height/line-height-70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Regular",
+            "desc": "400"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Medium",
+            "desc": "500"
+          },
+          {
+            "type": "new",
+            "title": "Typography text styles / Font Weight/Bold",
+            "desc": "700"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 0",
+            "desc": "0"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 2",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 4",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 6",
+            "desc": "6"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 8",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 14",
+            "desc": "14"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 18",
+            "desc": "18"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 22",
+            "desc": "22"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 26",
+            "desc": "26"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 28",
+            "desc": "28"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 30",
+            "desc": "30"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 34",
+            "desc": "34"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 38",
+            "desc": "38"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 44",
+            "desc": "44"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 50",
+            "desc": "50"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 56",
+            "desc": "56"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 64",
+            "desc": "64"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 80",
+            "desc": "80"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 90",
+            "desc": "90"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 96",
+            "desc": "96"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 120",
+            "desc": "120"
+          },
+          {
+            "type": "new",
+            "title": "Basic Numbers / 144",
+            "desc": "144"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-02",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-04",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-08",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Roundings/rounding-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-00",
+            "desc": "0"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-02",
+            "desc": "2"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-04",
+            "desc": "4"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-06",
+            "desc": "6"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-08",
+            "desc": "8"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-12",
+            "desc": "12"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-16",
+            "desc": "16"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-24",
+            "desc": "24"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-32",
+            "desc": "32"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-36",
+            "desc": "36"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-48",
+            "desc": "48"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-56",
+            "desc": "56"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-64",
+            "desc": "64"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-72",
+            "desc": "72"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-96",
+            "desc": "96"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Spacings/spacing-144",
+            "desc": "144"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-30",
+            "desc": "30"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-40",
+            "desc": "40"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-50",
+            "desc": "50"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-60",
+            "desc": "60"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-70",
+            "desc": "70"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-80",
+            "desc": "80"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-90",
+            "desc": "90"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Opacity/opacity-100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-10",
+            "desc": "10"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-20",
+            "desc": "20"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-100",
+            "desc": "100"
+          },
+          {
+            "type": "new",
+            "title": "Spacings, Roundings & Effects / Backdrop Blurs/bd-blur-120",
+            "desc": "120"
+          },
+          {
+            "type": "new",
+            "title": "Typography / Font Family/Primary font",
+            "desc": "Roboto"
+          },
+          {
+            "type": "new",
+            "title": "Typography / Font Family/Club font",
+            "desc": "Roboto Condensed"
+          },
+          {
+            "type": "new",
+            "title": "Responsive / Number",
+            "desc": "0"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Responsible Gaming Logos",
+            "desc": "18 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/signicat",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/figma-white",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/crown",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 2 Steps - Light",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 2 Steps - Dark",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/gameshow-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/most-popular-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/youtube-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/earth",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/most-popular-3",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/promotion-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/game-seats",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/table-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/seats-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/hearthstone",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exclusive-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/dota",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/youtube-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/africa",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/whatsapp-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/counterstrike",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/miro",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/x-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/game-shows-live",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/most-popular-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/king-of-glory",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/provider-of-the-week",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/callofduty",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/youtube-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/europe",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/north-central-america",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/wta",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/gift",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fax",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/heart",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/gift-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/asia",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "continents/australia",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/flower",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/information",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/paperclip",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fire-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/partnership",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/clover",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/candy",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/christmas",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fire-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/folder-open-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/i-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/daily-jackpot",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/i-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/cup",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/music",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/black-jack",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/casino-lobby",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/marketing-materials",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/minus-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/rocket-league",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fish",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/question-mark-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/book-of-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/accordion-plus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/arrow-up",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/double-chevron-down",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/double-chevron-up",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-up-small",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/chart-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/dark-green-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/yellow-red-card-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/facebook-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/sun",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/alert",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/yellow-card",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/yellow-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/phone-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/instagram-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/red-card",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/pause-1-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/18-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/copy",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/hide-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/pinterest-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/facebook-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/green-shirt",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/pinterest",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/columns-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/face-id",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/pause-2-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/casino-wallet-4",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/odds-2.0",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/icon-popup",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/grey-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/minus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/black-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/chips-buy-sell",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/24-7-service",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/list-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/video",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/green-card",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/scoreboard",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/blue-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/green-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/facebook",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/18-plus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/christmas-tree",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/red-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/brown-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/casino-wallet-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/instagram-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/casino-wallet-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/crown-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/pinterest-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/180",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/live-versal-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/flag-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/image-portrait",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/payment",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/pink.circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/arrows",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/volume-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/volume-x",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/show-leagues-up",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/show-leagues",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/pumpkin",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/show-leagues-down",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/star-favorites",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/square-grid-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/stars-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/verification-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/volume-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/snowflake",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/volume",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/my-casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Image Placeholder",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/motorcycling",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/edit-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/edit",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/my-bets",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/formula-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/player-protection-page",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/pen",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/live",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/email-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Rotator Navigation",
+            "desc": "24 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino Navigation Bar/Mobile",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Submarket Event - Desktop",
+            "desc": "Used on various pages.\nBig variant is used for live overview pages\nSmall variant can be used on any other betting page where it is necessary"
+          },
+          {
+            "type": "new",
+            "title": "cursor",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Results (Hot Bets) - No Results - Desktop & Mobile",
+            "desc": "These bet results are only used for the following offers:\nHot bet tables\n\n\nCharacteristics:\nDesktop and mobile variants available"
+          },
+          {
+            "type": "new",
+            "title": "Casino Navigation Bar/Desktop",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Results - Results Outside - Desktop (Default)",
+            "desc": "These bet results are the Default \"Results outside/No Results\" elements for desktop and used inside of the following offers:\nBestseller Frontpage (No Results)\nLive Frontpage Overview (No Results)\nLast minute (No Results)\nOdds under xxx (No Results)\nTodays offer (Results outside)\nLive Overview page (Results outside)\nStarts shortly (Results outside)\n\n\nCharacteristics:\nUse for default & contest bets\nFor desktop breakpoints\nFixed: 32px"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/SM",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Hero Rotator Component/Casino",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XXL",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Menubar/Default - Menubar - Desktop & Mobile",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Toggle",
+            "desc": "18 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XL",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Results - Results Outside - Mobile (Default)",
+            "desc": "These bet resultss are the default \"Results outside\" elements for mobile and used inside of the following offers:\nTodays offers\nLive overview page bets\nOdds under xx\n\n\nCharacteristics:\nUse for default & contest bets\nFor mobile breakpoints\nFixed height: 54px"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/XS",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/pool-full-1021",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/paddletennis",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Submarket No Event - Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/kayak",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/snowboard",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/swimming",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/ice-hockey",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/gaelic-football-1096",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/skateboard-1105",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/olympic-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/gaelic-football",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/bowls",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/pesapallo-1041",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rowing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/basketball-3",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/atp",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/australian-rules",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/daviscup",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/poker-1037",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/floorball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/youth-league",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/volleyball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Additional Elements - Bet Table Date Time",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/biathlon-1057",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/formele-formulae-1101",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/motorsport",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/esports-1069",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/taekondo",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/squash",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/speedskating",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/hockey",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/shooting-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/sailing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/equestrian",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/khl",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/paddletennis",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/bowling-1035",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/darts-01",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/oddsboost-1100",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/netball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Additional Elements - Bet Table Further Bets",
+            "desc": "Used on the frontpage to indicate further bets. Leads to a landing page with additional bets"
+          },
+          {
+            "type": "new",
+            "title": "sports/weightlifting",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/karate-1104",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/freestyleskiing-1064",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/dograce-greyhounds-1023",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/surfing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/diving",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/speedway-1085",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/lacross",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/bowls",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/copa",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/nascar",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/beach-volleyball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/fencing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/chess-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/fifa-esport",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rugby-league",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rugby-seven",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/fedcup",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/curling-1018",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rugby-seven",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/politics-75",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/lottery-1081",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/sportclimb-1106",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/softball-1107",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/licensing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/globe",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/arrow-down",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/top-deals",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/cross-small",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Live Casino Game Filter",
+            "desc": "10 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino Game Filter",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Modals/Gaming/Games",
+            "desc": "6 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/cross-mini",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/cross-big",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Full Width Rotator",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Medium Rotator",
+            "desc": "Only used for live casino"
+          },
+          {
+            "type": "new",
+            "title": "Hero Rotator Component/Sportsbook",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Big Rotator",
+            "desc": "Only used for live casino"
+          },
+          {
+            "type": "new",
+            "title": "App Header - Android",
+            "desc": "5 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/top-deals-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/jira",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/confluence-white",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/slack",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/statistics",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/figma",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/swap-chips",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/shop-iwclub",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "communication tools/confluence",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/square",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Payment Provider",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/bank-id",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/reference-transfer",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Team Logos",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/video-selfie",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/cddn",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "authentification/idin",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Partner Logos",
+            "desc": "13 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/superbike-1058",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/i-3",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/freeskate-figureskating-1066",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/nhl",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/18-plus-circle-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/18-plus-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/cross-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/instagram",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/nordic-combined-1090",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/youtube-footer",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/warning-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/scoreboard-live-match",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/nba",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/filter-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/est-1990",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/schwingen",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/pause-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/entertainment",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rally-1033",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/handball-with-hand",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/dream-drop",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/sports-entertainment",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/drops-and-wins",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/pool-1021",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/lightbulb",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/speedskating",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/cross-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/shorttrack",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/skeleton",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/curling",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/snowboarding",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/mma",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/nascar",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/luge",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/info",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/player-protection-page-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/itf",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/bob",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/chess-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/water-polo",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/error-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/ski-jumping",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/copa",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/mixed-1000",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/gaelic-hurling-1097",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/flag-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "scoreboard/yellow-red-card-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/all-games",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/user-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/ticket-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/user",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/Bonus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Spacer",
+            "desc": "84 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Gamecards",
+            "desc": "32 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-left-small",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/switch-mode",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/locked",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/lock",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/stopwatch",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/clock",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/show-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/x-footer",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/settings",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/image-landscape",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - Big - Desktop",
+            "desc": "The following bet table is only available for the live overview page."
+          },
+          {
+            "type": "new",
+            "title": "Bet Results (Rotator Bets) - Results Inside - Desktop & Mobile",
+            "desc": "These bet results inside of this component set are only used for the following offers:\nRotator bets frontpage\n\n\nCharacteristics:\nDesktop and mobile variants available"
+          },
+          {
+            "type": "new",
+            "title": "sports/table-tennis",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Marketing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Live",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Numbers",
+            "desc": "10 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Helpers/Header",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/cross-circle-filled-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-down",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/accordion-minus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-down-small",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Slider - Betslip",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Gaming/Single Item/Slider - Single Item - Gaming",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox bigger with text",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text and provider",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text and provider Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text and sports icon",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Logos/Desktop",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "List Element/Sidebar/Desktop",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Mobile/Dropdown - No Label - Mobile",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Banner",
+            "desc": "Banner max-width depends on the header max-width of the correpsonding page.\nSports: 1299px\nLive: 1451px\nRest: 1299px\nMagazine: 1232px"
+          },
+          {
+            "type": "new",
+            "title": "esports/starcraft",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/pubg-battleground",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/overwatch",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/league-of-legends",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "esports/nba2k",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Rotator Dots Group",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Slot Component",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Additional Elements - Sports Category Header",
+            "desc": "Currently only used on the sportsbook frontpage to differ between sports categories"
+          },
+          {
+            "type": "new",
+            "title": "sports/esoccer-fifa",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Single Items/Magazine - Submenu Item - Desktop & Mobile",
+            "desc": "Menu Items for:\nMobile Sportsbook Menu\nDesktop Sportsbook Menu\nMobile Magazine Menu\nDesktop Magazine Submenu"
+          },
+          {
+            "type": "new",
+            "title": "sports/formula-e",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/biometric-id",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/columns-4",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exclusive-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/LG",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Odd-Boost",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/filter-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Numerical",
+            "desc": "The following inputs are used for entering numerical values only. They are mainly used within the betslip for entering stake values by the user"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Detail page/Bet Table Market Accordion",
+            "desc": "Used for bet detailpages.\nLive and upcoming"
+          },
+          {
+            "type": "new",
+            "title": "Overview page/Bet Table Submarket Accordion - Desktop",
+            "desc": "Used on various pages.\nBig variant is used for live overview pages\nSmall variant can be used on any other betting page where it is necessary"
+          },
+          {
+            "type": "new",
+            "title": "Items/Category Accordion/Sidebar Category Item - Desktop",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Overview page/Bet Table Sports Category",
+            "desc": "Component used on the following pages: \n\nLive page overview"
+          },
+          {
+            "type": "new",
+            "title": "Desktop/Dropdown - Label Outside Horizontally - Desktop",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/warning-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/Casino/XS",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "gaming providers/small",
+            "desc": "59 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/info-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Betslip",
+            "desc": "Used as tablet and mobile betslip badge"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Header / Login",
+            "desc": "⛔️⛔️ This button variant is old and should be replaced any time soon ⛔️⛔️\n\n\nUse for Header element only"
+          },
+          {
+            "type": "new",
+            "title": "navigation/arrow-right-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/calender",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/info-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/streaming-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-up",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Spike",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Medium - Mobile",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/plus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/tennis",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/search",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/betting-slip",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/warning",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/pause",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "responsible-gaming/self-test",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "responsible-gaming/self-exclusion",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Searchbar/Default - Searchbar - Desktop",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Action Popover - Darkmode",
+            "desc": "Currently only used as a tooltip popover for the bonus progress indicator"
+          },
+          {
+            "type": "new",
+            "title": "Header/Magazine - Header - Desktop & Mobile",
+            "desc": "✅ Use only as:\nMagazine Header only"
+          },
+          {
+            "type": "new",
+            "title": "system/user-locked",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/lock-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/security",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Action Popover - Lightmode",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Info Popover - Darkmode",
+            "desc": "24 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Alert Popover - Darkmode",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exclusive-games-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exclusive-games-3",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/comission",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/live-casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/soccer-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/handball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/arrow-left",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/kabaddi",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/archery-1042",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/american-football",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/top-soccer",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Desktop/Dropdown - Label Outside Vertically - Desktop (Default)",
+            "desc": "24 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Text - Label Outside Vertically",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Pagination",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "flags/flags round",
+            "desc": "142 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - Small - Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/session-time",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/arrow-right",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/star-outlined",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "special/anniversary",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/plus-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Logo + Claim",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Logos/Casino Game Header",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/baseball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/snooker",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/boxing",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/alpineski",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/statistics-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/statistics-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/cricket-1027",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/rugby",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exclusive-games-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/messsage",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/copy-document",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Info Popover - Lightmode",
+            "desc": "24 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Slider - Sportsbook",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Alerts Default (Inline)",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tab Items/Tab Item - Text + Icon Big",
+            "desc": "properties:\n\nalways one selected\nmultiple options"
+          },
+          {
+            "type": "new",
+            "title": "system/odds-boost",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/home",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/live",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/question-mark-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/question-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Search - Casino Light Mode",
+            "desc": "Mouseover is using a stroke. This applies for all the different states"
+          },
+          {
+            "type": "new",
+            "title": "general/pay-card",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/email",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/chart",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/card-hand",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/payment",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/bonus",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/verification",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/user-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/filter",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/trash",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/logout",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/error-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Divider",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badge/Default",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/europa-league",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/golf",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/basketball",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/badminton",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/cycling",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/champions-league",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/lightning",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/bet-2-go",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/casino-wallet-3",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/virtuals",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/live-versal",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-right-small",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/betslip",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Button Dark",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Login Modals",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Button with Text",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Modals/General/AGB",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Button",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Button with Text Dark",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "VIP Modals",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Buttons List with Helper Text",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Background Overlay",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/information-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/play-video",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/streaming",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "responsible-gaming/self-limits",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "List Element/Sidebar/Mobile/Hot links",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/play",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/odd-down",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/trust-24-hours",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/sport-wallet",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/trust-payin-payout",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/bonus-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/athletics",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/poker-full-1037",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/loading",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/search-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/promotions",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/star-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/reload",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-left",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/chevron-right",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "casino/exit",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/worldcup",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/darts",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/calender-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fullscreen-exit",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/fullscreen-open",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/info-circle-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/for-you",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "app/odd-up",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/checkmark-filled-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/checkmark-filled-2",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/checkmark-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "alerts/checkmark-circle",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Footer",
+            "desc": "15 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/instagram-footer",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "social media/facebook-footer",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "gaming providers/big",
+            "desc": "5 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "general/pause",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/cross-circle-filled",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/checkmark-circle-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/checkmark-square",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/checkmark",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "system/checkmark-1",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Bigger",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Dark",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Right Bigger",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Default",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with long text",
+            "desc": "15 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input PIN - 6 digits",
+            "desc": "7 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Password",
+            "desc": "18 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step Last Dark",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step First Dark",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step Intermediate Dark",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default- Header - Sub Pages",
+            "desc": "This type of header is only used for pages where the user needs to fulfill a certain condition to proceed. For example agreeing to new Terms & Conditions.\n\n\nThese types of pages usually also dont have a footer"
+          },
+          {
+            "type": "new",
+            "title": "App Header - iOS",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default - Header - Default",
+            "desc": "❌ Do not use as:\nSportsbook Header\nLive Header\n\n\n❌ Do not change \"User state\" Breakpoints"
+          },
+          {
+            "type": "new",
+            "title": "Gaming - Header - Desktop",
+            "desc": "These casino game headers only appear when the user starts the available games inside of the casino or the live casino section. They are visible at the very top of the pop-ups which appear after clicking on the \"Play now\" buttons.\n\n\nHave a look here:\nhttps://www.interwetten.com/en/casino\nhttps://www.interwetten.com/en/live-casino\n\n\n ⛔️ Not available for mobile ⛔️"
+          },
+          {
+            "type": "new",
+            "title": "Header Menu/Magazine - Submenu - Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Header Menu/Magazine - Submenu - Desktop",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Single Items/Magazine - Submenu Header - Desktop & Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 5 - Dark",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Bonus Indicator - Dark",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Volatility Indicator - Dark",
+            "desc": "6 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 4 - Light",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Volatility Indicator - Light",
+            "desc": "6 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bonus Indicator - Light",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default - Header - Live",
+            "desc": "✅ Use only as:\nLive Header (if \"Live\" is selected)\n\n\n❌ Do not change \"User state\" Breakpoints"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default - Header - Sports",
+            "desc": "✅ Use only as:\nSportsbook Header (if \"Sports\" is selected)\n\n\n❌ Do not change \"User state\" Breakpoints"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default - Header - Search - 1",
+            "desc": "✅ Use only as:\nSportsbook Header (if \"Sports\" is selected)\n\n\n❌ Do not change \"User state\" Breakpoints"
+          },
+          {
+            "type": "new",
+            "title": "Header/Default - Header - Search",
+            "desc": "✅ Use only as:\nSportsbook Header (if \"Sports\" is selected)\n\n\n❌ Do not change \"User state\" Breakpoints"
+          },
+          {
+            "type": "new",
+            "title": "Input Search - Sportsbook",
+            "desc": "This search component is used in the sportsbook product area, within the header component. It is meant to search for different bets within different sports categories."
+          },
+          {
+            "type": "new",
+            "title": "Input Birthday",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Text - Label Outside Horizontally",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Text - Label Inside Vertically",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Paragraph",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input Search - Casino Dark Mode",
+            "desc": "Mouseover is using a stroke. This applies for all the different states"
+          },
+          {
+            "type": "new",
+            "title": "Tags/Selectable",
+            "desc": "Used for the following use cases:\n\n\nAs a predefined odds selection element for:\nQuicktipp Favoriten\nQuicktipp Outsiders\n\n\nFilter information or change page content:\nClub page filter (General info, Collected points history,..)"
+          },
+          {
+            "type": "new",
+            "title": "Tags/Clickable/Logo + Text",
+            "desc": "Provider  tags are used within the casino, the casino live and the virtuals section. After clicking they show the available games for that category"
+          },
+          {
+            "type": "new",
+            "title": "Tab Components/Icon Switch",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": ".Teaser/Desktop/Small/Casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Full Width Rotator - Virtuals",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Full Width Rotator - Live Casino",
+            "desc": "6 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Default Tables/Bet Table - Medium - Right Stack - Desktop",
+            "desc": "Medium bet table elements are used for live or non-live bet detail or overview pages."
+          },
+          {
+            "type": "new",
+            "title": "Default Tables/Bet Table - Medium - Bottom Stack - Mobile",
+            "desc": "Medium bet table elements are used for live or non-live bet detail or overview pages."
+          },
+          {
+            "type": "new",
+            "title": "Boost Cards/Big (Default)",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Modals/Gaming/Bonus",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Boost Cards/Small",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Small Rotator",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - MyCasino Rotator",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Detail page/Bet Header Accordion",
+            "desc": "Used on a non live bet detail page as the header element"
+          },
+          {
+            "type": "new",
+            "title": "Building Blocks/Live bets Sidebar/Live bets Block - Level Two",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Overview page/Bet Table Submarket Accordion - Mobile",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Default Tables/Bet Table - Medium - Bottom Stack - Mobile",
+            "desc": "Medium bet table elements are used for live or non-live bet detail or overview pages."
+          },
+          {
+            "type": "new",
+            "title": "Modals/Gaming/5 Minute Break/Modals",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Medium - Desktop",
+            "desc": "3 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Building Blocks/All bets Sidebar/All bets Block - Level Two",
+            "desc": "The following elements are used as a level 2 building block for the “all bets” sidebar on the frontpage. Level 2 building blocks always need to be beneath a level 1 building block."
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Submarket Event - Mobile",
+            "desc": "Used on various pages.\nBig variant is used for live overview pages\nSmall variant can be used on any other betting page where it is necessary"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - Small - Desktop",
+            "desc": "Small bet table elements are mainly used on the sportsbook frontpage or non-live bet detail pages."
+          },
+          {
+            "type": "new",
+            "title": "Casino - LP Teaser",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step First",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Overview page/Bet Table Section Header Accordion",
+            "desc": "Used for the section header on the following pages:\nOdds under x.xx\nLast minute"
+          },
+          {
+            "type": "new",
+            "title": "Default Tables/Bet Table - Medium - Bottom Stack - Desktop",
+            "desc": "Medium bet table elements are used for live or non-live bet detail or overview pages."
+          },
+          {
+            "type": "new",
+            "title": "Bet Results - Results Inside - Desktop (Default)",
+            "desc": "These bet results are the Default \"Results inside\" elements for desktop and used inside of the following offers:\nAll Top links\nLive detail pages\nNon-live detail pages\nLive Overview page sidebar bets\n\n\nCharacteristics:\nUse for default & contest bets\nFor desktop breakpoints\nFlexible height; Default: 32px"
+          },
+          {
+            "type": "new",
+            "title": "Product Modals",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Promotion Modals",
+            "desc": "5 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tags/Clickable/Text + Border",
+            "desc": "Game category tags are used within the casino, the casino live and the virtuals section. After clicking they show the available games for that category"
+          },
+          {
+            "type": "new",
+            "title": "Tags/Clickable/Icon + Text",
+            "desc": "Game category tags are used within the casino, the casino live and the virtuals section. After clicking they show the available games for that category"
+          },
+          {
+            "type": "new",
+            "title": "Tab Items/Tab Item - Icon",
+            "desc": "5 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tab Items/Tab Item - Text + Icon",
+            "desc": "properties:\n\nalways one selected\nmultiple options\n\nUse cases:\nBet tables market filter\nBetslip sub-menu\nMagazine sub category filter\nTop links filter"
+          },
+          {
+            "type": "new",
+            "title": "Tab Items/Tab Item - Default",
+            "desc": "properties:\n\nalways one selected\n2 options max\nsecond one “disabled”"
+          },
+          {
+            "type": "new",
+            "title": "Tab Components/Betslip Switch",
+            "desc": "Use this component for mobile only"
+          },
+          {
+            "type": "new",
+            "title": "Avatar/MD",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - Big - Mobile",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Betslip (Inline)",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "store badges",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Header / Register",
+            "desc": "⛔️⛔️ This button variant is old and should be replaced any time soon ⛔️⛔️\n\n\nUse for Header element only"
+          },
+          {
+            "type": "new",
+            "title": "Live Casino - Medium Rotator",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tab Items/Tab Item - Text + Notification",
+            "desc": "properties:\n\nnothing selected or one selected\n2 options max\nsecond one “disabled)"
+          },
+          {
+            "type": "new",
+            "title": "Registration Modals",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Building Blocks/All bets Sidebar/All bets Block - Level One",
+            "desc": "The following elements are used as a level 1 building block for the “all bets” sidebar on the frontpage"
+          },
+          {
+            "type": "new",
+            "title": "Helpers",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "ListElements Group",
+            "desc": "The following elements are used for build the sidebar elements on the sportsbook frontpage.\nException: All Sports Accordion"
+          },
+          {
+            "type": "new",
+            "title": "Footer Links Accordion",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Provider Rotator",
+            "desc": "This element is used only for the gaming providers in the casino section"
+          },
+          {
+            "type": "new",
+            "title": "Tab Components/Default Switch",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Filter Flags/Senegal",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Primary Buttons full-width",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox bigger",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Gaming/Modules/Slider Filter - Casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Payment Modals",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - XS - Desktop",
+            "desc": "This component is used for:\nHot bet component on desktop\n\n\nCharacteristics:\nDesktop only\nDefault height: 38px"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / FAB",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Responsible Gaming Bar/Default - Responsible Gaming Bar - Desktop & Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Gaming/Modules/Slider Filter - Live Casino",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Bet Table - XS - Mobile",
+            "desc": "This component is used for:\nHot bet component on mobile\n\n\nCharacteristics:\nMobile only\nDefault height: 48px"
+          },
+          {
+            "type": "new",
+            "title": "List Element/Sidebar/Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Casino - Winners Rotator",
+            "desc": "Only used in the casino section to show the current winners"
+          },
+          {
+            "type": "new",
+            "title": "Searchbar/Default - Searchbar - Mobile",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Right",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Countdown",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Radio Buttons List",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Search Result Tables/Search Bet Table - Submarket No Event - Desktop",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Apps",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Modals/Gaming/5 Minute Break/Banner",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 3 Steps - Dark",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 3 Steps - Light",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "FAQ Accordion",
+            "desc": "Used for faq elements on normales pages"
+          },
+          {
+            "type": "new",
+            "title": "Input Phone Number",
+            "desc": "10 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Modals/Gaming/Game Settings",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text and sports icon Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox bigger Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 4 Steps - Light",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 5 - Light",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox dark Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tooltip",
+            "desc": "Tooltipps will automatically adjust in width by adding text via the text property of the component\n\n\nTooltipps are meant to be used for very short text, that mainly describe icons and functionalities. \n\n\nIf you need longer texts, please us popovers."
+          },
+          {
+            "type": "new",
+            "title": "Checkbox with text Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 4 Steps - Dark",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Account status",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Input PIN - 4 digits",
+            "desc": "12 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tertiary Buttons",
+            "desc": "⛔️⛔️ Bounding box can vary based on the use case ⛔️⛔️\n\n\nDefault height is:\nL: 24px\nM: 20px\nS: 16px\n\n\nIn combination with primary or secondary button adapt paddings from them:\nButton L\nPadding T & B = 12px\nPadding L & R = 32px\n\n\nButton M\nPadding T & B = 8px\nPadding L & R = 24px\n\n\nButton S\nPadding T & B = 4px\nPadding L & R = 8px"
+          },
+          {
+            "type": "new",
+            "title": "Modals/General/Responsible Gaming",
+            "desc": "28 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 5 - Dark",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 1 Step - Light",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox bigger with text Dark",
+            "desc": "14 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 5 - Light",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Badges/Casino-test",
+            "desc": "16 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Tags/Dismissible",
+            "desc": "8 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Logos/Mobile",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Secondary Buttons",
+            "desc": "Used on non solid backgrounds. for example images"
+          },
+          {
+            "type": "new",
+            "title": "Buttons / Special Icon Button",
+            "desc": "11 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Items/Selectable Item/Sidebar Checkbox Item - Desktop",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Questionnaire Indicator - 4 - Dark",
+            "desc": "gdr questionnaire modal"
+          },
+          {
+            "type": "new",
+            "title": "Bet Results - Results Inside - Mobile (Default)",
+            "desc": "These results are the Default \"Results inside\" elements for mobile and used inside of the following offers:\nBestseller bets\nLive bets frontpage\nLast minute bets\nAll Top links except \"Todays offers\"\"\n\n\nCharacteristics:\nUse for default & contest bets\nFixed height: 54px"
+          },
+          {
+            "type": "new",
+            "title": "Section Indicator - 1 Step - Dark",
+            "desc": "20 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Checkbox List Bigger Dark",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Primary Buttons",
+            "desc": "216 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step Indicator - Vertical",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step Intermediate",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Step Last",
+            "desc": "4 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "sports/other",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "navigation/external",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Toasts",
+            "desc": "1 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "flags/flags rectangle",
+            "desc": "142 variant(s)"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Add 63 new text style token(s) to global stylesheet.",
+      "Developer: Review color token updates in global stylesheet.",
+      "Developer: 664 new component(s) in Figma — check Dev Mode for specs.",
+      "Developer: Variable values updated — sync token export.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.11.16.111",
     "date": "2026-11-16",
     "ticket": "CXI-2131",
@@ -1421,51 +6657,6 @@
     "actions": [
       "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
       "Tester: Run regression tests on affected screens."
-    ]
-  },
-  {
-    "version": "v2026.08.17.81",
-    "date": "2026-08-17",
-    "ticket": "CXI-1987",
-    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
-    "ticketType": "UX Task",
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Badges/Casino-test",
-            "desc": "Renamed from Badges/Casino. A badge for numeric values like tallies and scores; includes a Daily Jackpot category renamed to 'Daily Jackpot test'. Bold variant is experimental and unconfirmed for Team24+6."
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Apps-test",
-            "desc": "Renamed from Badges/Apps. Layer 'Badge / Badges/Apps-test' removed; layer 'Badge / Badges/Apps' added. Displays numeric badge indicators within app-level navigation contexts."
-          },
-          {
-            "type": "changed",
-            "title": "Badge/Betslip-test",
-            "desc": "Renamed from Badge/Betslip. Used as the tablet and mobile betslip badge."
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Account status-test",
-            "desc": "Renamed from Badges/Account status. Status variant renamed: 'Pending' → 'Pending-test'. Displays account status indicators."
-          },
-          {
-            "type": "changed",
-            "title": "Badges/Marketing-test",
-            "desc": "Renamed from Badges/Marketing. Displays badge indicators within marketing contexts; no internal property changes detected."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update all code references from 'Badges/Casino', 'Badges/Apps', 'Badge/Betslip', 'Badges/Account status', and 'Badges/Marketing' to their respective '-test' suffixed names to avoid broken component mappings.",
-      "Developer: Update any logic referencing the 'Pending' account status variant to 'Pending-test', and the 'Daily Jackpot' casino badge category to 'Daily Jackpot test'.",
-      "Designer: Treat all '-test' renamed badge components as experimental; avoid using the bold variant of Badges/Casino-test in Team24+6 designs until confirmed.",
-      "Tester: Verify badge rendering across betslip (tablet and mobile), account status, casino, apps, and marketing surfaces to confirm no display regressions following the component renames."
     ]
   }
 ]

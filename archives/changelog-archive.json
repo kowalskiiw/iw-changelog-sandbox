@@ -1,5 +1,50 @@
 [
   {
+    "version": "v2026.08.17.81",
+    "date": "2026-08-17",
+    "ticket": "CXI-1987",
+    "ticketUrl": "https://interwetten.atlassian.net/browse/CXI-1987",
+    "ticketType": "UX Task",
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Badges/Casino-test",
+            "desc": "Renamed from Badges/Casino. A badge for numeric values like tallies and scores; includes a Daily Jackpot category renamed to 'Daily Jackpot test'. Bold variant is experimental and unconfirmed for Team24+6."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Apps-test",
+            "desc": "Renamed from Badges/Apps. Layer 'Badge / Badges/Apps-test' removed; layer 'Badge / Badges/Apps' added. Displays numeric badge indicators within app-level navigation contexts."
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Betslip-test",
+            "desc": "Renamed from Badge/Betslip. Used as the tablet and mobile betslip badge."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Account status-test",
+            "desc": "Renamed from Badges/Account status. Status variant renamed: 'Pending' → 'Pending-test'. Displays account status indicators."
+          },
+          {
+            "type": "changed",
+            "title": "Badges/Marketing-test",
+            "desc": "Renamed from Badges/Marketing. Displays badge indicators within marketing contexts; no internal property changes detected."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update all code references from 'Badges/Casino', 'Badges/Apps', 'Badge/Betslip', 'Badges/Account status', and 'Badges/Marketing' to their respective '-test' suffixed names to avoid broken component mappings.",
+      "Developer: Update any logic referencing the 'Pending' account status variant to 'Pending-test', and the 'Daily Jackpot' casino badge category to 'Daily Jackpot test'.",
+      "Designer: Treat all '-test' renamed badge components as experimental; avoid using the bold variant of Badges/Casino-test in Team24+6 designs until confirmed.",
+      "Tester: Verify badge rendering across betslip (tablet and mobile), account status, casino, apps, and marketing surfaces to confirm no display regressions following the component renames."
+    ]
+  },
+  {
     "version": "v2026.08.16.80",
     "date": "2026-08-16",
     "ticket": "CXI-1987",
