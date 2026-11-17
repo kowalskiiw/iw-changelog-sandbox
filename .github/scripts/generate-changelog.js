@@ -14,6 +14,10 @@
  * from a committed variable-swaps.json written by the IW Variables Publisher
  * plugin at swap time, so a removed variable can render a reliable
  * "Replaced by …" instead of the diff having to guess.
+ *
+ * Figma's REST API occasionally returns transient 429/5xx errors (especially
+ * on large /nodes batches); figmaGet retries those with backoff, and node
+ * fetches are chunked small (NODE_BATCH) so any single request stays light.
  */
 
 import { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } from 'fs';
@@ -49,6 +53,22 @@ const ARCHIVE_PATH = `${ARCHIVE_DIR}/changelog-archive.json`;
 // Look for variables.json next to this script first, then in the working dir,
 // so it's found regardless of where the workflow runs `node` from.
 const VARIABLES_CANDIDATES = [join(__dirname, 'variables.json'), 'variables.json'];
+
+// Figma /nodes is fetched in chunks of this many node IDs. Kept small so a
+// single request stays light — large batches of deep component-set trees are
+// what most often tip Figma's API into a transient 500. Smaller chunks also
+// make a retry cheap and help localise a genuinely bad node if one ever 500s
+// on every attempt.
+const NODE_BATCH = 10;
+
+// Transient Figma API failures (rate limit / server errors) are retried with
+// exponential backoff before the run is failed. Non-retryable statuses
+// (401/403/404 etc.) throw immediately — no point retrying a bad token or a
+// missing file.
+const MAX_ATTEMPTS = 3;
+const RETRYABLE_STATUS = new Set([429, 500, 502, 503, 504]);
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const backoffMs = (attempt) => 500 * 2 ** (attempt - 1); // 500ms, 1s, 2s…
 
 // Bumped whenever the component snapshot shape/value representation changes, so
 // a format migration is adopted silently instead of reporting every layer.
@@ -161,12 +181,39 @@ function parseVariantProps(name = '') {
 
 // ── FIGMA API ─────────────────────────────────────────────────────────────────
 
+// GET a Figma REST path, retrying transient failures (rate limits, 5xx, and
+// network/transport errors) with exponential backoff. A non-retryable HTTP
+// status (401/403/404 …) throws immediately — retrying a bad token or missing
+// file would only waste time. After the last attempt the error is thrown so a
+// genuine outage still fails the run loudly.
 async function figmaGet(path) {
-  const res = await fetch(`https://api.figma.com/v1${path}`, {
-    headers: { 'X-Figma-Token': FIGMA_TOKEN }
-  });
-  if (!res.ok) throw new Error(`Figma API error ${res.status}: ${path}`);
-  return res.json();
+  const shortPath = path.split('?')[0];
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    let res;
+    try {
+      res = await fetch(`https://api.figma.com/v1${path}`, {
+        headers: { 'X-Figma-Token': FIGMA_TOKEN },
+      });
+    } catch (e) {
+      // Transport-level failure (DNS, socket, timeout) — retry unless last.
+      if (attempt === MAX_ATTEMPTS) throw e;
+      const wait = backoffMs(attempt);
+      console.warn(`   Figma request failed on ${shortPath} (${e.message}) — retry ${attempt}/${MAX_ATTEMPTS - 1} in ${wait}ms`);
+      await sleep(wait);
+      continue;
+    }
+
+    if (res.ok) return res.json();
+
+    if (RETRYABLE_STATUS.has(res.status) && attempt < MAX_ATTEMPTS) {
+      const wait = backoffMs(attempt);
+      console.warn(`   Figma ${res.status} on ${shortPath} — retry ${attempt}/${MAX_ATTEMPTS - 1} in ${wait}ms`);
+      await sleep(wait);
+      continue;
+    }
+
+    throw new Error(`Figma API error ${res.status}: ${path}`);
+  }
 }
 
 // ── NORMALIZERS ───────────────────────────────────────────────────────────────
@@ -420,8 +467,8 @@ async function fetchAllStyles() {
   async function fetchNodes(styleList) {
     if (!styleList.length) return {};
     const result = {};
-    for (let i = 0; i < styleList.length; i += 50) {
-      const batch = styleList.slice(i, i + 50);
+    for (let i = 0; i < styleList.length; i += NODE_BATCH) {
+      const batch = styleList.slice(i, i + NODE_BATCH);
       const ids = batch.map(s => s.node_id).join(',');
       const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${ids}`);
       for (const s of batch) result[s.name] = nodes?.[s.node_id]?.document ?? null;
@@ -528,12 +575,12 @@ async function fetchAllStyles() {
 
     // Fetch each set's full node tree and build its per-layer visual map AND
     // its non-variant component-property map (both come from the same node doc,
-    // so no extra API calls).
+    // so no extra API calls). Chunked by NODE_BATCH to keep each request light.
     const nodeIds = [...new Set(Object.values(setInfo).map(i => i.nodeId).filter(Boolean))];
     const maps = {};
     const propsMaps = {};
-    for (let i = 0; i < nodeIds.length; i += 50) {
-      const batch = nodeIds.slice(i, i + 50);
+    for (let i = 0; i < nodeIds.length; i += NODE_BATCH) {
+      const batch = nodeIds.slice(i, i + NODE_BATCH);
       const { nodes } = await figmaGet(`/files/${FIGMA_FILE_ID}/nodes?ids=${batch.join(',')}`);
       for (const id of batch) {
         const doc = nodes?.[id]?.document;
@@ -692,7 +739,7 @@ function diffComponentLayers(oldByVariant = {}, newByVariant = {}, renameMap = {
 //   2. Property added / removed: an old or new key with no identical-value
 //      counterpart on the other side.
 //   3. Per-variant VALUE change on a property present on both sides
-//      (e.g. Variant="Secondary Black" → "Secondary Neutral Black").
+//      (e.g. State="Pressed" → "Pressed / Selected").
 //
 // All matching is by the variant's own node ID, so a genuine delete+recreate
 // still shows up as an add/remove (surfaced via the `count` check in
@@ -964,7 +1011,7 @@ Your task is to return a JSON object with two keys:
    - If NO Figma description is provided:
        • For text/color/effect/grid styles: write 1 short sentence explaining what the style is and when to use it, based on the raw values (size, weight, etc).
        • For components (titles like "Avatar/XS", "Badges/Casino"): write 1 short sentence describing what the component is and its role in the UI, inferred from its name. Do NOT invent specific visual claims you cannot verify.
-   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", Variant: "Secondary Black (Default)" → "Secondary Neutral Black (Default)", a property rename like property renamed: "Type" → "Type111" or property renamed: "Icon" → "Icon1", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
+   - "changed" items: PRESERVE any concrete old → new values already present in the raw change (e.g. "fill: Accent Light Mode/Default Green/600 → Accent Light Mode/Default Green/400", "corner radius: 75 → 80", State: "Pressed" → "Pressed / Selected", a property rename like property renamed: "Type" → "Type111" or property renamed: "Icon" → "Icon1", or component renamed: "Primary Buttons" → "Primary Buttons-test"). Keep those exact property labels and token/values — do not drop, round, or rename them — and add a short plain-language framing around them. This precise before/after is the most useful part of the entry.
    - "deprecated" items: write 1 short sentence explaining it was removed. If the raw change already says "Replaced by X", keep that replacement name exactly.
    - Max 30 words per description. Be specific, not generic. Never contradict the Figma description if one was given.
 
