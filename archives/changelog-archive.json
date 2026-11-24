@@ -1,5 +1,40 @@
 [
   {
+    "version": "v2026.11.12.89",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Alerts Default (Inline) 12313",
+            "desc": "Component renamed from \"Alerts Default (Inline)\" → \"Alerts Default (Inline) 12313\"; property renamed: \"Size\" → \"Size test\". Update all references accordingly."
+          },
+          {
+            "type": "changed",
+            "title": "Banner-test",
+            "desc": "Renamed \"Banner\" → \"Banner-test\"; property renamed: \"Type111\" → \"Type\". Banner max-width follows header max-width: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
+          },
+          {
+            "type": "changed",
+            "title": "Betslip (Inline)",
+            "desc": "Component renamed from \"Betslip (Inline) test\" → \"Betslip (Inline)\". Update all code and design references to use the new stable name."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Update any code referencing the component name \"Alerts Default (Inline)\" to \"Alerts Default (Inline) 12313\" and the property \"Size\" to \"Size test\" to avoid broken prop mappings.",
+      "Developer: Update all references to the \"Banner\" component to \"Banner-test\" and ensure the property previously named \"Type111\" is now referenced as \"Type\"; also validate that Banner max-width values (1299px, 1451px, 1232px) are correctly applied per page context.",
+      "Developer: Replace all references to \"Betslip (Inline) test\" with \"Betslip (Inline)\" across React components and any dynamic component-lookup logic.",
+      "Tester: Verify that the Banner component respects the correct max-width per section — Sports/Rest at 1299px, Live at 1451px, and Magazine at 1232px — across DE, AT, ES, SE, and CY markets."
+    ]
+  },
+  {
     "version": "v2026.11.12.88",
     "date": "2026-11-12",
     "ticket": "",

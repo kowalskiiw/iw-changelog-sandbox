@@ -1,5 +1,354 @@
 [
   {
+    "version": "v2026.11.24.118",
+    "date": "2026-11-24",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Variables",
+        "items": [
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Magazine (BP 1)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Magazine (BP 2)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Magazine (BP 3)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Magazine (BP 4)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Sportsbook (BP 1)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Sportsbook (BP 2)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Sportsbook (BP 3)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / Sportsbook (BP 4)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / All (BP 1)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / All (BP 2)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / All (BP 3)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Breakpoints Navigation / All (BP 4)",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<1920",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<1249",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<1200",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<1023",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<768",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / max/<375",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>1250",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>1201",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>1024",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>768",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>376",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Max Min Sizes / min/>360",
+            "desc": "Removed from library."
+          },
+          {
+            "type": "deprecated",
+            "title": "Responsive / Number",
+            "desc": "Removed from library."
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "Diverse Modals",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "new",
+            "title": "Limit Modal",
+            "desc": "2 variant(s)"
+          },
+          {
+            "type": "changed",
+            "title": "Single Items/Magazine - Submenu Item - Desktop & Mobile",
+            "desc": "Container Padding / Right Elements / Text / Badge/Account status — layer removed · Container Padding / Right Elements / Text / Badge/Account status / alerts/warning-filled — layer removed · Container Padding / Right Elements / Text / Badge/Account status / alerts/warning-filled / Vector — layer removed · Container Padding / Right Elements / Text / Badge/Account status / Text — layer removed · Container Padding / Right Elements / Text / Badges/Account status — layer added · +3 more"
+          },
+          {
+            "type": "changed",
+            "title": "Header/App Android",
+            "desc": "component renamed: \"App Header - Android\" → \"Header/App Android\" · Left Elements / Logo / Logo/Mobile — layer removed · Left Elements / Logo / Logo/Mobile / Vector — layer removed · Left Elements / Logo / Logos/Mobile — layer added · Left Elements / Logo / Logos/Mobile / Vector — layer added"
+          },
+          {
+            "type": "changed",
+            "title": "Header/Magazine",
+            "desc": "component renamed: \"Header/Magazine - Header - Desktop & Mobile\" → \"Header/Magazine\" · Container / Navigation / Logo / Logo + Claim / Container / Logo/Desktop — layer removed · Container / Navigation / Logo / Logo + Claim / Container / Logo/Desktop / Vector — layer removed · Container / Navigation / Logo / Logo + Claim / Container / Logos/Desktop — layer added · Container / Navigation / Logo / Logo + Claim / Container / Logos/Desktop / Vector — layer added · +12 more"
+          },
+          {
+            "type": "changed",
+            "title": "Header/Default",
+            "desc": "component renamed: \"Header/Default - Header - Default\" → \"Header/Default\""
+          },
+          {
+            "type": "changed",
+            "title": "Header/Live",
+            "desc": "component renamed: \"Header/Default - Header - Live\" → \"Header/Live\""
+          },
+          {
+            "type": "changed",
+            "title": "Tag/Clickable/Logo + Text",
+            "desc": "component renamed: \"Tags/Clickable/Logo + Text\" → \"Tag/Clickable/Logo + Text\""
+          },
+          {
+            "type": "changed",
+            "title": "Checkbox bigger with text",
+            "desc": "State: \"Unslected focus\" → \"Unselected focus\""
+          },
+          {
+            "type": "changed",
+            "title": "Radio Button",
+            "desc": "State: \"Unslected Error\" → \"Unselected Error\""
+          },
+          {
+            "type": "changed",
+            "title": "Promotion Modals",
+            "desc": "Modal Type: \"Sharepoint Moda\" → \"Sharepoint Modal\""
+          },
+          {
+            "type": "changed",
+            "title": "Tag/Clickable/Text + Border",
+            "desc": "component renamed: \"Tags/Clickable/Text + Border\" → \"Tag/Clickable/Text + Border\""
+          },
+          {
+            "type": "changed",
+            "title": "Tag/Selectable",
+            "desc": "component renamed: \"Tags/Selectable\" → \"Tag/Selectable\""
+          },
+          {
+            "type": "changed",
+            "title": "Checkbox with text and provider",
+            "desc": "State: \"Unslected focus\" → \"Unselected focus\""
+          },
+          {
+            "type": "changed",
+            "title": "Tag/Clickable/Icon + Text",
+            "desc": "component renamed: \"Tags/Clickable/Icon + Text\" → \"Tag/Clickable/Icon + Text\""
+          },
+          {
+            "type": "changed",
+            "title": "store badges",
+            "desc": "Badge/Apps / Badge / Badge/Apps — layer removed · Badge/Apps / Badge / Badges/Apps — layer added · Store=App Gallery, Color=Black, Language=ENG / Badge/Apps / Badge / Badge/Apps — layer removed · Store=App Gallery, Color=Black, Language=ENG / Badge/Apps / Badge / Badges/Apps — layer added"
+          },
+          {
+            "type": "changed",
+            "title": "Radio Button Dark",
+            "desc": "State: \"Unslected Error\" → \"Unselected Error\""
+          },
+          {
+            "type": "changed",
+            "title": "Checkbox with text and sports icon",
+            "desc": "State: \"Unslected focus\" → \"Unselected focus\""
+          },
+          {
+            "type": "changed",
+            "title": "Checkbox with long text",
+            "desc": "State: \"Unslected Focus\" → \"Unselected Focus\""
+          },
+          {
+            "type": "changed",
+            "title": "Checkbox with text",
+            "desc": "State: \"Unslected focus\" → \"Unselected focus\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Countdown",
+            "desc": "component renamed: \"Badges/Countdown\" → \"Badge/Countdown\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Account status",
+            "desc": "component renamed: \"Badges/Account status\" → \"Badge/Account status\""
+          },
+          {
+            "type": "changed",
+            "title": "Logo/Mobile",
+            "desc": "component renamed: \"Logos/Mobile\" → \"Logo/Mobile\""
+          },
+          {
+            "type": "changed",
+            "title": "Bet Results (Hot Bets) - No Results - Desktop & Mobile",
+            "desc": "property renamed: \"Variant\" → \"Device\""
+          },
+          {
+            "type": "changed",
+            "title": "Header/Sports",
+            "desc": "component renamed: \"Header/Default - Header - Sports\" → \"Header/Sports\""
+          },
+          {
+            "type": "changed",
+            "title": "Header/Gaming",
+            "desc": "component renamed: \"Gaming - Header - Desktop\" → \"Header/Gaming\" · Game Header / Container / Logo / Logo/Casino Game Header — layer removed · Game Header / Container / Logo / Logo/Casino Game Header / Vector — layer removed · Game Header / Container / Logo / Logo/Casino Game Header / Subtract — layer removed · Game Header / Container / Logo / Logos/Casino Game Header — layer added · +2 more"
+          },
+          {
+            "type": "changed",
+            "title": "Tag/Dismissible",
+            "desc": "component renamed: \"Tags/Dismissible\" → \"Tag/Dismissible\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Casino-test",
+            "desc": "component renamed: \"Badges/Casino-test\" → \"Badge/Casino-test\""
+          },
+          {
+            "type": "changed",
+            "title": "Product Modals",
+            "desc": "variants: 4 → 6"
+          },
+          {
+            "type": "changed",
+            "title": "Header/App iOS",
+            "desc": "component renamed: \"App Header - iOS\" → \"Header/App iOS\" · Container / Logo / Logo/Mobile — layer removed · Container / Logo / Logo/Mobile / Vector — layer removed · Container / Logo / Logos/Mobile — layer added · Container / Logo / Logos/Mobile / Vector — layer added"
+          },
+          {
+            "type": "changed",
+            "title": "Casino - Provider Rotator",
+            "desc": "Container / Content / Tag/Clickable/Logo + Text — layer removed · Container / Content / Tag/Clickable/Logo + Text / Provider Logo — layer removed · Container / Content / Tag/Clickable/Logo + Text / Provider Logo / gaming providers/small — layer removed · Container / Content / Tag/Clickable/Logo + Text / Provider Logo / gaming providers/small / Vector — layer removed · Container / Content / Tag/Clickable/Logo + Text / Text — layer removed · +7 more"
+          },
+          {
+            "type": "changed",
+            "title": "Header/Subpages",
+            "desc": "component renamed: \"Header/Default- Header - Sub Pages\" → \"Header/Subpages\" · Sportsbook Header / Container / Logo / Logo/Mobile — layer removed · Sportsbook Header / Container / Logo / Logo/Mobile / Vector — layer removed · Sportsbook Header / Container / Logo / Logos/Mobile — layer added · Sportsbook Header / Container / Logo / Logos/Mobile / Vector — layer added · +8 more"
+          },
+          {
+            "type": "changed",
+            "title": "Logo/Desktop",
+            "desc": "component renamed: \"Logos/Desktop\" → \"Logo/Desktop\""
+          },
+          {
+            "type": "changed",
+            "title": "Toast",
+            "desc": "component renamed: \"Toasts\" → \"Toast\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Marketing",
+            "desc": "component renamed: \"Badges/Marketing\" → \"Badge/Marketing\""
+          },
+          {
+            "type": "changed",
+            "title": "Logo + Claim",
+            "desc": "Container / Logo/Desktop — layer removed · Container / Logo/Desktop / Vector — layer removed · Container / Logos/Desktop — layer added · Container / Logos/Desktop / Vector — layer added"
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Odd-Boost",
+            "desc": "component renamed: \"Badges/Odd-Boost\" → \"Badge/Odd-Boost\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Live",
+            "desc": "component renamed: \"Badges/Live\" → \"Badge/Live\""
+          },
+          {
+            "type": "changed",
+            "title": "Badge/Apps",
+            "desc": "component renamed: \"Badges/Apps\" → \"Badge/Apps\" · Badge / Badge/Apps — layer removed · Badge / Badges/Apps — layer added"
+          },
+          {
+            "type": "changed",
+            "title": "Logo/Casino Game Header",
+            "desc": "component renamed: \"Logos/Casino Game Header\" → \"Logo/Casino Game Header\""
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 2 new component(s) in Figma — check Dev Mode for specs.",
+      "Developer: 38 component(s) changed (visual, variant naming, and/or property renames) — check Dev Mode for updated specs and update any code referencing old variant/property/component names.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.11.24.117",
     "date": "2026-11-24",
     "ticket": "",
@@ -6684,41 +7033,6 @@
     "actions": [
       "Developer: 1 component(s) changed (visual, variant naming, and/or property renames) — check Dev Mode for updated specs and update any code referencing old variant/property/component names.",
       "Tester: Run regression tests on affected screens."
-    ]
-  },
-  {
-    "version": "v2026.11.12.89",
-    "date": "2026-11-12",
-    "ticket": "",
-    "ticketUrl": "",
-    "ticketType": null,
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Alerts Default (Inline) 12313",
-            "desc": "Component renamed from \"Alerts Default (Inline)\" → \"Alerts Default (Inline) 12313\"; property renamed: \"Size\" → \"Size test\". Update all references accordingly."
-          },
-          {
-            "type": "changed",
-            "title": "Banner-test",
-            "desc": "Renamed \"Banner\" → \"Banner-test\"; property renamed: \"Type111\" → \"Type\". Banner max-width follows header max-width: Sports/Rest 1299px, Live 1451px, Magazine 1232px."
-          },
-          {
-            "type": "changed",
-            "title": "Betslip (Inline)",
-            "desc": "Component renamed from \"Betslip (Inline) test\" → \"Betslip (Inline)\". Update all code and design references to use the new stable name."
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: Update any code referencing the component name \"Alerts Default (Inline)\" to \"Alerts Default (Inline) 12313\" and the property \"Size\" to \"Size test\" to avoid broken prop mappings.",
-      "Developer: Update all references to the \"Banner\" component to \"Banner-test\" and ensure the property previously named \"Type111\" is now referenced as \"Type\"; also validate that Banner max-width values (1299px, 1451px, 1232px) are correctly applied per page context.",
-      "Developer: Replace all references to \"Betslip (Inline) test\" with \"Betslip (Inline)\" across React components and any dynamic component-lookup logic.",
-      "Tester: Verify that the Banner component respects the correct max-width per section — Sports/Rest at 1299px, Live at 1451px, and Magazine at 1232px — across DE, AT, ES, SE, and CY markets."
     ]
   }
 ]
