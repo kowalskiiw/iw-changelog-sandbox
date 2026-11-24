@@ -1,5 +1,90 @@
 [
   {
+    "version": "v2026.11.24.117",
+    "date": "2026-11-24",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "new",
+            "title": "system/archive",
+            "desc": "New system component for representing an archived state in the UI, used in account or transaction-related screens."
+          },
+          {
+            "type": "new",
+            "title": "system/no-transactions",
+            "desc": "New system component displayed when no transaction history is available, used in account or wallet screens."
+          },
+          {
+            "type": "changed",
+            "title": "Casino - Medium Rotator",
+            "desc": "Badge layer renamed from Badges/Casino-test to Badge/Casino-test (singular). Only used for live casino."
+          },
+          {
+            "type": "changed",
+            "title": "Hero Rotator Component/Sportsbook",
+            "desc": "Live badge layer renamed from Badges/Live to Badge/Live (singular) within the sportsbook topline right elements."
+          },
+          {
+            "type": "changed",
+            "title": "Casino - Full Width Rotator - Virtuals",
+            "desc": "Badge layer renamed from Badges/Casino-test to Badge/Casino-test (singular) within the big rotator additional elements."
+          },
+          {
+            "type": "changed",
+            "title": "Casino - Full Width Rotator - Live Casino",
+            "desc": "Badge layer renamed from Badges/Casino-test to Badge/Casino-test (singular) within the big rotator additional elements."
+          },
+          {
+            "type": "changed",
+            "title": "Boost Cards/Big (Default)",
+            "desc": "Odd-Boost badge layer renamed from Badges/Odd-Boost to Badge/Odd-Boost (singular), including all nested child layers."
+          },
+          {
+            "type": "changed",
+            "title": "Boost Cards/Small",
+            "desc": "Odd-Boost badge layer renamed from Badges/Odd-Boost to Badge/Odd-Boost (singular), including all nested child layers."
+          },
+          {
+            "type": "changed",
+            "title": "Casino - Small Rotator",
+            "desc": "Badge layer renamed from Badges/Casino-test to Badge/Casino-test (singular) within the small teaser additional elements."
+          },
+          {
+            "type": "changed",
+            "title": "Casino - LP Teaser",
+            "desc": "Badge layers renamed from Badges/Casino-test to Badge/Casino-test (singular) across both small and medium teaser additional elements."
+          },
+          {
+            "type": "changed",
+            "title": "store badges",
+            "desc": "App store badge layer renamed from Badges/Apps to Badge/Apps (singular), including nested Badge and Text child layers."
+          },
+          {
+            "type": "changed",
+            "title": "Live Casino - Medium Rotator",
+            "desc": "Badge layer renamed from Badges/Casino-test to Badge/Casino-test (singular) within the live medium teaser additional elements."
+          },
+          {
+            "type": "changed",
+            "title": "Modals/Gaming/5 Minute Break/Banner",
+            "desc": "Countdown badge layer renamed from Badges/Countdown to Badge/Countdown (singular), including nested Text child layer."
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: Audit all component implementations referencing the plural layer name pattern Badges/* (e.g. Badges/Casino-test, Badges/Live, Badges/Odd-Boost, Badges/Countdown, Badges/Apps) and update references to the singular Badge/* equivalents to match the renamed Figma layers.",
+      "Designer: Verify that the two new system components (system/archive and system/no-transactions) are correctly applied in account, wallet, and transaction-history screen designs across all markets (DE, AT, ES, SE, CY).",
+      "Tester: Validate that badge elements render correctly after the Badges/* → Badge/* layer rename in Casino rotators (Small, Medium, Full Width, LP Teaser, Live Casino), Boost Cards (Big and Small), Hero Rotator Sportsbook, store badges, and the 5 Minute Break modal — checking no badge disappears or duplicates.",
+      "Designer: Confirm that Casino - Medium Rotator badge usage aligns with its documented constraint — it must only appear in live casino contexts, not standard casino or virtuals rotators."
+    ]
+  },
+  {
     "version": "v2026.11.17.116",
     "date": "2026-11-17",
     "ticket": "",
@@ -6634,29 +6719,6 @@
       "Developer: Update all references to the \"Banner\" component to \"Banner-test\" and ensure the property previously named \"Type111\" is now referenced as \"Type\"; also validate that Banner max-width values (1299px, 1451px, 1232px) are correctly applied per page context.",
       "Developer: Replace all references to \"Betslip (Inline) test\" with \"Betslip (Inline)\" across React components and any dynamic component-lookup logic.",
       "Tester: Verify that the Banner component respects the correct max-width per section — Sports/Rest at 1299px, Live at 1451px, and Magazine at 1232px — across DE, AT, ES, SE, and CY markets."
-    ]
-  },
-  {
-    "version": "v2026.11.12.88",
-    "date": "2026-11-12",
-    "ticket": "",
-    "ticketUrl": "",
-    "ticketType": null,
-    "groups": [
-      {
-        "title": "Components",
-        "items": [
-          {
-            "type": "changed",
-            "title": "Banner",
-            "desc": "Type: \"Success\" → \"∅\" · Type111: \"∅\" → \"Success\" · Type: \"Warning\" → \"∅\" · Type111: \"∅\" → \"Warning\" · Type: \"Information\" → \"∅\" · +3 more"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
-      "Tester: Run regression tests on affected screens."
     ]
   }
 ]

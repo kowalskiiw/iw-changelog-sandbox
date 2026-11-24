@@ -1,5 +1,28 @@
 [
   {
+    "version": "v2026.11.12.88",
+    "date": "2026-11-12",
+    "ticket": "",
+    "ticketUrl": "",
+    "ticketType": null,
+    "groups": [
+      {
+        "title": "Components",
+        "items": [
+          {
+            "type": "changed",
+            "title": "Banner",
+            "desc": "Type: \"Success\" → \"∅\" · Type111: \"∅\" → \"Success\" · Type: \"Warning\" → \"∅\" · Type111: \"∅\" → \"Warning\" · Type: \"Information\" → \"∅\" · +3 more"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      "Developer: 1 component(s) changed (visual and/or variant naming) — check Dev Mode for updated specs and update any code referencing old variant values.",
+      "Tester: Run regression tests on affected screens."
+    ]
+  },
+  {
     "version": "v2026.08.17.81",
     "date": "2026-08-17",
     "ticket": "CXI-1987",
